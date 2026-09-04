@@ -34,6 +34,14 @@ class ResourceDiscoveryTests(unittest.TestCase):
             [PurePosixPath("references/root-cause-tracing.md")],
         )
 
+    def test_markdown_heading_fragment_is_not_part_of_resource_path(self):
+        self.assertEqual(
+            resource_paths(
+                "Read [state recovery](references/state-management.md#recovery)."
+            ),
+            [PurePosixPath("references/state-management.md")],
+        )
+
     def test_rejects_path_traversal(self):
         with self.assertRaisesRegex(SystemExit, "unsafe bundled resource path"):
             resource_paths("Run @scripts/../../outside.sh")

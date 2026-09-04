@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:antonbabenko/terraform-skill:skills/terraform-skill/SKILL.md",
+  "declared_source_license": "Apache-2.0",
+  "source_license_file": "LICENSE",
+  "path": "skills/terraform-skill/SKILL.md",
+  "repository": "antonbabenko/terraform-skill",
+  "sha": "41514d6f783717f4036ba970c5ba51f24c890025",
+  "source_url": "https://github.com/antonbabenko/terraform-skill/blob/0a3a4a66e99001347d36a41e10260a825be3ab62/skills/terraform-skill/SKILL.md"
+}

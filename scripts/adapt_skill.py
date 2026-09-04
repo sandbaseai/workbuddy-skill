@@ -58,7 +58,12 @@ def resource_paths(source: str) -> list[PurePosixPath]:
     """Return normalized, safe resource paths referenced by a SKILL.md."""
     paths: set[PurePosixPath] = set()
     for match in RESOURCE_REFERENCE.finditer(source):
-        value = unquote(match.group("path")).removeprefix("./").rstrip(".,;:")
+        value = (
+            unquote(match.group("path"))
+            .partition("#")[0]
+            .removeprefix("./")
+            .rstrip(".,;:")
+        )
         path = PurePosixPath(value)
         if path.is_absolute() or ".." in path.parts or len(path.parts) < 2:
             raise SystemExit(f"unsafe bundled resource path: {value}")
