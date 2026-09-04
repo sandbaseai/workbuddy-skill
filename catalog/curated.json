@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:henrique-simoes/Istara:skills/define/prioritization-matrix/SKILL.md",
+    "skill": "prioritization-matrix",
+    "skill_path": "skills/prioritization-matrix",
+    "category": "business",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/prioritization-matrix-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:l-gevity/l-gevity-skills:.agents/skills/requirements-grounding/SKILL.md",
     "skill": "requirements-grounding",
     "skill_path": "skills/requirements-grounding",

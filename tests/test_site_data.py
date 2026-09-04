@@ -146,6 +146,17 @@ class SiteDataTests(unittest.TestCase):
         self.assertTrue(
             requirements["a"].endswith("/requirements-grounding-workbuddy-skill.zip")
         )
+        prioritization = next(
+            item
+            for item in records
+            if item["r"] == "henrique-simoes/Istara"
+            and item["p"] == "skills/define/prioritization-matrix/SKILL.md"
+        )
+        self.assertEqual(prioritization["w"], "workbuddy-ready")
+        self.assertEqual(prioritization["g"], "business")
+        self.assertTrue(
+            prioritization["a"].endswith("/prioritization-matrix-workbuddy-skill.zip")
+        )
         metadata = json.loads(
             (ROOT / "site" / "catalog-meta.json").read_text(encoding="utf-8")
         )

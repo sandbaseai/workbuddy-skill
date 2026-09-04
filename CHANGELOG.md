@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.19.0] - 2026-09-05
+
+- Added the MIT Prioritization Matrix Skill with framework selection, evidence-linked inputs, comparable scales, dependency handling, visible formulas, and sensitivity analysis.
+
 ## [0.18.0] - 2026-09-05
 
 - Added the MIT Requirements Grounding Skill with source classification, solution-free problem framing, observable completion, confidence, recovery-mode evidence, and decision records.
