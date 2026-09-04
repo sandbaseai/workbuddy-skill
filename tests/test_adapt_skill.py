@@ -147,6 +147,28 @@ class LocalPackagingTests(unittest.TestCase):
                     archive.read("SKILL.md").decode(),
                 )
 
+    def test_preserves_string_metadata_map(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source = root / "metadata" / "SKILL.md"
+            source.parent.mkdir()
+            source.write_text(
+                "---\nname: metadata\ndescription: Metadata skill\n"
+                "metadata:\n  team: platform\n  maturity: stable\n"
+                "---\n\n# Metadata\n", encoding="utf-8",
+            )
+            command = [
+                sys.executable, str(ROOT / "scripts" / "adapt_skill.py"),
+                "--source-file", str(source), "--output", str(root / "dist"),
+                "--display-name-zh", "元数据技能", "--display-name-en", "Metadata",
+                "--description-zh", "元数据技能", "--description-en", "Metadata skill",
+                "--author", "Test", "--source-license", "MIT",
+            ]
+            subprocess.run(command, cwd=ROOT, check=True, capture_output=True, text=True)
+            with ZipFile(root / "dist/metadata-workbuddy.zip") as archive:
+                content = archive.read("SKILL.md").decode()
+                self.assertIn("metadata:\n  team: platform\n  maturity: stable", content)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -123,6 +123,24 @@ def yaml_value(value: str) -> str:
     return json.dumps(value, ensure_ascii=False)
 
 
+def metadata_block(frontmatter: str) -> list[str]:
+    """Preserve the standard metadata mapping while normalizing other fields."""
+    lines = frontmatter.splitlines()
+    for index, line in enumerate(lines):
+        if line.startswith("metadata:"):
+            value = line.split(":", 1)[1].strip()
+            if value:
+                return []
+            block = ["metadata:"]
+            for child in lines[index + 1:]:
+                if not child or child[0].isspace():
+                    block.append(child)
+                    continue
+                break
+            return block
+    return []
+
+
 def adapted_text(source: str, args: argparse.Namespace) -> tuple[str, str]:
     valid, fields = parse_frontmatter(source)
     match = FRONTMATTER.match(source)
@@ -150,9 +168,13 @@ def adapted_text(source: str, args: argparse.Namespace) -> tuple[str, str]:
     ):
         if fields.get(optional):
             frontmatter[optional] = fields[optional]
-    rendered = "---\n" + "\n".join(
+    rendered_frontmatter = [
         f"{key}: {yaml_value(value)}" for key, value in frontmatter.items()
-    ) + "\n---\n\n" + body.lstrip()
+    ]
+    preserved_metadata = metadata_block(match.group(1)) if valid and match else []
+    if preserved_metadata:
+        rendered_frontmatter.extend(preserved_metadata)
+    rendered = "---\n" + "\n".join(rendered_frontmatter) + "\n---\n\n" + body.lstrip()
     return name, rendered
 
 
