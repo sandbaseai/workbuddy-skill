@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from adapt_skill import immutable_github_source, resource_paths  # noqa: E402
+from analyze_catalog import parse_frontmatter  # noqa: E402
 
 
 class ResourceDiscoveryTests(unittest.TestCase):
@@ -50,6 +51,15 @@ class ResourceDiscoveryTests(unittest.TestCase):
 
 
 class LocalPackagingTests(unittest.TestCase):
+    def test_parses_folded_frontmatter_and_preserves_argument_hint(self):
+        valid, fields = parse_frontmatter(
+            "---\nname: demo\ndescription: >\n  First line\n  second line.\n"
+            "argument-hint: \"[path]\"\n---\n\n# Demo\n"
+        )
+        self.assertTrue(valid)
+        self.assertEqual(fields["description"], "First line second line.")
+        self.assertEqual(fields["argument-hint"], "[path]")
+
     def test_packages_referenced_local_resources_and_provenance(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

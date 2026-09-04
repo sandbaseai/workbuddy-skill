@@ -140,7 +140,12 @@ def adapted_text(source: str, args: argparse.Namespace) -> tuple[str, str]:
         "version": args.version,
         "author": args.author,
     }
-    for optional in ("allowed-tools", "disable-model-invocation", "user-invocable"):
+    for optional in (
+        "allowed-tools",
+        "argument-hint",
+        "disable-model-invocation",
+        "user-invocable",
+    ):
         if fields.get(optional):
             frontmatter[optional] = fields[optional]
     rendered = "---\n" + "\n".join(

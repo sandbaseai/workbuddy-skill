@@ -2,6 +2,11 @@
 
 All notable changes to this project are documented here.
 
+## [0.8.0] - 2026-09-05
+
+- Added the Apache-2.0 Open Source License Review Skill for dependency and release compliance checks.
+- Improved folded YAML frontmatter parsing and preserved `argument-hint` when adapting Skills.
+
 ## [0.7.0] - 2026-09-05
 
 - Added the MIT Spreadsheet Operations Skill with WorkBuddy-specific fidelity, safety, and output verification rules.

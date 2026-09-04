@@ -41,7 +41,10 @@ class SiteDataTests(unittest.TestCase):
         metadata = json.loads(
             (ROOT / "site" / "catalog-meta.json").read_text(encoding="utf-8")
         )
-        self.assertEqual(metadata["curated_adaptations"], 2)
+        self.assertEqual(
+            metadata["curated_adaptations"],
+            len(json.loads((ROOT / "catalog/curated.json").read_text(encoding="utf-8"))),
+        )
 
 
 if __name__ == "__main__":
