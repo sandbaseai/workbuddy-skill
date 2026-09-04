@@ -26,6 +26,10 @@ python3 scripts/query_catalog.py research --security no-static-flags --source-co
 python3 scripts/review_skill.py --catalog-id 'github:owner/repository:path/to/SKILL.md'
 ```
 
+Search terms also match review metadata such as `prompt-injection`, `flagged`,
+or `description_zh`, which makes security and compatibility triage searchable
+without downloading third-party Skill bodies.
+
 If the Atlas or adapter saves you time, [star the repository](https://github.com/sandbaseai/workbuddy-skill) so other WorkBuddy users can find it.
 
 ## 中文
