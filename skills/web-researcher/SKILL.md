@@ -8,6 +8,7 @@ description_en: "Research questions with current, authoritative, traceable sourc
 category: "research"
 version: "0.1.0"
 author: "Animism001; adapted for WorkBuddy by SandBase AI"
+license: "MIT"
 ---
 
 # Research with Sources

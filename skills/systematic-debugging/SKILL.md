@@ -8,6 +8,7 @@ description_en: "Reproduce, localize, and trace root causes before making the sm
 category: "development"
 version: "0.1.0"
 author: "GuicedEE; adapted for WorkBuddy by SandBase AI"
+license: "Apache-2.0"
 ---
 
 # Systematic Debugging

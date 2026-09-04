@@ -39,11 +39,16 @@ def validate_skill(skill: Path, root: Path) -> None:
     name = fields["name"].strip('"\'')
     if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", name):
         raise ValueError(f"{relative} name must use lowercase letters, digits, and hyphens")
+    if name != skill.parent.name:
+        raise ValueError(f"{relative} name must match its directory ({skill.parent.name})")
     if len(name) > 64:
         raise ValueError(f"{relative} name must be at most 64 characters")
     description = fields["description"].strip('"\'')
     if len(description) > 1024:
         raise ValueError(f"{relative} description must be at most 1024 characters")
+    allowed_tools = fields.get("allowed-tools")
+    if allowed_tools and allowed_tools.lstrip().startswith(("[", "{")):
+        raise ValueError(f"{relative} allowed-tools must be a space- or comma-separated string")
     if not text[match.end():].strip():
         raise ValueError(f"{relative} must contain a non-empty instruction body")
 

@@ -34,6 +34,25 @@ class ValidateSkillTests(unittest.TestCase):
         )
         self.assertEqual(result.returncode, 0, result.stderr)
 
+    def test_requires_name_to_match_directory(self):
+        result = self.run_validator(
+            "---\nname: another-skill\ndescription: Demo\n"
+            "description_zh: 演示\ndescription_en: Demo\n"
+            "version: 1.0.0\nauthor: Test\n---\n\n# Demo\n"
+        )
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("name must match its directory", result.stderr)
+
+    def test_rejects_array_allowed_tools(self):
+        result = self.run_validator(
+            "---\nname: demo\ndescription: Demo\n"
+            "description_zh: 演示\ndescription_en: Demo\n"
+            "version: 1.0.0\nauthor: Test\nallowed-tools: [Read, Write]\n"
+            "---\n\n# Demo\n"
+        )
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("allowed-tools must be", result.stderr)
+
 
 if __name__ == "__main__":
     unittest.main()

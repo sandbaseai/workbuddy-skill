@@ -8,6 +8,7 @@ description_en: Discover, inspect, and run SandBase models and APIs, including r
 category: productivity
 version: 0.1.0
 author: SandBase
+license: MIT
 ---
 
 # SandBase
@@ -40,4 +41,3 @@ author: SandBase
 
 - 异步轮询、结果整理和成本处理：@references/execution.md
 - 无结果、鉴权、限流及服务异常：@references/troubleshooting.md
-

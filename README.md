@@ -148,6 +148,11 @@ python3 scripts/validate_skill.py
 ./scripts/package_skill.sh
 ```
 
+The validator also checks the standard Agent Skills installation invariants:
+each skill's `name` matches its directory, and `allowed-tools` remains a
+space- or comma-separated string. This keeps curated Skills compatible with
+`gh skill publish --dry-run` and exact-path installation.
+
 ## Repository layout
 
 ```text

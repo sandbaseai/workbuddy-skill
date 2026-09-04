@@ -8,6 +8,7 @@ description_en: "Draft clear email from the recipient, intent, and verified fact
 category: "business"
 version: "0.1.0"
 author: "Gaurav Datar; adapted for WorkBuddy by SandBase AI"
+license: "MIT"
 ---
 
 # Email Drafting

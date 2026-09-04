@@ -8,6 +8,7 @@ description_en: "Safely inspect, clean, analyze, convert, and create Excel or CS
 category: "data"
 version: "0.1.0"
 author: "xuthreekid; adapted for WorkBuddy by SandBase AI"
+license: "MIT"
 ---
 
 # Spreadsheet Operations

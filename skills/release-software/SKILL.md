@@ -8,6 +8,7 @@ description_en: "Prepare, verify, stage, publish, and monitor a software release
 category: "development"
 version: "0.1.0"
 author: "skills contributors; adapted for WorkBuddy by SandBase AI"
+license: "MIT"
 ---
 
 # Release Software

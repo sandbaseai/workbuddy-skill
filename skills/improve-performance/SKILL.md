@@ -8,6 +8,7 @@ description_en: "Improve latency, throughput, memory, CPU, I/O, query, or startu
 category: "development"
 version: "0.1.0"
 author: "skills contributors; adapted for WorkBuddy by SandBase AI"
+license: "MIT"
 ---
 
 # Improve Performance

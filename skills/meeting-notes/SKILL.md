@@ -8,6 +8,7 @@ description_en: "Turn meeting notes or transcripts into faithful summaries, deci
 category: "productivity"
 version: "0.1.0"
 author: "rainoff; adapted for WorkBuddy by SandBase AI"
+license: "MIT"
 ---
 
 # Meeting Notes
