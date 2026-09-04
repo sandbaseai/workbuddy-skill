@@ -50,6 +50,9 @@ def validate_skill(skill: Path, root: Path) -> None:
     description = fields["description"].strip('"\'')
     if len(description) > 1024:
         raise ValueError(f"{relative} description must be at most 1024 characters")
+    compatibility = fields.get("compatibility", "").strip('"\'')
+    if len(compatibility) > 500:
+        raise ValueError(f"{relative} compatibility must be at most 500 characters")
     source_file = skill.parent / "SOURCE.json"
     if source_file.is_file():
         try:

@@ -62,6 +62,16 @@ class ValidateSkillTests(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("allowed-tools must be", result.stderr)
 
+    def test_rejects_oversized_compatibility(self):
+        result = self.run_validator(
+            "---\nname: demo\ndescription: Demo\n"
+            "description_zh: 演示\ndescription_en: Demo\n"
+            "version: 1.0.0\nauthor: Test\nlicense: MIT\n"
+            "compatibility: " + "x" * 501 + "\n---\n\n# Demo\n"
+        )
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("compatibility must be at most 500", result.stderr)
+
     def test_rejects_license_mismatch_with_source(self):
         with tempfile.TemporaryDirectory() as directory:
             skills_root = Path(directory) / "skills"
