@@ -17,6 +17,17 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        kubernetes = next(
+            item
+            for item in records
+            if item["r"] == "LukasNiessen/kubernetes-skill"
+            and item["p"] == "SKILL.md"
+        )
+        self.assertEqual(kubernetes["w"], "workbuddy-ready")
+        self.assertEqual(kubernetes["g"], "development")
+        self.assertTrue(
+            kubernetes["a"].endswith("/kubernetes-operations-workbuddy-skill.zip")
+        )
         terraform = next(
             item
             for item in records

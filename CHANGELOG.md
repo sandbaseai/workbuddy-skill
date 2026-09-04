@@ -2,6 +2,11 @@
 
 All notable changes to this project are documented here.
 
+## [0.37.0] - 2026-09-05
+
+- Added the MIT KubeShark source to the Atlas, increasing it to 11,003 indexed paths across 5,708 repositories.
+- Added the Kubernetes Production Operations Skill with failure-stage diagnosis, workload and probe contracts, least-privilege security, exact rendering and diff review, explicit production authorization, rollout observation, and state-aware recovery.
+
 ## [0.36.0] - 2026-09-05
 
 - Added Anton Babenko's official Apache-2.0 Terraform Skill to the Atlas, increasing it to 10,902 indexed paths across 5,632 repositories.

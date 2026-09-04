@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:LukasNiessen/kubernetes-skill:SKILL.md",
+    "skill": "kubernetes-operations",
+    "skill_path": "skills/kubernetes-operations",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/kubernetes-operations-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:antonbabenko/terraform-skill:skills/terraform-skill/SKILL.md",
     "skill": "terraform-engineering",
     "skill_path": "skills/terraform-engineering",
