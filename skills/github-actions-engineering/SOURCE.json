@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:DonArtkins/griot:infra/.agents/skills/github-actions/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "infra/.agents/skills/github-actions/SKILL.md",
+  "repository": "DonArtkins/griot",
+  "sha": "56b4b87b59015f4547f76b21666071cd3f361df7",
+  "source_url": "https://github.com/DonArtkins/griot/blob/29d632671d3b4012592ec3d3d209d70aa5d73b74/infra/.agents/skills/github-actions/SKILL.md"
+}

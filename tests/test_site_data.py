@@ -17,6 +17,19 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        github_actions = next(
+            item
+            for item in records
+            if item["r"] == "DonArtkins/griot"
+            and item["p"] == "infra/.agents/skills/github-actions/SKILL.md"
+        )
+        self.assertEqual(github_actions["w"], "workbuddy-ready")
+        self.assertEqual(github_actions["g"], "development")
+        self.assertTrue(
+            github_actions["a"].endswith(
+                "/github-actions-engineering-workbuddy-skill.zip"
+            )
+        )
         kafka = next(
             item
             for item in records

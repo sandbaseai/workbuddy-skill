@@ -134,6 +134,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | Skill | Use it for | Provenance |
 |---|---|---|
 | [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
+| [GitHub Actions Engineering](skills/github-actions-engineering/) | Build, secure, optimize, and diagnose CI, releases, reusable workflows, artifacts, and deployments | [MIT source](skills/github-actions-engineering/SOURCE.json) |
 | [Kafka Event Streaming Engineering](skills/kafka-engineering/) | Design and diagnose event contracts, delivery semantics, consumers, schemas, replay, and production changes | [MIT source](skills/kafka-engineering/SOURCE.json) |
 | [Cache Engineering](skills/cache-engineering/) | Prove cache value and preserve key isolation, freshness, invalidation, degradation, and rollout safety | [MIT source](skills/cache-engineering/SOURCE.json) |
 | [Container Image Engineering](skills/container-image-engineering/) | Build, secure, optimize, inspect, and diagnose Docker/OCI images | [MIT source](skills/container-image-engineering/SOURCE.json) |
@@ -197,6 +198,10 @@ skills/sandbase/
 └── references/
     ├── execution.md
     └── troubleshooting.md
+skills/github-actions-engineering/
+├── SKILL.md
+├── SOURCE.json
+└── LICENSE
 skills/kafka-engineering/
 ├── SKILL.md
 ├── SOURCE.json
