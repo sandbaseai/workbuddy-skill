@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:aws-samples/sample-aws-resilience-skill:aws-resilience-modeling/SKILL.md",
+  "declared_source_license": "MIT-0",
+  "source_license_file": "LICENSE",
+  "path": "aws-resilience-modeling/SKILL.md",
+  "repository": "aws-samples/sample-aws-resilience-skill",
+  "sha": "a5b050f597ff1d156f756cacca570ed6da8c8e79",
+  "source_url": "https://github.com/aws-samples/sample-aws-resilience-skill/blob/7249f3f04760e0cf66ec64e637a0cc817a99a413/aws-resilience-modeling/SKILL.md"
+}

@@ -17,6 +17,19 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        aws_resilience = next(
+            item
+            for item in records
+            if item["r"] == "aws-samples/sample-aws-resilience-skill"
+            and item["p"] == "aws-resilience-modeling/SKILL.md"
+        )
+        self.assertEqual(aws_resilience["w"], "workbuddy-ready")
+        self.assertEqual(aws_resilience["g"], "development")
+        self.assertTrue(
+            aws_resilience["a"].endswith(
+                "/aws-resilience-assessment-workbuddy-skill.zip"
+            )
+        )
         github_actions = next(
             item
             for item in records
