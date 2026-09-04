@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:majiayu000/claude-skill-registry:skills/design/mobile-development/SKILL.md",
+    "skill": "mobile-development",
+    "skill_path": "skills/mobile-development",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/mobile-development-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:briiirussell/cybersecurity-skills:skills/privacy-engineering/SKILL.md",
     "skill": "privacy-engineering",
     "skill_path": "skills/privacy-engineering",

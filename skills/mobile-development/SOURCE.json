@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:majiayu000/claude-skill-registry:skills/design/mobile-development/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/mobile-development/SKILL.md",
+  "repository": "majiayu000/claude-skill-registry",
+  "sha": "c1fd61c7f48c9c151a9492d18c060971bb95a4ff",
+  "source_url": "https://github.com/majiayu000/claude-skill-registry/blob/c1fd61c7f48c9c151a9492d18c060971bb95a4ff/skills/design/mobile-development/SKILL.md"
+}

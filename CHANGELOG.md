@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Mobile Development Skill with platform selection, offline-first behavior, lifecycle-safe architecture, performance budgets, accessibility, secure storage, real-device testing, and staged delivery.
 - Added the MIT Privacy Engineering Skill with data classification, minimization, purpose and consent controls, subject-rights workflows, retention and vendor governance, DPIA inputs, and breach-ready evidence.
 - Added the MIT FinOps Skill with the Inform/Optimize/Operate cycle, allocation, unit economics, anomaly investigation, commitment and rightsizing safety, forecasting, maturity, governance, and evidence-based handoffs.
 - Added the MIT FinOps Skill with the Inform/Optimize/Operate cycle, allocation, unit economics, anomaly investigation, commitment and rightsizing safety, forecasting, maturity, governance, and evidence-based handoffs.
