@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:DonArtkins/griot:infra/.agents/skills/github-actions/SKILL.md",
+    "skill": "github-actions-engineering",
+    "skill_path": "skills/github-actions-engineering",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/github-actions-engineering-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:ssrjkk/claude-skills:.claude/skills/data/kafka-advanced/SKILL.md",
     "skill": "kafka-engineering",
     "skill_path": "skills/kafka-engineering",

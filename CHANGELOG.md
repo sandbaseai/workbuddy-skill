@@ -2,6 +2,11 @@
 
 All notable changes to this project are documented here.
 
+## [0.41.0] - 2026-09-05
+
+- Curated the existing MIT GitHub Actions source from `DonArtkins/griot` without inflating Atlas discovery counts.
+- Added the GitHub Actions Engineering Skill with event trust boundaries, least-privilege jobs, immutable dependencies, OIDC identities, deterministic matrices, safe caches and artifacts, idempotent releases, protected deployments, and reproducible diagnosis.
+
 ## [0.40.0] - 2026-09-05
 
 - Curated the existing MIT Kafka source from `ssrjkk/claude-skills` without inflating Atlas discovery counts.
