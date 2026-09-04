@@ -47,6 +47,7 @@ jobs:
           cp /tmp/stats.json catalog/stats.json
           test -f /tmp/analysis-stats.json
           cp /tmp/analysis-stats.json catalog/analysis-stats.json
+          python3 scripts/update_readme_stats.py
       - name: Publish catalog update
         env:
           GH_TOKEN: ${{ github.token }}
@@ -55,7 +56,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git switch -C "$branch"
-          git add catalog/skills.jsonl catalog/stats.json catalog/analysis-stats.json
+          git add README.md catalog/skills.jsonl catalog/stats.json catalog/analysis-stats.json
           if git diff --cached --quiet; then
             echo "Catalog is already current"
             exit 0
