@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:aydabd/github-bootstrap:templates/.github/skills/regression-risk-review/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/regression-risk-review/SKILL.md",
+  "repository": "aydabd/github-bootstrap",
+  "sha": "c51d720ad3ddd3f22a98c424899e3a5935e9983c",
+  "source_url": "https://github.com/aydabd/github-bootstrap/blob/b813d3f7c3ce5e7c5ef3207e247ede58ba79d1e5/templates/.github/skills/regression-risk-review/SKILL.md"
+}

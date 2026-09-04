@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Regression Risk Review Skill with diff-first evidence gathering, compatibility-path analysis, high-risk behavior checks, prioritized machine-readable findings, regression-test guidance, rollout safeguards, and accountable handoff.
 - Added the MIT Release Planner Skill with deployment sequencing, expand-and-contract migrations, rollout waves, blast-radius controls, measurable go/no-go gates, rollback and recovery, observability, communication, and post-release cleanup.
 - Added the MIT Architecture Decision Skill with decision framing, measurable quality attributes, alternative comparison, ADR recording, fitness functions, migration and rollback safeguards, operational handoff, and review triggers.
 - Added the MIT Performance Engineering Skill with representative baselines, load/stress/soak/spike testing, profiling, bottleneck evidence, performance budgets, capacity boundaries, safe optimization, and regression gates.

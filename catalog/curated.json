@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:aydabd/github-bootstrap:templates/.github/skills/regression-risk-review/SKILL.md",
+    "skill": "regression-risk-review",
+    "skill_path": "skills/regression-risk-review",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/regression-risk-review-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:GustavoGutierrez/engineering-skills:skills/release-planner/SKILL.md",
     "skill": "release-planner",
     "skill_path": "skills/release-planner",
