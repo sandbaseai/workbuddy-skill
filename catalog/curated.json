@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:LeoYeAI/openclaw-master-skills:skills/finops/SKILL.md",
+    "skill": "finops",
+    "skill_path": "skills/finops",
+    "category": "business",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/finops-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:microsoft/playwright:packages/playwright-core/src/tools/skills/playwright-component-testing/SKILL.md",
     "skill": "playwright-component-testing",
     "skill_path": "skills/playwright-component-testing",

@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:LeoYeAI/openclaw-master-skills:skills/finops/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/finops/SKILL.md",
+  "repository": "LeoYeAI/openclaw-master-skills",
+  "sha": "5061baf45d6bff88a2a4ba2e6e6efc05a7d41c61",
+  "source_url": "https://github.com/LeoYeAI/openclaw-master-skills/blob/5061baf45d6bff88a2a4ba2e6e6efc05a7d41c61/skills/finops/SKILL.md"
+}
