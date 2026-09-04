@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:majiayu000/claude-skill-registry:skills/devops/site-reliability/SKILL.md",
+    "skill": "site-reliability",
+    "skill_path": "skills/site-reliability",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/site-reliability-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:majiayu000/claude-skill-registry:skills/design/design-systems/SKILL.md",
     "skill": "design-systems",
     "skill_path": "skills/design-systems",

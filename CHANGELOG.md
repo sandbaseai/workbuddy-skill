@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Site Reliability Engineering Skill with user-centered SLI/SLO design, error budgets, toil reduction, blameless incident learning, sustainable on-call, capacity, graceful degradation, and progressive delivery.
 - Added the MIT Design Systems Skill with semantic token layers, accessible component contracts, executable documentation, versioning and migration, governance, visual evidence, and adoption metrics.
 - Added the MIT Mobile Development Skill with platform selection, offline-first behavior, lifecycle-safe architecture, performance budgets, accessibility, secure storage, real-device testing, and staged delivery.
 - Added the MIT Privacy Engineering Skill with data classification, minimization, purpose and consent controls, subject-rights workflows, retention and vendor governance, DPIA inputs, and breach-ready evidence.

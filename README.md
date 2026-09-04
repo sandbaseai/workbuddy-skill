@@ -134,6 +134,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | Skill | Use it for | Provenance |
 |---|---|---|
 | [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
+| [Site Reliability Engineering](skills/site-reliability/) | Define SLOs, error budgets, toil reduction, incident learning, on-call health, capacity, graceful degradation, and progressive delivery | [MIT source](skills/site-reliability/SOURCE.json) |
 | [Design Systems](skills/design-systems/) | Build accessible token foundations and component libraries with stable APIs, documentation, governance, migration, and adoption evidence | [MIT source](skills/design-systems/SOURCE.json) |
 | [Mobile Development](skills/mobile-development/) | Build reliable iOS, Android, React Native, Flutter, SwiftUI, and Jetpack Compose apps with offline, performance, accessibility, security, testing, and release guidance | [MIT source](skills/mobile-development/SOURCE.json) |
 | [Privacy Engineering](skills/privacy-engineering/) | Translate privacy requirements into data classification, consent, subject-rights, retention, vendor, deletion, and breach evidence | [MIT source](skills/privacy-engineering/SOURCE.json) |
@@ -403,8 +404,8 @@ The catalog is generated from public GitHub `SKILL.md` results with resumable, r
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 11,546 |
-| Unique content SHAs | 7,311 |
+| Indexed GitHub paths | 11,547 |
+| Unique content SHAs | 7,312 |
 | Source repositories | 5,960 |
 <!-- CATALOG-METRICS:END -->
 
@@ -415,7 +416,7 @@ Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.git
 For a manually curated index of WorkBuddy documentation, MCP integrations, workflows, benchmarks, and Skills, browse [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy).
 
 <!-- CATALOG-ANALYSIS:START -->
-The current static analysis successfully inspected 11,546 paths: 9,854 are structurally adaptable to WorkBuddy, 902 need manual review, 0 are currently WorkBuddy-ready, and 405 contain at least one conservative security signal.
+The current static analysis successfully inspected 11,547 paths: 9,855 are structurally adaptable to WorkBuddy, 902 need manual review, 0 are currently WorkBuddy-ready, and 405 contain at least one conservative security signal.
 <!-- CATALOG-ANALYSIS:END -->
 A clean static scan is never a security guarantee.
 
