@@ -48,6 +48,18 @@ class ReviewSkillTests(unittest.TestCase):
             self.assertEqual(report["static_review"]["script_signals"], ["pipe-to-shell"])
             self.assertFalse(report["review_checklist"]["static_review_clear"])
 
+    def test_report_includes_environment_compatibility(self):
+        source = (
+            "---\nname: demo\ndescription: Demo workflow\n"
+            "compatibility: Requires Python 3.12 and network access\n"
+            "---\n\n# Demo\n"
+        )
+        report = build_report(source, source_file=Path("demo/SKILL.md"))
+        self.assertEqual(
+            report["frontmatter"]["fields"]["compatibility"],
+            "Requires Python 3.12 and network access",
+        )
+
     def test_catalog_report_includes_source_context(self):
         source = "---\nname: demo\ndescription: Demo workflow\n---\n"
         record = {
