@@ -39,7 +39,7 @@ python3 scripts/analyze_catalog.py
 ```
 
 Analysis is incremental: unchanged blob SHAs reuse their prior result, while
-new or changed contents are fetched and inspected. Weekly refreshes run this
+new or changed contents are fetched and inspected. Daily refreshes run this
 step before validation and publication.
 
 The Atlas build derives deterministic work categories from skill names and
@@ -48,7 +48,7 @@ navigation aids, not quality or safety endorsements.
 
 The crawler uses GitHub's public code-search API, respects rate-limit headers, retries transient network/server errors with bounded backoff, and atomically checkpoints after each size shard. It starts with a broad byte-size range and bisects only ranges that exceed GitHub's 1,000-result search cap. Tokens are read only from the environment and are never stored.
 
-The scheduled workflow rebuilds this index weekly in temporary storage and can
+The scheduled workflow rebuilds this index daily in temporary storage and can
 also be started from the Actions tab. Only a complete, validated 10,000-record
 snapshot replaces the committed files. It then opens an update pull request and
 enables auto-merge after required checks pass.
