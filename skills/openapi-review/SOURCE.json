@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:majiayu000/claude-skill-registry:skills/quality/validate-openapi-spec/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "skills/quality/validate-openapi-spec/SKILL.md",
+  "repository": "majiayu000/claude-skill-registry",
+  "sha": "0dd64d4deb1f7525e039b53f426b58ac6260092b",
+  "source_url": "https://github.com/majiayu000/claude-skill-registry/blob/64064b431a057f84fe4843699bb32f1f903ad610/skills/quality/validate-openapi-spec/SKILL.md"
+}

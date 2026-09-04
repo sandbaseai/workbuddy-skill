@@ -134,6 +134,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | Skill | Use it for | Provenance |
 |---|---|---|
 | [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
+| [OpenAPI Contract Review](skills/openapi-review/) | Validate structure, semantics, security, compatibility, and consumer usability | [MIT source](skills/openapi-review/SOURCE.json) |
 | [Code Security Review](skills/security-review/) | Trace exploitable regressions through changed code and report evidence-backed findings | [MIT source](skills/security-review/SOURCE.json) |
 | [Threat Modeling](skills/threat-model/) | Trace plausible abuse paths through real assets and boundaries into verifiable controls | [MIT source](skills/threat-model/SOURCE.json) |
 | [User Research Synthesis](skills/user-research-synthesis/) | Turn mixed research evidence into traceable insights, conflicts, gaps, and actions | [MIT source](skills/user-research-synthesis/SOURCE.json) |
@@ -183,6 +184,10 @@ skills/sandbase/
 └── references/
     ├── execution.md
     └── troubleshooting.md
+skills/openapi-review/
+├── SKILL.md
+├── SOURCE.json
+└── LICENSE
 skills/security-review/
 ├── SKILL.md
 ├── SOURCE.json
