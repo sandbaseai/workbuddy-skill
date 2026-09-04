@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [
+      "references/contract.md",
+      "references/rollout-proof.md",
+      "references/runtime.md",
+      "references/value.md"
+    ],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:Dankosik/go-service-template-rest:docs/universal-disciplines/cache-engineering/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "docs/universal-disciplines/cache-engineering/SKILL.md",
+  "repository": "Dankosik/go-service-template-rest",
+  "sha": "2ed789a40088ef3bb48ff9018a575da9f29b18a5",
+  "source_url": "https://github.com/Dankosik/go-service-template-rest/blob/841fbcb75b922e4ac683a4a33ea7c6338e664c3e/docs/universal-disciplines/cache-engineering/SKILL.md"
+}

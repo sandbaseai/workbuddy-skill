@@ -17,6 +17,20 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        cache_engineering = next(
+            item
+            for item in records
+            if item["r"] == "Dankosik/go-service-template-rest"
+            and item["p"]
+            == "docs/universal-disciplines/cache-engineering/SKILL.md"
+        )
+        self.assertEqual(cache_engineering["w"], "workbuddy-ready")
+        self.assertEqual(cache_engineering["g"], "development")
+        self.assertTrue(
+            cache_engineering["a"].endswith(
+                "/cache-engineering-workbuddy-skill.zip"
+            )
+        )
         container_image = next(
             item
             for item in records

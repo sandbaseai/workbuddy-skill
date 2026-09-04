@@ -134,6 +134,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | Skill | Use it for | Provenance |
 |---|---|---|
 | [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
+| [Cache Engineering](skills/cache-engineering/) | Prove cache value and preserve key isolation, freshness, invalidation, degradation, and rollout safety | [MIT source](skills/cache-engineering/SOURCE.json) |
 | [Container Image Engineering](skills/container-image-engineering/) | Build, secure, optimize, inspect, and diagnose Docker/OCI images | [MIT source](skills/container-image-engineering/SOURCE.json) |
 | [Kubernetes Production Operations](skills/kubernetes-operations/) | Diagnose and safely change workloads, rollouts, networking, RBAC, resources, and stateful services | [MIT source](skills/kubernetes-operations/SOURCE.json) |
 | [Terraform and OpenTofu Engineering](skills/terraform-engineering/) | Review modules, plans, state, tests, drift, upgrades, and infrastructure changes safely | [Apache-2.0 source](skills/terraform-engineering/SOURCE.json) |
@@ -195,6 +196,15 @@ skills/sandbase/
 └── references/
     ├── execution.md
     └── troubleshooting.md
+skills/cache-engineering/
+├── SKILL.md
+├── SOURCE.json
+├── LICENSE
+└── references/
+    ├── contract.md
+    ├── rollout-proof.md
+    ├── runtime.md
+    └── value.md
 skills/container-image-engineering/
 ├── SKILL.md
 ├── SOURCE.json
