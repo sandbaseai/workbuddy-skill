@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.20.0] - 2026-09-05
+
+- Added the MIT Incident Response and Triage Skill with incident command, evidence hygiene, authorization boundaries, reversible containment, recovery verification, and blameless follow-up.
+
 ## [0.19.0] - 2026-09-05
 
 - Added the MIT Prioritization Matrix Skill with framework selection, evidence-linked inputs, comparable scales, dependency handling, visible formulas, and sensitivity analysis.
