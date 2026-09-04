@@ -1,0 +1,36 @@
+name: Share a WorkBuddy workflow
+description: Show how a reviewed or adapted Skill helps with a real task
+title: "[Showcase]: "
+labels: [showcase]
+body:
+  - type: markdown
+    attributes:
+      value: Please remove secrets, private prompts, customer data, and proprietary Skill content.
+  - type: input
+    id: task
+    attributes:
+      label: Task solved
+      description: What real job did WorkBuddy help you complete?
+      placeholder: Extract structured data from a set of invoices
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Workflow
+      description: Which Skill or SandBase capability did you use, and what did you change?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What worked, and what limitations should others know about?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source link
+      description: Link to the public Skill or repository when applicable.
+      placeholder: https://github.com/owner/repository
