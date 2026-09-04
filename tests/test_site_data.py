@@ -17,6 +17,20 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        playwright_components = next(
+            item
+            for item in records
+            if item["r"] == "microsoft/playwright"
+            and item["p"]
+            == "packages/playwright-core/src/tools/skills/playwright-component-testing/SKILL.md"
+        )
+        self.assertEqual(playwright_components["w"], "workbuddy-ready")
+        self.assertEqual(playwright_components["g"], "development")
+        self.assertTrue(
+            playwright_components["a"].endswith(
+                "/playwright-component-testing-workbuddy-skill.zip"
+            )
+        )
         agent_evaluation = next(
             item
             for item in records

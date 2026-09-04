@@ -134,6 +134,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | Skill | Use it for | Provenance |
 |---|---|---|
 | [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
+| [Playwright Component Testing](skills/playwright-component-testing/) | Test isolated React and Vue components with story galleries, observable state, stable locators, traces, and CI evidence | [Apache-2.0 source](skills/playwright-component-testing/SOURCE.json) |
 | [AI Agent Evaluation Engineering](skills/agent-evaluation-engineering/) | Build reproducible capability, trust, safety, trajectory, regression, latency, and cost evaluations | [MIT source](skills/agent-evaluation-engineering/SOURCE.json) |
 | [Product Analytics](skills/product-analytics/) | Define event taxonomies, funnels, cohorts, retention, experiments, privacy boundaries, and evidence-backed product decisions | [MIT source](skills/product-analytics/SOURCE.json) |
 | [dbt Patterns](skills/dbt-patterns/) | Design layered dbt models, contracts, tests, incremental workflows, lineage, and safe production delivery | [MIT source](skills/dbt-patterns/SOURCE.json) |
@@ -210,6 +211,10 @@ skills/rag-evaluation/
 ├── SOURCE.json
 └── LICENSE
 skills/agent-evaluation-engineering/
+├── SKILL.md
+├── SOURCE.json
+└── LICENSE
+skills/playwright-component-testing/
 ├── SKILL.md
 ├── SOURCE.json
 └── LICENSE
