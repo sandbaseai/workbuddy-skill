@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:aws-samples/sample-aws-resilience-skill:aws-resilience-modeling/SKILL.md",
+    "skill": "aws-resilience-assessment",
+    "skill_path": "skills/aws-resilience-assessment",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/aws-resilience-assessment-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:DonArtkins/griot:infra/.agents/skills/github-actions/SKILL.md",
     "skill": "github-actions-engineering",
     "skill_path": "skills/github-actions-engineering",

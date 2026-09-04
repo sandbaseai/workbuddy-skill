@@ -2,6 +2,11 @@
 
 All notable changes to this project are documented here.
 
+## [0.42.0] - 2026-09-05
+
+- Curated the existing MIT-0 AWS resilience source from `aws-samples/sample-aws-resilience-skill` without inflating Atlas discovery counts.
+- Added the AWS Resilience Assessment Skill with critical-journey dependency maps, shared-fate and failure-mode analysis, target-versus-evidence RTO/RPO review, restore and failover proof, cost-aware risk prioritization, read-only inspection boundaries, and safely bounded resilience experiments.
+
 ## [0.41.0] - 2026-09-05
 
 - Curated the existing MIT GitHub Actions source from `DonArtkins/griot` without inflating Atlas discovery counts.

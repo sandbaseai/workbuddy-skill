@@ -134,6 +134,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | Skill | Use it for | Provenance |
 |---|---|---|
 | [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
+| [AWS Resilience Assessment](skills/aws-resilience-assessment/) | Map failure paths, validate RTO/RPO and recovery evidence, prioritize risks, and design safe experiments | [MIT-0 source](skills/aws-resilience-assessment/SOURCE.json) |
 | [GitHub Actions Engineering](skills/github-actions-engineering/) | Build, secure, optimize, and diagnose CI, releases, reusable workflows, artifacts, and deployments | [MIT source](skills/github-actions-engineering/SOURCE.json) |
 | [Kafka Event Streaming Engineering](skills/kafka-engineering/) | Design and diagnose event contracts, delivery semantics, consumers, schemas, replay, and production changes | [MIT source](skills/kafka-engineering/SOURCE.json) |
 | [Cache Engineering](skills/cache-engineering/) | Prove cache value and preserve key isolation, freshness, invalidation, degradation, and rollout safety | [MIT source](skills/cache-engineering/SOURCE.json) |
@@ -198,6 +199,10 @@ skills/sandbase/
 └── references/
     ├── execution.md
     └── troubleshooting.md
+skills/aws-resilience-assessment/
+├── SKILL.md
+├── SOURCE.json
+└── LICENSE
 skills/github-actions-engineering/
 ├── SKILL.md
 ├── SOURCE.json
