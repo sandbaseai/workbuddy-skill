@@ -17,6 +17,15 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        pre_mortem = next(
+            item
+            for item in records
+            if item["r"] == "charly-vibes/wai"
+            and item["p"] == ".claude/skills/pre-mortem/SKILL.md"
+        )
+        self.assertEqual(pre_mortem["w"], "workbuddy-ready")
+        self.assertEqual(pre_mortem["g"], "business")
+        self.assertTrue(pre_mortem["a"].endswith("/pre-mortem-workbuddy-skill.zip"))
         architecture = next(
             item
             for item in records
