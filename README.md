@@ -9,6 +9,22 @@ Discover public Agent Skills, assess them before installation, and adapt high-va
 
 [中文](#中文) · [English](#english)
 
+## Start here · 从这里开始
+
+1. **Search · 搜索：** Open the [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) or [中文目录](https://sandbaseai.github.io/workbuddy-skill/zh-CN.html). Results are deduplicated and ranked by WorkBuddy compatibility by default.
+2. **Inspect · 审核：** Open the immutable GitHub source and review its license, instructions, bundled files, network behavior, and permissions. Static signals are triage aids, not guarantees.
+3. **Adapt · 适配：** Copy the catalog ID and follow the [English](docs/adapting-skills.md) or [中文](docs/adapting-skills.zh-CN.md) guide to create a reviewable WorkBuddy ZIP.
+
+Try local search in about a minute, without installing dependencies:
+
+```bash
+git clone https://github.com/sandbaseai/workbuddy-skill.git
+cd workbuddy-skill
+python3 scripts/query_catalog.py research --limit 5
+```
+
+If the Atlas or adapter saves you time, [star the repository](https://github.com/sandbaseai/workbuddy-skill) so other WorkBuddy users can find it.
+
 ## 中文
 
 这是一个面向 WorkBuddy 的开放 Skill 索引与适配仓库，目标是持续索引不少于 10,000 个公开 Skills，并把其中高价值条目经过来源、许可证、安全和兼容性检查后适配给 WorkBuddy。仓库首个精选成品是 SandBase Skill。
