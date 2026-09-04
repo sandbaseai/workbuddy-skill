@@ -22,7 +22,7 @@ DEFAULT_OUT = Path("catalog/skills.jsonl")
 USER_AGENT = "sandbaseai-workbuddy-skill-catalog/0.2"
 
 
-def request_json(query: str, page: int, token: str) -> tuple[dict, dict]:
+def request_json(query: str, page: int, token: str, max_retries: int = 3) -> tuple[dict, dict]:
     params = urlencode({"q": query, "per_page": 100, "page": page})
     headers = {
         "Accept": "application/vnd.github+json",
@@ -32,8 +32,23 @@ def request_json(query: str, page: int, token: str) -> tuple[dict, dict]:
     if token:
         headers["Authorization"] = f"Bearer {token}"
     request = Request(f"{API}?{params}", headers=headers)
-    with urlopen(request, timeout=45) as response:
-        return json.load(response), dict(response.headers)
+    for attempt in range(max_retries + 1):
+        try:
+            with urlopen(request, timeout=45) as response:
+                return json.load(response), dict(response.headers)
+        except HTTPError as exc:
+            if exc.code not in (500, 502, 503, 504) or attempt >= max_retries:
+                raise
+            retry_after = int(exc.headers.get("Retry-After", "0"))
+            delay = max(retry_after, 2**attempt)
+            print(f"GitHub returned {exc.code}; retrying in {delay}s", file=sys.stderr)
+            time.sleep(delay)
+        except URLError:
+            if attempt >= max_retries:
+                raise
+            delay = 2**attempt
+            print(f"GitHub connection failed; retrying in {delay}s", file=sys.stderr)
+            time.sleep(delay)
 
 
 def wait_for_rate_limit(headers: dict) -> None:
@@ -45,13 +60,19 @@ def wait_for_rate_limit(headers: dict) -> None:
     time.sleep(delay)
 
 
-def search_shards(max_bytes: int) -> list[str]:
-    # Exact sizes avoid GitHub's 1,000-result cap swallowing an entire range.
-    # Common sizes can still exceed the cap; the catalog records this in stats.
-    likely = list(range(1_000, max_bytes + 1))
-    small = list(range(999, 0, -1))
-    sizes = likely + small
-    return [f"filename:SKILL.md size:{size}..{size}" for size in sizes]
+def search_shards(max_bytes: int) -> list[tuple[int, int]]:
+    """Return non-overlapping size ranges that can be searched without the cap.
+
+    GitHub truncates code-search results at 1,000 matches. Start with broad
+    ranges, then split only ranges that are actually capped. This makes a
+    refresh proportional to the distribution of files instead of issuing one
+    request per possible byte size.
+    """
+    return [(1, max_bytes)]
+
+
+def query_for_range(lower: int, upper: int) -> str:
+    return f"filename:SKILL.md size:{lower}..{upper}"
 
 
 def normalize(item: dict, query: str) -> dict:
@@ -115,10 +136,14 @@ def main() -> int:
     capped_queries = 0
 
     try:
-        for query in search_shards(args.max_bytes):
+        pending = search_shards(args.max_bytes)
+        while pending:
+            lower, upper = pending.pop()
+            query = query_for_range(lower, upper)
             if len(rows) >= args.target:
                 break
             page = 1
+            headers = {}
             while page <= 10 and len(rows) < args.target:
                 try:
                     payload, headers = request_json(query, page, token)
@@ -132,7 +157,12 @@ def main() -> int:
                     raise
                 requests += 1
                 total = int(payload.get("total_count", 0))
-                capped_queries += int(total > 1_000 and page == 1)
+                if total > 1_000 and page == 1:
+                    capped_queries += 1
+                    if lower < upper:
+                        middle = (lower + upper) // 2
+                        pending.extend(((lower, middle), (middle + 1, upper)))
+                        break
                 items = payload.get("items", [])
                 for item in items:
                     row = normalize(item, query)
@@ -147,6 +177,9 @@ def main() -> int:
                 if requests % args.checkpoint_every == 0:
                     write_atomic(args.output, rows)
             wait_for_rate_limit(headers)
+            # Persist after every completed shard so a long refresh loses at
+            # most one shard when interrupted.
+            write_atomic(args.output, rows)
     except (KeyboardInterrupt, HTTPError, URLError) as exc:
         write_atomic(args.output, rows)
         print(f"crawl paused after {len(rows)} records: {exc}", file=sys.stderr)
