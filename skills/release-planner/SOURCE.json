@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:GustavoGutierrez/engineering-skills:skills/release-planner/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/release-planner/SKILL.md",
+  "repository": "GustavoGutierrez/engineering-skills",
+  "sha": "0eddce4c26ed864aa381263b52d21899f6a209d9",
+  "source_url": "https://github.com/GustavoGutierrez/engineering-skills/blob/55a944059777e7c151fd2ffa0b5456acac79519a/skills/release-planner/SKILL.md"
+}

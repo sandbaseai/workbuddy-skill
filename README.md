@@ -134,6 +134,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | Skill | Use it for | Provenance |
 |---|---|---|
 | [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
+| [Release Planner](skills/release-planner/) | Plan deployment order, migrations, rollout waves, risk gates, rollback, observability, and release communication | [MIT source](skills/release-planner/SOURCE.json) |
 | [Architecture Decision](skills/architecture-decision/) | Make evidence-backed architecture choices with alternatives, trade-offs, fitness functions, migration, and review triggers | [MIT source](skills/architecture-decision/SOURCE.json) |
 | [Performance Engineering](skills/performance-engineering/) | Measure and improve latency, capacity, CPU/memory/I/O, responsiveness, cost, and regressions with controlled evidence | [MIT source](skills/performance-engineering/SOURCE.json) |
 | [Data Governance](skills/data-governance/) | Govern cross-system data with contracts, ownership, consent, identity, lineage, quality monitoring, safe fallbacks, and change management | [MIT source](skills/data-governance/SOURCE.json) |

@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:GustavoGutierrez/engineering-skills:skills/release-planner/SKILL.md",
+    "skill": "release-planner",
+    "skill_path": "skills/release-planner",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/release-planner-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:placerda/agentic-engineering:.github/skills/architecture-decision/SKILL.md",
     "skill": "architecture-decision",
     "skill_path": "skills/architecture-decision",
