@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:charly-vibes/wai:.claude/skills/pre-mortem/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": ".claude/skills/pre-mortem/SKILL.md",
+  "repository": "charly-vibes/wai",
+  "sha": "2150dcdc826fce1c9abad24426a3b0298c64edfd",
+  "source_url": "https://github.com/charly-vibes/wai/blob/39eba3528b05d9f36df4ebdcc085f63ee88e848d/.claude/skills/pre-mortem/SKILL.md"
+}

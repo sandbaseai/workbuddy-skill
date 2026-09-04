@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.22.0] - 2026-09-05
+
+- Added the MIT Project Pre-mortem Skill with evidence-constrained failure paths, cross-functional risk lenses, measurable warning signals, owned mitigations, residual-risk acceptance, and review triggers.
+
 ## [0.21.0] - 2026-09-05
 
 - Added the MIT Architecture Decision Record Skill with measurable decision drivers, fair option comparison, evidence confidence, reversible adoption, fitness functions, and explicit review triggers.
