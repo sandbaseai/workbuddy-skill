@@ -67,10 +67,22 @@
               <input id="search" type="search" autocomplete="off" placeholder="试试：research、video、spreadsheet…">
             </div>
             <div class="field"><label for="category">工作类别</label><select id="category"><option value="all">全部类别</option><option value="business">商业</option><option value="content">内容</option><option value="data">数据</option><option value="design">设计</option><option value="development">开发</option><option value="media">媒体</option><option value="productivity">效率</option><option value="research">研究</option><option value="security">安全</option><option value="other">其他</option></select></div>
-            <div class="field"><label for="compatibility">WorkBuddy 兼容性</label><select id="compatibility"><option value="all">全部状态</option><option value="adaptable">可改造</option><option value="needs-review">需要审核</option></select></div>
+            <div class="field"><label for="compatibility">WorkBuddy 兼容性</label><select id="compatibility"><option value="all">全部状态</option><option value="workbuddy-ready">WorkBuddy 就绪</option><option value="adaptable">可改造</option><option value="needs-review">需要审核</option></select></div>
             <div class="field"><label for="security">静态安全信号</label><select id="security"><option value="all">全部状态</option><option value="no-static-flags">无静态标记</option><option value="flagged">标记待审核</option><option value="unscanned">未扫描</option></select></div>
           </div>
-          <span id="result-count" aria-live="polite">正在加载目录…</span>
+          <div class="result-controls">
+            <div class="field sort-field">
+              <label for="sort">结果排序</label>
+              <select id="sort">
+                <option value="score">兼容分数</option>
+                <option value="copies">最多副本</option>
+                <option value="name">名称</option>
+                <option value="source">来源顺序</option>
+              </select>
+            </div>
+            <label class="check-field" for="unique"><input id="unique" type="checkbox" checked> 仅显示唯一内容</label>
+            <span id="result-count" aria-live="polite">正在加载目录…</span>
+          </div>
         </div>
         <div id="error" class="message error" hidden>目录加载失败。请打开 GitHub 源码，或稍后再试。</div>
         <div id="empty" class="message" hidden>没有匹配的技能。试试更短的能力名称或仓库所有者。</div>

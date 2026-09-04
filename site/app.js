@@ -4,6 +4,8 @@ const count = document.querySelector("#result-count");
 const compatibility = document.querySelector("#compatibility");
 const category = document.querySelector("#category");
 const security = document.querySelector("#security");
+const sort = document.querySelector("#sort");
+const unique = document.querySelector("#unique");
 const empty = document.querySelector("#empty");
 const error = document.querySelector("#error");
 const more = document.querySelector("#more");
@@ -20,6 +22,7 @@ const FILTERS = {
   category: new Set([...category.options].map((option) => option.value)),
   compatibility: new Set([...compatibility.options].map((option) => option.value)),
   security: new Set([...security.options].map((option) => option.value)),
+  sort: new Set([...sort.options].map((option) => option.value)),
 };
 
 function escapeHtml(value) {
@@ -35,10 +38,11 @@ function catalogId(skill) {
 function restoreUrlState() {
   const params = new URLSearchParams(location.search);
   input.value = params.get("q") || "";
-  for (const [name, control] of Object.entries({ category, compatibility, security })) {
+  for (const [name, control] of Object.entries({ category, compatibility, security, sort })) {
     const value = params.get(name);
     if (value && FILTERS[name].has(value)) control.value = value;
   }
+  unique.checked = params.get("duplicates") !== "all";
 }
 
 function syncUrlState() {
@@ -47,6 +51,8 @@ function syncUrlState() {
   for (const [name, control] of Object.entries({ category, compatibility, security })) {
     if (control.value !== "all") params.set(name, control.value);
   }
+  if (sort.value !== "score") params.set("sort", sort.value);
+  if (!unique.checked) params.set("duplicates", "all");
   const query = params.toString();
   history.replaceState(null, "", `${location.pathname}${query ? `?${query}` : ""}${location.hash}`);
 }
@@ -107,6 +113,22 @@ function search() {
     const securityMatch = security.value === "all" || skill.k === security.value;
     return textMatch && categoryMatch && compatibilityMatch && securityMatch;
   });
+  if (unique.checked) {
+    const seen = new Set();
+    filtered = filtered.filter((skill) => {
+      if (seen.has(skill.s)) return false;
+      seen.add(skill.s);
+      return true;
+    });
+  }
+  const byName = (left, right) => left.n.localeCompare(right.n) || left.r.localeCompare(right.r);
+  if (sort.value === "score") {
+    filtered.sort((left, right) => (right.q ?? -1) - (left.q ?? -1) || right.c - left.c || byName(left, right));
+  } else if (sort.value === "copies") {
+    filtered.sort((left, right) => right.c - left.c || (right.q ?? -1) - (left.q ?? -1) || byName(left, right));
+  } else if (sort.value === "name") {
+    filtered.sort(byName);
+  }
   syncUrlState();
   render();
 }
@@ -115,6 +137,8 @@ input.addEventListener("input", search);
 category.addEventListener("change", search);
 compatibility.addEventListener("change", search);
 security.addEventListener("change", search);
+sort.addEventListener("change", search);
+unique.addEventListener("change", search);
 more.addEventListener("click", () => render(false));
 results.addEventListener("click", (event) => {
   const button = event.target.closest(".copy-id");
