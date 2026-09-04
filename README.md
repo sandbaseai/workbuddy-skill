@@ -140,6 +140,11 @@ Only metadata is committed by default. Third-party content remains at its origin
 
 Search results are provenance links, not installation approvals. For machine-readable output, add `--json`; combine terms to require all words to match repository names, paths, or inferred skill names.
 
+To turn a reviewed entry into a WorkBuddy-compatible ZIP, use
+`scripts/adapt_skill.py`. It normalizes frontmatter, keeps immutable provenance,
+requires a source-license declaration, and refuses flagged or incomplete input
+by default. See [the adaptation guide](docs/adapting-skills.md).
+
 ## Compatibility
 
 | Environment | Status | Notes |
