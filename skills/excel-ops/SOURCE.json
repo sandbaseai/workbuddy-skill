@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:xuthreekid/clawchain:backend/data/skills/excel-ops/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "backend/data/skills/excel-ops/SKILL.md",
+  "repository": "xuthreekid/clawchain",
+  "sha": "d5e9a8bfbeea602c9c866fa1a7bde8a648eaf7ea",
+  "source_url": "https://github.com/xuthreekid/clawchain/blob/68b26b0204e0e951a866e8ce5e5bb256c122ff06/backend/data/skills/excel-ops/SKILL.md"
+}

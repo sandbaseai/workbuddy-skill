@@ -112,6 +112,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | Skill | Use it for | Provenance |
 |---|---|---|
 | [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
+| [Spreadsheet Operations](skills/excel-ops/) | Inspect, clean, analyze, convert, and create Excel/CSV files | [MIT source](skills/excel-ops/SOURCE.json) |
 | [Systematic Debugging](skills/systematic-debugging/) | Reproduce failures, trace root causes, and verify minimal fixes | [Apache-2.0 source](skills/systematic-debugging/SOURCE.json) |
 
 Each curated directory is installable source: `SKILL.md` contains the WorkBuddy instructions, referenced resources are kept beside it, and externally adapted Skills include a machine-readable `SOURCE.json` plus their source license. Tagged releases publish one ready-to-upload ZIP per curated Skill.
@@ -131,6 +132,10 @@ skills/sandbase/
 └── references/
     ├── execution.md
     └── troubleshooting.md
+skills/excel-ops/
+├── SKILL.md
+├── SOURCE.json
+└── LICENSE
 skills/systematic-debugging/
 ├── SKILL.md
 ├── SOURCE.json
