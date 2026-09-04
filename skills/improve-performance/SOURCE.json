@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:joaocarloscruz/skills:library/improve-performance/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "library/improve-performance/SKILL.md",
+  "repository": "joaocarloscruz/skills",
+  "sha": "a2eee45ccf52b3457c28b8bf519c6f2a3234df7f",
+  "source_url": "https://github.com/joaocarloscruz/skills/blob/f0c46f8080864a1c877c749502ae3889d7668f99/library/improve-performance/SKILL.md"
+}

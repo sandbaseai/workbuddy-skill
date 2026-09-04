@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.12.0] - 2026-09-05
+
+- Added the MIT Performance Improvement Skill with reproducible baselines, profiling evidence, controlled experiments, production safeguards, and regression protection.
+
 ## [0.11.0] - 2026-09-05
 
 - Added the MIT Work Handoff Skill with live-state verification, executable restart steps, and privacy-safe context preservation.

@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:joaocarloscruz/skills:library/improve-performance/SKILL.md",
+    "skill": "improve-performance",
+    "skill_path": "skills/improve-performance",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/improve-performance-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:quarcs-lab/project20XXy:.claude/skills/handoff/SKILL.md",
     "skill": "handoff",
     "skill_path": "skills/handoff",
