@@ -17,6 +17,17 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        terraform = next(
+            item
+            for item in records
+            if item["r"] == "antonbabenko/terraform-skill"
+            and item["p"] == "skills/terraform-skill/SKILL.md"
+        )
+        self.assertEqual(terraform["w"], "workbuddy-ready")
+        self.assertEqual(terraform["g"], "development")
+        self.assertTrue(
+            terraform["a"].endswith("/terraform-engineering-workbuddy-skill.zip")
+        )
         postgres = next(
             item
             for item in records

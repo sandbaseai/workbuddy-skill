@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:antonbabenko/terraform-skill:skills/terraform-skill/SKILL.md",
+    "skill": "terraform-engineering",
+    "skill_path": "skills/terraform-engineering",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/terraform-engineering-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:supabase/agent-skills:skills/supabase-postgres-best-practices/SKILL.md",
     "skill": "postgres-engineering",
     "skill_path": "skills/postgres-engineering",

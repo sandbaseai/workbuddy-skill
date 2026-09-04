@@ -2,6 +2,12 @@
 
 All notable changes to this project are documented here.
 
+## [0.36.0] - 2026-09-05
+
+- Added Anton Babenko's official Apache-2.0 Terraform Skill to the Atlas, increasing it to 10,902 indexed paths across 5,632 repositories.
+- Added the Terraform and OpenTofu Engineering Skill with execution-context discovery, stable resource identity, reviewed plan artifacts, state and drift controls, layered testing, version-aware upgrades, and explicit infrastructure mutation boundaries.
+- Fixed adapter resource discovery so Markdown heading fragments resolve to the referenced file instead of producing false missing-resource failures.
+
 ## [0.35.0] - 2026-09-05
 
 - Added the official MIT Supabase PostgreSQL source to the Atlas, increasing it to 10,801 indexed paths across 5,558 repositories.
