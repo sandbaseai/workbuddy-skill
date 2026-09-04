@@ -44,8 +44,12 @@ jobs:
           fi
           git commit -m "chore: refresh public skill catalog"
           git push --force-with-lease origin "$branch"
-          gh pr create --base main --head "$branch" \
-            --title "chore: refresh public skill catalog" \
-            --body "Automated provenance-only catalog refresh. Validation passed in this workflow." \
-            || true
-          gh pr merge "$branch" --auto --squash --delete-branch || true
+          pr_url=$(gh pr list --base main --head "$branch" --state open \
+            --json url --jq '.[0].url')
+          if [ -z "$pr_url" ]; then
+            pr_url=$(gh pr create --base main --head "$branch" \
+              --title "chore: refresh public skill catalog" \
+              --body "Automated provenance-only catalog refresh. Validation passed in this workflow.")
+          fi
+          echo "Enabling auto-merge for $pr_url"
+          gh pr merge "$pr_url" --auto --squash --delete-branch
