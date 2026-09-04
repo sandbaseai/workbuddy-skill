@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.10.0] - 2026-09-05
+
+- Added the MIT Test Strategy Design Skill with risk traceability, explicit test oracles, execution gates, ownership, and residual-risk reporting.
+
 ## [0.9.0] - 2026-09-05
 
 - Added the MIT Accessibility Review Skill with evidence-based severity, manual verification, and honest conformance boundaries.

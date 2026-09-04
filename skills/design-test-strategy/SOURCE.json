@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:joaocarloscruz/skills:library/design-test-strategy/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "library/design-test-strategy/SKILL.md",
+  "repository": "joaocarloscruz/skills",
+  "sha": "a46f0e98e9dbf8f89a06dd5670c1fe515720544f",
+  "source_url": "https://github.com/joaocarloscruz/skills/blob/f0c46f8080864a1c877c749502ae3889d7668f99/library/design-test-strategy/SKILL.md"
+}

@@ -58,6 +58,17 @@ class SiteDataTests(unittest.TestCase):
         self.assertTrue(
             accessibility["a"].endswith("/review-accessibility-workbuddy-skill.zip")
         )
+        test_strategy = next(
+            item
+            for item in records
+            if item["r"] == "joaocarloscruz/skills"
+            and item["p"] == "library/design-test-strategy/SKILL.md"
+        )
+        self.assertEqual(test_strategy["w"], "workbuddy-ready")
+        self.assertEqual(test_strategy["g"], "development")
+        self.assertTrue(
+            test_strategy["a"].endswith("/design-test-strategy-workbuddy-skill.zip")
+        )
         metadata = json.loads(
             (ROOT / "site" / "catalog-meta.json").read_text(encoding="utf-8")
         )

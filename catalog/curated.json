@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:joaocarloscruz/skills:library/design-test-strategy/SKILL.md",
+    "skill": "design-test-strategy",
+    "skill_path": "skills/design-test-strategy",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/design-test-strategy-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:joaocarloscruz/skills:library/review-accessibility/SKILL.md",
     "skill": "review-accessibility",
     "skill_path": "skills/review-accessibility",
