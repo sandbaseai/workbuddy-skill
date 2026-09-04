@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:joaocarloscruz/skills:library/release-software/SKILL.md",
+    "skill": "release-software",
+    "skill_path": "skills/release-software",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/release-software-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:rainoff/skill-gauge:exercises/fixtures/meeting-notes/skill/meeting-notes/SKILL.md",
     "skill": "meeting-notes",
     "skill_path": "skills/meeting-notes",
