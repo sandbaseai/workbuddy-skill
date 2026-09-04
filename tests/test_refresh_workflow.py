@@ -31,6 +31,13 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("rebuilds this index daily", catalog_docs)
         self.assertEqual(sitemap.count("<changefreq>daily</changefreq>"), 2)
 
+    def test_concurrent_publish_reconciles_snapshots_before_retrying(self):
+        workflow = (ROOT / ".github/workflows/refresh-catalog.yml").read_text(encoding="utf-8")
+        self.assertIn("git rebase --abort", workflow)
+        self.assertIn("rows[row[\"id\"]] = row", workflow)
+        self.assertIn("reconcile concurrent catalog refresh", workflow)
+        self.assertIn("scripts/validate_catalog.py --minimum 10000 --require-analysis", workflow)
+
 
 if __name__ == "__main__":
     unittest.main()
