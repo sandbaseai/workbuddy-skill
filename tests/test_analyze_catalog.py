@@ -1,5 +1,6 @@
 import sys
 from pathlib import Path
+import subprocess
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -9,6 +10,15 @@ from analyze_catalog import analyze_text  # noqa: E402
 
 
 class AnalyzeCatalogTests(unittest.TestCase):
+    def test_refresh_option_is_available(self):
+        result = subprocess.run(
+            [sys.executable, str(ROOT / "scripts" / "analyze_catalog.py"), "--help"],
+            capture_output=True,
+            text=True,
+            check=True,
+        )
+        self.assertIn("--refresh", result.stdout)
+
     def test_flags_common_prompt_injection_language(self):
         result = analyze_text(
             "---\nname: demo\ndescription: Demo\n---\n\n"
