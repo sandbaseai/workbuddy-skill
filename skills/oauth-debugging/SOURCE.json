@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:ssrjkk/claude-skills:.claude/skills/security/oauth-debugging/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": ".claude/skills/security/oauth-debugging/SKILL.md",
+  "repository": "ssrjkk/claude-skills",
+  "sha": "d76d55b116b1204b8e7c605932d06d866a00164e",
+  "source_url": "https://github.com/ssrjkk/claude-skills/blob/e1fe9f4b8b62cbb6be06d22940974a7ca87a70b9/.claude/skills/security/oauth-debugging/SKILL.md"
+}

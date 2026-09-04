@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.34.0] - 2026-09-05
+
+- Added the MIT OAuth and OIDC Troubleshooting Skill with protocol-stage reconstruction, secret-safe evidence handling, redirect and session diagnosis, PKCE and token validation, authorization boundaries, falsifiable hypotheses, and security regression tests.
+
 ## [0.33.0] - 2026-09-05
 
 - Added the MIT GraphQL API Design and Review Skill with client-grounded schemas, resolver authorization, robust pagination and errors, operation-cost controls, N+1 verification, subscription boundaries, and evidence-based schema evolution.

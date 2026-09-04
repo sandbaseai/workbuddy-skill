@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:ssrjkk/claude-skills:.claude/skills/security/oauth-debugging/SKILL.md",
+    "skill": "oauth-debugging",
+    "skill_path": "skills/oauth-debugging",
+    "category": "security",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/oauth-debugging-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:FutureJJ/claude-skills:skills/graphql-expert/SKILL.md",
     "skill": "graphql-expert",
     "skill_path": "skills/graphql-expert",
