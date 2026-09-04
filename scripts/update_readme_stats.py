@@ -17,6 +17,7 @@ def replace_between(text: str, start: str, end: str, replacement: str) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--readme", type=Path, default=Path("README.md"))
+    parser.add_argument("--catalog-readme", type=Path, default=Path("catalog/README.md"))
     parser.add_argument("--stats", type=Path, default=Path("catalog/stats.json"))
     parser.add_argument("--analysis", type=Path, default=Path("catalog/analysis-stats.json"))
     args = parser.parse_args()
@@ -47,6 +48,19 @@ def main() -> int:
     text = replace_between(text, "<!-- CATALOG-METRICS:START -->", "<!-- CATALOG-METRICS:END -->", metrics)
     text = replace_between(text, "<!-- CATALOG-ANALYSIS:START -->", "<!-- CATALOG-ANALYSIS:END -->", analysis_text)
     args.readme.write_text(text, encoding="utf-8")
+    catalog_metrics = "\n".join([
+        f"- {records} indexed GitHub paths",
+        f"- {shas} unique Git blob SHAs",
+        f"- {repositories} source repositories",
+    ])
+    catalog_text = args.catalog_readme.read_text(encoding="utf-8")
+    catalog_text = replace_between(
+        catalog_text,
+        "<!-- CATALOG-SNAPSHOT:START -->",
+        "<!-- CATALOG-SNAPSHOT:END -->",
+        catalog_metrics,
+    )
+    args.catalog_readme.write_text(catalog_text, encoding="utf-8")
     return 0
 
 

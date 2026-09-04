@@ -56,7 +56,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git switch -C "$branch"
-          git add README.md catalog/skills.jsonl catalog/stats.json catalog/analysis-stats.json
+          git add README.md catalog/README.md catalog/skills.jsonl catalog/stats.json catalog/analysis-stats.json
           if git diff --cached --quiet; then
             echo "Catalog is already current"
             exit 0
