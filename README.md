@@ -1,6 +1,6 @@
-# SandBase for WorkBuddy
+# WorkBuddy Skill Hub
 
-Give WorkBuddy access to the right SandBase model or API without memorizing provider names, request schemas, or polling details.
+Discover public Agent Skills, assess them before installation, and adapt high-value workflows for WorkBuddy. The repository also ships a production-ready SandBase integration as its first curated skill.
 
 [![Validate skill](https://github.com/sandbaseai/workbuddy-skill/actions/workflows/validate.yml/badge.svg)](https://github.com/sandbaseai/workbuddy-skill/actions/workflows/validate.yml)
 [![Latest release](https://img.shields.io/github/v/release/sandbaseai/workbuddy-skill)](https://github.com/sandbaseai/workbuddy-skill/releases/latest)
@@ -11,7 +11,9 @@ Give WorkBuddy access to the right SandBase model or API without memorizing prov
 
 ## 中文
 
-这是一个面向 WorkBuddy 的 SandBase Skill。它把“找能力 → 查看参数与价格 → 执行 → 获取异步结果”固化成可靠工作流，适合搜索、数据提取、多模态生成、嵌入和模型调用等任务。
+这是一个面向 WorkBuddy 的开放 Skill 索引与适配仓库，目标是持续索引不少于 10,000 个公开 Skills，并把其中高价值条目经过来源、许可证、安全和兼容性检查后适配给 WorkBuddy。仓库首个精选成品是 SandBase Skill。
+
+> **重要：** 被索引不代表安全或推荐。目录默认只保存 GitHub 元数据与原始链接，不执行第三方脚本；安装前必须检查许可证、指令、网络行为和权限。
 
 ```text
 你：找一个适合中文发票 OCR 的 API，比较价格后处理这些图片。
@@ -102,7 +104,20 @@ skills/sandbase/
     ├── execution.md
     └── troubleshooting.md
 scripts/validate_skill.py
+scripts/crawl_github_skills.py
+catalog/skills.jsonl
 ```
+
+## 10,000+ Skill catalog
+
+The catalog is generated from public GitHub `SKILL.md` results with resumable, rate-limit-aware collection. Every record keeps its repository, path, blob SHA, source links, WorkBuddy review state, and security review state. See [catalog documentation](catalog/README.md).
+
+```bash
+GH_TOKEN="..." python3 scripts/crawl_github_skills.py --target 10000
+python3 scripts/validate_catalog.py --minimum 10000
+```
+
+Only metadata is committed by default. Third-party content remains at its original source until a maintainer deliberately reviews and adapts it.
 
 ## Compatibility
 
