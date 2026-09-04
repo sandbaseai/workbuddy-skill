@@ -17,6 +17,16 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        threat_model = next(
+            item
+            for item in records
+            if item["r"] == "phamhungptithcm/ai-agent-kit"
+            and item["p"]
+            == "assets/enterprise-ai-agent-os/.ai/skills-src/threat-model/SKILL.md"
+        )
+        self.assertEqual(threat_model["w"], "workbuddy-ready")
+        self.assertEqual(threat_model["g"], "security")
+        self.assertTrue(threat_model["a"].endswith("/threat-model-workbuddy-skill.zip"))
         synthesis = next(
             item
             for item in records

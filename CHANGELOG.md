@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.26.0] - 2026-09-05
+
+- Added the MIT Threat Modeling Skill with evidence-grounded boundaries, attacker capabilities, end-to-end abuse paths, control validation, residual-risk ownership, and explicit live-system safety limits.
+
 ## [0.25.0] - 2026-09-05
 
 - Added the MIT User Research Synthesis Skill with source inventories, privacy controls, atomic evidence coding, contradiction analysis, confidence rationale, decision-linked gaps, and auditable insight traceability.

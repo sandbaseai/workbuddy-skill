@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:phamhungptithcm/ai-agent-kit:assets/enterprise-ai-agent-os/.ai/skills-src/threat-model/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "assets/enterprise-ai-agent-os/.ai/skills-src/threat-model/SKILL.md",
+  "repository": "phamhungptithcm/ai-agent-kit",
+  "sha": "7dc24da8222f3be4779f1bb8b2c6992309fb3d08",
+  "source_url": "https://github.com/phamhungptithcm/ai-agent-kit/blob/ddf29f374e4a1f77c2c004b33ee4701bce8b6a07/assets/enterprise-ai-agent-os/.ai/skills-src/threat-model/SKILL.md"
+}
