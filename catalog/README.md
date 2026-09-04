@@ -21,9 +21,8 @@ GH_TOKEN="..." python3 scripts/crawl_github_skills.py --target 10000
 python3 scripts/validate_catalog.py --minimum 10000
 ```
 
-The crawler uses GitHub's public code-search API, respects rate-limit headers, checkpoints progress, and atomically replaces the index. Tokens are read only from the environment and are never stored.
+The crawler uses GitHub's public code-search API, respects rate-limit headers, retries transient network/server errors with bounded backoff, and atomically checkpoints after each size shard. It starts with a broad byte-size range and bisects only ranges that exceed GitHub's 1,000-result search cap. Tokens are read only from the environment and are never stored.
 
 ## Safety and licensing
 
 The committed catalog stores metadata and links, not third-party skill bodies. Each linked repository keeps its own license and terms. Review provenance, license, instructions, bundled scripts, network behavior, and requested permissions before adapting or installing a skill.
-
