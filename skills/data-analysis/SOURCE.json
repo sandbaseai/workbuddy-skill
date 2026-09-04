@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:datar-gaurav/sutra-os:backend/skills/data-analysis/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "backend/skills/data-analysis/SKILL.md",
+  "repository": "datar-gaurav/sutra-os",
+  "sha": "f25e2264b250d2ff397e6ef40f9c8341914eebfd",
+  "source_url": "https://github.com/datar-gaurav/sutra-os/blob/f8633c2eb164a169fd387446c8ac05dc7214735a/backend/skills/data-analysis/SKILL.md"
+}

@@ -17,6 +17,15 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        data_analysis = next(
+            item
+            for item in records
+            if item["r"] == "datar-gaurav/sutra-os"
+            and item["p"] == "backend/skills/data-analysis/SKILL.md"
+        )
+        self.assertEqual(data_analysis["w"], "workbuddy-ready")
+        self.assertEqual(data_analysis["g"], "data")
+        self.assertTrue(data_analysis["a"].endswith("/data-analysis-workbuddy-skill.zip"))
         privacy = next(
             item
             for item in records

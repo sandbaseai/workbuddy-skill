@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.30.0] - 2026-09-05
+
+- Added the MIT Evidence-based Data Analysis Skill with explicit analysis units, data-quality profiling, statistical limits, causal-claim discipline, robustness checks, reproducibility, and source-to-output traceability.
+
 ## [0.29.0] - 2026-09-05
 
 - Added the MIT Applying Differential Privacy Skill with explicit adjacency, contribution bounds, mechanism selection, reproducible composition accounting, utility checks, budget-ledger controls, and qualified release claims.
