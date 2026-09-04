@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.11.0] - 2026-09-05
+
+- Added the MIT Work Handoff Skill with live-state verification, executable restart steps, and privacy-safe context preservation.
+
 ## [0.10.0] - 2026-09-05
 
 - Added the MIT Test Strategy Design Skill with risk traceability, explicit test oracles, execution gates, ownership, and residual-risk reporting.
