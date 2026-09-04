@@ -2,6 +2,11 @@
 
 All notable changes to this project are documented here.
 
+## [0.44.0] - 2026-09-05
+
+- Added NVIDIA's official Apache-2.0 RAG evaluation source to the Atlas with immutable commit and blob provenance; its conservative credential-path and dynamic-eval signals remain disclosed after review.
+- Added the tool-independent RAG Evaluation Skill with leakage-resistant datasets, stage-level retrieval and context metrics, grounded-answer and citation review, permission and prompt-injection gates, calibrated judges, paired comparisons, latency and cost evidence, and reproducible failure diagnosis.
+
 ## [0.43.0] - 2026-09-05
 
 - Added the Apache-2.0 API contract source from the 29k-star `simstudioai/sim` repository to the Atlas, with its immutable commit, blob SHA, static analysis, license, and NOTICE provenance.
