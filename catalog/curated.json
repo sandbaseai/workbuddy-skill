@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:majiayu000/claude-skill-registry:skills/design/design-systems/SKILL.md",
+    "skill": "design-systems",
+    "skill_path": "skills/design-systems",
+    "category": "design",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/design-systems-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:majiayu000/claude-skill-registry:skills/design/mobile-development/SKILL.md",
     "skill": "mobile-development",
     "skill_path": "skills/mobile-development",

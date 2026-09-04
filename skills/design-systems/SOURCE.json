@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:majiayu000/claude-skill-registry:skills/design/design-systems/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/design-systems/SKILL.md",
+  "repository": "majiayu000/claude-skill-registry",
+  "sha": "bdc258379a5bd00e403a447134593664e3846acb",
+  "source_url": "https://github.com/majiayu000/claude-skill-registry/blob/bdc258379a5bd00e403a447134593664e3846acb/skills/design/design-systems/SKILL.md"
+}
