@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:Bogyie/llm-reliability-skill:skills/dense-writing/SKILL.md",
+  "declared_source_license": "Apache-2.0",
+  "source_license_file": "LICENSE",
+  "path": "skills/dense-writing/SKILL.md",
+  "repository": "Bogyie/llm-reliability-skill",
+  "sha": "965a26bfcaf8d6a10a9dc3e5d0b6847dd1b949d7",
+  "source_url": "https://github.com/Bogyie/llm-reliability-skill/blob/64c42dbab9b86f0e96d94e5ea88d40c3c928e32c/skills/dense-writing/SKILL.md"
+}

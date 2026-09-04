@@ -112,6 +112,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | Skill | Use it for | Provenance |
 |---|---|---|
 | [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
+| [Dense Writing](skills/dense-writing/) | Remove filler while preserving evidence, nuance, and constraints | [Apache-2.0 source](skills/dense-writing/SOURCE.json) |
 | [Spreadsheet Operations](skills/excel-ops/) | Inspect, clean, analyze, convert, and create Excel/CSV files | [MIT source](skills/excel-ops/SOURCE.json) |
 | [Open Source License Review](skills/oss-review/) | Review dependency licenses, obligations, and release risks | [Apache-2.0 source](skills/oss-review/SOURCE.json) |
 | [Systematic Debugging](skills/systematic-debugging/) | Reproduce failures, trace root causes, and verify minimal fixes | [Apache-2.0 source](skills/systematic-debugging/SOURCE.json) |
@@ -133,6 +134,10 @@ skills/sandbase/
 └── references/
     ├── execution.md
     └── troubleshooting.md
+skills/dense-writing/
+├── SKILL.md
+├── SOURCE.json
+└── LICENSE
 skills/excel-ops/
 ├── SKILL.md
 ├── SOURCE.json

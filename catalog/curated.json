@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:Bogyie/llm-reliability-skill:skills/dense-writing/SKILL.md",
+    "skill": "dense-writing",
+    "skill_path": "skills/dense-writing",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/dense-writing-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:anthropics/claude-for-legal:ip-legal/skills/oss-review/SKILL.md",
     "skill": "oss-review",
     "skill_path": "skills/oss-review",
