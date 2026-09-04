@@ -5,6 +5,11 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class RefreshWorkflowTests(unittest.TestCase):
+    def test_release_action_uses_node24_generation(self):
+        workflow = (ROOT / ".github/workflows/release.yml").read_text(encoding="utf-8")
+        self.assertIn("softprops/action-gh-release@v3.0.3", workflow)
+        self.assertNotIn("softprops/action-gh-release@v2", workflow)
+
     def test_daily_incremental_refresh_is_serial_and_non_interrupting(self):
         workflow = (ROOT / ".github/workflows/refresh-catalog.yml").read_text(encoding="utf-8")
         self.assertIn('cron: "17 3 * * *"', workflow)
