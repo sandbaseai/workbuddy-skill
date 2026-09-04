@@ -1,0 +1,32 @@
+name: Capability request
+description: Suggest a real workflow the skill should handle better
+title: "[Capability]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: job
+    attributes:
+      label: Job to be done
+      description: Describe the real request and desired deliverable.
+    validations:
+      required: true
+  - type: textarea
+    id: gap
+    attributes:
+      label: Current gap
+      description: What is difficult, unreliable, or missing today?
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Capability type
+      options:
+        - API or SaaS
+        - Language model
+        - Image, audio, or video
+        - Embedding
+        - Other
+    validations:
+      required: true
+

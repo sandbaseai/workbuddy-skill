@@ -12,8 +12,8 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.x"
       - run: ./scripts/package_skill.sh
@@ -21,4 +21,3 @@ jobs:
         with:
           generate_release_notes: true
           files: dist/sandbase-workbuddy-skill.zip
-

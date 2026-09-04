@@ -5,12 +5,18 @@ Give WorkBuddy access to the right SandBase model or API without memorizing prov
 [![Validate skill](https://github.com/sandbaseai/workbuddy-skill/actions/workflows/validate.yml/badge.svg)](https://github.com/sandbaseai/workbuddy-skill/actions/workflows/validate.yml)
 [![Latest release](https://img.shields.io/github/v/release/sandbaseai/workbuddy-skill)](https://github.com/sandbaseai/workbuddy-skill/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/sandbaseai/workbuddy-skill?style=flat)](https://github.com/sandbaseai/workbuddy-skill/stargazers)
 
 [中文](#中文) · [English](#english)
 
 ## 中文
 
 这是一个面向 WorkBuddy 的 SandBase Skill。它把“找能力 → 查看参数与价格 → 执行 → 获取异步结果”固化成可靠工作流，适合搜索、数据提取、多模态生成、嵌入和模型调用等任务。
+
+```text
+你：找一个适合中文发票 OCR 的 API，比较价格后处理这些图片。
+WorkBuddy：发现候选 → 读取实时 schema 和价格 → 选择能力 → 执行 → 交付结果
+```
 
 ### 为什么使用它
 
@@ -38,15 +44,47 @@ git clone https://github.com/sandbaseai/workbuddy-skill.git
 - “用 SandBase 找适合中文 OCR 的模型，比较前三个候选。”
 - “生成一段 5 秒产品视频，并等待最终结果。”
 
+复制下面这句话完成安装后的首次验收：
+
+```text
+使用 SandBase 搜索一个网页提取 API。只比较候选、参数和价格，不要执行付费调用。
+```
+
+完整步骤见 [5 分钟快速开始](docs/quickstart.zh-CN.md)，更多可复制任务见 [使用场景](docs/use-cases.md)。
+
 ## English
 
 This WorkBuddy skill turns SandBase capability discovery into a safe, repeatable workflow: discover, inspect, run, and poll asynchronous jobs when needed.
+
+```text
+You: Find an API for Chinese invoice OCR, compare prices, then process these images.
+WorkBuddy: discover → inspect live schemas and pricing → select → run → deliver
+```
 
 ### Install
 
 1. Download `sandbase-workbuddy-skill.zip` from [Releases](https://github.com/sandbaseai/workbuddy-skill/releases/latest).
 2. In WorkBuddy, open **Experts · Skills · Connectors → Skills → Add Skill**.
 3. Upload the ZIP and make sure the SandBase MCP service is configured in your workspace.
+
+Then verify it without spending credits:
+
+```text
+Use SandBase to find a web extraction API. Compare candidates, schemas, and pricing only; do not run a paid call.
+```
+
+See the [English quickstart](docs/quickstart.md) and [copy-ready use cases](docs/use-cases.md).
+
+## Capability map
+
+| Need | SandBase workflow | Example output |
+|---|---|---|
+| Find a live API | Discover → inspect | Ranked candidates with current inputs and pricing |
+| Run a model | Discover → inspect → run | Model response plus material limitations |
+| Generate media | Discover → inspect → run → poll | Completed image, audio, or video result |
+| Diagnose access | Account check + error guidance | Clear authorization, balance, or schema next step |
+
+The skill does not bundle credentials, silently run paid calls when the user only asks for comparison, or bypass WorkBuddy permissions.
 
 ### Validate locally
 
@@ -65,6 +103,14 @@ skills/sandbase/
     └── troubleshooting.md
 scripts/validate_skill.py
 ```
+
+## Compatibility
+
+| Environment | Status | Notes |
+|---|---|---|
+| WorkBuddy | Primary | Uses the official WorkBuddy skill package layout |
+| Other MCP-capable agents | Portable instructions | Frontmatter extensions may require adaptation |
+| Chat-only assistants | Guidance only | Cannot discover or execute SandBase tools |
 
 ## Contributing
 
