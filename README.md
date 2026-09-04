@@ -21,6 +21,7 @@ Try local search in about a minute, without installing dependencies:
 git clone https://github.com/sandbaseai/workbuddy-skill.git
 cd workbuddy-skill
 python3 scripts/query_catalog.py research --limit 5
+python3 scripts/review_skill.py --catalog-id 'github:owner/repository:path/to/SKILL.md'
 ```
 
 If the Atlas or adapter saves you time, [star the repository](https://github.com/sandbaseai/workbuddy-skill) so other WorkBuddy users can find it.
