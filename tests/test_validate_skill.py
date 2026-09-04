@@ -43,6 +43,15 @@ class ValidateSkillTests(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("name must match its directory", result.stderr)
 
+    def test_rejects_consecutive_hyphens(self):
+        result = self.run_validator(
+            "---\nname: demo--skill\ndescription: Demo\n"
+            "description_zh: 演示\ndescription_en: Demo\n"
+            "version: 1.0.0\nauthor: Test\nlicense: MIT\n---\n\n# Demo\n"
+        )
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("consecutive hyphens", result.stderr)
+
     def test_rejects_array_allowed_tools(self):
         result = self.run_validator(
             "---\nname: demo\ndescription: Demo\n"
