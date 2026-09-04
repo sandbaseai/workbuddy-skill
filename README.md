@@ -116,6 +116,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | Skill | Use it for | Provenance |
 |---|---|---|
 | [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
+| [Test Strategy Design](skills/design-test-strategy/) | Turn product and system risks into a traceable, layered test portfolio | [MIT source](skills/design-test-strategy/SOURCE.json) |
 | [Accessibility Review](skills/review-accessibility/) | Find keyboard, screen-reader, low-vision, cognitive, and motion barriers | [MIT source](skills/review-accessibility/SOURCE.json) |
 | [Dense Writing](skills/dense-writing/) | Remove filler while preserving evidence, nuance, and constraints | [Apache-2.0 source](skills/dense-writing/SOURCE.json) |
 | [Spreadsheet Operations](skills/excel-ops/) | Inspect, clean, analyze, convert, and create Excel/CSV files | [MIT source](skills/excel-ops/SOURCE.json) |
@@ -139,6 +140,10 @@ skills/sandbase/
 └── references/
     ├── execution.md
     └── troubleshooting.md
+skills/design-test-strategy/
+├── SKILL.md
+├── SOURCE.json
+└── LICENSE
 skills/review-accessibility/
 ├── SKILL.md
 ├── SOURCE.json
