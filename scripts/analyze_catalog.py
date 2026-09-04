@@ -20,8 +20,9 @@ from urllib.request import Request, urlopen
 
 DEFAULT_CATALOG = Path("catalog/skills.jsonl")
 USER_AGENT = "sandbaseai-workbuddy-skill-analyzer/0.3"
+ANALYSIS_VERSION = "0.4"
 ANALYSIS_FIELDS = {
-    "analysis_status", "frontmatter_valid", "workbuddy_score",
+    "analysis_version", "analysis_status", "frontmatter_valid", "workbuddy_score",
     "workbuddy_status", "workbuddy_missing_fields", "security_status",
     "security_signals", "skill_lines",
 }
@@ -79,7 +80,7 @@ def analyze_text(text: str) -> dict:
     name = fields.get("name", "")
     risks = sorted(label for label, pattern in RISK_PATTERNS.items() if pattern.search(text))
     required_workbuddy = (
-        "name", "description", "description_zh", "description_en", "version", "author"
+        "name", "description", "description_zh", "description_en", "version", "author", "license"
     )
     missing = [field for field in required_workbuddy if not fields.get(field)]
 
@@ -99,6 +100,7 @@ def analyze_text(text: str) -> dict:
     else:
         status = "needs-review"
     return {
+        "analysis_version": ANALYSIS_VERSION,
         "analysis_status": "ok",
         "frontmatter_valid": valid,
         "workbuddy_score": score,
@@ -155,7 +157,11 @@ def main() -> int:
     rows = [json.loads(line) for line in args.path.read_text(encoding="utf-8").splitlines() if line]
     cached: dict[str, dict] = {}
     for row in rows:
-        if "analysis_status" in row and not args.refresh:
+        if (
+            row.get("analysis_status")
+            and row.get("analysis_version") == ANALYSIS_VERSION
+            and not args.refresh
+        ):
             cached.setdefault(row["sha"], {key: row[key] for key in ANALYSIS_FIELDS if key in row})
 
     sha_sources: dict[str, str] = {}

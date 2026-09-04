@@ -35,6 +35,14 @@ class AnalyzeCatalogTests(unittest.TestCase):
         self.assertIn("name", result["workbuddy_missing_fields"])
         self.assertNotEqual(result["workbuddy_status"], "workbuddy-ready")
 
+    def test_license_is_required_and_analysis_is_versioned(self):
+        result = analyze_text(
+            "---\nname: demo\ndescription: Demo\ndescription_zh: 演示\n"
+            "description_en: Demo\nversion: 1.0.0\nauthor: Test\n---\n\n# Demo\n"
+        )
+        self.assertIn("license", result["workbuddy_missing_fields"])
+        self.assertIn("analysis_version", result)
+
     def test_compatibility_score_never_exceeds_one_hundred(self):
         result = analyze_text(
             "---\nname: demo\ndescription: Demo\ndescription_zh: 演示\n"
