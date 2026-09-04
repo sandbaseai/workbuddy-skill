@@ -17,6 +17,17 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        architecture = next(
+            item
+            for item in records
+            if item["r"] == "placerda/agentic-engineering"
+            and item["p"] == ".github/skills/architecture-decision/SKILL.md"
+        )
+        self.assertEqual(architecture["w"], "workbuddy-ready")
+        self.assertEqual(architecture["g"], "development")
+        self.assertTrue(
+            architecture["a"].endswith("/architecture-decision-workbuddy-skill.zip")
+        )
         incident = next(
             item
             for item in records
