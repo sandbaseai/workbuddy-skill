@@ -1,10 +1,7 @@
 {
   "adaptation": {
     "missing_resources": [],
-    "packaged_resources": [
-      "references/advanced.md",
-      "references/patterns.md"
-    ],
+    "packaged_resources": [],
     "security_signals": [],
     "tool": "scripts/adapt_skill.py"
   },

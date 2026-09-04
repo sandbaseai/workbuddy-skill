@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:FutureJJ/claude-skills:skills/graphql-expert/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "skills/graphql-expert/SKILL.md",
+  "repository": "FutureJJ/claude-skills",
+  "sha": "344bb87e01074aa4e0f323100550ab4d762278c9",
+  "source_url": "https://github.com/FutureJJ/claude-skills/blob/d15f5a80032d0ae5f3ae19a2fe6cff92a2112782/skills/graphql-expert/SKILL.md"
+}

@@ -17,6 +17,15 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        graphql = next(
+            item
+            for item in records
+            if item["r"] == "FutureJJ/claude-skills"
+            and item["p"] == "skills/graphql-expert/SKILL.md"
+        )
+        self.assertEqual(graphql["w"], "workbuddy-ready")
+        self.assertEqual(graphql["g"], "development")
+        self.assertTrue(graphql["a"].endswith("/graphql-expert-workbuddy-skill.zip"))
         observability = next(
             item
             for item in records

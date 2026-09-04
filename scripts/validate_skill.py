@@ -89,6 +89,34 @@ def validate_skill(skill: Path, root: Path) -> None:
             raise ValueError(
                 f"{relative} license must match SOURCE.json ({declared_license})"
             )
+        adaptation = source.get("adaptation", {})
+        packaged_resources = adaptation.get("packaged_resources", [])
+        if not isinstance(packaged_resources, list) or not all(
+            isinstance(item, str) for item in packaged_resources
+        ):
+            raise ValueError(
+                f"{relative} SOURCE.json packaged_resources must be a string list"
+            )
+        listed_resources = set(packaged_resources)
+        actual_resources = {
+            str(path.relative_to(skill.parent))
+            for directory in ("references", "scripts", "assets", "templates")
+            for path in (skill.parent / directory).rglob("*")
+            if path.is_file()
+        }
+        if listed_resources != actual_resources:
+            missing_from_package = sorted(listed_resources - actual_resources)
+            missing_from_manifest = sorted(actual_resources - listed_resources)
+            details = []
+            if missing_from_package:
+                details.append("not packaged: " + ", ".join(missing_from_package))
+            if missing_from_manifest:
+                details.append("not declared: " + ", ".join(missing_from_manifest))
+            raise ValueError(
+                f"{relative} SOURCE.json packaged_resources mismatch ("
+                + "; ".join(details)
+                + ")"
+            )
     allowed_tools = fields.get("allowed-tools")
     if allowed_tools and allowed_tools.lstrip().startswith(("[", "{")):
         raise ValueError(f"{relative} allowed-tools must be a space- or comma-separated string")

@@ -2,6 +2,11 @@
 
 All notable changes to this project are documented here.
 
+## [0.33.0] - 2026-09-05
+
+- Added the MIT GraphQL API Design and Review Skill with client-grounded schemas, resolver authorization, robust pagination and errors, operation-cost controls, N+1 verification, subscription boundaries, and evidence-based schema evolution.
+- Corrected the monitoring adaptation manifest so its packaged-resource inventory describes the final self-contained WorkBuddy package rather than the temporary source-adapter output.
+
 ## [0.32.0] - 2026-09-05
 
 - Added the MIT Monitoring and Observability Design Skill with journey-based SLIs/SLOs, bounded-cardinality telemetry, decision-focused dashboards, actionable alerts, privacy and cost controls, and end-to-end signal-path validation.
