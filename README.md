@@ -2,6 +2,10 @@
 
 Give WorkBuddy access to the right SandBase model or API without memorizing provider names, request schemas, or polling details.
 
+[![Validate skill](https://github.com/sandbaseai/workbuddy-skill/actions/workflows/validate.yml/badge.svg)](https://github.com/sandbaseai/workbuddy-skill/actions/workflows/validate.yml)
+[![Latest release](https://img.shields.io/github/v/release/sandbaseai/workbuddy-skill)](https://github.com/sandbaseai/workbuddy-skill/releases/latest)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 [中文](#中文) · [English](#english)
 
 ## 中文
@@ -18,7 +22,7 @@ Give WorkBuddy access to the right SandBase model or API without memorizing prov
 
 ### 安装
 
-1. 下载本仓库并将 `skills/sandbase` 压缩为 ZIP，保持 `SKILL.md` 位于技能目录根部。
+1. 从 [Releases](https://github.com/sandbaseai/workbuddy-skill/releases/latest) 下载 `sandbase-workbuddy-skill.zip`。
 2. 在 WorkBuddy 中打开 **专家 · Skills · Connectors → Skills → 添加 Skill**。
 3. 上传 ZIP，并确保工作区已配置 SandBase MCP 服务。
 
@@ -40,7 +44,7 @@ This WorkBuddy skill turns SandBase capability discovery into a safe, repeatable
 
 ### Install
 
-1. Download this repository and zip `skills/sandbase` with `SKILL.md` at the skill root.
+1. Download `sandbase-workbuddy-skill.zip` from [Releases](https://github.com/sandbaseai/workbuddy-skill/releases/latest).
 2. In WorkBuddy, open **Experts · Skills · Connectors → Skills → Add Skill**.
 3. Upload the ZIP and make sure the SandBase MCP service is configured in your workspace.
 
@@ -48,6 +52,7 @@ This WorkBuddy skill turns SandBase capability discovery into a safe, repeatable
 
 ```bash
 python3 scripts/validate_skill.py
+./scripts/package_skill.sh
 ```
 
 ## Repository layout
@@ -68,4 +73,3 @@ Issues and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md). Pl
 ## License
 
 [MIT](LICENSE)
-
