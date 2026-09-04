@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:codewithmukesh/dotnet-claude-kit:skills/docker/SKILL.md",
+    "skill": "container-image-engineering",
+    "skill_path": "skills/container-image-engineering",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/container-image-engineering-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:LukasNiessen/kubernetes-skill:SKILL.md",
     "skill": "kubernetes-operations",
     "skill_path": "skills/kubernetes-operations",

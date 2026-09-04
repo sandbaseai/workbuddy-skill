@@ -134,6 +134,8 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | Skill | Use it for | Provenance |
 |---|---|---|
 | [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
+| [Container Image Engineering](skills/container-image-engineering/) | Build, secure, optimize, inspect, and diagnose Docker/OCI images | [MIT source](skills/container-image-engineering/SOURCE.json) |
+| [Kubernetes Production Operations](skills/kubernetes-operations/) | Diagnose and safely change workloads, rollouts, networking, RBAC, resources, and stateful services | [MIT source](skills/kubernetes-operations/SOURCE.json) |
 | [Terraform and OpenTofu Engineering](skills/terraform-engineering/) | Review modules, plans, state, tests, drift, upgrades, and infrastructure changes safely | [Apache-2.0 source](skills/terraform-engineering/SOURCE.json) |
 | [PostgreSQL Database Engineering](skills/postgres-engineering/) | Design, query, secure, tune, maintain, and recover PostgreSQL safely | [MIT source](skills/postgres-engineering/SOURCE.json) |
 | [OAuth and OIDC Troubleshooting](skills/oauth-debugging/) | Diagnose redirect, state, PKCE, token, session, and authorization failures safely | [MIT source](skills/oauth-debugging/SOURCE.json) |
@@ -193,6 +195,14 @@ skills/sandbase/
 └── references/
     ├── execution.md
     └── troubleshooting.md
+skills/container-image-engineering/
+├── SKILL.md
+├── SOURCE.json
+└── LICENSE
+skills/kubernetes-operations/
+├── SKILL.md
+├── SOURCE.json
+└── LICENSE
 skills/terraform-engineering/
 ├── SKILL.md
 ├── SOURCE.json
@@ -339,9 +349,9 @@ The catalog is generated from public GitHub `SKILL.md` results with resumable, r
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 11,203 |
-| Unique content SHAs | 7,131 |
-| Source repositories | 5,816 |
+| Indexed GitHub paths | 11,204 |
+| Unique content SHAs | 7,132 |
+| Source repositories | 5,817 |
 <!-- CATALOG-METRICS:END -->
 
 Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) or [中文 Atlas](https://sandbaseai.github.io/workbuddy-skill/zh-CN.html), or query the JSONL directly. If it helps you discover a useful workflow, a star or a short review helps other WorkBuddy users find it.
@@ -351,7 +361,7 @@ Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.git
 For a manually curated index of WorkBuddy documentation, MCP integrations, workflows, benchmarks, and Skills, browse [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy).
 
 <!-- CATALOG-ANALYSIS:START -->
-The current static analysis successfully inspected 11,203 paths: 10,271 are structurally adaptable to WorkBuddy, 932 need manual review, 0 are currently WorkBuddy-ready, and 541 contain at least one conservative security signal.
+The current static analysis successfully inspected 11,204 paths: 10,272 are structurally adaptable to WorkBuddy, 932 need manual review, 0 are currently WorkBuddy-ready, and 542 contain at least one conservative security signal.
 <!-- CATALOG-ANALYSIS:END -->
 A clean static scan is never a security guarantee.
 
