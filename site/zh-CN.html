@@ -19,7 +19,7 @@
     <meta name="twitter:title" content="WorkBuddy Skill Atlas">
     <meta name="twitter:description" content="面向 WorkBuddy 的来源优先公开 Agent Skills 索引。">
     <title>WorkBuddy Skill Atlas｜技能目录</title>
-    <link rel="stylesheet" href="styles.css?v=0.6.0">
+    <link rel="stylesheet" href="styles.css?v=0.7.0">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -91,6 +91,16 @@
           </div>
           <div class="result-controls">
             <div class="field sort-field">
+              <label for="min-score">最低分数</label>
+              <select id="min-score">
+                <option value="all">不限分数</option>
+                <option value="80">80+</option>
+                <option value="85">85+</option>
+                <option value="90">90+</option>
+                <option value="95">95+</option>
+              </select>
+            </div>
+            <div class="field sort-field">
               <label for="sort">结果排序</label>
               <select id="sort">
                 <option value="score">兼容分数</option>
@@ -100,6 +110,8 @@
               </select>
             </div>
             <label class="check-field" for="unique"><input id="unique" type="checkbox" checked> 仅显示唯一内容</label>
+            <button id="high-signal" class="secondary-action" type="button" title="仅用于筛选，不代表可信或安全">高信号视图</button>
+            <button id="reset-filters" class="text-action" type="button">重置</button>
             <span id="result-count" aria-live="polite">正在加载目录…</span>
           </div>
         </div>
@@ -120,6 +132,6 @@
     </main>
 
     <footer><span>WorkBuddy Skill Atlas</span><a href="https://github.com/sandbaseai/workbuddy-skill">查看源码并参与贡献</a></footer>
-    <script src="app.js?v=0.6.0" defer></script>
+    <script src="app.js?v=0.7.0" defer></script>
   </body>
 </html>

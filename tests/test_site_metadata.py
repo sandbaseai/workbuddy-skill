@@ -34,6 +34,11 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
                     metadata["distribution"]["contentUrl"],
                     "https://sandbaseai.github.io/workbuddy-skill/catalog.json",
                 )
+                script_version = re.search(r'app\.js\?v=([0-9.]+)', html)
+                style_version = re.search(r'styles\.css\?v=([0-9.]+)', html)
+                self.assertIsNotNone(script_version)
+                self.assertIsNotNone(style_version)
+                self.assertEqual(script_version.group(1), style_version.group(1))
 
     def test_llms_file_points_to_catalog_and_safety_guidance(self):
         content = (SITE / "llms.txt").read_text(encoding="utf-8")
