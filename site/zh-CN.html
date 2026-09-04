@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="搜索为 WorkBuddy 收录的 10,000+ 个公开 Agent Skills，并检查其不可变的 GitHub 来源。">
+    <link rel="canonical" href="https://sandbaseai.github.io/workbuddy-skill/zh-CN.html">
+    <meta name="theme-color" content="#f5f1e8">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sandbaseai.github.io/workbuddy-skill/zh-CN.html">
+    <meta property="og:title" content="WorkBuddy Skill Atlas">
+    <meta property="og:description" content="搜索公开 Agent Skills，并在改造前检查精确的 GitHub 来源。">
+    <meta property="og:site_name" content="WorkBuddy Skill Atlas">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="WorkBuddy Skill Atlas">
+    <meta name="twitter:description" content="面向 WorkBuddy 的来源优先公开 Agent Skills 索引。">
+    <title>WorkBuddy Skill Atlas｜技能目录</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="nav">
+      <a class="brand" href="#top" aria-label="WorkBuddy Skill Atlas 首页">
+        <span class="brand-mark" aria-hidden="true">W</span>
+        <span>Skill Atlas</span>
+      </a>
+      <nav aria-label="主导航">
+        <a href="#catalog">目录</a>
+        <a href="index.html">English</a>
+        <a href="https://github.com/sandbaseai/workbuddy-skill">GitHub</a>
+        <a href="https://github.com/sandbaseai/workbuddy-skill" class="nav-star">Star 项目</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="kicker">开放索引 · 不可变来源</p>
+          <h1 id="hero-title">找到技能。<br><em>检查来源。</em></h1>
+          <p class="hero-text">在将公开 Agent 工作流改造为 WorkBuddy 技能前，先搜索 10,000+ 条记录。</p>
+          <a class="primary-action" href="#catalog">搜索目录</a>
+        </div>
+        <div class="signal-field" aria-label="目录快照指标">
+          <div class="signal signal-main"><strong id="metric-records">—</strong><span>收录路径</span></div>
+          <div class="signal signal-secondary"><strong id="metric-shas">—</strong><span>唯一 SHA</span></div>
+          <div class="signal signal-tertiary"><strong id="metric-repositories">—</strong><span>代码仓库</span></div>
+          <div class="trace" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="trust-note" aria-label="安全提示">
+        <span class="status-dot" aria-hidden="true"></span>
+        <p>被收录不等于可信。安装前请检查许可证、指令、脚本、网络行为和权限。</p>
+      </section>
+
+      <section class="catalog-section" id="catalog" aria-labelledby="catalog-title">
+        <div class="catalog-heading">
+          <h2 id="catalog-title">公开技能目录</h2>
+          <p>每条结果都链接到精确的 GitHub 提交。这里不会执行或静默安装任何内容。</p>
+        </div>
+        <div class="search-panel">
+          <div class="filter-grid">
+            <div class="field search-field">
+              <label for="search">搜索名称、仓库或路径</label>
+              <input id="search" type="search" autocomplete="off" placeholder="试试：research、video、spreadsheet…">
+            </div>
+            <div class="field"><label for="compatibility">WorkBuddy 兼容性</label><select id="compatibility"><option value="all">全部状态</option><option value="adaptable">可改造</option><option value="needs-review">需要审核</option></select></div>
+            <div class="field"><label for="security">静态安全信号</label><select id="security"><option value="all">全部状态</option><option value="no-static-flags">无静态标记</option><option value="flagged">标记待审核</option><option value="unscanned">未扫描</option></select></div>
+          </div>
+          <span id="result-count" aria-live="polite">正在加载目录…</span>
+        </div>
+        <div id="error" class="message error" hidden>目录加载失败。请打开 GitHub 源码，或稍后再试。</div>
+        <div id="empty" class="message" hidden>没有匹配的技能。试试更短的能力名称或仓库所有者。</div>
+        <div id="results" class="results" aria-busy="true"></div>
+        <button id="more" class="more" type="button" hidden>显示更多</button>
+      </section>
+
+      <section class="method" aria-labelledby="method-title">
+        <h2 id="method-title">来源优先，始终如此。</h2>
+        <div class="method-grid">
+          <p><strong>发现</strong><span>GitHub 代码搜索被拆分为有边界的字节范围，让 1,000 条 API 上限可见且可审计。</span></p>
+          <p><strong>去重</strong><span>精确 blob SHA 区分重复内容与复制路径，同时保留来源信息。</span></p>
+          <p><strong>改造</strong><span>WorkBuddy 兼容性和安全状态默认从未审核开始，提升状态需要有意检查。</span></p>
+        </div>
+      </section>
+    </main>
+
+    <footer><span>WorkBuddy Skill Atlas</span><a href="https://github.com/sandbaseai/workbuddy-skill">查看源码并参与贡献</a></footer>
+    <script src="app.js" defer></script>
+  </body>
+</html>

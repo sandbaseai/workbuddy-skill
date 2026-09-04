@@ -9,6 +9,7 @@ const more = document.querySelector("#more");
 const metricRecords = document.querySelector("#metric-records");
 const metricShas = document.querySelector("#metric-shas");
 const metricRepositories = document.querySelector("#metric-repositories");
+const isChinese = document.documentElement.lang.startsWith("zh");
 
 let catalog = [];
 let filtered = [];
@@ -34,12 +35,12 @@ function render(reset = true) {
       <span class="result-meta">
         <span class="badge">${skill.q ?? "—"}/100</span>
         <span class="badge ${skill.k === "flagged" ? "flagged" : ""}">${escapeHtml(skill.k)}</span>
-        <span class="result-open">Inspect ↗</span>
+        <span class="result-open">${isChinese ? "查看来源" : "Inspect"} ↗</span>
       </span>
     </a>`).join("");
   results.insertAdjacentHTML("beforeend", markup);
   shown += next.length;
-  count.textContent = `${filtered.length.toLocaleString()} results`;
+  count.textContent = isChinese ? `${filtered.length.toLocaleString()} 个结果` : `${filtered.length.toLocaleString()} results`;
   empty.hidden = filtered.length !== 0;
   more.hidden = shown >= filtered.length;
   results.setAttribute("aria-busy", "false");
@@ -77,6 +78,6 @@ Promise.all([fetch("catalog.json"), fetch("catalog-meta.json")])
   })
   .catch(() => {
     results.setAttribute("aria-busy", "false");
-    count.textContent = "Catalog unavailable";
+    count.textContent = isChinese ? "目录暂时不可用" : "Catalog unavailable";
     error.hidden = false;
   });
