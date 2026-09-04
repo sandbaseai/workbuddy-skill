@@ -59,13 +59,18 @@ def main() -> int:
             repo_url = f"https://github.com/{item['repository']}"
             if not item["repository_url"].rstrip("/") == repo_url:
                 raise SystemExit(f"line {rows}: repository_url does not match repository")
-            if not item["source_url"].startswith(repo_url + "/blob/"):
-                raise SystemExit(f"line {rows}: non-GitHub source")
-            if not item["source_url"].endswith("/" + item["path"]):
-                raise SystemExit(f"line {rows}: source_url does not match path")
+            source_match = re.fullmatch(
+                rf"{re.escape(repo_url)}/blob/([0-9a-f]{{40}})/{re.escape(item['path'])}",
+                item["source_url"],
+            )
+            if not source_match:
+                raise SystemExit(
+                    f"line {rows}: source_url must pin the repository path to a full commit"
+                )
             raw_prefix = f"https://raw.githubusercontent.com/{item['repository']}/"
-            if not item["raw_url"].startswith(raw_prefix) or not item["raw_url"].endswith("/" + item["path"]):
-                raise SystemExit(f"line {rows}: raw_url does not match repository/path")
+            expected_raw = f"{raw_prefix}{source_match.group(1)}/{item['path']}"
+            if item["raw_url"] != expected_raw:
+                raise SystemExit(f"line {rows}: raw_url does not match immutable source")
             if item["workbuddy_status"] not in WORKBUDDY_STATUSES:
                 raise SystemExit(f"line {rows}: invalid WorkBuddy status")
             if item["security_status"] not in SECURITY_STATUSES:
