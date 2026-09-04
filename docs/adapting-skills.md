@@ -21,17 +21,23 @@ python3 scripts/adapt_skill.py \
 ```
 
 The output ZIP places `SKILL.md` at its root and includes `SOURCE.json` with
-the immutable source URL, blob SHA, declared source license, and adaptation
-notes. The adapter does not execute the source.
+the immutable source URL, blob SHA, declared source license, adaptation notes,
+and a list of packaged resources. References to files under `scripts/`,
+`references/`, `assets/`, and `templates/` are fetched from the same immutable
+Git commit (or copied beside a local source file) and retain their relative
+paths. The adapter never executes source content.
+
+Resource paths cannot escape the skill directory. Each source or resource file
+is limited to 512 KiB, and bundled resources are limited to 4 MiB total.
+Referenced scripts receive the same conservative static scan as `SKILL.md`.
 
 ## Refusal conditions
 
 By default, adaptation stops when static review signals are present, referenced
-resources were not fetched, or the output already exists. Inspect the source
-before using `--allow-flagged`, retrieve and review required resources before
-using `--allow-missing-resources`, and use `--force` only for an intentional
-replacement.
+resources cannot be fetched, or the output already exists. Inspect the source
+before using `--allow-flagged`, use `--allow-missing-resources` only when the
+package can operate without those files, and use `--force` only for an
+intentional replacement.
 
 Generated metadata is not a substitute for the original license or a security
 review. Do not publish an adapted package unless the source license permits it.
-
