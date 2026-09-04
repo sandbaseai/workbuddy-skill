@@ -90,6 +90,7 @@ def analyze_text(text: str) -> dict:
     score += sum(5 for field in required_workbuddy[1:] if fields.get(field))
     score += 10 if text.count("\n") + 1 <= 500 else 0
     score += 5 if not risks else 0
+    score = min(score, 100)
 
     if valid and not missing and not risks:
         status = "workbuddy-ready"

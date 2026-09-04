@@ -227,7 +227,7 @@ Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.git
 For a manually curated index of WorkBuddy documentation, MCP integrations, workflows, benchmarks, and Skills, browse [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy).
 
 <!-- CATALOG-ANALYSIS:START -->
-The current static analysis successfully inspected 10,700 paths: 9,160 are structurally adaptable to WorkBuddy, 883 need manual review, 0 are currently WorkBuddy-ready, and 279 contain at least one conservative security signal.
+The current static analysis successfully inspected 10,700 paths: 9,799 are structurally adaptable to WorkBuddy, 900 need manual review, 1 are currently WorkBuddy-ready, and 390 contain at least one conservative security signal.
 <!-- CATALOG-ANALYSIS:END -->
 A clean static scan is never a security guarantee.
 
