@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.16.0] - 2026-09-05
+
+- Added the MIT Research with Sources Skill with primary-source prioritization, recency checks, conflict analysis, claim-level citations, prompt-injection resistance, and explicit uncertainty.
+
 ## [0.15.0] - 2026-09-05
 
 - Added the MIT Software Release Skill with supply-chain verification, migration safety, staged rollout, stop conditions, rollback, monitoring, and consumer-path validation.

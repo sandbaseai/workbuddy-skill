@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:Animism001/skills:.agents/skills/web-researcher/SKILL.md",
+    "skill": "web-researcher",
+    "skill_path": "skills/web-researcher",
+    "category": "research",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/web-researcher-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:joaocarloscruz/skills:library/release-software/SKILL.md",
     "skill": "release-software",
     "skill_path": "skills/release-software",

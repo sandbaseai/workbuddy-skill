@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:Animism001/skills:.agents/skills/web-researcher/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": ".agents/skills/web-researcher/SKILL.md",
+  "repository": "Animism001/skills",
+  "sha": "8d1e501258def73a293c9046ac525a31c128d004",
+  "source_url": "https://github.com/Animism001/skills/blob/80087b07be38c4aa3d7184d0b615c28347d00904/.agents/skills/web-researcher/SKILL.md"
+}
