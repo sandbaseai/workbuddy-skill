@@ -1,5 +1,7 @@
 # WorkBuddy Skill Hub
 
+![WorkBuddy Skill Atlas — 10,000+ public Agent Skills with immutable provenance](site/social-preview.png)
+
 Discover public Agent Skills, assess them before installation, and adapt high-value workflows for WorkBuddy. The repository also ships a production-ready SandBase integration as its first curated skill.
 
 [![Validate skill](https://github.com/sandbaseai/workbuddy-skill/actions/workflows/validate.yml/badge.svg)](https://github.com/sandbaseai/workbuddy-skill/actions/workflows/validate.yml)
