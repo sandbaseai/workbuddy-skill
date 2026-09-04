@@ -24,7 +24,16 @@ MAX_THROTTLE_RETRIES = 8
 
 
 def request_json(query: str, page: int, token: str, max_retries: int = 3) -> tuple[dict, dict]:
-    params = urlencode({"q": query, "per_page": 100, "page": page})
+    # Relevance ordering repeatedly returns the same first page, which makes
+    # incremental refreshes spend their budget rediscovering old records.
+    # Indexed-descending order exposes newly indexed public skills first.
+    params = urlencode({
+        "q": query,
+        "per_page": 100,
+        "page": page,
+        "sort": "indexed",
+        "order": "desc",
+    })
     headers = {
         "Accept": "application/vnd.github+json",
         "User-Agent": USER_AGENT,
