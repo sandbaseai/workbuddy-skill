@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:majiayu000/claude-skill-registry:skills/data/ai-governance/SKILL.md",
+    "skill": "ai-governance",
+    "skill_path": "skills/ai-governance",
+    "category": "security",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/ai-governance-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:majiayu000/claude-skill-registry:skills/devops/site-reliability/SKILL.md",
     "skill": "site-reliability",
     "skill_path": "skills/site-reliability",
