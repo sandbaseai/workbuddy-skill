@@ -98,6 +98,16 @@ class SiteDataTests(unittest.TestCase):
         self.assertEqual(cli["w"], "workbuddy-ready")
         self.assertEqual(cli["g"], "development")
         self.assertTrue(cli["a"].endswith("/test-cli-workbuddy-skill.zip"))
+        meeting = next(
+            item
+            for item in records
+            if item["r"] == "rainoff/skill-gauge"
+            and item["p"]
+            == "exercises/fixtures/meeting-notes/skill/meeting-notes/SKILL.md"
+        )
+        self.assertEqual(meeting["w"], "workbuddy-ready")
+        self.assertEqual(meeting["g"], "productivity")
+        self.assertTrue(meeting["a"].endswith("/meeting-notes-workbuddy-skill.zip"))
         metadata = json.loads(
             (ROOT / "site" / "catalog-meta.json").read_text(encoding="utf-8")
         )

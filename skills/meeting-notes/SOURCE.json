@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:rainoff/skill-gauge:exercises/fixtures/meeting-notes/skill/meeting-notes/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "exercises/fixtures/meeting-notes/skill/meeting-notes/SKILL.md",
+  "repository": "rainoff/skill-gauge",
+  "sha": "13c2e796726affaa4724f417a2693b5f41df7b8d",
+  "source_url": "https://github.com/rainoff/skill-gauge/blob/873cdf846650d732108af720b00a0f21bc52004a/exercises/fixtures/meeting-notes/skill/meeting-notes/SKILL.md"
+}
