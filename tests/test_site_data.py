@@ -17,6 +17,15 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        incident = next(
+            item
+            for item in records
+            if item["r"] == "jukrap/ai-agent-playbook"
+            and item["p"] == "skills/devops/observability-incident-triage/SKILL.md"
+        )
+        self.assertEqual(incident["w"], "workbuddy-ready")
+        self.assertEqual(incident["g"], "security")
+        self.assertTrue(incident["a"].endswith("/incident-triage-workbuddy-skill.zip"))
         debugging = next(
             item
             for item in records

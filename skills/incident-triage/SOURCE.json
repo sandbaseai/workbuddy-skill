@@ -1,0 +1,18 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [
+      "references/incident-evidence.md",
+      "references/logs-metrics-traces.md"
+    ],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:jukrap/ai-agent-playbook:skills/devops/observability-incident-triage/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "skills/devops/observability-incident-triage/SKILL.md",
+  "repository": "jukrap/ai-agent-playbook",
+  "sha": "102da122144017d8b637f474930a210bc37f191e",
+  "source_url": "https://github.com/jukrap/ai-agent-playbook/blob/2a35e765be2ce3923c19c93f452d18db8ee88c09/skills/devops/observability-incident-triage/SKILL.md"
+}
