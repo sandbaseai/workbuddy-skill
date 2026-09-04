@@ -27,7 +27,13 @@ jobs:
       - name: Refresh provenance index
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python3 scripts/crawl_github_skills.py --target 10000 --output /tmp/skills.jsonl
+        run: |
+          if [ -f catalog/skills.jsonl ]; then
+            cp catalog/skills.jsonl /tmp/skills.jsonl
+          else
+            : > /tmp/skills.jsonl
+          fi
+          python3 scripts/crawl_github_skills.py --target 10100 --output /tmp/skills.jsonl
       - name: Validate provenance index
         run: |
           python3 scripts/validate_catalog.py /tmp/skills.jsonl --minimum 10000
