@@ -17,6 +17,17 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        kafka = next(
+            item
+            for item in records
+            if item["r"] == "ssrjkk/claude-skills"
+            and item["p"] == ".claude/skills/data/kafka-advanced/SKILL.md"
+        )
+        self.assertEqual(kafka["w"], "workbuddy-ready")
+        self.assertEqual(kafka["g"], "development")
+        self.assertTrue(
+            kafka["a"].endswith("/kafka-engineering-workbuddy-skill.zip")
+        )
         cache_engineering = next(
             item
             for item in records

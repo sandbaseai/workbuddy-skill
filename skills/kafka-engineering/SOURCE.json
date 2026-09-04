@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:ssrjkk/claude-skills:.claude/skills/data/kafka-advanced/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": ".claude/skills/data/kafka-advanced/SKILL.md",
+  "repository": "ssrjkk/claude-skills",
+  "sha": "fe608305fad739d1d0ac8a311f74b2375da3e933",
+  "source_url": "https://github.com/ssrjkk/claude-skills/blob/e1fe9f4b8b62cbb6be06d22940974a7ca87a70b9/.claude/skills/data/kafka-advanced/SKILL.md"
+}

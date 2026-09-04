@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:ssrjkk/claude-skills:.claude/skills/data/kafka-advanced/SKILL.md",
+    "skill": "kafka-engineering",
+    "skill_path": "skills/kafka-engineering",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/kafka-engineering-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:Dankosik/go-service-template-rest:docs/universal-disciplines/cache-engineering/SKILL.md",
     "skill": "cache-engineering",
     "skill_path": "skills/cache-engineering",

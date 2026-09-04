@@ -2,6 +2,11 @@
 
 All notable changes to this project are documented here.
 
+## [0.40.0] - 2026-09-05
+
+- Curated the existing MIT Kafka source from `ssrjkk/claude-skills` without inflating Atlas discovery counts.
+- Added the Kafka Event Streaming Engineering Skill with explicit event and partition contracts, honest end-to-end delivery semantics, idempotent effects, consumer lifecycle controls, schema compatibility, poison-record handling, replay safety, and evidence-based diagnosis.
+
 ## [0.39.0] - 2026-09-05
 
 - Curated the existing MIT Cache Engineering source from `Dankosik/go-service-template-rest` without inflating Atlas discovery counts.
