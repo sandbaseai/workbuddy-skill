@@ -23,6 +23,12 @@ USER_AGENT = "sandbaseai-workbuddy-skill-catalog/0.2"
 MAX_THROTTLE_RETRIES = 8
 
 
+def rate_limit_delay(headers: dict) -> int:
+    reset = int(headers.get("X-RateLimit-Reset", "0"))
+    retry_after = int(headers.get("Retry-After", "0"))
+    return max(5, retry_after, reset - int(time.time()) + 2)
+
+
 def request_json(query: str, page: int, token: str, max_retries: int = 3) -> tuple[dict, dict]:
     # Relevance ordering repeatedly returns the same first page, which makes
     # incremental refreshes spend their budget rediscovering old records.
@@ -61,11 +67,14 @@ def request_json(query: str, page: int, token: str, max_retries: int = 3) -> tup
             time.sleep(delay)
 
 
-def wait_for_rate_limit(headers: dict) -> None:
+def wait_for_rate_limit(headers: dict, max_wait: int) -> None:
     if int(headers.get("X-RateLimit-Remaining", "1")) > 0:
         return
-    reset = int(headers.get("X-RateLimit-Reset", "0"))
-    delay = max(1, reset - int(time.time()) + 2)
+    delay = rate_limit_delay(headers)
+    if delay > max_wait:
+        raise RuntimeError(
+            f"GitHub rate-limit wait {delay}s exceeds this run's {max_wait}s cap; resume later"
+        )
     print(f"GitHub code-search limit reached; waiting {delay}s", file=sys.stderr)
     time.sleep(delay)
 
@@ -132,6 +141,19 @@ def write_atomic(path: Path, rows: dict[str, dict]) -> None:
     temporary.replace(path)
 
 
+def write_stats(path: Path, rows: dict[str, dict], requests: int, capped_queries: int) -> None:
+    stats = {
+        "records": len(rows),
+        "unique_content_shas": len({row["sha"] for row in rows.values()}),
+        "repositories": len({row["repository"] for row in rows.values()}),
+        "requests": requests,
+        "queries_over_github_cap": capped_queries,
+    }
+    stats_path = path.with_name("stats.json")
+    stats_path.write_text(json.dumps(stats, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    print(json.dumps(stats, sort_keys=True))
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--target", type=int, default=10_000)
@@ -139,6 +161,12 @@ def main() -> int:
     parser.add_argument("--max-bytes", type=int, default=20_000)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUT)
     parser.add_argument("--checkpoint-every", type=int, default=5)
+    parser.add_argument(
+        "--max-rate-wait",
+        type=int,
+        default=300,
+        help="Pause resumably instead of sleeping longer than this many seconds",
+    )
     parser.add_argument(
         "--max-requests",
         type=int,
@@ -151,8 +179,12 @@ def main() -> int:
         or args.start_bytes < 1
         or args.max_bytes < args.start_bytes
         or args.max_requests < 1
+        or args.max_rate_wait < 1
     ):
-        parser.error("require target > 0, max-requests > 0, and 0 < start-bytes <= max-bytes")
+        parser.error(
+            "require target > 0, max-requests > 0, max-rate-wait > 0, "
+            "and 0 < start-bytes <= max-bytes"
+        )
 
     token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN", "")
     rows = load_existing(args.output)
@@ -184,9 +216,12 @@ def main() -> int:
                                 "GitHub search API remained rate-limited after "
                                 f"{MAX_THROTTLE_RETRIES} retries; resume later"
                             ) from exc
-                        reset = int(exc.headers.get("X-RateLimit-Reset", "0"))
-                        retry_after = int(exc.headers.get("Retry-After", "0"))
-                        delay = max(5, retry_after, reset - int(time.time()) + 2)
+                        delay = rate_limit_delay(exc.headers)
+                        if delay > args.max_rate_wait:
+                            raise RuntimeError(
+                                f"GitHub rate-limit wait {delay}s exceeds this run's "
+                                f"{args.max_rate_wait}s cap; resume later"
+                            ) from exc
                         print(f"GitHub returned {exc.code}; waiting {delay}s", file=sys.stderr)
                         time.sleep(delay)
                         continue
@@ -218,29 +253,21 @@ def main() -> int:
                 if not items or page * 100 >= min(total, 1_000):
                     break
                 page += 1
-                wait_for_rate_limit(headers)
+                wait_for_rate_limit(headers, args.max_rate_wait)
                 if requests % args.checkpoint_every == 0:
                     write_atomic(args.output, rows)
-            wait_for_rate_limit(headers)
+            wait_for_rate_limit(headers, args.max_rate_wait)
             # Persist after every completed shard so a long refresh loses at
             # most one shard when interrupted.
             write_atomic(args.output, rows)
     except (KeyboardInterrupt, HTTPError, URLError, RuntimeError) as exc:
         write_atomic(args.output, rows)
+        write_stats(args.output, rows, requests, capped_queries)
         print(f"crawl paused after {len(rows)} records: {exc}", file=sys.stderr)
         return 2
 
     write_atomic(args.output, rows)
-    stats = {
-        "records": len(rows),
-        "unique_content_shas": len({row["sha"] for row in rows.values()}),
-        "repositories": len({row["repository"] for row in rows.values()}),
-        "requests": requests,
-        "queries_over_github_cap": capped_queries,
-    }
-    stats_path = args.output.with_name("stats.json")
-    stats_path.write_text(json.dumps(stats, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-    print(json.dumps(stats, sort_keys=True))
+    write_stats(args.output, rows, requests, capped_queries)
     return 0 if len(rows) >= args.target else 1
 
 

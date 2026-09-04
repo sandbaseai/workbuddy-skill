@@ -36,7 +36,20 @@ jobs:
           if [ "$current" -lt 10000 ]; then current=10000; fi
           target=$((current + 100))
           echo "Refreshing catalog from $current toward $target records"
-          python3 scripts/crawl_github_skills.py --target "$target" --max-requests 60 --output /tmp/skills.jsonl
+          set +e
+          python3 scripts/crawl_github_skills.py --target "$target" --max-requests 60 \
+            --max-rate-wait 120 --output /tmp/skills.jsonl
+          crawl_status=$?
+          set -e
+          if [ "$crawl_status" -ne 0 ] && [ "$crawl_status" -ne 2 ]; then
+            exit "$crawl_status"
+          fi
+          discovered=$(wc -l < /tmp/skills.jsonl)
+          if [ "$discovered" -le "$current" ]; then
+            echo "No new records before the rate-limit boundary; resume on the next run"
+            exit 0
+          fi
+          echo "Discovered $((discovered - current)) new records; continuing with analysis"
       - name: Analyze WorkBuddy compatibility
         run: python3 scripts/analyze_catalog.py /tmp/skills.jsonl
       - name: Validate provenance index
