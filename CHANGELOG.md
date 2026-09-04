@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.14.0] - 2026-09-05
+
+- Added the MIT Meeting Notes Skill with source-grounded decisions, action items, owners, risks, privacy controls, and explicit uncertainty.
+
 ## [0.13.0] - 2026-09-05
 
 - Added the MIT CLI Testing Skill with installed-artifact coverage, isolated fixtures, stream and signal verification, bounded processes, and destructive-path safeguards.
