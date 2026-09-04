@@ -4,6 +4,9 @@ const count = document.querySelector("#result-count");
 const empty = document.querySelector("#empty");
 const error = document.querySelector("#error");
 const more = document.querySelector("#more");
+const metricRecords = document.querySelector("#metric-records");
+const metricShas = document.querySelector("#metric-shas");
+const metricRepositories = document.querySelector("#metric-repositories");
 
 let catalog = [];
 let filtered = [];
@@ -47,14 +50,17 @@ function search() {
 input.addEventListener("input", search);
 more.addEventListener("click", () => render(false));
 
-fetch("catalog.json")
-  .then((response) => {
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    return response.json();
+Promise.all([fetch("catalog.json"), fetch("catalog-meta.json")])
+  .then(async ([catalogResponse, metaResponse]) => {
+    if (!catalogResponse.ok || !metaResponse.ok) throw new Error("catalog unavailable");
+    return Promise.all([catalogResponse.json(), metaResponse.json()]);
   })
-  .then((data) => {
+  .then(([data, meta]) => {
     catalog = data;
     filtered = data;
+    metricRecords.textContent = meta.records.toLocaleString();
+    metricShas.textContent = meta.unique_content_shas.toLocaleString();
+    metricRepositories.textContent = meta.repositories.toLocaleString();
     render();
     input.disabled = false;
   })
@@ -63,4 +69,3 @@ fetch("catalog.json")
     count.textContent = "Catalog unavailable";
     error.hidden = false;
   });
-
