@@ -116,6 +116,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | Skill | Use it for | Provenance |
 |---|---|---|
 | [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
+| [Performance Improvement](skills/improve-performance/) | Measure, profile, optimize, and verify real system bottlenecks | [MIT source](skills/improve-performance/SOURCE.json) |
 | [Work Handoff](skills/handoff/) | Preserve verified state, decisions, risks, and an executable restart point | [MIT source](skills/handoff/SOURCE.json) |
 | [Test Strategy Design](skills/design-test-strategy/) | Turn product and system risks into a traceable, layered test portfolio | [MIT source](skills/design-test-strategy/SOURCE.json) |
 | [Accessibility Review](skills/review-accessibility/) | Find keyboard, screen-reader, low-vision, cognitive, and motion barriers | [MIT source](skills/review-accessibility/SOURCE.json) |
@@ -141,6 +142,10 @@ skills/sandbase/
 └── references/
     ├── execution.md
     └── troubleshooting.md
+skills/improve-performance/
+├── SKILL.md
+├── SOURCE.json
+└── LICENSE
 skills/handoff/
 ├── SKILL.md
 ├── SOURCE.json
