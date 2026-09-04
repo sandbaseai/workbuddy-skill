@@ -37,6 +37,7 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("rows[row[\"id\"]] = row", workflow)
         self.assertIn("git reset --hard origin/main", workflow)
         self.assertIn("git show origin/main:catalog/stats.json > /tmp/current-stats.json", workflow)
+        self.assertIn("--stats /tmp/merged-stats.json", workflow)
         self.assertIn("reconcile concurrent catalog refresh", workflow)
         self.assertIn("scripts/validate_catalog.py --minimum 10000 --require-analysis", workflow)
 

@@ -128,7 +128,9 @@ jobs:
                   current_stats["queries_over_github_cap"],
               ),
           }
-          Path("catalog/stats.json").write_text(json.dumps(stats, indent=2, sort_keys=True) + "\\n", encoding="utf-8")
+          stats_text = json.dumps(stats, indent=2, sort_keys=True) + "\\n"
+          Path("catalog/stats.json").write_text(stats_text, encoding="utf-8")
+          Path("/tmp/merged-stats.json").write_text(stats_text, encoding="utf-8")
           analysis = {
               "adaptable": sum(row.get("workbuddy_status") == "adaptable" for row in ordered),
               "analysis_ok": sum(row.get("analysis_status") == "ok" for row in ordered),
@@ -138,9 +140,13 @@ jobs:
               "security_flagged": sum(row.get("security_status") == "flagged" for row in ordered),
               "workbuddy_ready": sum(row.get("workbuddy_status") == "workbuddy-ready" for row in ordered),
           }
-          Path("catalog/analysis-stats.json").write_text(json.dumps(analysis, indent=2, sort_keys=True) + "\\n", encoding="utf-8")
+          analysis_text = json.dumps(analysis, indent=2, sort_keys=True) + "\\n"
+          Path("catalog/analysis-stats.json").write_text(analysis_text, encoding="utf-8")
+          Path("/tmp/merged-analysis-stats.json").write_text(analysis_text, encoding="utf-8")
           PY
-                  python3 scripts/update_readme_stats.py
+                  python3 scripts/update_readme_stats.py \
+                    --stats /tmp/merged-stats.json \
+                    --analysis /tmp/merged-analysis-stats.json
                   python3 scripts/validate_catalog.py --minimum 10000 --require-analysis
                   git add README.md catalog/README.md catalog/skills.jsonl catalog/stats.json catalog/analysis-stats.json
                   git commit -m "chore: reconcile concurrent catalog refresh"
