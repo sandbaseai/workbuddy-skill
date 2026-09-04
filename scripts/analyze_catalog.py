@@ -20,10 +20,10 @@ from urllib.request import Request, urlopen
 
 DEFAULT_CATALOG = Path("catalog/skills.jsonl")
 USER_AGENT = "sandbaseai-workbuddy-skill-analyzer/0.3"
-ANALYSIS_VERSION = "0.4"
+ANALYSIS_VERSION = "0.5"
 ANALYSIS_FIELDS = {
     "analysis_version", "analysis_status", "frontmatter_valid", "workbuddy_score",
-    "workbuddy_status", "workbuddy_missing_fields", "security_status",
+    "workbuddy_status", "workbuddy_missing_fields", "compatibility", "security_status",
     "security_signals", "skill_lines",
 }
 NAME_PATTERN = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*")
@@ -106,6 +106,7 @@ def analyze_text(text: str) -> dict:
         "workbuddy_score": score,
         "workbuddy_status": status,
         "workbuddy_missing_fields": missing,
+        "compatibility": fields.get("compatibility", ""),
         "security_status": "flagged" if risks else "no-static-flags",
         "security_signals": risks,
         "skill_lines": text.count("\n") + 1,

@@ -83,6 +83,14 @@ class QueryCatalogTests(unittest.TestCase):
         self.assertEqual(query_rows([flagged], ["prompt-injection"])[0], [flagged])
         self.assertEqual(query_rows([flagged], ["description_zh"])[0], [flagged])
 
+    def test_search_includes_compatibility_metadata(self):
+        compatible = {
+            **row("python-tool", "compat", 80),
+            "compatibility": "Requires Python 3.12",
+        }
+        results, _ = query_rows([compatible], ["Python", "3.12"])
+        self.assertEqual(results, [compatible])
+
 
 if __name__ == "__main__":
     unittest.main()

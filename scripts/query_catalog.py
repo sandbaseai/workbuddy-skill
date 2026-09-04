@@ -22,6 +22,7 @@ def matches(row: dict, terms: list[str]) -> bool:
             "workbuddy_status",
             "security_status",
             "workbuddy_missing_fields",
+            "compatibility",
             "security_signals",
         )
     ).casefold()

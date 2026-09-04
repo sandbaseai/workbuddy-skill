@@ -43,6 +43,14 @@ class AnalyzeCatalogTests(unittest.TestCase):
         self.assertIn("license", result["workbuddy_missing_fields"])
         self.assertIn("analysis_version", result)
 
+    def test_analysis_exposes_compatibility_requirements(self):
+        result = analyze_text(
+            "---\nname: demo\ndescription: Demo\n"
+            "compatibility: Requires Python 3.12 and network access\n"
+            "---\n\n# Demo\n"
+        )
+        self.assertEqual(result["compatibility"], "Requires Python 3.12 and network access")
+
     def test_compatibility_score_never_exceeds_one_hundred(self):
         result = analyze_text(
             "---\nname: demo\ndescription: Demo\ndescription_zh: 演示\n"
