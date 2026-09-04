@@ -67,11 +67,30 @@
         </div>
 
         <div class="search-panel">
-          <label for="search">Search name, repository, or path</label>
-          <div class="search-row">
-            <input id="search" type="search" autocomplete="off" placeholder="Try: research, video, spreadsheet…">
-            <span id="result-count" aria-live="polite">Loading catalog…</span>
+          <div class="filter-grid">
+            <div class="field search-field">
+              <label for="search">Search name, repository, or path</label>
+              <input id="search" type="search" autocomplete="off" placeholder="Try: research, video, spreadsheet…">
+            </div>
+            <div class="field">
+              <label for="compatibility">WorkBuddy compatibility</label>
+              <select id="compatibility">
+                <option value="all">All states</option>
+                <option value="adaptable">Adaptable</option>
+                <option value="needs-review">Needs review</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="security">Static security signals</label>
+              <select id="security">
+                <option value="all">All states</option>
+                <option value="no-static-flags">No static flags</option>
+                <option value="flagged">Flagged for review</option>
+                <option value="unscanned">Unscanned</option>
+              </select>
+            </div>
           </div>
+          <span id="result-count" aria-live="polite">Loading catalog…</span>
         </div>
 
         <div id="error" class="message error" hidden>

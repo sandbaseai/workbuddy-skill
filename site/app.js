@@ -1,6 +1,8 @@
 const input = document.querySelector("#search");
 const results = document.querySelector("#results");
 const count = document.querySelector("#result-count");
+const compatibility = document.querySelector("#compatibility");
+const security = document.querySelector("#security");
 const empty = document.querySelector("#empty");
 const error = document.querySelector("#error");
 const more = document.querySelector("#more");
@@ -29,7 +31,11 @@ function render(reset = true) {
     <a class="result" href="${escapeHtml(skill.u)}" target="_blank" rel="noreferrer">
       <span class="result-name">${escapeHtml(skill.n)}</span>
       <span class="result-source"><span>${escapeHtml(skill.r)}</span><code>${escapeHtml(skill.p)}</code></span>
-      <span class="result-open">Inspect source ↗</span>
+      <span class="result-meta">
+        <span class="badge">${skill.q ?? "—"}/100</span>
+        <span class="badge ${skill.k === "flagged" ? "flagged" : ""}">${escapeHtml(skill.k)}</span>
+        <span class="result-open">Inspect ↗</span>
+      </span>
     </a>`).join("");
   results.insertAdjacentHTML("beforeend", markup);
   shown += next.length;
@@ -41,13 +47,18 @@ function render(reset = true) {
 
 function search() {
   const query = input.value.trim().toLocaleLowerCase();
-  filtered = query
-    ? catalog.filter((skill) => `${skill.n} ${skill.r} ${skill.p}`.toLocaleLowerCase().includes(query))
-    : catalog;
+  filtered = catalog.filter((skill) => {
+    const textMatch = !query || `${skill.n} ${skill.r} ${skill.p}`.toLocaleLowerCase().includes(query);
+    const compatibilityMatch = compatibility.value === "all" || skill.w === compatibility.value;
+    const securityMatch = security.value === "all" || skill.k === security.value;
+    return textMatch && compatibilityMatch && securityMatch;
+  });
   render();
 }
 
 input.addEventListener("input", search);
+compatibility.addEventListener("change", search);
+security.addEventListener("change", search);
 more.addEventListener("click", () => render(false));
 
 Promise.all([fetch("catalog.json"), fetch("catalog-meta.json")])

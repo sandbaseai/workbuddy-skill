@@ -181,6 +181,12 @@ def main() -> int:
                     if Path(item["path"]).name.casefold() != "skill.md":
                         continue
                     row = normalize(item, query)
+                    previous = rows.get(row["id"])
+                    if previous and previous.get("sha") == row["sha"]:
+                        row.update({
+                            key: value for key, value in previous.items()
+                            if key not in row
+                        })
                     rows[row["id"]] = row
                     if len(rows) >= args.target:
                         break

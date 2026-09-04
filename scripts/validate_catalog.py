@@ -12,12 +12,16 @@ REQUIRED = {
     "workbuddy_status", "security_status",
 }
 SHA = re.compile(r"[0-9a-f]{40,64}")
+ANALYSIS_STATUSES = {"ok", "oversize"}
+WORKBUDDY_STATUSES = {"unreviewed", "workbuddy-ready", "adaptable", "needs-review"}
+SECURITY_STATUSES = {"unscanned", "no-static-flags", "flagged"}
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("path", nargs="?", type=Path, default=Path("catalog/skills.jsonl"))
     parser.add_argument("--minimum", type=int, default=10_000)
+    parser.add_argument("--require-analysis", action="store_true")
     args = parser.parse_args()
     seen_ids, rows = set(), 0
     with args.path.open(encoding="utf-8") as handle:
@@ -62,6 +66,24 @@ def main() -> int:
             raw_prefix = f"https://raw.githubusercontent.com/{item['repository']}/"
             if not item["raw_url"].startswith(raw_prefix) or not item["raw_url"].endswith("/" + item["path"]):
                 raise SystemExit(f"line {rows}: raw_url does not match repository/path")
+            if item["workbuddy_status"] not in WORKBUDDY_STATUSES:
+                raise SystemExit(f"line {rows}: invalid WorkBuddy status")
+            if item["security_status"] not in SECURITY_STATUSES:
+                raise SystemExit(f"line {rows}: invalid security status")
+            if "analysis_status" in item:
+                status = item["analysis_status"]
+                if status not in ANALYSIS_STATUSES and not status.startswith("fetch-error:"):
+                    raise SystemExit(f"line {rows}: invalid analysis status")
+                if status == "ok":
+                    if not isinstance(item.get("frontmatter_valid"), bool):
+                        raise SystemExit(f"line {rows}: frontmatter_valid must be boolean")
+                    score = item.get("workbuddy_score")
+                    if not isinstance(score, int) or not 0 <= score <= 100:
+                        raise SystemExit(f"line {rows}: invalid WorkBuddy score")
+                    if not isinstance(item.get("security_signals"), list):
+                        raise SystemExit(f"line {rows}: security_signals must be a list")
+            elif args.require_analysis:
+                raise SystemExit(f"line {rows}: analysis is required")
     if rows < args.minimum:
         raise SystemExit(f"catalog has {rows} records; minimum is {args.minimum}")
     print(f"OK: {rows} catalog records are structurally valid")

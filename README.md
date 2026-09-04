@@ -114,15 +114,21 @@ The catalog is generated from public GitHub `SKILL.md` results with resumable, r
 
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 10,000 |
-| Unique content SHAs | 6,483 |
-| Source repositories | 5,044 |
+| Indexed GitHub paths | 10,100 |
+| Unique content SHAs | 6,551 |
+| Source repositories | 5,091 |
 
 Browse the catalog in the [WorkBuddy Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) or query the JSONL directly. If it helps you discover a useful workflow, a star or a short review helps other WorkBuddy users find it.
 
+The current static analysis successfully inspected 10,099 paths: 9,215 are
+structurally adaptable to WorkBuddy, 884 need manual review, one is already
+WorkBuddy-ready, and 266 contain at least one conservative security signal.
+A clean static scan is never a security guarantee.
+
 ```bash
 GH_TOKEN="..." python3 scripts/crawl_github_skills.py --target 10000
-python3 scripts/validate_catalog.py --minimum 10000
+python3 scripts/analyze_catalog.py
+python3 scripts/validate_catalog.py --minimum 10000 --require-analysis
 python3 scripts/query_catalog.py invoice --limit 10
 ```
 

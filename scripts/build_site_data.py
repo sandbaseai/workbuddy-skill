@@ -23,6 +23,9 @@ with SOURCE.open(encoding="utf-8") as handle:
                 "p": row["path"],
                 "u": row["source_url"],
                 "s": row["sha"],
+                "w": row.get("workbuddy_status", "unreviewed"),
+                "q": row.get("workbuddy_score"),
+                "k": row.get("security_status", "unscanned"),
             }
         )
 
