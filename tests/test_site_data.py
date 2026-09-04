@@ -17,6 +17,18 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        synthesis = next(
+            item
+            for item in records
+            if item["r"] == "itseffi/productize"
+            and item["p"]
+            == "skills/productize-fragmented-user-research-synthesis-into-coherent-insights/SKILL.md"
+        )
+        self.assertEqual(synthesis["w"], "workbuddy-ready")
+        self.assertEqual(synthesis["g"], "research")
+        self.assertTrue(
+            synthesis["a"].endswith("/user-research-synthesis-workbuddy-skill.zip")
+        )
         roadmap = next(
             item
             for item in records

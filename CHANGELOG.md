@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.25.0] - 2026-09-05
+
+- Added the MIT User Research Synthesis Skill with source inventories, privacy controls, atomic evidence coding, contradiction analysis, confidence rationale, decision-linked gaps, and auditable insight traceability.
+
 ## [0.24.0] - 2026-09-05
 
 - Added the MIT Product Roadmap Planning Skill with outcome-based items, evidence confidence, capacity-aware horizons, dependencies, explicit rejected work, coherence checks, and review triggers.
