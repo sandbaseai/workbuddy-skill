@@ -149,6 +149,8 @@ never commit API keys, access tokens, private prompts, or customer data.
 For help, see [SUPPORT.md](SUPPORT.md); for responsible vulnerability reports,
 see [SECURITY.md](SECURITY.md).
 
+See the [changelog](CHANGELOG.md) for release history.
+
 ## License
 
 [MIT](LICENSE)
