@@ -8,6 +8,7 @@ description_en: "Prioritize items transparently with impact/effort, MoSCoW, or w
 category: "business"
 version: "0.1.0"
 author: "Istara Contributors; adapted for WorkBuddy by SandBase AI"
+license: "MIT"
 ---
 
 # Prioritization Matrix

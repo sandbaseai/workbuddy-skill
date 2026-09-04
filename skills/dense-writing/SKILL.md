@@ -8,6 +8,7 @@ description_en: "Remove repetition, filler, and decorative phrasing without losi
 category: "content"
 version: "0.1.0"
 author: "Bogyie; adapted for WorkBuddy by SandBase AI"
+license: "Apache-2.0"
 ---
 
 # dense-writing

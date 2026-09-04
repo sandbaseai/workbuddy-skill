@@ -8,6 +8,7 @@ description_en: "Test command-line tools in isolation across arguments, streams,
 category: "development"
 version: "0.1.0"
 author: "skills contributors; adapted for WorkBuddy by SandBase AI"
+license: "MIT"
 ---
 
 # Test CLI

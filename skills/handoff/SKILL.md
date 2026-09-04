@@ -8,6 +8,7 @@ description_en: "Create an actionable handoff from verified project state, compl
 category: "productivity"
 version: "0.1.0"
 author: "quarcs-lab; adapted for WorkBuddy by SandBase AI"
+license: "MIT"
 ---
 
 # Work Handoff

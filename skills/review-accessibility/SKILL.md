@@ -8,6 +8,7 @@ description_en: "Review web and app interfaces for keyboard, screen-reader, low-
 category: "design"
 version: "0.1.0"
 author: "skills contributors; adapted for WorkBuddy by SandBase AI"
+license: "MIT"
 ---
 
 # Review Accessibility

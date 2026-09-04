@@ -8,6 +8,7 @@ description_en: "Design a traceable, layered, cost-aware test strategy from user
 category: "development"
 version: "0.1.0"
 author: "skills contributors; adapted for WorkBuddy by SandBase AI"
+license: "MIT"
 ---
 
 # Design Test Strategy

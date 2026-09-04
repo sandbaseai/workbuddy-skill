@@ -9,6 +9,7 @@ category: "productivity"
 version: "0.1.0"
 author: "Anthropic; adapted for WorkBuddy"
 argument-hint: "[file path to manifest / SBOM | package name | repo path | paste text]"
+license: "Apache-2.0"
 ---
 
 # /oss-review
@@ -283,4 +284,3 @@ Likewise, when the copyleft-trigger analysis turns on a contested question (AGPL
 End with the next-steps decision tree per CLAUDE.md `## Outputs`. Customize the options to what this skill just produced — the five default branches (draft the X, escalate, get more facts, watch and wait, something else) are a starting point, not a lock-in. The tree is the output; the lawyer picks.
 
 If the scan surfaced more than ~10 packages, or any time the user asks: offer the dashboard (see CLAUDE.md `## Outputs → Dashboard offer for data-heavy outputs`). Shape the offer to what's useful here — counts by license family (permissive / weak copyleft / strong copyleft / AGPL / proprietary / unknown), risk distribution, and a table of findings with severity and package version.
-
