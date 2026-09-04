@@ -3,6 +3,7 @@
 
 from pathlib import Path
 import argparse
+import json
 import re
 
 from adapt_skill import resource_paths
@@ -16,6 +17,7 @@ REQUIRED = {
     "description_en",
     "version",
     "author",
+    "license",
 }
 
 
@@ -46,6 +48,17 @@ def validate_skill(skill: Path, root: Path) -> None:
     description = fields["description"].strip('"\'')
     if len(description) > 1024:
         raise ValueError(f"{relative} description must be at most 1024 characters")
+    source_file = skill.parent / "SOURCE.json"
+    if source_file.is_file():
+        try:
+            source = json.loads(source_file.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as exc:
+            raise ValueError(f"{relative} has invalid SOURCE.json: {exc}") from exc
+        declared_license = source.get("declared_source_license")
+        if declared_license and fields["license"].strip('"\'') != declared_license:
+            raise ValueError(
+                f"{relative} license must match SOURCE.json ({declared_license})"
+            )
     allowed_tools = fields.get("allowed-tools")
     if allowed_tools and allowed_tools.lstrip().startswith(("[", "{")):
         raise ValueError(f"{relative} allowed-tools must be a space- or comma-separated string")
