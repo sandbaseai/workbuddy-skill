@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:aydabd/github-bootstrap:templates/.github/skills/security-review/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "templates/.github/skills/security-review/SKILL.md",
+  "repository": "aydabd/github-bootstrap",
+  "sha": "9d11eb14d6ebd66ae47bfa1f44ce3e1ce4233b34",
+  "source_url": "https://github.com/aydabd/github-bootstrap/blob/b813d3f7c3ce5e7c5ef3207e247ede58ba79d1e5/templates/.github/skills/security-review/SKILL.md"
+}

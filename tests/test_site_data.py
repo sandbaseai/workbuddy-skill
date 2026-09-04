@@ -17,6 +17,17 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        security_review = next(
+            item
+            for item in records
+            if item["r"] == "aydabd/github-bootstrap"
+            and item["p"] == "templates/.github/skills/security-review/SKILL.md"
+        )
+        self.assertEqual(security_review["w"], "workbuddy-ready")
+        self.assertEqual(security_review["g"], "security")
+        self.assertTrue(
+            security_review["a"].endswith("/security-review-workbuddy-skill.zip")
+        )
         threat_model = next(
             item
             for item in records

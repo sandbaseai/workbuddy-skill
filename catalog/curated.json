@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:aydabd/github-bootstrap:templates/.github/skills/security-review/SKILL.md",
+    "skill": "security-review",
+    "skill_path": "skills/security-review",
+    "category": "security",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/security-review-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:phamhungptithcm/ai-agent-kit:assets/enterprise-ai-agent-os/.ai/skills-src/threat-model/SKILL.md",
     "skill": "threat-model",
     "skill_path": "skills/threat-model",

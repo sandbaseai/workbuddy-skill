@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.27.0] - 2026-09-05
+
+- Added the MIT Code Security Review Skill with scoped diff analysis, attacker-controlled data-flow tracing, authorization checks, exploitability evidence, calibrated severity, and explicit review limitations.
+
 ## [0.26.0] - 2026-09-05
 
 - Added the MIT Threat Modeling Skill with evidence-grounded boundaries, attacker capabilities, end-to-end abuse paths, control validation, residual-risk ownership, and explicit live-system safety limits.
