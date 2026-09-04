@@ -4,14 +4,16 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT MCP Security Skill with tool provenance, trust boundaries, five-layer validation, server-side authorization, side-effect controls, tenant isolation, secret handling, audit telemetry, and incident containment.
+
 ## [0.50.0] - 2026-09-05
 
 - Added Microsoft's official Apache-2.0 Playwright component-testing source to the Atlas with immutable commit and blob provenance; its conservative credential-path signal remains disclosed after review.
 - Added the Playwright Component Testing Skill with application-owned story galleries, observable callback state, configuration-preserving setup, deterministic visual checks, isolation proof, incremental migration, and trace-first diagnosis.
 
-## [0.48.0] - 2026-09-05
-
 - Added the MIT Product Analytics Skill with privacy-aware event contracts, funnel and cohort definitions, data-quality checks, statistically defensible experiments, guardrails, and reproducible handoffs.
+
+## [0.48.0] - 2026-09-05
 
 ## [0.47.0] - 2026-09-05
 

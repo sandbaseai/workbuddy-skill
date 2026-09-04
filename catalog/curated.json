@@ -7,6 +7,13 @@
     "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/playwright-component-testing-workbuddy-skill.zip"
   },
   {
+    "catalog_id": "github:majiayu000/claude-skill-registry:skills/security/mcp-security/SKILL.md",
+    "skill": "mcp-security",
+    "skill_path": "skills/mcp-security",
+    "category": "security",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/mcp-security-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:microsoft/eval-guide:skills/eval-generator/SKILL.md",
     "skill": "agent-evaluation-engineering",
     "skill_path": "skills/agent-evaluation-engineering",
