@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.31.0] - 2026-09-05
+
+- Added the MIT MySQL Database Operations Skill with version-aware schema discovery, bounded parameterized queries, execution-plan safety, index tradeoffs, transaction controls, and explicit production authorization.
+
 ## [0.30.0] - 2026-09-05
 
 - Added the MIT Evidence-based Data Analysis Skill with explicit analysis units, data-quality profiling, statistical limits, causal-claim discipline, robustness checks, reproducibility, and source-to-output traceability.

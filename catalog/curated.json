@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:ssrjkk/claude-skills:.claude/skills/database/mysql/SKILL.md",
+    "skill": "mysql",
+    "skill_path": "skills/mysql",
+    "category": "data",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/mysql-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:datar-gaurav/sutra-os:backend/skills/data-analysis/SKILL.md",
     "skill": "data-analysis",
     "skill_path": "skills/data-analysis",
