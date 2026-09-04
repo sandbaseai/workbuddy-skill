@@ -143,7 +143,8 @@ Search results are provenance links, not installation approvals. For machine-rea
 To turn a reviewed entry into a WorkBuddy-compatible ZIP, use
 `scripts/adapt_skill.py`. It normalizes frontmatter, keeps immutable provenance,
 requires a source-license declaration, and refuses flagged or incomplete input
-by default. See [the adaptation guide](docs/adapting-skills.md).
+by default. See the [English adaptation guide](docs/adapting-skills.md) or
+[中文适配指南](docs/adapting-skills.zh-CN.md).
 
 ## Compatibility
 
