@@ -126,6 +126,15 @@ class SiteDataTests(unittest.TestCase):
         self.assertEqual(research["w"], "workbuddy-ready")
         self.assertEqual(research["g"], "research")
         self.assertTrue(research["a"].endswith("/web-researcher-workbuddy-skill.zip"))
+        email = next(
+            item
+            for item in records
+            if item["r"] == "datar-gaurav/sutra-os"
+            and item["p"] == "backend/skills/email-drafting/SKILL.md"
+        )
+        self.assertEqual(email["w"], "workbuddy-ready")
+        self.assertEqual(email["g"], "business")
+        self.assertTrue(email["a"].endswith("/email-drafting-workbuddy-skill.zip"))
         metadata = json.loads(
             (ROOT / "site" / "catalog-meta.json").read_text(encoding="utf-8")
         )

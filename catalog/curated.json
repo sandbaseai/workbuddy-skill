@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:datar-gaurav/sutra-os:backend/skills/email-drafting/SKILL.md",
+    "skill": "email-drafting",
+    "skill_path": "skills/email-drafting",
+    "category": "business",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/email-drafting-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:Animism001/skills:.agents/skills/web-researcher/SKILL.md",
     "skill": "web-researcher",
     "skill_path": "skills/web-researcher",
