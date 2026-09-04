@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.32.0] - 2026-09-05
+
+- Added the MIT Monitoring and Observability Design Skill with journey-based SLIs/SLOs, bounded-cardinality telemetry, decision-focused dashboards, actionable alerts, privacy and cost controls, and end-to-end signal-path validation.
+
 ## [0.31.0] - 2026-09-05
 
 - Added the MIT MySQL Database Operations Skill with version-aware schema discovery, bounded parameterized queries, execution-plan safety, index tradeoffs, transaction controls, and explicit production authorization.

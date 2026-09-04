@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:FutureJJ/claude-skills:skills/monitoring-observability/SKILL.md",
+    "skill": "monitoring-observability",
+    "skill_path": "skills/monitoring-observability",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/monitoring-observability-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:ssrjkk/claude-skills:.claude/skills/database/mysql/SKILL.md",
     "skill": "mysql",
     "skill_path": "skills/mysql",

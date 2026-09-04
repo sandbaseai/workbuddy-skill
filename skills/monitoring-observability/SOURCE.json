@@ -1,0 +1,18 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [
+      "references/advanced.md",
+      "references/patterns.md"
+    ],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:FutureJJ/claude-skills:skills/monitoring-observability/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "skills/monitoring-observability/SKILL.md",
+  "repository": "FutureJJ/claude-skills",
+  "sha": "8d52469c996b3975e880aebbd2b0adabdff013ee",
+  "source_url": "https://github.com/FutureJJ/claude-skills/blob/d15f5a80032d0ae5f3ae19a2fe6cff92a2112782/skills/monitoring-observability/SKILL.md"
+}
