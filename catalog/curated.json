@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:Dankosik/go-service-template-rest:docs/universal-disciplines/cache-engineering/SKILL.md",
+    "skill": "cache-engineering",
+    "skill_path": "skills/cache-engineering",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/cache-engineering-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:codewithmukesh/dotnet-claude-kit:skills/docker/SKILL.md",
     "skill": "container-image-engineering",
     "skill_path": "skills/container-image-engineering",

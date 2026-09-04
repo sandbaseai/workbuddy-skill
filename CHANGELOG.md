@@ -2,6 +2,11 @@
 
 All notable changes to this project are documented here.
 
+## [0.39.0] - 2026-09-05
+
+- Curated the existing MIT Cache Engineering source from `Dankosik/go-service-template-rest` without inflating Atlas discovery counts.
+- Added the Cache Engineering Skill with evidence-based value decisions, complete multi-tenant key contracts, freshness and invalidation ordering, bounded miss collapse, outage recovery, mixed-version rollout, and falsifiable performance proof.
+
 ## [0.38.0] - 2026-09-05
 
 - Added the MIT Docker source from `codewithmukesh/dotnet-claude-kit` to the Atlas, increasing it to 11,104 indexed paths across 5,769 repositories; its static credential-example signal remains disclosed in provenance.
