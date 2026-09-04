@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:simstudioai/sim:.agents/skills/v2-api-conventions/SKILL.md",
+  "declared_source_license": "Apache-2.0",
+  "source_license_file": "LICENSE",
+  "path": ".agents/skills/v2-api-conventions/SKILL.md",
+  "repository": "simstudioai/sim",
+  "sha": "a7174f61e30dc127a0a6f04877ba624b267a219a",
+  "source_url": "https://github.com/simstudioai/sim/blob/7945b2957f5c8f851a8dd8b0f2a2e3f9449a1696/.agents/skills/v2-api-conventions/SKILL.md"
+}

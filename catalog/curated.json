@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:simstudioai/sim:.agents/skills/v2-api-conventions/SKILL.md",
+    "skill": "api-resilience-engineering",
+    "skill_path": "skills/api-resilience-engineering",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/api-resilience-engineering-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:aws-samples/sample-aws-resilience-skill:aws-resilience-modeling/SKILL.md",
     "skill": "aws-resilience-assessment",
     "skill_path": "skills/aws-resilience-assessment",

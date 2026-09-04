@@ -2,6 +2,11 @@
 
 All notable changes to this project are documented here.
 
+## [0.43.0] - 2026-09-05
+
+- Added the Apache-2.0 API contract source from the 29k-star `simstudioai/sim` repository to the Atlas, with its immutable commit, blob SHA, static analysis, license, and NOTICE provenance.
+- Added the API Resilience Engineering Skill with end-to-end deadline budgets, safe retries, honest idempotency semantics, fair rate and concurrency limits, bounded queues, circuit breakers, bulkheads, ambiguous-outcome reconciliation, and attempt-level proof.
+
 ## [0.42.0] - 2026-09-05
 
 - Curated the existing MIT-0 AWS resilience source from `aws-samples/sample-aws-resilience-skill` without inflating Atlas discovery counts.
