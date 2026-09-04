@@ -37,6 +37,11 @@ RISK_PATTERNS = {
     "recursive-delete": re.compile(r"\brm\s+(?:-[a-zA-Z]*r[a-zA-Z]*f|-{1,2}recursive)[^\n]*", re.I),
     "privilege-escalation": re.compile(r"\bsudo\s+", re.I),
     "credential-path": re.compile(r"(?:\.ssh/|\.aws/credentials|\.env\b|keychain|credential store)", re.I),
+    "sensitive-data-exfiltration": re.compile(
+        r"(?:send|upload|post|transmit|exfiltrat)[^\n]{0,240}"
+        r"(?:api\s*key|access\s*token|secret|password|credential|environment variable)",
+        re.I,
+    ),
     "dynamic-eval": re.compile(r"(?:\beval\s*\(|\bexec\s*\(|base64\s+(?:--decode|-d))", re.I),
 }
 
