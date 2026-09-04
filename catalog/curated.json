@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:datar-gaurav/sutra-os:backend/skills/data-analysis/SKILL.md",
+    "skill": "data-analysis",
+    "skill_path": "skills/data-analysis",
+    "category": "data",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/data-analysis-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:rocklambros/rcs:skills/ml-datasci/applying-differential-privacy/SKILL.md",
     "skill": "differential-privacy",
     "skill_path": "skills/differential-privacy",
