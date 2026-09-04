@@ -99,9 +99,10 @@ function render(reset = true) {
 }
 
 function search() {
-  const query = input.value.trim().toLocaleLowerCase();
+  const terms = input.value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
   filtered = catalog.filter((skill) => {
-    const textMatch = !query || `${skill.n} ${skill.r} ${skill.p}`.toLocaleLowerCase().includes(query);
+    const searchable = `${skill.n} ${skill.r} ${skill.p}`.toLocaleLowerCase();
+    const textMatch = terms.every((term) => searchable.includes(term));
     const categoryMatch = category.value === "all" || skill.g === category.value;
     const compatibilityMatch = compatibility.value === "all" || skill.w === compatibility.value;
     const securityMatch = security.value === "all" || skill.k === security.value;
