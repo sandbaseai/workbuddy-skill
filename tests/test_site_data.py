@@ -17,6 +17,17 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        migration = next(
+            item
+            for item in records
+            if item["r"] == "Kushagrabainsla/north"
+            and item["p"] == "skills/builtin/data-and-schema-migration/SKILL.md"
+        )
+        self.assertEqual(migration["w"], "workbuddy-ready")
+        self.assertEqual(migration["g"], "data")
+        self.assertTrue(
+            migration["a"].endswith("/data-and-schema-migration-workbuddy-skill.zip")
+        )
         pre_mortem = next(
             item
             for item in records

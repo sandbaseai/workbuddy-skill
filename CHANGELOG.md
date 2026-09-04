@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.23.0] - 2026-09-05
+
+- Added the MIT Data and Schema Migration Skill with compatibility contracts, expand/migrate/contract staging, idempotent backfills, reconciliation, production stop conditions, and tested recovery.
+
 ## [0.22.0] - 2026-09-05
 
 - Added the MIT Project Pre-mortem Skill with evidence-constrained failure paths, cross-functional risk lenses, measurable warning signals, owned mitigations, residual-risk acceptance, and review triggers.

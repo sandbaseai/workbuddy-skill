@@ -134,6 +134,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | Skill | Use it for | Provenance |
 |---|---|---|
 | [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
+| [Data and Schema Migration](skills/data-and-schema-migration/) | Migrate persisted formats through compatibility, idempotent backfills, and verified recovery | [MIT source](skills/data-and-schema-migration/SOURCE.json) |
 | [Project Pre-mortem](skills/pre-mortem/) | Expose plausible failure paths and turn them into owned mitigations | [MIT source](skills/pre-mortem/SOURCE.json) |
 | [Architecture Decision Record](skills/architecture-decision/) | Compare consequential technical choices and record verifiable tradeoffs | [MIT source](skills/architecture-decision/SOURCE.json) |
 | [Incident Response and Triage](skills/incident-triage/) | Triage production incidents, contain harm, verify recovery, and preserve learning | [MIT source](skills/incident-triage/SOURCE.json) |
@@ -176,6 +177,10 @@ skills/sandbase/
 └── references/
     ├── execution.md
     └── troubleshooting.md
+skills/data-and-schema-migration/
+├── SKILL.md
+├── SOURCE.json
+└── LICENSE
 skills/pre-mortem/
 ├── SKILL.md
 ├── SOURCE.json
