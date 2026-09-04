@@ -134,6 +134,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | Skill | Use it for | Provenance |
 |---|---|---|
 | [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
+| [User Research Synthesis](skills/user-research-synthesis/) | Turn mixed research evidence into traceable insights, conflicts, gaps, and actions | [MIT source](skills/user-research-synthesis/SOURCE.json) |
 | [Product Roadmap Planning](skills/product-roadmap/) | Connect outcomes, evidence, dependencies, capacity, and uncertainty across planning horizons | [MIT source](skills/product-roadmap/SOURCE.json) |
 | [Data and Schema Migration](skills/data-and-schema-migration/) | Migrate persisted formats through compatibility, idempotent backfills, and verified recovery | [MIT source](skills/data-and-schema-migration/SOURCE.json) |
 | [Project Pre-mortem](skills/pre-mortem/) | Expose plausible failure paths and turn them into owned mitigations | [MIT source](skills/pre-mortem/SOURCE.json) |
@@ -178,6 +179,10 @@ skills/sandbase/
 └── references/
     ├── execution.md
     └── troubleshooting.md
+skills/user-research-synthesis/
+├── SKILL.md
+├── SOURCE.json
+└── LICENSE
 skills/product-roadmap/
 ├── SKILL.md
 ├── SOURCE.json

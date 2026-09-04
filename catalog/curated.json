@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:itseffi/productize:skills/productize-fragmented-user-research-synthesis-into-coherent-insights/SKILL.md",
+    "skill": "user-research-synthesis",
+    "skill_path": "skills/user-research-synthesis",
+    "category": "research",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/user-research-synthesis-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:davidvictor/adlc-skills:skills/adlc/adlc-roadmap/SKILL.md",
     "skill": "product-roadmap",
     "skill_path": "skills/product-roadmap",

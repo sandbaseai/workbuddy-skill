@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:itseffi/productize:skills/productize-fragmented-user-research-synthesis-into-coherent-insights/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "skills/productize-fragmented-user-research-synthesis-into-coherent-insights/SKILL.md",
+  "repository": "itseffi/productize",
+  "sha": "55ad6c4c779241bf3f60717450ec99a3c2bbeae6",
+  "source_url": "https://github.com/itseffi/productize/blob/f177680a573a242a81bd0a776f9681f620e6d74c/skills/productize-fragmented-user-research-synthesis-into-coherent-insights/SKILL.md"
+}
