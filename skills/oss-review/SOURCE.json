@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:anthropics/claude-for-legal:ip-legal/skills/oss-review/SKILL.md",
+  "declared_source_license": "Apache-2.0",
+  "path": "ip-legal/skills/oss-review/SKILL.md",
+  "repository": "anthropics/claude-for-legal",
+  "sha": "77fe623944defe005dce864d88f9da026c095383",
+  "source_url": "https://github.com/anthropics/claude-for-legal/blob/4a6c651889c97cc9140580363c73e0eb17379c2b/ip-legal/skills/oss-review/SKILL.md"
+}

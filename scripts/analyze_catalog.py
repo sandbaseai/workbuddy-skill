@@ -41,11 +41,26 @@ def parse_frontmatter(text: str) -> tuple[bool, dict[str, str]]:
     if not match:
         return False, {}
     fields: dict[str, str] = {}
-    for line in match.group(1).splitlines():
+    lines = match.group(1).splitlines()
+    index = 0
+    while index < len(lines):
+        line = lines[index]
         if not line or line[0].isspace() or ":" not in line:
+            index += 1
             continue
         key, value = line.split(":", 1)
-        fields[key.strip()] = value.strip().strip('"\'')
+        value = value.strip()
+        if value in {">", "|"}:
+            chunks = []
+            index += 1
+            while index < len(lines) and (not lines[index] or lines[index][0].isspace()):
+                chunks.append(lines[index].strip())
+                index += 1
+            value = (" " if value == ">" else "\n").join(chunks).strip()
+            fields[key.strip()] = value
+            continue
+        fields[key.strip()] = value.strip('"\'')
+        index += 1
     return True, fields
 
 

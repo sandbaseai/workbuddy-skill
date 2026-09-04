@@ -25,6 +25,7 @@ FRONTMATTER_FIELDS = (
     "version",
     "author",
     "allowed-tools",
+    "argument-hint",
     "disable-model-invocation",
     "user-invocable",
 )
