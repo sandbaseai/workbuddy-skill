@@ -19,7 +19,7 @@
     <meta name="twitter:title" content="WorkBuddy Skill Atlas">
     <meta name="twitter:description" content="A provenance-first public index of Agent Skills for WorkBuddy.">
     <title>WorkBuddy Skill Atlas</title>
-    <link rel="stylesheet" href="styles.css?v=0.5.0">
+    <link rel="stylesheet" href="styles.css?v=0.6.0">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -128,6 +128,14 @@
                 <option value="unscanned">Unscanned</option>
               </select>
             </div>
+            <div class="field">
+              <label for="source-context">Source context</label>
+              <select id="source-context">
+                <option value="all">All sources</option>
+                <option value="primary-looking">Primary-looking</option>
+                <option value="review-source">Fork, mirror, or dormant path</option>
+              </select>
+            </div>
           </div>
           <div class="result-controls">
             <div class="field sort-field">
@@ -168,6 +176,6 @@
       <span>WorkBuddy Skill Atlas</span>
       <a href="https://github.com/sandbaseai/workbuddy-skill">View source and contribute</a>
     </footer>
-    <script src="app.js?v=0.5.0" defer></script>
+    <script src="app.js?v=0.6.0" defer></script>
   </body>
 </html>

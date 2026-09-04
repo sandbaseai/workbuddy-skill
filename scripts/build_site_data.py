@@ -6,6 +6,8 @@ from collections import Counter
 import json
 import re
 
+from catalog_signals import source_context, source_signals
+
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "catalog" / "skills.jsonl"
 OUTPUT = ROOT / "site" / "catalog.json"
@@ -59,6 +61,8 @@ for row in source_rows:
             "k": row.get("security_status", "unscanned"),
             "g": category,
             "c": sha_copies[row["sha"]],
+            "o": source_context(row),
+            "x": source_signals(row),
         }
     )
 

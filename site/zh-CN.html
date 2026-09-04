@@ -19,7 +19,7 @@
     <meta name="twitter:title" content="WorkBuddy Skill Atlas">
     <meta name="twitter:description" content="面向 WorkBuddy 的来源优先公开 Agent Skills 索引。">
     <title>WorkBuddy Skill Atlas｜技能目录</title>
-    <link rel="stylesheet" href="styles.css?v=0.5.0">
+    <link rel="stylesheet" href="styles.css?v=0.6.0">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -87,6 +87,7 @@
             <div class="field"><label for="category">工作类别</label><select id="category"><option value="all">全部类别</option><option value="business">商业</option><option value="content">内容</option><option value="data">数据</option><option value="design">设计</option><option value="development">开发</option><option value="media">媒体</option><option value="productivity">效率</option><option value="research">研究</option><option value="security">安全</option><option value="other">其他</option></select></div>
             <div class="field"><label for="compatibility">WorkBuddy 兼容性</label><select id="compatibility"><option value="all">全部状态</option><option value="workbuddy-ready">WorkBuddy 就绪</option><option value="adaptable">可改造</option><option value="needs-review">需要审核</option></select></div>
             <div class="field"><label for="security">静态安全信号</label><select id="security"><option value="all">全部状态</option><option value="no-static-flags">无静态标记</option><option value="flagged">标记待审核</option><option value="unscanned">未扫描</option></select></div>
+            <div class="field"><label for="source-context">来源上下文</label><select id="source-context"><option value="all">全部来源</option><option value="primary-looking">疑似主来源</option><option value="review-source">Fork、镜像或休眠路径</option></select></div>
           </div>
           <div class="result-controls">
             <div class="field sort-field">
@@ -119,6 +120,6 @@
     </main>
 
     <footer><span>WorkBuddy Skill Atlas</span><a href="https://github.com/sandbaseai/workbuddy-skill">查看源码并参与贡献</a></footer>
-    <script src="app.js?v=0.5.0" defer></script>
+    <script src="app.js?v=0.6.0" defer></script>
   </body>
 </html>

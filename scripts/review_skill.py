@@ -15,6 +15,7 @@ from adapt_skill import (
     resource_paths,
 )
 from analyze_catalog import analyze_text, parse_frontmatter
+from catalog_signals import source_context, source_signals
 
 FRONTMATTER_FIELDS = (
     "name",
@@ -58,6 +59,11 @@ def build_report(
         source = {"source_file": str(source_file), "immutable": False}
     return {
         "source": source,
+        "source_context": {
+            "status": source_context(record) if record else "local-source",
+            "signals": source_signals(record) if record else [],
+            "note": "Source-context signals are deterministic triage hints, not authorship proof.",
+        },
         "frontmatter": {
             "valid": valid,
             "fields": {key: fields[key] for key in FRONTMATTER_FIELDS if fields.get(key)},
@@ -81,6 +87,7 @@ def build_report(
         },
         "review_checklist": {
             "immutable_source": bool(record),
+            "primary_source_context": bool(record) and not source_signals(record),
             "resources_complete": not missing,
             "static_review_clear": not all_signals,
             "license_verified": False,
@@ -97,11 +104,13 @@ def render_markdown(report: dict) -> str:
     static = report["static_review"]
     resources = report["resources"]
     checklist = report["review_checklist"]
+    source_context_report = report["source_context"]
     lines = [
         "# WorkBuddy Skill review report",
         "",
         f"- Source: {source.get('source_url', source.get('source_file'))}",
         f"- Immutable source: {'yes' if source['immutable'] else 'no'}",
+        f"- Source context: {source_context_report['status']}",
         f"- WorkBuddy compatibility: {compatibility['status']} ({compatibility['score']}/100)",
         f"- Static review: {static['status']}",
         f"- Referenced resources: {len(resources['requested'])}; missing: {len(resources['missing'])}",
@@ -118,12 +127,14 @@ def render_markdown(report: dict) -> str:
         f"- Referenced-script signals: {', '.join(static['script_signals']) or 'none detected'}",
         f"- Missing WorkBuddy fields: {', '.join(compatibility['missing_fields']) or 'none'}",
         f"- Missing resources: {', '.join(resources['missing']) or 'none'}",
+        f"- Source-context signals: {', '.join(source_context_report['signals']) or 'none'}",
         "",
         "## Human review checklist",
         "",
     ]
     labels = {
         "immutable_source": "Source is pinned to an immutable Git commit",
+        "primary_source_context": "No fork, mirror, or dormant-path signal was detected",
         "resources_complete": "All referenced resources were retrieved",
         "static_review_clear": "No configured static signal was detected",
         "license_verified": "Repository license permits adaptation and redistribution",

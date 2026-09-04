@@ -58,6 +58,14 @@ class QueryCatalogTests(unittest.TestCase):
         results, _ = query_rows(rows, ["alpha"], unique=True, order="copies")
         self.assertEqual([item["sha"] for item in results], ["popular", "single"])
 
+    def test_filters_source_context(self):
+        rows = [
+            row("active", "active", 90),
+            {**row("archived", "archived", 95), "path": "_archive/skills/archived/SKILL.md"},
+        ]
+        results, _ = query_rows(rows, ["a"], source="primary-looking")
+        self.assertEqual([item["sha"] for item in results], ["active"])
+
 
 if __name__ == "__main__":
     unittest.main()
