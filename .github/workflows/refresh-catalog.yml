@@ -113,7 +113,7 @@ jobs:
                       rows[row["id"]] = row
           ordered = [rows[key] for key in sorted(rows, key=str.casefold)]
           base_path.write_text(
-              "".join(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\\n" for row in ordered),
+              "".join(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n" for row in ordered),
               encoding="utf-8",
           )
           refresh_stats = json.loads(Path("/tmp/refresh-stats.json").read_text(encoding="utf-8"))
@@ -128,7 +128,7 @@ jobs:
                   current_stats["queries_over_github_cap"],
               ),
           }
-          stats_text = json.dumps(stats, indent=2, sort_keys=True) + "\\n"
+          stats_text = json.dumps(stats, indent=2, sort_keys=True) + "\n"
           Path("catalog/stats.json").write_text(stats_text, encoding="utf-8")
           Path("/tmp/merged-stats.json").write_text(stats_text, encoding="utf-8")
           analysis = {
@@ -140,7 +140,7 @@ jobs:
               "security_flagged": sum(row.get("security_status") == "flagged" for row in ordered),
               "workbuddy_ready": sum(row.get("workbuddy_status") == "workbuddy-ready" for row in ordered),
           }
-          analysis_text = json.dumps(analysis, indent=2, sort_keys=True) + "\\n"
+          analysis_text = json.dumps(analysis, indent=2, sort_keys=True) + "\n"
           Path("catalog/analysis-stats.json").write_text(analysis_text, encoding="utf-8")
           Path("/tmp/merged-analysis-stats.json").write_text(analysis_text, encoding="utf-8")
           PY
