@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:microsoft/playwright:packages/playwright-core/src/tools/skills/playwright-component-testing/SKILL.md",
+    "skill": "playwright-component-testing",
+    "skill_path": "skills/playwright-component-testing",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/playwright-component-testing-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:microsoft/eval-guide:skills/eval-generator/SKILL.md",
     "skill": "agent-evaluation-engineering",
     "skill_path": "skills/agent-evaluation-engineering",

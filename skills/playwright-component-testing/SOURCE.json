@@ -1,0 +1,13 @@
+{
+  "catalog_id": "github:microsoft/playwright:packages/playwright-core/src/tools/skills/playwright-component-testing/SKILL.md",
+  "repository": "microsoft/playwright",
+  "path": "packages/playwright-core/src/tools/skills/playwright-component-testing/SKILL.md",
+  "commit": "46cd5008d12d4e1297793d921e6cc3b595e388da",
+  "sha": "60b97bf8604e3484ccf3a56d4dfc73b4b4277b80",
+  "source_url": "https://github.com/microsoft/playwright/blob/46cd5008d12d4e1297793d921e6cc3b595e388da/packages/playwright-core/src/tools/skills/playwright-component-testing/SKILL.md",
+  "license": "Apache-2.0",
+  "license_file": "LICENSE",
+  "security_status": "flagged",
+  "security_signals": ["credential-path"],
+  "adaptation_notes": "Preserves Microsoft's story-gallery component-testing model while adding version checks, configuration merge safety, isolation requirements, CI evidence, visual determinism, bounded migration, and trace-first diagnosis. The disclosed credential-path signal is a conservative static match in documentation, not evidence of credential access."
+}
