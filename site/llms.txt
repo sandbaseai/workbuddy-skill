@@ -1,0 +1,42 @@
+# WorkBuddy Skill Atlas
+
+> Search public Agent Skills and adapt reviewed workflows for WorkBuddy. Every catalog record links to an immutable GitHub commit. Indexed content is not automatically trusted or installed.
+
+## Use the catalog
+
+- Web search: https://sandbaseai.github.io/workbuddy-skill/
+- Chinese search: https://sandbaseai.github.io/workbuddy-skill/zh-CN.html
+- Compact JSON catalog: https://sandbaseai.github.io/workbuddy-skill/catalog.json
+- Catalog metadata: https://sandbaseai.github.io/workbuddy-skill/catalog-meta.json
+- Source repository: https://github.com/sandbaseai/workbuddy-skill
+- Adaptation guide: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/adapting-skills.md
+- Chinese adaptation guide: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/adapting-skills.zh-CN.md
+
+## Safety and provenance
+
+The Atlas stores metadata, immutable source links, compatibility signals, and conservative static review signals. A clean signal is not a security guarantee. Review the original license, instructions, bundled resources, scripts, network behavior, and permissions before adapting or installing any Skill.
+
+## Local query
+
+Clone the repository and run:
+
+```bash
+python3 scripts/query_catalog.py "research report" --limit 10
+```
+
+Use `--json` for machine-readable results. Search terms are combined, so every term must match the repository, path, or inferred skill name.
+
+## Adapt a reviewed result
+
+```bash
+python3 scripts/adapt_skill.py \
+  --catalog-id 'github:owner/repository:path/to/SKILL.md' \
+  --display-name-zh '中文名称' \
+  --display-name-en 'English name' \
+  --description-zh '中文说明' \
+  --description-en 'English description' \
+  --author 'Original author; WorkBuddy adapter' \
+  --source-license 'MIT'
+```
+
+The adapter does not execute downloaded content. It records provenance, applies size and path limits, statically scans instructions and referenced scripts, and packages referenced resources from the same immutable commit.
