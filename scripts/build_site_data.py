@@ -10,6 +10,7 @@ from catalog_signals import source_context, source_signals
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "catalog" / "skills.jsonl"
+CURATED = ROOT / "catalog" / "curated.json"
 OUTPUT = ROOT / "site" / "catalog.json"
 
 CATEGORY_RULES = (
@@ -43,28 +44,45 @@ with SOURCE.open(encoding="utf-8") as handle:
         repositories.add(row["repository"])
         shas.add(row["sha"])
 
+curated_entries = json.loads(CURATED.read_text(encoding="utf-8"))
+curated = {entry["catalog_id"]: entry for entry in curated_entries}
+if len(curated) != len(curated_entries):
+    raise SystemExit("catalog/curated.json contains duplicate catalog IDs")
+catalog_ids = {row["id"] for row in source_rows}
+for entry in curated_entries:
+    if not (ROOT / entry["skill_path"] / "SKILL.md").is_file():
+        raise SystemExit(f"curated Skill is missing: {entry['skill_path']}")
+    if entry["catalog_id"] not in catalog_ids:
+        raise SystemExit(f"curated source is missing from catalog: {entry['catalog_id']}")
+    if not entry["download_url"].startswith(
+        "https://github.com/sandbaseai/workbuddy-skill/releases/"
+    ):
+        raise SystemExit(f"unexpected curated download URL: {entry['download_url']}")
+
 sha_copies = Counter(row["sha"] for row in source_rows)
 category_counts = Counter()
 records = []
 for row in source_rows:
     category = category_for(row)
     category_counts[category] += 1
-    records.append(
-        {
-            "n": row["name_hint"],
-            "r": row["repository"],
-            "p": row["path"],
-            "u": row["source_url"],
-            "s": row["sha"],
-            "w": row.get("workbuddy_status", "unreviewed"),
-            "q": row.get("workbuddy_score"),
-            "k": row.get("security_status", "unscanned"),
-            "g": category,
-            "c": sha_copies[row["sha"]],
-            "o": source_context(row),
-            "x": source_signals(row),
-        }
-    )
+    adaptation = curated.get(row["id"])
+    record = {
+        "n": row["name_hint"],
+        "r": row["repository"],
+        "p": row["path"],
+        "u": row["source_url"],
+        "s": row["sha"],
+        "w": "workbuddy-ready" if adaptation else row.get("workbuddy_status", "unreviewed"),
+        "q": row.get("workbuddy_score"),
+        "k": row.get("security_status", "unscanned"),
+        "g": category,
+        "c": sha_copies[row["sha"]],
+        "o": source_context(row),
+        "x": source_signals(row),
+    }
+    if adaptation:
+        record["a"] = adaptation["download_url"]
+    records.append(record)
 
 OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 temporary = OUTPUT.with_suffix(".json.tmp")
@@ -78,6 +96,7 @@ meta = {
     "records": len(records),
     "repositories": len(repositories),
     "unique_content_shas": len(shas),
+    "curated_adaptations": len(curated),
 }
 meta_output = ROOT / "site" / "catalog-meta.json"
 meta_temporary = meta_output.with_suffix(".json.tmp")

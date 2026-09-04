@@ -101,6 +101,7 @@ function render(reset = true) {
         <span class="badge ${skill.k === "flagged" ? "flagged" : ""}">${escapeHtml(skill.k)}</span>
         ${skill.o === "review-source" ? `<span class="badge source-review" title="${escapeHtml(skill.x.join(", "))}">${isChinese ? "来源待审" : "source review"}</span>` : ""}
         <button class="copy-id" type="button" data-catalog-id="${escapeHtml(catalogId(skill))}">${isChinese ? "复制 ID" : "Copy ID"}</button>
+        ${skill.a ? `<a class="result-install" href="${escapeHtml(skill.a)}">${isChinese ? "安装 ZIP" : "Install ZIP"} ↓</a>` : ""}
         <a class="result-open" href="${escapeHtml(skill.u)}" target="_blank" rel="noreferrer">${isChinese ? "查看来源" : "Inspect"} ↗</a>
       </span>
     </article>`).join("");
