@@ -118,7 +118,7 @@ The catalog is generated from public GitHub `SKILL.md` results with resumable, r
 | Unique content SHAs | 6,551 |
 | Source repositories | 5,091 |
 
-Browse the catalog in the [WorkBuddy Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) or query the JSONL directly. If it helps you discover a useful workflow, a star or a short review helps other WorkBuddy users find it.
+Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) or [中文 Atlas](https://sandbaseai.github.io/workbuddy-skill/zh-CN.html), or query the JSONL directly. If it helps you discover a useful workflow, a star or a short review helps other WorkBuddy users find it.
 
 需要人工筛选的 WorkBuddy 文档、MCP、工作流、评测与 Skills？浏览 [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy)。
 
@@ -128,10 +128,6 @@ The current static analysis successfully inspected 10,099 paths: 9,215 are
 structurally adaptable to WorkBuddy, 884 need manual review, one is already
 WorkBuddy-ready, and 266 contain at least one conservative security signal.
 A clean static scan is never a security guarantee.
-
-需要人工筛选的 WorkBuddy 文档、MCP、工作流、评测与 Skills？浏览 [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy)。
-
-For a manually curated index of WorkBuddy documentation, MCP integrations, workflows, benchmarks, and Skills, browse [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy).
 
 ```bash
 GH_TOKEN="..." python3 scripts/crawl_github_skills.py --target 10000
