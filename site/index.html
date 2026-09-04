@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Search 10,000 public Agent Skills indexed for WorkBuddy with immutable GitHub provenance.">
+    <title>WorkBuddy Skill Atlas</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="nav">
+      <a class="brand" href="#top" aria-label="WorkBuddy Skill Atlas home">
+        <span class="brand-mark" aria-hidden="true">W</span>
+        <span>Skill Atlas</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#catalog">Catalog</a>
+        <a href="https://github.com/sandbaseai/workbuddy-skill">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="kicker">Open index · immutable provenance</p>
+          <h1 id="hero-title">Find the skill.<br><em>Inspect the source.</em></h1>
+          <p class="hero-text">Search 10,000 public agent workflows before adapting them for WorkBuddy.</p>
+          <a class="primary-action" href="#catalog">Search the atlas</a>
+        </div>
+        <div class="signal-field" aria-label="Catalog snapshot metrics">
+          <div class="signal signal-main">
+            <strong>10,000</strong>
+            <span>indexed paths</span>
+          </div>
+          <div class="signal signal-secondary">
+            <strong>6,483</strong>
+            <span>unique SHAs</span>
+          </div>
+          <div class="signal signal-tertiary">
+            <strong>5,044</strong>
+            <span>repositories</span>
+          </div>
+          <div class="trace" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="trust-note" aria-label="Safety notice">
+        <span class="status-dot" aria-hidden="true"></span>
+        <p>Indexed does not mean trusted. Review licenses, instructions, scripts, network behavior, and permissions before installation.</p>
+      </section>
+
+      <section class="catalog-section" id="catalog" aria-labelledby="catalog-title">
+        <div class="catalog-heading">
+          <h2 id="catalog-title">Public skill index</h2>
+          <p>Every result links to an exact GitHub commit. Nothing here is executed or silently installed.</p>
+        </div>
+
+        <div class="search-panel">
+          <label for="search">Search name, repository, or path</label>
+          <div class="search-row">
+            <input id="search" type="search" autocomplete="off" placeholder="Try: research, video, spreadsheet…">
+            <span id="result-count" aria-live="polite">Loading catalog…</span>
+          </div>
+        </div>
+
+        <div id="error" class="message error" hidden>
+          The catalog could not be loaded. Open the GitHub source or try again later.
+        </div>
+        <div id="empty" class="message" hidden>
+          No matching skills. Try a shorter capability name or a repository owner.
+        </div>
+        <div id="results" class="results" aria-busy="true"></div>
+        <button id="more" class="more" type="button" hidden>Show more</button>
+      </section>
+
+      <section class="method" aria-labelledby="method-title">
+        <h2 id="method-title">Source first, always.</h2>
+        <div class="method-grid">
+          <p><strong>Discover</strong><span>GitHub code search is split into bounded byte ranges so the 1,000-result API cap is visible and auditable.</span></p>
+          <p><strong>Deduplicate</strong><span>Exact blob SHAs distinguish unique content from copied paths without erasing provenance.</span></p>
+          <p><strong>Adapt</strong><span>WorkBuddy compatibility and security states begin unreviewed. Promotion requires deliberate inspection.</span></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>WorkBuddy Skill Atlas</span>
+      <a href="https://github.com/sandbaseai/workbuddy-skill">View source and contribute</a>
+    </footer>
+    <script src="app.js" defer></script>
+  </body>
+</html>
+

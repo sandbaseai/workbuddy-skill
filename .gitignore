@@ -4,3 +4,4 @@ __pycache__/
 *.zip
 dist/
 catalog/*.tmp
+site/catalog.json

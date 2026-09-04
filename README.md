@@ -118,6 +118,8 @@ The catalog is generated from public GitHub `SKILL.md` results with resumable, r
 | Unique content SHAs | 6,483 |
 | Source repositories | 5,044 |
 
+Browse the catalog in the [WorkBuddy Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) or query the JSONL directly.
+
 ```bash
 GH_TOKEN="..." python3 scripts/crawl_github_skills.py --target 10000
 python3 scripts/validate_catalog.py --minimum 10000
