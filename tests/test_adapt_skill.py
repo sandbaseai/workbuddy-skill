@@ -91,6 +91,7 @@ class LocalPackagingTests(unittest.TestCase):
             subprocess.run(command, cwd=ROOT, check=True, capture_output=True, text=True)
 
             with ZipFile(output / "demo-workbuddy.zip") as archive:
+                self.assertIn("name: \"demo\"", archive.read("SKILL.md").decode())
                 self.assertEqual(
                     sorted(archive.namelist()),
                     ["SKILL.md", "SOURCE.json", "references/guide.md", "scripts/check.py"],
@@ -100,6 +101,27 @@ class LocalPackagingTests(unittest.TestCase):
                     provenance["adaptation"]["packaged_resources"],
                     ["references/guide.md", "scripts/check.py"],
                 )
+
+    def test_preserves_standard_license_metadata(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source = root / "licensed" / "SKILL.md"
+            source.parent.mkdir()
+            source.write_text(
+                "---\nname: licensed\ndescription: Licensed skill\n"
+                "license: Apache-2.0\n---\n\n# Licensed\n",
+                encoding="utf-8",
+            )
+            command = [
+                sys.executable, str(ROOT / "scripts" / "adapt_skill.py"),
+                "--source-file", str(source), "--output", str(root / "dist"),
+                "--display-name-zh", "授权技能", "--display-name-en", "Licensed",
+                "--description-zh", "授权技能", "--description-en", "Licensed skill",
+                "--author", "Test", "--source-license", "Apache-2.0",
+            ]
+            subprocess.run(command, cwd=ROOT, check=True, capture_output=True, text=True)
+            with ZipFile(root / "dist/licensed-workbuddy.zip") as archive:
+                self.assertIn('license: "Apache-2.0"', archive.read("SKILL.md").decode())
 
 
 if __name__ == "__main__":
