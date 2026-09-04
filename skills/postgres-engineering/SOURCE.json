@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:supabase/agent-skills:skills/supabase-postgres-best-practices/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "skills/supabase-postgres-best-practices/SKILL.md",
+  "repository": "supabase/agent-skills",
+  "sha": "6400792389dfcc82c81953054e546bd72ebcd259",
+  "source_url": "https://github.com/supabase/agent-skills/blob/8331f910845103c08d51f6ca1d86ebb7d1f745e3/skills/supabase-postgres-best-practices/SKILL.md"
+}

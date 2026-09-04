@@ -2,6 +2,11 @@
 
 All notable changes to this project are documented here.
 
+## [0.35.0] - 2026-09-05
+
+- Added the official MIT Supabase PostgreSQL source to the Atlas, increasing it to 10,801 indexed paths across 5,558 repositories.
+- Added the PostgreSQL Database Engineering Skill with version-aware schema changes, query-plan evidence, index tradeoffs, lock and connection controls, RLS verification, maintenance safety, and tested recovery.
+
 ## [0.34.0] - 2026-09-05
 
 - Added the MIT OAuth and OIDC Troubleshooting Skill with protocol-stage reconstruction, secret-safe evidence handling, redirect and session diagnosis, PKCE and token validation, authorization boundaries, falsifiable hypotheses, and security regression tests.

@@ -17,6 +17,17 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        postgres = next(
+            item
+            for item in records
+            if item["r"] == "supabase/agent-skills"
+            and item["p"] == "skills/supabase-postgres-best-practices/SKILL.md"
+        )
+        self.assertEqual(postgres["w"], "workbuddy-ready")
+        self.assertEqual(postgres["g"], "data")
+        self.assertTrue(
+            postgres["a"].endswith("/postgres-engineering-workbuddy-skill.zip")
+        )
         oauth = next(
             item
             for item in records
