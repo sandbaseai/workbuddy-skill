@@ -18,6 +18,15 @@
 
 正确行为是先发现能力，再检查候选的实时 schema，并在执行前停止。它不应猜测服务商名称或请求参数。
 
+支持开放 Agent Skills 约定的宿主可以从 GitHub 发现更多公开 Skill，先预览再安装；需要可复现版本时使用标签或提交 SHA 固定版本：
+
+```bash
+gh skill search incident --limit 10
+gh skill preview owner/repository skills/path/to/skill
+gh skill install owner/repository skills/path/to/skill --pin v1.2.0 --dir .workbuddy/skills
+gh skill update --all
+```
+
 ## 4. 执行一个小任务
 
 查看候选与价格后，让 WorkBuddy 用少量公开数据执行选定能力。首次验证不要使用公司机密或个人敏感数据。
@@ -30,4 +39,3 @@
 - **没有候选：** 改用更短的能力词，如 `ocr`、`web search` 或 `video`。
 - **参数校验失败：** 重新检查能力，只使用当前 schema 字段重试一次。
 - **鉴权或余额错误：** 检查账号状态，不要在聊天中粘贴密钥。
-

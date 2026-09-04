@@ -25,6 +25,16 @@ workflow by exact path:
 gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/skills
 ```
 
+To discover additional public Skills, preview before installation and pin a
+known version when needed:
+
+```bash
+gh skill search incident --limit 10
+gh skill preview owner/repository skills/path/to/skill
+gh skill install owner/repository skills/path/to/skill --pin v1.2.0 --dir .workbuddy/skills
+gh skill update --all
+```
+
 ## 4. Run a small task
 
 After reviewing the candidates and price, ask WorkBuddy to run the selected capability with a small public input. Avoid confidential data during initial testing.
