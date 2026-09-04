@@ -45,7 +45,22 @@ def query_rows(
         and (source is None or source_context(row) == source)
         and (min_score is None or score_of(row) >= min_score)
     ]
+
+    def by_name(row: dict) -> tuple[str, str]:
+        return (row.get("name_hint", "").casefold(), row.get("repository", "").casefold())
+
     if unique:
+        # Pick the best provenance representative before applying the display
+        # order. This prevents a mirror or flagged duplicate from winning just
+        # because it appears earlier in the JSONL snapshot.
+        results.sort(
+            key=lambda row: (
+                source_context(row) != "primary-looking",
+                row.get("security_status") == "flagged",
+                -score_of(row),
+                by_name(row),
+            )
+        )
         seen: set[str] = set()
         unique_results = []
         for row in results:
@@ -56,7 +71,6 @@ def query_rows(
                 seen.add(sha)
             unique_results.append(row)
         results = unique_results
-    by_name = lambda row: (row.get("name_hint", "").casefold(), row.get("repository", "").casefold())
     if order == "score":
         results.sort(key=lambda row: (-score_of(row), -copies[row.get("sha")], by_name(row)))
     elif order == "copies":

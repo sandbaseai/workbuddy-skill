@@ -66,6 +66,14 @@ class QueryCatalogTests(unittest.TestCase):
         results, _ = query_rows(rows, ["a"], source="primary-looking")
         self.assertEqual([item["sha"] for item in results], ["active"])
 
+    def test_unique_prefers_primary_source_over_mirror(self):
+        rows = [
+            {**row("alpha-copy", "same", 80, repository="mirror/repo"), "path": "mirrors/alpha/SKILL.md"},
+            row("alpha", "same", 70, repository="owner/repo"),
+        ]
+        results, _ = query_rows(rows, ["alpha"], unique=True, order="name")
+        self.assertEqual(results[0]["repository"], "owner/repo")
+
 
 if __name__ == "__main__":
     unittest.main()
