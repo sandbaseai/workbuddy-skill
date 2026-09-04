@@ -18,6 +18,13 @@ Use SandBase to find a web extraction API. Compare candidates, required inputs, 
 
 A correct run uses capability discovery first, inspects candidate schemas, and stops before execution. It should not invent a provider name or request arguments.
 
+Hosts supporting the open Agent Skills convention can install the reviewed
+workflow by exact path:
+
+```bash
+gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/skills
+```
+
 ## 4. Run a small task
 
 After reviewing the candidates and price, ask WorkBuddy to run the selected capability with a small public input. Avoid confidential data during initial testing.
@@ -30,4 +37,3 @@ For asynchronous image, audio, or video jobs, WorkBuddy should preserve the retu
 - **No candidates:** retry with a shorter capability term such as `ocr`, `web search`, or `video`.
 - **Schema error:** inspect the capability again and retry once using only current schema fields.
 - **Authorization or balance error:** resolve the account status without pasting secrets into chat.
-
