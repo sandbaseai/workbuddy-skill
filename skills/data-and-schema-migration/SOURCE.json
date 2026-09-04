@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:Kushagrabainsla/north:skills/builtin/data-and-schema-migration/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "skills/builtin/data-and-schema-migration/SKILL.md",
+  "repository": "Kushagrabainsla/north",
+  "sha": "06f653edf7deccad9f1753339a74baf0b522836a",
+  "source_url": "https://github.com/Kushagrabainsla/north/blob/8f6c169bbf37af0d13837e2a62964c637a78837e/skills/builtin/data-and-schema-migration/SKILL.md"
+}
