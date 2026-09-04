@@ -36,6 +36,20 @@ also be started from the Actions tab. Only a complete, validated 10,000-record
 snapshot replaces the committed files. It then opens an update pull request and
 enables auto-merge after required checks pass.
 
+## Search locally
+
+Use the included dependency-free helper to find candidate paths without loading
+the entire JSONL file into memory:
+
+```bash
+python3 scripts/query_catalog.py browser --limit 10
+python3 scripts/query_catalog.py invoice OCR --json
+```
+
+The helper searches `name_hint`, repository, and path. Every result includes
+the original source URL and review states; a match never means the Skill is
+trusted or safe to install.
+
 ## Safety and licensing
 
 The committed catalog stores metadata and links, not third-party skill bodies. Each linked repository keeps its own license and terms. Review provenance, license, instructions, bundled scripts, network behavior, and requested permissions before adapting or installing a skill.
