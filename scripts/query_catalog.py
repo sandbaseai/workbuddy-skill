@@ -15,7 +15,15 @@ from catalog_signals import source_context
 def matches(row: dict, terms: list[str]) -> bool:
     haystack = " ".join(
         str(row.get(field, ""))
-        for field in ("name_hint", "repository", "path")
+        for field in (
+            "name_hint",
+            "repository",
+            "path",
+            "workbuddy_status",
+            "security_status",
+            "workbuddy_missing_fields",
+            "security_signals",
+        )
     ).casefold()
     return all(term.casefold() in haystack for term in terms)
 

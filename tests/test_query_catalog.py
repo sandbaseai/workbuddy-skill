@@ -74,6 +74,15 @@ class QueryCatalogTests(unittest.TestCase):
         results, _ = query_rows(rows, ["alpha"], unique=True, order="name")
         self.assertEqual(results[0]["repository"], "owner/repo")
 
+    def test_search_includes_review_metadata(self):
+        flagged = {
+            **row("workflow", "flagged", 80, security="flagged"),
+            "security_signals": ["prompt-injection"],
+            "workbuddy_missing_fields": ["description_zh"],
+        }
+        self.assertEqual(query_rows([flagged], ["prompt-injection"])[0], [flagged])
+        self.assertEqual(query_rows([flagged], ["description_zh"])[0], [flagged])
+
 
 if __name__ == "__main__":
     unittest.main()
