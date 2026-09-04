@@ -121,9 +121,12 @@ The catalog is generated from public GitHub `SKILL.md` results with resumable, r
 ```bash
 GH_TOKEN="..." python3 scripts/crawl_github_skills.py --target 10000
 python3 scripts/validate_catalog.py --minimum 10000
+python3 scripts/query_catalog.py invoice --limit 10
 ```
 
 Only metadata is committed by default. Third-party content remains at its original source until a maintainer deliberately reviews and adapts it.
+
+Search results are provenance links, not installation approvals. For machine-readable output, add `--json`; combine terms to require all words to match repository names, paths, or inferred skill names.
 
 ## Compatibility
 
