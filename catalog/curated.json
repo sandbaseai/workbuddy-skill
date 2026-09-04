@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:joaocarloscruz/skills:library/test-cli/SKILL.md",
+    "skill": "test-cli",
+    "skill_path": "skills/test-cli",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/test-cli-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:joaocarloscruz/skills:library/improve-performance/SKILL.md",
     "skill": "improve-performance",
     "skill_path": "skills/improve-performance",

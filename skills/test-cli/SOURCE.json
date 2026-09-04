@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:joaocarloscruz/skills:library/test-cli/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "library/test-cli/SKILL.md",
+  "repository": "joaocarloscruz/skills",
+  "sha": "cf891172ee0eafed6d1c28094d12e789dcbd1442",
+  "source_url": "https://github.com/joaocarloscruz/skills/blob/f0c46f8080864a1c877c749502ae3889d7668f99/library/test-cli/SKILL.md"
+}

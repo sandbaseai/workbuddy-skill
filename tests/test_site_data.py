@@ -89,6 +89,15 @@ class SiteDataTests(unittest.TestCase):
         self.assertTrue(
             performance["a"].endswith("/improve-performance-workbuddy-skill.zip")
         )
+        cli = next(
+            item
+            for item in records
+            if item["r"] == "joaocarloscruz/skills"
+            and item["p"] == "library/test-cli/SKILL.md"
+        )
+        self.assertEqual(cli["w"], "workbuddy-ready")
+        self.assertEqual(cli["g"], "development")
+        self.assertTrue(cli["a"].endswith("/test-cli-workbuddy-skill.zip"))
         metadata = json.loads(
             (ROOT / "site" / "catalog-meta.json").read_text(encoding="utf-8")
         )
