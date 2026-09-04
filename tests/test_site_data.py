@@ -17,6 +17,15 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        roadmap = next(
+            item
+            for item in records
+            if item["r"] == "davidvictor/adlc-skills"
+            and item["p"] == "skills/adlc/adlc-roadmap/SKILL.md"
+        )
+        self.assertEqual(roadmap["w"], "workbuddy-ready")
+        self.assertEqual(roadmap["g"], "business")
+        self.assertTrue(roadmap["a"].endswith("/product-roadmap-workbuddy-skill.zip"))
         migration = next(
             item
             for item in records

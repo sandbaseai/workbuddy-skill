@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:davidvictor/adlc-skills:skills/adlc/adlc-roadmap/SKILL.md",
+    "skill": "product-roadmap",
+    "skill_path": "skills/product-roadmap",
+    "category": "business",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/product-roadmap-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:Kushagrabainsla/north:skills/builtin/data-and-schema-migration/SKILL.md",
     "skill": "data-and-schema-migration",
     "skill_path": "skills/data-and-schema-migration",
