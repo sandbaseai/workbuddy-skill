@@ -16,6 +16,7 @@ Multiple paths can contain byte-identical skills. The catalog preserves those oc
 
 - `id`, `repository`, `path`, and Git blob `sha` identify the exact occurrence.
 - `source_url`, `raw_url`, and `repository_url` preserve provenance.
+- `repository_fork` and `github_query` preserve crawl context.
 - `name_hint` is inferred from the parent directory; it is not trusted metadata.
 - `workbuddy_status` begins as `unreviewed` until compatibility checks run.
 - `security_status` begins as `unscanned`; users must review scripts and permissions before installation.
