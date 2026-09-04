@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:majiayu000/claude-skill-registry:skills/data/53-data-engineering/SKILL.md",
+    "skill": "dbt-patterns",
+    "skill_path": "skills/dbt-patterns",
+    "category": "data",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/dbt-patterns-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:NVIDIA/skills:skills/rag-eval/SKILL.md",
     "skill": "rag-evaluation",
     "skill_path": "skills/rag-evaluation",

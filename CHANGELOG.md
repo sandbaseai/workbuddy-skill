@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT dbt Patterns Skill with layered models, explicit grains and contracts, incremental and snapshot safety, data quality tests, lineage, bounded validation, and production handoff guidance.
 - Added the MIT Browser Automation Skill with bounded navigation, stable selectors, safe side-effect handling, privacy controls, bounded extraction, and reproducible end-to-end verification.
 
 ## [0.44.0] - 2026-09-05
