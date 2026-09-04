@@ -62,6 +62,27 @@ class ValidateSkillTests(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("allowed-tools must be", result.stderr)
 
+    def test_accepts_string_metadata_map(self):
+        result = self.run_validator(
+            "---\nname: demo\ndescription: Demo\n"
+            "description_zh: 演示\ndescription_en: Demo\n"
+            "version: 1.0.0\nauthor: Test\nlicense: MIT\n"
+            "metadata:\n  team: platform\n  channel: stable\n"
+            "---\n\n# Demo\n"
+        )
+        self.assertEqual(result.returncode, 0, result.stderr)
+
+    def test_rejects_non_string_metadata_map(self):
+        result = self.run_validator(
+            "---\nname: demo\ndescription: Demo\n"
+            "description_zh: 演示\ndescription_en: Demo\n"
+            "version: 1.0.0\nauthor: Test\nlicense: MIT\n"
+            "metadata:\n  version: 2\n"
+            "---\n\n# Demo\n"
+        )
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("metadata values must be strings", result.stderr)
+
     def test_rejects_oversized_compatibility(self):
         result = self.run_validator(
             "---\nname: demo\ndescription: Demo\n"

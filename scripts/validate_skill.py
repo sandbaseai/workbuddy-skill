@@ -22,6 +22,34 @@ REQUIRED = {
 }
 
 
+def validate_metadata(frontmatter: str, relative: Path) -> None:
+    """Validate the Agent Skills metadata map without adding a YAML dependency."""
+    lines = frontmatter.splitlines()
+    for index, line in enumerate(lines):
+        if not line.startswith("metadata:"):
+            continue
+        value = line.split(":", 1)[1].strip()
+        if value and not value.startswith("#"):
+            raise ValueError(f"{relative} metadata must be a mapping of string values")
+        entries = []
+        for child in lines[index + 1:]:
+            if not child or child[0].isspace():
+                if child.strip() and ":" in child:
+                    entries.append(child.strip())
+                continue
+            break
+        if not entries:
+            raise ValueError(f"{relative} metadata must be a mapping of string values")
+        for entry in entries:
+            key, item = entry.split(":", 1)
+            if not key.strip() or not item.strip():
+                raise ValueError(f"{relative} metadata must contain string key-value pairs")
+            raw = item.strip().strip('"\'')
+            if raw.lower() in {"true", "false", "null", "~"} or re.fullmatch(r"[-+]?\d+(?:\.\d+)?", raw):
+                raise ValueError(f"{relative} metadata values must be strings")
+        return
+
+
 def validate_skill(skill: Path, root: Path) -> None:
     text = skill.read_text(encoding="utf-8")
     match = re.match(r"\A---\n(.*?)\n---\n", text, re.DOTALL)
@@ -30,6 +58,7 @@ def validate_skill(skill: Path, root: Path) -> None:
         raise ValueError(f"{skill.relative_to(root)} must start with YAML frontmatter")
 
     relative = skill.relative_to(root)
+    validate_metadata(match.group(1), relative)
     missing = sorted(key for key in REQUIRED if not fields.get(key))
     if missing:
         raise ValueError(f"{relative} missing frontmatter: " + ", ".join(missing))
