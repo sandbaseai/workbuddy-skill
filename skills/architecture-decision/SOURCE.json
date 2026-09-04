@@ -1,16 +1,13 @@
 {
   "adaptation": {
-    "missing_resources": [],
-    "packaged_resources": [
-      "references/adr-template.md"
-    ],
+    "missing_resources": ["Referenced architecture-core and architecture-characteristics notes were not included; their intent was rewritten as self-contained guidance."],
+    "packaged_resources": ["references/adr-template.md"],
     "security_signals": [],
-    "tool": "scripts/adapt_skill.py"
+    "tool": "manual WorkBuddy adaptation"
   },
   "catalog_id": "github:placerda/agentic-engineering:.github/skills/architecture-decision/SKILL.md",
   "declared_source_license": "MIT",
-  "source_license_file": "LICENSE",
-  "path": ".github/skills/architecture-decision/SKILL.md",
+  "path": "skills/architecture-decision/SKILL.md",
   "repository": "placerda/agentic-engineering",
   "sha": "dff1c38685ac672c66d563af6ec5e0f346aca67b",
   "source_url": "https://github.com/placerda/agentic-engineering/blob/10807c5ab2fe75b5abb024754e9b4814ee338cbb/.github/skills/architecture-decision/SKILL.md"
