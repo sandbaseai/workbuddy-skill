@@ -2,7 +2,7 @@
 
 ![WorkBuddy Skill Atlas — 10,000+ public Agent Skills with immutable provenance](site/social-preview.png)
 
-Discover public Agent Skills, assess them before installation, and adapt high-value workflows for WorkBuddy. The repository also ships a production-ready SandBase integration as its first curated skill.
+Discover public Agent Skills, assess them before installation, and adapt high-value workflows for WorkBuddy. The repository also ships reviewed, production-ready Skills with bilingual metadata and immutable provenance.
 
 [![Validate skill](https://github.com/sandbaseai/workbuddy-skill/actions/workflows/validate.yml/badge.svg)](https://github.com/sandbaseai/workbuddy-skill/actions/workflows/validate.yml)
 [![Latest release](https://img.shields.io/github/v/release/sandbaseai/workbuddy-skill)](https://github.com/sandbaseai/workbuddy-skill/releases/latest)
@@ -107,6 +107,15 @@ See the [English quickstart](docs/quickstart.md) and [copy-ready use cases](docs
 
 The skill does not bundle credentials, silently run paid calls when the user only asks for comparison, or bypass WorkBuddy permissions.
 
+## Curated WorkBuddy Skills
+
+| Skill | Use it for | Provenance |
+|---|---|---|
+| [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
+| [Systematic Debugging](skills/systematic-debugging/) | Reproduce failures, trace root causes, and verify minimal fixes | [Apache-2.0 source](skills/systematic-debugging/SOURCE.json) |
+
+Each curated directory is installable source: `SKILL.md` contains the WorkBuddy instructions, referenced resources are kept beside it, and externally adapted Skills include a machine-readable `SOURCE.json` plus their source license. Tagged releases publish one ready-to-upload ZIP per curated Skill.
+
 ### Validate locally
 
 ```bash
@@ -122,6 +131,11 @@ skills/sandbase/
 └── references/
     ├── execution.md
     └── troubleshooting.md
+skills/systematic-debugging/
+├── SKILL.md
+├── SOURCE.json
+├── LICENSE
+└── references/
 scripts/validate_skill.py
 scripts/crawl_github_skills.py
 catalog/skills.jsonl

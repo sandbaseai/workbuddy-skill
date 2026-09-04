@@ -28,7 +28,7 @@ USER_AGENT = "sandbaseai-workbuddy-skill-adapter/0.4"
 MAX_FILE_BYTES = 512 * 1024
 MAX_RESOURCE_BYTES = 4 * 1024 * 1024
 RESOURCE_REFERENCE = re.compile(
-    r"(?:@|\]\()(?P<path>(?:\./)?(?:references|scripts|assets|templates)/[^\s)>'\"]+)"
+    r"(?:@|\]\(|`)(?P<path>(?:\./)?(?:references|scripts|assets|templates)/[^\s)>'\"`]+)"
 )
 
 
