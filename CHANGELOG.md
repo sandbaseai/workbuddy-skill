@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.17.0] - 2026-09-05
+
+- Added the MIT Email Drafting Skill with recipient and attachment checks, factual fidelity, privacy controls, phishing awareness, and explicit draft-versus-send authorization.
+
 ## [0.16.0] - 2026-09-05
 
 - Added the MIT Research with Sources Skill with primary-source prioritization, recency checks, conflict analysis, claim-level citations, prompt-injection resistance, and explicit uncertainty.
