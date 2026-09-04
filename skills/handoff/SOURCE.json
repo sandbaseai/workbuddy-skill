@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:quarcs-lab/project20XXy:.claude/skills/handoff/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": ".claude/skills/handoff/SKILL.md",
+  "repository": "quarcs-lab/project20XXy",
+  "sha": "227a3d74eb476d5c0eba7bd6c5a0f198075cbd99",
+  "source_url": "https://github.com/quarcs-lab/project20XXy/blob/aaf589d9736fc27b4cc55f3c6300edafaefd2de0/.claude/skills/handoff/SKILL.md"
+}

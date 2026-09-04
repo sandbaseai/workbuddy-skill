@@ -69,6 +69,15 @@ class SiteDataTests(unittest.TestCase):
         self.assertTrue(
             test_strategy["a"].endswith("/design-test-strategy-workbuddy-skill.zip")
         )
+        handoff = next(
+            item
+            for item in records
+            if item["r"] == "quarcs-lab/project20XXy"
+            and item["p"] == ".claude/skills/handoff/SKILL.md"
+        )
+        self.assertEqual(handoff["w"], "workbuddy-ready")
+        self.assertEqual(handoff["g"], "productivity")
+        self.assertTrue(handoff["a"].endswith("/handoff-workbuddy-skill.zip"))
         metadata = json.loads(
             (ROOT / "site" / "catalog-meta.json").read_text(encoding="utf-8")
         )

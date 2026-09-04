@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:quarcs-lab/project20XXy:.claude/skills/handoff/SKILL.md",
+    "skill": "handoff",
+    "skill_path": "skills/handoff",
+    "category": "productivity",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/handoff-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:joaocarloscruz/skills:library/design-test-strategy/SKILL.md",
     "skill": "design-test-strategy",
     "skill_path": "skills/design-test-strategy",
