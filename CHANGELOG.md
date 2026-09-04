@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.15.0] - 2026-09-05
+
+- Added the MIT Software Release Skill with supply-chain verification, migration safety, staged rollout, stop conditions, rollback, monitoring, and consumer-path validation.
+
 ## [0.14.0] - 2026-09-05
 
 - Added the MIT Meeting Notes Skill with source-grounded decisions, action items, owners, risks, privacy controls, and explicit uncertainty.

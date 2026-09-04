@@ -123,6 +123,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | Skill | Use it for | Provenance |
 |---|---|---|
 | [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
+| [Software Release](skills/release-software/) | Prepare, verify, stage, publish, monitor, and roll back releases | [MIT source](skills/release-software/SOURCE.json) |
 | [Meeting Notes](skills/meeting-notes/) | Extract supported decisions, action items, owners, risks, and open questions | [MIT source](skills/meeting-notes/SOURCE.json) |
 | [CLI Testing](skills/test-cli/) | Verify arguments, streams, exit codes, configuration, signals, and side effects | [MIT source](skills/test-cli/SOURCE.json) |
 | [Performance Improvement](skills/improve-performance/) | Measure, profile, optimize, and verify real system bottlenecks | [MIT source](skills/improve-performance/SOURCE.json) |
@@ -151,6 +152,10 @@ skills/sandbase/
 └── references/
     ├── execution.md
     └── troubleshooting.md
+skills/release-software/
+├── SKILL.md
+├── SOURCE.json
+└── LICENSE
 skills/meeting-notes/
 ├── SKILL.md
 ├── SOURCE.json
