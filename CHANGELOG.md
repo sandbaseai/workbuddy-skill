@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.24.0] - 2026-09-05
+
+- Added the MIT Product Roadmap Planning Skill with outcome-based items, evidence confidence, capacity-aware horizons, dependencies, explicit rejected work, coherence checks, and review triggers.
+
 ## [0.23.0] - 2026-09-05
 
 - Added the MIT Data and Schema Migration Skill with compatibility contracts, expand/migrate/contract staging, idempotent backfills, reconciliation, production stop conditions, and tested recovery.

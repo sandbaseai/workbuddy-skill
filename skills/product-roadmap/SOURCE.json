@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:davidvictor/adlc-skills:skills/adlc/adlc-roadmap/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "skills/adlc/adlc-roadmap/SKILL.md",
+  "repository": "davidvictor/adlc-skills",
+  "sha": "55104521554aa4fb83d535f74ca0668ab3824697",
+  "source_url": "https://github.com/davidvictor/adlc-skills/blob/27efc3f4f9a6f42ba03eb184b1ef1485db380275/skills/adlc/adlc-roadmap/SKILL.md"
+}
