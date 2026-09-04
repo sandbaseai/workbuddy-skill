@@ -138,7 +138,11 @@ Search results are provenance links, not installation approvals. For machine-rea
 
 ## Contributing
 
-Issues and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md). Please never commit API keys, access tokens, private prompts, or customer data.
+Issues and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+To help turn the catalog into a trusted shortlist, nominate a public Skill in
+the [community review queue](https://github.com/sandbaseai/workbuddy-skill/issues/5)
+with its exact source, license, permissions, and a concrete user problem. Please
+never commit API keys, access tokens, private prompts, or customer data.
 
 ## License
 
