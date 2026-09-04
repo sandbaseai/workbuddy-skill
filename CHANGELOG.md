@@ -4,7 +4,17 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+## [0.47.0] - 2026-09-05
+
+- Added Microsoft's MIT-licensed eval-guide generator source to the Atlas with immutable commit and blob provenance.
+- Added the platform-independent AI Agent Evaluation Engineering Skill covering capability versus trust and safety, representative and adversarial cases, observable trajectories, calibrated graders, paired comparisons, failure recovery, regression gates, latency, and cost.
+
+## [0.46.0] - 2026-09-05
+
 - Added the MIT dbt Patterns Skill with layered models, explicit grains and contracts, incremental and snapshot safety, data quality tests, lineage, bounded validation, and production handoff guidance.
+
+## [0.45.0] - 2026-09-05
+
 - Added the MIT Browser Automation Skill with bounded navigation, stable selectors, safe side-effect handling, privacy controls, bounded extraction, and reproducible end-to-end verification.
 
 ## [0.44.0] - 2026-09-05

@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:microsoft/eval-guide:skills/eval-generator/SKILL.md",
+    "skill": "agent-evaluation-engineering",
+    "skill_path": "skills/agent-evaluation-engineering",
+    "category": "research",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/agent-evaluation-engineering-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:majiayu000/claude-skill-registry:skills/data/53-data-engineering/SKILL.md",
     "skill": "dbt-patterns",
     "skill_path": "skills/dbt-patterns",

@@ -134,6 +134,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | Skill | Use it for | Provenance |
 |---|---|---|
 | [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
+| [AI Agent Evaluation Engineering](skills/agent-evaluation-engineering/) | Build reproducible capability, trust, safety, trajectory, regression, latency, and cost evaluations | [MIT source](skills/agent-evaluation-engineering/SOURCE.json) |
 | [dbt Patterns](skills/dbt-patterns/) | Design layered dbt models, contracts, tests, incremental workflows, lineage, and safe production delivery | [MIT source](skills/dbt-patterns/SOURCE.json) |
 | [RAG Evaluation](skills/rag-evaluation/) | Build leakage-resistant datasets and measure retrieval, grounding, citations, refusal, latency, cost, and regressions | [Apache-2.0 source](skills/rag-evaluation/SOURCE.json) |
 | [Browser Automation](skills/browser-automation/) | Navigate sites, fill forms, extract bounded data, capture artifacts, and verify browser flows safely | [MIT source](skills/browser-automation/SOURCE.json) |
@@ -204,6 +205,10 @@ skills/sandbase/
     ├── execution.md
     └── troubleshooting.md
 skills/rag-evaluation/
+├── SKILL.md
+├── SOURCE.json
+└── LICENSE
+skills/agent-evaluation-engineering/
 ├── SKILL.md
 ├── SOURCE.json
 └── LICENSE
