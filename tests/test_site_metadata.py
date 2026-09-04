@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 import re
+import struct
 import unittest
 import xml.etree.ElementTree as ET
 
@@ -22,6 +23,12 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
             with self.subTest(filename=filename):
                 html = (SITE / filename).read_text(encoding="utf-8")
                 self.assertIn('type="application/opensearchdescription+xml"', html)
+                self.assertIn('property="og:image"', html)
+                self.assertIn('content="1280"', html)
+                self.assertIn('content="640"', html)
+                self.assertIn(
+                    'name="twitter:card" content="summary_large_image"', html
+                )
                 match = re.search(
                     r'<script type="application/ld\+json">\s*(.*?)\s*</script>',
                     html,
@@ -39,6 +46,12 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
                 self.assertIsNotNone(script_version)
                 self.assertIsNotNone(style_version)
                 self.assertEqual(script_version.group(1), style_version.group(1))
+
+    def test_social_preview_is_expected_png_size(self):
+        data = (SITE / "social-preview.png").read_bytes()
+        self.assertEqual(data[:8], b"\x89PNG\r\n\x1a\n")
+        width, height = struct.unpack(">II", data[16:24])
+        self.assertEqual((width, height), (1280, 640))
 
     def test_llms_file_points_to_catalog_and_safety_guidance(self):
         content = (SITE / "llms.txt").read_text(encoding="utf-8")
