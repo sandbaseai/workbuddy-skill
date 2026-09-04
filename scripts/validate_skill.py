@@ -39,6 +39,8 @@ def validate_skill(skill: Path, root: Path) -> None:
         raise ValueError(f"{relative} missing frontmatter: " + ", ".join(missing))
 
     name = fields["name"].strip('"\'')
+    if "--" in name:
+        raise ValueError(f"{relative} name must not contain consecutive hyphens")
     if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", name):
         raise ValueError(f"{relative} name must use lowercase letters, digits, and hyphens")
     if name != skill.parent.name:
