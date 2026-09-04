@@ -17,6 +17,17 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        privacy = next(
+            item
+            for item in records
+            if item["r"] == "rocklambros/rcs"
+            and item["p"] == "skills/ml-datasci/applying-differential-privacy/SKILL.md"
+        )
+        self.assertEqual(privacy["w"], "workbuddy-ready")
+        self.assertEqual(privacy["g"], "data")
+        self.assertTrue(
+            privacy["a"].endswith("/differential-privacy-workbuddy-skill.zip")
+        )
         openapi = next(
             item
             for item in records

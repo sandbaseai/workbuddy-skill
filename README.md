@@ -134,6 +134,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | Skill | Use it for | Provenance |
 |---|---|---|
 | [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
+| [Applying Differential Privacy](skills/differential-privacy/) | Define and verify privacy mechanisms, budgets, composition, utility, and release claims | [MIT source](skills/differential-privacy/SOURCE.json) |
 | [OpenAPI Contract Review](skills/openapi-review/) | Validate structure, semantics, security, compatibility, and consumer usability | [MIT source](skills/openapi-review/SOURCE.json) |
 | [Code Security Review](skills/security-review/) | Trace exploitable regressions through changed code and report evidence-backed findings | [MIT source](skills/security-review/SOURCE.json) |
 | [Threat Modeling](skills/threat-model/) | Trace plausible abuse paths through real assets and boundaries into verifiable controls | [MIT source](skills/threat-model/SOURCE.json) |
@@ -185,6 +186,13 @@ skills/sandbase/
 └── references/
     ├── execution.md
     └── troubleshooting.md
+skills/differential-privacy/
+├── SKILL.md
+├── SOURCE.json
+├── LICENSE
+└── references/
+    ├── privacy-accounting.md
+    └── release-statement.md
 skills/openapi-review/
 ├── SKILL.md
 ├── SOURCE.json
