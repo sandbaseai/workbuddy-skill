@@ -98,6 +98,13 @@ Then verify it without spending credits:
 Use SandBase to find a web extraction API. Compare candidates, schemas, and pricing only; do not run a paid call.
 ```
 
+For hosts supporting the open Agent Skills convention, install a reviewed
+workflow directly by exact path:
+
+```bash
+gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/skills
+```
+
 See the [English quickstart](docs/quickstart.md) and [copy-ready use cases](docs/use-cases.md).
 
 ## Capability map
