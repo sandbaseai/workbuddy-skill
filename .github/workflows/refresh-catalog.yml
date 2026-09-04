@@ -94,6 +94,7 @@ jobs:
                 echo "PR creation is disabled; publishing the validated snapshot directly to main"
                 for attempt in 1 2 3; do
                   git fetch origin main
+                  git show origin/main:catalog/stats.json > /tmp/current-stats.json
                   git rebase --abort >/dev/null 2>&1 || true
                   # The runner is disposable; start from a clean remote baseline
                   # so an interrupted rebase cannot leave conflict markers behind.
@@ -116,7 +117,7 @@ jobs:
               encoding="utf-8",
           )
           refresh_stats = json.loads(Path("/tmp/refresh-stats.json").read_text(encoding="utf-8"))
-          current_stats = json.loads(Path("catalog/stats.json").read_text(encoding="utf-8"))
+          current_stats = json.loads(Path("/tmp/current-stats.json").read_text(encoding="utf-8"))
           stats = {
               "records": len(ordered),
               "unique_content_shas": len({row["sha"] for row in ordered}),
