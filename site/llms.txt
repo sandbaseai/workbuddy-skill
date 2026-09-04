@@ -21,7 +21,7 @@ The Atlas stores metadata, immutable source links, compatibility signals, and co
 Clone the repository and run:
 
 ```bash
-python3 scripts/query_catalog.py "research report" --limit 10
+python3 scripts/query_catalog.py research --limit 10
 ```
 
 Use `--json` for machine-readable results. Search terms are combined, so every term must match the repository, path, or inferred skill name.
