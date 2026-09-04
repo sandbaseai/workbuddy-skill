@@ -1,7 +1,7 @@
 {
-  "queries_over_github_cap": 10,
+  "queries_over_github_cap": 0,
   "records": 10100,
   "repositories": 5091,
-  "requests": 12,
+  "requests": 0,
   "unique_content_shas": 6551
 }
