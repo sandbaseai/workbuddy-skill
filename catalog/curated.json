@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:rocklambros/rcs:skills/ml-datasci/applying-differential-privacy/SKILL.md",
+    "skill": "differential-privacy",
+    "skill_path": "skills/differential-privacy",
+    "category": "data",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/differential-privacy-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:majiayu000/claude-skill-registry:skills/quality/validate-openapi-spec/SKILL.md",
     "skill": "openapi-review",
     "skill_path": "skills/openapi-review",

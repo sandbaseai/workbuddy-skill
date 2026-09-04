@@ -1,0 +1,18 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [
+      "references/privacy-accounting.md",
+      "references/release-statement.md"
+    ],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:rocklambros/rcs:skills/ml-datasci/applying-differential-privacy/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "skills/ml-datasci/applying-differential-privacy/SKILL.md",
+  "repository": "rocklambros/rcs",
+  "sha": "b0e22894884c39a846b1e4fedefa6445b22c5e30",
+  "source_url": "https://github.com/rocklambros/rcs/blob/6942cdae78a5a4ae558c61a11f06e96ae225d6f5/skills/ml-datasci/applying-differential-privacy/SKILL.md"
+}

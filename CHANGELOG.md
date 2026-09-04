@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.29.0] - 2026-09-05
+
+- Added the MIT Applying Differential Privacy Skill with explicit adjacency, contribution bounds, mechanism selection, reproducible composition accounting, utility checks, budget-ledger controls, and qualified release claims.
+
 ## [0.28.0] - 2026-09-05
 
 - Added the MIT OpenAPI Contract Review Skill with structural validation, semantic checks, security-scheme review, baseline compatibility analysis, consumer-path testing, and explicit tool coverage.
