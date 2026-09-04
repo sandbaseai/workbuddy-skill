@@ -47,6 +47,17 @@ class SiteDataTests(unittest.TestCase):
         self.assertEqual(dense_writing["w"], "workbuddy-ready")
         self.assertEqual(dense_writing["g"], "content")
         self.assertTrue(dense_writing["a"].endswith("/dense-writing-workbuddy-skill.zip"))
+        accessibility = next(
+            item
+            for item in records
+            if item["r"] == "joaocarloscruz/skills"
+            and item["p"] == "library/review-accessibility/SKILL.md"
+        )
+        self.assertEqual(accessibility["w"], "workbuddy-ready")
+        self.assertEqual(accessibility["g"], "design")
+        self.assertTrue(
+            accessibility["a"].endswith("/review-accessibility-workbuddy-skill.zip")
+        )
         metadata = json.loads(
             (ROOT / "site" / "catalog-meta.json").read_text(encoding="utf-8")
         )
