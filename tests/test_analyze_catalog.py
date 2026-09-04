@@ -27,6 +27,14 @@ class AnalyzeCatalogTests(unittest.TestCase):
         self.assertEqual(result["security_signals"], ["prompt-injection"])
         self.assertEqual(result["security_status"], "flagged")
 
+    def test_missing_name_is_not_workbuddy_ready(self):
+        result = analyze_text(
+            "---\ndescription: Demo\ndescription_zh: 演示\n"
+            "description_en: Demo\nversion: 1.0.0\nauthor: Test\n---\n\n# Demo\n"
+        )
+        self.assertIn("name", result["workbuddy_missing_fields"])
+        self.assertNotEqual(result["workbuddy_status"], "workbuddy-ready")
+
     def test_does_not_flag_normal_instruction_language(self):
         result = analyze_text(
             "---\nname: demo\ndescription: Demo\n---\n\n"

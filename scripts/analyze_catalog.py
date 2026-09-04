@@ -78,7 +78,9 @@ def analyze_text(text: str) -> dict:
     valid, fields = parse_frontmatter(text)
     name = fields.get("name", "")
     risks = sorted(label for label, pattern in RISK_PATTERNS.items() if pattern.search(text))
-    required_workbuddy = ("description", "description_zh", "description_en", "version", "author")
+    required_workbuddy = (
+        "name", "description", "description_zh", "description_en", "version", "author"
+    )
     missing = [field for field in required_workbuddy if not fields.get(field)]
 
     score = 20
