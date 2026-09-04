@@ -55,8 +55,8 @@ enables auto-merge after required checks pass.
 
 ## Search locally
 
-Use the included dependency-free helper to find candidate paths without loading
-the entire JSONL file into memory:
+Use the included dependency-free helper to find candidate paths and apply
+review filters locally:
 
 ```bash
 python3 scripts/query_catalog.py browser --limit 10
