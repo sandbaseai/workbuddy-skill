@@ -14,10 +14,23 @@ from adapt_skill import immutable_github_source, resource_paths  # noqa: E402
 
 class ResourceDiscoveryTests(unittest.TestCase):
     def test_finds_and_normalizes_supported_references(self):
-        source = "Read @references/guide.md and [run](./scripts/check.py)."
+        source = (
+            "Read @references/guide.md, [run](./scripts/check.py), and inspect "
+            "`templates/report.md`."
+        )
         self.assertEqual(
             resource_paths(source),
-            [PurePosixPath("references/guide.md"), PurePosixPath("scripts/check.py")],
+            [
+                PurePosixPath("references/guide.md"),
+                PurePosixPath("scripts/check.py"),
+                PurePosixPath("templates/report.md"),
+            ],
+        )
+
+    def test_inline_code_reference_does_not_include_closing_backtick(self):
+        self.assertEqual(
+            resource_paths("Read `references/root-cause-tracing.md` first."),
+            [PurePosixPath("references/root-cause-tracing.md")],
         )
 
     def test_rejects_path_traversal(self):

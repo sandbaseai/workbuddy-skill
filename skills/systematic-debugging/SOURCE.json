@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [
+      "references/condition-based-waiting.md",
+      "references/defense-in-depth.md",
+      "references/examples.md",
+      "references/root-cause-tracing.md"
+    ],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:GuicedEE/ai-rules:skills/.curated/systematic-debugging/SKILL.md",
+  "declared_source_license": "Apache-2.0",
+  "source_license_file": "LICENSE",
+  "path": "skills/.curated/systematic-debugging/SKILL.md",
+  "repository": "GuicedEE/ai-rules",
+  "sha": "9cd00ef41030c25dbbec079c4b9fec421ef67d83",
+  "source_url": "https://github.com/GuicedEE/ai-rules/blob/5463b9b03b09d3bc1682e971b869dbebdbbec9ed/skills/.curated/systematic-debugging/SKILL.md"
+}
