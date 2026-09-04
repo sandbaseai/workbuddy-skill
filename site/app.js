@@ -2,6 +2,7 @@ const input = document.querySelector("#search");
 const results = document.querySelector("#results");
 const count = document.querySelector("#result-count");
 const compatibility = document.querySelector("#compatibility");
+const category = document.querySelector("#category");
 const security = document.querySelector("#security");
 const empty = document.querySelector("#empty");
 const error = document.querySelector("#error");
@@ -34,6 +35,8 @@ function render(reset = true) {
       <span class="result-source"><span>${escapeHtml(skill.r)}</span><code>${escapeHtml(skill.p)}</code></span>
       <span class="result-meta">
         <span class="badge">${skill.q ?? "—"}/100</span>
+        <span class="badge">${escapeHtml(skill.g)}</span>
+        ${skill.c > 1 ? `<span class="badge">${skill.c} copies</span>` : ""}
         <span class="badge ${skill.k === "flagged" ? "flagged" : ""}">${escapeHtml(skill.k)}</span>
         <span class="result-open">${isChinese ? "查看来源" : "Inspect"} ↗</span>
       </span>
@@ -50,14 +53,16 @@ function search() {
   const query = input.value.trim().toLocaleLowerCase();
   filtered = catalog.filter((skill) => {
     const textMatch = !query || `${skill.n} ${skill.r} ${skill.p}`.toLocaleLowerCase().includes(query);
+    const categoryMatch = category.value === "all" || skill.g === category.value;
     const compatibilityMatch = compatibility.value === "all" || skill.w === compatibility.value;
     const securityMatch = security.value === "all" || skill.k === security.value;
-    return textMatch && compatibilityMatch && securityMatch;
+    return textMatch && categoryMatch && compatibilityMatch && securityMatch;
   });
   render();
 }
 
 input.addEventListener("input", search);
+category.addEventListener("change", search);
 compatibility.addEventListener("change", search);
 security.addEventListener("change", search);
 more.addEventListener("click", () => render(false));
