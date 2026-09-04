@@ -135,6 +135,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 |---|---|---|
 | [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
 | [AI Agent Evaluation Engineering](skills/agent-evaluation-engineering/) | Build reproducible capability, trust, safety, trajectory, regression, latency, and cost evaluations | [MIT source](skills/agent-evaluation-engineering/SOURCE.json) |
+| [Product Analytics](skills/product-analytics/) | Define event taxonomies, funnels, cohorts, retention, experiments, privacy boundaries, and evidence-backed product decisions | [MIT source](skills/product-analytics/SOURCE.json) |
 | [dbt Patterns](skills/dbt-patterns/) | Design layered dbt models, contracts, tests, incremental workflows, lineage, and safe production delivery | [MIT source](skills/dbt-patterns/SOURCE.json) |
 | [RAG Evaluation](skills/rag-evaluation/) | Build leakage-resistant datasets and measure retrieval, grounding, citations, refusal, latency, cost, and regressions | [Apache-2.0 source](skills/rag-evaluation/SOURCE.json) |
 | [Browser Automation](skills/browser-automation/) | Navigate sites, fill forms, extract bounded data, capture artifacts, and verify browser flows safely | [MIT source](skills/browser-automation/SOURCE.json) |
@@ -392,9 +393,9 @@ The catalog is generated from public GitHub `SKILL.md` results with resumable, r
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 11,535 |
-| Unique content SHAs | 7,300 |
-| Source repositories | 5,954 |
+| Indexed GitHub paths | 11,537 |
+| Unique content SHAs | 7,302 |
+| Source repositories | 5,955 |
 <!-- CATALOG-METRICS:END -->
 
 Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) or [中文 Atlas](https://sandbaseai.github.io/workbuddy-skill/zh-CN.html), or query the JSONL directly. If it helps you discover a useful workflow, a star or a short review helps other WorkBuddy users find it.
@@ -404,7 +405,7 @@ Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.git
 For a manually curated index of WorkBuddy documentation, MCP integrations, workflows, benchmarks, and Skills, browse [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy).
 
 <!-- CATALOG-ANALYSIS:START -->
-The current static analysis successfully inspected 11,535 paths: 9,847 are structurally adaptable to WorkBuddy, 901 need manual review, 0 are currently WorkBuddy-ready, and 404 contain at least one conservative security signal.
+The current static analysis successfully inspected 11,537 paths: 9,849 are structurally adaptable to WorkBuddy, 901 need manual review, 0 are currently WorkBuddy-ready, and 404 contain at least one conservative security signal.
 <!-- CATALOG-ANALYSIS:END -->
 A clean static scan is never a security guarantee.
 

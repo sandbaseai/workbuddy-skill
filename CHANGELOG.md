@@ -4,14 +4,16 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Product Analytics Skill with privacy-aware event contracts, funnel and cohort definitions, data-quality checks, statistically defensible experiments, guardrails, and reproducible handoffs.
+
 ## [0.47.0] - 2026-09-05
 
 - Added Microsoft's MIT-licensed eval-guide generator source to the Atlas with immutable commit and blob provenance.
 - Added the platform-independent AI Agent Evaluation Engineering Skill covering capability versus trust and safety, representative and adversarial cases, observable trajectories, calibrated graders, paired comparisons, failure recovery, regression gates, latency, and cost.
 
-## [0.46.0] - 2026-09-05
-
 - Added the MIT dbt Patterns Skill with layered models, explicit grains and contracts, incremental and snapshot safety, data quality tests, lineage, bounded validation, and production handoff guidance.
+
+## [0.46.0] - 2026-09-05
 
 ## [0.45.0] - 2026-09-05
 

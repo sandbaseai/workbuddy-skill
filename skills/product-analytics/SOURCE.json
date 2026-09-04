@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:majiayu000/claude-skill-registry:skills/data/product-analytics/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/product-analytics/SKILL.md",
+  "repository": "majiayu000/claude-skill-registry",
+  "sha": "19751c23c93e0476e84012be33c8534e2b989f94",
+  "source_url": "https://github.com/majiayu000/claude-skill-registry/blob/19751c23c93e0476e84012be33c8534e2b989f94/skills/data/product-analytics/SKILL.md"
+}

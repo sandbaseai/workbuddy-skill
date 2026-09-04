@@ -7,6 +7,13 @@
     "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/agent-evaluation-engineering-workbuddy-skill.zip"
   },
   {
+    "catalog_id": "github:majiayu000/claude-skill-registry:skills/data/product-analytics/SKILL.md",
+    "skill": "product-analytics",
+    "skill_path": "skills/product-analytics",
+    "category": "data",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/product-analytics-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:majiayu000/claude-skill-registry:skills/data/53-data-engineering/SKILL.md",
     "skill": "dbt-patterns",
     "skill_path": "skills/dbt-patterns",
