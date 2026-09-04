@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:briiirussell/cybersecurity-skills:skills/privacy-engineering/SKILL.md",
+    "skill": "privacy-engineering",
+    "skill_path": "skills/privacy-engineering",
+    "category": "security",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/privacy-engineering-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:LeoYeAI/openclaw-master-skills:skills/finops/SKILL.md",
     "skill": "finops",
     "skill_path": "skills/finops",
