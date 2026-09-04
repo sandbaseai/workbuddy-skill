@@ -35,6 +35,7 @@ class RefreshWorkflowTests(unittest.TestCase):
         workflow = (ROOT / ".github/workflows/refresh-catalog.yml").read_text(encoding="utf-8")
         self.assertIn("git rebase --abort", workflow)
         self.assertIn("rows[row[\"id\"]] = row", workflow)
+        self.assertIn("git reset --hard origin/main", workflow)
         self.assertIn("reconcile concurrent catalog refresh", workflow)
         self.assertIn("scripts/validate_catalog.py --minimum 10000 --require-analysis", workflow)
 

@@ -95,7 +95,9 @@ jobs:
                 for attempt in 1 2 3; do
                   git fetch origin main
                   git rebase --abort >/dev/null 2>&1 || true
-                  git reset --keep origin/main
+                  # The runner is disposable; start from a clean remote baseline
+                  # so an interrupted rebase cannot leave conflict markers behind.
+                  git reset --hard origin/main
                   python3 - <<'PY'
           import json
           from pathlib import Path
