@@ -120,6 +120,10 @@ The catalog is generated from public GitHub `SKILL.md` results with resumable, r
 
 Browse the catalog in the [WorkBuddy Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) or query the JSONL directly. If it helps you discover a useful workflow, a star or a short review helps other WorkBuddy users find it.
 
+需要人工筛选的 WorkBuddy 文档、MCP、工作流、评测与 Skills？浏览 [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy)。
+
+For a manually curated index of WorkBuddy documentation, MCP integrations, workflows, benchmarks, and Skills, browse [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy).
+
 The current static analysis successfully inspected 10,099 paths: 9,215 are
 structurally adaptable to WorkBuddy, 884 need manual review, one is already
 WorkBuddy-ready, and 266 contain at least one conservative security signal.
