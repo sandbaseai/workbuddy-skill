@@ -28,6 +28,11 @@ ANALYSIS_FIELDS = {
 NAME_PATTERN = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*")
 FRONTMATTER = re.compile(r"\A---\s*\n(.*?)\n---(?:\s*\n|\Z)", re.DOTALL)
 RISK_PATTERNS = {
+    "prompt-injection": re.compile(
+        r"(?:ignore|disregard|override)\s+(?:all\s+)?(?:previous|prior|above|earlier)\s+"
+        r"instructions|(?:reveal|print|show|leak)\s+(?:the\s+)?(?:system|hidden)\s+prompt",
+        re.I,
+    ),
     "pipe-to-shell": re.compile(r"(?:curl|wget)[^\n|]{0,500}\|\s*(?:ba)?sh\b", re.I),
     "recursive-delete": re.compile(r"\brm\s+(?:-[a-zA-Z]*r[a-zA-Z]*f|-{1,2}recursive)[^\n]*", re.I),
     "privilege-escalation": re.compile(r"\bsudo\s+", re.I),
