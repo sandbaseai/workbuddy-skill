@@ -9,6 +9,8 @@ import json
 from pathlib import Path
 import sys
 
+from catalog_signals import source_context
+
 
 def matches(row: dict, terms: list[str]) -> bool:
     haystack = " ".join(
@@ -24,6 +26,7 @@ def query_rows(
     *,
     status: str | None = None,
     security: str | None = None,
+    source: str | None = None,
     min_score: int | None = None,
     unique: bool = False,
     order: str = "source",
@@ -39,6 +42,7 @@ def query_rows(
         if matches(row, terms)
         and (status is None or row.get("workbuddy_status") == status)
         and (security is None or row.get("security_status") == security)
+        and (source is None or source_context(row) == source)
         and (min_score is None or score_of(row) >= min_score)
     ]
     if unique:
@@ -80,6 +84,11 @@ def main() -> int:
         help="Require an exact static review state",
     )
     parser.add_argument("--min-score", type=int, help="Require a WorkBuddy score from 0 to 100")
+    parser.add_argument(
+        "--source-context",
+        choices=("primary-looking", "review-source"),
+        help="Filter deterministic fork, mirror, and dormant-path context",
+    )
     parser.add_argument("--unique", action="store_true", help="Return one path per unique blob SHA")
     parser.add_argument(
         "--sort",
@@ -112,6 +121,7 @@ def main() -> int:
         args.terms,
         status=args.status,
         security=args.security,
+        source=args.source_context,
         min_score=args.min_score,
         unique=args.unique,
         order=args.sort,
@@ -128,6 +138,7 @@ def main() -> int:
         print(
             f"  review: {row['workbuddy_status']} ({row.get('workbuddy_score', '—')}/100); "
             f"security: {row['security_status']}; copies: {copies[row.get('sha')]}"
+            f"; source: {source_context(row)}"
         )
     print(f"\n{len(results)} result(s)", file=sys.stderr)
     return 0

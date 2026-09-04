@@ -4,6 +4,7 @@ const count = document.querySelector("#result-count");
 const compatibility = document.querySelector("#compatibility");
 const category = document.querySelector("#category");
 const security = document.querySelector("#security");
+const sourceContext = document.querySelector("#source-context");
 const sort = document.querySelector("#sort");
 const unique = document.querySelector("#unique");
 const empty = document.querySelector("#empty");
@@ -22,6 +23,7 @@ const FILTERS = {
   category: new Set([...category.options].map((option) => option.value)),
   compatibility: new Set([...compatibility.options].map((option) => option.value)),
   security: new Set([...security.options].map((option) => option.value)),
+  source: new Set([...sourceContext.options].map((option) => option.value)),
   sort: new Set([...sort.options].map((option) => option.value)),
 };
 
@@ -38,7 +40,7 @@ function catalogId(skill) {
 function restoreUrlState() {
   const params = new URLSearchParams(location.search);
   input.value = params.get("q") || "";
-  for (const [name, control] of Object.entries({ category, compatibility, security, sort })) {
+  for (const [name, control] of Object.entries({ category, compatibility, security, source: sourceContext, sort })) {
     const value = params.get(name);
     if (value && FILTERS[name].has(value)) control.value = value;
   }
@@ -48,7 +50,7 @@ function restoreUrlState() {
 function syncUrlState() {
   const params = new URLSearchParams();
   if (input.value.trim()) params.set("q", input.value.trim());
-  for (const [name, control] of Object.entries({ category, compatibility, security })) {
+  for (const [name, control] of Object.entries({ category, compatibility, security, source: sourceContext })) {
     if (control.value !== "all") params.set(name, control.value);
   }
   if (sort.value !== "score") params.set("sort", sort.value);
@@ -92,6 +94,7 @@ function render(reset = true) {
         <span class="badge">${escapeHtml(skill.g)}</span>
         ${skill.c > 1 ? `<span class="badge">${skill.c} copies</span>` : ""}
         <span class="badge ${skill.k === "flagged" ? "flagged" : ""}">${escapeHtml(skill.k)}</span>
+        ${skill.o === "review-source" ? `<span class="badge source-review" title="${escapeHtml(skill.x.join(", "))}">${isChinese ? "来源待审" : "source review"}</span>` : ""}
         <button class="copy-id" type="button" data-catalog-id="${escapeHtml(catalogId(skill))}">${isChinese ? "复制 ID" : "Copy ID"}</button>
         <a class="result-open" href="${escapeHtml(skill.u)}" target="_blank" rel="noreferrer">${isChinese ? "查看来源" : "Inspect"} ↗</a>
       </span>
@@ -112,7 +115,8 @@ function search() {
     const categoryMatch = category.value === "all" || skill.g === category.value;
     const compatibilityMatch = compatibility.value === "all" || skill.w === compatibility.value;
     const securityMatch = security.value === "all" || skill.k === security.value;
-    return textMatch && categoryMatch && compatibilityMatch && securityMatch;
+    const sourceMatch = sourceContext.value === "all" || skill.o === sourceContext.value;
+    return textMatch && categoryMatch && compatibilityMatch && securityMatch && sourceMatch;
   });
   if (unique.checked) {
     const seen = new Set();
@@ -138,6 +142,7 @@ input.addEventListener("input", search);
 category.addEventListener("change", search);
 compatibility.addEventListener("change", search);
 security.addEventListener("change", search);
+sourceContext.addEventListener("change", search);
 sort.addEventListener("change", search);
 unique.addEventListener("change", search);
 more.addEventListener("click", () => render(false));

@@ -48,6 +48,25 @@ class ReviewSkillTests(unittest.TestCase):
             self.assertEqual(report["static_review"]["script_signals"], ["pipe-to-shell"])
             self.assertFalse(report["review_checklist"]["static_review_clear"])
 
+    def test_catalog_report_includes_source_context(self):
+        source = "---\nname: demo\ndescription: Demo workflow\n---\n"
+        record = {
+            "id": "github:owner/mirror:_archive/demo/SKILL.md",
+            "repository": "owner/mirror",
+            "path": "_archive/demo/SKILL.md",
+            "sha": "blob",
+            "source_url": "https://example.test/source",
+            "repository_fork": True,
+            "raw_url": "https://raw.githubusercontent.com/owner/mirror/" + "a" * 40 + "/_archive/demo/SKILL.md",
+        }
+        report = build_report(source, record=record)
+        self.assertEqual(report["source_context"]["status"], "review-source")
+        self.assertEqual(
+            report["source_context"]["signals"],
+            ["repository-fork", "copy-or-mirror-path", "dormant-path"],
+        )
+        self.assertFalse(report["review_checklist"]["primary_source_context"])
+
 
 if __name__ == "__main__":
     unittest.main()

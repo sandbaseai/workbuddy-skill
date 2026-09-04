@@ -20,7 +20,7 @@ Try local search in about a minute, without installing dependencies:
 ```bash
 git clone https://github.com/sandbaseai/workbuddy-skill.git
 cd workbuddy-skill
-python3 scripts/query_catalog.py research --security no-static-flags --min-score 80 --unique --sort score --limit 5
+python3 scripts/query_catalog.py research --security no-static-flags --source-context primary-looking --min-score 80 --unique --sort score --limit 5
 python3 scripts/review_skill.py --catalog-id 'github:owner/repository:path/to/SKILL.md'
 ```
 
