@@ -2,6 +2,11 @@
 
 All notable changes to this project are documented here.
 
+## [0.38.0] - 2026-09-05
+
+- Added the MIT Docker source from `codewithmukesh/dotnet-claude-kit` to the Atlas, increasing it to 11,104 indexed paths across 5,769 repositories; its static credential-example signal remains disclosed in provenance.
+- Added the Container Image Engineering Skill with reproducible multi-stage builds, cache correctness, secret-safe dependency access, runtime isolation, supply-chain evidence, staged diagnosis, and clean-build verification.
+
 ## [0.37.0] - 2026-09-05
 
 - Added the MIT KubeShark source to the Atlas, increasing it to 11,003 indexed paths across 5,708 repositories.

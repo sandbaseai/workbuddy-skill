@@ -1,0 +1,17 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [
+      "sensitive-data-exfiltration"
+    ],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:codewithmukesh/dotnet-claude-kit:skills/docker/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "skills/docker/SKILL.md",
+  "repository": "codewithmukesh/dotnet-claude-kit",
+  "sha": "c171a03585cb62e5b3273bd80b206db93d58af85",
+  "source_url": "https://github.com/codewithmukesh/dotnet-claude-kit/blob/23300897f4d1a276bc475e373ecfe886e43dd7c5/skills/docker/SKILL.md"
+}

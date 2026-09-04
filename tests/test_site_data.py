@@ -17,6 +17,19 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        container_image = next(
+            item
+            for item in records
+            if item["r"] == "codewithmukesh/dotnet-claude-kit"
+            and item["p"] == "skills/docker/SKILL.md"
+        )
+        self.assertEqual(container_image["w"], "workbuddy-ready")
+        self.assertEqual(container_image["g"], "development")
+        self.assertTrue(
+            container_image["a"].endswith(
+                "/container-image-engineering-workbuddy-skill.zip"
+            )
+        )
         kubernetes = next(
             item
             for item in records
