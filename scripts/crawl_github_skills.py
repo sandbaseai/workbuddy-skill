@@ -61,7 +61,7 @@ def wait_for_rate_limit(headers: dict) -> None:
     time.sleep(delay)
 
 
-def search_shards(max_bytes: int) -> list[tuple[int, int]]:
+def search_shards(start_bytes: int, max_bytes: int) -> list[tuple[int, int]]:
     """Return non-overlapping size ranges that can be searched without the cap.
 
     GitHub truncates code-search results at 1,000 matches. Start with broad
@@ -69,7 +69,7 @@ def search_shards(max_bytes: int) -> list[tuple[int, int]]:
     refresh proportional to the distribution of files instead of issuing one
     request per possible byte size.
     """
-    return [(1, max_bytes)]
+    return [(start_bytes, max_bytes)]
 
 
 def query_for_range(lower: int, upper: int) -> str:
@@ -78,8 +78,10 @@ def query_for_range(lower: int, upper: int) -> str:
 
 def normalize(item: dict, query: str) -> dict:
     repo = item["repository"]
-    branch = repo.get("default_branch") or "HEAD"
     path = item["path"]
+    raw_url = item["html_url"].replace(
+        "https://github.com/", "https://raw.githubusercontent.com/", 1
+    ).replace("/blob/", "/", 1)
     return {
         "id": f"github:{repo['full_name']}:{path}",
         "name_hint": Path(path).parent.name,
@@ -87,7 +89,7 @@ def normalize(item: dict, query: str) -> dict:
         "path": path,
         "sha": item["sha"],
         "source_url": item["html_url"],
-        "raw_url": f"https://raw.githubusercontent.com/{repo['full_name']}/{branch}/{path}",
+        "raw_url": raw_url,
         "repository_url": repo["html_url"],
         "repository_fork": bool(repo.get("fork")),
         "github_query": query,
@@ -124,12 +126,13 @@ def write_atomic(path: Path, rows: dict[str, dict]) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--target", type=int, default=10_000)
+    parser.add_argument("--start-bytes", type=int, default=1)
     parser.add_argument("--max-bytes", type=int, default=20_000)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUT)
     parser.add_argument("--checkpoint-every", type=int, default=5)
     args = parser.parse_args()
-    if args.target < 1 or args.max_bytes < 1:
-        parser.error("--target and --max-bytes must be positive")
+    if args.target < 1 or args.start_bytes < 1 or args.max_bytes < args.start_bytes:
+        parser.error("require target > 0 and 0 < start-bytes <= max-bytes")
 
     token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN", "")
     rows = load_existing(args.output)
@@ -138,7 +141,7 @@ def main() -> int:
     throttle_retries = 0
 
     try:
-        pending = search_shards(args.max_bytes)
+        pending = search_shards(args.start_bytes, args.max_bytes)
         while pending:
             lower, upper = pending.pop()
             query = query_for_range(lower, upper)
@@ -175,6 +178,8 @@ def main() -> int:
                         break
                 items = payload.get("items", [])
                 for item in items:
+                    if Path(item["path"]).name.casefold() != "skill.md":
+                        continue
                     row = normalize(item, query)
                     rows[row["id"]] = row
                     if len(rows) >= args.target:

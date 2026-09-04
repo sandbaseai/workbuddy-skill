@@ -16,4 +16,5 @@ jobs:
         with:
           python-version: "3.x"
       - run: python3 scripts/validate_skill.py
+      - run: python3 scripts/validate_catalog.py --minimum 10000
       - run: ./scripts/package_skill.sh

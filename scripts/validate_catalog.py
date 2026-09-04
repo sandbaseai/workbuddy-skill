@@ -30,7 +30,7 @@ def main() -> int:
             seen_ids.add(item["id"])
             if not SHA.fullmatch(item["sha"]):
                 raise SystemExit(f"line {rows}: invalid SHA")
-            if not item["path"].lower().endswith("skill.md"):
+            if Path(item["path"]).name.casefold() != "skill.md":
                 raise SystemExit(f"line {rows}: unexpected path {item['path']}")
             if not item["source_url"].startswith("https://github.com/"):
                 raise SystemExit(f"line {rows}: non-GitHub source")
@@ -42,4 +42,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

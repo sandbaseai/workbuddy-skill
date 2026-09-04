@@ -112,6 +112,12 @@ catalog/skills.jsonl
 
 The catalog is generated from public GitHub `SKILL.md` results with resumable, rate-limit-aware collection. Every record keeps its repository, path, blob SHA, source links, WorkBuddy review state, and security review state. See [catalog documentation](catalog/README.md).
 
+| Metric | Current snapshot |
+|---|---:|
+| Indexed GitHub paths | 10,000 |
+| Unique content SHAs | 6,483 |
+| Source repositories | 5,044 |
+
 ```bash
 GH_TOKEN="..." python3 scripts/crawl_github_skills.py --target 10000
 python3 scripts/validate_catalog.py --minimum 10000
