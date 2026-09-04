@@ -140,6 +140,11 @@ def main() -> int:
     parser.add_argument("path", nargs="?", type=Path, default=DEFAULT_CATALOG)
     parser.add_argument("--workers", type=int, default=24)
     parser.add_argument("--limit", type=int)
+    parser.add_argument(
+        "--refresh",
+        action="store_true",
+        help="re-fetch and re-analyze every unique content SHA instead of reusing cached results",
+    )
     args = parser.parse_args()
     if args.workers < 1 or (args.limit is not None and args.limit < 1):
         parser.error("workers and limit must be positive")
@@ -147,7 +152,7 @@ def main() -> int:
     rows = [json.loads(line) for line in args.path.read_text(encoding="utf-8").splitlines() if line]
     cached: dict[str, dict] = {}
     for row in rows:
-        if "analysis_status" in row:
+        if "analysis_status" in row and not args.refresh:
             cached.setdefault(row["sha"], {key: row[key] for key in ANALYSIS_FIELDS if key in row})
 
     sha_sources: dict[str, str] = {}

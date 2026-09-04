@@ -36,6 +36,8 @@ Duplicate content can occur in multiple repositories. Consumers should group by 
 GH_TOKEN="..." python3 scripts/crawl_github_skills.py --target 10000
 python3 scripts/validate_catalog.py --minimum 10000
 python3 scripts/analyze_catalog.py
+# Re-run all immutable source analyses after changing review rules:
+python3 scripts/analyze_catalog.py --refresh
 ```
 
 Analysis is incremental: unchanged blob SHAs reuse their prior result, while
