@@ -7,6 +7,7 @@ import json
 import re
 
 from adapt_skill import resource_paths
+from analyze_catalog import parse_frontmatter
 
 ROOT = Path(__file__).resolve().parents[1]
 SKILLS_ROOT = ROOT / "skills"
@@ -24,14 +25,9 @@ REQUIRED = {
 def validate_skill(skill: Path, root: Path) -> None:
     text = skill.read_text(encoding="utf-8")
     match = re.match(r"\A---\n(.*?)\n---\n", text, re.DOTALL)
-    if not match:
+    valid, fields = parse_frontmatter(text)
+    if not valid or not match:
         raise ValueError(f"{skill.relative_to(root)} must start with YAML frontmatter")
-
-    fields = {}
-    for line in match.group(1).splitlines():
-        if ":" in line and not line.startswith((" ", "\t")):
-            key, value = line.split(":", 1)
-            fields[key.strip()] = value.strip()
 
     relative = skill.relative_to(root)
     missing = sorted(key for key in REQUIRED if not fields.get(key))
