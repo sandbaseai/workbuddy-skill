@@ -134,6 +134,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | Skill | Use it for | Provenance |
 |---|---|---|
 | [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
+| [RAG Evaluation](skills/rag-evaluation/) | Build leakage-resistant datasets and measure retrieval, grounding, citations, refusal, latency, cost, and regressions | [Apache-2.0 source](skills/rag-evaluation/SOURCE.json) |
 | [API Resilience Engineering](skills/api-resilience-engineering/) | Design and diagnose deadlines, retries, idempotency, rate limits, breakers, backpressure, and ambiguous outcomes | [Apache-2.0 source](skills/api-resilience-engineering/SOURCE.json) |
 | [AWS Resilience Assessment](skills/aws-resilience-assessment/) | Map failure paths, validate RTO/RPO and recovery evidence, prioritize risks, and design safe experiments | [MIT-0 source](skills/aws-resilience-assessment/SOURCE.json) |
 | [GitHub Actions Engineering](skills/github-actions-engineering/) | Build, secure, optimize, and diagnose CI, releases, reusable workflows, artifacts, and deployments | [MIT source](skills/github-actions-engineering/SOURCE.json) |
@@ -200,6 +201,10 @@ skills/sandbase/
 └── references/
     ├── execution.md
     └── troubleshooting.md
+skills/rag-evaluation/
+├── SKILL.md
+├── SOURCE.json
+└── LICENSE
 skills/api-resilience-engineering/
 ├── SKILL.md
 ├── SOURCE.json
@@ -380,8 +385,8 @@ The catalog is generated from public GitHub `SKILL.md` results with resumable, r
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 11,532 |
-| Unique content SHAs | 7,297 |
+| Indexed GitHub paths | 11,533 |
+| Unique content SHAs | 7,298 |
 | Source repositories | 5,953 |
 <!-- CATALOG-METRICS:END -->
 
@@ -392,7 +397,7 @@ Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.git
 For a manually curated index of WorkBuddy documentation, MCP integrations, workflows, benchmarks, and Skills, browse [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy).
 
 <!-- CATALOG-ANALYSIS:START -->
-The current static analysis successfully inspected 11,532 paths: 9,844 are structurally adaptable to WorkBuddy, 901 need manual review, 0 are currently WorkBuddy-ready, and 403 contain at least one conservative security signal.
+The current static analysis successfully inspected 11,533 paths: 9,845 are structurally adaptable to WorkBuddy, 901 need manual review, 0 are currently WorkBuddy-ready, and 404 contain at least one conservative security signal.
 <!-- CATALOG-ANALYSIS:END -->
 A clean static scan is never a security guarantee.
 

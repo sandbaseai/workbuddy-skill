@@ -17,6 +17,17 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        rag_evaluation = next(
+            item
+            for item in records
+            if item["r"] == "NVIDIA/skills"
+            and item["p"] == "skills/rag-eval/SKILL.md"
+        )
+        self.assertEqual(rag_evaluation["w"], "workbuddy-ready")
+        self.assertEqual(rag_evaluation["g"], "research")
+        self.assertTrue(
+            rag_evaluation["a"].endswith("/rag-evaluation-workbuddy-skill.zip")
+        )
         api_resilience = next(
             item
             for item in records

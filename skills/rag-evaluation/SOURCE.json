@@ -1,0 +1,18 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [
+      "credential-path",
+      "dynamic-eval"
+    ],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:NVIDIA/skills:skills/rag-eval/SKILL.md",
+  "declared_source_license": "Apache-2.0",
+  "source_license_file": "LICENSE",
+  "path": "skills/rag-eval/SKILL.md",
+  "repository": "NVIDIA/skills",
+  "sha": "010478c61d867cdedb7b1764ee0edae7218ca039",
+  "source_url": "https://github.com/NVIDIA/skills/blob/5b7baecf7d63fa95b0035d176a42d21410e20af4/skills/rag-eval/SKILL.md"
+}
