@@ -67,16 +67,18 @@ def request_json(query: str, page: int, token: str, max_retries: int = 3) -> tup
             time.sleep(delay)
 
 
-def wait_for_rate_limit(headers: dict, max_wait: int) -> None:
+def wait_for_rate_limit(headers: dict, remaining_wait: int) -> int:
     if int(headers.get("X-RateLimit-Remaining", "1")) > 0:
-        return
+        return 0
     delay = rate_limit_delay(headers)
-    if delay > max_wait:
+    if delay > remaining_wait:
         raise RuntimeError(
-            f"GitHub rate-limit wait {delay}s exceeds this run's {max_wait}s cap; resume later"
+            f"GitHub rate-limit wait {delay}s exceeds this run's remaining "
+            f"{remaining_wait}s budget; resume later"
         )
     print(f"GitHub code-search limit reached; waiting {delay}s", file=sys.stderr)
     time.sleep(delay)
+    return delay
 
 
 def search_shards(start_bytes: int, max_bytes: int) -> list[tuple[int, int]]:
@@ -191,6 +193,7 @@ def main() -> int:
     requests = 0
     capped_queries = 0
     throttle_retries = 0
+    rate_waited = 0
 
     try:
         pending = search_shards(args.start_bytes, args.max_bytes)
@@ -217,13 +220,15 @@ def main() -> int:
                                 f"{MAX_THROTTLE_RETRIES} retries; resume later"
                             ) from exc
                         delay = rate_limit_delay(exc.headers)
-                        if delay > args.max_rate_wait:
+                        remaining_wait = args.max_rate_wait - rate_waited
+                        if delay > remaining_wait:
                             raise RuntimeError(
                                 f"GitHub rate-limit wait {delay}s exceeds this run's "
-                                f"{args.max_rate_wait}s cap; resume later"
+                                f"remaining {remaining_wait}s budget; resume later"
                             ) from exc
                         print(f"GitHub returned {exc.code}; waiting {delay}s", file=sys.stderr)
                         time.sleep(delay)
+                        rate_waited += delay
                         continue
                     raise
                 throttle_retries = 0
@@ -253,10 +258,14 @@ def main() -> int:
                 if not items or page * 100 >= min(total, 1_000):
                     break
                 page += 1
-                wait_for_rate_limit(headers, args.max_rate_wait)
+                rate_waited += wait_for_rate_limit(
+                    headers, args.max_rate_wait - rate_waited
+                )
                 if requests % args.checkpoint_every == 0:
                     write_atomic(args.output, rows)
-            wait_for_rate_limit(headers, args.max_rate_wait)
+            rate_waited += wait_for_rate_limit(
+                headers, args.max_rate_wait - rate_waited
+            )
             # Persist after every completed shard so a long refresh loses at
             # most one shard when interrupted.
             write_atomic(args.output, rows)
