@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:LukasNiessen/kubernetes-skill:SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "SKILL.md",
+  "repository": "LukasNiessen/kubernetes-skill",
+  "sha": "baefe06d5185e2e2361b6a2ecb64be18b583c650",
+  "source_url": "https://github.com/LukasNiessen/kubernetes-skill/blob/f85547fb3a1ec909b2cbe4dc68f831590ac385ea/SKILL.md"
+}
