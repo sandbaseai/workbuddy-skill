@@ -17,6 +17,19 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        agent_evaluation = next(
+            item
+            for item in records
+            if item["r"] == "microsoft/eval-guide"
+            and item["p"] == "skills/eval-generator/SKILL.md"
+        )
+        self.assertEqual(agent_evaluation["w"], "workbuddy-ready")
+        self.assertEqual(agent_evaluation["g"], "research")
+        self.assertTrue(
+            agent_evaluation["a"].endswith(
+                "/agent-evaluation-engineering-workbuddy-skill.zip"
+            )
+        )
         rag_evaluation = next(
             item
             for item in records

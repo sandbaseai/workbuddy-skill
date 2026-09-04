@@ -1,0 +1,13 @@
+{
+  "catalog_id": "github:microsoft/eval-guide:skills/eval-generator/SKILL.md",
+  "repository": "microsoft/eval-guide",
+  "path": "skills/eval-generator/SKILL.md",
+  "commit": "7a22a8957ced79a35fd7b4634fd5b5eac56c308e",
+  "sha": "e2befc4ce45a921ac8e23e74eb621e22dcd41640",
+  "source_url": "https://github.com/microsoft/eval-guide/blob/7a22a8957ced79a35fd7b4634fd5b5eac56c308e/skills/eval-generator/SKILL.md",
+  "license": "MIT",
+  "license_file": "LICENSE",
+  "security_status": "no-static-flags",
+  "security_signals": [],
+  "adaptation_notes": "Generalizes the source's agent evaluation workflow beyond Copilot Studio while preserving capability, trust, safety, realistic-case, human-verification, multi-turn, and regression principles."
+}
