@@ -118,7 +118,7 @@ The catalog is generated from public GitHub `SKILL.md` results with resumable, r
 | Unique content SHAs | 6,483 |
 | Source repositories | 5,044 |
 
-Browse the catalog in the [WorkBuddy Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) or query the JSONL directly.
+Browse the catalog in the [WorkBuddy Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) or query the JSONL directly. If it helps you discover a useful workflow, a star or a short review helps other WorkBuddy users find it.
 
 ```bash
 GH_TOKEN="..." python3 scripts/crawl_github_skills.py --target 10000
