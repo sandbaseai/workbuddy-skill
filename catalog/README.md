@@ -25,7 +25,8 @@ Multiple paths can contain byte-identical skills. The catalog preserves those oc
 
 After `scripts/analyze_catalog.py` runs, records also include frontmatter validity,
 a WorkBuddy compatibility score and missing-field list, line count, and conservative
-static risk signals. `no-static-flags` is not a security guarantee; it only means
+static risk signals. The compatibility check requires the standard `name` and
+WorkBuddy metadata fields. `no-static-flags` is not a security guarantee; it only means
 the documented patterns did not match.
 
 Duplicate content can occur in multiple repositories. Consumers should group by `sha` when they need unique content and retain all source occurrences for attribution.
