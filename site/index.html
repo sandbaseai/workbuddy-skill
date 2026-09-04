@@ -77,6 +77,22 @@
               <input id="search" type="search" autocomplete="off" placeholder="Try: research, video, spreadsheet…">
             </div>
             <div class="field">
+              <label for="category">Work category</label>
+              <select id="category">
+                <option value="all">All categories</option>
+                <option value="business">Business</option>
+                <option value="content">Content</option>
+                <option value="data">Data</option>
+                <option value="design">Design</option>
+                <option value="development">Development</option>
+                <option value="media">Media</option>
+                <option value="productivity">Productivity</option>
+                <option value="research">Research</option>
+                <option value="security">Security</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="field">
               <label for="compatibility">WorkBuddy compatibility</label>
               <select id="compatibility">
                 <option value="all">All states</option>
@@ -112,7 +128,7 @@
         <div class="method-grid">
           <p><strong>Discover</strong><span>GitHub code search is split into bounded byte ranges so the 1,000-result API cap is visible and auditable.</span></p>
           <p><strong>Deduplicate</strong><span>Exact blob SHAs distinguish unique content from copied paths without erasing provenance.</span></p>
-          <p><strong>Adapt</strong><span>WorkBuddy compatibility and security states begin unreviewed. Promotion requires deliberate inspection.</span></p>
+          <p><strong>Adapt</strong><span>Deterministic categories and compatibility scores help triage; promotion still requires deliberate inspection.</span></p>
         </div>
       </section>
     </main>

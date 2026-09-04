@@ -40,6 +40,10 @@ Analysis is incremental: unchanged blob SHAs reuse their prior result, while
 new or changed contents are fetched and inspected. Weekly refreshes run this
 step before validation and publication.
 
+The Atlas build derives deterministic work categories from skill names and
+paths and counts identical SHA occurrences. Categories and copy counts are
+navigation aids, not quality or safety endorsements.
+
 The crawler uses GitHub's public code-search API, respects rate-limit headers, retries transient network/server errors with bounded backoff, and atomically checkpoints after each size shard. It starts with a broad byte-size range and bisects only ranges that exceed GitHub's 1,000-result search cap. Tokens are read only from the environment and are never stored.
 
 The scheduled workflow rebuilds this index weekly in temporary storage and can
