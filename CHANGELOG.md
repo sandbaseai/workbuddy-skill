@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.13.0] - 2026-09-05
+
+- Added the MIT CLI Testing Skill with installed-artifact coverage, isolated fixtures, stream and signal verification, bounded processes, and destructive-path safeguards.
+
 ## [0.12.0] - 2026-09-05
 
 - Added the MIT Performance Improvement Skill with reproducible baselines, profiling evidence, controlled experiments, production safeguards, and regression protection.
