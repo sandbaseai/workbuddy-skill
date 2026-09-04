@@ -9,6 +9,20 @@ requested permissions before creating a WorkBuddy package.
 Use the record's full `id` from `catalog/skills.jsonl` or
 `scripts/query_catalog.py --json`:
 
+Generate a non-executing review report first:
+
+```bash
+python3 scripts/review_skill.py \
+  --catalog-id 'github:owner/repository:path/to/SKILL.md'
+```
+
+The report retrieves referenced resources, separates instruction and script
+signals, shows missing WorkBuddy fields, and leaves license, instruction,
+network, and permission checks explicitly incomplete for human review. Add
+`--json` for machine-readable output.
+
+After completing that review, create the package:
+
 ```bash
 python3 scripts/adapt_skill.py \
   --catalog-id 'github:owner/repository:path/to/SKILL.md' \

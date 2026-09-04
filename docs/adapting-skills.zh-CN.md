@@ -6,7 +6,17 @@ GitHub 来源、仓库许可证、随附资源、网络行为和请求的权限�
 ## 创建包
 
 从 `catalog/skills.jsonl` 或 `scripts/query_catalog.py --json` 获取记录的完整
-`id`，然后执行：
+`id`，先生成不会执行源内容的审核报告：
+
+```bash
+python3 scripts/review_skill.py \
+  --catalog-id 'github:owner/repository:path/to/SKILL.md'
+```
+
+报告会获取引用资源，分别列出指令与脚本信号、缺失的 WorkBuddy 字段，并将许可证、
+指令、网络行为和权限检查明确保留为待人工完成。添加 `--json` 可获得机器可读输出。
+
+完成审核后创建包：
 
 ```bash
 python3 scripts/adapt_skill.py \
