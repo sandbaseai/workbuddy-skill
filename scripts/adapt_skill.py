@@ -144,6 +144,7 @@ def adapted_text(source: str, args: argparse.Namespace) -> tuple[str, str]:
         "allowed-tools",
         "argument-hint",
         "disable-model-invocation",
+        "license",
         "user-invocable",
     ):
         if fields.get(optional):
