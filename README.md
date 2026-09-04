@@ -129,6 +129,10 @@ structurally adaptable to WorkBuddy, 884 need manual review, one is already
 WorkBuddy-ready, and 266 contain at least one conservative security signal.
 A clean static scan is never a security guarantee.
 
+需要人工筛选的 WorkBuddy 文档、MCP、工作流、评测与 Skills？浏览 [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy)。
+
+For a manually curated index of WorkBuddy documentation, MCP integrations, workflows, benchmarks, and Skills, browse [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy).
+
 ```bash
 GH_TOKEN="..." python3 scripts/crawl_github_skills.py --target 10000
 python3 scripts/analyze_catalog.py
