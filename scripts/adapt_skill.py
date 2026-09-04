@@ -11,9 +11,11 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
+from pathlib import PurePosixPath
 import re
 import tempfile
-from urllib.parse import quote
+from urllib.error import HTTPError, URLError
+from urllib.parse import quote, unquote, urlparse
 from urllib.request import Request, urlopen
 from zipfile import ZIP_DEFLATED, ZipFile
 
@@ -23,7 +25,11 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CATALOG = ROOT / "catalog" / "skills.jsonl"
 DEFAULT_OUTPUT = ROOT / "dist" / "adapted"
 USER_AGENT = "sandbaseai-workbuddy-skill-adapter/0.4"
-RESOURCE_REFERENCE = re.compile(r"(?:@|\]\()(?P<path>(?:references|scripts|assets|templates)/[^\s)]+)")
+MAX_FILE_BYTES = 512 * 1024
+MAX_RESOURCE_BYTES = 4 * 1024 * 1024
+RESOURCE_REFERENCE = re.compile(
+    r"(?:@|\]\()(?P<path>(?:\./)?(?:references|scripts|assets|templates)/[^\s)>'\"]+)"
+)
 
 
 def catalog_record(path: Path, record_id: str) -> dict:
@@ -35,13 +41,75 @@ def catalog_record(path: Path, record_id: str) -> dict:
     raise SystemExit(f"catalog id not found: {record_id}")
 
 
-def fetch_text(url: str) -> str:
+def fetch_bytes(url: str, *, limit: int = MAX_FILE_BYTES) -> bytes:
     request = Request(quote(url, safe=":/%"), headers={"User-Agent": USER_AGENT})
     with urlopen(request, timeout=30) as response:
-        raw = response.read(512 * 1024 + 1)
-    if len(raw) > 512 * 1024:
-        raise SystemExit("source exceeds the 512 KiB review limit")
-    return raw.decode("utf-8", errors="replace")
+        raw = response.read(limit + 1)
+    if len(raw) > limit:
+        raise SystemExit(f"source file exceeds the {limit // 1024} KiB review limit")
+    return raw
+
+
+def fetch_text(url: str) -> str:
+    return fetch_bytes(url).decode("utf-8", errors="replace")
+
+
+def resource_paths(source: str) -> list[PurePosixPath]:
+    """Return normalized, safe resource paths referenced by a SKILL.md."""
+    paths: set[PurePosixPath] = set()
+    for match in RESOURCE_REFERENCE.finditer(source):
+        value = unquote(match.group("path")).removeprefix("./").rstrip(".,;:")
+        path = PurePosixPath(value)
+        if path.is_absolute() or ".." in path.parts or len(path.parts) < 2:
+            raise SystemExit(f"unsafe bundled resource path: {value}")
+        paths.add(path)
+    return sorted(paths, key=str)
+
+
+def immutable_github_source(record: dict) -> tuple[str, str, str]:
+    """Resolve owner/repository, immutable commit, and skill directory."""
+    parsed = urlparse(record["raw_url"])
+    parts = parsed.path.lstrip("/").split("/")
+    if parsed.netloc != "raw.githubusercontent.com" or len(parts) < 4:
+        raise SystemExit("catalog record does not contain an immutable GitHub raw URL")
+    owner, repository, commit = parts[:3]
+    if not re.fullmatch(r"[0-9a-f]{40}", commit):
+        raise SystemExit("catalog source is not pinned to a full Git commit")
+    skill_dir = str(PurePosixPath(*parts[3:]).parent)
+    return f"{owner}/{repository}", commit, skill_dir
+
+
+def collect_resources(
+    source: str, *, record: dict | None = None, source_file: Path | None = None
+) -> tuple[dict[str, bytes], list[str]]:
+    requested = resource_paths(source)
+    resources: dict[str, bytes] = {}
+    missing: list[str] = []
+    if record:
+        repository, commit, skill_dir = immutable_github_source(record)
+    for path in requested:
+        relative = str(path)
+        try:
+            if record:
+                remote_path = str(PurePosixPath(skill_dir) / path)
+                url = f"https://raw.githubusercontent.com/{repository}/{commit}/{remote_path}"
+                content = fetch_bytes(url)
+            else:
+                candidate = (source_file.parent / Path(*path.parts)).resolve()
+                root = source_file.parent.resolve()
+                if not candidate.is_relative_to(root) or not candidate.is_file():
+                    missing.append(relative)
+                    continue
+                content = candidate.read_bytes()
+                if len(content) > MAX_FILE_BYTES:
+                    raise SystemExit(f"resource exceeds the 512 KiB review limit: {relative}")
+        except (HTTPError, URLError, TimeoutError):
+            missing.append(relative)
+            continue
+        resources[relative] = content
+        if sum(map(len, resources.values())) > MAX_RESOURCE_BYTES:
+            raise SystemExit("bundled resources exceed the 4 MiB package review limit")
+    return resources, missing
 
 
 def portable_name(value: str) -> str:
@@ -113,6 +181,7 @@ def main() -> int:
         }
         args.name_hint = record["name_hint"]
     else:
+        record = None
         source_text = args.source_file.read_text(encoding="utf-8")
         source_info = {"source_file": str(args.source_file)}
         args.name_hint = args.source_file.parent.name
@@ -123,11 +192,24 @@ def main() -> int:
             "source has static review signals; inspect before retrying with --allow-flagged: "
             + ", ".join(analysis["security_signals"])
         )
-    missing_resources = sorted(set(match.group("path") for match in RESOURCE_REFERENCE.finditer(source_text)))
+    resources, missing_resources = collect_resources(
+        source_text, record=record, source_file=args.source_file
+    )
     if missing_resources and not args.allow_missing_resources:
         raise SystemExit(
             "source references bundled resources that were not fetched: "
             + ", ".join(missing_resources[:10])
+        )
+    resource_signals = sorted({
+        signal
+        for path, content in resources.items()
+        if path.startswith("scripts/")
+        for signal in analyze_text(content.decode("utf-8", errors="replace"))["security_signals"]
+    })
+    if resource_signals and not args.allow_flagged:
+        raise SystemExit(
+            "bundled scripts have static review signals; inspect before retrying with "
+            "--allow-flagged: " + ", ".join(resource_signals)
         )
 
     name, skill_text = adapted_text(source_text, args)
@@ -141,7 +223,8 @@ def main() -> int:
         "declared_source_license": args.source_license,
         "adaptation": {
             "missing_resources": missing_resources,
-            "security_signals": analysis["security_signals"],
+            "packaged_resources": sorted(resources),
+            "security_signals": sorted(set(analysis["security_signals"] + resource_signals)),
             "tool": "scripts/adapt_skill.py",
         },
     }
@@ -152,10 +235,15 @@ def main() -> int:
             json.dumps(provenance, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
             encoding="utf-8",
         )
+        for relative, content in resources.items():
+            destination = package / relative
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            destination.write_bytes(content)
         temporary_archive = archive.with_suffix(".zip.tmp")
         with ZipFile(temporary_archive, "w", compression=ZIP_DEFLATED) as output:
-            output.write(package / "SKILL.md", "SKILL.md")
-            output.write(package / "SOURCE.json", "SOURCE.json")
+            for file in sorted(package.rglob("*")):
+                if file.is_file():
+                    output.write(file, file.relative_to(package))
         temporary_archive.replace(archive)
     print(f"OK: created {archive}")
     return 0
