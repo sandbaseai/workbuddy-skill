@@ -123,6 +123,30 @@ class LocalPackagingTests(unittest.TestCase):
             with ZipFile(root / "dist/licensed-workbuddy.zip") as archive:
                 self.assertIn('license: "Apache-2.0"', archive.read("SKILL.md").decode())
 
+    def test_preserves_compatibility_metadata(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source = root / "compatible" / "SKILL.md"
+            source.parent.mkdir()
+            source.write_text(
+                "---\nname: compatible\ndescription: Compatible skill\n"
+                "compatibility: Requires Python 3.11 and network access\n"
+                "---\n\n# Compatible\n", encoding="utf-8",
+            )
+            command = [
+                sys.executable, str(ROOT / "scripts" / "adapt_skill.py"),
+                "--source-file", str(source), "--output", str(root / "dist"),
+                "--display-name-zh", "兼容技能", "--display-name-en", "Compatible",
+                "--description-zh", "兼容技能", "--description-en", "Compatible skill",
+                "--author", "Test", "--source-license", "MIT",
+            ]
+            subprocess.run(command, cwd=ROOT, check=True, capture_output=True, text=True)
+            with ZipFile(root / "dist/compatible-workbuddy.zip") as archive:
+                self.assertIn(
+                    'compatibility: "Requires Python 3.11 and network access"',
+                    archive.read("SKILL.md").decode(),
+                )
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -169,7 +169,9 @@ python3 scripts/validate_skill.py
 
 The validator also checks the standard Agent Skills installation invariants:
 each skill's `name` matches its directory and uses the strict lowercase-hyphen
-form, and `allowed-tools` remains a space- or comma-separated string. It also requires the declared `license` to
+form, and `allowed-tools` remains a space- or comma-separated string. The adapter
+also preserves the standard optional `compatibility` requirement when present.
+It also requires the declared `license` to
 match `SOURCE.json` when provenance metadata is present. This keeps curated Skills compatible with
 `gh skill publish --dry-run` and exact-path installation.
 
