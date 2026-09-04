@@ -146,6 +146,9 @@ the [community review queue](https://github.com/sandbaseai/workbuddy-skill/issue
 with its exact source, license, permissions, and a concrete user problem. Please
 never commit API keys, access tokens, private prompts, or customer data.
 
+For help, see [SUPPORT.md](SUPPORT.md); for responsible vulnerability reports,
+see [SECURITY.md](SECURITY.md).
+
 ## License
 
 [MIT](LICENSE)
