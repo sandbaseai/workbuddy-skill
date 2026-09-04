@@ -25,6 +25,7 @@ jobs:
         with:
           python-version: "3.x"
       - name: Refresh provenance index
+        id: crawl
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -47,12 +48,16 @@ jobs:
           discovered=$(wc -l < /tmp/skills.jsonl)
           if [ "$discovered" -le "$current" ]; then
             echo "No new records before the rate-limit boundary; resume on the next run"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
+          echo "changed=true" >> "$GITHUB_OUTPUT"
           echo "Discovered $((discovered - current)) new records; continuing with analysis"
       - name: Analyze WorkBuddy compatibility
+        if: steps.crawl.outputs.changed == 'true'
         run: python3 scripts/analyze_catalog.py /tmp/skills.jsonl
       - name: Validate provenance index
+        if: steps.crawl.outputs.changed == 'true'
         run: |
           python3 scripts/validate_catalog.py /tmp/skills.jsonl --minimum 10000 --require-analysis
           cp /tmp/skills.jsonl catalog/skills.jsonl
@@ -62,6 +67,7 @@ jobs:
           cp /tmp/analysis-stats.json catalog/analysis-stats.json
           python3 scripts/update_readme_stats.py
       - name: Publish catalog update
+        if: steps.crawl.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |

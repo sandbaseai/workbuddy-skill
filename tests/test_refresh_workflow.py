@@ -18,6 +18,11 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("target=$((current + 100))", workflow)
         self.assertIn("--max-rate-wait 120", workflow)
         self.assertIn('"$crawl_status" -ne 2', workflow)
+        self.assertIn('echo "changed=false" >> "$GITHUB_OUTPUT"', workflow)
+        self.assertEqual(
+            workflow.count("if: steps.crawl.outputs.changed == 'true'"),
+            3,
+        )
 
     def test_public_freshness_metadata_matches_daily_schedule(self):
         catalog_docs = (ROOT / "catalog/README.md").read_text(encoding="utf-8")
