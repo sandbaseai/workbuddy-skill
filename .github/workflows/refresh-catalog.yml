@@ -65,6 +65,7 @@ jobs:
                 --body "Automated provenance-only catalog refresh. Validation passed in this workflow."); then
                 echo "PR creation is disabled; publishing the validated snapshot directly to main"
                 git push origin "HEAD:main"
+                git push origin --delete "$branch" || true
                 exit 0
               fi
             fi
