@@ -17,6 +17,15 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        oauth = next(
+            item
+            for item in records
+            if item["r"] == "ssrjkk/claude-skills"
+            and item["p"] == ".claude/skills/security/oauth-debugging/SKILL.md"
+        )
+        self.assertEqual(oauth["w"], "workbuddy-ready")
+        self.assertEqual(oauth["g"], "security")
+        self.assertTrue(oauth["a"].endswith("/oauth-debugging-workbuddy-skill.zip"))
         graphql = next(
             item
             for item in records
