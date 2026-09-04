@@ -152,7 +152,11 @@ def write_stats(path: Path, rows: dict[str, dict], requests: int, capped_queries
         "queries_over_github_cap": capped_queries,
     }
     stats_path = path.with_name("stats.json")
-    stats_path.write_text(json.dumps(stats, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    temporary = stats_path.with_suffix(stats_path.suffix + ".tmp")
+    temporary.write_text(
+        json.dumps(stats, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+    )
+    temporary.replace(stats_path)
     print(json.dumps(stats, sort_keys=True))
 
 
