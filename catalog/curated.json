@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:jpiedrafita/agent-templates:.github/skills/test-runner/SKILL.md",
+    "skill": "test-runner",
+    "skill_path": "skills/test-runner",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/test-runner-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:aydabd/github-bootstrap:templates/.github/skills/regression-risk-review/SKILL.md",
     "skill": "regression-risk-review",
     "skill_path": "skills/regression-risk-review",
