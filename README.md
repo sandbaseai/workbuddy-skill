@@ -120,6 +120,10 @@ The catalog is generated from public GitHub `SKILL.md` results with resumable, r
 
 Browse the catalog in the [WorkBuddy Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) or query the JSONL directly. If it helps you discover a useful workflow, a star or a short review helps other WorkBuddy users find it.
 
+需要人工筛选的 WorkBuddy 文档、MCP、工作流、评测与 Skills？浏览 [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy)。
+
+For a manually curated index of WorkBuddy documentation, MCP integrations, workflows, benchmarks, and Skills, browse [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy).
+
 ```bash
 GH_TOKEN="..." python3 scripts/crawl_github_skills.py --target 10000
 python3 scripts/validate_catalog.py --minimum 10000
