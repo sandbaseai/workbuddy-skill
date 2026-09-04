@@ -135,6 +135,17 @@ class SiteDataTests(unittest.TestCase):
         self.assertEqual(email["w"], "workbuddy-ready")
         self.assertEqual(email["g"], "business")
         self.assertTrue(email["a"].endswith("/email-drafting-workbuddy-skill.zip"))
+        requirements = next(
+            item
+            for item in records
+            if item["r"] == "l-gevity/l-gevity-skills"
+            and item["p"] == ".agents/skills/requirements-grounding/SKILL.md"
+        )
+        self.assertEqual(requirements["w"], "workbuddy-ready")
+        self.assertEqual(requirements["g"], "business")
+        self.assertTrue(
+            requirements["a"].endswith("/requirements-grounding-workbuddy-skill.zip")
+        )
         metadata = json.loads(
             (ROOT / "site" / "catalog-meta.json").read_text(encoding="utf-8")
         )

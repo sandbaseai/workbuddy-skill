@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.18.0] - 2026-09-05
+
+- Added the MIT Requirements Grounding Skill with source classification, solution-free problem framing, observable completion, confidence, recovery-mode evidence, and decision records.
+
 ## [0.17.0] - 2026-09-05
 
 - Added the MIT Email Drafting Skill with recipient and attachment checks, factual fidelity, privacy controls, phishing awareness, and explicit draft-versus-send authorization.
