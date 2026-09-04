@@ -20,6 +20,7 @@ from urllib.request import Request, urlopen
 API = "https://api.github.com/search/code"
 DEFAULT_OUT = Path("catalog/skills.jsonl")
 USER_AGENT = "sandbaseai-workbuddy-skill-catalog/0.2"
+MAX_THROTTLE_RETRIES = 8
 
 
 def request_json(query: str, page: int, token: str, max_retries: int = 3) -> tuple[dict, dict]:
@@ -134,6 +135,7 @@ def main() -> int:
     rows = load_existing(args.output)
     requests = 0
     capped_queries = 0
+    throttle_retries = 0
 
     try:
         pending = search_shards(args.max_bytes)
@@ -149,12 +151,20 @@ def main() -> int:
                     payload, headers = request_json(query, page, token)
                 except HTTPError as exc:
                     if exc.code in (403, 429):
+                        throttle_retries += 1
+                        if throttle_retries > MAX_THROTTLE_RETRIES:
+                            raise RuntimeError(
+                                "GitHub search API remained rate-limited after "
+                                f"{MAX_THROTTLE_RETRIES} retries; resume later"
+                            ) from exc
                         reset = int(exc.headers.get("X-RateLimit-Reset", "0"))
-                        delay = max(5, reset - int(time.time()) + 2)
+                        retry_after = int(exc.headers.get("Retry-After", "0"))
+                        delay = max(5, retry_after, reset - int(time.time()) + 2)
                         print(f"GitHub returned {exc.code}; waiting {delay}s", file=sys.stderr)
                         time.sleep(delay)
                         continue
                     raise
+                throttle_retries = 0
                 requests += 1
                 total = int(payload.get("total_count", 0))
                 if total > 1_000 and page == 1:
@@ -180,7 +190,7 @@ def main() -> int:
             # Persist after every completed shard so a long refresh loses at
             # most one shard when interrupted.
             write_atomic(args.output, rows)
-    except (KeyboardInterrupt, HTTPError, URLError) as exc:
+    except (KeyboardInterrupt, HTTPError, URLError, RuntimeError) as exc:
         write_atomic(args.output, rows)
         print(f"crawl paused after {len(rows)} records: {exc}", file=sys.stderr)
         return 2
