@@ -67,8 +67,8 @@ python3 scripts/query_catalog.py invoice OCR --json
 python3 scripts/query_catalog.py research --security no-static-flags --source-context primary-looking --min-score 80 --unique --sort score
 ```
 
-The helper searches `name_hint`, repository, and path. Filter by WorkBuddy
-status, static review state, inferred source context, or minimum compatibility score; group identical
+The helper searches `name_hint`, repository, path, and review metadata. Filter by
+WorkBuddy status, static review state, inferred source context, or minimum compatibility score; group identical
 blob SHAs with `--unique`; and sort by score, copy count, or name. Every result
 includes the original source URL and review states; a match never means the
 Skill is trusted or safe to install.
