@@ -17,6 +17,19 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        observability = next(
+            item
+            for item in records
+            if item["r"] == "FutureJJ/claude-skills"
+            and item["p"] == "skills/monitoring-observability/SKILL.md"
+        )
+        self.assertEqual(observability["w"], "workbuddy-ready")
+        self.assertEqual(observability["g"], "development")
+        self.assertTrue(
+            observability["a"].endswith(
+                "/monitoring-observability-workbuddy-skill.zip"
+            )
+        )
         mysql = next(
             item
             for item in records
