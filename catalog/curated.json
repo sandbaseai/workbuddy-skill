@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:l-gevity/l-gevity-skills:.agents/skills/requirements-grounding/SKILL.md",
+    "skill": "requirements-grounding",
+    "skill_path": "skills/requirements-grounding",
+    "category": "business",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/requirements-grounding-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:datar-gaurav/sutra-os:backend/skills/email-drafting/SKILL.md",
     "skill": "email-drafting",
     "skill_path": "skills/email-drafting",

@@ -123,6 +123,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | Skill | Use it for | Provenance |
 |---|---|---|
 | [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
+| [Requirements Grounding](skills/requirements-grounding/) | Turn mixed evidence into traceable, solution-free requirements with explicit confidence | [MIT source](skills/requirements-grounding/SOURCE.json) |
 | [Email Drafting](skills/email-drafting/) | Draft accurate, actionable messages with recipient, attachment, privacy, and send checks | [MIT source](skills/email-drafting/SOURCE.json) |
 | [Research with Sources](skills/web-researcher/) | Answer current questions with authoritative evidence, citations, and explicit uncertainty | [MIT source](skills/web-researcher/SOURCE.json) |
 | [Software Release](skills/release-software/) | Prepare, verify, stage, publish, monitor, and roll back releases | [MIT source](skills/release-software/SOURCE.json) |
@@ -154,6 +155,10 @@ skills/sandbase/
 └── references/
     ├── execution.md
     └── troubleshooting.md
+skills/requirements-grounding/
+├── SKILL.md
+├── SOURCE.json
+└── LICENSE
 skills/email-drafting/
 ├── SKILL.md
 ├── SOURCE.json

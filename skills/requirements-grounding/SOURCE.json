@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:l-gevity/l-gevity-skills:.agents/skills/requirements-grounding/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": ".agents/skills/requirements-grounding/SKILL.md",
+  "repository": "l-gevity/l-gevity-skills",
+  "sha": "bf9d101915c853a9e09229fc9fe62dcf90b7db09",
+  "source_url": "https://github.com/l-gevity/l-gevity-skills/blob/a7200fd3454d84ae251b43b18b5a25d064374746/.agents/skills/requirements-grounding/SKILL.md"
+}
