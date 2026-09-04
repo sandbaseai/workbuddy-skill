@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:xuthreekid/clawchain:backend/data/skills/excel-ops/SKILL.md",
+    "skill": "excel-ops",
+    "skill_path": "skills/excel-ops",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/excel-ops-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:GuicedEE/ai-rules:skills/.curated/systematic-debugging/SKILL.md",
     "skill": "systematic-debugging",
     "skill_path": "skills/systematic-debugging",

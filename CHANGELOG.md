@@ -2,6 +2,11 @@
 
 All notable changes to this project are documented here.
 
+## [0.7.0] - 2026-09-05
+
+- Added the MIT Spreadsheet Operations Skill with WorkBuddy-specific fidelity, safety, and output verification rules.
+- Connected the new adaptation to the Atlas as a directly installable WorkBuddy-ready result.
+
 ## [0.6.0] - 2026-09-05
 
 - Added the Apache-2.0 Systematic Debugging Skill as the second reviewed WorkBuddy adaptation.
@@ -36,6 +41,7 @@ All notable changes to this project are documented here.
 - Released the installable SandBase WorkBuddy Skill package.
 
 [0.3.0]: https://github.com/sandbaseai/workbuddy-skill/releases/tag/v0.3.0
+[0.7.0]: https://github.com/sandbaseai/workbuddy-skill/releases/tag/v0.7.0
 [0.6.0]: https://github.com/sandbaseai/workbuddy-skill/releases/tag/v0.6.0
 [0.5.0]: https://github.com/sandbaseai/workbuddy-skill/releases/tag/v0.5.0
 [0.4.0]: https://github.com/sandbaseai/workbuddy-skill/releases/tag/v0.4.0
