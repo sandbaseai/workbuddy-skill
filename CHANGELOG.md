@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## Unreleased
+
+- Added the MIT Browser Automation Skill with bounded navigation, stable selectors, safe side-effect handling, privacy controls, bounded extraction, and reproducible end-to-end verification.
+
 ## [0.44.0] - 2026-09-05
 
 - Added NVIDIA's official Apache-2.0 RAG evaluation source to the Atlas with immutable commit and blob provenance; its conservative credential-path and dynamic-eval signals remain disclosed after review.

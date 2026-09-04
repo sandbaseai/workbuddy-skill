@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:claude-office-skills/skills:browser-automation/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "browser-automation/SKILL.md",
+  "repository": "claude-office-skills/skills",
+  "sha": "67ab6bff7d291e3899d57b9b8c254834af6d63d5",
+  "source_url": "https://github.com/claude-office-skills/skills/blob/9702ad817c25f22b7d9f5c455734b37f554e6801/browser-automation/SKILL.md"
+}
