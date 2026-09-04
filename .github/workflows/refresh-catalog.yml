@@ -2,7 +2,9 @@ name: Refresh skill catalog
 
 on:
   schedule:
-    - cron: "17 3 * * *"
+    # Revisit GitHub's public Skill surface throughout the day while the
+    # crawler's request/rate-limit bounds keep each run finite and resumable.
+    - cron: "17 */6 * * *"
   workflow_dispatch:
 
 permissions:

@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Increased scheduled public Skill catalog refreshes from daily to every six hours while retaining bounded crawling, rate-limit backoff, validation, and automatic publication safeguards.
 - Added the MIT Security Audit Skill with bounded scope, trust-boundary mapping, control verification, safe tool use, risk classification, compliance evidence, remediation ownership, retesting, and residual-risk handoff.
 - Added the MIT Test Runner Skill with fast/full modes, repository-native command selection, safe scope and environment handling, failure classification, flake transparency, and reproducible test reporting.
 - Added the MIT Regression Risk Review Skill with diff-first evidence gathering, compatibility-path analysis, high-risk behavior checks, prioritized machine-readable findings, regression-test guidance, rollout safeguards, and accountable handoff.

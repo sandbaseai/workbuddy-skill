@@ -10,9 +10,9 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("softprops/action-gh-release@v3.0.3", workflow)
         self.assertNotIn("softprops/action-gh-release@v2", workflow)
 
-    def test_daily_incremental_refresh_is_serial_and_non_interrupting(self):
+    def test_six_hour_incremental_refresh_is_serial_and_non_interrupting(self):
         workflow = (ROOT / ".github/workflows/refresh-catalog.yml").read_text(encoding="utf-8")
-        self.assertIn('cron: "17 3 * * *"', workflow)
+        self.assertIn('cron: "17 */6 * * *"', workflow)
         self.assertIn("group: refresh-skill-catalog", workflow)
         self.assertIn("cancel-in-progress: false", workflow)
         self.assertIn("target=$((current + 100))", workflow)
@@ -24,11 +24,11 @@ class RefreshWorkflowTests(unittest.TestCase):
             3,
         )
 
-    def test_public_freshness_metadata_matches_daily_schedule(self):
+    def test_public_freshness_metadata_matches_site_schedule(self):
         catalog_docs = (ROOT / "catalog/README.md").read_text(encoding="utf-8")
         sitemap = (ROOT / "site/sitemap.xml").read_text(encoding="utf-8")
-        self.assertIn("Daily refreshes", catalog_docs)
-        self.assertIn("rebuilds this index daily", catalog_docs)
+        self.assertIn("Every-six-hour refreshes", catalog_docs)
+        self.assertIn("rebuilds this index every six hours", catalog_docs)
         self.assertEqual(sitemap.count("<changefreq>daily</changefreq>"), 2)
 
     def test_concurrent_publish_reconciles_snapshots_before_retrying(self):
