@@ -64,9 +64,18 @@ jobs:
                 --title "chore: refresh public skill catalog" \
                 --body "Automated provenance-only catalog refresh. Validation passed in this workflow."); then
                 echo "PR creation is disabled; publishing the validated snapshot directly to main"
-                git push origin "HEAD:main"
-                git push origin --delete "$branch" || true
-                exit 0
+                for attempt in 1 2 3; do
+                  git fetch origin main
+                  git rebase origin/main
+                  if git push origin "HEAD:main"; then
+                    git push origin --delete "$branch" || true
+                    exit 0
+                  fi
+                  echo "main advanced during publish; retrying (${attempt}/3)"
+                  sleep 2
+                done
+                echo "Unable to publish the validated catalog after concurrent updates" >&2
+                exit 1
               fi
             fi
             echo "Enabling auto-merge for $pr_url"
