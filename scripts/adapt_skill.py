@@ -143,6 +143,7 @@ def adapted_text(source: str, args: argparse.Namespace) -> tuple[str, str]:
     for optional in (
         "allowed-tools",
         "argument-hint",
+        "compatibility",
         "disable-model-invocation",
         "license",
         "user-invocable",
