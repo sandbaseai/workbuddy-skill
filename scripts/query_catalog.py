@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+from collections import Counter
 import json
 from pathlib import Path
 import sys
@@ -17,6 +18,50 @@ def matches(row: dict, terms: list[str]) -> bool:
     return all(term.casefold() in haystack for term in terms)
 
 
+def query_rows(
+    rows: list[dict],
+    terms: list[str],
+    *,
+    status: str | None = None,
+    security: str | None = None,
+    min_score: int | None = None,
+    unique: bool = False,
+    order: str = "source",
+    limit: int = 20,
+) -> tuple[list[dict], Counter]:
+    def score_of(row: dict) -> int:
+        score = row.get("workbuddy_score")
+        return score if isinstance(score, int) else -1
+
+    copies = Counter(row.get("sha") for row in rows if row.get("sha"))
+    results = [
+        row for row in rows
+        if matches(row, terms)
+        and (status is None or row.get("workbuddy_status") == status)
+        and (security is None or row.get("security_status") == security)
+        and (min_score is None or score_of(row) >= min_score)
+    ]
+    if unique:
+        seen: set[str] = set()
+        unique_results = []
+        for row in results:
+            sha = row.get("sha")
+            if sha and sha in seen:
+                continue
+            if sha:
+                seen.add(sha)
+            unique_results.append(row)
+        results = unique_results
+    by_name = lambda row: (row.get("name_hint", "").casefold(), row.get("repository", "").casefold())
+    if order == "score":
+        results.sort(key=lambda row: (-score_of(row), -copies[row.get("sha")], by_name(row)))
+    elif order == "copies":
+        results.sort(key=lambda row: (-copies[row.get("sha")], -score_of(row), by_name(row)))
+    elif order == "name":
+        results.sort(key=by_name)
+    return results[:limit], copies
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Search catalog/skills.jsonl by repository, path, or skill name."
@@ -24,14 +69,34 @@ def main() -> int:
     parser.add_argument("terms", nargs="+", help="Words that must all match")
     parser.add_argument("--catalog", type=Path, default=Path("catalog/skills.jsonl"))
     parser.add_argument("--limit", type=int, default=20)
+    parser.add_argument(
+        "--status",
+        choices=("workbuddy-ready", "adaptable", "needs-review", "unreviewed"),
+        help="Require an exact WorkBuddy review state",
+    )
+    parser.add_argument(
+        "--security",
+        choices=("no-static-flags", "flagged", "unscanned"),
+        help="Require an exact static review state",
+    )
+    parser.add_argument("--min-score", type=int, help="Require a WorkBuddy score from 0 to 100")
+    parser.add_argument("--unique", action="store_true", help="Return one path per unique blob SHA")
+    parser.add_argument(
+        "--sort",
+        choices=("source", "score", "copies", "name"),
+        default="source",
+        help="Order matches before applying the limit",
+    )
     parser.add_argument("--json", action="store_true", dest="as_json")
     args = parser.parse_args()
     if args.limit < 1:
         parser.error("--limit must be positive")
+    if args.min_score is not None and not 0 <= args.min_score <= 100:
+        parser.error("--min-score must be between 0 and 100")
     if not args.catalog.exists():
         raise SystemExit(f"catalog not found: {args.catalog}")
 
-    results: list[dict] = []
+    rows: list[dict] = []
     with args.catalog.open(encoding="utf-8") as handle:
         for line_number, line in enumerate(handle, 1):
             if not line.strip():
@@ -40,10 +105,18 @@ def main() -> int:
                 row = json.loads(line)
             except json.JSONDecodeError as exc:
                 raise SystemExit(f"invalid JSONL at line {line_number}: {exc}") from exc
-            if matches(row, args.terms):
-                results.append(row)
-                if len(results) >= args.limit:
-                    break
+            rows.append(row)
+
+    results, copies = query_rows(
+        rows,
+        args.terms,
+        status=args.status,
+        security=args.security,
+        min_score=args.min_score,
+        unique=args.unique,
+        order=args.sort,
+        limit=args.limit,
+    )
 
     if args.as_json:
         json.dump(results, sys.stdout, ensure_ascii=False, indent=2)
@@ -52,7 +125,10 @@ def main() -> int:
     for row in results:
         print(f"{row['repository']}:{row['path']}")
         print(f"  source: {row['source_url']}")
-        print(f"  review: {row['workbuddy_status']}; security: {row['security_status']}")
+        print(
+            f"  review: {row['workbuddy_status']} ({row.get('workbuddy_score', '—')}/100); "
+            f"security: {row['security_status']}; copies: {copies[row.get('sha')]}"
+        )
     print(f"\n{len(results)} result(s)", file=sys.stderr)
     return 0
 

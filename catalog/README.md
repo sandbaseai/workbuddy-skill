@@ -61,11 +61,14 @@ the entire JSONL file into memory:
 ```bash
 python3 scripts/query_catalog.py browser --limit 10
 python3 scripts/query_catalog.py invoice OCR --json
+python3 scripts/query_catalog.py research --security no-static-flags --min-score 80 --unique --sort score
 ```
 
-The helper searches `name_hint`, repository, and path. Every result includes
-the original source URL and review states; a match never means the Skill is
-trusted or safe to install.
+The helper searches `name_hint`, repository, and path. Filter by WorkBuddy
+status, static review state, or minimum compatibility score; group identical
+blob SHAs with `--unique`; and sort by score, copy count, or name. Every result
+includes the original source URL and review states; a match never means the
+Skill is trusted or safe to install.
 
 ## Safety and licensing
 
