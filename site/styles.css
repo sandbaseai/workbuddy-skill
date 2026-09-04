@@ -28,6 +28,7 @@ a { color: inherit; }
 nav { display: flex; gap: 24px; }
 nav a { color: var(--muted); font-size: .92rem; text-decoration: none; }
 nav a:hover, nav a:focus-visible { color: var(--ink); }
+.nav-star { color: var(--accent-dark) !important; font-weight: 700; }
 .hero {
   min-height: calc(100dvh - 68px); max-width: 1400px; margin: auto; padding: 8vh 5vw;
   display: grid; grid-template-columns: 1.08fr .92fr; align-items: center; gap: 7vw;
