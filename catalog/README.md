@@ -23,6 +23,11 @@ python3 scripts/validate_catalog.py --minimum 10000
 
 The crawler uses GitHub's public code-search API, respects rate-limit headers, retries transient network/server errors with bounded backoff, and atomically checkpoints after each size shard. It starts with a broad byte-size range and bisects only ranges that exceed GitHub's 1,000-result search cap. Tokens are read only from the environment and are never stored.
 
+The scheduled workflow refreshes this index weekly and can also be started from
+the Actions tab. It validates the result before opening an update pull request;
+repository settings decide whether GitHub can automatically merge that pull
+request.
+
 ## Safety and licensing
 
 The committed catalog stores metadata and links, not third-party skill bodies. Each linked repository keeps its own license and terms. Review provenance, license, instructions, bundled scripts, network behavior, and requested permissions before adapting or installing a skill.

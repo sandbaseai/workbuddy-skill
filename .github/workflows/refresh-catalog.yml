@@ -1,0 +1,51 @@
+name: Refresh skill catalog
+
+on:
+  schedule:
+    - cron: "17 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: refresh-skill-catalog
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+      - name: Refresh provenance index
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/crawl_github_skills.py --target 10000
+      - name: Validate provenance index
+        run: python3 scripts/validate_catalog.py --minimum 10000
+      - name: Publish catalog update
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branch="automation/refresh-skill-catalog"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -C "$branch"
+          git add catalog/skills.jsonl catalog/stats.json
+          if git diff --cached --quiet; then
+            echo "Catalog is already current"
+            exit 0
+          fi
+          git commit -m "chore: refresh public skill catalog"
+          git push --force-with-lease origin "$branch"
+          gh pr create --base main --head "$branch" \
+            --title "chore: refresh public skill catalog" \
+            --body "Automated provenance-only catalog refresh. Validation passed in this workflow." \
+            || true
+          gh pr merge "$branch" --auto --squash --delete-branch || true
