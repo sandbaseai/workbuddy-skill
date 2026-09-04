@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:majiayu000/claude-skill-registry:skills/quality/validate-openapi-spec/SKILL.md",
+    "skill": "openapi-review",
+    "skill_path": "skills/openapi-review",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/openapi-review-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:aydabd/github-bootstrap:templates/.github/skills/security-review/SKILL.md",
     "skill": "security-review",
     "skill_path": "skills/security-review",

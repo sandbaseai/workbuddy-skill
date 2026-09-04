@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.28.0] - 2026-09-05
+
+- Added the MIT OpenAPI Contract Review Skill with structural validation, semantic checks, security-scheme review, baseline compatibility analysis, consumer-path testing, and explicit tool coverage.
+
 ## [0.27.0] - 2026-09-05
 
 - Added the MIT Code Security Review Skill with scoped diff analysis, attacker-controlled data-flow tracing, authorization checks, exploitability evidence, calibrated severity, and explicit review limitations.

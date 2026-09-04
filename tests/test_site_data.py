@@ -17,6 +17,15 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        openapi = next(
+            item
+            for item in records
+            if item["r"] == "majiayu000/claude-skill-registry"
+            and item["p"] == "skills/quality/validate-openapi-spec/SKILL.md"
+        )
+        self.assertEqual(openapi["w"], "workbuddy-ready")
+        self.assertEqual(openapi["g"], "development")
+        self.assertTrue(openapi["a"].endswith("/openapi-review-workbuddy-skill.zip"))
         security_review = next(
             item
             for item in records
