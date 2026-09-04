@@ -6,6 +6,8 @@ on:
     paths:
       - "site/**"
       - "catalog/skills.jsonl"
+      - "catalog/curated.json"
+      - "skills/**"
       - "scripts/build_site_data.py"
       - ".github/workflows/pages.yml"
   workflow_dispatch:

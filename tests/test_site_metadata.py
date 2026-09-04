@@ -23,6 +23,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
             with self.subTest(filename=filename):
                 html = (SITE / filename).read_text(encoding="utf-8")
                 self.assertIn('type="application/opensearchdescription+xml"', html)
+                self.assertIn('rel="icon" href="favicon.svg"', html)
                 self.assertIn('property="og:image"', html)
                 self.assertIn('content="1280"', html)
                 self.assertIn('content="640"', html)
@@ -52,6 +53,10 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertEqual(data[:8], b"\x89PNG\r\n\x1a\n")
         width, height = struct.unpack(">II", data[16:24])
         self.assertEqual((width, height), (1280, 640))
+
+    def test_author_styles_preserve_hidden_state(self):
+        styles = (SITE / "styles.css").read_text(encoding="utf-8")
+        self.assertIn("[hidden] { display: none !important; }", styles)
 
     def test_llms_file_points_to_catalog_and_safety_guidance(self):
         content = (SITE / "llms.txt").read_text(encoding="utf-8")
