@@ -91,6 +91,11 @@ input:focus, select:focus { outline: 3px solid rgba(17, 122, 75, .25); border-co
 .badge { padding: 6px 9px; border: 1px solid #bdc3b9; border-radius: 999px; color: var(--muted); font: 650 .7rem/1 monospace; }
 .badge.flagged { color: #8b2929; border-color: #d7aaaa; background: #fff8f7; }
 .result-open { align-self: center; color: var(--accent-dark); font-size: .84rem; font-weight: 750; white-space: nowrap; }
+.copy-id {
+  padding: 6px 9px; border: 1px solid var(--accent); border-radius: 999px;
+  color: var(--accent-dark); background: transparent; font: 750 .72rem/1 inherit; cursor: pointer;
+}
+.copy-id:hover, .copy-id:focus-visible { color: white; background: var(--accent-dark); }
 .message { padding: 36px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); }
 .error { color: #8b2929; border-color: #d7aaaa; background: #fff8f7; }
 .more { margin-top: 28px; }

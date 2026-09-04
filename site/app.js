@@ -16,11 +16,59 @@ let catalog = [];
 let filtered = [];
 let shown = 0;
 const PAGE_SIZE = 40;
+const FILTERS = {
+  category: new Set([...category.options].map((option) => option.value)),
+  compatibility: new Set([...compatibility.options].map((option) => option.value)),
+  security: new Set([...security.options].map((option) => option.value)),
+};
 
 function escapeHtml(value) {
   return value.replace(/[&<>'"]/g, (character) => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;"
   })[character]);
+}
+
+function catalogId(skill) {
+  return `github:${skill.r}:${skill.p}`;
+}
+
+function restoreUrlState() {
+  const params = new URLSearchParams(location.search);
+  input.value = params.get("q") || "";
+  for (const [name, control] of Object.entries({ category, compatibility, security })) {
+    const value = params.get(name);
+    if (value && FILTERS[name].has(value)) control.value = value;
+  }
+}
+
+function syncUrlState() {
+  const params = new URLSearchParams();
+  if (input.value.trim()) params.set("q", input.value.trim());
+  for (const [name, control] of Object.entries({ category, compatibility, security })) {
+    if (control.value !== "all") params.set(name, control.value);
+  }
+  const query = params.toString();
+  history.replaceState(null, "", `${location.pathname}${query ? `?${query}` : ""}${location.hash}`);
+}
+
+async function copyCatalogId(button) {
+  const value = button.dataset.catalogId;
+  try {
+    await navigator.clipboard.writeText(value);
+  } catch {
+    const helper = document.createElement("textarea");
+    helper.value = value;
+    helper.setAttribute("readonly", "");
+    helper.style.position = "fixed";
+    helper.style.opacity = "0";
+    document.body.append(helper);
+    helper.select();
+    document.execCommand("copy");
+    helper.remove();
+  }
+  const original = button.textContent;
+  button.textContent = isChinese ? "已复制" : "Copied";
+  setTimeout(() => { button.textContent = original; }, 1600);
 }
 
 function render(reset = true) {
@@ -30,7 +78,7 @@ function render(reset = true) {
   }
   const next = filtered.slice(shown, shown + PAGE_SIZE);
   const markup = next.map((skill) => `
-    <a class="result" href="${escapeHtml(skill.u)}" target="_blank" rel="noreferrer">
+    <article class="result">
       <span class="result-name">${escapeHtml(skill.n)}</span>
       <span class="result-source"><span>${escapeHtml(skill.r)}</span><code>${escapeHtml(skill.p)}</code></span>
       <span class="result-meta">
@@ -38,9 +86,10 @@ function render(reset = true) {
         <span class="badge">${escapeHtml(skill.g)}</span>
         ${skill.c > 1 ? `<span class="badge">${skill.c} copies</span>` : ""}
         <span class="badge ${skill.k === "flagged" ? "flagged" : ""}">${escapeHtml(skill.k)}</span>
-        <span class="result-open">${isChinese ? "查看来源" : "Inspect"} ↗</span>
+        <button class="copy-id" type="button" data-catalog-id="${escapeHtml(catalogId(skill))}">${isChinese ? "复制 ID" : "Copy ID"}</button>
+        <a class="result-open" href="${escapeHtml(skill.u)}" target="_blank" rel="noreferrer">${isChinese ? "查看来源" : "Inspect"} ↗</a>
       </span>
-    </a>`).join("");
+    </article>`).join("");
   results.insertAdjacentHTML("beforeend", markup);
   shown += next.length;
   count.textContent = isChinese ? `${filtered.length.toLocaleString()} 个结果` : `${filtered.length.toLocaleString()} results`;
@@ -58,6 +107,7 @@ function search() {
     const securityMatch = security.value === "all" || skill.k === security.value;
     return textMatch && categoryMatch && compatibilityMatch && securityMatch;
   });
+  syncUrlState();
   render();
 }
 
@@ -66,6 +116,12 @@ category.addEventListener("change", search);
 compatibility.addEventListener("change", search);
 security.addEventListener("change", search);
 more.addEventListener("click", () => render(false));
+results.addEventListener("click", (event) => {
+  const button = event.target.closest(".copy-id");
+  if (button) copyCatalogId(button);
+});
+
+restoreUrlState();
 
 Promise.all([fetch("catalog.json"), fetch("catalog-meta.json")])
   .then(async ([catalogResponse, metaResponse]) => {
@@ -78,7 +134,7 @@ Promise.all([fetch("catalog.json"), fetch("catalog-meta.json")])
     metricRecords.textContent = meta.records.toLocaleString();
     metricShas.textContent = meta.unique_content_shas.toLocaleString();
     metricRepositories.textContent = meta.repositories.toLocaleString();
-    render();
+    search();
     input.disabled = false;
   })
   .catch(() => {
