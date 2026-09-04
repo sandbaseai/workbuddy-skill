@@ -37,11 +37,14 @@ jobs:
           target=$((current + 100))
           echo "Refreshing catalog from $current toward $target records"
           python3 scripts/crawl_github_skills.py --target "$target" --output /tmp/skills.jsonl
+      - name: Analyze WorkBuddy compatibility
+        run: python3 scripts/analyze_catalog.py /tmp/skills.jsonl
       - name: Validate provenance index
         run: |
-          python3 scripts/validate_catalog.py /tmp/skills.jsonl --minimum 10000
+          python3 scripts/validate_catalog.py /tmp/skills.jsonl --minimum 10000 --require-analysis
           cp /tmp/skills.jsonl catalog/skills.jsonl
           cp /tmp/stats.json catalog/stats.json
+          cp /tmp/analysis-stats.json catalog/analysis-stats.json
       - name: Publish catalog update
         env:
           GH_TOKEN: ${{ github.token }}
@@ -50,7 +53,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git switch -C "$branch"
-          git add catalog/skills.jsonl catalog/stats.json
+          git add catalog/skills.jsonl catalog/stats.json catalog/analysis-stats.json
           if git diff --cached --quiet; then
             echo "Catalog is already current"
             exit 0

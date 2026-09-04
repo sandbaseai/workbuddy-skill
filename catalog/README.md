@@ -4,9 +4,9 @@ This directory is a provenance-first index of public `SKILL.md` files. It is not
 
 ## Current snapshot
 
-- 10,000+ indexed GitHub paths
-- 6,483 unique Git blob SHAs
-- 5,044 source repositories
+- 10,100 indexed GitHub paths
+- 6,551 unique Git blob SHAs
+- 5,091 source repositories
 
 Multiple paths can contain byte-identical skills. The catalog preserves those occurrences for provenance and reports unique SHA counts separately.
 
@@ -21,6 +21,11 @@ Multiple paths can contain byte-identical skills. The catalog preserves those oc
 - `workbuddy_status` begins as `unreviewed` until compatibility checks run.
 - `security_status` begins as `unscanned`; users must review scripts and permissions before installation.
 
+After `scripts/analyze_catalog.py` runs, records also include frontmatter validity,
+a WorkBuddy compatibility score and missing-field list, line count, and conservative
+static risk signals. `no-static-flags` is not a security guarantee; it only means
+the documented patterns did not match.
+
 Duplicate content can occur in multiple repositories. Consumers should group by `sha` when they need unique content and retain all source occurrences for attribution.
 
 ## Refresh
@@ -28,7 +33,12 @@ Duplicate content can occur in multiple repositories. Consumers should group by 
 ```bash
 GH_TOKEN="..." python3 scripts/crawl_github_skills.py --target 10000
 python3 scripts/validate_catalog.py --minimum 10000
+python3 scripts/analyze_catalog.py
 ```
+
+Analysis is incremental: unchanged blob SHAs reuse their prior result, while
+new or changed contents are fetched and inspected. Weekly refreshes run this
+step before validation and publication.
 
 The crawler uses GitHub's public code-search API, respects rate-limit headers, retries transient network/server errors with bounded backoff, and atomically checkpoints after each size shard. It starts with a broad byte-size range and bisects only ranges that exceed GitHub's 1,000-result search cap. Tokens are read only from the environment and are never stored.
 
