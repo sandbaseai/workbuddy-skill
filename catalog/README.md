@@ -45,6 +45,11 @@ Analysis is incremental: unchanged blob SHAs reuse their prior result, while
 new or changed contents are fetched and inspected. Daily refreshes run this
 step before validation and publication.
 
+The crawler searches `SKILL.md` files up to 100 KB by default so longer,
+reference-rich Skills are not silently excluded. Use `--max-bytes` to widen
+the range for a broader scan; the catalog stores metadata and immutable source
+links only, and never executes downloaded Skill content.
+
 The Atlas build derives deterministic work categories from skill names and
 paths and counts identical SHA occurrences. Categories and copy counts are
 navigation aids, not quality or safety endorsements.

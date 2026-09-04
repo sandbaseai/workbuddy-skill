@@ -164,7 +164,12 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--target", type=int, default=10_000)
     parser.add_argument("--start-bytes", type=int, default=1)
-    parser.add_argument("--max-bytes", type=int, default=20_000)
+    parser.add_argument(
+        "--max-bytes",
+        type=int,
+        default=100_000,
+        help="Largest SKILL.md size searched by default (override for broader scans)",
+    )
     parser.add_argument("--output", type=Path, default=DEFAULT_OUT)
     parser.add_argument("--checkpoint-every", type=int, default=5)
     parser.add_argument(
