@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:phamhungptithcm/ai-agent-kit:assets/enterprise-ai-agent-os/.ai/skills-src/threat-model/SKILL.md",
+    "skill": "threat-model",
+    "skill_path": "skills/threat-model",
+    "category": "security",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/threat-model-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:itseffi/productize:skills/productize-fragmented-user-research-synthesis-into-coherent-insights/SKILL.md",
     "skill": "user-research-synthesis",
     "skill_path": "skills/user-research-synthesis",
