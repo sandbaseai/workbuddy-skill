@@ -38,6 +38,15 @@ class SiteDataTests(unittest.TestCase):
         self.assertEqual(spreadsheet["w"], "workbuddy-ready")
         self.assertEqual(spreadsheet["g"], "data")
         self.assertTrue(spreadsheet["a"].endswith("/excel-ops-workbuddy-skill.zip"))
+        dense_writing = next(
+            item
+            for item in records
+            if item["r"] == "Bogyie/llm-reliability-skill"
+            and item["p"] == "skills/dense-writing/SKILL.md"
+        )
+        self.assertEqual(dense_writing["w"], "workbuddy-ready")
+        self.assertEqual(dense_writing["g"], "content")
+        self.assertTrue(dense_writing["a"].endswith("/dense-writing-workbuddy-skill.zip"))
         metadata = json.loads(
             (ROOT / "site" / "catalog-meta.json").read_text(encoding="utf-8")
         )

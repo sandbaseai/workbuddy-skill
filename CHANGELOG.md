@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## [0.8.0] - 2026-09-05
 
+- Added the Apache-2.0 Dense Writing Skill with evidence, nuance, attribution, and safety-preservation rules.
 - Added the Apache-2.0 Open Source License Review Skill for dependency and release compliance checks.
 - Improved folded YAML frontmatter parsing and preserved `argument-hint` when adapting Skills.
 
