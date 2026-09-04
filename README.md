@@ -134,6 +134,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | Skill | Use it for | Provenance |
 |---|---|---|
 | [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
+| [MySQL Database Operations](skills/mysql/) | Inspect schemas, write safe queries, analyze plans, and bound production changes | [MIT source](skills/mysql/SOURCE.json) |
 | [Evidence-based Data Analysis](skills/data-analysis/) | Profile, analyze, challenge, and communicate structured-data evidence reproducibly | [MIT source](skills/data-analysis/SOURCE.json) |
 | [Applying Differential Privacy](skills/differential-privacy/) | Define and verify privacy mechanisms, budgets, composition, utility, and release claims | [MIT source](skills/differential-privacy/SOURCE.json) |
 | [OpenAPI Contract Review](skills/openapi-review/) | Validate structure, semantics, security, compatibility, and consumer usability | [MIT source](skills/openapi-review/SOURCE.json) |
@@ -187,6 +188,10 @@ skills/sandbase/
 └── references/
     ├── execution.md
     └── troubleshooting.md
+skills/mysql/
+├── SKILL.md
+├── SOURCE.json
+└── LICENSE
 skills/data-analysis/
 ├── SKILL.md
 ├── SOURCE.json

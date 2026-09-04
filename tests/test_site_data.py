@@ -17,6 +17,15 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        mysql = next(
+            item
+            for item in records
+            if item["r"] == "ssrjkk/claude-skills"
+            and item["p"] == ".claude/skills/database/mysql/SKILL.md"
+        )
+        self.assertEqual(mysql["w"], "workbuddy-ready")
+        self.assertEqual(mysql["g"], "data")
+        self.assertTrue(mysql["a"].endswith("/mysql-workbuddy-skill.zip"))
         data_analysis = next(
             item
             for item in records
