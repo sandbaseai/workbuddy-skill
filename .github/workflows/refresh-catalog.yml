@@ -28,12 +28,15 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          current=0
           if [ -f catalog/skills.jsonl ]; then
             cp catalog/skills.jsonl /tmp/skills.jsonl
-          else
-            : > /tmp/skills.jsonl
+            current=$(wc -l < catalog/skills.jsonl)
           fi
-          python3 scripts/crawl_github_skills.py --target 10100 --output /tmp/skills.jsonl
+          if [ "$current" -lt 10000 ]; then current=10000; fi
+          target=$((current + 100))
+          echo "Refreshing catalog from $current toward $target records"
+          python3 scripts/crawl_github_skills.py --target "$target" --output /tmp/skills.jsonl
       - name: Validate provenance index
         run: |
           python3 scripts/validate_catalog.py /tmp/skills.jsonl --minimum 10000

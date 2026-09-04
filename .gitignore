@@ -5,3 +5,4 @@ __pycache__/
 dist/
 catalog/*.tmp
 site/catalog.json
+site/catalog-meta.json

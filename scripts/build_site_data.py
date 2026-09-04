@@ -9,9 +9,13 @@ SOURCE = ROOT / "catalog" / "skills.jsonl"
 OUTPUT = ROOT / "site" / "catalog.json"
 
 records = []
+repositories = set()
+shas = set()
 with SOURCE.open(encoding="utf-8") as handle:
     for line in handle:
         row = json.loads(line)
+        repositories.add(row["repository"])
+        shas.add(row["sha"])
         records.append(
             {
                 "n": row["name_hint"],
@@ -29,5 +33,13 @@ temporary.write_text(
     encoding="utf-8",
 )
 temporary.replace(OUTPUT)
+meta = {
+    "records": len(records),
+    "repositories": len(repositories),
+    "unique_content_shas": len(shas),
+}
+meta_output = ROOT / "site" / "catalog-meta.json"
+meta_temporary = meta_output.with_suffix(".json.tmp")
+meta_temporary.write_text(json.dumps(meta, separators=(",", ":")), encoding="utf-8")
+meta_temporary.replace(meta_output)
 print(f"OK: wrote {len(records)} searchable records to {OUTPUT.relative_to(ROOT)}")
-
