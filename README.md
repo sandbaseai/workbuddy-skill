@@ -134,6 +134,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | Skill | Use it for | Provenance |
 |---|---|---|
 | [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
+| [GraphQL API Design and Review](skills/graphql-expert/) | Design and review schemas, resolvers, authorization, pagination, performance, and evolution | [MIT source](skills/graphql-expert/SOURCE.json) |
 | [Monitoring and Observability Design](skills/monitoring-observability/) | Define service objectives, telemetry, dashboards, alerts, and end-to-end validation | [MIT source](skills/monitoring-observability/SOURCE.json) |
 | [MySQL Database Operations](skills/mysql/) | Inspect schemas, write safe queries, analyze plans, and bound production changes | [MIT source](skills/mysql/SOURCE.json) |
 | [Evidence-based Data Analysis](skills/data-analysis/) | Profile, analyze, challenge, and communicate structured-data evidence reproducibly | [MIT source](skills/data-analysis/SOURCE.json) |
@@ -189,6 +190,10 @@ skills/sandbase/
 └── references/
     ├── execution.md
     └── troubleshooting.md
+skills/graphql-expert/
+├── SKILL.md
+├── SOURCE.json
+└── LICENSE
 skills/monitoring-observability/
 ├── SKILL.md
 ├── SOURCE.json

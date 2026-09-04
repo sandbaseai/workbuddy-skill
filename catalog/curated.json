@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:FutureJJ/claude-skills:skills/graphql-expert/SKILL.md",
+    "skill": "graphql-expert",
+    "skill_path": "skills/graphql-expert",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/graphql-expert-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:FutureJJ/claude-skills:skills/monitoring-observability/SKILL.md",
     "skill": "monitoring-observability",
     "skill_path": "skills/monitoring-observability",

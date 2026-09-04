@@ -123,6 +123,30 @@ class ValidateSkillTests(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("license must match SOURCE.json", result.stderr)
 
+    def test_rejects_packaged_resource_manifest_drift(self):
+        with tempfile.TemporaryDirectory() as directory:
+            skills_root = Path(directory) / "skills"
+            skill_dir = skills_root / "demo"
+            skill_dir.mkdir(parents=True)
+            (skill_dir / "SKILL.md").write_text(
+                "---\nname: demo\ndescription: Demo\ndescription_zh: 演示\n"
+                "description_en: Demo\nversion: 1.0.0\nauthor: Test\nlicense: MIT\n"
+                "---\n\n# Demo\n",
+                encoding="utf-8",
+            )
+            (skill_dir / "SOURCE.json").write_text(
+                '{"declared_source_license": "MIT", '
+                '"adaptation": {"packaged_resources": ["references/missing.md"]}}\n',
+                encoding="utf-8",
+            )
+            result = subprocess.run(
+                [sys.executable, str(VALIDATOR), "--skills-root", str(skills_root)],
+                capture_output=True,
+                text=True,
+            )
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("packaged_resources mismatch", result.stderr)
+
 
 if __name__ == "__main__":
     unittest.main()
