@@ -96,6 +96,7 @@
               <label for="compatibility">WorkBuddy compatibility</label>
               <select id="compatibility">
                 <option value="all">All states</option>
+                <option value="workbuddy-ready">WorkBuddy ready</option>
                 <option value="adaptable">Adaptable</option>
                 <option value="needs-review">Needs review</option>
               </select>
@@ -110,7 +111,19 @@
               </select>
             </div>
           </div>
-          <span id="result-count" aria-live="polite">Loading catalog…</span>
+          <div class="result-controls">
+            <div class="field sort-field">
+              <label for="sort">Sort results</label>
+              <select id="sort">
+                <option value="score">Compatibility score</option>
+                <option value="copies">Most copied</option>
+                <option value="name">Name</option>
+                <option value="source">Source order</option>
+              </select>
+            </div>
+            <label class="check-field" for="unique"><input id="unique" type="checkbox" checked> Show unique content only</label>
+            <span id="result-count" aria-live="polite">Loading catalog…</span>
+          </div>
         </div>
 
         <div id="error" class="message error" hidden>
