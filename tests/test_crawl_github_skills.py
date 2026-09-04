@@ -1,5 +1,7 @@
+import json
 from pathlib import Path
 import sys
+import tempfile
 import time
 import unittest
 from unittest.mock import patch
@@ -7,7 +9,7 @@ from unittest.mock import patch
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from crawl_github_skills import rate_limit_delay, wait_for_rate_limit  # noqa: E402
+from crawl_github_skills import rate_limit_delay, wait_for_rate_limit, write_stats  # noqa: E402
 
 
 class RateLimitTests(unittest.TestCase):
@@ -37,6 +39,15 @@ class RateLimitTests(unittest.TestCase):
         )
         self.assertEqual(consumed, 40)
         sleep.assert_called_once_with(40)
+
+    def test_stats_are_replaced_atomically(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "skills.jsonl"
+            rows = {"one": {"sha": "abc", "repository": "owner/repo"}}
+            write_stats(output, rows, requests=2, capped_queries=1)
+            stats = json.loads((Path(directory) / "stats.json").read_text(encoding="utf-8"))
+            self.assertEqual(stats["records"], 1)
+            self.assertFalse((Path(directory) / "stats.json.tmp").exists())
 
 
 if __name__ == "__main__":
