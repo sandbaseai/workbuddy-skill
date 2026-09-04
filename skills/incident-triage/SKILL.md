@@ -8,6 +8,7 @@ description_en: "Triage production incidents through logs, metrics, traces, chan
 category: "security"
 version: "0.1.0"
 author: "jukrap; adapted for WorkBuddy by SandBase AI"
+license: "MIT"
 ---
 
 # Incident Response and Triage
