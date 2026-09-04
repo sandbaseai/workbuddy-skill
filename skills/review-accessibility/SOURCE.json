@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:joaocarloscruz/skills:library/review-accessibility/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "library/review-accessibility/SKILL.md",
+  "repository": "joaocarloscruz/skills",
+  "sha": "b8a2c8c5218343cdbf6bbe3f5f8c5ba2e236a2c8",
+  "source_url": "https://github.com/joaocarloscruz/skills/blob/f0c46f8080864a1c877c749502ae3889d7668f99/library/review-accessibility/SKILL.md"
+}

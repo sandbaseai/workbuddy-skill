@@ -24,6 +24,7 @@ CATEGORY_RULES = (
     ("productivity", ("task", "calendar", "email", "meeting", "note", "workflow", "automation", "planning")),
     ("development", ("code", "coding", "test", "debug", "deploy", "api", "git", "python", "javascript", "typescript")),
 )
+KNOWN_CATEGORIES = {category for category, _ in CATEGORY_RULES} | {"other"}
 
 
 def category_for(row: dict) -> str:
@@ -58,14 +59,16 @@ for entry in curated_entries:
         "https://github.com/sandbaseai/workbuddy-skill/releases/"
     ):
         raise SystemExit(f"unexpected curated download URL: {entry['download_url']}")
+    if entry.get("category") not in KNOWN_CATEGORIES | {None}:
+        raise SystemExit(f"unknown curated category: {entry['category']}")
 
 sha_copies = Counter(row["sha"] for row in source_rows)
 category_counts = Counter()
 records = []
 for row in source_rows:
-    category = category_for(row)
-    category_counts[category] += 1
     adaptation = curated.get(row["id"])
+    category = adaptation.get("category", category_for(row)) if adaptation else category_for(row)
+    category_counts[category] += 1
     record = {
         "n": row["name_hint"],
         "r": row["repository"],

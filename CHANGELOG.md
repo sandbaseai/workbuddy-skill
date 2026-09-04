@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.9.0] - 2026-09-05
+
+- Added the MIT Accessibility Review Skill with evidence-based severity, manual verification, and honest conformance boundaries.
+
 ## [0.8.0] - 2026-09-05
 
 - Added the Apache-2.0 Dense Writing Skill with evidence, nuance, attribution, and safety-preservation rules.
