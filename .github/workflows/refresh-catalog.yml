@@ -36,7 +36,7 @@ jobs:
           if [ "$current" -lt 10000 ]; then current=10000; fi
           target=$((current + 100))
           echo "Refreshing catalog from $current toward $target records"
-          python3 scripts/crawl_github_skills.py --target "$target" --output /tmp/skills.jsonl
+          python3 scripts/crawl_github_skills.py --target "$target" --max-requests 60 --output /tmp/skills.jsonl
       - name: Analyze WorkBuddy compatibility
         run: python3 scripts/analyze_catalog.py /tmp/skills.jsonl
       - name: Validate provenance index

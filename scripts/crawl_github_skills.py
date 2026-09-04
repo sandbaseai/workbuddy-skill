@@ -139,9 +139,20 @@ def main() -> int:
     parser.add_argument("--max-bytes", type=int, default=20_000)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUT)
     parser.add_argument("--checkpoint-every", type=int, default=5)
+    parser.add_argument(
+        "--max-requests",
+        type=int,
+        default=100,
+        help="Bound Code Search requests for one resumable run",
+    )
     args = parser.parse_args()
-    if args.target < 1 or args.start_bytes < 1 or args.max_bytes < args.start_bytes:
-        parser.error("require target > 0 and 0 < start-bytes <= max-bytes")
+    if (
+        args.target < 1
+        or args.start_bytes < 1
+        or args.max_bytes < args.start_bytes
+        or args.max_requests < 1
+    ):
+        parser.error("require target > 0, max-requests > 0, and 0 < start-bytes <= max-bytes")
 
     token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN", "")
     rows = load_existing(args.output)
@@ -160,6 +171,10 @@ def main() -> int:
             headers = {}
             while page <= 10 and len(rows) < args.target:
                 try:
+                    if requests >= args.max_requests:
+                        raise RuntimeError(
+                            f"request budget exhausted at {args.max_requests}; resume later"
+                        )
                     payload, headers = request_json(query, page, token)
                 except HTTPError as exc:
                     if exc.code in (403, 429):
