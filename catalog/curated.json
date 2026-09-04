@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:majiayu000/claude-skill-registry:skills/data/performance-engineering/SKILL.md",
+    "skill": "performance-engineering",
+    "skill_path": "skills/performance-engineering",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/performance-engineering-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:majiayu000/claude-skill-registry:skills/data/data-governance/SKILL.md",
     "skill": "data-governance",
     "skill_path": "skills/data-governance",

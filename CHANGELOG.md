@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Performance Engineering Skill with representative baselines, load/stress/soak/spike testing, profiling, bottleneck evidence, performance budgets, capacity boundaries, safe optimization, and regression gates.
 - Added the MIT Data Governance Skill with flow mapping, ownership, enforceable data contracts, consent and suppression, identity resolution, lineage, quality monitoring, safe fallbacks, and reversible change management.
 - Added the MIT Feature Flags Skill with typed flag contracts, deterministic evaluation, safe defaults, progressive rollout, experimentation evidence, administration controls, emergency mitigation, and lifecycle cleanup.
 - Added the MIT AI Governance Skill with lifecycle gates, risk classification, NIST AI RMF mapping, human oversight, fairness/privacy/security evidence, transparency, exceptions, incident handling, and accountable handoffs.
