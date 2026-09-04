@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Feature Flags Skill with typed flag contracts, deterministic evaluation, safe defaults, progressive rollout, experimentation evidence, administration controls, emergency mitigation, and lifecycle cleanup.
 - Added the MIT AI Governance Skill with lifecycle gates, risk classification, NIST AI RMF mapping, human oversight, fairness/privacy/security evidence, transparency, exceptions, incident handling, and accountable handoffs.
 - Added the MIT Site Reliability Engineering Skill with user-centered SLI/SLO design, error budgets, toil reduction, blameless incident learning, sustainable on-call, capacity, graceful degradation, and progressive delivery.
 - Added the MIT Design Systems Skill with semantic token layers, accessible component contracts, executable documentation, versioning and migration, governance, visual evidence, and adoption metrics.

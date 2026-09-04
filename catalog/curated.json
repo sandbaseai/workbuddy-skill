@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:majiayu000/claude-skill-registry:skills/devops/feature-flags/SKILL.md",
+    "skill": "feature-flags",
+    "skill_path": "skills/feature-flags",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/feature-flags-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:majiayu000/claude-skill-registry:skills/data/ai-governance/SKILL.md",
     "skill": "ai-governance",
     "skill_path": "skills/ai-governance",
