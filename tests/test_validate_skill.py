@@ -72,6 +72,16 @@ class ValidateSkillTests(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("compatibility must be at most 500", result.stderr)
 
+    def test_validates_folded_compatibility_length(self):
+        result = self.run_validator(
+            "---\nname: demo\ndescription: Demo\n"
+            "description_zh: 演示\ndescription_en: Demo\n"
+            "version: 1.0.0\nauthor: Test\nlicense: MIT\n"
+            "compatibility: >\n  " + "x" * 501 + "\n---\n\n# Demo\n"
+        )
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("compatibility must be at most 500", result.stderr)
+
     def test_rejects_license_mismatch_with_source(self):
         with tempfile.TemporaryDirectory() as directory:
             skills_root = Path(directory) / "skills"
