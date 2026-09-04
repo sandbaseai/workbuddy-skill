@@ -43,8 +43,45 @@ jobs:
         run: |
           python3 scripts/validate_catalog.py /tmp/skills.jsonl --minimum 10000 --require-analysis
           cp /tmp/skills.jsonl catalog/skills.jsonl
-          cp /tmp/stats.json catalog/stats.json
-          cp /tmp/analysis-stats.json catalog/analysis-stats.json
+          if [ -f /tmp/stats.json ]; then
+            cp /tmp/stats.json catalog/stats.json
+          else
+            echo "Warning: /tmp/stats.json not found, generating from catalog"
+            python3 -c "
+import json
+from pathlib import Path
+rows = [json.loads(line) for line in Path('/tmp/skills.jsonl').read_text(encoding='utf-8').splitlines() if line]
+stats = {
+    'records': len(rows),
+    'unique_content_shas': len({row['sha'] for row in rows}),
+    'repositories': len({row['repository'] for row in rows}),
+    'requests': 0,
+    'queries_over_github_cap': 0,
+}
+Path('catalog/stats.json').write_text(json.dumps(stats, indent=2, sort_keys=True) + '\n', encoding='utf-8')
+"
+          fi
+          if [ -f /tmp/analysis-stats.json ]; then
+            cp /tmp/analysis-stats.json catalog/analysis-stats.json
+          else
+            echo "Warning: /tmp/analysis-stats.json not found, generating from catalog"
+            python3 -c "
+import json
+from pathlib import Path
+rows = [json.loads(line) for line in Path('/tmp/skills.jsonl').read_text(encoding='utf-8').splitlines() if line]
+analyzed = [row for row in rows if 'analysis_status' in row]
+summary = {
+    'analyzed_paths': len(analyzed),
+    'analyzed_unique_shas': len({row['sha'] for row in analyzed}),
+    'analysis_ok': sum(row.get('analysis_status') == 'ok' for row in analyzed),
+    'workbuddy_ready': sum(row.get('workbuddy_status') == 'workbuddy-ready' for row in analyzed),
+    'adaptable': sum(row.get('workbuddy_status') == 'adaptable' for row in analyzed),
+    'needs_review': sum(row.get('workbuddy_status') == 'needs-review' for row in analyzed),
+    'security_flagged': sum(row.get('security_status') == 'flagged' for row in analyzed),
+}
+Path('catalog/analysis-stats.json').write_text(json.dumps(summary, indent=2, sort_keys=True) + '\n', encoding='utf-8')
+"
+          fi
       - name: Publish catalog update
         env:
           GH_TOKEN: ${{ github.token }}
