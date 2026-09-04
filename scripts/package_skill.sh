@@ -13,10 +13,9 @@ for source_dir in "$repo_root"/skills/*; do
   rm -f "$archive"
 
   cd "$source_dir"
-  if command -v zip >/dev/null 2>&1; then
-    zip -q -r "$archive" ./*
-  else
-    python3 - "$archive" <<'PY'
+  # Use Python consistently so hidden resources are packaged too; a shell
+  # glob such as ./* silently omits dotfiles in otherwise valid Skills.
+  python3 - "$archive" <<'PY'
 from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
 import sys
@@ -27,7 +26,6 @@ with ZipFile(archive, "w", compression=ZIP_DEFLATED) as package:
         if path.is_file():
             package.write(path)
 PY
-  fi
 
   python3 - "$archive" <<'PY'
 from pathlib import Path
