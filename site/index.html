@@ -8,6 +8,7 @@
     <link rel="alternate" hreflang="en" href="https://sandbaseai.github.io/workbuddy-skill/">
     <link rel="alternate" hreflang="zh-CN" href="https://sandbaseai.github.io/workbuddy-skill/zh-CN.html">
     <link rel="alternate" hreflang="x-default" href="https://sandbaseai.github.io/workbuddy-skill/">
+    <link rel="search" type="application/opensearchdescription+xml" title="WorkBuddy Skill Atlas" href="opensearch.xml">
     <meta name="theme-color" content="#f5f1e8">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sandbaseai.github.io/workbuddy-skill/">
@@ -19,6 +20,23 @@
     <meta name="twitter:description" content="A provenance-first public index of Agent Skills for WorkBuddy.">
     <title>WorkBuddy Skill Atlas</title>
     <link rel="stylesheet" href="styles.css?v=0.5.0">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "WorkBuddy Skill Atlas",
+        "description": "A searchable index of public Agent Skills with immutable GitHub provenance, duplicate detection, WorkBuddy compatibility scores, and conservative static review signals.",
+        "url": "https://sandbaseai.github.io/workbuddy-skill/",
+        "license": "https://github.com/sandbaseai/workbuddy-skill/blob/main/LICENSE",
+        "creator": {"@type": "Organization", "name": "SandBase AI", "url": "https://github.com/sandbaseai"},
+        "keywords": ["WorkBuddy", "Agent Skills", "SKILL.md", "AI agents", "skill catalog"],
+        "distribution": {
+          "@type": "DataDownload",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://sandbaseai.github.io/workbuddy-skill/catalog.json"
+        }
+      }
+    </script>
   </head>
   <body>
     <header class="nav">

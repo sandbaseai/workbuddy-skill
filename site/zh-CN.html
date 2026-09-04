@@ -8,6 +8,7 @@
     <link rel="alternate" hreflang="en" href="https://sandbaseai.github.io/workbuddy-skill/">
     <link rel="alternate" hreflang="zh-CN" href="https://sandbaseai.github.io/workbuddy-skill/zh-CN.html">
     <link rel="alternate" hreflang="x-default" href="https://sandbaseai.github.io/workbuddy-skill/">
+    <link rel="search" type="application/opensearchdescription+xml" title="WorkBuddy Skill Atlas" href="opensearch.xml">
     <meta name="theme-color" content="#f5f1e8">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sandbaseai.github.io/workbuddy-skill/zh-CN.html">
@@ -19,6 +20,23 @@
     <meta name="twitter:description" content="面向 WorkBuddy 的来源优先公开 Agent Skills 索引。">
     <title>WorkBuddy Skill Atlas｜技能目录</title>
     <link rel="stylesheet" href="styles.css?v=0.5.0">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "WorkBuddy Skill Atlas",
+        "description": "公开 Agent Skills 检索目录，提供不可变 GitHub 来源、重复检测、WorkBuddy 兼容分数和保守的静态审查信号。",
+        "url": "https://sandbaseai.github.io/workbuddy-skill/zh-CN.html",
+        "license": "https://github.com/sandbaseai/workbuddy-skill/blob/main/LICENSE",
+        "creator": {"@type": "Organization", "name": "SandBase AI", "url": "https://github.com/sandbaseai"},
+        "keywords": ["WorkBuddy", "Agent Skills", "SKILL.md", "AI 智能体", "技能目录"],
+        "distribution": {
+          "@type": "DataDownload",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://sandbaseai.github.io/workbuddy-skill/catalog.json"
+        }
+      }
+    </script>
   </head>
   <body>
     <header class="nav">
