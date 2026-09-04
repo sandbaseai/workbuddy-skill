@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## [0.21.0] - 2026-09-05
+
+- Added the MIT Architecture Decision Record Skill with measurable decision drivers, fair option comparison, evidence confidence, reversible adoption, fitness functions, and explicit review triggers.
+
 ## [0.20.0] - 2026-09-05
 
 - Added the MIT Incident Response and Triage Skill with incident command, evidence hygiene, authorization boundaries, reversible containment, recovery verification, and blameless follow-up.

@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:placerda/agentic-engineering:.github/skills/architecture-decision/SKILL.md",
+    "skill": "architecture-decision",
+    "skill_path": "skills/architecture-decision",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/architecture-decision-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:jukrap/ai-agent-playbook:skills/devops/observability-incident-triage/SKILL.md",
     "skill": "incident-triage",
     "skill_path": "skills/incident-triage",
