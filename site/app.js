@@ -7,6 +7,9 @@ const security = document.querySelector("#security");
 const sourceContext = document.querySelector("#source-context");
 const sort = document.querySelector("#sort");
 const unique = document.querySelector("#unique");
+const minScore = document.querySelector("#min-score");
+const highSignal = document.querySelector("#high-signal");
+const resetFilters = document.querySelector("#reset-filters");
 const empty = document.querySelector("#empty");
 const error = document.querySelector("#error");
 const more = document.querySelector("#more");
@@ -25,6 +28,7 @@ const FILTERS = {
   security: new Set([...security.options].map((option) => option.value)),
   source: new Set([...sourceContext.options].map((option) => option.value)),
   sort: new Set([...sort.options].map((option) => option.value)),
+  minScore: new Set([...minScore.options].map((option) => option.value)),
 };
 
 function escapeHtml(value) {
@@ -40,7 +44,7 @@ function catalogId(skill) {
 function restoreUrlState() {
   const params = new URLSearchParams(location.search);
   input.value = params.get("q") || "";
-  for (const [name, control] of Object.entries({ category, compatibility, security, source: sourceContext, sort })) {
+  for (const [name, control] of Object.entries({ category, compatibility, security, source: sourceContext, sort, minScore })) {
     const value = params.get(name);
     if (value && FILTERS[name].has(value)) control.value = value;
   }
@@ -54,6 +58,7 @@ function syncUrlState() {
     if (control.value !== "all") params.set(name, control.value);
   }
   if (sort.value !== "score") params.set("sort", sort.value);
+  if (minScore.value !== "all") params.set("minScore", minScore.value);
   if (!unique.checked) params.set("duplicates", "all");
   const query = params.toString();
   history.replaceState(null, "", `${location.pathname}${query ? `?${query}` : ""}${location.hash}`);
@@ -116,7 +121,8 @@ function search() {
     const compatibilityMatch = compatibility.value === "all" || skill.w === compatibility.value;
     const securityMatch = security.value === "all" || skill.k === security.value;
     const sourceMatch = sourceContext.value === "all" || skill.o === sourceContext.value;
-    return textMatch && categoryMatch && compatibilityMatch && securityMatch && sourceMatch;
+    const scoreMatch = minScore.value === "all" || (skill.q ?? -1) >= Number(minScore.value);
+    return textMatch && categoryMatch && compatibilityMatch && securityMatch && sourceMatch && scoreMatch;
   });
   if (unique.checked) {
     const seen = new Set();
@@ -145,6 +151,27 @@ security.addEventListener("change", search);
 sourceContext.addEventListener("change", search);
 sort.addEventListener("change", search);
 unique.addEventListener("change", search);
+minScore.addEventListener("change", search);
+highSignal.addEventListener("click", () => {
+  compatibility.value = "all";
+  security.value = "no-static-flags";
+  sourceContext.value = "primary-looking";
+  minScore.value = "85";
+  sort.value = "score";
+  unique.checked = true;
+  search();
+});
+resetFilters.addEventListener("click", () => {
+  input.value = "";
+  category.value = "all";
+  compatibility.value = "all";
+  security.value = "all";
+  sourceContext.value = "all";
+  minScore.value = "all";
+  sort.value = "score";
+  unique.checked = true;
+  search();
+});
 more.addEventListener("click", () => render(false));
 results.addEventListener("click", (event) => {
   const button = event.target.closest(".copy-id");
