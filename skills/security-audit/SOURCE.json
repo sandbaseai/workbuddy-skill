@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": ["external-mcp-command-removed-from-adaptation"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:htafolla/StringRay:src/skills/security-audit/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/security-audit/SKILL.md",
+  "repository": "htafolla/StringRay",
+  "sha": "dbc0b2882451f0fb32ea8258658b02b0ff45f193",
+  "source_url": "https://github.com/htafolla/StringRay/blob/adc8bcd58124689b073dcdad2f6cd3e0a89ddc81/src/skills/security-audit/SKILL.md"
+}
