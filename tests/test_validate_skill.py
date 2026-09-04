@@ -72,6 +72,16 @@ class ValidateSkillTests(unittest.TestCase):
         )
         self.assertEqual(result.returncode, 0, result.stderr)
 
+    def test_accepts_empty_metadata_values_and_map(self):
+        for metadata in ("metadata: {}\n", "metadata:\n  note:\n"):
+            result = self.run_validator(
+                "---\nname: demo\ndescription: Demo\n"
+                "description_zh: 演示\ndescription_en: Demo\n"
+                "version: 1.0.0\nauthor: Test\nlicense: MIT\n"
+                + metadata + "---\n\n# Demo\n"
+            )
+            self.assertEqual(result.returncode, 0, result.stderr)
+
     def test_rejects_non_string_metadata_map(self):
         result = self.run_validator(
             "---\nname: demo\ndescription: Demo\n"

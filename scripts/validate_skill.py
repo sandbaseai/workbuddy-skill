@@ -29,6 +29,8 @@ def validate_metadata(frontmatter: str, relative: Path) -> None:
         if not line.startswith("metadata:"):
             continue
         value = line.split(":", 1)[1].strip()
+        if value in {"{}", "{ }"}:
+            return
         if value and not value.startswith("#"):
             raise ValueError(f"{relative} metadata must be a mapping of string values")
         entries = []
@@ -42,7 +44,7 @@ def validate_metadata(frontmatter: str, relative: Path) -> None:
             raise ValueError(f"{relative} metadata must be a mapping of string values")
         for entry in entries:
             key, item = entry.split(":", 1)
-            if not key.strip() or not item.strip():
+            if not key.strip():
                 raise ValueError(f"{relative} metadata must contain string key-value pairs")
             raw = item.strip().strip('"\'')
             if raw.lower() in {"true", "false", "null", "~"} or re.fullmatch(r"[-+]?\d+(?:\.\d+)?", raw):
