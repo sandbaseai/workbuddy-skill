@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Agent Red Teaming Skill with target-specific authorization, rules of engagement, privilege mapping, safe synthetic test matrices, traceable findings, bounded execution, cleanup, remediation retesting, and explicit residual risk.
 - Added the MIT Context Optimization Skill with auditable context budgets, conservative deduplication, relevance and information-density scoring, provenance-preserving ordering, coverage validation, exclusion ledgers, and sensitive-domain safeguards.
 - Added the MIT Prompt Injection Defense Skill with trust-boundary mapping, enforceable authority invariants, least-privilege tool controls, safe synthetic adversarial tests, provenance preservation, incident containment, and explicit residual-risk reporting.
 - Added the MIT Agent Observability Skill with trace and event contracts, content-free telemetry defaults, metric and alert definitions, sampling and retention controls, trace-graph verification, privacy safeguards, and partial-evidence handoff.
