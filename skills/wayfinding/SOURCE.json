@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source assumes tracker-specific operations, labels, child issues, and dependency APIs; these were not packaged",
+      "The adopting project must provide its destination, domain context, owners, tracker location, and authorized publication mechanism"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "replaced implicit tracker configuration with local-draft fallback and added claim, authorization, untrusted-content, privacy, external-write, and rollback boundaries"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:mattpocock/skills:skills/engineering/wayfinder/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/wayfinding/SKILL.md",
+  "repository": "mattpocock/skills",
+  "sha": "812805b760baf328db0ebdef6f3807e381f97016",
+  "source_url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/engineering/wayfinder/SKILL.md"
+}

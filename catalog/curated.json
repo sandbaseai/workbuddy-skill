@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:mattpocock/skills:skills/engineering/wayfinder/SKILL.md",
+    "skill": "wayfinding",
+    "skill_path": "skills/wayfinding",
+    "category": "productivity",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/wayfinding-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:mattpocock/skills:skills/engineering/to-spec/SKILL.md",
     "skill": "spec-synthesis",
     "skill_path": "skills/spec-synthesis",
