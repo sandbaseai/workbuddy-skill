@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:windinwing/mchat:skills/code-reviewer/SKILL.md",
+    "skill": "code-reviewer",
+    "skill_path": "skills/code-reviewer",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/code-reviewer-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:magnus919/hermes-profiles:skills/debugging-methodology/SKILL.md",
     "skill": "debugging-methodology",
     "skill_path": "skills/debugging-methodology",

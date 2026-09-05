@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:windinwing/mchat:skills/code-reviewer/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/code-reviewer/SKILL.md",
+  "repository": "windinwing/mchat",
+  "sha": "92213a0f2690dfc015767fc0a70b9a7bdec74986",
+  "source_url": "https://github.com/windinwing/mchat/blob/0e35c37d6e5327e09f03e0c586f537cfa777943f/skills/code-reviewer/SKILL.md"
+}
