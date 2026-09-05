@@ -167,6 +167,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | [Integration Health Check](skills/integration-health-check/) | Verify connector health, credentials, authorized scopes, target context, capabilities, and safe next actions before integration work | [Apache-2.0 source](skills/integration-health-check/SOURCE.json) |
 | [Site Reliability Engineering](skills/site-reliability/) | Define SLOs, error budgets, toil reduction, incident learning, on-call health, capacity, graceful degradation, and progressive delivery | [MIT source](skills/site-reliability/SOURCE.json) |
 | [Design Systems](skills/design-systems/) | Build accessible token foundations and component libraries with stable APIs, documentation, governance, migration, and adoption evidence | [MIT source](skills/design-systems/SOURCE.json) |
+| [Java Service Coding Standards](skills/java-service-standards/) | Build Java services with explicit contracts, authorization, transactions, persistence safety, observability, testing, and rollback evidence | [MIT source](skills/java-service-standards/SOURCE.json) |
 | [Modern CSS Pro Tips](skills/css-protips/) | Engineer CSS/Tailwind with semantic tokens, controlled cascade, intrinsic layout, accessible states, fallbacks, and measured browser verification | [MIT source](skills/css-protips/SOURCE.json) |
 | [Confidence-Gated Task Routing](skills/confidence-gated-routing/) | Route delegated work to the cheapest verifiable tier, escalate only objective residue, and preserve independent verification evidence | [MIT source](skills/confidence-gated-routing/SOURCE.json) |
 | [Agent Quality Grading](skills/agent-quality-grading/) | Grade agent task completion, latency, tool use, messages, generated assets, and configurations with traceable evidence | [MIT source](skills/agent-quality-grading/SOURCE.json) |
@@ -459,7 +460,7 @@ Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.git
 For a manually curated index of WorkBuddy documentation, MCP integrations, workflows, benchmarks, and Skills, browse [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy).
 
 <!-- CATALOG-ANALYSIS:START -->
-The current static analysis successfully inspected 12,487 paths: 9,912 are structurally adaptable to WorkBuddy, 901 need manual review, 0 are currently WorkBuddy-ready, and 410 contain at least one conservative security signal.
+The current static analysis successfully inspected 12,487 paths: 9,913 are structurally adaptable to WorkBuddy, 901 need manual review, 0 are currently WorkBuddy-ready, and 410 contain at least one conservative security signal.
 <!-- CATALOG-ANALYSIS:END -->
 A clean static scan is never a security guarantee.
 

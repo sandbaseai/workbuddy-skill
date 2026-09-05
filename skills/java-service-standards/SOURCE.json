@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["The source's Java sub-standard files, templates, examples, and project-specific workflow commands were not packaged"],
+    "packaged_resources": [],
+    "security_signals": ["generalized Java/Spring guidance with explicit authorization, secret, SQL, transaction, and test boundaries; no runtime assets packaged"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:soft6096/jee-forge:skill/java-code-standards/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skill/java-code-standards/SKILL.md",
+  "repository": "soft6096/jee-forge",
+  "sha": "241a720d0656d4b5435c353c97eb106d866111d0",
+  "source_url": "https://github.com/soft6096/jee-forge/blob/4c83fbb13708408f59c28e7287dfcbc8e5908c4e/skill/java-code-standards/SKILL.md"
+}

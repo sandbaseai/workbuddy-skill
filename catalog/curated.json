@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:soft6096/jee-forge:skill/java-code-standards/SKILL.md",
+    "skill": "java-service-standards",
+    "skill_path": "skills/java-service-standards",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/java-service-standards-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:PyModel/css-pro-tips:SKILL.md",
     "skill": "css-protips",
     "skill_path": "skills/css-protips",
