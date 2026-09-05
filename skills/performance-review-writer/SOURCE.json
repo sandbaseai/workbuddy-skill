@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides self-assessment, peer, and upward feedback types, WorkIQ evidence gathering, STAR drafting, tone rules, output schemas, and a non-submission rule but no project-specific data authorization, privacy minimization, evidence taxonomy, bias review, or local storage policy",
+      "The adopting project must provide an explicitly authorized review scope and source set, period/subject/format, synthetic or redacted evidence handling, secure draft location, human reviewer, and no-automatic-submission boundary"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved review-type distinctions, context gathering, contribution surfacing, STAR structure, honest/impact-focused tone, review schemas, needs-detail markers, confidentiality, and draft-only output",
+      "added WorkBuddy least-data and explicit authorization boundaries, observed/derived/reported/unknown evidence taxonomy, anti-fabrication and anti-bias checks, sensitive attribute minimization, anonymization caveats, local storage controls, and user-only submission gates"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/performance-review-writer/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/performance-review-writer/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "1ac49165e836a1539a3e47110fbeb49a9caafa6d",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/performance-review-writer/SKILL.md"
+}

@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/performance-review-writer/SKILL.md",
+    "skill": "performance-review-writer",
+    "skill_path": "skills/performance-review-writer",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/performance-review-writer-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/mcp-security-audit/SKILL.md",
     "skill": "mcp-security-audit",
     "skill_path": "skills/mcp-security-audit",
