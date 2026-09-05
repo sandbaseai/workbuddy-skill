@@ -1,4 +1,12 @@
-[{
+[
+  {
+    "catalog_id": "github:ariel-lee-1023/Books-to-Skill-Refs:SKILL.md",
+    "skill": "multi-source-knowledge-library",
+    "skill_path": "skills/multi-source-knowledge-library",
+    "category": "research",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/multi-source-knowledge-library-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:ZhongHanLoo/deep-research-skill:skill/deep-research/SKILL.md",
     "skill": "deep-research",
     "skill_path": "skills/deep-research",

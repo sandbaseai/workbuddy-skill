@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Multi-Source Knowledge Library Skill with source manifests, one-reference-per-source structure, master routing, structure-over-summary extraction, coverage ledgers, conflict handling, and incremental maintenance safeguards.
 - Added the MIT Deep Evidence Research Skill with scoped research briefs, multi-angle retrieval, atomic claim ledgers, independent corroboration, citation audits, disagreement handling, and reproducible handoff.
 - Added the MIT Project Bindings Skill with single-source project values, rule/value separation, consumer inventories, secret exclusion, conflict detection, migration safety, and reference validation.
 - Added the MIT API Documentation Skill with source-of-truth discipline, stable operation structure and anchors, precise request/response/error tables, route/type conventions, safe examples, surgical contract changes, and verification gates.
