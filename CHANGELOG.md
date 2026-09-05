@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Database Query Optimizer Skill with safe baselines, plan evidence, PostgreSQL/MySQL guidance, single-variable changes, execution-risk controls, lock/replication/write-amplification checks, rollback, and before/after verification.
 - Added the MIT Cloud Architect Skill with evidence-backed multi-cloud discovery, decision criteria, security and reliability boundaries, cost and quota checks, migration waves, disaster-recovery proof, rollback gates, and implementation handoff.
 - Added the MIT Cloud Cost Optimization Skill with measured cost-driver ranking, utilization and trade-off checks, current-price assumptions, reversible savings plans, commitment sequencing, attribution, budgets, anomaly alerts, and authorization gates for financial or destructive changes.
 - Simplified the public README to focus on WorkBuddy usage, discovery, installation, curated capabilities, provenance, compatibility, and contribution guidance while removing internal catalog-building and maintenance constraints.

@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:Jeffallan/claude-skills:skills/database-optimizer/SKILL.md",
+    "skill": "database-query-optimizer",
+    "skill_path": "skills/database-query-optimizer",
+    "category": "data",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/database-query-optimizer-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:Jeffallan/claude-skills:skills/cloud-architect/SKILL.md",
     "skill": "cloud-architect",
     "skill_path": "skills/cloud-architect",

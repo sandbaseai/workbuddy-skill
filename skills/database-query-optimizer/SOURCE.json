@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source is a standalone database tuning playbook and does not package engine-specific plan fixtures, benchmark data, migrations, dashboards, or rollback automation",
+      "The adopting project must provide sanitized workload samples, current engine documentation, database metrics, approved test environments, and a change/recovery path"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "generalized the source database optimizer into WorkBuddy with read-only defaults, explicit handling of EXPLAIN ANALYZE execution risk, sensitive-data redaction, bounded workloads, and authorization gates",
+      "added write amplification, lock, replication, cache, maintenance, neighboring-query, and reversible migration checks before accepting an optimization"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:Jeffallan/claude-skills:skills/database-optimizer/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/database-query-optimizer/SKILL.md",
+  "repository": "Jeffallan/claude-skills",
+  "sha": "f7148e95d65a75e6a63ca28e689eab61a407e673",
+  "source_url": "https://github.com/Jeffallan/claude-skills/blob/882ef55e377dbf9a4dbe496bb41ac6ccd0e555cf/skills/database-optimizer/SKILL.md"
+}
