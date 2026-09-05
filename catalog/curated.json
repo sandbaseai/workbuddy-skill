@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/aws-well-architected-review/SKILL.md",
+    "skill": "aws-well-architected-review",
+    "skill_path": "skills/aws-well-architected-review",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/aws-well-architected-review-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/azure-deployment-preflight/SKILL.md",
     "skill": "azure-deployment-preflight",
     "skill_path": "skills/azure-deployment-preflight",

@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references a report template and assumes GitHub issue creation, but did not package the template",
+      "The adopting project must provide current AWS Framework references, authorized read-only account evidence, IaC parsers, and any issue-publication integration"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved six-pillar review, IaC/live reconciliation, evidence classification, and risk prioritization",
+      "changed default issue creation to report-first, added read-only AWS boundaries, secret-safe reporting, coverage gaps, and approval/rollback gates"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/aws-well-architected-review/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/aws-well-architected-review/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "ff7952f270ba6912ac5de22e4e6fc818878217b5",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/aws-well-architected-review/SKILL.md"
+}

@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT AWS Well-Architected Review Skill with six-pillar evidence contracts, IaC/live-state reconciliation, architecture mapping, risk calibration, trade-off handling, report-first remediation, and explicit issue-publication and rollback boundaries.
 - Added the MIT Azure Deployment Preflight Skill with Bicep/azd detection, syntax and parameter validation, identity and RBAC boundaries, read-only what-if previews, change classification, secret-safe reports, approval gates, and rollback evidence.
 - Added the MIT AWS Resource Query Skill with strict read-only command boundaries, intent and scope parsing, account/region confirmation, service query mappings, pagination completeness, bounded execution, sensitive-output redaction, and observed-versus-inferred handoffs.
 - Added the MIT GitHub Actions Efficiency Skill with measured CI baselines, runner-minute versus wall-clock analysis, cache/concurrency/path/matrix reviews, required-check guardrails, safe optimization ranking, rollback-aware validation, and measured-versus-modeled impact reporting.
