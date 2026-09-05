@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references separate validation-command, report-template, and error-handling files that were not packaged",
+      "The adopting project must provide Azure CLI/Bicep/azd availability, authorized subscription context, parameter fixtures, and target-specific validation"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved read-only syntax/what-if validation and ProviderNoRbac limitation reporting",
+      "added secret-safe parameter handling, explicit scope checks, mutation refusal, impact classification, and approval/rollback gates"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/azure-deployment-preflight/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/azure-deployment-preflight/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "2a44dd5d7620dab51e4ae44efd30117c8722d971",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/azure-deployment-preflight/SKILL.md"
+}

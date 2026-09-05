@@ -68,6 +68,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [GitHub Actions Hardening](skills/github-actions-hardening/) | 审查工作流触发器、注入、权限、供应链、Secrets 和 Runner 风险 |
 | [GitHub Actions Efficiency](skills/github-actions-efficiency/) | 用运行数据优化 CI 时间、成本、缓存、并发、路径和矩阵，同时保留必要门禁 |
 | [AWS Resource Query](skills/aws-resource-query/) | 将自然语言转换为带账号、区域、分页和脱敏边界的 AWS 只读查询 |
+| [Azure Deployment Preflight](skills/azure-deployment-preflight/) | 在 Azure 部署前校验 Bicep、参数、权限和 what-if 变更风险 |
 | [Incident Response and Triage](skills/incident-triage/) | 处理事件、稳定服务、验证恢复并沉淀经验 |
 | [Security Audit](skills/security-audit/) | 审查信任边界、控制措施、漏洞和残余风险 |
 | [RAG Evaluation](skills/rag-evaluation/) | 评估检索、引用、事实依据、拒答、成本和回归 |
@@ -83,8 +84,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,656 |
-| Unique content SHAs | 8,029 |
+| Indexed GitHub paths | 12,657 |
+| Unique content SHAs | 8,030 |
 | Source repositories | 6,431 |
 <!-- CATALOG-METRICS:END -->
 

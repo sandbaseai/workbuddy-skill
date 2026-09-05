@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/azure-deployment-preflight/SKILL.md",
+    "skill": "azure-deployment-preflight",
+    "skill_path": "skills/azure-deployment-preflight",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/azure-deployment-preflight-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/aws-resource-query/SKILL.md",
     "skill": "aws-resource-query",
     "skill_path": "skills/aws-resource-query",
