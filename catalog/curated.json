@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/acquire-codebase-knowledge/SKILL.md",
+    "skill": "acquire-codebase-knowledge",
+    "skill_path": "skills/acquire-codebase-knowledge",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/acquire-codebase-knowledge-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/bug-reproduction-brief/SKILL.md",
     "skill": "bug-reproduction-brief",
     "skill_path": "skills/bug-reproduction-brief",

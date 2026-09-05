@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Acquire Codebase Knowledge Skill with seven-document evidence contracts, intent-versus-reality checks, stack and integration mapping, history-aware concerns, explicit TODO/ASK USER states, generated-artifact exclusions, and read-only redaction boundaries.
 - Added the MIT Bug Reproduction Brief Skill with fact/assumption separation, environment capture, one-variable minimization, repeatability evidence, safe isolated fixtures, stop-before-repair boundaries, and redaction-aware handoffs.
 - Added the MIT Agent Supply Chain Integrity Skill with deterministic manifests, file-drift classification, dependency pinning audits, provenance chains, fail-closed promotion gates, symlink/root containment, and read-only evidence boundaries.
 - Added the MIT AWS CloudWatch Investigation Skill with bounded Logs Insights and metric queries, alarm/deployment correlation, blast-radius narrowing, timeline reconstruction, baseline validation, counterevidence, and read-only redaction-safe evidence handoffs.

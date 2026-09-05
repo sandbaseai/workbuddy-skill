@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references scan scripts, inquiry checkpoints, stack-detection guidance, and templates that are not packaged in the single upstream SKILL.md entry",
+      "The adopting project must provide safe repository scanning, document templates, evidence links, command authorization, and redaction-aware storage"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved seven-document output contract, evidence-only claims, intent-versus-reality comparison, TODO/ASK USER markers, generated-artifact exclusions, and phase validation",
+      "added WorkBuddy read-only execution boundaries, sensitive-data redaction, scoped paths, explicit provenance labels, and separate authorization for writing or publishing"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/acquire-codebase-knowledge/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/acquire-codebase-knowledge/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "b449afdb7081ee37e679405d12432fe757fbb1dd",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/acquire-codebase-knowledge/SKILL.md"
+}
