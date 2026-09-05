@@ -210,6 +210,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | [CLI Testing](skills/test-cli/) | Verify arguments, streams, exit codes, configuration, signals, and side effects | [MIT source](skills/test-cli/SOURCE.json) |
 | [Performance Improvement](skills/improve-performance/) | Measure, profile, optimize, and verify real system bottlenecks | [MIT source](skills/improve-performance/SOURCE.json) |
 | [Work Handoff](skills/handoff/) | Preserve verified state, decisions, risks, and an executable restart point | [MIT source](skills/handoff/SOURCE.json) |
+| [Deep Project Primer](skills/deep-project-primer/) | Build an evidence-backed repository baseline before significant work or context recovery | [MIT source](skills/deep-project-primer/SOURCE.json) |
 | [Test Strategy Design](skills/design-test-strategy/) | Turn product and system risks into a traceable, layered test portfolio | [MIT source](skills/design-test-strategy/SOURCE.json) |
 | [Accessibility Review](skills/review-accessibility/) | Find keyboard, screen-reader, low-vision, cognitive, and motion barriers | [MIT source](skills/review-accessibility/SOURCE.json) |
 | [Dense Writing](skills/dense-writing/) | Remove filler while preserving evidence, nuance, and constraints | [Apache-2.0 source](skills/dense-writing/SOURCE.json) |

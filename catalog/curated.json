@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:danzam98/claude-skills-toolkit:skills/deep-project-primer/SKILL.md",
+    "skill": "deep-project-primer",
+    "skill_path": "skills/deep-project-primer",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/deep-project-primer-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:aims1425-lab/hermes-agent-public-skills:skills/playwright-webapp-qa/SKILL.md",
     "skill": "playwright-webapp-qa",
     "skill_path": "skills/playwright-webapp-qa",

@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": ["generalized repository reconnaissance and command-execution boundaries; external prompt link not treated as runtime dependency"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:danzam98/claude-skills-toolkit:skills/deep-project-primer/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "skills/deep-project-primer/SKILL.md",
+  "repository": "danzam98/claude-skills-toolkit",
+  "sha": "a212280528d6701b1319bc928b625c60735c7bc1",
+  "source_url": "https://github.com/danzam98/claude-skills-toolkit/blob/d8c22e21510ec2d8d8c02f8e99da7c4fc9396f01/skills/deep-project-primer/SKILL.md"
+}
