@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source static scanner, review checklist, report template, and fixtures were not packaged",
+      "Filesystem/archive tooling, provenance checks, sandboxing, and credential-response procedures must be supplied by the adopting team"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved read-only default and disposition model; added WorkBuddy metadata, explicit archive hazards, evidence labels, non-execution boundaries, and owner-led recovery"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:seb1n/awesome-ai-agent-skills:agent-security/skill-supply-chain-audit/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/skill-supply-chain-audit/SKILL.md",
+  "repository": "seb1n/awesome-ai-agent-skills",
+  "sha": "17c77708eef36b4321de4576828f5427cc7b1b4c",
+  "source_url": "https://github.com/seb1n/awesome-ai-agent-skills/blob/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/agent-security/skill-supply-chain-audit/SKILL.md"
+}

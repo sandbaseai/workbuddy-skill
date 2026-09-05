@@ -192,6 +192,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | [Human in the Loop](skills/human-in-the-loop/) | Design auditable approval gates, immutable action binding, escalation, reauthorization, recovery, and safe human oversight | [MIT source](skills/human-in-the-loop/SOURCE.json) |
 | [MCP Server Building](skills/mcp-server-building/) | Build least-privilege MCP servers with precise tool contracts, safe transports, authorization, structured errors, and interoperability tests | [MIT source](skills/mcp-server-building/SOURCE.json) |
 | [Multi-Agent Orchestration](skills/multi-agent-orchestration/) | Coordinate bounded Agent workstreams with DAGs, ownership, handoff contracts, approvals, isolated writes, recovery, and synthesis | [MIT source](skills/multi-agent-orchestration/SOURCE.json) |
+| [Skill Supply Chain Audit](skills/skill-supply-chain-audit/) | Audit third-party Skills read-only for provenance, permissions, execution, dependencies, exfiltration, persistence, and update risk | [MIT source](skills/skill-supply-chain-audit/SOURCE.json) |
 | [Tool Schema Design](skills/tool-schema-design/) | Design bounded model-facing tool contracts with explicit effects, authorization, safe defaults, errors, idempotency, and selection tests | [MIT source](skills/tool-schema-design/SOURCE.json) |
 | [Context Optimization](skills/context-optimization/) | Optimize retrieved context with conservative deduplication, budget allocation, coverage checks, provenance, and exclusion ledgers | [MIT source](skills/context-optimization/SOURCE.json) |
 | [Agent Observability](skills/agent-observability/) | Design privacy-aware traces, events, metrics, dashboards, alerts, and verification for AI agent workflows | [MIT source](skills/agent-observability/SOURCE.json) |
@@ -473,8 +474,8 @@ The catalog is generated from public GitHub `SKILL.md` results with resumable, r
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,618 |
-| Unique content SHAs | 7,991 |
+| Indexed GitHub paths | 12,619 |
+| Unique content SHAs | 7,992 |
 | Source repositories | 6,425 |
 <!-- CATALOG-METRICS:END -->
 
@@ -485,7 +486,7 @@ Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.git
 For a manually curated index of WorkBuddy documentation, MCP integrations, workflows, benchmarks, and Skills, browse [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy).
 
 <!-- CATALOG-ANALYSIS:START -->
-The current static analysis successfully inspected 12,618 paths: 9,932 are structurally adaptable to WorkBuddy, 908 need manual review, 0 are currently WorkBuddy-ready, and 417 contain at least one conservative security signal.
+The current static analysis successfully inspected 12,619 paths: 9,933 are structurally adaptable to WorkBuddy, 908 need manual review, 0 are currently WorkBuddy-ready, and 417 contain at least one conservative security signal.
 <!-- CATALOG-ANALYSIS:END -->
 A clean static scan is never a security guarantee.
 

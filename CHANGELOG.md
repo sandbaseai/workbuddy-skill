@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Skill Supply Chain Audit Skill with immutable provenance, read-only inspection, archive hazard checks, instruction and capability inventory, least-privilege disposition, version comparison, evidence labels, safe verification, and owner-led recovery.
 - Added the MIT Multi-Agent Orchestration Skill with bounded decomposition, acyclic dependency graphs, minimum-authority scopes, structured handoffs, single-writer safety, approval references, failure accounting, integration verification, and explicit residual risk.
 - Added the MIT Tool Schema Design Skill with intent boundaries, bounded JSON Schema guidance, explicit effects and authority, confirmation/idempotency/error contracts, contrastive selection tests, provider limitations, and implementation-drift verification.
 - Added the MIT MCP Server Building Skill with bounded capabilities, explicit effects and data classes, structural tool contracts, independent authorization, token audience safeguards, protocol-version verification, interoperability tests, and reversible operations guidance.

@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:seb1n/awesome-ai-agent-skills:agent-security/skill-supply-chain-audit/SKILL.md",
+    "skill": "skill-supply-chain-audit",
+    "skill_path": "skills/skill-supply-chain-audit",
+    "category": "security",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/skill-supply-chain-audit-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:seb1n/awesome-ai-agent-skills:agent-engineering/multi-agent-orchestration/SKILL.md",
     "skill": "multi-agent-orchestration",
     "skill_path": "skills/multi-agent-orchestration",
