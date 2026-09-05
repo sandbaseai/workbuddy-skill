@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Agent Governance Skill with composable least-privilege policies, pre-tool intent checks, exact approval binding, bounded delegation and rate limits, fail-closed behavior, privacy-safe audit trails, trust-score safeguards, and enforcement verification.
 - Added the MIT Dependabot Management Skill with ecosystem and directory inventory, monorepo and multi-ecosystem grouping, schedule and cooldown controls, security/version-update separation, triage safeguards, least-noise policies, and owner/expiry-aware handoffs.
 - Added the MIT Incident Post-Mortem Skill with blameless evidence contracts, UTC timeline reconstruction, impact reconciliation, systemic causal analysis, counterevidence, accountable dated actions, redaction, and publication gates.
 - Added the MIT AWS Well-Architected Review Skill with six-pillar evidence contracts, IaC/live-state reconciliation, architecture mapping, risk calibration, trade-off handling, report-first remediation, and explicit issue-publication and rollback boundaries.

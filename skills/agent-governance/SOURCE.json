@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides illustrative policy, intent, decorator, and trust-score patterns but no production policy engine, registry, audit sink, or test harness",
+      "The adopting project must provide tool schemas, authority storage, approval services, tamper-evident audit retention, calibrated signals, and end-to-end enforcement tests"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved composable policies, pre-tool intent checks, tool-level governance, rate limits, trust scoring, and audit trails",
+      "added capability/authority/approval separation, fail-closed behavior, exact approval binding, delegation limits, redaction, and enforcement-versus-advisory reporting"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/agent-governance/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/agent-governance/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "a3c2501676c11fd8433c802b7f1c21d174ff6721",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/agent-governance/SKILL.md"
+}

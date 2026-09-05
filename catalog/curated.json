@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/agent-governance/SKILL.md",
+    "skill": "agent-governance",
+    "skill_path": "skills/agent-governance",
+    "category": "security",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/agent-governance-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/dependabot/SKILL.md",
     "skill": "dependabot",
     "skill_path": "skills/dependabot",
