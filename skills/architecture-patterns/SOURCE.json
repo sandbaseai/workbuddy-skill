@@ -1,0 +1,21 @@
+{
+  "catalog_id": "github:wshobson/agents:plugins/backend-development/skills/architecture-patterns/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/architecture-patterns/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "d893cabeab6a84c17bd0dd4ea9f56b3c4d02c0f5",
+  "source_commit": "a30778f8c4e6b0a87567941b7cca4f534bf642b6",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/backend-development/skills/architecture-patterns/SKILL.md",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source references details.md and advanced-patterns.md, but those reference files are not packaged in this catalog entry",
+      "The adopting project must provide actual dependency graphs, domain constraints, runtime evidence, migration ownership, and rollback authority"
+    ],
+    "security_signals": [
+      "preserved Clean/Onion, Hexagonal, DDD, ports/adapters, bounded contexts, aggregate boundaries, in-memory testing, and troubleshooting concepts",
+      "added authorized-scope handling, data ownership, error/idempotency contracts, migration slices, uncertainty states, secret-safe reporting, and explicit no-change boundaries"
+    ]
+  }
+}
