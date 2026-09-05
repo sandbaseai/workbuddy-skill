@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT AWS CloudWatch Investigation Skill with bounded Logs Insights and metric queries, alarm/deployment correlation, blast-radius narrowing, timeline reconstruction, baseline validation, counterevidence, and read-only redaction-safe evidence handoffs.
 - Added the MIT GitHub Release Skill with immutable diff classification, SemVer rationale, changelog preparation, repository-native gates, PR/direct authority modes, tag and asset reconciliation, failure handling, rollback, and evidence-bounded completion.
 - Added the MIT Architectural Decision Record Skill with decision-question framing, fact/assumption/unknown ledgers, evidence-backed alternatives, coded consequences, immutable ADR lifecycle links, approval-state integrity, and validation/review handoffs.
 - Added the MIT Agent Governance Skill with composable least-privilege policies, pre-tool intent checks, exact approval binding, bounded delegation and rate limits, fail-closed behavior, privacy-safe audit trails, trust-score safeguards, and enforcement verification.

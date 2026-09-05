@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides reusable query templates but no CloudWatch/CloudTrail connector, schema registry, or incident evidence store",
+      "The adopting project must provide authorized account access, log/metric field knowledge, query execution, pagination handling, and redaction-safe retention"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved bounded Logs Insights, metric math, alarm/deployment correlation, blast-radius narrowing, and timeline reconstruction",
+      "added account/region scope, read-only boundaries, baseline/formula validation, counterevidence, completeness labels, and secret/customer-data redaction"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/aws-cloudwatch-investigation/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/aws-cloudwatch-investigation/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "ad433312bcf093a3e4b529131db9308d8a047a1d",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/aws-cloudwatch-investigation/SKILL.md"
+}

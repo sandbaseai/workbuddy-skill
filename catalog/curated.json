@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/aws-cloudwatch-investigation/SKILL.md",
+    "skill": "aws-cloudwatch-investigation",
+    "skill_path": "skills/aws-cloudwatch-investigation",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/aws-cloudwatch-investigation-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/github-release/SKILL.md",
     "skill": "github-release",
     "skill_path": "skills/github-release",
