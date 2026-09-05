@@ -1,0 +1,21 @@
+{
+  "catalog_id": "github:wshobson/agents:plugins/incident-response/skills/on-call-handoff-patterns/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/on-call-handoff-patterns/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "c41eedc8a4c77863094531f34dec94a85b4cbdc3",
+  "source_commit": "a30778f8c4e6b0a87567941b7cca4f534bf642b6",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/incident-response/skills/on-call-handoff-patterns/SKILL.md",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source does not package an on-call schedule, service ownership directory, alerting integration, or access policy",
+      "The adopting project must provide authorized incident evidence, escalation ownership, privacy rules, and separate approval for production or notification actions"
+    ],
+    "security_signals": [
+      "preserved shift context transfer, active-incident summaries, decision history, escalation paths, overlap checks, and handoff acceptance",
+      "removed platform-specific internal references and alert-triggering guidance; added secret-safe handling, read-only defaults, authorization boundaries, and explicit BLOCKED states"
+    ]
+  }
+}

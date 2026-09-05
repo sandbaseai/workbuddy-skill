@@ -65,6 +65,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Memory Forensics](skills/memory-forensics/) | 在授权离线镜像上交叉验证进程、映射、时间线和恶意迹象，避免实时采集与凭据恢复 |
 | [Binary Analysis Patterns](skills/binary-analysis-patterns/) | 对授权离线二进制做反汇编、控制流和数据结构分析，避免执行样本与动态访问 |
 | [Postmortem Writing](skills/postmortem-writing/) | 将事件证据整理为无责时间线、系统性促成条件、可验收行动项和后续效果验证 |
+| [On-Call Handoff Patterns](skills/on-call-handoff-patterns/) | 以证据交接值班上下文、活动事件、升级路径、风险和接班验收状态 |
 | [Chaos Engineer](skills/chaos-engineer/) | 设计有授权、可回滚、影响范围受控的韧性实验 |
 | [Cloud Cost Optimization](skills/cloud-cost-optimization/) | 按实际成本驱动因素排序，验证取舍，建模节省并治理授权变更 |
 | [Cloud Architect](skills/cloud-architect/) | 设计跨云架构、迁移波次、灾备、成本与安全取舍 |

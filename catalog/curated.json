@@ -1,4 +1,10 @@
 [{
+    "catalog_id": "github:wshobson/agents:plugins/incident-response/skills/on-call-handoff-patterns/SKILL.md",
+    "skill": "on-call-handoff-patterns",
+    "skill_path": "skills/on-call-handoff-patterns",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/on-call-handoff-patterns-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/incident-response/skills/postmortem-writing/SKILL.md",
     "skill": "postmortem-writing",
     "skill_path": "skills/postmortem-writing",

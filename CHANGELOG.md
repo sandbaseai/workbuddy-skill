@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT On-Call Handoff Patterns Skill with evidence-linked shift context, active-incident transfer, decision history, escalation paths, acceptance checks, secret-safe handling, and explicit no-production-action boundaries.
 - Added the MIT Postmortem Writing Skill with blameless evidence-led timelines, systemic contributing conditions, disputed/unknown states, bounded action items, privacy controls, and follow-up effectiveness verification.
 - Added the MIT Binary Analysis Patterns Skill with offline static triage, disassembly and control-flow evidence, cautious data-structure hypotheses, network-disabled tooling, and explicit no-execution boundaries.
 - Added the MIT Memory Forensics Skill with authorized offline-image triage, evidence ledgers, process/mapping cross-checks, redaction, untrusted-input controls, and explicit no-live-acquisition or credential-recovery boundaries.
