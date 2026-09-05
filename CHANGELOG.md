@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Migration Validation Skill with baseline capture, layered post-cutover health and data checks, performance and integration validation, observability and backup gates, authoritative platform-fact verification, rollback readiness, and sign-off evidence.
 - Added the MIT Frontend Review Skill with state and interaction coverage, responsive and browser checks, accessibility, data and error handling, performance, frontend security, evidence-based findings, and retest handoff.
 - Added the MIT Backend Review Skill with input and authorization checks, contract and error semantics, transaction and consistency boundaries, dependency/resource safety, persistence and migration review, failure behavior, and regression handoff.
 - Added the MIT Breaking Change Review Skill with contract-surface mapping, bidirectional compatibility analysis, mixed-version checks, schema and migration risk, consumer evidence, versioning, rollout, rollback, and deprecation gates.

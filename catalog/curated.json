@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:adtork/compute-desk:extensions/compute-desk/specialists/migration/skills/post-migration-validation/SKILL.md",
+    "skill": "migration-validation",
+    "skill_path": "skills/migration-validation",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/migration-validation-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:aydabd/github-bootstrap:templates/.github/skills/frontend-review/SKILL.md",
     "skill": "frontend-review",
     "skill_path": "skills/frontend-review",

@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["Azure-specific commands, component names, and Microsoft Learn MCP configuration generalized or removed"],
+    "packaged_resources": [],
+    "security_signals": ["platform-specific installation and execution guidance removed from adaptation"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:adtork/compute-desk:extensions/compute-desk/specialists/migration/skills/post-migration-validation/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/migration-validation/SKILL.md",
+  "repository": "adtork/compute-desk",
+  "sha": "7220c3374df558d130c791c30d1f8755621aa5f8",
+  "source_url": "https://github.com/adtork/compute-desk/blob/60b43bbed31a556bc4809edd34e8980595453237/extensions/compute-desk/specialists/migration/skills/post-migration-validation/SKILL.md"
+}
