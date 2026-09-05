@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/audit-integrity/SKILL.md",
+    "skill": "audit-integrity-gate",
+    "skill_path": "skills/audit-integrity-gate",
+    "category": "security",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/audit-integrity-gate-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:obra/superpowers:skills/receiving-code-review/SKILL.md",
     "skill": "review-feedback-triage",
     "skill_path": "skills/review-feedback-triage",

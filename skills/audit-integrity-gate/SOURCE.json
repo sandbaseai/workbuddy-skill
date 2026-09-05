@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references seven separate protocol files that were not packaged with the single SKILL.md source",
+      "The adopting project must provide its report format, domain-specific second-pass checklist, scanner integrations, lesson storage, and approval policy"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "reframed the source's integrity components as a standalone WorkBuddy gate; made evidence states, retry limits, fail-closed coverage, secret-safe lessons, and scored delivery criteria explicit"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/audit-integrity/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/audit-integrity-gate/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "17ce0466be27e318f84ec441767306013a63dc3b",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/audit-integrity/SKILL.md"
+}

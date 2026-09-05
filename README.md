@@ -162,6 +162,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | [Plan Execution](skills/plan-execution/) | Execute written plans in ordered checkpoints with focused/full verification, authority boundaries, recovery, and durable handoff | [MIT source](skills/plan-execution/SOURCE.json) |
 | [Git Worktree Isolation](skills/worktree-isolation/) | Isolate Git work safely, establish baselines, enforce branch boundaries, integrate with evidence, and clean up owned worktrees | [MIT source](skills/worktree-isolation/SOURCE.json) |
 | [Review Feedback Triage](skills/review-feedback-triage/) | Verify review claims against repository evidence, prioritize risks, apply focused fixes, test each item, and document pushback | [MIT source](skills/review-feedback-triage/SOURCE.json) |
+| [Audit Integrity Gate](skills/audit-integrity-gate/) | Enforce evidence mapping, second-pass review, bounded retries, coverage gaps, calibrated scoring, and fail-closed analysis handoffs | [MIT source](skills/audit-integrity-gate/SOURCE.json) |
 | [Modular Design Principles](skills/modular-design-principles/) | Define boundaries, state ownership, public contracts, isolation, failure containment, and safe evolution | [MIT source](skills/modular-design-principles/SOURCE.json) |
 | [Performance Engineering](skills/performance-engineering/) | Measure and improve latency, capacity, CPU/memory/I/O, responsiveness, cost, and regressions with controlled evidence | [MIT source](skills/performance-engineering/SOURCE.json) |
 | [Data Governance](skills/data-governance/) | Govern cross-system data with contracts, ownership, consent, identity, lineage, quality monitoring, safe fallbacks, and change management | [MIT source](skills/data-governance/SOURCE.json) |
@@ -489,8 +490,8 @@ The catalog is generated from public GitHub `SKILL.md` results with resumable, r
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,634 |
-| Unique content SHAs | 8,007 |
+| Indexed GitHub paths | 12,635 |
+| Unique content SHAs | 8,008 |
 | Source repositories | 6,427 |
 <!-- CATALOG-METRICS:END -->
 
@@ -501,7 +502,7 @@ Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.git
 For a manually curated index of WorkBuddy documentation, MCP integrations, workflows, benchmarks, and Skills, browse [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy).
 
 <!-- CATALOG-ANALYSIS:START -->
-The current static analysis successfully inspected 12,634 paths: 9,948 are structurally adaptable to WorkBuddy, 908 need manual review, 0 are currently WorkBuddy-ready, and 418 contain at least one conservative security signal.
+The current static analysis successfully inspected 12,635 paths: 9,949 are structurally adaptable to WorkBuddy, 908 need manual review, 0 are currently WorkBuddy-ready, and 418 contain at least one conservative security signal.
 <!-- CATALOG-ANALYSIS:END -->
 A clean static scan is never a security guarantee.
 
