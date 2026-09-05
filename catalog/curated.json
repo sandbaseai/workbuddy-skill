@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/observability-monitoring/skills/grafana-dashboards/SKILL.md",
+    "skill": "grafana-dashboards",
+    "skill_path": "skills/grafana-dashboards",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/grafana-dashboards-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/observability-monitoring/skills/prometheus-configuration/SKILL.md",
     "skill": "prometheus-configuration",
     "skill_path": "skills/prometheus-configuration",

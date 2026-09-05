@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides dashboard hierarchy, RED/USE patterns, panel types, variables, alerts, provisioning, Terraform/Ansible examples, and infrastructure/database/application dashboard guidance but no authorized data-source inventory, metric contract, privacy review, or production rollout evidence",
+      "The adopting project must provide authorized Grafana and Prometheus scopes, isolated JSON/YAML/PromQL validation, metric and SLO baselines, datasource permissions, owners, runbooks, and rollback evidence"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved Grafana hierarchy, RED/USE views, stat/time-series/table/heatmap panels, variables, alerts, provisioning, dashboard-as-code, and common infrastructure/application/database patterns",
+      "added WorkBuddy authorization and privacy boundaries, bounded variables/cardinality, missing-data semantics, evidence-backed thresholds, alert delivery checks, schema/query/render validation, and production rollback controls"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:wshobson/agents:plugins/observability-monitoring/skills/grafana-dashboards/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/grafana-dashboards/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "c97df3d597a860cf3f575f0c471a21973152815e",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/observability-monitoring/skills/grafana-dashboards/SKILL.md"
+}
