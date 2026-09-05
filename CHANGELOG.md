@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the Apache-2.0 MCP Builder Guide with protocol/API research, discoverable typed tool contracts, structured errors, implementation safeguards, runtime verification, and realistic read-only evaluations.
 - Added the MIT Idea Refine Skill with user-problem framing, 5–8-direction exploration, value/feasibility/differentiation stress tests, explicit assumptions, MVP scope, Not Doing trade-offs, and safe artifact handoff.
 - Added the MIT Shipping and Launch Skill with pre-launch quality/security/performance/accessibility checks, feature-flag lifecycle, staged rollout thresholds, monitoring, post-launch verification, rollback evidence, and explicit production-authorization boundaries.
 - Added the MIT Grill with Docs Skill with bounded adversarial clarification, domain vocabulary and state modeling, evidence-ledgered ADR drafts, explicit unknowns, and separate document-write and implementation authorization.

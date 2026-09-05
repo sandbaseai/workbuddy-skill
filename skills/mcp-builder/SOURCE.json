@@ -1,0 +1,22 @@
+{
+  "catalog_id": "github:anthropics/skills:skills/mcp-builder/SKILL.md",
+  "declared_source_license": "Apache-2.0",
+  "path": "skills/mcp-builder/SKILL.md",
+  "repository": "anthropics/skills",
+  "sha": "8a1a77a47d141967b246adb4da4f91037578ff7d",
+  "source_commit": "41bbe19d1a1a7eaab5e7bb9050a417e5c6cffc8f",
+  "source_url": "https://github.com/anthropics/skills/blob/41bbe19d1a1a7eaab5e7bb9050a417e5c6cffc8f/skills/mcp-builder/SKILL.md",
+  "license_url": "https://github.com/anthropics/skills/blob/41bbe19d1a1a7eaab5e7bb9050a417e5c6cffc8f/skills/mcp-builder/LICENSE.txt",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source references MCP protocol, SDK, evaluation, and language-specific documentation that remains external and version-sensitive",
+      "The adopting project must provide an authorized SDK, isolated fixtures, a compatible MCP client, and separate approval for mutations or publication"
+    ],
+    "security_signals": [
+      "preserved protocol/API research, discoverability, typed contracts, structured errors, implementation, runtime checks, and ten-question evaluation guidance",
+      "added WorkBuddy evidence labels, authorization boundaries, data minimization, untrusted-context handling, public redaction, and mutation separation"
+    ]
+  }
+}

@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:anthropics/skills:skills/mcp-builder/SKILL.md",
+    "skill": "mcp-builder",
+    "skill_path": "skills/mcp-builder",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/mcp-builder-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:addyosmani/agent-skills:skills/idea-refine/SKILL.md",
     "skill": "idea-refine",
     "skill_path": "skills/idea-refine",

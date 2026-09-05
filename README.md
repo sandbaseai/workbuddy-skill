@@ -90,6 +90,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Web Application Testing](skills/webapp-testing/) | 用 Playwright 验证浏览器流程、响应式行为、控制台/网络证据和安全的失败工件 |
 | [Diátaxis Documentation Writer](skills/documentation-writer/) | 按教程、How-to、参考和解释四类，以证据、版本和维护门禁编写技术文档 |
 | [MCP Security Audit](skills/mcp-security-audit/) | 审计 MCP 配置中的凭据、命令注入、依赖版本、Server 清单、网络和权限边界 |
+| [MCP Builder Guide](skills/mcp-builder/) | 从协议/API 调研到工具契约、实现、运行时验证和只读评估，构建可发现的 MCP 服务 |
 | [MCP Release QA](skills/mcp-release-qa/) | 以真实协议会话核验 MCP 运行时、源码、元数据、文档、失败路径和安装产物 |
 | [Product Requirements Document](skills/prd/) | 将产品或 AI 功能想法转为有证据、可度量、可验收的需求契约 |
 | [Constraint-Driven Development](skills/constraint-driven-development/) | 将质量门槛、检查命令、基线和例外写成可执行契约，防止 Agent 降低标准 |
@@ -158,8 +159,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,731 |
-| Unique content SHAs | 8,104 |
+| Indexed GitHub paths | 12,732 |
+| Unique content SHAs | 8,105 |
 | Source repositories | 6,433 |
 <!-- CATALOG-METRICS:END -->
 
