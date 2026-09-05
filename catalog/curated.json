@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/llm-application-dev/skills/hybrid-search-implementation/SKILL.md",
+    "skill": "hybrid-search-implementation",
+    "skill_path": "skills/hybrid-search-implementation",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/hybrid-search-implementation-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/llm-application-dev/skills/llm-evaluation/SKILL.md",
     "skill": "llm-evaluation",
     "skill_path": "skills/llm-evaluation",

@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides hybrid dense/keyword architecture, RRF, weighted fusion, reranking, cascade, tuning, logging, and A/B guidance but no vector or keyword index, corpus, ACL service, calibration set, or experiment platform",
+      "The adopting project must provide authorized indexes, tenant-aware filters, versioned safe evaluation data, privacy controls, retention policy, and isolated experiment targets"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved dense and keyword candidate retrieval, rank fusion, reranking, query-specific tuning, score logging, A/B testing, and edge-case guidance",
+      "added WorkBuddy ACL-before-return, tenant isolation, source/version provenance, score-calibration limits, prompt-injection boundaries, deletion lifecycle, redaction, cost/latency controls, and production authorization gates"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:wshobson/agents:plugins/llm-application-dev/skills/hybrid-search-implementation/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/hybrid-search-implementation/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "bce13452d4528fad92f5ff9273b6310e8228eba4",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/llm-application-dev/skills/hybrid-search-implementation/SKILL.md"
+}
