@@ -1,4 +1,9 @@
-[
+[{
+    "catalog_id": "github:wshobson/agents:plugins/reverse-engineering/skills/memory-forensics/SKILL.md",
+    "skill": "memory-forensics",
+    "skill_path": "skills/memory-forensics",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/memory-forensics-workbuddy-skill.zip"
+  },
   {
     "catalog_id": "github:wshobson/agents:plugins/reverse-engineering/skills/protocol-reverse-engineering/SKILL.md",
     "skill": "protocol-reverse-engineering",

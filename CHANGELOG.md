@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Memory Forensics Skill with authorized offline-image triage, evidence ledgers, process/mapping cross-checks, redaction, untrusted-input controls, and explicit no-live-acquisition or credential-recovery boundaries.
 - Added the MIT Protocol Reverse Engineering Skill with authorized offline capture analysis, binary framing and field inference, state modeling, bounded parsers, redaction, and explicit no-live-interception safety gates.
 - Added the MIT Writing Skills Skill with RED-GREEN-REFACTOR authoring, pressure scenarios, trigger discovery, concise structure, security review, and regression evidence for WorkBuddy Skills.
 - Added the MIT Requesting Code Review Skill with fresh-context review packets, exact base/head SHA scoping, requirement and test evidence, severity triage, feedback rechecks, and secret-safe integration boundaries.

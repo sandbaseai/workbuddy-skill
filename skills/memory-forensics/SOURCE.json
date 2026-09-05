@@ -1,0 +1,21 @@
+{
+  "catalog_id": "github:wshobson/agents:plugins/reverse-engineering/skills/memory-forensics/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/memory-forensics/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "b13be6cc1452cd1b63e96ff7435c11ac6735d3f5",
+  "source_commit": "a30778f8c4e6b0a87567941b7cca4f534bf642b6",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/reverse-engineering/skills/memory-forensics/SKILL.md",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source does not package an authorized evidence set, isolated lab, symbol policy, or redaction workflow",
+      "The adopting project must provide written scope, offline or synthetic samples, retention rules, and separate approval for any live host operation"
+    ],
+    "security_signals": [
+      "preserved offline memory triage, process and mapping review, cross-validation, timeline correlation, YARA/parser boundaries, and evidence reporting",
+      "removed live acquisition and credential recovery guidance; added secret-safe handling, untrusted-input controls, read-only defaults, and explicit BLOCKED/FAIL states"
+    ]
+  }
+}
