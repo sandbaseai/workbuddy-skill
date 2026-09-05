@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides technology and architecture detection, overview, diagrams, component/layer/data analysis, cross-cutting concerns, service communication, implementation/testing/deployment patterns, extensibility, decision records, and governance guidance but no repository authorization, evidence provenance, privacy handling, runtime validation, or maintenance ownership",
+      "The adopting project must provide an authorized pinned codebase snapshot, bounded read-only analysis, environment/deployment scope, safe diagram and code-example policy, reviewers, owners, update triggers, and separately authorized remediation/publication controls"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved stack/pattern detection, architecture overview, C4/UML/flow/component diagrams, component/layer/data/dependency mapping, cross-cutting concerns, communication, implementation/testing/deployment, extensibility, ADR, and governance coverage",
+      "added WorkBuddy pinned-commit and read-only boundaries, evidence taxonomy, secret/PII redaction, observed-versus-inferred discipline, real-implementation diagram rules, environment uncertainty, owner review, update triggers, and authorized change/publication gates"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/architecture-blueprint-generator/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/architecture-blueprint-generator/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "a9a24b0e85fbd1d2e39851cc12ec266f3a55794d",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/architecture-blueprint-generator/SKILL.md"
+}
