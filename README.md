@@ -98,6 +98,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [MCP Release QA](skills/mcp-release-qa/) | 以真实协议会话核验 MCP 运行时、源码、元数据、文档、失败路径和安装产物 |
 | [Product Requirements Document](skills/prd/) | 将产品或 AI 功能想法转为有证据、可度量、可验收的需求契约 |
 | [Constraint-Driven Development](skills/constraint-driven-development/) | 将质量门槛、检查命令、基线和例外写成可执行契约，防止 Agent 降低标准 |
+| [Finishing a Development Branch](skills/finishing-a-development-branch/) | 按测试、集成复验、远端发布和可恢复清理安全完成开发分支 |
 | [Source-Driven Development](skills/source-driven-development/) | 根据准确依赖版本查阅官方文档，实现已验证模式并保留可核验引用 |
 | [Doubt-Driven Development](skills/doubt-driven-development/) | 对非平凡决策进行有界对抗式复核，逐条分类发现并保留剩余不确定性 |
 | [Deprecation and Migration](skills/deprecation-and-migration/) | 以消费者证据、兼容窗口和分阶段迁移安全退役旧系统、API、功能或 schema |
@@ -166,8 +167,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,739 |
-| Unique content SHAs | 8,112 |
+| Indexed GitHub paths | 12,740 |
+| Unique content SHAs | 8,113 |
 | Source repositories | 6,434 |
 <!-- CATALOG-METRICS:END -->
 

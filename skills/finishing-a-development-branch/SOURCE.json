@@ -1,0 +1,21 @@
+{
+  "catalog_id": "github:obra/superpowers:skills/finishing-a-development-branch/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/finishing-a-development-branch/SKILL.md",
+  "repository": "obra/superpowers",
+  "sha": "fa8aecaf8813f1b19d19996f7957d1b0121f2d9c",
+  "source_commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+  "source_url": "https://github.com/obra/superpowers/blob/b36e0829c6d0140e93cfef2ca599b1b07d4a7797/skills/finishing-a-development-branch/SKILL.md",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source assumes a human-selected integration menu and host-specific worktree ownership that are not packaged",
+      "The adopting project must provide target-branch authorization, repository-native checks, remote protection rules, and a recoverable cleanup policy"
+    ],
+    "security_signals": [
+      "preserved test-first finishing, environment detection, target-branch verification, integrated-tree rechecks, remote-drift handling, and cleanup boundaries",
+      "adapted the integration path to explicitly authorized WorkBuddy direct-main publication while retaining no-force, user-state preservation, secret-safe evidence, and deletion safeguards"
+    ]
+  }
+}

@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:obra/superpowers:skills/finishing-a-development-branch/SKILL.md",
+    "skill": "finishing-a-development-branch",
+    "skill_path": "skills/finishing-a-development-branch",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/finishing-a-development-branch-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/documentation-generation/skills/openapi-spec-generation/SKILL.md",
     "skill": "openapi-spec-generation",
     "skill_path": "skills/openapi-spec-generation",
