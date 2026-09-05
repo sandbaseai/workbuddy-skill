@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Agent Quality Grading Skill with evidence-bounded task, speed, tool, message, asset, and prompt/config evaluation plus privacy-safe reporting and retest guidance.
 - Added the MIT Skill Sunset Audit Skill with bounded read-only discovery, deterministic drift checks, conservative verdicts, reversible remediation, experiment safeguards, and evidence-based handoff.
 - Added the MIT Premium UI Craft Skill with evidence-driven hierarchy, semantic tokens, complete interaction states, responsive navigation, accessibility, restrained motion, and visual verification.
 - Added the MIT Data Engineering Pipeline Best Practices Skill with data contracts, delivery semantics, idempotent processing, quality and reconciliation gates, lineage, privacy, observability, replay, backfill, and recovery handoff.

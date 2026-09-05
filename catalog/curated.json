@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:ever-just/agentskills:skills/agent-quality-grading/SKILL.md",
+    "skill": "agent-quality-grading",
+    "skill_path": "skills/agent-quality-grading",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/agent-quality-grading-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:ooocooc/open-skill-sunset:integrations/skill-sunset/SKILL.md",
     "skill": "skill-sunset",
     "skill_path": "skills/skill-sunset",

@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["The source's named companion writing skills and private production datasets were not packaged"],
+    "packaged_resources": [],
+    "security_signals": ["added redaction, authorization, no-fabrication, and safe artifact inspection boundaries; no runtime assets packaged"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:ever-just/agentskills:skills/agent-quality-grading/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/agent-quality-grading/SKILL.md",
+  "repository": "ever-just/agentskills",
+  "sha": "a67d561856751df2ae9e2986470050363d49a952",
+  "source_url": "https://github.com/ever-just/agentskills/blob/4b84511b229525f0c019ea3da845ebecdab520e2/skills/agent-quality-grading/SKILL.md"
+}
