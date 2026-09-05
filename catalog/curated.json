@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:hnidboubker/readme-async:SKILL.md",
+    "skill": "readme-sync",
+    "skill_path": "skills/readme-sync",
+    "category": "content",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/readme-sync-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:iamthenop/infurnet-skills:skills/workflow-modeling/SKILL.md",
     "skill": "workflow-modeling",
     "skill_path": "skills/workflow-modeling",

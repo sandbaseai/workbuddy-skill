@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["The source's installer scripts and provider-specific wrapper were not packaged"],
+    "packaged_resources": [],
+    "security_signals": ["removed install/runtime mutation paths and retained source-of-truth, secret-redaction, and safe-command boundaries; no scripts packaged"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:hnidboubker/readme-async:SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "SKILL.md",
+  "repository": "hnidboubker/readme-async",
+  "sha": "8ea29ebf1cccd5b9654f01fbd68b2d49148364dd",
+  "source_url": "https://github.com/hnidboubker/readme-async/blob/2dbc645296b87c840b41bf1db3dc5e07eb00623e/SKILL.md"
+}

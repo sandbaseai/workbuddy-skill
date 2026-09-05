@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT README Synchronization Skill with source-of-truth checks for commands, configuration, features, APIs, structure, links, limitations, and surgical documentation updates.
 - Added the MIT Workflow State Modeling Skill with stable lineage, gate-as-state modeling, bounded statuses, transition and replay semantics, architecture-multiplication checks, and migration evidence.
 - Added the MIT Java Service Coding Standards Skill with repository-aligned layering, API/error contracts, authorization, transaction and idempotency boundaries, safe persistence, operations, testing, and handoff gates.
 - Added the MIT Modern CSS Pro Tips Skill with semantic tokens, cascade ownership, intrinsic responsive layout, accessible states, progressive enhancement, motion safeguards, and browser-evidence verification.
