@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references codebase_analyzer.py and onboarding/output templates that were not packaged",
+      "The adopting project must provide repository-native fact collection, clean-environment setup, documentation templates, ownership metadata, and a drift checker"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "generalized source-specific onboarding automation into WorkBuddy; added read-only defaults, revision/evidence tracking, clean-baseline checks, secret-safe configuration handling, audience boundaries, and drift detection"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:alirezarezvani/claude-skills:engineering/skills/codebase-onboarding/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/codebase-onboarding/SKILL.md",
+  "repository": "alirezarezvani/claude-skills",
+  "sha": "59370a0c61f3d644d7897df9d12a1041d8ae4305",
+  "source_url": "https://github.com/alirezarezvani/claude-skills/blob/19392f7a08264ed00486a251f5b2098321771f94/engineering/skills/codebase-onboarding/SKILL.md"
+}

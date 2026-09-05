@@ -169,6 +169,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | [Checkpointed Agent Loop](skills/checkpointed-agent-loop/) | Resume long tasks from durable state with bounded attempts, legal transitions, sanitized evidence, and fail-closed completion | [MIT source](skills/checkpointed-agent-loop/SOURCE.json) |
 | [Memory Discipline](skills/memory-discipline/) | Recall relevant project context, save durable single-fact memories, close superseded entries, preserve conflicts, and enforce safe scope | [CC0-1.0 source](skills/memory-discipline/SOURCE.json) |
 | [Agent Session Audit](skills/agent-session-audit/) | Audit local Agent costs, tokens, failures, retries, latency, anomalies, capability limits, privacy, and CI health gates | [MIT source](skills/agent-session-audit/SOURCE.json) |
+| [Codebase Onboarding](skills/codebase-onboarding/) | Map repository facts, setup, architecture, ownership, troubleshooting, baseline evidence, and documentation drift for new contributors | [MIT source](skills/codebase-onboarding/SOURCE.json) |
 | [Modular Design Principles](skills/modular-design-principles/) | Define boundaries, state ownership, public contracts, isolation, failure containment, and safe evolution | [MIT source](skills/modular-design-principles/SOURCE.json) |
 | [Performance Engineering](skills/performance-engineering/) | Measure and improve latency, capacity, CPU/memory/I/O, responsiveness, cost, and regressions with controlled evidence | [MIT source](skills/performance-engineering/SOURCE.json) |
 | [Data Governance](skills/data-governance/) | Govern cross-system data with contracts, ownership, consent, identity, lineage, quality monitoring, safe fallbacks, and change management | [MIT source](skills/data-governance/SOURCE.json) |
@@ -496,8 +497,8 @@ The catalog is generated from public GitHub `SKILL.md` results with resumable, r
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,641 |
-| Unique content SHAs | 8,014 |
+| Indexed GitHub paths | 12,642 |
+| Unique content SHAs | 8,015 |
 | Source repositories | 6,429 |
 <!-- CATALOG-METRICS:END -->
 
@@ -508,7 +509,7 @@ Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.git
 For a manually curated index of WorkBuddy documentation, MCP integrations, workflows, benchmarks, and Skills, browse [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy).
 
 <!-- CATALOG-ANALYSIS:START -->
-The current static analysis successfully inspected 12,641 paths: 9,953 are structurally adaptable to WorkBuddy, 910 need manual review, 0 are currently WorkBuddy-ready, and 418 contain at least one conservative security signal.
+The current static analysis successfully inspected 12,642 paths: 9,954 are structurally adaptable to WorkBuddy, 910 need manual review, 0 are currently WorkBuddy-ready, and 418 contain at least one conservative security signal.
 <!-- CATALOG-ANALYSIS:END -->
 A clean static scan is never a security guarantee.
 

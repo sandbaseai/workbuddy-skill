@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:alirezarezvani/claude-skills:engineering/skills/codebase-onboarding/SKILL.md",
+    "skill": "codebase-onboarding",
+    "skill_path": "skills/codebase-onboarding",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/codebase-onboarding-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:davepoon/buildwithclaude:plugins/all-skills/skills/agenttrace-session-audit/SKILL.md",
     "skill": "agent-session-audit",
     "skill_path": "skills/agent-session-audit",
