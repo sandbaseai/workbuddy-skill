@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:geoyws/kb-skill:SKILL.md",
+    "skill": "work-ledger",
+    "skill_path": "skills/work-ledger",
+    "category": "productivity",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/work-ledger-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:ever-just/agentskills:skills/agent-discoverability/SKILL.md",
     "skill": "agent-discoverability",
     "skill_path": "skills/agent-discoverability",
