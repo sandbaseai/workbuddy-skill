@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/llm-application-dev/skills/vector-index-tuning/SKILL.md",
+    "skill": "vector-index-tuning",
+    "skill_path": "skills/vector-index-tuning",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/vector-index-tuning-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/llm-application-dev/skills/hybrid-search-implementation/SKILL.md",
     "skill": "hybrid-search-implementation",
     "skill_path": "skills/hybrid-search-implementation",

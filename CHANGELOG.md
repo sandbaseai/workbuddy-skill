@@ -4,6 +4,8 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Vector Index Tuning Skill with measured recall/latency/memory/build baselines, flat/HNSW/IVF/PQ selection, quantization, hard ACL filters, deletion lifecycle, versioned rebuilds, atomic cutover, rollback, and authorized production changes.
+- Hardened release asset publication with sequential rate-limited uploads and retry-friendly GitHub CLI steps after a large-release API limit event.
 - Added the MIT Hybrid Search Implementation Skill with dense/sparse retrieval, RRF and weighted fusion, query routing, reranking, ACL-before-return, score calibration, edge-case handling, index lifecycle, privacy, cost/latency baselines, and authorized experiment gates.
 - Added the MIT LLM Evaluation Skill with versioned task corpora, automated and human metrics, RAG grounding/citation checks, judge calibration, bias and uncertainty reporting, regression thresholds, privacy-safe evidence, and production-experiment authorization gates.
 - Added the MIT Distributed Tracing Skill with OpenTelemetry context propagation, semantic spans, sampling, trace-log correlation, tail-latency diagnosis, collector backpressure, privacy-safe attributes, bounded overhead, and authorized telemetry changes.

@@ -71,6 +71,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Distributed Tracing](skills/distributed-tracing/) | 用隐私安全的 OpenTelemetry 追踪上下文、依赖、延迟、故障和日志关联 |
 | [LLM Evaluation](skills/llm-evaluation/) | 用可复现数据集、分层指标、人工校准和回归门禁验证模型与 RAG 质量 |
 | [Hybrid Search Implementation](skills/hybrid-search-implementation/) | 组合向量与关键词召回，以融合、重排、权限过滤和评测提升检索质量 |
+| [Vector Index Tuning](skills/vector-index-tuning/) | 依据召回、延迟、内存、构建和删除证据调优向量索引与生命周期 |
 | [API Design Principles](skills/api-design-principles/) | 设计具备 HTTP/schema、幂等、分页、授权、版本和成本边界的 API 契约 |
 | [Microservices Architect](skills/microservices-architect/) | 设计服务边界、通信、数据所有权、故障隔离和迁移验证 |
 | [Cloud Design Patterns](skills/cloud-design-patterns/) | 按约束选择韧性、性能、消息、安全、部署和迁移模式 |
@@ -112,8 +113,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,685 |
-| Unique content SHAs | 8,058 |
+| Indexed GitHub paths | 12,686 |
+| Unique content SHAs | 8,059 |
 | Source repositories | 6,432 |
 <!-- CATALOG-METRICS:END -->
 

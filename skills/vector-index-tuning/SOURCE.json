@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides index selection, HNSW parameters, quantization, memory/latency/recall trade-offs, benchmarking, and maintenance guidance but no vector database, embedding model, corpus, query labels, or hardware baseline",
+      "The adopting project must provide authorized vector metrics, safe versioned benchmark data, tenant/deletion filters, isolated rebuild infrastructure, and rollback evidence"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved flat/HNSW/IVF/PQ/DiskANN selection, HNSW tuning, quantization, memory, latency, recall, scaling, and maintenance guidance",
+      "added WorkBuddy measured baselines, ACL/tenant/deletion hard boundaries, privacy-safe telemetry, isolated rebuilds, index version manifests, atomic cutover, rollback, cost, and production authorization controls"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:wshobson/agents:plugins/llm-application-dev/skills/vector-index-tuning/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/vector-index-tuning/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "b3d432b66a0e84ec18b22049d0f7dbe9314fcf4e",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/llm-application-dev/skills/vector-index-tuning/SKILL.md"
+}
