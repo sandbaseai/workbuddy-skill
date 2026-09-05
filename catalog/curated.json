@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/threat-model-analyst/SKILL.md",
+    "skill": "threat-model-analyst",
+    "skill_path": "skills/threat-model-analyst",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/threat-model-analyst-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/azure-well-architected-review/SKILL.md",
     "skill": "azure-well-architected-review",
     "skill_path": "skills/azure-well-architected-review",

@@ -95,6 +95,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Web Design Reviewer](skills/web-design-reviewer/) | 跨视口评审布局、响应式、可访问性和视觉一致性，并以证据安全回归验证 |
 | [Agentic Workflows Router](skills/agentic-workflows/) | 路由 GitHub Agentic Workflow 的设计、创建、调试、升级、报告和安全输出流程 |
 | [Azure Well-Architected Review](skills/azure-well-architected-review/) | 按 Azure 五大支柱对 IaC 和线上资源做只读评审、漂移分析和风险分级 |
+| [STRIDE-A Threat Model Analyst](skills/threat-model-analyst/) | 对代码库建立信任边界、数据流和 STRIDE-A 威胁模型，并支持增量安全态势对比 |
 | [API Design Principles](skills/api-design-principles/) | 设计具备 HTTP/schema、幂等、分页、授权、版本和成本边界的 API 契约 |
 | [Microservices Architect](skills/microservices-architect/) | 设计服务边界、通信、数据所有权、故障隔离和迁移验证 |
 | [Cloud Design Patterns](skills/cloud-design-patterns/) | 按约束选择韧性、性能、消息、安全、部署和迁移模式 |
@@ -136,8 +137,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,709 |
-| Unique content SHAs | 8,082 |
+| Indexed GitHub paths | 12,710 |
+| Unique content SHAs | 8,083 |
 | Source repositories | 6,432 |
 <!-- CATALOG-METRICS:END -->
 

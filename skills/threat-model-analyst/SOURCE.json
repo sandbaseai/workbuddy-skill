@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references bundled orchestrators, diagrams, skeletons, and verification documents that are not packaged in this WorkBuddy adaptation",
+      "The adopting project must provide an authorized workspace, isolated report storage, static-analysis tools, redaction policy, and separate remediation/write authorization"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved explicit activation, STRIDE-A, Zero Trust, defense-in-depth, single and incremental modes, trust boundaries, DFD, findings, prioritization, and verification concepts",
+      "added WorkBuddy read-only defaults, secret/PII redaction, evidence taxonomy, fail-closed unknown handling, production boundaries, explicit Issue/EPIC gates, duplicate-write handling, canary, and rollback controls"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/threat-model-analyst/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/threat-model-analyst/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "9b38ea261d76986d0479300e3d5ea3a07856eac3",
+  "source_url": "https://github.com/github/awesome-copilot/blob/afba5b86b8e8c565b78d213d2cbc9e87e6f32de3/skills/threat-model-analyst/SKILL.md"
+}
