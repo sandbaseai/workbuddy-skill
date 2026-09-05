@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/verify-agent-action/SKILL.md",
+    "skill": "verify-agent-action",
+    "skill_path": "skills/verify-agent-action",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/verify-agent-action-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/bigquery-pipeline-audit/SKILL.md",
     "skill": "bigquery-pipeline-audit",
     "skill_path": "skills/bigquery-pipeline-audit",

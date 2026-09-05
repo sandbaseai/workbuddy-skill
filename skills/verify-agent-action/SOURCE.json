@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides action-packet collection, canonical action identity, six controls, challenge mutations, result states, and report format but no project-specific execution policy, trusted time, nonce store, or repository release evidence",
+      "The adopting project must provide approved canonicalization/digest rules, trustworthy approval and monitoring sources, reviewer identity data, redaction policy, and an independent enforcement point"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved non-execution boundary, exact action identity, approval binding, replay/nonce checks, reviewer independence, evidence contradiction handling, monitoring freshness, challenge mutations, and fail-closed outcomes",
+      "added WorkBuddy git/repository/release checks, secret-safe review packets, branch/commit/force scope checks, explicit execution_authorized false, external-write separation, and fork/branch side-effect review"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/verify-agent-action/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/verify-agent-action/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "1a8d5dcb0d6accecaef12a806c3c89c689d507a3",
+  "source_url": "https://github.com/github/awesome-copilot/blob/f83a8a942cfeaec67a6159d10e92bcfcc2d7f683/skills/verify-agent-action/SKILL.md"
+}
