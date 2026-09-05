@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides concise cross-language error principles but no language adapters, API contract mapper, telemetry backend, fault-injection harness, or retry-policy verifier",
+      "The adopting project must provide authorized repository/runtime metadata, error taxonomy, test environment, observability policy, and recovery ownership"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved exception versus Result selection, recoverable/unrecoverable classification, fail-fast validation, context preservation, cleanup, typed errors, retries, circuit breakers, async handling, and graceful degradation",
+      "removed business/payment-sensitive example; added WorkBuddy secret-safe error context, idempotency and consistency gates, bounded retry budgets, fail-closed degradation, cancellation semantics, synthetic fault testing, and separate production authorization"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:wshobson/agents:plugins/developer-essentials/skills/error-handling-patterns/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/error-handling-patterns/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "856a064920bde207de4360afa66d8b9a39afd55f",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/developer-essentials/skills/error-handling-patterns/SKILL.md"
+}

@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/developer-essentials/skills/error-handling-patterns/SKILL.md",
+    "skill": "error-handling-patterns",
+    "skill_path": "skills/error-handling-patterns",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/error-handling-patterns-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/cicd-automation/skills/secrets-management/SKILL.md",
     "skill": "secrets-management",
     "skill_path": "skills/secrets-management",
