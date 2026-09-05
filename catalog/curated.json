@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:seb1n/awesome-ai-agent-skills:agent-engineering/mcp-server-building/SKILL.md",
+    "skill": "mcp-server-building",
+    "skill_path": "skills/mcp-server-building",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/mcp-server-building-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:seb1n/awesome-ai-agent-skills:agent-engineering/human-in-the-loop/SKILL.md",
     "skill": "human-in-the-loop",
     "skill_path": "skills/human-in-the-loop",

@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT MCP Server Building Skill with bounded capabilities, explicit effects and data classes, structural tool contracts, independent authorization, token audience safeguards, protocol-version verification, interoperability tests, and reversible operations guidance.
 - Added the MIT Human in the Loop Skill with risk-tiered oversight, immutable approval binding, quorum and separation-of-duties controls, timeout/escalation handling, execution-time reauthorization, redacted decision records, compensation, and recovery verification.
 - Added the MIT Agent Red Teaming Skill with target-specific authorization, rules of engagement, privilege mapping, safe synthetic test matrices, traceable findings, bounded execution, cleanup, remediation retesting, and explicit residual risk.
 - Added the MIT Context Optimization Skill with auditable context budgets, conservative deduplication, relevance and information-density scoring, provenance-preserving ordering, coverage validation, exclusion ledgers, and sensitive-domain safeguards.
