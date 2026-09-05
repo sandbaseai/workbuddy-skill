@@ -1,0 +1,21 @@
+{
+  "catalog_id": "github:obra/superpowers:skills/requesting-code-review/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/requesting-code-review/SKILL.md",
+  "repository": "obra/superpowers",
+  "sha": "fa4f2f9965591d6d8a7ef4ad47e6ba4d5ac344d0",
+  "source_commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+  "source_url": "https://github.com/obra/superpowers/blob/b36e0829c6d0140e93cfef2ca599b1b07d4a7797/skills/requesting-code-review/SKILL.md",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source references a reviewer template and a platform-specific subagent dispatcher that are not packaged",
+      "The adopting project must provide an independent reviewer/evaluation harness, exact requirements, repository checks, and separate integration/publication authorization"
+    ],
+    "security_signals": [
+      "preserved fresh-context reviews, base/head SHA scoping, severity triage, feedback handling, and pre-merge review timing",
+      "added WorkBuddy secret-safe review packets, untrusted-diff handling, evidence labels, side-effect checks, and explicit production/integration boundaries"
+    ]
+  }
+}

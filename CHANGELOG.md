@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Requesting Code Review Skill with fresh-context review packets, exact base/head SHA scoping, requirement and test evidence, severity triage, feedback rechecks, and secret-safe integration boundaries.
 - Added the MIT Finishing a Development Branch Skill with test-first integration, target-branch verification, merged-tree rechecks, remote-drift handling, authorized direct-main publication, and user-state-safe cleanup.
 - Added the MIT OpenAPI Spec Generation Skill with design-first/code-first/hybrid workflows, OpenAPI 3.1 contract design, schema and error guidance, security/versioning checks, runtime parity, and compatibility evidence.
 - Added the MIT Architecture Decision Records Skill with evidence-grounded context, alternatives, consequences, lifecycle states, migration boundaries, review triggers, and implementation separation.

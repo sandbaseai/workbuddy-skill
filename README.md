@@ -53,6 +53,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 |---|---|
 | [SandBase](skills/sandbase/) | 发现、比较并调用实时 API 和模型 |
 | [Code Reviewer](skills/code-reviewer/) | 评审正确性、回归、维护性、安全和发布风险 |
+| [Requesting Code Review](skills/requesting-code-review/) | 用独立上下文、精确 SHA、需求和测试证据请求合并前代码评审 |
 | [Bug Reproduction Brief](skills/bug-reproduction-brief/) | 将模糊或间歇性缺陷收敛为最小、可重复、有证据的复现简报 |
 | [Systematic Debugging](skills/systematic-debugging/) | 以红色反馈回路、数据流追踪和可证伪假设定位根因并验证回归 |
 | [Test-Driven Development](skills/test-driven-development/) | 以 RED、GREEN、REFACTOR 建立行为测试、最小实现和回归保护 |
@@ -167,8 +168,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,740 |
-| Unique content SHAs | 8,113 |
+| Indexed GitHub paths | 12,741 |
+| Unique content SHAs | 8,114 |
 | Source repositories | 6,434 |
 <!-- CATALOG-METRICS:END -->
 

@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:obra/superpowers:skills/requesting-code-review/SKILL.md",
+    "skill": "requesting-code-review",
+    "skill_path": "skills/requesting-code-review",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/requesting-code-review-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:obra/superpowers:skills/finishing-a-development-branch/SKILL.md",
     "skill": "finishing-a-development-branch",
     "skill_path": "skills/finishing-a-development-branch",
