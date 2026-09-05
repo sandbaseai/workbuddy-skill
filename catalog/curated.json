@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:PyModel/css-pro-tips:SKILL.md",
+    "skill": "css-protips",
+    "skill_path": "skills/css-protips",
+    "category": "design",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/css-protips-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:undercutsh/firstpass:skills/firstpass/SKILL.md",
     "skill": "confidence-gated-routing",
     "skill_path": "skills/confidence-gated-routing",

@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Modern CSS Pro Tips Skill with semantic tokens, cascade ownership, intrinsic responsive layout, accessible states, progressive enhancement, motion safeguards, and browser-evidence verification.
 - Added the MIT Confidence-Gated Task Routing Skill with per-unit tier assignment, objective escalation, independent verification, bounded handoffs, and post-run calibration.
 - Added the MIT Agent Quality Grading Skill with evidence-bounded task, speed, tool, message, asset, and prompt/config evaluation plus privacy-safe reporting and retest guidance.
 - Added the MIT Skill Sunset Audit Skill with bounded read-only discovery, deterministic drift checks, conservative verdicts, reversible remediation, experiment safeguards, and evidence-based handoff.

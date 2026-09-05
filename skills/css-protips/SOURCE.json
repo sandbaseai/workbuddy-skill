@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["The source's generated projections and external reference index were not packaged"],
+    "packaged_resources": [],
+    "security_signals": ["removed generator/runtime dependencies and retained scoped, no-unsafe-command guidance; no scripts packaged"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:PyModel/css-pro-tips:SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "SKILL.md",
+  "repository": "PyModel/css-pro-tips",
+  "sha": "e00326a774968aed8aa87dd2d9a98e0a7cf55ed7",
+  "source_url": "https://github.com/PyModel/css-pro-tips/blob/7332ca009ecc469f1bc26bd4083620b022896610/SKILL.md"
+}
