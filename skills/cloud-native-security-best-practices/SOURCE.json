@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": ["generalized cloud-platform assumptions and bounded all inspection/testing guidance; no runtime assets packaged"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:LoopyLuci/Skills:skills/cloud-native-security-best-practices/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/cloud-native-security-best-practices/SKILL.md",
+  "repository": "LoopyLuci/Skills",
+  "sha": "86c3160797dd1afa1056ea326addfee0b684b66b",
+  "source_url": "https://github.com/LoopyLuci/Skills/blob/6f9faf8a3a216cddd3eda96a6c6b93c00710fa5b/skills/cloud-native-security-best-practices/SKILL.md"
+}

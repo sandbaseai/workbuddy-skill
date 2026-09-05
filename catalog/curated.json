@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:LoopyLuci/Skills:skills/cloud-native-security-best-practices/SKILL.md",
+    "skill": "cloud-native-security-best-practices",
+    "skill_path": "skills/cloud-native-security-best-practices",
+    "category": "security",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/cloud-native-security-best-practices-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:LoopyLuci/Skills:skills/access-control-security-best-practices/SKILL.md",
     "skill": "access-control-security-best-practices",
     "skill_path": "skills/access-control-security-best-practices",

@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Cloud-Native Security Best Practices Skill with asset and trust-boundary mapping, workload identity, supply-chain integrity, network and tenant isolation, secret handling, runtime safeguards, safe verification, and recovery handoff.
 - Added the MIT Access Control Security Best Practices Skill with authorization-contract mapping, least privilege, RBAC/ABAC safeguards, tenant isolation, indirect-path testing, revocation and cache considerations, and auditable handoff.
 - Added the MIT Deep Project Primer Skill with instruction precedence, repository and architecture mapping, evidence pointers, safe reconnaissance, contract and rollback awareness, and reproducible context-restoration handoff.
 - Added the MIT Playwright Web App QA Skill with critical-path contracts, isolated test contexts, visible-state assertions, console/network diagnostics, responsive and negative-state coverage, redacted artifacts, and flaky-test transparency.
