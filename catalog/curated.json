@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:dEitY719/authoring-skills:skills/skill-check/SKILL.md",
+    "skill": "skill-quality-audit",
+    "skill_path": "skills/skill-quality-audit",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/skill-quality-audit-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:geoyws/kb-skill:SKILL.md",
     "skill": "work-ledger",
     "skill_path": "skills/work-ledger",

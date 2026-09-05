@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["The source repository's references/help.md, checks.md, report-template.md, model-recommendation.md, allowlist, and executable test fixtures were not packaged"],
+    "packaged_resources": [],
+    "security_signals": ["converted to an explicitly read-only, tool-agnostic audit; added untrusted-content handling, no-execution guidance, capability/license cross-checks, and secret exclusion"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:dEitY719/authoring-skills:skills/skill-check/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/skill-quality-audit/SKILL.md",
+  "repository": "dEitY719/authoring-skills",
+  "sha": "9fe5cd97c88e7e2c9be8e2705b6a10fdfe3e58c6",
+  "source_url": "https://github.com/dEitY719/authoring-skills/blob/a7c12826ee96c6c30b9e6d2e95aa13bd972fcfc2/skills/skill-check/SKILL.md"
+}
