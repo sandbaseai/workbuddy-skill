@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/documentation-generation/skills/openapi-spec-generation/SKILL.md",
+    "skill": "openapi-spec-generation",
+    "skill_path": "skills/openapi-spec-generation",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/openapi-spec-generation-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/documentation-generation/skills/architecture-decision-records/SKILL.md",
     "skill": "architecture-decision-records",
     "skill_path": "skills/architecture-decision-records",

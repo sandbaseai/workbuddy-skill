@@ -1,0 +1,21 @@
+{
+  "catalog_id": "github:wshobson/agents:plugins/documentation-generation/skills/openapi-spec-generation/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/openapi-spec-generation/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "6f86431cdd092ff5edfc8b70b2a0d30481428da8",
+  "source_commit": "a30778f8c4e6b0a87567941b7cca4f534bf642b6",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/documentation-generation/skills/openapi-spec-generation/SKILL.md",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source references an optional detailed template library that is not packaged",
+      "The adopting project must provide OpenAPI 3.1 tooling, implementation/spec ownership, consumer fixtures, compatibility checks, and separate change/publication authorization"
+    ],
+    "security_signals": [
+      "preserved design-first/code-first/hybrid workflows, OpenAPI 3.1 structure, reusable schemas, examples, security, versioning, and validation guidance",
+      "added WorkBuddy source-of-truth evidence, untrusted-input handling, tenant/credential boundaries, redaction, runtime parity, and production-side-effect separation"
+    ]
+  }
+}

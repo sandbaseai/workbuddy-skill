@@ -86,6 +86,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [MCP Implementation Security Review](skills/mcp-implementation-security-review/) | 评审 MCP 传输、认证、会话、限流、Schema、RCE、供应链和 OWASP MCP 风险 |
 | [Multi-Stage Dockerfile](skills/multi-stage-dockerfile/) | 用可复现基础镜像、缓存、最小运行时、非 root、扫描、签名和回滚构建容器 |
 | [OpenAPI to Application Code](skills/openapi-to-application-code/) | 将版本化 OpenAPI 契约转换为带校验、鉴权、测试、溯源和发布门禁的应用代码 |
+| [OpenAPI Spec Generation](skills/openapi-spec-generation/) | 从代码或设计生成 OpenAPI 3.1 契约，并验证 Schema、错误、安全和运行时一致性 |
 | [TypeSpec API Operations](skills/typespec-api-operations/) | 在 TypeSpec 中构建带路由、Schema、鉴权、幂等、卡片确认和契约测试的 API 操作 |
 | [Web Application Testing](skills/webapp-testing/) | 用 Playwright 验证浏览器流程、响应式行为、控制台/网络证据和安全的失败工件 |
 | [Diátaxis Documentation Writer](skills/documentation-writer/) | 按教程、How-to、参考和解释四类，以证据、版本和维护门禁编写技术文档 |
@@ -165,8 +166,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,738 |
-| Unique content SHAs | 8,111 |
+| Indexed GitHub paths | 12,739 |
+| Unique content SHAs | 8,112 |
 | Source repositories | 6,434 |
 <!-- CATALOG-METRICS:END -->
 
