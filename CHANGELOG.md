@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Test-Driven Development Skill with RED/GREEN/REFACTOR, expected-failure verification, real-behavior assertions, minimal implementation, mock limits, full regression gates, explicit exceptions, and safe fixture boundaries.
 - Added the MIT Subagent-Driven Development Skill with isolated plan-task execution, fresh scoped workers, task-level specification and quality reviews, bounded fix loops, recovery ledgers, final whole-branch review, and explicit merge/release authority boundaries.
 - Added the MIT Writing Implementation Plans Skill with scope checks, file/interface maps, bite-sized testable tasks, global constraints, dependency and rollback gates, placeholder self-review, and explicit planning-versus-implementation boundaries.
 - Added the MIT Systematic Debugging Skill with red-capable feedback loops, boundary evidence, backward data-flow tracing, working-versus-broken comparisons, falsifiable hypotheses, one-variable tests, regression gates, and architecture escalation after repeated failed fixes.

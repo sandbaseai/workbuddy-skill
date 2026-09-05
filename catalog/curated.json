@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:obra/superpowers:skills/test-driven-development/SKILL.md",
+    "skill": "test-driven-development",
+    "skill_path": "skills/test-driven-development",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/test-driven-development-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:obra/superpowers:skills/subagent-driven-development/SKILL.md",
     "skill": "subagent-driven-development",
     "skill_path": "skills/subagent-driven-development",

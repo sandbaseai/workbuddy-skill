@@ -1,14 +1,20 @@
 {
   "adaptation": {
-    "missing_resources": ["process-agent definitions referenced by the source"],
+    "missing_resources": [
+      "The source references a separate good-test guide and related verification skills that are not packaged with the single upstream SKILL.md entry",
+      "The adopting project must provide test-runner adapters, safe fixtures, environment isolation, coverage policy, redaction, and authorization for integration-side effects"
+    ],
     "packaged_resources": [],
-    "security_signals": [],
+    "security_signals": [
+      "preserved RED/GREEN/REFACTOR cycle, expected-failure verification, minimal implementation, real-behavior assertions, mock limits, full regression checks, and explicit exceptions",
+      "added WorkBuddy test-environment and side-effect boundaries, synthetic-data preference, evidence labels, secret redaction, deterministic-input guidance, and separate approval for production/integration actions"
+    ],
     "tool": "manual WorkBuddy adaptation"
   },
-  "catalog_id": "github:a5c-ai/babysitter:library/methodologies/superpowers/skills/test-driven-development/SKILL.md",
+  "catalog_id": "github:obra/superpowers:skills/test-driven-development/SKILL.md",
   "declared_source_license": "MIT",
   "path": "skills/test-driven-development/SKILL.md",
-  "repository": "a5c-ai/babysitter",
-  "sha": "35404bf64cb88e54dffaeef752bd67bcc945b393",
-  "source_url": "https://github.com/a5c-ai/babysitter/blob/feb68abe397acc14f32b34984975c48fedba2b33/library/methodologies/superpowers/skills/test-driven-development/SKILL.md"
+  "repository": "obra/superpowers",
+  "sha": "4320d8879a639d0536c2239bb80c9d7257ad8947",
+  "source_url": "https://github.com/obra/superpowers/blob/b36e0829c6d0140e93cfef2ca599b1b07d4a7797/skills/test-driven-development/SKILL.md"
 }
