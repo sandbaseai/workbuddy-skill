@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/code-tour/SKILL.md",
+    "skill": "code-tour",
+    "skill_path": "skills/code-tour",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/code-tour-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/aws-resource-health-diagnose/SKILL.md",
     "skill": "cloud-resource-health",
     "skill_path": "skills/cloud-resource-health",

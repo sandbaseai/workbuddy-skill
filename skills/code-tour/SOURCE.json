@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references validator, schema, examples, and documentation-generation scripts that were not packaged",
+      "The adopting project must provide repository-native CodeTour validation or perform the documented manual checks"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "restricted output to .tour JSON by default",
+      "added verified-anchor, secret-safe, and arbitrary-command boundaries"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/code-tour/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/code-tour/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "2edf704d6279af969b1649c6a5207d6444555ae3",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/code-tour/SKILL.md"
+}
