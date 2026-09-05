@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Agent Document Design Skill with context-pointer contracts, progressive disclosure, information hierarchy, exhaustive completion criteria, leading-word guidance, positive instructions, pruning, trigger evaluations, and safe WorkBuddy boundaries.
 - Added the MIT Architecture Friction Scan Skill with history-based hot-spot selection, deep-module/deletion-test analysis, seam and test-friction evidence, candidate ledgers, ADR-aware ranking, structured report guidance, and read-only WorkBuddy boundaries.
 - Added the MIT Tight Bug Loop Skill with red-capable symptom tests, deterministic feedback loops, minimization, falsifiable hypothesis ranking, selective instrumentation, seam-level regression tests, redaction, and cleanup evidence.
 - Added the MIT Git Guardrails Skill with effect classification, command normalization, repository-scoped policy, explicit exceptions, protected-ref safeguards, secret-safe diagnostics, disposable-worktree verification, and recovery maintenance.

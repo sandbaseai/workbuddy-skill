@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references SKILL-MECHANICS.md and project-specific agent instruction formats; these were not packaged",
+      "The adopting project must provide its invocation router, frontmatter schema, evaluation harness, and repository-native document locations"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "added untrusted-document, command-execution, credential/privacy, external-write, capability, and rollback boundaries for WorkBuddy"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:mattpocock/skills:skills/productivity/writing-for-agents/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/agent-document-design/SKILL.md",
+  "repository": "mattpocock/skills",
+  "sha": "a37608daf6e835e767deecfb498facecaaba82ba",
+  "source_url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/productivity/writing-for-agents/SKILL.md"
+}
