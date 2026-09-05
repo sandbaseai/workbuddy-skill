@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:obra/superpowers:skills/writing-plans/SKILL.md",
+    "skill": "writing-plans",
+    "skill_path": "skills/writing-plans",
+    "category": "productivity",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/writing-plans-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:obra/superpowers:skills/systematic-debugging/SKILL.md",
     "skill": "systematic-debugging",
     "skill_path": "skills/systematic-debugging",

@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides a plan template and self-review guidance but no repository mapper, specification parser, task tracker, or execution handoff service",
+      "The adopting project must provide scoped repository inspection, plan storage, evidence links, authorization policy, and downstream execution controls"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved scope checks, file responsibility mapping, explicit interfaces, bite-sized testable tasks, global constraints, no-placeholder review, and spec coverage review",
+      "added WorkBuddy read-only planning boundary, exact evidence/rollback requirements, sensitive-data handling, explicit unknown states, and separation of planning from implementation approval"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:obra/superpowers:skills/writing-plans/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/writing-plans/SKILL.md",
+  "repository": "obra/superpowers",
+  "sha": "f74605bfa9af7a3fb7e4ad7f17750a86a9b0d728",
+  "source_url": "https://github.com/obra/superpowers/blob/b36e0829c6d0140e93cfef2ca599b1b07d4a7797/skills/writing-plans/SKILL.md"
+}

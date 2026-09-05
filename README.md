@@ -64,6 +64,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Microservices Architect](skills/microservices-architect/) | 设计服务边界、通信、数据所有权、故障隔离和迁移验证 |
 | [Cloud Design Patterns](skills/cloud-design-patterns/) | 按约束选择韧性、性能、消息、安全、部署和迁移模式 |
 | [Technical Spike](skills/technical-spike/) | 用时间盒和最小实验解决实现前的关键技术未知数 |
+| [Writing Implementation Plans](skills/writing-plans/) | 将规格拆成按文件、接口、测试、约束和回滚定义的可执行计划 |
 | [Cloud Resource Health](skills/cloud-resource-health/) | 从资源状态、指标、日志、依赖和变更记录诊断云资源健康问题 |
 | [Code Tour](skills/code-tour/) | 为上手、评审、排障和架构理解生成经过真实锚点校验的代码导览 |
 | [Acquire Codebase Knowledge](skills/acquire-codebase-knowledge/) | 从源码、配置和历史证据生成技术栈、架构、集成、测试与风险地图 |
@@ -96,8 +97,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,669 |
-| Unique content SHAs | 8,042 |
+| Indexed GitHub paths | 12,670 |
+| Unique content SHAs | 8,043 |
 | Source repositories | 6,431 |
 <!-- CATALOG-METRICS:END -->
 
