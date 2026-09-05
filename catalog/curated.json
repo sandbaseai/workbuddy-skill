@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:majiayu000/claude-skill-registry:skills/security/llm-app-security/SKILL.md",
+    "skill": "llm-app-security",
+    "skill_path": "skills/llm-app-security",
+    "category": "security",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/llm-app-security-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:a5c-ai/babysitter:library/methodologies/superpowers/skills/test-driven-development/SKILL.md",
     "skill": "test-driven-development",
     "skill_path": "skills/test-driven-development",

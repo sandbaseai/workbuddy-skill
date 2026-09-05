@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["related skills referenced by the source"],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:majiayu000/claude-skill-registry:skills/security/llm-app-security/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/llm-app-security/SKILL.md",
+  "repository": "majiayu000/claude-skill-registry",
+  "sha": "6f1d3440a5086bcf911af5aefda41d200a1cfbeb",
+  "source_url": "https://github.com/majiayu000/claude-skill-registry/blob/64064b431a057f84fe4843699bb32f1f903ad610/skills/security/llm-app-security/SKILL.md"
+}
