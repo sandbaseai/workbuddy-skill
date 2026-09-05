@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:pratie/youtube-transcript-skill:SKILL.md",
+    "skill": "video-transcript-research",
+    "skill_path": "skills/video-transcript-research",
+    "category": "research",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/video-transcript-research-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:Tissue-for-charlie/exam-kit:SKILL.md",
     "skill": "study-materials-kit",
     "skill_path": "skills/study-materials-kit",

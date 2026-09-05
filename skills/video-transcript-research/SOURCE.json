@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": ["The source provider's API client, billing account, and full external service documentation were not packaged"],
+    "packaged_resources": [],
+    "security_signals": ["removed vendor-specific credential-bearing commands and quota claims; added authorized-provider boundary, rate limiting, secret exclusion, timestamp provenance, privacy, and copyright safeguards"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "external_dependency": "The source describes a proprietary transcript API; this adaptation is provider-neutral and does not bundle or endorse that service.",
+  "catalog_id": "github:pratie/youtube-transcript-skill:SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/video-transcript-research/SKILL.md",
+  "repository": "pratie/youtube-transcript-skill",
+  "sha": "a88bdc0325465106478a129aa21d38f765949d9e",
+  "source_url": "https://github.com/pratie/youtube-transcript-skill/blob/df8cf251c30f0315251ad5163d412de57d26bc36/SKILL.md"
+}
