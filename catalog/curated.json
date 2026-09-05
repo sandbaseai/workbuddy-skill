@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:Tissue-for-charlie/exam-kit:SKILL.md",
+    "skill": "study-materials-kit",
+    "skill_path": "skills/study-materials-kit",
+    "category": "content",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/study-materials-kit-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:OKHP3/skillz:.agents/skills/okhp3-process-capture/SKILL.md",
     "skill": "process-capture",
     "skill_path": "skills/process-capture",

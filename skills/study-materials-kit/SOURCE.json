@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["The source repository's scan/extract/render scripts, templates, dependency setup, and visual fixtures were not packaged"],
+    "packaged_resources": [],
+    "security_signals": ["removed dependency-install commands and hidden runtime assumptions; added source grounding, image/parser limitations, provenance, offline, privacy, and no-execution safeguards"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:Tissue-for-charlie/exam-kit:SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/study-materials-kit/SKILL.md",
+  "repository": "Tissue-for-charlie/exam-kit",
+  "sha": "ec286dc0f7736237d15241d03eda8a7e76162f1c",
+  "source_url": "https://github.com/Tissue-for-charlie/exam-kit/blob/316bac543dfc742110cecf8b0c4275f59351fa47/SKILL.md"
+}

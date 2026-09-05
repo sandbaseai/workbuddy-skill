@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Study Materials Kit Skill with source manifests, chapter modeling, original-question provenance, bounded generation, dependency-aware knowledge graphs, offline/print validation, and extraction-limitation reporting.
 - Added the MIT Recurring Process Capture Skill with repeat-pattern evidence, readiness classification, bounded backlog/skeleton outputs, planned-versus-active state, secret exclusion, and authoring handoff.
 - Added the MIT Skill Authoring Skill with intent and trigger contracts, executable-first design, representative evaluation, safe capability declarations, context-aware disclosure, packaging, and quality gates.
 - Added the MIT Skill Progressive Refactor Skill with contract freezing, core/detail separation, bounded reference extraction, rollback preservation, behavior checks, and complete post-refactor quality re-audit.
