@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references repository-specific MCP clients, build harnesses, transport fixtures, and generated inventories that are not packaged",
+      "The adopting project must provide an isolated test environment, repository-native build/install commands, safe fixtures, and separate publication or production-mutation authorization"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved fresh-process session, capability discovery, source/runtime/docs parity, contract checks, negative-path testing, installation smoke test, and evidence report guidance",
+      "added WorkBuddy secret-redaction, untrusted-input, production-side-effect, missing-evidence, and independent publication boundaries"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/mcp-release-qa/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/mcp-release-qa/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "3d42ef38276e391e57b26e6124d76bb5bec8ffcd",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/mcp-release-qa/SKILL.md"
+}

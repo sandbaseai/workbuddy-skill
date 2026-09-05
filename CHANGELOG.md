@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT MCP Release QA Skill with fresh-process protocol sessions, source/runtime/metadata/docs parity, contract and negative-path checks, installation smoke tests, secret-safe evidence, and explicit production-side-effect boundaries.
 - Added the MIT Copilot PR Autopilot Skill with bounded review loops, thread disposition, focused commits, repository tests, convergence proof, fork/human-review boundaries, and explicit merge gates.
 - Added the MIT Verify Agent Action Skill with exact action identity, approval binding, replay/nonce checks, reviewer independence, contradiction handling, monitoring freshness, fail-closed results, and explicit non-execution boundaries.
 - Added the MIT BigQuery Pipeline Audit Skill with cost/job exposure checks, dry-run safety, bounded backfills, partition pruning, idempotent writes, observability, and explicit query/production-write gates.
