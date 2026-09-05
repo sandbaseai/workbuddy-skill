@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:alirezarezvani/claude-skills:.gemini/skills/agent-decision-receipts/SKILL.md",
+    "skill": "decision-receipts",
+    "skill_path": "skills/decision-receipts",
+    "category": "security",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/decision-receipts-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/build-evidence-map/SKILL.md",
     "skill": "evidence-map-builder",
     "skill_path": "skills/evidence-map-builder",

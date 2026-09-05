@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references build_action_manifest.py, OpenAgentOntology, several cross-referenced skills, and optional post-quantum dependencies; these were not packaged",
+      "The adopting project must provide an approved signing primitive, canonicalization rules, public-key trust store, protected key storage, policy integration, and retention/incident handling"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "generalized provider-specific receipt minting into WorkBuddy; added action-before-side-effect binding, target/policy scoping, secret-safe input hashes, explicit unsigned states, offline verification requirements, and non-legal-claim boundaries"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:alirezarezvani/claude-skills:.gemini/skills/agent-decision-receipts/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/decision-receipts/SKILL.md",
+  "repository": "alirezarezvani/claude-skills",
+  "sha": "9c33184b5ad0a738633d6ff9def1c89f02efe50c",
+  "source_url": "https://github.com/alirezarezvani/claude-skills/blob/19392f7a08264ed00486a251f5b2098321771f94/.gemini/skills/agent-decision-receipts/SKILL.md"
+}
