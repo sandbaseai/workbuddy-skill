@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["claude-for-legal practice-level calibration and matter workspace configuration"],
+    "packaged_resources": [],
+    "security_signals": ["internal legal configuration paths and posting commands removed from adaptation"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:anthropics/claude-for-legal:product-legal/skills/launch-review/SKILL.md",
+  "declared_source_license": "Apache-2.0",
+  "path": "skills/launch-risk-review/SKILL.md",
+  "repository": "anthropics/claude-for-legal",
+  "sha": "465c93a9db077f770eebfa588812b22fd7462906",
+  "source_url": "https://github.com/anthropics/claude-for-legal/blob/4a6c651889c97cc9140580363c73e0eb17379c2b/product-legal/skills/launch-review/SKILL.md"
+}

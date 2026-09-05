@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:anthropics/claude-for-legal:product-legal/skills/launch-review/SKILL.md",
+    "skill": "launch-risk-review",
+    "skill_path": "skills/launch-risk-review",
+    "category": "security",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/launch-risk-review-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:anthropics/claude-plugins-community:testdino/skills/testdino-health/SKILL.md",
     "skill": "integration-health-check",
     "skill_path": "skills/integration-health-check",
