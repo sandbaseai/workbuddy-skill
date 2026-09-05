@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Diátaxis Documentation Writer Skill with tutorial/how-to/reference/explanation classification, explicit assumptions and clarification states, source/version evidence, safe examples, API/error documentation, validation, accessibility, privacy, deprecation, maintenance, and publication gates.
 - Added the MIT Web Application Testing Skill with authorized Playwright environments, synthetic data and credential boundaries, stable selectors, deterministic waits, side-effect controls, responsive/keyboard coverage, redacted failure evidence, console/network diagnostics, and cleanup gates.
 - Added the MIT TypeSpec API Operations Skill with CRUD routing, explicit schemas, auth and tenant boundaries, pagination, idempotency/ETag, safe Adaptive Card confirmations, negative contract tests, consumer compatibility, canary, and rollback gates.
 - Added the MIT OpenAPI to Application Code Skill with versioned-spec validation, ambiguity tracking, framework-aware boundaries, server-side validation, authorization and side-effect controls, contract/negative tests, provenance, canary, and rollback gates.

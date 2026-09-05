@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides Diátaxis principles, the four document types, clarification questions, outline approval, content generation, clarity/accuracy/user-centricity/consistency guidance, and a restriction on unrequested external research but no repository/version evidence, validation, privacy policy, ownership, or publication controls",
+      "The adopting project must provide authorized source context, target audience and version, factual evidence, isolated command checks, redaction rules, reviewers, owner, publication scope, and maintenance/rollback evidence"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved Diátaxis tutorials/how-to/reference/explanation distinctions, clarity/accuracy/user-centricity/consistency principles, clarify-then-outline workflow, contextual reading, and external-source boundary",
+      "added WorkBuddy explicit defaults and clarification states, source/version evidence ledger, safe synthetic examples, API/auth/error documentation, command and link validation, privacy/accessibility checks, deprecation/maintenance triggers, and publication authorization gates"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/documentation-writer/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/documentation-writer/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "93e3fbf57fe64179570de382347db8258c661b56",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/documentation-writer/SKILL.md"
+}

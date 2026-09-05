@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/documentation-writer/SKILL.md",
+    "skill": "documentation-writer",
+    "skill_path": "skills/documentation-writer",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/documentation-writer-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/webapp-testing/SKILL.md",
     "skill": "webapp-testing",
     "skill_path": "skills/webapp-testing",

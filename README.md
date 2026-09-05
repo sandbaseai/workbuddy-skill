@@ -88,6 +88,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [OpenAPI to Application Code](skills/openapi-to-application-code/) | 将版本化 OpenAPI 契约转换为带校验、鉴权、测试、溯源和发布门禁的应用代码 |
 | [TypeSpec API Operations](skills/typespec-api-operations/) | 在 TypeSpec 中构建带路由、Schema、鉴权、幂等、卡片确认和契约测试的 API 操作 |
 | [Web Application Testing](skills/webapp-testing/) | 用 Playwright 验证浏览器流程、响应式行为、控制台/网络证据和安全的失败工件 |
+| [Diátaxis Documentation Writer](skills/documentation-writer/) | 按教程、How-to、参考和解释四类，以证据、版本和维护门禁编写技术文档 |
 | [API Design Principles](skills/api-design-principles/) | 设计具备 HTTP/schema、幂等、分页、授权、版本和成本边界的 API 契约 |
 | [Microservices Architect](skills/microservices-architect/) | 设计服务边界、通信、数据所有权、故障隔离和迁移验证 |
 | [Cloud Design Patterns](skills/cloud-design-patterns/) | 按约束选择韧性、性能、消息、安全、部署和迁移模式 |
@@ -129,8 +130,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,702 |
-| Unique content SHAs | 8,075 |
+| Indexed GitHub paths | 12,703 |
+| Unique content SHAs | 8,076 |
 | Source repositories | 6,432 |
 <!-- CATALOG-METRICS:END -->
 
