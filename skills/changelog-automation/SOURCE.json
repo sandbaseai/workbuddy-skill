@@ -1,0 +1,21 @@
+{
+  "catalog_id": "github:wshobson/agents:plugins/documentation-generation/skills/changelog-automation/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/changelog-automation/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "babb783123990bd403157bfd1de271d2224be833",
+  "source_commit": "a30778f8c4e6b0a87567941b7cca4f534bf642b6",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/documentation-generation/skills/changelog-automation/SKILL.md",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source references optional detailed patterns and repository-specific release tooling that are not packaged",
+      "The adopting project must provide Git history, version policy, release checks, authorized impact evidence, and publication approval"
+    ],
+    "security_signals": [
+      "preserved Keep a Changelog categories, Conventional Commits, semantic versioning, release note generation, and consistency checks",
+      "added WorkBuddy source traceability, no-fabrication rules, sensitive-data redaction, generator write boundaries, and unverified-evidence handling"
+    ]
+  }
+}

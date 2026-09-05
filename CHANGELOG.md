@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Changelog Automation Skill with source-traceable Keep a Changelog entries, Conventional Commits, semantic-version guidance, breaking-change migration evidence, redaction, and non-overwriting generation gates.
 - Added the MIT Human-AI Document Standard Skill with SPEC/NOTE/BUG/unknown blocks, AI reading manifests, grounded conversion guidance, reader tests, and evidence-bounded validation.
 - Added the MIT Skill Evaluation Methodology with layered static/judge/simulation evaluation, transparent dimension weights, normalized composite scoring, confidence guidance, anti-pattern checks, and evidence-bounded remediation.
 - Added the MIT Before You Build Skill with compact pre-mortem review, demand/positioning/monetization/retention/trust/distribution/adoption risks, evidence states, minimum validation steps, and delayed-scope decisions.

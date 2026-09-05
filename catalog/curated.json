@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/documentation-generation/skills/changelog-automation/SKILL.md",
+    "skill": "changelog-automation",
+    "skill_path": "skills/changelog-automation",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/changelog-automation-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/documentation-standards/skills/hads/SKILL.md",
     "skill": "hads",
     "skill_path": "skills/hads",
