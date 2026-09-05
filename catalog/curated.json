@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/azure-resource-health-diagnose/SKILL.md",
+    "skill": "azure-resource-health-diagnose",
+    "skill_path": "skills/azure-resource-health-diagnose",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/azure-resource-health-diagnose-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/repo-standardizer/SKILL.md",
     "skill": "repo-standardizer",
     "skill_path": "skills/repo-standardizer",

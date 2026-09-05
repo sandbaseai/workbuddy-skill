@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides Azure MCP/CLI discovery, resource-specific health checks, KQL examples, root-cause categories, remediation phases, and report examples but no project-specific subscription scope, secret policy, evidence provenance, or rollback process",
+      "The adopting project must provide authorized Azure read access, approved diagnostic tools, metric baselines, redaction policy, incident ownership, and separately authorized remediation/deployment procedures"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved Azure resource discovery, health assessment, service-specific indicators, logs/telemetry correlation, KQL diagnostics, root-cause analysis, severity, and remediation planning",
+      "added WorkBuddy least-privilege/read-only defaults, subscription boundaries, secret-safe evidence, fixed provenance, explicit unknown semantics, redacted reports, independent production-write gates, and post-fix verification"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/azure-resource-health-diagnose/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/azure-resource-health-diagnose/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "663e02e39a75b3b2f08384131ebc818612388f61",
+  "source_url": "https://github.com/github/awesome-copilot/blob/caab1f623bb68a330f294a11279597d7ae7be737/skills/azure-resource-health-diagnose/SKILL.md"
+}

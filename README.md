@@ -99,6 +99,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Secret Scanning](skills/secret-scanning/) | 配置 Secret Scanning、Push Protection、自定义模式和安全的凭据泄露处置流程 |
 | [CodeQL Code Scanning](skills/codeql/) | 配置最小权限的 CodeQL Actions/CLI 扫描、语言矩阵、SARIF 和 monorepo 分析 |
 | [Repository Standardizer](skills/repo-standardizer/) | 清理公开 README 与文档，分离内部建设约束，并审计模板、CI、CODEOWNERS 和治理配置 |
+| [Azure Resource Health Diagnosis](skills/azure-resource-health-diagnose/) | 基于只读健康状态、日志、遥测和依赖证据诊断 Azure 资源并生成分阶段修复计划 |
 | [API Design Principles](skills/api-design-principles/) | 设计具备 HTTP/schema、幂等、分页、授权、版本和成本边界的 API 契约 |
 | [Microservices Architect](skills/microservices-architect/) | 设计服务边界、通信、数据所有权、故障隔离和迁移验证 |
 | [Cloud Design Patterns](skills/cloud-design-patterns/) | 按约束选择韧性、性能、消息、安全、部署和迁移模式 |
@@ -140,8 +141,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,713 |
-| Unique content SHAs | 8,086 |
+| Indexed GitHub paths | 12,714 |
+| Unique content SHAs | 8,087 |
 | Source repositories | 6,432 |
 <!-- CATALOG-METRICS:END -->
 
