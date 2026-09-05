@@ -1,4 +1,10 @@
 [{
+    "catalog_id": "github:wshobson/agents:plugins/developer-essentials/skills/debugging-strategies/SKILL.md",
+    "skill": "debugging-strategies",
+    "skill_path": "skills/debugging-strategies",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/debugging-strategies-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/incident-response/skills/incident-runbook-templates/SKILL.md",
     "skill": "incident-runbook-templates",
     "skill_path": "skills/incident-runbook-templates",
