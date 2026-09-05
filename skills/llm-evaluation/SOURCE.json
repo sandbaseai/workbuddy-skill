@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides automated metrics, human evaluation, LLM-as-judge, RAG retrieval metrics, benchmarking, and an evaluation-suite example but no model endpoint, task corpus, gold labels, grader calibration, or experiment platform",
+      "The adopting project must provide authorized model access, versioned safe evaluation data, reviewer process, statistical policy, privacy controls, and isolated experiment targets"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved automated text/classification/retrieval metrics, human dimensions, pointwise/pairwise/reference-based judging, regression tracking, and benchmark guidance",
+      "added WorkBuddy task/risk contracts, privacy-safe corpus handling, judge calibration, bias and uncertainty reporting, safety/permission gates, cost/latency checks, single-variable comparisons, and explicit production-experiment authorization"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:wshobson/agents:plugins/llm-application-dev/skills/llm-evaluation/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/llm-evaluation/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "cecc8609fae6fe0ba2d4f1b31e8f59d2cb15e725",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/llm-application-dev/skills/llm-evaluation/SKILL.md"
+}
