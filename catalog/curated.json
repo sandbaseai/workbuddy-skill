@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/backend-development/skills/workflow-orchestration-patterns/SKILL.md",
+    "skill": "workflow-orchestration-patterns",
+    "skill_path": "skills/workflow-orchestration-patterns",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/workflow-orchestration-patterns-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/developer-essentials/skills/error-handling-patterns/SKILL.md",
     "skill": "error-handling-patterns",
     "skill_path": "skills/error-handling-patterns",

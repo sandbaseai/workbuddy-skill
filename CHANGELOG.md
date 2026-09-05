@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Workflow Orchestration Patterns Skill with deterministic workflow/activity boundaries, idempotent activities, bounded retries and timeouts, payload limits, version compatibility, Saga compensation, human approval gates, and recovery testing.
 - Added the MIT Error Handling Patterns Skill with failure taxonomy, typed error contracts, safe context propagation, resource cleanup, async cancellation, bounded retries, circuit breakers, fail-closed degradation, observability, and synthetic fault validation.
 - Added the MIT Secrets Management Skill with provider-agnostic storage, workload identity, least-privilege CI/CD injection, fork/PR trust controls, rotation and revocation, scanning, auditability, value-free evidence, and explicit mutation authorization.
 - Added the MIT API Design Principles Skill with resource and HTTP semantics, schema-first GraphQL, pagination, idempotency, concurrency, authorization, versioning, consumer migration, query-cost, rate-limit, contract-test, and rollback boundaries.

@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides Temporal-oriented workflow/activity principles but no workflow runtime connector, history/replay verifier, queue metrics adapter, schema registry, or approval service",
+      "The adopting project must provide authorized runtime metadata, deterministic test environment, idempotency/compensation policy, payload storage, and recovery ownership"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved use-case selection, workflow/activity separation, determinism, idempotent activities, timeouts, heartbeats, retry classification, monitoring, task queues, child workflows, and Saga patterns",
+      "added WorkBuddy read-only and side-effect boundaries, tenant/approval controls, PII/secret-safe payloads, bounded replay/compensation, explicit versioning, cancellation, recovery evidence, and synthetic fault testing"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:wshobson/agents:plugins/backend-development/skills/workflow-orchestration-patterns/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/workflow-orchestration-patterns/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "3d4a8d2866995af4417120d6310b7430e7fcdc0a",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/backend-development/skills/workflow-orchestration-patterns/SKILL.md"
+}
