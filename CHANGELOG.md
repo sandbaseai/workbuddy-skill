@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Accessibility Review Skill with evidence-first UI inspection, semantic and keyboard checks, focus and ARIA validation, assistive-technology limitations, severity-based findings, and retest handoff.
 - Added the MIT Inspect Runtime Evidence Skill with exact capability mapping, read-only inspection, evidence provenance and freshness, platform-level execution statuses, stale/crossed evidence detection, and uncertainty-aware support reports.
 - Added the MIT Respec Skill for evidence-driven specification revisions, explicit scope and non-goals, observable acceptance contracts, compatibility and migration checks, approval traceability, and safe delivery handoff.
 - Added the MIT Documentation Skill with repository reconnaissance, evidence mapping, executable-command verification, audience-aware structure, accessibility and portability guidance, documentation audits, and uncertainty-aware handoff.

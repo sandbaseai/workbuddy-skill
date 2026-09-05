@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:aydabd/cacad:.github/skills/accessibility-review/SKILL.md",
+    "skill": "accessibility-review",
+    "skill_path": "skills/accessibility-review",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/accessibility-review-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:DrHepa/world-forge:.agents/skills/inspect-runtime-evidence/SKILL.md",
     "skill": "inspect-runtime-evidence",
     "skill_path": "skills/inspect-runtime-evidence",
