@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the Apache-2.0 Go Testing Skill with package-boundary decisions, `require` versus `assert` guidance, deterministic fixtures, race-aware diagnostics, scoped verification, and reproducible handoff.
 - Added the MIT LLM Application Security Skill with trust-boundary mapping, input and retrieval isolation, tenant authorization, tool-side-effect controls, output safeguards, abuse prevention, and safe remediation evidence.
 - Added the MIT Test-Driven Development Skill with behavior-first RED tests, smallest-change GREEN implementation, evidence-preserving REFACTOR loops, adjacent boundary checks, and reproducible handoff.
 - Added the MIT Accessibility Review Skill with evidence-first UI inspection, semantic and keyboard checks, focus and ARIA validation, assistive-technology limitations, severity-based findings, and retest handoff.

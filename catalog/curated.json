@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:alex-ilgayev/MCPSpy:.claude/skills/go-testing/SKILL.md",
+    "skill": "go-testing",
+    "skill_path": "skills/go-testing",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/go-testing-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:majiayu000/claude-skill-registry:skills/security/llm-app-security/SKILL.md",
     "skill": "llm-app-security",
     "skill_path": "skills/llm-app-security",

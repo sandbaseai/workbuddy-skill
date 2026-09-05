@@ -1,0 +1,9 @@
+{
+  "adaptation": {"missing_resources": [], "packaged_resources": [], "security_signals": [], "tool": "manual WorkBuddy adaptation"},
+  "catalog_id": "github:alex-ilgayev/MCPSpy:.claude/skills/go-testing/SKILL.md",
+  "declared_source_license": "Apache-2.0",
+  "path": "skills/go-testing/SKILL.md",
+  "repository": "alex-ilgayev/MCPSpy",
+  "sha": "2c3943c132f1b4603a85ef38ce9c8da1e9354851",
+  "source_url": "https://github.com/alex-ilgayev/MCPSpy/blob/0798c51342038e5f307b34975c5e02f9e4eb6a67/.claude/skills/go-testing/SKILL.md"
+}
