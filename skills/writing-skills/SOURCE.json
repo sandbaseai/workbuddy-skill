@@ -1,0 +1,21 @@
+{
+  "catalog_id": "github:obra/superpowers:skills/writing-skills/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/writing-skills/SKILL.md",
+  "repository": "obra/superpowers",
+  "sha": "f33f39f523c8a3ae2ec0eaf365a524571df8ff3d",
+  "source_commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+  "source_url": "https://github.com/obra/superpowers/blob/b36e0829c6d0140e93cfef2ca599b1b07d4a7797/skills/writing-skills/SKILL.md",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source references runtime-specific guidance and companion skills that are not packaged as dependencies",
+      "The adopting project must provide pressure prompts, an isolated harness, repository validators, source/license review, and deployment authorization"
+    ],
+    "security_signals": [
+      "preserved RED-GREEN-REFACTOR skill authoring, discovery optimization, scope selection, concise structure, pressure scenarios, and regression guidance",
+      "added WorkBuddy evidence labels, untrusted-context handling, redaction, security boundaries, exact candidate commits, and publication gates"
+    ]
+  }
+}

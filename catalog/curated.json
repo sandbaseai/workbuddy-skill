@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:obra/superpowers:skills/writing-skills/SKILL.md",
+    "skill": "writing-skills",
+    "skill_path": "skills/writing-skills",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/writing-skills-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:obra/superpowers:skills/requesting-code-review/SKILL.md",
     "skill": "requesting-code-review",
     "skill_path": "skills/requesting-code-review",
