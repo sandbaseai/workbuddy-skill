@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:aydabd/github-bootstrap:templates/.github/skills/breaking-change-review/SKILL.md",
+    "skill": "breaking-change-review",
+    "skill_path": "skills/breaking-change-review",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/breaking-change-review-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:aydabd/github-bootstrap:templates/.github/skills/compliance-review/SKILL.md",
     "skill": "compliance-review",
     "skill_path": "skills/compliance-review",
