@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/multi-stage-dockerfile/SKILL.md",
+    "skill": "multi-stage-dockerfile",
+    "skill_path": "skills/multi-stage-dockerfile",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/multi-stage-dockerfile-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/mcp-implementation-security-review/SKILL.md",
     "skill": "mcp-implementation-security-review",
     "skill_path": "skills/mcp-implementation-security-review",

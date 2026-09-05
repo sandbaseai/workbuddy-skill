@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides multi-stage structure, minimal base images, layer caching, dockerignore, non-root execution, build-secret avoidance, vulnerability scanning, and health checks but no application runtime contract, image provenance, dependency lock policy, registry controls, or rollout evidence",
+      "The adopting project must provide authorized build and registry scopes, pinned base/dependency evidence, isolated runtime tests, SBOM/signature/provenance results, deployment permissions, owners, and rollback evidence"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved builder/runtime separation, official minimal bases, cache-aware layers, dockerignore, non-root execution, reduced dependencies, build-secret avoidance, vulnerability scanning, and health checks",
+      "added WorkBuddy secret and authorization boundaries, digest/provenance and multi-architecture checks, runtime capability and network controls, SBOM/license/secret evidence, canary and digest rollback gates"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/multi-stage-dockerfile/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/multi-stage-dockerfile/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "704382de43e25d889c671455cda076d0d28e71e5",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/multi-stage-dockerfile/SKILL.md"
+}
