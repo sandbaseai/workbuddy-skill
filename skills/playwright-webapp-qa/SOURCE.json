@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": ["generalized browser execution and test-data boundaries; no source credentials or runtime assets packaged"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:aims1425-lab/hermes-agent-public-skills:skills/playwright-webapp-qa/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "skills/playwright-webapp-qa/SKILL.md",
+  "repository": "aims1425-lab/hermes-agent-public-skills",
+  "sha": "c4b9f3b3a9d324f8f796c50605c319ab0db035c3",
+  "source_url": "https://github.com/aims1425-lab/hermes-agent-public-skills/blob/f7f0ad9211aab8b18e134a138e6ee2f668ee2a4a/skills/playwright-webapp-qa/SKILL.md"
+}

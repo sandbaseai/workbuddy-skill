@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Playwright Web App QA Skill with critical-path contracts, isolated test contexts, visible-state assertions, console/network diagnostics, responsive and negative-state coverage, redacted artifacts, and flaky-test transparency.
 - Added the MIT Bug Triage and Fix Analysis Skill with evidence-bounded intake, stack-trace analysis, hypothesis testing, duplicate and regression assessment, severity/priority separation, safe fix proposals, and verification handoff.
 - Added the MIT Log Monitoring and Pattern Detection Skill with bounded log evidence, normalized pattern detection, cross-source correlation, privacy-safe alert design, missing-data handling, and reproducible reporting.
 - Added the Apache-2.0 Release Traceability Skill with source-to-runtime identity mapping, artifact and digest invariants, host-rebuild detection, deployment and rollback evidence, fail-closed verification, and auditable release handoff.

@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:aims1425-lab/hermes-agent-public-skills:skills/playwright-webapp-qa/SKILL.md",
+    "skill": "playwright-webapp-qa",
+    "skill_path": "skills/playwright-webapp-qa",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/playwright-webapp-qa-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:0xRayAI/xray:skills/bug-triage/SKILL.md",
     "skill": "bug-triage",
     "skill_path": "skills/bug-triage",
