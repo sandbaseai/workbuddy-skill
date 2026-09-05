@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/incident-postmortem/SKILL.md",
+    "skill": "incident-postmortem",
+    "skill_path": "skills/incident-postmortem",
+    "category": "productivity",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/incident-postmortem-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/aws-well-architected-review/SKILL.md",
     "skill": "aws-well-architected-review",
     "skill_path": "skills/aws-well-architected-review",

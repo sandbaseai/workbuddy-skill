@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides a document template but no incident-system connectors, evidence queries, or action-tracking integration",
+      "The adopting project must provide authorized logs/metrics/ticket access, retention/redaction policy, and publication workflow"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved blameless causal analysis, timeline reconstruction, impact quantification, and owned action items",
+      "added evidence/confidence labels, secret and customer-data redaction, report-first defaults, and explicit publication boundaries"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/incident-postmortem/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/incident-postmortem/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "1d3faf2176d90b6dda0a89640e227b2757959bc9",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/incident-postmortem/SKILL.md"
+}
