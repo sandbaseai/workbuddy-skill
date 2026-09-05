@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source's context-ranking and context-compression companion Skills were not packaged",
+      "A semantic similarity model, tokenizer, reranker, and evaluation set must be supplied by the adopting team"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "added provenance and exclusion ledgers, conservative deduplication, untrusted-content boundaries, sensitivity handling, conflict preservation, and domain-sensitive escalation"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:seb1n/awesome-ai-agent-skills:context-engineering/context-optimization/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/context-optimization/SKILL.md",
+  "repository": "seb1n/awesome-ai-agent-skills",
+  "sha": "9d751a5780152186f808878547d4e18315deae33",
+  "source_url": "https://github.com/seb1n/awesome-ai-agent-skills/blob/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/context-engineering/context-optimization/SKILL.md"
+}

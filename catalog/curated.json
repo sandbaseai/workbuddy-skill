@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:seb1n/awesome-ai-agent-skills:context-engineering/context-optimization/SKILL.md",
+    "skill": "context-optimization",
+    "skill_path": "skills/context-optimization",
+    "category": "research",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/context-optimization-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:seb1n/awesome-ai-agent-skills:agent-security/prompt-injection-defense/SKILL.md",
     "skill": "prompt-injection-defense",
     "skill_path": "skills/prompt-injection-defense",
