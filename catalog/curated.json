@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/documentation-standards/skills/grounded-vault/SKILL.md",
+    "skill": "grounded-vault",
+    "skill_path": "skills/grounded-vault",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/grounded-vault-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:anthropics/skills:skills/mcp-builder/SKILL.md",
     "skill": "mcp-builder",
     "skill_path": "skills/mcp-builder",

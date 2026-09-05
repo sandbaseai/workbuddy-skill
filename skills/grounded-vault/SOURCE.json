@@ -1,0 +1,21 @@
+{
+  "catalog_id": "github:wshobson/agents:plugins/documentation-standards/skills/grounded-vault/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/grounded-vault/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "e446fe7b367ce15774d8563466ef17d9617cf817",
+  "source_commit": "a30778f8c4e6b0a87567941b7cca4f534bf642b6",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/documentation-standards/skills/grounded-vault/SKILL.md",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source references an optional check script and details document that are not packaged",
+      "The adopting project must provide a Git-backed vault, source ingestion authority, repository-native checks, and publication approval"
+    ],
+    "security_signals": [
+      "preserved raw/wiki/archive layering, claim provenance, Git fingerprints, drift detection, archive history, and strict check guidance",
+      "added WorkBuddy evidence states, untrusted-source handling, public redaction, data minimization, and separate write/publication boundaries"
+    ]
+  }
+}

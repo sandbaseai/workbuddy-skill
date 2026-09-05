@@ -89,6 +89,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [TypeSpec API Operations](skills/typespec-api-operations/) | 在 TypeSpec 中构建带路由、Schema、鉴权、幂等、卡片确认和契约测试的 API 操作 |
 | [Web Application Testing](skills/webapp-testing/) | 用 Playwright 验证浏览器流程、响应式行为、控制台/网络证据和安全的失败工件 |
 | [Diátaxis Documentation Writer](skills/documentation-writer/) | 按教程、How-to、参考和解释四类，以证据、版本和维护门禁编写技术文档 |
+| [Grounded Vault](skills/grounded-vault/) | 用 raw/wiki/archive 分层、逐条来源、Git 指纹和漂移检查维护可审计知识库 |
 | [MCP Security Audit](skills/mcp-security-audit/) | 审计 MCP 配置中的凭据、命令注入、依赖版本、Server 清单、网络和权限边界 |
 | [MCP Builder Guide](skills/mcp-builder/) | 从协议/API 调研到工具契约、实现、运行时验证和只读评估，构建可发现的 MCP 服务 |
 | [MCP Release QA](skills/mcp-release-qa/) | 以真实协议会话核验 MCP 运行时、源码、元数据、文档、失败路径和安装产物 |
@@ -159,9 +160,9 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,732 |
-| Unique content SHAs | 8,105 |
-| Source repositories | 6,433 |
+| Indexed GitHub paths | 12,733 |
+| Unique content SHAs | 8,106 |
+| Source repositories | 6,434 |
 <!-- CATALOG-METRICS:END -->
 
 静态检查只能帮助筛选，不能替代人工安全审查。目录的字段说明和来源约定见[目录文档](catalog/README.md)；适配指南见[中文文档](docs/adapting-skills.zh-CN.md)和[English guide](docs/adapting-skills.md)。
