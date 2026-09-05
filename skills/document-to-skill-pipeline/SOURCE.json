@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references extract_document.py, token_budget_estimator.py, book_skill_validator.py, skill_plugin_emitter.py, and multiple conversion/rights reference files; these were not packaged",
+      "The adopting project must provide format extractors, token accounting, link/budget validation, rights policy, network permission handling, and WorkBuddy packaging/release integration"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "generalized the source's document compiler into WorkBuddy; added explicit rights gates, source trust labeling, progressive-disclosure budgets, authority non-expansion, secret/PII exclusions, incremental provenance, and fail-closed validation statuses"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:alirezarezvani/claude-skills:.gemini/skills/book-to-skill/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/document-to-skill-pipeline/SKILL.md",
+  "repository": "alirezarezvani/claude-skills",
+  "sha": "9d0c93c498b9180d6093524073f558424a9f6a6e",
+  "source_url": "https://github.com/alirezarezvani/claude-skills/blob/19392f7a08264ed00486a251f5b2098321771f94/.gemini/skills/book-to-skill/SKILL.md"
+}

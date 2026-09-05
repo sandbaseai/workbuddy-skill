@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:alirezarezvani/claude-skills:.gemini/skills/book-to-skill/SKILL.md",
+    "skill": "document-to-skill-pipeline",
+    "skill_path": "skills/document-to-skill-pipeline",
+    "category": "content",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/document-to-skill-pipeline-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:alirezarezvani/claude-skills:.gemini/skills/agent-decision-receipts/SKILL.md",
     "skill": "decision-receipts",
     "skill_path": "skills/decision-receipts",
