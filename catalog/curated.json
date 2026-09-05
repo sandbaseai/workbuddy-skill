@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/python-development/skills/async-python-patterns/SKILL.md",
+    "skill": "async-python-patterns",
+    "skill_path": "skills/async-python-patterns",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/async-python-patterns-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/python-development/skills/python-background-jobs/SKILL.md",
     "skill": "python-background-jobs",
     "skill_path": "skills/python-background-jobs",

@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides asyncio coroutines, tasks, gather, timeouts, error handling, cancellation, sync/async boundaries, common pitfalls, and async testing guidance but no runtime topology, dependency clients, workload baseline, queue, or shutdown contract",
+      "The adopting project must provide authorized async runtime metadata, bounded dependency contracts, isolated load/failure tests, resource budgets, telemetry, and recovery evidence"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved event loop, coroutine, task, future, async context/iterator, gather, timeout, cancellation, error handling, sync/async choice, and testing guidance",
+      "added WorkBuddy bounded concurrency/backpressure, deadline budgets, cancellation propagation, resource cleanup, task lifecycle, payload/privacy limits, telemetry, load validation, and production authorization controls"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:wshobson/agents:plugins/python-development/skills/async-python-patterns/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/async-python-patterns/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "0814e85b222e0085bb71fc96d6bae6f83846089a",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/python-development/skills/async-python-patterns/SKILL.md"
+}
