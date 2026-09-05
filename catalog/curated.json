@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:Jeffallan/claude-skills:skills/microservices-architect/SKILL.md",
+    "skill": "microservices-architect",
+    "skill_path": "skills/microservices-architect",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/microservices-architect-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:Jeffallan/claude-skills:skills/database-optimizer/SKILL.md",
     "skill": "database-query-optimizer",
     "skill_path": "skills/database-query-optimizer",

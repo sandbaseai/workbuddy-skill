@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source is a standalone microservices architecture playbook and does not package repository-specific domain maps, contract fixtures, messaging infrastructure, or migration tooling",
+      "The adopting project must provide current system evidence, service ownership, provider/framework documentation, observability, test environments, and an approved change/recovery path"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "generalized the source into WorkBuddy with evidence-first boundary discovery, explicit authority limits, safe correlation-ID handling, bounded retries, idempotency, and failure-isolation requirements",
+      "added data ownership, privacy/deletion, compatibility, migration rollback, health semantics, and modular-monolith alternatives to prevent unsafe distributed-monolith expansion"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:Jeffallan/claude-skills:skills/microservices-architect/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/microservices-architect/SKILL.md",
+  "repository": "Jeffallan/claude-skills",
+  "sha": "4d84878716c8bd1359768c4911558e659af3d025",
+  "source_url": "https://github.com/Jeffallan/claude-skills/blob/882ef55e377dbf9a4dbe496bb41ac6ccd0e555cf/skills/microservices-architect/SKILL.md"
+}
