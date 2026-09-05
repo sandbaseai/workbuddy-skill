@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Python Resilience Patterns Skill with transient/permanent failure classification, deadline budgets, jittered bounded retries, idempotency, circuit breaking, rate limits, backpressure, safe fallbacks, fault injection, and recovery verification.
 - Added the MIT Python Observability Skill with structured logging, golden signals, correlation and trace propagation, bounded metric cardinality, privacy-safe schemas, telemetry failure isolation, alerting, retention, and measured overhead validation.
 - Added the MIT Vector Index Tuning Skill with measured recall/latency/memory/build baselines, flat/HNSW/IVF/PQ selection, quantization, hard ACL filters, deletion lifecycle, versioned rebuilds, atomic cutover, rollback, and authorized production changes.
 - Hardened release asset publication with sequential rate-limited uploads and retry-friendly GitHub CLI steps after a large-release API limit event.

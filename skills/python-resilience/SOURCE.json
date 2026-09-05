@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides Python retry, exponential backoff, jitter, bounded attempts, exception/status classification, timeout, decorator, graceful fallback, and monitoring guidance but no dependency contracts, traffic baseline, circuit breaker, rate limiter, or failure-injection environment",
+      "The adopting project must provide authorized dependency metadata, idempotency semantics, isolated fault tests, timeout budgets, telemetry, ownership, and rollback evidence"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved transient/permanent failure classification, exponential backoff, jitter, bounded retries, HTTP status handling, timeouts, decorators, graceful fallback, and retry monitoring guidance",
+      "added WorkBuddy deadline budgets, idempotency and side-effect boundaries, circuit breaking, rate limits/backpressure, fail-closed critical paths, privacy-safe evidence, isolated fault injection, recovery verification, and production authorization controls"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:wshobson/agents:plugins/python-development/skills/python-resilience/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/python-resilience/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "89c1e9d9ba0134709f9b1ac876d0b401362afd4d",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/python-development/skills/python-resilience/SKILL.md"
+}

@@ -73,6 +73,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Hybrid Search Implementation](skills/hybrid-search-implementation/) | 组合向量与关键词召回，以融合、重排、权限过滤和评测提升检索质量 |
 | [Vector Index Tuning](skills/vector-index-tuning/) | 依据召回、延迟、内存、构建和删除证据调优向量索引与生命周期 |
 | [Python Observability](skills/python-observability/) | 以隐私安全的日志、黄金信号、关联 ID、指标和追踪诊断 Python 服务 |
+| [Python Resilience Patterns](skills/python-resilience/) | 以超时、退避、熔断、背压、幂等重试和安全降级应对依赖故障 |
 | [API Design Principles](skills/api-design-principles/) | 设计具备 HTTP/schema、幂等、分页、授权、版本和成本边界的 API 契约 |
 | [Microservices Architect](skills/microservices-architect/) | 设计服务边界、通信、数据所有权、故障隔离和迁移验证 |
 | [Cloud Design Patterns](skills/cloud-design-patterns/) | 按约束选择韧性、性能、消息、安全、部署和迁移模式 |
@@ -114,8 +115,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,687 |
-| Unique content SHAs | 8,060 |
+| Indexed GitHub paths | 12,688 |
+| Unique content SHAs | 8,061 |
 | Source repositories | 6,432 |
 <!-- CATALOG-METRICS:END -->
 

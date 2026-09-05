@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/python-development/skills/python-resilience/SKILL.md",
+    "skill": "python-resilience",
+    "skill_path": "skills/python-resilience",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/python-resilience-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/python-development/skills/python-observability/SKILL.md",
     "skill": "python-observability",
     "skill_path": "skills/python-observability",
