@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references separate push-protection, custom-pattern, and alert-remediation documents that are not packaged in this WorkBuddy adaptation",
+      "The adopting project must provide authorized GitHub security settings access, a local scanning tool, credential-provider rotation procedures, and a redacted reporting destination"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved secret scanning, Secret Protection, Push Protection, exclusion paths, custom patterns, alert triage, validity status, blocked-push handling, and pre-commit scanning guidance",
+      "added WorkBuddy fail-closed unknown semantics, secret-safe evidence, minimal-scope defaults, explicit bypass and write gates, rotation-first remediation, history/fork/artifact exposure checks, and rollback controls"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/secret-scanning/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/secret-scanning/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "549a9b217d027edc514bfa4b22438bbc226485da",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7e326fe334ee7912e8b615f5a8f4aeaf03ae268e/skills/secret-scanning/SKILL.md"
+}

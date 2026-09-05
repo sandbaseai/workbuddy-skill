@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Secret Scanning Skill with Secret Protection, Push Protection, bounded exclusions and custom patterns, secret-safe evidence, rotation-first remediation, fail-closed unknown handling, and explicit bypass/write gates.
 - Added the MIT STRIDE-A Threat Model Analyst Skill with single and incremental threat modeling, trust-boundary and DFD mapping, evidence-backed STRIDE-A findings, redacted reports, explicit write gates, and canary/rollback controls.
 - Added the MIT Azure Well-Architected Review Skill with pinned WAF guidance, least-privilege Azure reads, IaC/live drift analysis, five-pillar evidence, secret-safe reports, explicit Issue/EPIC authorization, independent remediation gates, evidence freshness, and rollback controls.
 - Added the MIT Agentic Workflows Router Skill with task routing, pinned prompt/reference loading, repository overlay controls, least-privilege Actions permissions, fork/PR trust checks, bounded tools/network/budgets, safe outputs, memory/delegation isolation, deterministic debugging, canary, and rollback gates.
