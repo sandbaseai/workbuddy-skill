@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:seb1n/awesome-ai-agent-skills:agent-engineering/multi-agent-orchestration/SKILL.md",
+    "skill": "multi-agent-orchestration",
+    "skill_path": "skills/multi-agent-orchestration",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/multi-agent-orchestration-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:seb1n/awesome-ai-agent-skills:agent-engineering/tool-schema-design/SKILL.md",
     "skill": "tool-schema-design",
     "skill_path": "skills/tool-schema-design",
