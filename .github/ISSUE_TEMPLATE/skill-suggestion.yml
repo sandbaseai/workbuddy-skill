@@ -1,0 +1,51 @@
+name: Suggest a Skill
+description: Suggest a public Skill for catalog indexing or WorkBuddy adaptation
+title: "skill: "
+labels:
+  - skill-suggestion
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping grow the WorkBuddy Skill catalog. Please suggest only public material you are authorized to share.
+  - type: input
+    id: source-url
+    attributes:
+      label: Immutable or canonical source URL
+      description: Link to the repository and exact SKILL.md path; include a commit or tag when available.
+      placeholder: https://github.com/owner/repository/blob/<commit>/path/to/SKILL.md
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: Declared license
+      description: Provide the repository license or the exact file that declares it.
+      placeholder: MIT
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: WorkBuddy use case
+      description: Explain who benefits and what the Skill should help accomplish.
+      placeholder: This helps teams...
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Safety and dependencies
+      description: Note external commands, credentials, network access, destructive actions, bundled resources, or known limitations.
+      placeholder: The source requires...
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Submission checklist
+      options:
+        - label: I checked that the source is public and the suggested license permits redistribution or adaptation.
+          required: true
+        - label: I have not included secrets, private data, or copied proprietary prompts.
+          required: true
