@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:LoopyLuci/Skills:skills/business-continuity-design/SKILL.md",
+    "skill": "business-continuity-design",
+    "skill_path": "skills/business-continuity-design",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/business-continuity-design-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:diegosouzapw/awesome-omni-skills:skills_omni/modular-design-principles/SKILL.md",
     "skill": "modular-design-principles",
     "skill_path": "skills/modular-design-principles",
