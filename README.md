@@ -67,6 +67,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Writing Implementation Plans](skills/writing-plans/) | 将规格拆成按文件、接口、测试、约束和回滚定义的可执行计划 |
 | [Cloud Resource Health](skills/cloud-resource-health/) | 从资源状态、指标、日志、依赖和变更记录诊断云资源健康问题 |
 | [Code Tour](skills/code-tour/) | 为上手、评审、排障和架构理解生成经过真实锚点校验的代码导览 |
+| [Subagent-Driven Development](skills/subagent-driven-development/) | 以隔离实施、任务级评审和整分支复核执行多步开发计划 |
 | [Acquire Codebase Knowledge](skills/acquire-codebase-knowledge/) | 从源码、配置和历史证据生成技术栈、架构、集成、测试与风险地图 |
 | [Agentic Evaluation](skills/agentic-evaluation/) | 用明确量规、证据和有界迭代评测并改进 Agent 输出 |
 | [GitHub Actions Hardening](skills/github-actions-hardening/) | 审查工作流触发器、注入、权限、供应链、Secrets 和 Runner 风险 |
@@ -97,8 +98,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,670 |
-| Unique content SHAs | 8,043 |
+| Indexed GitHub paths | 12,671 |
+| Unique content SHAs | 8,044 |
 | Source repositories | 6,431 |
 <!-- CATALOG-METRICS:END -->
 

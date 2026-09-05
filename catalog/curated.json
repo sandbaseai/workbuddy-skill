@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:obra/superpowers:skills/subagent-driven-development/SKILL.md",
+    "skill": "subagent-driven-development",
+    "skill_path": "skills/subagent-driven-development",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/subagent-driven-development-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:obra/superpowers:skills/writing-plans/SKILL.md",
     "skill": "writing-plans",
     "skill_path": "skills/writing-plans",
