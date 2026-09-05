@@ -57,6 +57,42 @@ class ReadmeStatsTests(unittest.TestCase):
             self.assertIn("- 6,700 unique Git blob SHAs", catalog_content)
             self.assertIn("- 5,300 source repositories", catalog_content)
 
+    def test_catalog_only_does_not_require_or_modify_root_readme(self):
+        with tempfile.TemporaryDirectory() as directory:
+            temporary = Path(directory)
+            readme = temporary / "README.md"
+            catalog_readme = temporary / "catalog.md"
+            stats = temporary / "stats.json"
+            analysis = temporary / "analysis.json"
+            root_content = "public README without internal build markers\n"
+            readme.write_text(root_content, encoding="utf-8")
+            catalog_readme.write_text(
+                "<!-- CATALOG-SNAPSHOT:START -->\nold\n<!-- CATALOG-SNAPSHOT:END -->\n",
+                encoding="utf-8",
+            )
+            stats.write_text(
+                json.dumps({"records": 12757, "unique_content_shas": 8130, "repositories": 6434}),
+                encoding="utf-8",
+            )
+            analysis.write_text(
+                json.dumps({"adaptable": 10069, "needs_review": 910, "workbuddy_ready": 0, "security_flagged": 431}),
+                encoding="utf-8",
+            )
+            subprocess.run(
+                [
+                    sys.executable,
+                    str(ROOT / "scripts" / "update_readme_stats.py"),
+                    "--catalog-only",
+                    "--readme", str(readme),
+                    "--catalog-readme", str(catalog_readme),
+                    "--stats", str(stats),
+                    "--analysis", str(analysis),
+                ],
+                check=True,
+            )
+            self.assertEqual(readme.read_text(encoding="utf-8"), root_content)
+            self.assertIn("- 12,757 indexed GitHub paths", catalog_readme.read_text(encoding="utf-8"))
+
 
 if __name__ == "__main__":
     unittest.main()

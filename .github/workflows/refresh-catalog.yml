@@ -68,7 +68,7 @@ jobs:
           test -f /tmp/analysis-stats.json
           cp /tmp/analysis-stats.json catalog/analysis-stats.json
           python3 scripts/validate_catalog.py --minimum 10000 --require-analysis --check-stats
-          python3 scripts/update_readme_stats.py
+          python3 scripts/update_readme_stats.py --catalog-only
       - name: Publish catalog update
         if: steps.crawl.outputs.changed == 'true'
         env:
@@ -148,6 +148,7 @@ jobs:
           Path("/tmp/merged-analysis-stats.json").write_text(analysis_text, encoding="utf-8")
           PY
                   python3 scripts/update_readme_stats.py \
+                    --catalog-only \
                     --stats /tmp/merged-stats.json \
                     --analysis /tmp/merged-analysis-stats.json
                   python3 scripts/validate_catalog.py --minimum 10000 --require-analysis

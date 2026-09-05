@@ -20,6 +20,11 @@ def main() -> int:
     parser.add_argument("--catalog-readme", type=Path, default=Path("catalog/README.md"))
     parser.add_argument("--stats", type=Path, default=Path("catalog/stats.json"))
     parser.add_argument("--analysis", type=Path, default=Path("catalog/analysis-stats.json"))
+    parser.add_argument(
+        "--catalog-only",
+        action="store_true",
+        help="update only catalog/README.md; leave the public root README untouched",
+    )
     args = parser.parse_args()
 
     stats = json.loads(args.stats.read_text(encoding="utf-8"))
@@ -44,10 +49,11 @@ def main() -> int:
         f"need manual review, {ready} are currently WorkBuddy-ready, and "
         f"{flagged} contain at least one conservative security signal."
     )
-    text = args.readme.read_text(encoding="utf-8")
-    text = replace_between(text, "<!-- CATALOG-METRICS:START -->", "<!-- CATALOG-METRICS:END -->", metrics)
-    text = replace_between(text, "<!-- CATALOG-ANALYSIS:START -->", "<!-- CATALOG-ANALYSIS:END -->", analysis_text)
-    args.readme.write_text(text, encoding="utf-8")
+    if not args.catalog_only:
+        text = args.readme.read_text(encoding="utf-8")
+        text = replace_between(text, "<!-- CATALOG-METRICS:START -->", "<!-- CATALOG-METRICS:END -->", metrics)
+        text = replace_between(text, "<!-- CATALOG-ANALYSIS:START -->", "<!-- CATALOG-ANALYSIS:END -->", analysis_text)
+        args.readme.write_text(text, encoding="utf-8")
     catalog_metrics = "\n".join([
         f"- {records} indexed GitHub paths",
         f"- {shas} unique Git blob SHAs",
