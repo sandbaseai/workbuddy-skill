@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/cloud-design-patterns/SKILL.md",
+    "skill": "cloud-design-patterns",
+    "skill_path": "skills/cloud-design-patterns",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/cloud-design-patterns-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:Jeffallan/claude-skills:skills/microservices-architect/SKILL.md",
     "skill": "microservices-architect",
     "skill_path": "skills/microservices-architect",

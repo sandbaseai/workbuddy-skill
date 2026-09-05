@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source includes references to detailed pattern documents that were not copied into this standalone WorkBuddy adaptation",
+      "The adopting project must provide current provider documentation, architecture evidence, workload benchmarks, policy requirements, and approved implementation/recovery procedures"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "generalized the source pattern index into WorkBuddy with problem-first selection, explicit trade-offs, read-only planning, bounded retries, identity validation, privacy/deletion checks, and rollout gates",
+      "added anti-pattern checks, simpler alternatives, failure and recovery evidence, cost/complexity accounting, and retirement criteria"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/cloud-design-patterns/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/cloud-design-patterns/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "b9a17433b9bedf95947bfe6624ef0a4bfa053021",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/cloud-design-patterns/SKILL.md"
+}
