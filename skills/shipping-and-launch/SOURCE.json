@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references separate definition-of-done, security, performance, and accessibility checklists that are not packaged",
+      "The adopting project must provide environment-specific gates, monitoring, feature flags, deployment artifacts, rollback mechanisms, baselines, thresholds, and authorized operators"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved pre-launch quality/security/performance/accessibility/infrastructure/docs checklist, feature-flag lifecycle, staged rollout, monitoring, thresholds, post-launch verification, and rollback plan",
+      "added WorkBuddy evidence, production-side-effect, privacy/redaction, artifact provenance, database compatibility, authorization, and evidence-bounded completion controls"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:addyosmani/agent-skills:skills/shipping-and-launch/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/shipping-and-launch/SKILL.md",
+  "repository": "addyosmani/agent-skills",
+  "sha": "acef513b77a33b366220d58224e472cb83ffd21d",
+  "source_url": "https://github.com/addyosmani/agent-skills/blob/84ee50673804b95c287d1e4eb4f1c1dad7c5188a/skills/shipping-and-launch/SKILL.md"
+}

@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:addyosmani/agent-skills:skills/shipping-and-launch/SKILL.md",
+    "skill": "shipping-and-launch",
+    "skill_path": "skills/shipping-and-launch",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/shipping-and-launch-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:mattpocock/skills:skills/engineering/grill-with-docs/SKILL.md",
     "skill": "grill-with-docs",
     "skill_path": "skills/grill-with-docs",
