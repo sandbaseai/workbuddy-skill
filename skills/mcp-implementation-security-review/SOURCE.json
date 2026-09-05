@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides MCP transport classification, MCP-01 to MCP-05 baselines, seven RCE vectors, OWASP MCP Top 10 checks, false-positive filters, and evidence-based reporting but no target-specific architecture, deployment state, authorization, runtime evidence, or remediation ownership",
+      "The adopting project must provide an authorized commit and environment scope, server/client/tool inventory, identity and policy configuration, dependency provenance, isolated negative tests, owners, and separately authorized remediation and rollback evidence"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved MCP identity, session, rate-limit, schema, SDK, RCE, transport, false-positive, OWASP MCP, and file-line reporting guidance",
+      "added WorkBuddy read-only and privacy boundaries, explicit unknown and contra-evidence semantics, per-tool data-exit tracing, deployment-versus-code evidence layers, and authorized remediation/release controls"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/mcp-implementation-security-review/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/mcp-implementation-security-review/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "5bf9d01b7be7e2661c78ab75afac232caecb2c05",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/mcp-implementation-security-review/SKILL.md"
+}

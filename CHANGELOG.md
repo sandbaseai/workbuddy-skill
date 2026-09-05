@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT MCP Implementation Security Review Skill with transport classification, MCP baseline controls, RCE-vector tracing, OWASP MCP Top 10 evidence mapping, false-positive filters, privacy-safe reporting, and authorized remediation gates.
 - Added the MIT Agent OWASP ASI Compliance Skill with evidence-based ASI-01 through ASI-10 assessment, deterministic tool/policy checks, trust and identity boundaries, supply-chain verification, behavioral monitoring, privacy-safe reporting, and authorized remediation gates.
 - Added the MIT Grafana Dashboards Skill with RED/USE/SLO information hierarchy, bounded variables, evidence-backed thresholds, alert delivery checks, dashboard-as-code validation, privacy boundaries, and authorized production rollout controls.
 - Added the MIT Prometheus Configuration Skill with metric contracts, bounded labels, scrape/discovery/relabel validation, recording and alert rules, HA/retention/capacity planning, self-monitoring, privacy-safe access, and authorized production changes.
