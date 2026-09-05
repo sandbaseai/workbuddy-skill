@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Project Bindings Skill with single-source project values, rule/value separation, consumer inventories, secret exclusion, conflict detection, migration safety, and reference validation.
 - Added the MIT API Documentation Skill with source-of-truth discipline, stable operation structure and anchors, precise request/response/error tables, route/type conventions, safe examples, surgical contract changes, and verification gates.
 - Added the MIT GitHub Research Skill with search-surface selection, candidate ranking, immutable provenance, license/security checks, rate-limit handling, and reproducible research reports.
 - Added the MIT Database Schema Design Skill with authority boundaries, initialization strata, database-enforced integrity, least privilege, migration safety, approved seeds, catalog-level tests, and rollback evidence.

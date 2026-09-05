@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["The source's repository-specific bindings template, vocabulary protocol, and design-doc references were not packaged"],
+    "packaged_resources": [],
+    "security_signals": ["added explicit secret exclusion, consumer inventory, path validation, conflict, and rollback safeguards; no runtime assets packaged"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:iamthenop/infurnet-skills:skills/project-bindings/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/project-bindings/SKILL.md",
+  "repository": "iamthenop/infurnet-skills",
+  "sha": "4c03bcedc85bffa2469196e18577e9177088f29c",
+  "source_url": "https://github.com/iamthenop/infurnet-skills/blob/d3bb9ed15129063d75950f90363795011bbae671/skills/project-bindings/SKILL.md"
+}

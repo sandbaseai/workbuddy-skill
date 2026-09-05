@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:iamthenop/infurnet-skills:skills/project-bindings/SKILL.md",
+    "skill": "project-bindings",
+    "skill_path": "skills/project-bindings",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/project-bindings-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:iamthenop/infurnet-skills:skills/api-docs/SKILL.md",
     "skill": "api-documentation",
     "skill_path": "skills/api-documentation",

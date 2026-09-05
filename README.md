@@ -167,6 +167,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | [Integration Health Check](skills/integration-health-check/) | Verify connector health, credentials, authorized scopes, target context, capabilities, and safe next actions before integration work | [Apache-2.0 source](skills/integration-health-check/SOURCE.json) |
 | [Site Reliability Engineering](skills/site-reliability/) | Define SLOs, error budgets, toil reduction, incident learning, on-call health, capacity, graceful degradation, and progressive delivery | [MIT source](skills/site-reliability/SOURCE.json) |
 | [Design Systems](skills/design-systems/) | Build accessible token foundations and component libraries with stable APIs, documentation, governance, migration, and adoption evidence | [MIT source](skills/design-systems/SOURCE.json) |
+| [Project Bindings](skills/project-bindings/) | Maintain authoritative project-specific values for modules, workspaces, databases, namespaces, assets, and release contracts | [MIT source](skills/project-bindings/SOURCE.json) |
 | [API Documentation](skills/api-documentation/) | Write precise API references with stable operations, request/response/error contracts, routes, types, examples, and verification | [MIT source](skills/api-documentation/SOURCE.json) |
 | [GitHub Research](skills/github-research/) | Research GitHub repositories, code, issues, releases, and files with ranked candidates and immutable evidence | [MIT source](skills/github-research/SOURCE.json) |
 | [Database Schema Design](skills/schema-design/) | Design relational schemas with explicit ownership, integrity, least privilege, migration safety, approved seeds, tests, and rollback evidence | [MIT source](skills/schema-design/SOURCE.json) |
@@ -465,7 +466,7 @@ Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.git
 For a manually curated index of WorkBuddy documentation, MCP integrations, workflows, benchmarks, and Skills, browse [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy).
 
 <!-- CATALOG-ANALYSIS:START -->
-The current static analysis successfully inspected 12,487 paths: 9,918 are structurally adaptable to WorkBuddy, 901 need manual review, 0 are currently WorkBuddy-ready, and 412 contain at least one conservative security signal.
+The current static analysis successfully inspected 12,487 paths: 9,919 are structurally adaptable to WorkBuddy, 901 need manual review, 0 are currently WorkBuddy-ready, and 412 contain at least one conservative security signal.
 <!-- CATALOG-ANALYSIS:END -->
 A clean static scan is never a security guarantee.
 
