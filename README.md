@@ -68,6 +68,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [On-Call Handoff Patterns](skills/on-call-handoff-patterns/) | 以证据交接值班上下文、活动事件、升级路径、风险和接班验收状态 |
 | [Incident Runbook Templates](skills/incident-runbook-templates/) | 用前置条件、授权门禁、停止条件、回滚和验证编写可执行事件响应手册 |
 | [Debugging Strategies](skills/debugging-strategies/) | 以复现、有限假设、单变量实验、差分证据和回归测试系统化定位问题 |
+| [Parallel Debugging](skills/parallel-debugging/) | 以竞争性假设、独立调查、反证和证据仲裁处理跨组件复杂缺陷 |
 | [Chaos Engineer](skills/chaos-engineer/) | 设计有授权、可回滚、影响范围受控的韧性实验 |
 | [Cloud Cost Optimization](skills/cloud-cost-optimization/) | 按实际成本驱动因素排序，验证取舍，建模节省并治理授权变更 |
 | [Cloud Architect](skills/cloud-architect/) | 设计跨云架构、迁移波次、灾备、成本与安全取舍 |

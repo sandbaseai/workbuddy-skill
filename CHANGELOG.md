@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Parallel Debugging Skill with competing hypotheses, isolated investigation contexts, direct evidence citations, counter-evidence, independent arbitration, fix validation, and explicit Inconclusive/Blocked states.
 - Added the MIT Debugging Strategies Skill with reproducible evidence loops, bounded hypotheses, single-variable experiments, safe differential/profiling guidance, secret-safe evidence, regression checks, and explicit production boundaries.
 - Added the MIT Incident Runbook Templates Skill with bounded triage, explicit target binding, read-only defaults, approval and dry-run gates, stop conditions, rollback, verification, escalation, and freshness checks.
 - Added the MIT On-Call Handoff Patterns Skill with evidence-linked shift context, active-incident transfer, decision history, escalation paths, acceptance checks, secret-safe handling, and explicit no-production-action boundaries.

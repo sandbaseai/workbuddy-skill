@@ -1,0 +1,21 @@
+{
+  "catalog_id": "github:wshobson/agents:plugins/agent-teams/skills/parallel-debugging/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/parallel-debugging/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "8c84fa3b1ea65e09b606839a124885bdd3d19843",
+  "source_commit": "a30778f8c4e6b0a87567941b7cca4f534bf642b6",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/agent-teams/skills/parallel-debugging/SKILL.md",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source does not package an agent orchestration runtime, evidence store, access policy, or project-specific test fixtures",
+      "The adopting project must provide isolated contexts, authorized inputs, independent arbitration, retention rules, and separate approval for production actions"
+    ],
+    "security_signals": [
+      "preserved competing hypotheses, failure-mode categories, evidence strength, confidence, arbitration, and fix validation",
+      "added context isolation, direct citations, counter-evidence, secret-safe handling, independent arbitration, no-vote conclusions, and explicit BLOCKED/Inconclusive states"
+    ]
+  }
+}

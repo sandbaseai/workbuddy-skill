@@ -1,4 +1,10 @@
 [{
+    "catalog_id": "github:wshobson/agents:plugins/agent-teams/skills/parallel-debugging/SKILL.md",
+    "skill": "parallel-debugging",
+    "skill_path": "skills/parallel-debugging",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/parallel-debugging-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/developer-essentials/skills/debugging-strategies/SKILL.md",
     "skill": "debugging-strategies",
     "skill_path": "skills/debugging-strategies",
