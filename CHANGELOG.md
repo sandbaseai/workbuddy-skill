@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Web Application Testing Skill with authorized Playwright environments, synthetic data and credential boundaries, stable selectors, deterministic waits, side-effect controls, responsive/keyboard coverage, redacted failure evidence, console/network diagnostics, and cleanup gates.
 - Added the MIT TypeSpec API Operations Skill with CRUD routing, explicit schemas, auth and tenant boundaries, pagination, idempotency/ETag, safe Adaptive Card confirmations, negative contract tests, consumer compatibility, canary, and rollback gates.
 - Added the MIT OpenAPI to Application Code Skill with versioned-spec validation, ambiguity tracking, framework-aware boundaries, server-side validation, authorization and side-effect controls, contract/negative tests, provenance, canary, and rollback gates.
 - Added the MIT Multi-Stage Dockerfile Skill with reproducible bases and dependencies, cache-aware layers, secret-safe builds, minimal non-root runtimes, health checks, SBOM/signature/provenance verification, scanning, canary rollout, and digest rollback controls.

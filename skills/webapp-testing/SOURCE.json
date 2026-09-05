@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides Playwright browser automation, assertions, form flows, screenshots, console logs, waits, cleanup, timeout handling, selector guidance, and responsive testing but no target environment authorization, synthetic data policy, credential handling, artifact redaction, side-effect controls, or coverage model",
+      "The adopting project must provide an authorized local/staging URL, locked browser/tool versions, synthetic accounts and fixtures, domain allowlist, isolated test data, redaction policy, owners, and cleanup/rollback evidence"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved Playwright navigation, interaction, visibility/text/URL assertions, screenshots, console/network inspection, explicit waits, cleanup, timeout handling, stable selectors, and responsive coverage guidance",
+      "added WorkBuddy environment and domain authorization, synthetic credential/data boundaries, SSRF and side-effect controls, artifact redaction, deterministic state/wait semantics, auth/negative paths, accessibility distinction, coverage matrix, and failure-evidence rules"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/webapp-testing/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/webapp-testing/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "281fff4e9d0b10cccb695f283ea6d8136a75ba56",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/webapp-testing/SKILL.md"
+}

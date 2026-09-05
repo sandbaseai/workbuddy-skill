@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/webapp-testing/SKILL.md",
+    "skill": "webapp-testing",
+    "skill_path": "skills/webapp-testing",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/webapp-testing-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/typespec-api-operations/SKILL.md",
     "skill": "typespec-api-operations",
     "skill_path": "skills/typespec-api-operations",
