@@ -187,6 +187,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | [MCP Security](skills/mcp-security/) | Secure MCP tools and multi-agent pipelines with trust boundaries, authorization, privacy, side-effect controls, and auditable operations | [MIT source](skills/mcp-security/SOURCE.json) |
 | [Access Control Security Best Practices](skills/access-control-security-best-practices/) | Design and verify least-privilege, RBAC/ABAC, tenant isolation, revocation, and administrative access controls | [MIT source](skills/access-control-security-best-practices/SOURCE.json) |
 | [AI Agent Evaluation Engineering](skills/agent-evaluation-engineering/) | Build reproducible capability, trust, safety, trajectory, regression, latency, and cost evaluations | [MIT source](skills/agent-evaluation-engineering/SOURCE.json) |
+| [Agent Observability](skills/agent-observability/) | Design privacy-aware traces, events, metrics, dashboards, alerts, and verification for AI agent workflows | [MIT source](skills/agent-observability/SOURCE.json) |
 | [Product Analytics](skills/product-analytics/) | Define event taxonomies, funnels, cohorts, retention, experiments, privacy boundaries, and evidence-backed product decisions | [MIT source](skills/product-analytics/SOURCE.json) |
 | [dbt Patterns](skills/dbt-patterns/) | Design layered dbt models, contracts, tests, incremental workflows, lineage, and safe production delivery | [MIT source](skills/dbt-patterns/SOURCE.json) |
 | [RAG Evaluation](skills/rag-evaluation/) | Build leakage-resistant datasets and measure retrieval, grounding, citations, refusal, latency, cost, and regressions | [Apache-2.0 source](skills/rag-evaluation/SOURCE.json) |
@@ -465,9 +466,9 @@ The catalog is generated from public GitHub `SKILL.md` results with resumable, r
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,610 |
-| Unique content SHAs | 7,983 |
-| Source repositories | 6,424 |
+| Indexed GitHub paths | 12,611 |
+| Unique content SHAs | 7,984 |
+| Source repositories | 6,425 |
 <!-- CATALOG-METRICS:END -->
 
 Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) or [中文 Atlas](https://sandbaseai.github.io/workbuddy-skill/zh-CN.html), or query the JSONL directly. If it helps you discover a useful workflow, a star or a short review helps other WorkBuddy users find it.
@@ -477,7 +478,7 @@ Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.git
 For a manually curated index of WorkBuddy documentation, MCP integrations, workflows, benchmarks, and Skills, browse [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy).
 
 <!-- CATALOG-ANALYSIS:START -->
-The current static analysis successfully inspected 12,610 paths: 9,924 are structurally adaptable to WorkBuddy, 908 need manual review, 0 are currently WorkBuddy-ready, and 417 contain at least one conservative security signal.
+The current static analysis successfully inspected 12,611 paths: 9,925 are structurally adaptable to WorkBuddy, 908 need manual review, 0 are currently WorkBuddy-ready, and 417 contain at least one conservative security signal.
 <!-- CATALOG-ANALYSIS:END -->
 A clean static scan is never a security guarantee.
 

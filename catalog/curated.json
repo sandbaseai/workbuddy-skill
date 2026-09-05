@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:seb1n/awesome-ai-agent-skills:agent-engineering/agent-observability/SKILL.md",
+    "skill": "agent-observability",
+    "skill_path": "skills/agent-observability",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/agent-observability-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:bregman-arie/devops-sre-skills:skills/incident/sev1-first-15-minutes/SKILL.md",
     "skill": "sev1-first-15-minutes",
     "skill_path": "skills/sev1-first-15-minutes",

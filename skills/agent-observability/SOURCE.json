@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source repository's trace-schema reference, helper script, and telemetry integrations were not packaged",
+      "Telemetry vendor configuration, data classification, retention, and access policy must be supplied by the adopting team"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "removed source-specific helper invocation and added explicit authorization, content-free defaults, redaction, least privilege, retention, and partial-evidence boundaries"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:seb1n/awesome-ai-agent-skills:agent-engineering/agent-observability/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/agent-observability/SKILL.md",
+  "repository": "seb1n/awesome-ai-agent-skills",
+  "sha": "b4add27447107e855391fbde5b2e770843301cd0",
+  "source_url": "https://github.com/seb1n/awesome-ai-agent-skills/blob/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/agent-engineering/agent-observability/SKILL.md"
+}

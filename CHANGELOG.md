@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Agent Observability Skill with trace and event contracts, content-free telemetry defaults, metric and alert definitions, sampling and retention controls, trace-graph verification, privacy safeguards, and partial-evidence handoff.
 - Added the Apache-2.0 Sev1 First 15 Minutes Skill with explicit incident roles, read-first diagnosis, authorized reversible stabilization, redacted evidence, communication cadence, escalation boundaries, and auditable handoff.
 - Added the MIT Video Transcript Research Skill with bounded video/channel discovery, provider authorization and quota boundaries, timestamp provenance, caption-quality uncertainty, batch monitoring, and copyright/privacy safeguards.
 - Added the MIT Study Materials Kit Skill with source manifests, chapter modeling, original-question provenance, bounded generation, dependency-aware knowledge graphs, offline/print validation, and extraction-limitation reporting.
