@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides a short PRD schema and example but no product-research templates, evaluation datasets, or repository-specific integrations",
+      "The adopting project must provide authorized user research, analytics, design, technical, policy, and decision-owner evidence"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved discovery questions, measurable success criteria, user stories, acceptance criteria, non-goals, AI evaluation, technical specifications, risks, and phased roadmap guidance",
+      "added WorkBuddy fact/assumption/unknown ledger, privacy minimization, tool and side-effect boundaries, metric provenance, failure paths, approval separation, and evidence-linked review gates"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/prd/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/prd/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "b19e77a252c14eed2b8fd1b506aa100fa2010fb3",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/prd/SKILL.md"
+}

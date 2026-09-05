@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/prd/SKILL.md",
+    "skill": "prd",
+    "skill_path": "skills/prd",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/prd-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/mcp-release-qa/SKILL.md",
     "skill": "mcp-release-qa",
     "skill_path": "skills/mcp-release-qa",
