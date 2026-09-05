@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:iamthenop/infurnet-skills:skills/workflow-modeling/SKILL.md",
+    "skill": "workflow-modeling",
+    "skill_path": "skills/workflow-modeling",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/workflow-modeling-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:soft6096/jee-forge:skill/java-code-standards/SKILL.md",
     "skill": "java-service-standards",
     "skill_path": "skills/java-service-standards",

@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Workflow State Modeling Skill with stable lineage, gate-as-state modeling, bounded statuses, transition and replay semantics, architecture-multiplication checks, and migration evidence.
 - Added the MIT Java Service Coding Standards Skill with repository-aligned layering, API/error contracts, authorization, transaction and idempotency boundaries, safe persistence, operations, testing, and handoff gates.
 - Added the MIT Modern CSS Pro Tips Skill with semantic tokens, cascade ownership, intrinsic responsive layout, accessible states, progressive enhancement, motion safeguards, and browser-evidence verification.
 - Added the MIT Confidence-Gated Task Routing Skill with per-unit tier assignment, objective escalation, independent verification, bounded handoffs, and post-run calibration.
