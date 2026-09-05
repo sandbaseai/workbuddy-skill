@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/copilot-pr-autopilot/SKILL.md",
+    "skill": "copilot-pr-autopilot",
+    "skill_path": "skills/copilot-pr-autopilot",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/copilot-pr-autopilot-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/verify-agent-action/SKILL.md",
     "skill": "verify-agent-action",
     "skill_path": "skills/verify-agent-action",

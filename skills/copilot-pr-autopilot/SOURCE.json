@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides PowerShell scripts, per-step orchestration references, reply templates, and repository-specific API helpers that are not packaged in this WorkBuddy adaptation",
+      "The adopting project must provide authorized PR triage/write access, Copilot availability, repository test commands, trusted CI/check policy, thread ownership rules, and separate merge/approval authorization"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved Copilot review triggering, bounded iterative loop, thread listing, fix/decline/escalate rubric, focused commits, build/test, replies, resolution, convergence, round cap, and cleanup concepts",
+      "added WorkBuddy fork/author trust boundaries, human/security thread handoff, secret-safe logs, no-force-push defaults, explicit merge/approval gates, scope-drift circuit breaker, and per-round provenance"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/copilot-pr-autopilot/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/copilot-pr-autopilot/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "4df17db4f41ed74b60ffe95c83d99632e0f45041",
+  "source_url": "https://github.com/github/awesome-copilot/blob/d47a6c93b7ad518667a1c62f5d383f56dbbedba7/skills/copilot-pr-autopilot/SKILL.md"
+}

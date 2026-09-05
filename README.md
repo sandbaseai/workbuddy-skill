@@ -106,6 +106,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Data Breach Blast Radius](skills/data-breach-blast-radius/) | 盘点敏感数据与数据流，识别暴露向量并生成事实/估算分离的影响报告 |
 | [BigQuery Pipeline Audit](skills/bigquery-pipeline-audit/) | 审计 Python/BigQuery 流水线的成本、dry-run、幂等写入、查询安全和可观测性 |
 | [Verify Agent Action](skills/verify-agent-action/) | 在提交、部署或其它高影响动作前核验精确目标、审批绑定、证据、时效和重放安全 |
+| [Copilot PR Autopilot](skills/copilot-pr-autopilot/) | 有界运行 PR 评审、逐线程处置、聚焦提交、测试验证和可审计收敛检查 |
 | [API Design Principles](skills/api-design-principles/) | 设计具备 HTTP/schema、幂等、分页、授权、版本和成本边界的 API 契约 |
 | [Microservices Architect](skills/microservices-architect/) | 设计服务边界、通信、数据所有权、故障隔离和迁移验证 |
 | [Cloud Design Patterns](skills/cloud-design-patterns/) | 按约束选择韧性、性能、消息、安全、部署和迁移模式 |
@@ -147,8 +148,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,720 |
-| Unique content SHAs | 8,093 |
+| Indexed GitHub paths | 12,721 |
+| Unique content SHAs | 8,094 |
 | Source repositories | 6,432 |
 <!-- CATALOG-METRICS:END -->
 

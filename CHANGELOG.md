@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Copilot PR Autopilot Skill with bounded review loops, thread disposition, focused commits, repository tests, convergence proof, fork/human-review boundaries, and explicit merge gates.
 - Added the MIT Verify Agent Action Skill with exact action identity, approval binding, replay/nonce checks, reviewer independence, contradiction handling, monitoring freshness, fail-closed results, and explicit non-execution boundaries.
 - Added the MIT BigQuery Pipeline Audit Skill with cost/job exposure checks, dry-run safety, bounded backfills, partition pruning, idempotent writes, observability, and explicit query/production-write gates.
 - Added the MIT Data Breach Blast Radius Skill with sensitive-data inventory, data-flow and exposure analysis, fact-versus-estimate labeling, current-source regulatory context, redacted reporting, and independent incident/remediation gates.
