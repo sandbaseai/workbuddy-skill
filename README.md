@@ -417,7 +417,7 @@ The catalog is generated from public GitHub `SKILL.md` results with resumable, r
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,257 |
+| Indexed GitHub paths | 12,258 |
 | Unique content SHAs | 7,741 |
 | Source repositories | 6,267 |
 <!-- CATALOG-METRICS:END -->
@@ -429,7 +429,7 @@ Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.git
 For a manually curated index of WorkBuddy documentation, MCP integrations, workflows, benchmarks, and Skills, browse [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy).
 
 <!-- CATALOG-ANALYSIS:START -->
-The current static analysis successfully inspected 12,257 paths: 9,864 are structurally adaptable to WorkBuddy, 903 need manual review, 0 are currently WorkBuddy-ready, and 404 contain at least one conservative security signal.
+The current static analysis successfully inspected 12,258 paths: 9,864 are structurally adaptable to WorkBuddy, 903 need manual review, 0 are currently WorkBuddy-ready, and 404 contain at least one conservative security signal.
 <!-- CATALOG-ANALYSIS:END -->
 A clean static scan is never a security guarantee.
 
