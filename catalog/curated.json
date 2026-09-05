@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:addyosmani/agent-skills:skills/idea-refine/SKILL.md",
+    "skill": "idea-refine",
+    "skill_path": "skills/idea-refine",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/idea-refine-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:addyosmani/agent-skills:skills/shipping-and-launch/SKILL.md",
     "skill": "shipping-and-launch",
     "skill_path": "skills/shipping-and-launch",

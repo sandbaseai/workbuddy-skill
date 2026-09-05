@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references optional ideation scripts, frameworks, examples, and refinement criteria files that are not packaged",
+      "The adopting project must provide interactive questioning, authorized context, optional research evidence, an ideas directory convention, and separate implementation/publication approval"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved understand/expand, evaluate/converge, sharpen/ship phases, sharpening questions, 5-8 idea variations, value/feasibility/differentiation stress tests, assumptions, MVP, and Not Doing guidance",
+      "added WorkBuddy evidence labels, untrusted-context handling, data minimization, public-redaction, save/write authorization, and implementation separation"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:addyosmani/agent-skills:skills/idea-refine/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/idea-refine/SKILL.md",
+  "repository": "addyosmani/agent-skills",
+  "sha": "38955e8943f2ea68c041f10ef1902d94bdfb1cb9",
+  "source_url": "https://github.com/addyosmani/agent-skills/blob/84ee50673804b95c287d1e4eb4f1c1dad7c5188a/skills/idea-refine/SKILL.md"
+}
