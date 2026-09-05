@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:LoopyLuci/Skills:skills/data-engineering-pipelines-best-practices/SKILL.md",
+    "skill": "data-engineering-pipelines-best-practices",
+    "skill_path": "skills/data-engineering-pipelines-best-practices",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/data-engineering-pipelines-best-practices-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:LoopyLuci/Skills:skills/business-continuity-design/SKILL.md",
     "skill": "business-continuity-design",
     "skill_path": "skills/business-continuity-design",

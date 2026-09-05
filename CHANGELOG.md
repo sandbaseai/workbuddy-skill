@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Data Engineering Pipeline Best Practices Skill with data contracts, delivery semantics, idempotent processing, quality and reconciliation gates, lineage, privacy, observability, replay, backfill, and recovery handoff.
 - Added the MIT Business Continuity Design Skill with business-impact analysis, critical dependency mapping, degraded and manual operating modes, RTO/RPO evidence, recovery exercises, communications, governance, and accountable retest handoff.
 - Added the MIT Modular Design Principles Skill with boundary rationale, state ownership, public contracts, consistency and failure semantics, isolation testing, coupling diagnostics, and safe migration handoff.
 - Added the MIT Multi-Format Document Analysis Skill with bounded file discovery, format-aware extraction, page and line provenance, OCR and parser limitations, numerical reconciliation, privacy-safe reporting, and non-execution safeguards.
