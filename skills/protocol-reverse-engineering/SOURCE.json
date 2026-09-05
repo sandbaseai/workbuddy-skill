@@ -1,0 +1,21 @@
+{
+  "catalog_id": "github:wshobson/agents:plugins/reverse-engineering/skills/protocol-reverse-engineering/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/protocol-reverse-engineering/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "a5d0d9ed633c4016a425a260391a3c32c84e6835",
+  "source_commit": "a30778f8c4e6b0a87567941b7cca4f534bf642b6",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/reverse-engineering/skills/protocol-reverse-engineering/SKILL.md",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source is a broad protocol-analysis reference and does not package an authorization system, lab, fixtures, or parser harness",
+      "The adopting project must provide written scope, offline/synthetic samples, isolation, retention/deletion rules, and separate approval for active network operations"
+    ],
+    "security_signals": [
+      "preserved packet/protocol dissection, binary framing, field inference, state modeling, parser patterns, and protocol documentation",
+      "restricted WorkBuddy use to authorized offline evidence, added secret-safe handling, parser bounds, untrusted-input controls, no-live-interception defaults, and explicit blocked states"
+    ]
+  }
+}

@@ -61,6 +61,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Screen Reader Testing](skills/screen-reader-testing/) | 验证屏幕阅读器、键盘、ARIA、表单和动态内容的可感知行为 |
 | [Documentation](skills/documentation/) | 编写有证据、可执行、易维护的项目文档 |
 | [Network Troubleshooting](skills/network-troubleshooting/) | 分层定位 DNS、路由、TLS、HTTP 和资源问题 |
+| [Protocol Reverse Engineering](skills/protocol-reverse-engineering/) | 在授权离线样本上分析协议 framing、字段、状态机和互操作证据 |
 | [Chaos Engineer](skills/chaos-engineer/) | 设计有授权、可回滚、影响范围受控的韧性实验 |
 | [Cloud Cost Optimization](skills/cloud-cost-optimization/) | 按实际成本驱动因素排序，验证取舍，建模节省并治理授权变更 |
 | [Cloud Architect](skills/cloud-architect/) | 设计跨云架构、迁移波次、灾备、成本与安全取舍 |
@@ -169,8 +170,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,742 |
-| Unique content SHAs | 8,115 |
+| Indexed GitHub paths | 12,743 |
+| Unique content SHAs | 8,116 |
 | Source repositories | 6,434 |
 <!-- CATALOG-METRICS:END -->
 

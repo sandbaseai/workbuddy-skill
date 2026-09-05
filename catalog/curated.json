@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/reverse-engineering/skills/protocol-reverse-engineering/SKILL.md",
+    "skill": "protocol-reverse-engineering",
+    "skill_path": "skills/protocol-reverse-engineering",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/protocol-reverse-engineering-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:obra/superpowers:skills/writing-skills/SKILL.md",
     "skill": "writing-skills",
     "skill_path": "skills/writing-skills",
