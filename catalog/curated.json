@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:anthropics/claude-plugins-community:testdino/skills/testdino-health/SKILL.md",
+    "skill": "integration-health-check",
+    "skill_path": "skills/integration-health-check",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/integration-health-check-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:alex-ilgayev/MCPSpy:.claude/skills/go-testing/SKILL.md",
     "skill": "go-testing",
     "skill_path": "skills/go-testing",
