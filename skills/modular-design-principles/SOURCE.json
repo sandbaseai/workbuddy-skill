@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": ["removed upstream private-tool, metadata, and path assumptions; retained boundary, ownership, contract, isolation, and migration principles"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:diegosouzapw/awesome-omni-skills:skills_omni/modular-design-principles/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "skills/modular-design-principles/SKILL.md",
+  "repository": "diegosouzapw/awesome-omni-skills",
+  "sha": "1262ba199faa66a46af30c7da340e40ad1855802",
+  "source_url": "https://github.com/diegosouzapw/awesome-omni-skills/blob/c3af0048b70a4b84b2f2324e2f7b7ae5206d89b2/skills_omni/modular-design-principles/SKILL.md"
+}

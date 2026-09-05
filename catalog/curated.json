@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:diegosouzapw/awesome-omni-skills:skills_omni/modular-design-principles/SKILL.md",
+    "skill": "modular-design-principles",
+    "skill_path": "skills/modular-design-principles",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/modular-design-principles-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:Bhomik04/ava-:skills/official/document-analysis/SKILL.md",
     "skill": "document-analysis",
     "skill_path": "skills/document-analysis",
