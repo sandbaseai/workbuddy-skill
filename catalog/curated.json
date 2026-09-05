@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:ever-just/agentskills:skills/github-research/SKILL.md",
+    "skill": "github-research",
+    "skill_path": "skills/github-research",
+    "category": "research",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/github-research-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:iamthenop/infurnet-skills:skills/schema-design/SKILL.md",
     "skill": "schema-design",
     "skill_path": "skills/schema-design",

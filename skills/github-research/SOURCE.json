@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["The source's provider-specific MCP mappings and private research context were not packaged"],
+    "packaged_resources": [],
+    "security_signals": ["added immutable provenance, license, fork, rate-limit, secret, and no-unapproved-mutation safeguards; no runtime assets packaged"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:ever-just/agentskills:skills/github-research/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/github-research/SKILL.md",
+  "repository": "ever-just/agentskills",
+  "sha": "6609281f10639b7e925fd6c8f6e500c62bae1440",
+  "source_url": "https://github.com/ever-just/agentskills/blob/d952c97e648ff57cc6fd15a656e0cb43589130c8/skills/github-research/SKILL.md"
+}
