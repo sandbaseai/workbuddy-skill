@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides a concise reproduction workflow but no test runner adapter, environment snapshotter, fixture scrubber, or evidence store",
+      "The adopting project must provide authorized isolated environments, safe command execution, redaction controls, and retention policy"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved expected-versus-actual separation, environment facts, one-variable reduction, repeatability checks, stop-before-repair behavior, and production-data boundaries",
+      "added WorkBuddy authorization scope, synthetic-data preference, explicit unverified/unknown states, command evidence, redaction, and separate remediation authorization"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/bug-reproduction-brief/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/bug-reproduction-brief/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "add9ca292293ef860cb4cab05063b922c49d3c1f",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/bug-reproduction-brief/SKILL.md"
+}

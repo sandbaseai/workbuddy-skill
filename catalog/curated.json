@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/bug-reproduction-brief/SKILL.md",
+    "skill": "bug-reproduction-brief",
+    "skill_path": "skills/bug-reproduction-brief",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/bug-reproduction-brief-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/agent-supply-chain/SKILL.md",
     "skill": "agent-supply-chain",
     "skill_path": "skills/agent-supply-chain",
