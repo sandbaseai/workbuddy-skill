@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source assumes repository-specific issue, pull-request, and Git workflow instructions; these were not packaged",
+      "The adopting repository must provide branch protection policy, native checks, ownership authorities, and recovery conventions"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "replaced unconditional resolve/never-abort guidance with authorized recovery boundaries; added pre-existing-change preservation, protected-branch, credential, untrusted-content, and force-update safeguards"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:mattpocock/skills:skills/engineering/resolving-merge-conflicts/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/merge-conflict-resolution/SKILL.md",
+  "repository": "mattpocock/skills",
+  "sha": "bfb7e5606e231e6808979f623fce76a9aad4b71c",
+  "source_url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/engineering/resolving-merge-conflicts/SKILL.md"
+}

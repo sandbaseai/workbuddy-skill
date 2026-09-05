@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Merge Conflict Resolution Skill with exact operation-state inspection, primary-intent tracing, hunk ledgers, semantic resolution, native validation, protected-branch safeguards, and recoverable completion/abort boundaries.
 - Added the MIT Wayfinding Skill with destination-first scope, canonical decision maps, frontier/dependency tracking, research/prototype/task classification, evidence-backed resolution, local-tracker fallback, and safe cross-session handoff.
 - Added the MIT Specification Synthesis Skill with evidence-led problem framing, user stories, highest-seam planning, implementation/testing decisions, explicit scope, consistency checks, and gated external publication.
 - Added the MIT Domain Modeling Skill with canonical vocabulary, glossary challenges, concrete scenario stress tests, code/evidence cross-checks, consumer mapping, implementation-free context files, selective ADRs, and safe WorkBuddy handoff boundaries.

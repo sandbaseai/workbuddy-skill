@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:mattpocock/skills:skills/engineering/resolving-merge-conflicts/SKILL.md",
+    "skill": "merge-conflict-resolution",
+    "skill_path": "skills/merge-conflict-resolution",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/merge-conflict-resolution-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:mattpocock/skills:skills/engineering/wayfinder/SKILL.md",
     "skill": "wayfinding",
     "skill_path": "skills/wayfinding",
