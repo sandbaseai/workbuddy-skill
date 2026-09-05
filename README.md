@@ -96,6 +96,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Source-Driven Development](skills/source-driven-development/) | 根据准确依赖版本查阅官方文档，实现已验证模式并保留可核验引用 |
 | [Doubt-Driven Development](skills/doubt-driven-development/) | 对非平凡决策进行有界对抗式复核，逐条分类发现并保留剩余不确定性 |
 | [Deprecation and Migration](skills/deprecation-and-migration/) | 以消费者证据、兼容窗口和分阶段迁移安全退役旧系统、API、功能或 schema |
+| [Security and Hardening](skills/security-and-hardening/) | 从信任边界和滥用路径出发加固输入、身份、数据、外部集成、上传和依赖 |
 | [Performance Review Writer](skills/performance-review-writer/) | 基于授权证据和 STAR 结构起草自评、同事评价、360 或向上反馈 |
 | [Project Architecture Blueprint](skills/architecture-blueprint-generator/) | 从代码、配置、依赖、测试和部署证据生成真实可追溯的架构蓝图 |
 | [Web Design Reviewer](skills/web-design-reviewer/) | 跨视口评审布局、响应式、可访问性和视觉一致性，并以证据安全回归验证 |
@@ -154,8 +155,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,727 |
-| Unique content SHAs | 8,100 |
+| Indexed GitHub paths | 12,728 |
+| Unique content SHAs | 8,101 |
 | Source repositories | 6,433 |
 <!-- CATALOG-METRICS:END -->
 

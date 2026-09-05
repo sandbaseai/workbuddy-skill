@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references separate security checklist and ecosystem-specific tools that are not packaged",
+      "The adopting project must provide its stack-aware threat model, authentication/session architecture, dependency and secret scanners, deployment policy, and authorized remediation path"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved threat-model-first, trust-boundary, STRIDE, input/auth/data/integration, SSRF, upload, path, dependency, and verification guidance",
+      "added WorkBuddy treatment of retrieved content and LLM output as untrusted, tenant/privacy boundaries, evidence-scoped severity, destructive-action safeguards, secret-safe reporting, and independent authorization gates"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:addyosmani/agent-skills:skills/security-and-hardening/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/security-and-hardening/SKILL.md",
+  "repository": "addyosmani/agent-skills",
+  "sha": "05debf5eb3cd936b2e5581ea3c9144ca9354f180",
+  "source_url": "https://github.com/addyosmani/agent-skills/blob/84ee50673804b95c287d1e4eb4f1c1dad7c5188a/skills/security-and-hardening/SKILL.md"
+}

@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Security and Hardening Skill with trust-boundary and STRIDE modeling, input/auth/data/integration controls, SSRF and upload safeguards, dependency triage, secret-safe reporting, and evidence-bounded remediation gates.
 - Added the MIT Deprecation and Migration Skill with replacement-first decisions, consumer inventories, advisory/compulsory notices, incremental migration, strangler/adapter/feature-flag patterns, expand-contract schema changes, zombie-code governance, and zero-usage removal evidence.
 - Added the MIT Doubt-Driven Development Skill with claim/extract/adversarial-review/reconcile/stop cycles, fresh-context boundaries, bounded findings, cross-model disclosure, and evidence-scoped escalation.
 - Added the MIT Source-Driven Development Skill with exact version detection, authoritative documentation retrieval, deprecated-pattern checks, conflict handling, source citations, unverified-state labeling, and safe treatment of fetched documentation as data.
