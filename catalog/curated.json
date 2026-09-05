@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:addyosmani/agent-skills:skills/source-driven-development/SKILL.md",
+    "skill": "source-driven-development",
+    "skill_path": "skills/source-driven-development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/source-driven-development-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:addyosmani/agent-skills:skills/constraint-driven-development/SKILL.md",
     "skill": "constraint-driven-development",
     "skill_path": "skills/constraint-driven-development",

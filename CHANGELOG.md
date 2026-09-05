@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Source-Driven Development Skill with exact version detection, authoritative documentation retrieval, deprecated-pattern checks, conflict handling, source citations, unverified-state labeling, and safe treatment of fetched documentation as data.
 - Added the MIT Constraint-Driven Development Skill with measurable quality contracts, repository discovery, lifecycle-scoped gates, ratchets, exception ownership, secret-safe checks, and detection of weakened thresholds, skipped tests, suppressions, and unfinished stubs.
 - Added the MIT Product Requirements Document Skill with discovery questions, measurable outcomes, user stories, acceptance criteria, AI evaluation, technical specifications, risk planning, evidence ledgers, and explicit implementation-approval boundaries.
 - Added the MIT MCP Release QA Skill with fresh-process protocol sessions, source/runtime/metadata/docs parity, contract and negative-path checks, installation smoke tests, secret-safe evidence, and explicit production-side-effect boundaries.

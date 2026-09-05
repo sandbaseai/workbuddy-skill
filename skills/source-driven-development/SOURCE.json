@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source assumes a documentation retrieval tool and repository-specific citation or code-review integrations that are not packaged",
+      "The adopting project must provide dependency/lockfile evidence, authoritative documentation access, runtime compatibility targets, and repository-native verification commands"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved version detection, official-source hierarchy, narrow documentation retrieval, implementation/citation workflow, conflict handling, and verification checklist",
+      "added WorkBuddy treatment of fetched docs as untrusted data, endpoint/telemetry disclosure, authorization boundaries, copyright-safe excerpts, secret handling, and evidence-scoped claims"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:addyosmani/agent-skills:skills/source-driven-development/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/source-driven-development/SKILL.md",
+  "repository": "addyosmani/agent-skills",
+  "sha": "d1f599a9fe8eb77d4af7dc2f45404c2f6363e441",
+  "source_url": "https://github.com/addyosmani/agent-skills/blob/84ee50673804b95c287d1e4eb4f1c1dad7c5188a/skills/source-driven-development/SKILL.md"
+}
