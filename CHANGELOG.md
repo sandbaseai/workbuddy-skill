@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Systematic Debugging Skill with red-capable feedback loops, boundary evidence, backward data-flow tracing, working-versus-broken comparisons, falsifiable hypotheses, one-variable tests, regression gates, and architecture escalation after repeated failed fixes.
 - Added the MIT Chrome DevTools Diagnostics Skill with snapshot-first interaction, console/network correlation, bounded script evaluation, authorized emulation, performance traces, side-effect classification, and redaction-safe browser evidence.
 - Added the MIT Acquire Codebase Knowledge Skill with seven-document evidence contracts, intent-versus-reality checks, stack and integration mapping, history-aware concerns, explicit TODO/ASK USER states, generated-artifact exclusions, and read-only redaction boundaries.
 - Added the MIT Bug Reproduction Brief Skill with fact/assumption separation, environment capture, one-variable minimization, repeatability evidence, safe isolated fixtures, stop-before-repair boundaries, and redaction-aware handoffs.

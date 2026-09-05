@@ -1,20 +1,20 @@
 {
   "adaptation": {
-    "missing_resources": [],
-    "packaged_resources": [
-      "references/condition-based-waiting.md",
-      "references/defense-in-depth.md",
-      "references/examples.md",
-      "references/root-cause-tracing.md"
+    "missing_resources": [
+      "The source references supporting tracing, waiting, testing, and verification techniques that are not packaged with the single upstream SKILL.md entry",
+      "The adopting project must provide safe test runners, diagnostic adapters, evidence retention, redaction, and authorization for instrumentation or production access"
     ],
-    "security_signals": [],
-    "tool": "scripts/adapt_skill.py"
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved root-cause-first discipline, red-capable feedback loops, boundary instrumentation, data-flow tracing, working-versus-broken comparison, falsifiable hypotheses, one-variable tests, and three-failure architecture escalation",
+      "added WorkBuddy scoped authorization, production/shared-environment boundaries, secret/customer-data redaction, tagged instrumentation cleanup, explicit evidence states, and separate mutation approval"
+    ],
+    "tool": "manual WorkBuddy adaptation"
   },
-  "catalog_id": "github:GuicedEE/ai-rules:skills/.curated/systematic-debugging/SKILL.md",
-  "declared_source_license": "Apache-2.0",
-  "source_license_file": "LICENSE",
-  "path": "skills/.curated/systematic-debugging/SKILL.md",
-  "repository": "GuicedEE/ai-rules",
-  "sha": "9cd00ef41030c25dbbec079c4b9fec421ef67d83",
-  "source_url": "https://github.com/GuicedEE/ai-rules/blob/5463b9b03b09d3bc1682e971b869dbebdbbec9ed/skills/.curated/systematic-debugging/SKILL.md"
+  "catalog_id": "github:obra/superpowers:skills/systematic-debugging/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/systematic-debugging/SKILL.md",
+  "repository": "obra/superpowers",
+  "sha": "095d194ac041502905f15b01d22d294fb94db8b2",
+  "source_url": "https://github.com/obra/superpowers/blob/b36e0829c6d0140e93cfef2ca599b1b07d4a7797/skills/systematic-debugging/SKILL.md"
 }

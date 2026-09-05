@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:obra/superpowers:skills/systematic-debugging/SKILL.md",
+    "skill": "systematic-debugging",
+    "skill_path": "skills/systematic-debugging",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/systematic-debugging-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/chrome-devtools/SKILL.md",
     "skill": "chrome-devtools",
     "skill_path": "skills/chrome-devtools",
