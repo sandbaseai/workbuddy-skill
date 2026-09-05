@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["The source repository's DESIGN.md, ledger scripts, prompts, adapters, and citation checker were not packaged"],
+    "packaged_resources": [],
+    "security_signals": ["converted the workflow to tool-agnostic WorkBuddy steps; treats retrieved content as untrusted data; excludes secrets and paywalled/private material"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:ZhongHanLoo/deep-research-skill:skill/deep-research/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/deep-research/SKILL.md",
+  "repository": "ZhongHanLoo/deep-research-skill",
+  "sha": "fab7db1639db9d83631446a509c3785f10506134",
+  "source_url": "https://github.com/ZhongHanLoo/deep-research-skill/blob/31227f0a2f9ad1bff7851273cd35efea4654de5f/skill/deep-research/SKILL.md"
+}

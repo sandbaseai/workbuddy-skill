@@ -1,4 +1,10 @@
-[
+[{
+    "catalog_id": "github:ZhongHanLoo/deep-research-skill:skill/deep-research/SKILL.md",
+    "skill": "deep-research",
+    "skill_path": "skills/deep-research",
+    "category": "research",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/deep-research-workbuddy-skill.zip"
+  },
   {
     "catalog_id": "github:iamthenop/infurnet-skills:skills/project-bindings/SKILL.md",
     "skill": "project-bindings",

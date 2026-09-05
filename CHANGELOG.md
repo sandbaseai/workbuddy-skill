@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Deep Evidence Research Skill with scoped research briefs, multi-angle retrieval, atomic claim ledgers, independent corroboration, citation audits, disagreement handling, and reproducible handoff.
 - Added the MIT Project Bindings Skill with single-source project values, rule/value separation, consumer inventories, secret exclusion, conflict detection, migration safety, and reference validation.
 - Added the MIT API Documentation Skill with source-of-truth discipline, stable operation structure and anchors, precise request/response/error tables, route/type conventions, safe examples, surgical contract changes, and verification gates.
 - Added the MIT GitHub Research Skill with search-surface selection, candidate ranking, immutable provenance, license/security checks, rate-limit handling, and reproducible research reports.
