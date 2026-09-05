@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:0xRayAI/xray:skills/bug-triage/SKILL.md",
+    "skill": "bug-triage",
+    "skill_path": "skills/bug-triage",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/bug-triage-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:0xRayAI/xray:skills/log-monitor/SKILL.md",
     "skill": "log-monitor",
     "skill_path": "skills/log-monitor",

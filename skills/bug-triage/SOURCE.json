@@ -1,0 +1,15 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": ["removed Xray-specific MCP command; retained capability as an authorized integration boundary"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:0xRayAI/xray:skills/bug-triage/SKILL.md",
+  "declared_source_license": "MIT",
+  "source_license_file": "LICENSE",
+  "path": "skills/bug-triage/SKILL.md",
+  "repository": "0xRayAI/xray",
+  "sha": "0506ee961608592aa8dc35d64e2db0ab5c0eb746",
+  "source_url": "https://github.com/0xRayAI/xray/blob/34240304e539bc937295e424ee89d8ee09137ce1/skills/bug-triage/SKILL.md"
+}

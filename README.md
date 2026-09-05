@@ -199,6 +199,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | [Architecture Decision Record](skills/architecture-decision/) | Compare consequential technical choices and record verifiable tradeoffs | [MIT source](skills/architecture-decision/SOURCE.json) |
 | [Incident Response and Triage](skills/incident-triage/) | Triage production incidents, contain harm, verify recovery, and preserve learning | [MIT source](skills/incident-triage/SOURCE.json) |
 | [Log Monitoring and Pattern Detection](skills/log-monitor/) | Analyze structured logs, detect anomalies, correlate events, and design actionable alerts | [MIT source](skills/log-monitor/SOURCE.json) |
+| [Bug Triage and Fix Analysis](skills/bug-triage/) | Analyze bug reports and stack traces, assess duplicates and regressions, and prioritize evidence-backed fixes | [MIT source](skills/bug-triage/SOURCE.json) |
 | [Prioritization Matrix](skills/prioritization-matrix/) | Rank options transparently with evidence, confidence, dependencies, and sensitivity | [MIT source](skills/prioritization-matrix/SOURCE.json) |
 | [Requirements Grounding](skills/requirements-grounding/) | Turn mixed evidence into traceable, solution-free requirements with explicit confidence | [MIT source](skills/requirements-grounding/SOURCE.json) |
 | [Email Drafting](skills/email-drafting/) | Draft accurate, actionable messages with recipient, attachment, privacy, and send checks | [MIT source](skills/email-drafting/SOURCE.json) |
