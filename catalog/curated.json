@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/observability-monitoring/skills/slo-implementation/SKILL.md",
+    "skill": "slo-implementation",
+    "skill_path": "skills/slo-implementation",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/slo-implementation-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/framework-migration/skills/database-migration/SKILL.md",
     "skill": "database-migration",
     "skill_path": "skills/database-migration",

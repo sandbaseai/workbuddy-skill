@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides SLA/SLO/SLI hierarchy, availability/latency/durability indicators, target selection, error budgets, Prometheus recording rules, burn-rate alerts, and dashboards but no user journeys, telemetry quality, ownership, incident history, or alerting system",
+      "The adopting project must provide authorized telemetry, versioned SLI definitions, data-quality baselines, service owners, historical incidents, runbooks, and an isolated alert validation target"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved SLI/SLO/SLA hierarchy, availability/latency/durability measures, target selection, error-budget formula/policy, Prometheus rules, burn-rate alerts, and dashboard guidance",
+      "added WorkBuddy user-centered contracts, denominator/exclusion integrity, missing-data unknown state, low-traffic/NaN handling, privacy-safe telemetry, multi-window alert validation, ownership/review/exception controls, and authorized reliability-policy changes"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:wshobson/agents:plugins/observability-monitoring/skills/slo-implementation/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/slo-implementation/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "4de8a30d34efa7bd115649e5273131d91e5980bb",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/observability-monitoring/skills/slo-implementation/SKILL.md"
+}
