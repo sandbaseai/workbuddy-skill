@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source repository's incident.comms and observability.read integrations were not packaged",
+      "Service-specific paging, deployment, rollback, and approval policies must be supplied by the adopting team"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "added read-only default, authorization gates for production mutation, reversible actions, secret exclusion, redacted evidence, and explicit fact-versus-hypothesis handling"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:bregman-arie/devops-sre-skills:skills/incident/sev1-first-15-minutes/SKILL.md",
+  "declared_source_license": "Apache-2.0",
+  "path": "skills/sev1-first-15-minutes/SKILL.md",
+  "repository": "bregman-arie/devops-sre-skills",
+  "sha": "490306fe4bde4ee789500b9c566dae5e26395bc0",
+  "source_url": "https://github.com/bregman-arie/devops-sre-skills/blob/94d5acb9816a15c30523da85a74bbfe87a978679/skills/incident/sev1-first-15-minutes/SKILL.md"
+}

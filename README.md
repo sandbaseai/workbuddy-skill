@@ -232,6 +232,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | [Recurring Process Capture](skills/process-capture/) | Turn repeated work into a bounded backlog capture or tested Skill skeleton with evidence and handoff | [MIT source](skills/process-capture/SOURCE.json) |
 | [Study Materials Kit](skills/study-materials-kit/) | Turn course materials into source-grounded outlines, practice sets, and knowledge graphs | [MIT source](skills/study-materials-kit/SOURCE.json) |
 | [Video Transcript Research](skills/video-transcript-research/) | Research public videos and channels with bounded transcripts, timestamps, provenance, and explicit limitations | [MIT source](skills/video-transcript-research/SOURCE.json) |
+| [Sev1 First 15 Minutes](skills/sev1-first-15-minutes/) | Coordinate the first response with explicit roles, safe stabilization, bounded evidence, communication cadence, and escalation | [Apache-2.0 source](skills/sev1-first-15-minutes/SOURCE.json) |
 | [Research with Sources](skills/web-researcher/) | Answer current questions with authoritative evidence, citations, and explicit uncertainty | [MIT source](skills/web-researcher/SOURCE.json) |
 | [Software Release](skills/release-software/) | Prepare, verify, stage, publish, monitor, and roll back releases | [MIT source](skills/release-software/SOURCE.json) |
 | [Meeting Notes](skills/meeting-notes/) | Extract supported decisions, action items, owners, risks, and open questions | [MIT source](skills/meeting-notes/SOURCE.json) |
@@ -464,9 +465,9 @@ The catalog is generated from public GitHub `SKILL.md` results with resumable, r
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,609 |
-| Unique content SHAs | 7,982 |
-| Source repositories | 6,423 |
+| Indexed GitHub paths | 12,610 |
+| Unique content SHAs | 7,983 |
+| Source repositories | 6,424 |
 <!-- CATALOG-METRICS:END -->
 
 Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) or [中文 Atlas](https://sandbaseai.github.io/workbuddy-skill/zh-CN.html), or query the JSONL directly. If it helps you discover a useful workflow, a star or a short review helps other WorkBuddy users find it.
@@ -476,7 +477,7 @@ Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.git
 For a manually curated index of WorkBuddy documentation, MCP integrations, workflows, benchmarks, and Skills, browse [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy).
 
 <!-- CATALOG-ANALYSIS:START -->
-The current static analysis successfully inspected 12,609 paths: 9,923 are structurally adaptable to WorkBuddy, 908 need manual review, 0 are currently WorkBuddy-ready, and 417 contain at least one conservative security signal.
+The current static analysis successfully inspected 12,610 paths: 9,924 are structurally adaptable to WorkBuddy, 908 need manual review, 0 are currently WorkBuddy-ready, and 417 contain at least one conservative security signal.
 <!-- CATALOG-ANALYSIS:END -->
 A clean static scan is never a security guarantee.
 

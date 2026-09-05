@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:bregman-arie/devops-sre-skills:skills/incident/sev1-first-15-minutes/SKILL.md",
+    "skill": "sev1-first-15-minutes",
+    "skill_path": "skills/sev1-first-15-minutes",
+    "category": "security",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/sev1-first-15-minutes-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:pratie/youtube-transcript-skill:SKILL.md",
     "skill": "video-transcript-research",
     "skill_path": "skills/video-transcript-research",
