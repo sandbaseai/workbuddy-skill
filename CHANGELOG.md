@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Skill Authoring Skill with intent and trigger contracts, executable-first design, representative evaluation, safe capability declarations, context-aware disclosure, packaging, and quality gates.
 - Added the MIT Skill Progressive Refactor Skill with contract freezing, core/detail separation, bounded reference extraction, rollback preservation, behavior checks, and complete post-refactor quality re-audit.
 - Added the MIT Skill Quality Audit Skill with complete read-only structure, UX, procedure, model metadata, capability, security, license, provenance, and context-budget checks.
 - Added the MIT Durable Work Ledger Skill with verified execution boundaries, stable task state, claims and leases, checkpoints, owner attention routing, bounded search, secret exclusion, and auditable handoffs.

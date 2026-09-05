@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["The source repository's authoring references, evaluation viewer, schemas, platform instructions, and helper scripts were not packaged"],
+    "packaged_resources": [],
+    "security_signals": ["removed host-specific commands and confirmation assumptions; added explicit capability declarations, untrusted-content handling, evaluation evidence, package inspection, and rollback"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:dEitY719/authoring-skills:skills/skill-create/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/skill-authoring/SKILL.md",
+  "repository": "dEitY719/authoring-skills",
+  "sha": "4186bc8077cd7213b58cfc4ad81f0830cf39cd17",
+  "source_url": "https://github.com/dEitY719/authoring-skills/blob/a7c12826ee96c6c30b9e6d2e95aa13bd972fcfc2/skills/skill-create/SKILL.md"
+}

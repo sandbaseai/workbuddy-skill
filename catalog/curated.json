@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:dEitY719/authoring-skills:skills/skill-create/SKILL.md",
+    "skill": "skill-authoring",
+    "skill_path": "skills/skill-authoring",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/skill-authoring-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:dEitY719/authoring-skills:skills/skill-refactor/SKILL.md",
     "skill": "skill-progressive-refactor",
     "skill_path": "skills/skill-progressive-refactor",
