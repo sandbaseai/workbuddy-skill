@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:seb1n/awesome-ai-agent-skills:context-engineering/context-retrieval/SKILL.md",
+    "skill": "context-retrieval",
+    "skill_path": "skills/context-retrieval",
+    "category": "research",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/context-retrieval-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:seb1n/awesome-ai-agent-skills:agent-security/skill-supply-chain-audit/SKILL.md",
     "skill": "skill-supply-chain-audit",
     "skill_path": "skills/skill-supply-chain-audit",

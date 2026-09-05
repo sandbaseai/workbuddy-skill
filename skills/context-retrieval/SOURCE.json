@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source assumes external vector/keyword stores, rerankers, and embedding providers; none were packaged",
+      "Corpus ACLs, tenant filters, tokenization, parser/OCR, language, and labeled evaluation data must be supplied by the adopting team"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "made provider choices conditional; added access-before-context checks, untrusted-content boundaries, provenance/coverage ledgers, stale/conflict handling, and calibrated-threshold guidance"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:seb1n/awesome-ai-agent-skills:context-engineering/context-retrieval/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/context-retrieval/SKILL.md",
+  "repository": "seb1n/awesome-ai-agent-skills",
+  "sha": "89ce00eeaf7137a61e682870b02fcbe7e36d6531",
+  "source_url": "https://github.com/seb1n/awesome-ai-agent-skills/blob/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/context-engineering/context-retrieval/SKILL.md"
+}
