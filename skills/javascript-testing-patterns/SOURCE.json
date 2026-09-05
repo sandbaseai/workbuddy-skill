@@ -1,0 +1,21 @@
+{
+  "catalog_id": "github:wshobson/agents:plugins/javascript-typescript/skills/javascript-testing-patterns/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/javascript-testing-patterns/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "9102d72c46491ba9b36886fc10603e4583e524d9",
+  "source_commit": "a30778f8c4e6b0a87567941b7cca4f534bf642b6",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/javascript-typescript/skills/javascript-testing-patterns/SKILL.md",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source contains framework examples but no repository-specific Node/runner versions, dependency contracts, data isolation, or CI artifact policy",
+      "The adopting project must provide an authorized test environment, package lock, browser/DOM setup, disposable data, and coverage/skip governance"
+    ],
+    "security_signals": [
+      "preserved Jest/Vitest, unit/component/integration/E2E layering, fixtures, async testing, mocking, Testing Library, parameterization, snapshots, and CI concepts",
+      "added type-safe mock boundaries, secret-safe artifacts, async cleanup, production/data gates, fail-closed unknown states, and explicit BLOCKED handling"
+    ]
+  }
+}

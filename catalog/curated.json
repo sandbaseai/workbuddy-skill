@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/javascript-typescript/skills/javascript-testing-patterns/SKILL.md",
+    "skill": "javascript-testing-patterns",
+    "skill_path": "skills/javascript-testing-patterns",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/javascript-testing-patterns-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/python-development/skills/python-testing-patterns/SKILL.md",
     "skill": "python-testing-patterns",
     "skill_path": "skills/python-testing-patterns",
