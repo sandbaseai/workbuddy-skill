@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Before You Build Skill with compact pre-mortem review, demand/positioning/monetization/retention/trust/distribution/adoption risks, evidence states, minimum validation steps, and delayed-scope decisions.
 - Added the MIT Grounded Vault Skill with raw/wiki/archive layering, claim-level provenance, Git fingerprint drift checks, explicit stale/disputed states, and evidence-bounded knowledge handoff.
 - Added the Apache-2.0 MCP Builder Guide with protocol/API research, discoverable typed tool contracts, structured errors, implementation safeguards, runtime verification, and realistic read-only evaluations.
 - Added the MIT Idea Refine Skill with user-problem framing, 5–8-direction exploration, value/feasibility/differentiation stress tests, explicit assumptions, MVP scope, Not Doing trade-offs, and safe artifact handoff.

@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/before-you-build/skills/before-you-build/SKILL.md",
+    "skill": "before-you-build",
+    "skill_path": "skills/before-you-build",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/before-you-build-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/documentation-standards/skills/grounded-vault/SKILL.md",
     "skill": "grounded-vault",
     "skill_path": "skills/grounded-vault",

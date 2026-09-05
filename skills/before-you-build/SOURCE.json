@@ -1,0 +1,21 @@
+{
+  "catalog_id": "github:wshobson/agents:plugins/before-you-build/skills/before-you-build/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/before-you-build/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "6a2aac015556218e8c3c3ec4e775c1d42eea192e",
+  "source_commit": "a30778f8c4e6b0a87567941b7cca4f534bf642b6",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/before-you-build/skills/before-you-build/SKILL.md",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source mentions an optional deeper risk checklist that is not packaged",
+      "The adopting project must provide authorized product context, research/analytics access, and separate approval for implementation or publication"
+    ],
+    "security_signals": [
+      "preserved pre-mortem coverage of demand, positioning, monetization, retention, trust, distribution, adoption, and delayed scope",
+      "added WorkBuddy evidence states, no-fabrication rules, untrusted-context handling, data minimization, public redaction, and execution boundaries"
+    ]
+  }
+}
