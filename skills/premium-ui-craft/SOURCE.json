@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["Cursor-only local references and optional external design links were not packaged"],
+    "packaged_resources": [],
+    "security_signals": ["converted a design procedure into a WorkBuddy-native workflow; no scripts, commands, or runtime assets packaged"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:kleosr/kleosrules:shared/skills/premium-ui-craft/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "shared/skills/premium-ui-craft/SKILL.md",
+  "repository": "kleosr/kleosrules",
+  "sha": "53115acc37e4fd2b913b60c54e62b42d9abb8ec5",
+  "source_url": "https://github.com/kleosr/kleosrules/blob/272aee4623c43bb32428fea09fc45756bbc9a606/shared/skills/premium-ui-craft/SKILL.md"
+}

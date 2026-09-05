@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:kleosr/kleosrules:shared/skills/premium-ui-craft/SKILL.md",
+    "skill": "premium-ui-craft",
+    "skill_path": "skills/premium-ui-craft",
+    "category": "design",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/premium-ui-craft-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:LoopyLuci/Skills:skills/data-engineering-pipelines-best-practices/SKILL.md",
     "skill": "data-engineering-pipelines-best-practices",
     "skill_path": "skills/data-engineering-pipelines-best-practices",
