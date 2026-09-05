@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT AWS Cost Optimization Skill with read-only IaC/inventory analysis, CloudWatch and Cost Explorer evidence, pricing provenance, savings-range calibration, risk/exit-cost checks, canary/rollback planning, and independent change gates.
 - Added the MIT Azure Resource Health Diagnosis Skill with read-only resource discovery, metric baselines, KQL/log correlation, service-specific health checks, evidence states, redacted reports, and staged remediation gates.
 - Added the MIT Repository Standardizer Skill with public-surface cleanup, internal-constraint separation, metadata/template/CI/CODEOWNERS audits, idempotent changes, sensitive-data filtering, and explicit governance write gates.
 - Added the MIT CodeQL Skill with least-privilege Actions/CLI setup, language and build matrices, SARIF protection, monorepo categories, pinned query provenance, fail-closed unknown handling, and explicit write/remediation gates.

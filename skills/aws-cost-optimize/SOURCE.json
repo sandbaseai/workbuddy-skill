@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides AWS resource discovery, CloudWatch/Cost Explorer examples, optimization patterns, priority scoring, and issue/EPIC templates but no project-specific account scope, price evidence, privacy policy, or rollback process",
+      "The adopting project must provide authorized AWS read access, IaC and billing scope, pricing/discount baselines, redaction rules, owners, canary environments, and separately authorized remediation and GitHub writes"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved AWS best-practice loading, inventory discovery, IaC checks, utilization and cost evidence, compute/database/storage/network patterns, prioritization, and remediation planning",
+      "added WorkBuddy least-privilege/read-only defaults, account and region boundaries, secret-safe billing evidence, fixed price provenance, fail-closed unknown semantics, risk calibration, canary/rollback, and independent change gates"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/aws-cost-optimize/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/aws-cost-optimize/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "ed7581e130db7dd600ab1e9caefb050066622e73",
+  "source_url": "https://github.com/github/awesome-copilot/blob/421418928715158da3610571cb9e9cbb18d4747d/skills/aws-cost-optimize/SKILL.md"
+}
