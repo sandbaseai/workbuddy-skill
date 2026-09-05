@@ -97,6 +97,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Azure Well-Architected Review](skills/azure-well-architected-review/) | 按 Azure 五大支柱对 IaC 和线上资源做只读评审、漂移分析和风险分级 |
 | [STRIDE-A Threat Model Analyst](skills/threat-model-analyst/) | 对代码库建立信任边界、数据流和 STRIDE-A 威胁模型，并支持增量安全态势对比 |
 | [Secret Scanning](skills/secret-scanning/) | 配置 Secret Scanning、Push Protection、自定义模式和安全的凭据泄露处置流程 |
+| [CodeQL Code Scanning](skills/codeql/) | 配置最小权限的 CodeQL Actions/CLI 扫描、语言矩阵、SARIF 和 monorepo 分析 |
 | [API Design Principles](skills/api-design-principles/) | 设计具备 HTTP/schema、幂等、分页、授权、版本和成本边界的 API 契约 |
 | [Microservices Architect](skills/microservices-architect/) | 设计服务边界、通信、数据所有权、故障隔离和迁移验证 |
 | [Cloud Design Patterns](skills/cloud-design-patterns/) | 按约束选择韧性、性能、消息、安全、部署和迁移模式 |
@@ -138,8 +139,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,711 |
-| Unique content SHAs | 8,084 |
+| Indexed GitHub paths | 12,712 |
+| Unique content SHAs | 8,085 |
 | Source repositories | 6,432 |
 <!-- CATALOG-METRICS:END -->
 

@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/codeql/SKILL.md",
+    "skill": "codeql",
+    "skill_path": "skills/codeql",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/codeql-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/secret-scanning/SKILL.md",
     "skill": "secret-scanning",
     "skill_path": "skills/secret-scanning",

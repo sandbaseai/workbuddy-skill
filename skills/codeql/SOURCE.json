@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references detailed compiled-language, SARIF, and custom-pack documents that are not packaged in this WorkBuddy adaptation",
+      "The adopting project must provide an authorized GitHub Actions workspace, pinned CodeQL bundle/action versions, approved runners, isolated SARIF storage, and remediation ownership"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved CodeQL Actions and CLI setup, language/build matrix, query suites, SARIF, monorepo categories, caching, troubleshooting, and alert interpretation guidance",
+      "added WorkBuddy least-privilege permissions, fork trust boundaries, pinned tool provenance, secret-safe SARIF handling, fail-closed unknown semantics, bounded build scripts, and explicit write/remediation gates"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/codeql/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/codeql/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "672075bba4c545159af38b511b2a1ecb28101ea9",
+  "source_url": "https://github.com/github/awesome-copilot/blob/f601edcc8725f914d8b50041eadb1312dc39f232/skills/codeql/SKILL.md"
+}
