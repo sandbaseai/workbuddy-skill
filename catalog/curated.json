@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/create-technical-spike/SKILL.md",
+    "skill": "technical-spike",
+    "skill_path": "skills/technical-spike",
+    "category": "productivity",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/technical-spike-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/cloud-design-patterns/SKILL.md",
     "skill": "cloud-design-patterns",
     "skill_path": "skills/cloud-design-patterns",
