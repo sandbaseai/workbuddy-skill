@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["The source's PostgreSQL/Bazel bindings, strata reference, templates, and validator script were not packaged"],
+    "packaged_resources": [],
+    "security_signals": ["generalized least-privilege, migration, seed, and schema-boundary guidance; no scripts or runtime assets packaged"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:iamthenop/infurnet-skills:skills/schema-design/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/schema-design/SKILL.md",
+  "repository": "iamthenop/infurnet-skills",
+  "sha": "8d46f4f3a71188cee46611f9144381a573785444",
+  "source_url": "https://github.com/iamthenop/infurnet-skills/blob/ec7dfefa19d9bdce6429855bf49e1a6ec4f6ca2a/skills/schema-design/SKILL.md"
+}

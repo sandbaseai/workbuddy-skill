@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:iamthenop/infurnet-skills:skills/schema-design/SKILL.md",
+    "skill": "schema-design",
+    "skill_path": "skills/schema-design",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/schema-design-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:hnidboubker/readme-async:SKILL.md",
     "skill": "readme-sync",
     "skill_path": "skills/readme-sync",
