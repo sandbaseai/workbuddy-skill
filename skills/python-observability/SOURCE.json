@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides Python structured logging, golden signals, correlation IDs, metrics, tracing, log levels, and alerting guidance but no application topology, telemetry backend, data classification, retention policy, or workload baseline",
+      "The adopting project must provide authorized telemetry access, an isolated validation target, privacy rules, bounded label schemas, representative safe traffic, and cost evidence"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved structured logging, metrics, traces, correlation propagation, golden signals, semantic levels, bounded cardinality, dashboards, testing, and alerting guidance",
+      "added WorkBuddy payload/identity redaction, allowlisted schemas, context cleanup, telemetry failure isolation, privacy-safe correlation, sampling/retention controls, production authorization, and measured overhead validation"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:wshobson/agents:plugins/python-development/skills/python-observability/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/python-observability/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "5d3b9c844469926164d349be4f91fa80d6e3d927",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/python-development/skills/python-observability/SKILL.md"
+}
