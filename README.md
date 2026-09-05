@@ -149,6 +149,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | [Release Planner](skills/release-planner/) | Plan deployment order, migrations, rollout waves, risk gates, rollback, observability, and release communication | [MIT source](skills/release-planner/SOURCE.json) |
 | [Architecture Decision](skills/architecture-decision/) | Make evidence-backed architecture choices with alternatives, trade-offs, fitness functions, migration, and review triggers | [MIT source](skills/architecture-decision/SOURCE.json) |
 | [Codebase Design](skills/codebase-design/) | Design deep modules with small interfaces, evidence-based seams, adapters, locality, leverage, and testable contracts | [MIT source](skills/codebase-design/SOURCE.json) |
+| [Domain Modeling](skills/domain-modeling/) | Sharpen domain vocabulary, relationships, scenarios, code consistency, context documents, and selective ADRs | [MIT source](skills/domain-modeling/SOURCE.json) |
 | [Modular Design Principles](skills/modular-design-principles/) | Define boundaries, state ownership, public contracts, isolation, failure containment, and safe evolution | [MIT source](skills/modular-design-principles/SOURCE.json) |
 | [Performance Engineering](skills/performance-engineering/) | Measure and improve latency, capacity, CPU/memory/I/O, responsiveness, cost, and regressions with controlled evidence | [MIT source](skills/performance-engineering/SOURCE.json) |
 | [Data Governance](skills/data-governance/) | Govern cross-system data with contracts, ownership, consent, identity, lineage, quality monitoring, safe fallbacks, and change management | [MIT source](skills/data-governance/SOURCE.json) |
@@ -476,9 +477,9 @@ The catalog is generated from public GitHub `SKILL.md` results with resumable, r
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,621 |
-| Unique content SHAs | 7,994 |
-| Source repositories | 6,425 |
+| Indexed GitHub paths | 12,622 |
+| Unique content SHAs | 7,995 |
+| Source repositories | 6,426 |
 <!-- CATALOG-METRICS:END -->
 
 Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) or [中文 Atlas](https://sandbaseai.github.io/workbuddy-skill/zh-CN.html), or query the JSONL directly. If it helps you discover a useful workflow, a star or a short review helps other WorkBuddy users find it.
@@ -488,7 +489,7 @@ Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.git
 For a manually curated index of WorkBuddy documentation, MCP integrations, workflows, benchmarks, and Skills, browse [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy).
 
 <!-- CATALOG-ANALYSIS:START -->
-The current static analysis successfully inspected 12,621 paths: 9,935 are structurally adaptable to WorkBuddy, 908 need manual review, 0 are currently WorkBuddy-ready, and 418 contain at least one conservative security signal.
+The current static analysis successfully inspected 12,622 paths: 9,936 are structurally adaptable to WorkBuddy, 908 need manual review, 0 are currently WorkBuddy-ready, and 418 contain at least one conservative security signal.
 <!-- CATALOG-ANALYSIS:END -->
 A clean static scan is never a security guarantee.
 

@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references CONTEXT-FORMAT.md and ADR-FORMAT.md, but those optional templates were not packaged; this Skill defines the required fields inline",
+      "The adopting repository must supply its domain authority, context map, code evidence, owners, and project-specific validation commands"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "added authorization, secret exclusion, untrusted-repository-content, privacy, and gated-migration boundaries"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:mattpocock/skills:skills/engineering/domain-modeling/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/domain-modeling/SKILL.md",
+  "repository": "mattpocock/skills",
+  "sha": "9b97707e19ef1f590aada356f2b3f6bb881f91be",
+  "source_url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/engineering/domain-modeling/SKILL.md"
+}

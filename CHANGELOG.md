@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Domain Modeling Skill with canonical vocabulary, glossary challenges, concrete scenario stress tests, code/evidence cross-checks, consumer mapping, implementation-free context files, selective ADRs, and safe WorkBuddy handoff boundaries.
 - Added the MIT Codebase Design Skill with deep-module vocabulary, smallest-honest interfaces, evidence-based seams, adapter discipline, test-surface design, safe refactoring, and explicit WorkBuddy execution boundaries.
 - Added the MIT Context Retrieval Skill with bounded query decomposition, semantic/keyword/hybrid search selection, access-before-context filtering, provenance and coverage ledgers, freshness/conflict handling, calibrated retrieval metrics, and explicit empty-result safeguards.
 - Added the MIT Skill Supply Chain Audit Skill with immutable provenance, read-only inspection, archive hazard checks, instruction and capability inventory, least-privilege disposition, version comparison, evidence labels, safe verification, and owner-led recovery.

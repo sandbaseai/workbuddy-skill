@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:mattpocock/skills:skills/engineering/domain-modeling/SKILL.md",
+    "skill": "domain-modeling",
+    "skill_path": "skills/domain-modeling",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/domain-modeling-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:mattpocock/skills:skills/engineering/codebase-design/SKILL.md",
     "skill": "codebase-design",
     "skill_path": "skills/codebase-design",
