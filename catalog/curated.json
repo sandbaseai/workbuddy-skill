@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/developer-essentials/skills/e2e-testing-patterns/SKILL.md",
+    "skill": "e2e-testing-patterns",
+    "skill_path": "skills/e2e-testing-patterns",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/e2e-testing-patterns-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/backend-development/skills/architecture-patterns/SKILL.md",
     "skill": "architecture-patterns",
     "skill_path": "skills/architecture-patterns",

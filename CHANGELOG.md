@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT E2E Testing Patterns Skill with user-journey boundaries, stable semantic selectors, isolated test data, explicit synchronization, safe authentication, CI evidence, accessibility checks, flaky-test classification, and side-effect gates.
 - Added the MIT Backend Architecture Patterns Skill with Clean/Onion, Hexagonal, DDD, bounded-context, port/adapter, migration-slice, test-boundary, and architecture-decision guidance plus explicit no-change gates.
 - Added the MIT Code Review Excellence Skill with bounded review stages, behavior-focused feedback, severity calibration, security/testing checklists, disagreement handling, evidence requirements, and explicit merge-gate boundaries.
 - Added the MIT Multi-Reviewer Patterns Skill with independent review dimensions, exact-scope evidence, finding deduplication, severity calibration, dissent preservation, merge gates, and explicit no-automatic-change boundaries.

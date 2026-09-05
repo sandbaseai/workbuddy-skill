@@ -1,0 +1,21 @@
+{
+  "catalog_id": "github:wshobson/agents:plugins/developer-essentials/skills/e2e-testing-patterns/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/e2e-testing-patterns/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "726341c3cf27fa99c764e4a1743f50d918f0798e",
+  "source_commit": "a30778f8c4e6b0a87567941b7cca4f534bf642b6",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/developer-essentials/skills/e2e-testing-patterns/SKILL.md",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source references details.md, but that reference file is not packaged in this catalog entry",
+      "The adopting project must provide an authorized test environment, disposable data, seeded accounts, browser matrix, artifact retention, and side-effect policy"
+    ],
+    "security_signals": [
+      "preserved user-journey scope, testing-pyramid boundaries, stable selectors, independence, cleanup, page objects, and flake debugging",
+      "added synthetic-data and credential handling, artifact redaction, environment and side-effect gates, accessibility evidence, failure classification, and BLOCKED states"
+    ]
+  }
+}
