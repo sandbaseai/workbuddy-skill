@@ -74,6 +74,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Dependabot Management](skills/dependabot/) | 治理多生态依赖更新、安全更新、分组策略、调度和告警分流 |
 | [Agent Governance](skills/agent-governance/) | 以策略、审批、限额、信任和审计约束 Agent 工具与委派行为 |
 | [Architectural Decision Record](skills/architectural-decision-record/) | 记录架构决策、证据、替代方案、取舍、状态和复查路径 |
+| [GitHub Release](skills/github-release/) | 用变更证据、SemVer、校验和资产核对编排可追溯发布 |
 | [Incident Response and Triage](skills/incident-triage/) | 处理事件、稳定服务、验证恢复并沉淀经验 |
 | [Security Audit](skills/security-audit/) | 审查信任边界、控制措施、漏洞和残余风险 |
 | [RAG Evaluation](skills/rag-evaluation/) | 评估检索、引用、事实依据、拒答、成本和回归 |
@@ -89,8 +90,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,662 |
-| Unique content SHAs | 8,035 |
+| Indexed GitHub paths | 12,663 |
+| Unique content SHAs | 8,036 |
 | Source repositories | 6,431 |
 <!-- CATALOG-METRICS:END -->
 
