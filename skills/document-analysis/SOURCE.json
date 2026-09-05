@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": ["removed source-specific files.* capabilities and Obsidian path; added bounded file authorization, parser/OCR, and non-execution boundaries"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:Bhomik04/ava-:skills/official/document-analysis/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/document-analysis/SKILL.md",
+  "repository": "Bhomik04/ava-",
+  "sha": "dab8cf205b879be79d1923b4e0ec5e6ea86a97a3",
+  "source_url": "https://github.com/Bhomik04/ava-/blob/decebbc662d2b278167b2a17d949479cf4cad66d/skills/official/document-analysis/SKILL.md"
+}

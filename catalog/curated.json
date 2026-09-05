@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:Bhomik04/ava-:skills/official/document-analysis/SKILL.md",
+    "skill": "document-analysis",
+    "skill_path": "skills/document-analysis",
+    "category": "content",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/document-analysis-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:LoopyLuci/Skills:skills/cloud-native-security-best-practices/SKILL.md",
     "skill": "cloud-native-security-best-practices",
     "skill_path": "skills/cloud-native-security-best-practices",
