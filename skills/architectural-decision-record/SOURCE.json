@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides a compact ADR template but no repository numbering checker, decision-history scanner, or approval integration",
+      "The adopting project must provide ADR conventions, stakeholder authority, evidence links, documentation validation, and lifecycle review ownership"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved structured front matter, alternatives, positive/negative consequences, coded items, and ADR numbering",
+      "added fact/assumption/unknown separation, evidence and approval state, immutable lifecycle links, privacy boundaries, and no-fabricated-approval defaults"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/create-architectural-decision-record/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/architectural-decision-record/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "be10104faded844c01d0f5b1f82e8c9fca15ba20",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/create-architectural-decision-record/SKILL.md"
+}

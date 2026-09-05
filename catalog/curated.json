@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/create-architectural-decision-record/SKILL.md",
+    "skill": "architectural-decision-record",
+    "skill_path": "skills/architectural-decision-record",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/architectural-decision-record-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/agent-governance/SKILL.md",
     "skill": "agent-governance",
     "skill_path": "skills/agent-governance",
