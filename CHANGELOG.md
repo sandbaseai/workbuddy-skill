@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Tight Bug Loop Skill with red-capable symptom tests, deterministic feedback loops, minimization, falsifiable hypothesis ranking, selective instrumentation, seam-level regression tests, redaction, and cleanup evidence.
 - Added the MIT Git Guardrails Skill with effect classification, command normalization, repository-scoped policy, explicit exceptions, protected-ref safeguards, secret-safe diagnostics, disposable-worktree verification, and recovery maintenance.
 - Added the MIT Merge Conflict Resolution Skill with exact operation-state inspection, primary-intent tracing, hunk ledgers, semantic resolution, native validation, protected-branch safeguards, and recoverable completion/abort boundaries.
 - Added the MIT Wayfinding Skill with destination-first scope, canonical decision maps, frontier/dependency tracking, research/prototype/task classification, evidence-backed resolution, local-tracker fallback, and safe cross-session handoff.

@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:mattpocock/skills:skills/engineering/diagnosing-bugs/SKILL.md",
+    "skill": "tight-bug-loop",
+    "skill_path": "skills/tight-bug-loop",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/tight-bug-loop-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:mattpocock/skills:skills/misc/git-guardrails-claude-code/SKILL.md",
     "skill": "git-guardrails",
     "skill_path": "skills/git-guardrails",

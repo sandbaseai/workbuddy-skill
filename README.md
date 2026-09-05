@@ -154,6 +154,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | [Wayfinding](skills/wayfinding/) | Chart large goals as bounded decision maps with dependencies, frontier tickets, evidence, ownership, and safe handoff | [MIT source](skills/wayfinding/SOURCE.json) |
 | [Merge Conflict Resolution](skills/merge-conflict-resolution/) | Resolve authorized Git conflicts from primary intent with hunk ledgers, native checks, recovery boundaries, and auditable handoff | [MIT source](skills/merge-conflict-resolution/SOURCE.json) |
 | [Git Guardrails](skills/git-guardrails/) | Gate destructive and external Git commands with scoped policy, explicit exceptions, safe diagnostics, and recovery evidence | [MIT source](skills/git-guardrails/SOURCE.json) |
+| [Tight Bug Loop](skills/tight-bug-loop/) | Build red-capable reproductions, minimize failures, test hypotheses, add seam-level regressions, and clean diagnostics | [MIT source](skills/tight-bug-loop/SOURCE.json) |
 | [Modular Design Principles](skills/modular-design-principles/) | Define boundaries, state ownership, public contracts, isolation, failure containment, and safe evolution | [MIT source](skills/modular-design-principles/SOURCE.json) |
 | [Performance Engineering](skills/performance-engineering/) | Measure and improve latency, capacity, CPU/memory/I/O, responsiveness, cost, and regressions with controlled evidence | [MIT source](skills/performance-engineering/SOURCE.json) |
 | [Data Governance](skills/data-governance/) | Govern cross-system data with contracts, ownership, consent, identity, lineage, quality monitoring, safe fallbacks, and change management | [MIT source](skills/data-governance/SOURCE.json) |
@@ -481,8 +482,8 @@ The catalog is generated from public GitHub `SKILL.md` results with resumable, r
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,626 |
-| Unique content SHAs | 7,999 |
+| Indexed GitHub paths | 12,627 |
+| Unique content SHAs | 8,000 |
 | Source repositories | 6,426 |
 <!-- CATALOG-METRICS:END -->
 
@@ -493,7 +494,7 @@ Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.git
 For a manually curated index of WorkBuddy documentation, MCP integrations, workflows, benchmarks, and Skills, browse [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy).
 
 <!-- CATALOG-ANALYSIS:START -->
-The current static analysis successfully inspected 12,626 paths: 9,940 are structurally adaptable to WorkBuddy, 908 need manual review, 0 are currently WorkBuddy-ready, and 418 contain at least one conservative security signal.
+The current static analysis successfully inspected 12,627 paths: 9,941 are structurally adaptable to WorkBuddy, 908 need manual review, 0 are currently WorkBuddy-ready, and 418 contain at least one conservative security signal.
 <!-- CATALOG-ANALYSIS:END -->
 A clean static scan is never a security guarantee.
 

@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references project-specific CONTEXT.md, ADRs, and an optional HITL loop template; these are not packaged",
+      "The adopting project must provide its runtime, test seams, redaction rules, profiler/trace tooling, and authorized reproduction environment"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved redaction-first diagnosis and added untrusted-artifact, production-access, temporary-instrumentation, disposable-fixture, and rollback boundaries"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:mattpocock/skills:skills/engineering/diagnosing-bugs/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/tight-bug-loop/SKILL.md",
+  "repository": "mattpocock/skills",
+  "sha": "061c25a524acaa93d4534e9e08a793c0a5fe45fd",
+  "source_url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/engineering/diagnosing-bugs/SKILL.md"
+}
