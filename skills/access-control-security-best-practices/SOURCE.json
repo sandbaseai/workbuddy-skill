@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": ["generalized authorization boundaries and removed source-platform assumptions; no runtime assets packaged"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:LoopyLuci/Skills:skills/access-control-security-best-practices/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/access-control-security-best-practices/SKILL.md",
+  "repository": "LoopyLuci/Skills",
+  "sha": "776af870249074598fb0e788c67f03436e50aa52",
+  "source_url": "https://github.com/LoopyLuci/Skills/blob/6f9faf8a3a216cddd3eda96a6c6b93c00710fa5b/skills/access-control-security-best-practices/SKILL.md"
+}
