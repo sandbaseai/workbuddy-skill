@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Respec Skill for evidence-driven specification revisions, explicit scope and non-goals, observable acceptance contracts, compatibility and migration checks, approval traceability, and safe delivery handoff.
 - Added the MIT Documentation Skill with repository reconnaissance, evidence mapping, executable-command verification, audience-aware structure, accessibility and portability guidance, documentation audits, and uncertainty-aware handoff.
 - Added the MIT Code Reviewer Skill with diff-first review, correctness and regression checks, scope control, security and operational checkpoints, actionable severity-based findings, and explicit build/merge recommendations.
 - Added the MIT Debugging Methodology Skill with safe reproduction, minimized cases, boundary isolation, causal hypotheses, controlled experiments, durable fixes, regression verification, and uncertainty-aware handoff.

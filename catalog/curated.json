@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:fadiwahba/lean-spec:skills/respec/SKILL.md",
+    "skill": "respec",
+    "skill_path": "skills/respec",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/respec-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:beast-ofcourse/SWE-pro-Agents:skills/documentation/SKILL.md",
     "skill": "documentation",
     "skill_path": "skills/documentation",

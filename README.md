@@ -134,6 +134,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | Skill | Use it for | Provenance |
 |---|---|---|
 | [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
+| [Respec](skills/respec/) | Revise feature specifications from implementation evidence with traceable acceptance, compatibility, approval, and handoff | [MIT source](skills/respec/SOURCE.json) |
 | [Documentation](skills/documentation/) | Create evidence-backed, executable, accessible, and maintainable project documentation | [MIT source](skills/documentation/SOURCE.json) |
 | [Code Reviewer](skills/code-reviewer/) | Review diffs for correctness, regressions, scope, maintainability, security, and release safety | [MIT source](skills/code-reviewer/SOURCE.json) |
 | [Debugging Methodology](skills/debugging-methodology/) | Reproduce, isolate, explain, fix, and verify software failures with controlled evidence and regression protection | [MIT source](skills/debugging-methodology/SOURCE.json) |

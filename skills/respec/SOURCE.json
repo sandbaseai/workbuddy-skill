@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["The source points to project-specific spec and validation files; their workflow intent was rewritten as self-contained guidance."],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:fadiwahba/lean-spec:skills/respec/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/respec/SKILL.md",
+  "repository": "fadiwahba/lean-spec",
+  "sha": "ba8bcc44d88f1fb16f6e1675f02ddd0353da5070",
+  "source_url": "https://github.com/fadiwahba/lean-spec/blob/be83ebe8193dd5a5c33231523519ef68705680de/skills/respec/SKILL.md"
+}
