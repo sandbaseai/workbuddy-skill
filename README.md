@@ -57,6 +57,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [E2E Testing Patterns](skills/e2e-testing-patterns/) | 用稳定定位、独立数据、可访问性和证据化 flaky 诊断构建可靠端到端测试 |
 | [Python Testing Patterns](skills/python-testing-patterns/) | 用 pytest、隔离 fixture、契约化 mock、异步控制和风险驱动覆盖率构建可靠测试 |
 | [JavaScript Testing Patterns](skills/javascript-testing-patterns/) | 用 Jest/Vitest、类型安全 mock、组件行为断言和异步清理构建可靠 JS/TS 测试 |
+| [Temporal Python Testing](skills/temporal-python-testing/) | 用时间跳过、Activity 隔离、Worker 集成和 replay 验证 Temporal 工作流确定性 |
 | [Code Review Excellence](skills/code-review-excellence/) | 以证据、行为和风险为中心组织建设性代码评审，区分阻断项与偏好 |
 | [Requesting Code Review](skills/requesting-code-review/) | 用独立上下文、精确 SHA、需求和测试证据请求合并前代码评审 |
 | [Writing Skills](skills/writing-skills/) | 用压力场景和 RED-GREEN-REFACTOR 验证 Skill 的触发、行为和安全边界 |

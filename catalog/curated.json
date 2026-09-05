@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/backend-development/skills/temporal-python-testing/SKILL.md",
+    "skill": "temporal-python-testing",
+    "skill_path": "skills/temporal-python-testing",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/temporal-python-testing-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/javascript-typescript/skills/javascript-testing-patterns/SKILL.md",
     "skill": "javascript-testing-patterns",
     "skill_path": "skills/javascript-testing-patterns",

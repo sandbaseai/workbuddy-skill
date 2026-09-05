@@ -1,0 +1,21 @@
+{
+  "catalog_id": "github:wshobson/agents:plugins/backend-development/skills/temporal-python-testing/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/temporal-python-testing/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "7be1f999c64e184a5786c50b8c2a643003e0fde3",
+  "source_commit": "a30778f8c4e6b0a87567941b7cca4f534bf642b6",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/backend-development/skills/temporal-python-testing/SKILL.md",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source references resources/unit-testing.md, integration-testing.md, replay-testing.md, and local-setup.md, but those resources are not packaged in this catalog entry",
+      "The adopting project must provide SDK/Server versions, an isolated namespace, authorized redacted histories, disposable payloads, and workflow versioning/rollback ownership"
+    ],
+    "security_signals": [
+      "preserved time-skipping, ActivityEnvironment, Worker integration, mocked activities, replay determinism, async fixtures, coverage, and CI concepts",
+      "added history/payload redaction, production namespace boundaries, task-queue isolation, worker cleanup, version compatibility, unknown-state handling, and explicit BLOCKED gates"
+    ]
+  }
+}

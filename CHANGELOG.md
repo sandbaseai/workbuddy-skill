@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Temporal Python Testing Skill with time-skipping workflow tests, Activity isolation, Worker integration, authorized redacted replay, determinism/version gates, safe shutdown, and fail-closed CI boundaries.
 - Added the MIT JavaScript/TypeScript Testing Patterns Skill with Jest/Vitest layering, typed fixtures, contract-aware mocks, async/timer cleanup, Testing Library behavior assertions, risk-driven coverage, and fail-closed CI gates.
 - Added the MIT Python Testing Patterns Skill with pytest layering, isolated fixtures, contract-aware mocks, deterministic time/async controls, database boundaries, risk-driven coverage, CI failure classification, and fail-closed test gates.
 - Added the MIT E2E Testing Patterns Skill with user-journey boundaries, stable semantic selectors, isolated test data, explicit synchronization, safe authentication, CI evidence, accessibility checks, flaky-test classification, and side-effect gates.
