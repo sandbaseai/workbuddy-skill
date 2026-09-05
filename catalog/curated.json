@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:aydabd/github-bootstrap:templates/.github/skills/backend-review/SKILL.md",
+    "skill": "backend-review",
+    "skill_path": "skills/backend-review",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/backend-review-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:aydabd/github-bootstrap:templates/.github/skills/breaking-change-review/SKILL.md",
     "skill": "breaking-change-review",
     "skill_path": "skills/breaking-change-review",

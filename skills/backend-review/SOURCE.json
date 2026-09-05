@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["repository-specific shared JSONL finding contract"],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:aydabd/github-bootstrap:templates/.github/skills/backend-review/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/backend-review/SKILL.md",
+  "repository": "aydabd/github-bootstrap",
+  "sha": "76f55bd1af1d201bcade89fd25747c1accfa0c8c",
+  "source_url": "https://github.com/aydabd/github-bootstrap/blob/b813d3f7c3ce5e7c5ef3207e247ede58ba79d1e5/templates/.github/skills/backend-review/SKILL.md"
+}

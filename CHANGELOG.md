@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Backend Review Skill with input and authorization checks, contract and error semantics, transaction and consistency boundaries, dependency/resource safety, persistence and migration review, failure behavior, and regression handoff.
 - Added the MIT Breaking Change Review Skill with contract-surface mapping, bidirectional compatibility analysis, mixed-version checks, schema and migration risk, consumer evidence, versioning, rollout, rollback, and deprecation gates.
 - Added the MIT Compliance Review Skill with diff-first control inspection, purpose and minimization, consent and retention, auditability, access segregation, financial controls, regulatory traceability, evidence classification, and retest handoff.
 - Added the MIT Escalation Policy Skill with explicit trigger and non-trigger checks, authority boundaries, sensitive-context transfer, policy-backed timing, emergency routing, audit trails, and accountable closure.
