@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Debugging Methodology Skill with safe reproduction, minimized cases, boundary isolation, causal hypotheses, controlled experiments, durable fixes, regression verification, and uncertainty-aware handoff.
 - Increased scheduled public Skill catalog refreshes from daily to every six hours while retaining bounded crawling, rate-limit backoff, validation, and automatic publication safeguards.
 - Added the MIT Security Audit Skill with bounded scope, trust-boundary mapping, control verification, safe tool use, risk classification, compliance evidence, remediation ownership, retesting, and residual-risk handoff.
 - Added the MIT Test Runner Skill with fast/full modes, repository-native command selection, safe scope and environment handling, failure classification, flake transparency, and reproducible test reporting.

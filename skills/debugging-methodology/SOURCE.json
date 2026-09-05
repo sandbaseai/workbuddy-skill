@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["references/reproduction-checklist.md", "references/root-cause-analysis.md", "references/isolation-techniques.md", "references/performance-debugging.md"],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:magnus919/hermes-profiles:skills/debugging-methodology/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/debugging-methodology/SKILL.md",
+  "repository": "magnus919/hermes-profiles",
+  "sha": "bca904b3dae3920be8653a89b88d67f1c79132dc",
+  "source_url": "https://github.com/magnus919/hermes-profiles/blob/867a555e13bae53a3945aa5328b1e09d347268cc/skills/debugging-methodology/SKILL.md"
+}

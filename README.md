@@ -134,6 +134,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | Skill | Use it for | Provenance |
 |---|---|---|
 | [SandBase](skills/sandbase/) | Discover, compare, and run live APIs and models | Repository-native |
+| [Debugging Methodology](skills/debugging-methodology/) | Reproduce, isolate, explain, fix, and verify software failures with controlled evidence and regression protection | [MIT source](skills/debugging-methodology/SOURCE.json) |
 | [Security Audit](skills/security-audit/) | Audit trust boundaries, controls, vulnerabilities, compliance evidence, remediation, and residual risk within an authorized scope | [MIT source](skills/security-audit/SOURCE.json) |
 | [Test Runner](skills/test-runner/) | Run fast or full repository verification with safe command selection, failure evidence, and reproducible reporting | [MIT source](skills/test-runner/SOURCE.json) |
 | [Regression Risk Review](skills/regression-risk-review/) | Review behavior changes against existing contracts, failure modes, compatibility paths, and production impact | [MIT source](skills/regression-risk-review/SOURCE.json) |

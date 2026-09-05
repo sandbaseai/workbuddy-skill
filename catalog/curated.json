@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:magnus919/hermes-profiles:skills/debugging-methodology/SKILL.md",
+    "skill": "debugging-methodology",
+    "skill_path": "skills/debugging-methodology",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/debugging-methodology-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:htafolla/StringRay:src/skills/security-audit/SKILL.md",
     "skill": "security-audit",
     "skill_path": "skills/security-audit",
