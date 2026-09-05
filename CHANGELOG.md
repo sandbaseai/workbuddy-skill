@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Architecture Friction Scan Skill with history-based hot-spot selection, deep-module/deletion-test analysis, seam and test-friction evidence, candidate ledgers, ADR-aware ranking, structured report guidance, and read-only WorkBuddy boundaries.
 - Added the MIT Tight Bug Loop Skill with red-capable symptom tests, deterministic feedback loops, minimization, falsifiable hypothesis ranking, selective instrumentation, seam-level regression tests, redaction, and cleanup evidence.
 - Added the MIT Git Guardrails Skill with effect classification, command normalization, repository-scoped policy, explicit exceptions, protected-ref safeguards, secret-safe diagnostics, disposable-worktree verification, and recovery maintenance.
 - Added the MIT Merge Conflict Resolution Skill with exact operation-state inspection, primary-intent tracing, hunk ledgers, semantic resolution, native validation, protected-branch safeguards, and recoverable completion/abort boundaries.

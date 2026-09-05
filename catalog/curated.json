@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:mattpocock/skills:skills/engineering/improve-codebase-architecture/SKILL.md",
+    "skill": "architecture-friction-scan",
+    "skill_path": "skills/architecture-friction-scan",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/architecture-friction-scan-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:mattpocock/skills:skills/engineering/diagnosing-bugs/SKILL.md",
     "skill": "tight-bug-loop",
     "skill_path": "skills/tight-bug-loop",

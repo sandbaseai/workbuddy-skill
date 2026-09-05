@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references project-specific CONTEXT.md, ADRs, a codebase-design Skill, and an HTML-REPORT.md scaffold; these were not packaged",
+      "The adopting project must provide its repository history, domain authority, architecture conventions, report destination, and authorized review workflow"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "removed implicit browser opening and user-selection side effects; added read-only default, temporary-report, secret, untrusted-content, and authorization boundaries"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:mattpocock/skills:skills/engineering/improve-codebase-architecture/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/architecture-friction-scan/SKILL.md",
+  "repository": "mattpocock/skills",
+  "sha": "a578dd0a34ad0a8886abe7e7642b100106ba86d6",
+  "source_url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/engineering/improve-codebase-architecture/SKILL.md"
+}
