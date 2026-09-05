@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:obra/superpowers:skills/using-git-worktrees/SKILL.md",
+    "skill": "worktree-isolation",
+    "skill_path": "skills/worktree-isolation",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/worktree-isolation-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:obra/superpowers:skills/executing-plans/SKILL.md",
     "skill": "plan-execution",
     "skill_path": "skills/plan-execution",

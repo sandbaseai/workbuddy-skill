@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source assumes provider-native worktree tools, platform setup commands, and a human consent prompt; these were not packaged",
+      "The adopting project must provide Git permissions, repository instructions, native setup/test commands, and ownership policy for temporary worktrees"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "generalized provider-specific worktree setup into WorkBuddy; added submodule detection, path/ignore verification, authority boundaries, baseline evidence, conflict recovery, and ownership-safe cleanup"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:obra/superpowers:skills/using-git-worktrees/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/worktree-isolation/SKILL.md",
+  "repository": "obra/superpowers",
+  "sha": "1381dacb3516b94382dd6ec736ede21ee8ede2b3",
+  "source_url": "https://github.com/obra/superpowers/blob/b36e0829c6d0140e93cfef2ca599b1b07d4a7797/skills/using-git-worktrees/SKILL.md"
+}
