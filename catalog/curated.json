@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:aydabd/github-bootstrap:templates/.github/skills/compliance-review/SKILL.md",
+    "skill": "compliance-review",
+    "skill_path": "skills/compliance-review",
+    "category": "security",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/compliance-review-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:microsoft/agent-framework:dotnet/samples/04-hosting/FoundryHostedAgents/responses/Hosted-AgentSkills/skills/escalation-policy/SKILL.md",
     "skill": "escalation-policy",
     "skill_path": "skills/escalation-policy",

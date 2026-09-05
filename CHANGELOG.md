@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Compliance Review Skill with diff-first control inspection, purpose and minimization, consent and retention, auditability, access segregation, financial controls, regulatory traceability, evidence classification, and retest handoff.
 - Added the MIT Escalation Policy Skill with explicit trigger and non-trigger checks, authority boundaries, sensitive-context transfer, policy-backed timing, emergency routing, audit trails, and accountable closure.
 - Added the MIT Repository Formatting Skill with repository-root detection, declared formatter selection, dependency and scope safety, bounded recovery, formatting-only diff review, post-format checks, and reproducible handoff.
 - Added the Apache-2.0 Launch Risk Review Skill with scoped input and destination checks, AI detection, cross-functional risk categories, evidence calibration, blocker classification, specialist routing, rollout gates, and accountable handoff.
