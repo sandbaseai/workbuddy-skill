@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/observability-monitoring/skills/prometheus-configuration/SKILL.md",
+    "skill": "prometheus-configuration",
+    "skill_path": "skills/prometheus-configuration",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/prometheus-configuration-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/observability-monitoring/skills/slo-implementation/SKILL.md",
     "skill": "slo-implementation",
     "skill_path": "skills/slo-implementation",

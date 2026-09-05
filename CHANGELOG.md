@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Prometheus Configuration Skill with metric contracts, bounded labels, scrape/discovery/relabel validation, recording and alert rules, HA/retention/capacity planning, self-monitoring, privacy-safe access, and authorized production changes.
 - Added the MIT SLO Implementation Skill with user-centered SLIs, versioned SLO contracts, error budgets, target calibration, multi-window burn-rate alerts, missing-data handling, ownership, exceptions, and reliability-policy gates.
 - Added the MIT Database Migration Skill with expand-contract compatibility, ORM/schema transformations, bounded idempotent backfills, lock/WAL/replication analysis, consumer/CDC impact, validation, recovery, and authorized production-change gates.
 - Added the MIT PostgreSQL Table Design Skill with workload-backed types, constraints, access-path indexes, JSONB, partitioning, RLS, lock/replication analysis, expand-contract migrations, bounded backfills, backup/recovery, and authorized production DDL gates.

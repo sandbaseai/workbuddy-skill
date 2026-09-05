@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides Prometheus setup, metric naming, scrape intervals, recording rules, HA, retention, relabeling, federation, long-term storage, self-monitoring, and target/query troubleshooting guidance but no target inventory, metric contract, storage capacity, alert routing, or production authorization",
+      "The adopting project must provide authorized metrics endpoints, isolated config/rule validation, cardinality and storage baselines, TLS/permissions, retention/deletion policy, owners, and rollback evidence"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved Prometheus metric naming, scrape/service discovery, recording/alert rules, HA, retention, relabeling, federation/long-term storage, self-monitoring, and troubleshooting guidance",
+      "added WorkBuddy label/cardinality and secret limits, target authorization, TLS/least privilege, rule edge-case validation, storage/WAL/backpressure budgets, privacy-safe deletion, alert delivery verification, and production change controls"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:wshobson/agents:plugins/observability-monitoring/skills/prometheus-configuration/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/prometheus-configuration/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "f38371dd5bc691e97c11709298a61060928f1ade",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/observability-monitoring/skills/prometheus-configuration/SKILL.md"
+}
