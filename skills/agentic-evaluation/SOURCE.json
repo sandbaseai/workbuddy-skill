@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides illustrative code patterns but no evaluator implementation, schema, test set, or calibration harness",
+      "The adopting project must provide authorized model/test integrations, representative fixtures, and human-label calibration when needed"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "added bounded iteration, budget, privacy, schema-validation, and human-review gates",
+      "separated evaluator evidence from model judgment and release decisions"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/agentic-eval/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/agentic-evaluation/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "3cb14203efaf62af98065bd599600ba808f0ef31",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/agentic-eval/SKILL.md"
+}
