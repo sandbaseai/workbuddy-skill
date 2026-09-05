@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:undercutsh/firstpass:skills/firstpass/SKILL.md",
+    "skill": "confidence-gated-routing",
+    "skill_path": "skills/confidence-gated-routing",
+    "category": "productivity",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/confidence-gated-routing-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:ever-just/agentskills:skills/agent-quality-grading/SKILL.md",
     "skill": "agent-quality-grading",
     "skill_path": "skills/agent-quality-grading",

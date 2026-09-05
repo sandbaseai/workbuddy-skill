@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["The source's optional model mapping and evaluation files were not packaged"],
+    "packaged_resources": [],
+    "security_signals": ["generalized tier routing with independent verification and redacted handoff; no runtime assets packaged"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:undercutsh/firstpass:skills/firstpass/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/firstpass/SKILL.md",
+  "repository": "undercutsh/firstpass",
+  "sha": "8efe2e7a5d2438d002a7344ee410cb061c6c1b1c",
+  "source_url": "https://github.com/undercutsh/firstpass/blob/b42f2f4c1cdbbfedf9349acd0e2b488259cb1880/skills/firstpass/SKILL.md"
+}
