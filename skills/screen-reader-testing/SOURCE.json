@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides screen-reader command references and checklists but no browser automation adapter, assistive-technology lab, accessibility-tree collector, or evidence store",
+      "The adopting project must provide authorized browser/device sessions, test fixtures, accessibility standards mapping, manual verification capacity, and redaction-safe retention"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved VoiceOver/NVDA/JAWS/TalkBack/Narrator coverage, browse/focus modes, landmarks/headings/forms, dynamic announcements, keyboard interaction, and ARIA issue patterns",
+      "added WorkBuddy environment/session authorization, synthetic data, side-effect gates, automation-versus-manual evidence separation, explicit incomplete-validation states, and sensitive-output redaction"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:wshobson/agents:plugins/accessibility-compliance/skills/screen-reader-testing/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/screen-reader-testing/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "47d2fdf2e4f6a7582b0a3d1285771ea9fd220143",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/accessibility-compliance/skills/screen-reader-testing/SKILL.md"
+}

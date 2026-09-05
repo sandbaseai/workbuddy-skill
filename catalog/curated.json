@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/accessibility-compliance/skills/screen-reader-testing/SKILL.md",
+    "skill": "screen-reader-testing",
+    "skill_path": "skills/screen-reader-testing",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/screen-reader-testing-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:obra/superpowers:skills/test-driven-development/SKILL.md",
     "skill": "test-driven-development",
     "skill_path": "skills/test-driven-development",

@@ -56,6 +56,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Bug Reproduction Brief](skills/bug-reproduction-brief/) | 将模糊或间歇性缺陷收敛为最小、可重复、有证据的复现简报 |
 | [Systematic Debugging](skills/systematic-debugging/) | 以红色反馈回路、数据流追踪和可证伪假设定位根因并验证回归 |
 | [Test-Driven Development](skills/test-driven-development/) | 以 RED、GREEN、REFACTOR 建立行为测试、最小实现和回归保护 |
+| [Screen Reader Testing](skills/screen-reader-testing/) | 验证屏幕阅读器、键盘、ARIA、表单和动态内容的可感知行为 |
 | [Documentation](skills/documentation/) | 编写有证据、可执行、易维护的项目文档 |
 | [Network Troubleshooting](skills/network-troubleshooting/) | 分层定位 DNS、路由、TLS、HTTP 和资源问题 |
 | [Chaos Engineer](skills/chaos-engineer/) | 设计有授权、可回滚、影响范围受控的韧性实验 |
@@ -99,9 +100,9 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,672 |
-| Unique content SHAs | 8,045 |
-| Source repositories | 6,431 |
+| Indexed GitHub paths | 12,673 |
+| Unique content SHAs | 8,046 |
+| Source repositories | 6,432 |
 <!-- CATALOG-METRICS:END -->
 
 静态检查只能帮助筛选，不能替代人工安全审查。目录的字段说明和来源约定见[目录文档](catalog/README.md)；适配指南见[中文文档](docs/adapting-skills.zh-CN.md)和[English guide](docs/adapting-skills.md)。

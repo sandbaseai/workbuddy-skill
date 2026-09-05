@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Screen Reader Testing Skill with declared browser/assistive-technology matrices, landmark and keyboard checks, ARIA/form validation, dynamic announcements, automation-versus-manual evidence separation, and safe testing boundaries.
 - Added the MIT Test-Driven Development Skill with RED/GREEN/REFACTOR, expected-failure verification, real-behavior assertions, minimal implementation, mock limits, full regression gates, explicit exceptions, and safe fixture boundaries.
 - Added the MIT Subagent-Driven Development Skill with isolated plan-task execution, fresh scoped workers, task-level specification and quality reviews, bounded fix loops, recovery ledgers, final whole-branch review, and explicit merge/release authority boundaries.
 - Added the MIT Writing Implementation Plans Skill with scope checks, file/interface maps, bite-sized testable tasks, global constraints, dependency and rollback gates, placeholder self-review, and explicit planning-versus-implementation boundaries.
