@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides RAG components, vector stores, embeddings, retrieval strategies, reranking, and a LangGraph example but no corpus, ACL service, embedding endpoint, vector database, evaluation set, or deployment runtime",
+      "The adopting project must provide authorized source content, tenant/ACL metadata, isolated evaluation data, provider configuration, retention policy, and safe evidence storage"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved vector retrieval, embeddings, dense/sparse/hybrid search, reranking, and grounded generation guidance",
+      "added WorkBuddy source licensing, ACL-before-retrieval, tenant isolation, prompt-injection handling, citation verification, low-confidence refusal, index lifecycle, deletion, redaction, cost, and authorization boundaries"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:wshobson/agents:plugins/llm-application-dev/skills/rag-implementation/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/rag-implementation/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "04178236ed55aff2a0ea8d90bf6bc83fb4d12da8",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/llm-application-dev/skills/rag-implementation/SKILL.md"
+}

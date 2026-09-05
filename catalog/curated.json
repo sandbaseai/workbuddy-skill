@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/llm-application-dev/skills/rag-implementation/SKILL.md",
+    "skill": "rag-implementation",
+    "skill_path": "skills/rag-implementation",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/rag-implementation-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/data-engineering/skills/airflow-dag-patterns/SKILL.md",
     "skill": "airflow-dag-patterns",
     "skill_path": "skills/airflow-dag-patterns",

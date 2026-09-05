@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT RAG Implementation Skill with ingestion and chunk provenance, ACL-before-retrieval, dense/sparse/hybrid search, reranking, citation verification, prompt-injection handling, refusal thresholds, evaluation, index lifecycle, privacy, cost, and authorization boundaries.
 - Added the MIT Airflow DAG Patterns Skill with idempotent and observable DAG design, logical-date scheduling, dependency sensors, bounded retries, branching, failure classification, testing, safe backfills, and production-side-effect boundaries.
 - Added the MIT dbt Transformation Patterns Skill with layered source/staging/intermediate/mart design, versioned contracts, tests, documentation and lineage, incremental watermark and late-data controls, cost-aware CI, isolated targets, and production-write boundaries.
 - Added the MIT Workflow Orchestration Patterns Skill with deterministic workflow/activity boundaries, idempotent activities, bounded retries and timeouts, payload limits, version compatibility, Saga compensation, human approval gates, and recovery testing.
