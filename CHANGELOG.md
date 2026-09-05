@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Web Design Reviewer Skill with allowlisted browser targets, read-only defaults, responsive/layout/accessibility/consistency checks, evidence-based prioritization, redacted artifacts, authorized source fixes, regression verification, and rollback controls.
 - Added the MIT Project Architecture Blueprint Skill with pinned-snapshot evidence, read-only analysis, real boundary/dependency/data-flow mapping, cross-cutting controls, deployment/testing uncertainty, redacted diagrams and code examples, owner review, update triggers, and authorized change/publication gates.
 - Added the MIT Performance Review Writer Skill with self/peer/360/upward feedback modes, authorized evidence gathering, STAR drafting, anti-fabrication and anti-bias checks, sensitive-data minimization, anonymization caveats, redacted local drafts, and user-only submission controls.
 - Added the MIT MCP Security Audit Skill with non-executing `.mcp.json` review, secret-safe evidence, shell-injection and floating-dependency detection, approved-server/registry checks, network/path/env boundaries, fork/PR trust controls, fail-closed unknown semantics, and authorized remediation gates.

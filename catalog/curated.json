@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/web-design-reviewer/SKILL.md",
+    "skill": "web-design-reviewer",
+    "skill_path": "skills/web-design-reviewer",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/web-design-reviewer-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/architecture-blueprint-generator/SKILL.md",
     "skill": "architecture-blueprint-generator",
     "skill_path": "skills/architecture-blueprint-generator",

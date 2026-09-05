@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides website prerequisites, framework/style detection, browser visual inspection, layout/responsive/accessibility/consistency checks, viewport matrix, prioritized source fixes, re-verification, report format, and Playwright MCP guidance but no target authorization, domain/network scope, privacy-safe artifact policy, evidence taxonomy, or deployment controls",
+      "The adopting project must provide an authorized local/staging or read-only remote URL, source workspace when fixing, browser/tool versions, synthetic accounts/data, domain allowlist, redaction policy, reviewers, and separately authorized mutation/deployment/rollback evidence"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved web prerequisites, framework/style detection, browser traversal, screenshots/DOM, layout/responsive/accessibility/consistency inspection, viewport coverage, P1/P2/P3 prioritization, source-level fixes, re-verification, regression, and reporting guidance",
+      "added WorkBuddy allowlisted URL and non-production boundaries, read-only default, SSRF/external-navigation controls, credential/data/artifact redaction, observed/inferred/unknown semantics, behavior-versus-visual evidence, authorized mutation gates, retry limits, and rollback controls"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/web-design-reviewer/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/web-design-reviewer/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "21764d37e99e24b2f4f0df3ea9fbbe099f0b739b",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/web-design-reviewer/SKILL.md"
+}
