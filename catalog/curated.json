@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:a5c-ai/babysitter:library/methodologies/superpowers/skills/test-driven-development/SKILL.md",
+    "skill": "test-driven-development",
+    "skill_path": "skills/test-driven-development",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/test-driven-development-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:aydabd/cacad:.github/skills/accessibility-review/SKILL.md",
     "skill": "accessibility-review",
     "skill_path": "skills/accessibility-review",

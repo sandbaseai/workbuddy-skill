@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["process-agent definitions referenced by the source"],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:a5c-ai/babysitter:library/methodologies/superpowers/skills/test-driven-development/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/test-driven-development/SKILL.md",
+  "repository": "a5c-ai/babysitter",
+  "sha": "35404bf64cb88e54dffaeef752bd67bcc945b393",
+  "source_url": "https://github.com/a5c-ai/babysitter/blob/feb68abe397acc14f32b34984975c48fedba2b33/library/methodologies/superpowers/skills/test-driven-development/SKILL.md"
+}

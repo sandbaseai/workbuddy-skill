@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Test-Driven Development Skill with behavior-first RED tests, smallest-change GREEN implementation, evidence-preserving REFACTOR loops, adjacent boundary checks, and reproducible handoff.
 - Added the MIT Accessibility Review Skill with evidence-first UI inspection, semantic and keyboard checks, focus and ARIA validation, assistive-technology limitations, severity-based findings, and retest handoff.
 - Added the MIT Inspect Runtime Evidence Skill with exact capability mapping, read-only inspection, evidence provenance and freshness, platform-level execution statuses, stale/crossed evidence detection, and uncertainty-aware support reports.
 - Added the MIT Respec Skill for evidence-driven specification revisions, explicit scope and non-goals, observable acceptance contracts, compatibility and migration checks, approval traceability, and safe delivery handoff.
