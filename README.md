@@ -83,6 +83,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Security Audit](skills/security-audit/) | 审查信任边界、控制措施、漏洞和残余风险 |
 | [RAG Evaluation](skills/rag-evaluation/) | 评估检索、引用、事实依据、拒答、成本和回归 |
 | [Playwright Web App QA](skills/playwright-webapp-qa/) | 验证浏览器流程、可见状态和网络/控制台问题 |
+| [Chrome DevTools Diagnostics](skills/chrome-devtools/) | 用快照、控制台、网络请求和性能 trace 诊断授权浏览器页面 |
 | [Deep Evidence Research](skills/deep-research/) | 产出带来源、争议和限制说明的研究结果 |
 
 浏览 [完整精选目录](skills/) 或直接打开 [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/)。每个精选条目都提供来源说明；外部来源的许可证和适配信息见对应的 `SOURCE.json`。
@@ -94,8 +95,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,667 |
-| Unique content SHAs | 8,040 |
+| Indexed GitHub paths | 12,668 |
+| Unique content SHAs | 8,041 |
 | Source repositories | 6,431 |
 <!-- CATALOG-METRICS:END -->
 

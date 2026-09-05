@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/chrome-devtools/SKILL.md",
+    "skill": "chrome-devtools",
+    "skill_path": "skills/chrome-devtools",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/chrome-devtools-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/acquire-codebase-knowledge/SKILL.md",
     "skill": "acquire-codebase-knowledge",
     "skill_path": "skills/acquire-codebase-knowledge",

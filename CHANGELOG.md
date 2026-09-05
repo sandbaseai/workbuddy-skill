@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Chrome DevTools Diagnostics Skill with snapshot-first interaction, console/network correlation, bounded script evaluation, authorized emulation, performance traces, side-effect classification, and redaction-safe browser evidence.
 - Added the MIT Acquire Codebase Knowledge Skill with seven-document evidence contracts, intent-versus-reality checks, stack and integration mapping, history-aware concerns, explicit TODO/ASK USER states, generated-artifact exclusions, and read-only redaction boundaries.
 - Added the MIT Bug Reproduction Brief Skill with fact/assumption separation, environment capture, one-variable minimization, repeatability evidence, safe isolated fixtures, stop-before-repair boundaries, and redaction-aware handoffs.
 - Added the MIT Agent Supply Chain Integrity Skill with deterministic manifests, file-drift classification, dependency pinning audits, provenance chains, fail-closed promotion gates, symlink/root containment, and read-only evidence boundaries.

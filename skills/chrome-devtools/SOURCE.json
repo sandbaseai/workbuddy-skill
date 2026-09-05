@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source names Chrome DevTools MCP tools but does not package a connector, browser session broker, schema, or evidence store",
+      "The adopting project must provide authorized domain/session controls, connector permissions, safe evaluation policy, trace retention, and redaction"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved navigation, snapshot-first interaction, console/network diagnosis, screenshots, emulation, and performance-trace workflows",
+      "added domain/session authorization, side-effect classification, bounded evaluation, token/customer-data redaction, cross-checking, and evidence labels"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/chrome-devtools/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/chrome-devtools/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "3e7a53f41dee505d2a4cd1a277436b249057295f",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/chrome-devtools/SKILL.md"
+}
