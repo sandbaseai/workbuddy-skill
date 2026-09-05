@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:dEitY719/authoring-skills:skills/skill-refactor/SKILL.md",
+    "skill": "skill-progressive-refactor",
+    "skill_path": "skills/skill-progressive-refactor",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/skill-progressive-refactor-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:dEitY719/authoring-skills:skills/skill-check/SKILL.md",
     "skill": "skill-quality-audit",
     "skill_path": "skills/skill-quality-audit",

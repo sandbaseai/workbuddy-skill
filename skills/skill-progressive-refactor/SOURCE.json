@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["The source repository's help, plan/report templates, naming guide, evaluation references, and executable fixtures were not packaged"],
+    "packaged_resources": [],
+    "security_signals": ["made the refactor version-controlled and bounded; added contract preservation, rollback, authorization, secret, and post-refactor audit requirements"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:dEitY719/authoring-skills:skills/skill-refactor/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/skill-progressive-refactor/SKILL.md",
+  "repository": "dEitY719/authoring-skills",
+  "sha": "3a1be6c67964766b2f93ba30ec755f3be80fa547",
+  "source_url": "https://github.com/dEitY719/authoring-skills/blob/a7c12826ee96c6c30b9e6d2e95aa13bd972fcfc2/skills/skill-refactor/SKILL.md"
+}
