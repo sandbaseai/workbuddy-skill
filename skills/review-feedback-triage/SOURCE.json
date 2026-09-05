@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source assumes a provider-specific review interface and human clarification loop; these were not packaged",
+      "The adopting project must provide review permissions, repository-native verification, issue/thread identifiers, and an owner for architectural decisions"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "generalized provider-specific review reception into WorkBuddy; added evidence states, secret-safe intake, authority boundaries, YAGNI checks, item-level verification, and thread hygiene"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:obra/superpowers:skills/receiving-code-review/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/review-feedback-triage/SKILL.md",
+  "repository": "obra/superpowers",
+  "sha": "950da7b74bf6dbed6b8726d12ddadd65a9f5fda7",
+  "source_url": "https://github.com/obra/superpowers/blob/b36e0829c6d0140e93cfef2ca599b1b07d4a7797/skills/receiving-code-review/SKILL.md"
+}

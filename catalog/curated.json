@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:obra/superpowers:skills/receiving-code-review/SKILL.md",
+    "skill": "review-feedback-triage",
+    "skill_path": "skills/review-feedback-triage",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/review-feedback-triage-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:obra/superpowers:skills/using-git-worktrees/SKILL.md",
     "skill": "worktree-isolation",
     "skill_path": "skills/worktree-isolation",
