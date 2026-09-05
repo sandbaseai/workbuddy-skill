@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/plugin-eval/skills/evaluation-methodology/SKILL.md",
+    "skill": "evaluation-methodology",
+    "skill_path": "skills/evaluation-methodology",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/evaluation-methodology-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/before-you-build/skills/before-you-build/SKILL.md",
     "skill": "before-you-build",
     "skill_path": "skills/before-you-build",

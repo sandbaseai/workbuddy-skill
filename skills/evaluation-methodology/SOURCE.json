@@ -1,0 +1,21 @@
+{
+  "catalog_id": "github:wshobson/agents:plugins/plugin-eval/skills/evaluation-methodology/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/evaluation-methodology/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "6005f40590efa0e67c41abafe6591ae068e0058e",
+  "source_commit": "a30778f8c4e6b0a87567941b7cca4f534bf642b6",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/plugin-eval/skills/evaluation-methodology/SKILL.md",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source references optional rubric files and PluginEval implementation modules that are not packaged",
+      "The adopting project must provide a deterministic analyzer, representative prompts, an isolated evaluation harness, and authorized test data"
+    ],
+    "security_signals": [
+      "preserved layered evaluation, dimension weights, normalized blending, confidence guidance, anti-pattern checks, and remediation workflow",
+      "added WorkBuddy fixed-version evidence, no-production-data defaults, side-effect detection, secret-safe reports, and separate publication authorization"
+    ]
+  }
+}
