@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source is a standalone Markdown playbook and provides no packaged diagnostic scripts, templates, or environment-specific configuration",
+      "The adopting project must provide authorized network access, resolver and infrastructure telemetry, and its own incident/change-management path"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "generalized the source playbook into WorkBuddy with read-only defaults, bounded diagnostics, explicit authorization gates, secret redaction, and evidence-based interpretations",
+      "added safe handling for cluster/cloud boundaries, TLS verification, packet-capture scope, and reversible remediation verification"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:nimadorostkar/Claude-Skills-collection:skills/devops/network-troubleshooting/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/network-troubleshooting/SKILL.md",
+  "repository": "nimadorostkar/Claude-Skills-collection",
+  "sha": "af329f77b7eb638017f99e23064d7648ad98cd68",
+  "source_url": "https://github.com/nimadorostkar/Claude-Skills-collection/blob/03f39b7041ec2679255f8d6bb5b18421561821ae/skills/devops/network-troubleshooting/SKILL.md"
+}

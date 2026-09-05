@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:nimadorostkar/Claude-Skills-collection:skills/devops/network-troubleshooting/SKILL.md",
+    "skill": "network-troubleshooting",
+    "skill_path": "skills/network-troubleshooting",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/network-troubleshooting-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:alirezarezvani/claude-skills:engineering/skills/codebase-onboarding/SKILL.md",
     "skill": "codebase-onboarding",
     "skill_path": "skills/codebase-onboarding",

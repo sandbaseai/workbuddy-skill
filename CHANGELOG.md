@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Network Troubleshooting Skill with layer-by-layer DNS, routing, transport, TLS, HTTP, policy, resource-limit, and MTU isolation, bounded diagnostics, secret-safe evidence, explicit authorization gates, and verified remediation.
 - Added the MIT Parallel Agent Dispatch Skill with independence proofs, isolated assignments, bounded concurrent orchestration, result review, conflict-aware integration, full verification, and secret/authority boundaries.
 - Added the MIT Plan Execution Skill with canonical-plan review, task ledgers, ordered checkpoints, focused and integrated verification, recovery boundaries, authority controls, deviation tracking, and durable handoffs.
 - Added the MIT Git Worktree Isolation Skill with isolation detection, safe path and ignore checks, baseline verification, branch and Agent boundaries, conflict recovery, ownership-safe cleanup, and direct-work exceptions for authorized automation.
