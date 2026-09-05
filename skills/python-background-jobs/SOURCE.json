@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides task queues, workers, job IDs, state machines, at-least-once delivery, Celery retries/timeouts, idempotency, job repositories, DLQs, and queue monitoring guidance but no queue broker, durable job store, tenant authorization, outbox, or worker environment",
+      "The adopting project must provide authorized durable messaging, job state storage, idempotency semantics, isolated fault tests, resource budgets, telemetry, ownership, and recovery evidence"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved asynchronous task/worker architecture, job IDs, state transitions, at-least-once delivery, retries, timeouts, idempotency keys, repository state, DLQs, and queue-depth monitoring guidance",
+      "added WorkBuddy tenant reauthorization, payload minimization, side-effect idempotency, outbox/lease boundaries, bounded replay, cancellation, graceful shutdown, backpressure, resource isolation, privacy-safe evidence, and production authorization controls"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:wshobson/agents:plugins/python-development/skills/python-background-jobs/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/python-background-jobs/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "0ada2d32cd386e5369199486fd9ad8533d92e998",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/python-development/skills/python-background-jobs/SKILL.md"
+}

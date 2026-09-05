@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/python-development/skills/python-background-jobs/SKILL.md",
+    "skill": "python-background-jobs",
+    "skill_path": "skills/python-background-jobs",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/python-background-jobs-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/python-development/skills/python-resilience/SKILL.md",
     "skill": "python-resilience",
     "skill_path": "skills/python-resilience",
