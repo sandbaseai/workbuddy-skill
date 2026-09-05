@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:0xRayAI/xray:skills/log-monitor/SKILL.md",
+    "skill": "log-monitor",
+    "skill_path": "skills/log-monitor",
+    "category": "security",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/log-monitor-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:ai-workspace-services/portal:skills/release-traceability/SKILL.md",
     "skill": "release-traceability",
     "skill_path": "skills/release-traceability",

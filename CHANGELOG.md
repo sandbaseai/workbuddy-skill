@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Log Monitoring and Pattern Detection Skill with bounded log evidence, normalized pattern detection, cross-source correlation, privacy-safe alert design, missing-data handling, and reproducible reporting.
 - Added the Apache-2.0 Release Traceability Skill with source-to-runtime identity mapping, artifact and digest invariants, host-rebuild detection, deployment and rollback evidence, fail-closed verification, and auditable release handoff.
 - Added the MIT Migration Validation Skill with baseline capture, layered post-cutover health and data checks, performance and integration validation, observability and backup gates, authoritative platform-fact verification, rollback readiness, and sign-off evidence.
 - Added the MIT Frontend Review Skill with state and interaction coverage, responsive and browser checks, accessibility, data and error handling, performance, frontend security, evidence-based findings, and retest handoff.
