@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides dbt layer, naming, testing, documentation, incremental, and project-structure guidance but no dbt adapter, warehouse connector, manifest parser, cost estimator, or lineage store",
+      "The adopting project must provide authorized dbt metadata, isolated targets, source contracts, partition/freshness baselines, ownership, and safe evidence retention"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved sources/staging/intermediate/marts layering, naming, tests, documentation, lineage, incremental strategy, Git versioning, freshness, and CI guidance",
+      "added WorkBuddy target isolation, production-write gates, contract/version compatibility, PII/secret redaction, late-data and backfill controls, cost boundaries, failure-state separation, and rollback authorization"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:wshobson/agents:plugins/data-engineering/skills/dbt-transformation-patterns/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/dbt-transformation-patterns/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "a893b4dff7521a5935c926825bd952ed04753e72",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/data-engineering/skills/dbt-transformation-patterns/SKILL.md"
+}

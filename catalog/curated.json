@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/data-engineering/skills/dbt-transformation-patterns/SKILL.md",
+    "skill": "dbt-transformation-patterns",
+    "skill_path": "skills/dbt-transformation-patterns",
+    "category": "data",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/dbt-transformation-patterns-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/backend-development/skills/workflow-orchestration-patterns/SKILL.md",
     "skill": "workflow-orchestration-patterns",
     "skill_path": "skills/workflow-orchestration-patterns",
