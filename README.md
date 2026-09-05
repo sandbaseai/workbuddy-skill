@@ -65,6 +65,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Database Query Optimizer](skills/database-query-optimizer/) | 从执行计划和性能基线定位慢 SQL，并验证单变量优化 |
 | [Data Quality Frameworks](skills/data-quality-frameworks/) | 以数据契约、质量维度、基线和有界证据治理数据管道质量 |
 | [dbt Transformation Patterns](skills/dbt-transformation-patterns/) | 以分层模型、契约、测试、lineage 和增量边界构建可追溯转换 |
+| [Airflow DAG Patterns](skills/airflow-dag-patterns/) | 设计具备幂等、可观察、可测试和安全回填边界的数据编排 DAG |
 | [API Design Principles](skills/api-design-principles/) | 设计具备 HTTP/schema、幂等、分页、授权、版本和成本边界的 API 契约 |
 | [Microservices Architect](skills/microservices-architect/) | 设计服务边界、通信、数据所有权、故障隔离和迁移验证 |
 | [Cloud Design Patterns](skills/cloud-design-patterns/) | 按约束选择韧性、性能、消息、安全、部署和迁移模式 |
@@ -106,8 +107,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,679 |
-| Unique content SHAs | 8,052 |
+| Indexed GitHub paths | 12,680 |
+| Unique content SHAs | 8,053 |
 | Source repositories | 6,432 |
 <!-- CATALOG-METRICS:END -->
 

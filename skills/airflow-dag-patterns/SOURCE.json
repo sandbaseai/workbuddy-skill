@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides Airflow DAG, TaskFlow, sensor, error-handling, testing, and project-structure examples but no Airflow installation, provider packages, scheduler, metadata database, or deployment system",
+      "The adopting project must provide authorized Airflow metadata, isolated test targets, connection references, data contracts, ownership, and safe evidence retention"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved idempotent and observable DAG design, TaskFlow dependencies, sensors, branching, retries, alerts, testing, and project structure guidance",
+      "added WorkBuddy environment isolation, production-side-effect authorization, logical-date/backfill controls, secret and PII redaction, bounded retries, failure classification, and recovery evidence"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:wshobson/agents:plugins/data-engineering/skills/airflow-dag-patterns/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/airflow-dag-patterns/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "d246d1023992b02299bc98a22b94c607e86f327c",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/data-engineering/skills/airflow-dag-patterns/SKILL.md"
+}

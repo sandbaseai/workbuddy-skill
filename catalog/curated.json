@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/data-engineering/skills/airflow-dag-patterns/SKILL.md",
+    "skill": "airflow-dag-patterns",
+    "skill_path": "skills/airflow-dag-patterns",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/airflow-dag-patterns-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/data-engineering/skills/dbt-transformation-patterns/SKILL.md",
     "skill": "dbt-transformation-patterns",
     "skill_path": "skills/dbt-transformation-patterns",
