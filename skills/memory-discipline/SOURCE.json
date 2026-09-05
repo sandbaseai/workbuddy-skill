@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source assumes a connected memory backend and provider-specific session behavior; no backend was packaged",
+      "The adopting project must provide storage, access control, retention/deletion policy, conflict resolution ownership, and repository-native decision-record conventions"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "generalized backend-neutral memory rules into WorkBuddy; added stale/untrusted-memory handling, scope and authority limits, secret-safe persistence, observation-versus-policy typing, conflict retention, and no-memory fallback"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:davepoon/buildwithclaude:plugins/all-skills/skills/agent-memory-discipline/SKILL.md",
+  "declared_source_license": "CC0-1.0",
+  "path": "skills/memory-discipline/SKILL.md",
+  "repository": "davepoon/buildwithclaude",
+  "sha": "4c95fa915db6f7f0a447eba53961f833a57a0717",
+  "source_url": "https://github.com/davepoon/buildwithclaude/blob/f4362e9c2aa1b16f19018bd11ba4682ab0bd3682/plugins/all-skills/skills/agent-memory-discipline/SKILL.md"
+}

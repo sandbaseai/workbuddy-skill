@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:davepoon/buildwithclaude:plugins/all-skills/skills/agent-memory-discipline/SKILL.md",
+    "skill": "memory-discipline",
+    "skill_path": "skills/memory-discipline",
+    "category": "productivity",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/memory-discipline-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:davepoon/buildwithclaude:plugins/all-skills/skills/checkpointed-agent-loop/SKILL.md",
     "skill": "checkpointed-agent-loop",
     "skill_path": "skills/checkpointed-agent-loop",
