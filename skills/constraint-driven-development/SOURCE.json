@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references a separate floor-guard reference file and harness-specific instruction files that are not packaged",
+      "The adopting project must provide its own stack-aware check commands, CI integration, baseline metrics, owners, and authorized exception process"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved quality-bar interview, durable CONSTRAINTS.md contract, measurable thresholds, lifecycle placement, ratchets, exceptions, and weakened-gate detection guidance",
+      "added WorkBuddy public-surface, privacy, secret-redaction, authorization, non-interactive, evidence-scope, and implementation-versus-policy boundaries"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:addyosmani/agent-skills:skills/constraint-driven-development/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/constraint-driven-development/SKILL.md",
+  "repository": "addyosmani/agent-skills",
+  "sha": "d5e12fda543a81b0e2e950e18cac0ce1aa808ecc",
+  "source_url": "https://github.com/addyosmani/agent-skills/blob/84ee50673804b95c287d1e4eb4f1c1dad7c5188a/skills/constraint-driven-development/SKILL.md"
+}

@@ -92,6 +92,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [MCP Security Audit](skills/mcp-security-audit/) | 审计 MCP 配置中的凭据、命令注入、依赖版本、Server 清单、网络和权限边界 |
 | [MCP Release QA](skills/mcp-release-qa/) | 以真实协议会话核验 MCP 运行时、源码、元数据、文档、失败路径和安装产物 |
 | [Product Requirements Document](skills/prd/) | 将产品或 AI 功能想法转为有证据、可度量、可验收的需求契约 |
+| [Constraint-Driven Development](skills/constraint-driven-development/) | 将质量门槛、检查命令、基线和例外写成可执行契约，防止 Agent 降低标准 |
 | [Performance Review Writer](skills/performance-review-writer/) | 基于授权证据和 STAR 结构起草自评、同事评价、360 或向上反馈 |
 | [Project Architecture Blueprint](skills/architecture-blueprint-generator/) | 从代码、配置、依赖、测试和部署证据生成真实可追溯的架构蓝图 |
 | [Web Design Reviewer](skills/web-design-reviewer/) | 跨视口评审布局、响应式、可访问性和视觉一致性，并以证据安全回归验证 |
@@ -150,9 +151,9 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,723 |
-| Unique content SHAs | 8,096 |
-| Source repositories | 6,432 |
+| Indexed GitHub paths | 12,724 |
+| Unique content SHAs | 8,097 |
+| Source repositories | 6,433 |
 <!-- CATALOG-METRICS:END -->
 
 静态检查只能帮助筛选，不能替代人工安全审查。目录的字段说明和来源约定见[目录文档](catalog/README.md)；适配指南见[中文文档](docs/adapting-skills.zh-CN.md)和[English guide](docs/adapting-skills.md)。

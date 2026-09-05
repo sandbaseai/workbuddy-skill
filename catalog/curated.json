@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:addyosmani/agent-skills:skills/constraint-driven-development/SKILL.md",
+    "skill": "constraint-driven-development",
+    "skill_path": "skills/constraint-driven-development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/constraint-driven-development-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/prd/SKILL.md",
     "skill": "prd",
     "skill_path": "skills/prd",
