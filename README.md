@@ -166,6 +166,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | [Evidence Map Builder](skills/evidence-map-builder/) | Build traceable decision maps with typed claims, support/contradiction/qualification edges, explicit unknowns, and fail-closed validation | [MIT source](skills/evidence-map-builder/SOURCE.json) |
 | [Agent Decision Receipts](skills/decision-receipts/) | Bind consequential Agent actions to signed, secret-safe manifests with offline verification, policy scope, key boundaries, and explicit unsigned states | [MIT source](skills/decision-receipts/SOURCE.json) |
 | [Document-to-Skill Pipeline](skills/document-to-skill-pipeline/) | Compile authorized documents into progressive-disclosure Skills with rights checks, budgets, provenance, link validation, and safe packaging | [MIT source](skills/document-to-skill-pipeline/SOURCE.json) |
+| [Checkpointed Agent Loop](skills/checkpointed-agent-loop/) | Resume long tasks from durable state with bounded attempts, legal transitions, sanitized evidence, and fail-closed completion | [MIT source](skills/checkpointed-agent-loop/SOURCE.json) |
 | [Modular Design Principles](skills/modular-design-principles/) | Define boundaries, state ownership, public contracts, isolation, failure containment, and safe evolution | [MIT source](skills/modular-design-principles/SOURCE.json) |
 | [Performance Engineering](skills/performance-engineering/) | Measure and improve latency, capacity, CPU/memory/I/O, responsiveness, cost, and regressions with controlled evidence | [MIT source](skills/performance-engineering/SOURCE.json) |
 | [Data Governance](skills/data-governance/) | Govern cross-system data with contracts, ownership, consent, identity, lineage, quality monitoring, safe fallbacks, and change management | [MIT source](skills/data-governance/SOURCE.json) |
@@ -493,9 +494,9 @@ The catalog is generated from public GitHub `SKILL.md` results with resumable, r
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,638 |
-| Unique content SHAs | 8,011 |
-| Source repositories | 6,429 |
+| Indexed GitHub paths | 12,639 |
+| Unique content SHAs | 8,012 |
+| Source repositories | 6,430 |
 <!-- CATALOG-METRICS:END -->
 
 Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) or [中文 Atlas](https://sandbaseai.github.io/workbuddy-skill/zh-CN.html), or query the JSONL directly. If it helps you discover a useful workflow, a star or a short review helps other WorkBuddy users find it.
@@ -505,7 +506,7 @@ Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.git
 For a manually curated index of WorkBuddy documentation, MCP integrations, workflows, benchmarks, and Skills, browse [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy).
 
 <!-- CATALOG-ANALYSIS:START -->
-The current static analysis successfully inspected 12,638 paths: 9,950 are structurally adaptable to WorkBuddy, 910 need manual review, 0 are currently WorkBuddy-ready, and 418 contain at least one conservative security signal.
+The current static analysis successfully inspected 12,639 paths: 9,951 are structurally adaptable to WorkBuddy, 910 need manual review, 0 are currently WorkBuddy-ready, and 418 contain at least one conservative security signal.
 <!-- CATALOG-ANALYSIS:END -->
 A clean static scan is never a security guarantee.
 

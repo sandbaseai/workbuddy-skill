@@ -1,0 +1,21 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides a Node.js checkpoint utility and test suite that were not packaged verbatim",
+      "The adopting project must provide its task runner, approval policy, repository ignore rules, artifact retention, and domain-specific verification commands"
+    ],
+    "packaged_resources": [
+      "scripts/checkpoint-loop.py"
+    ],
+    "security_signals": [
+      "ported the source state machine to WorkBuddy with no command execution or network access; added malformed-state rejection, atomic persistence, artifact existence checks, secret-safe evidence guidance, and explicit approval boundaries"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:davepoon/buildwithclaude:plugins/all-skills/skills/checkpointed-agent-loop/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/checkpointed-agent-loop/SKILL.md",
+  "repository": "davepoon/buildwithclaude",
+  "sha": "859afd7ac082a0b614170fb4772f09ae64d5df69",
+  "source_url": "https://github.com/davepoon/buildwithclaude/blob/f4362e9c2aa1b16f19018bd11ba4682ab0bd3682/plugins/all-skills/skills/checkpointed-agent-loop/SKILL.md"
+}

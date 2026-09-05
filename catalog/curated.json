@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:davepoon/buildwithclaude:plugins/all-skills/skills/checkpointed-agent-loop/SKILL.md",
+    "skill": "checkpointed-agent-loop",
+    "skill_path": "skills/checkpointed-agent-loop",
+    "category": "productivity",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/checkpointed-agent-loop-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:alirezarezvani/claude-skills:.gemini/skills/book-to-skill/SKILL.md",
     "skill": "document-to-skill-pipeline",
     "skill_path": "skills/document-to-skill-pipeline",
