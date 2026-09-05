@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["Contoso Outdoors sample-specific thresholds, SLA, and reference format"],
+    "packaged_resources": [],
+    "security_signals": ["sample customer details and fixed reference removed from adaptation"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:microsoft/agent-framework:dotnet/samples/04-hosting/FoundryHostedAgents/responses/Hosted-AgentSkills/skills/escalation-policy/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/escalation-policy/SKILL.md",
+  "repository": "microsoft/agent-framework",
+  "sha": "ec04c9aa86dbe68e68469933d5ce436e82a0d30a",
+  "source_url": "https://github.com/microsoft/agent-framework/blob/0d70d4bc4823bdf5e3d10ce0f1aa7bb6c29d644c/dotnet/samples/04-hosting/FoundryHostedAgents/responses/Hosted-AgentSkills/skills/escalation-policy/SKILL.md"
+}

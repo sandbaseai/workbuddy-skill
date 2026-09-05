@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:microsoft/agent-framework:dotnet/samples/04-hosting/FoundryHostedAgents/responses/Hosted-AgentSkills/skills/escalation-policy/SKILL.md",
+    "skill": "escalation-policy",
+    "skill_path": "skills/escalation-policy",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/escalation-policy-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:microsoft/typespec:.github/skills/pnpm-format/SKILL.md",
     "skill": "repository-formatting",
     "skill_path": "skills/repository-formatting",
