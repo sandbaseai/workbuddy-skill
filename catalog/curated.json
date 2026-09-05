@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/cicd-automation/skills/secrets-management/SKILL.md",
+    "skill": "secrets-management",
+    "skill_path": "skills/secrets-management",
+    "category": "security",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/secrets-management-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/backend-development/skills/api-design-principles/SKILL.md",
     "skill": "api-design-principles",
     "skill_path": "skills/api-design-principles",

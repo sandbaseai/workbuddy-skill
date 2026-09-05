@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides provider examples for Vault, AWS/Azure/GCP secret managers, CI/CD injection, rotation, external-secrets, and scanning but no connector, IAM policy resolver, rotation scheduler, or audit store",
+      "The adopting project must provide authorized metadata access, workload identity, environment isolation, secret redaction, scanning rules, ownership, and recovery policy"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved provider-agnostic storage, CI/CD injection, environment separation, least privilege, rotation, external secret delivery, audit logging, and secret scanning guidance",
+      "removed plaintext/root-token examples and production writes; added WorkBuddy read-only/value-free boundaries, fork/PR trust controls, short-lived identity, artifact/cache/log redaction, revoke-first response, and separate mutation authorization"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:wshobson/agents:plugins/cicd-automation/skills/secrets-management/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/secrets-management/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "ea66a5da46bd77bb0867f4d7e65df2c67e9fe9f7",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/cicd-automation/skills/secrets-management/SKILL.md"
+}
