@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides Azure Retail Prices API filters, response fields, service families, Copilot Studio estimation guidance, and troubleshooting but no project-specific currency, tax, discount, usage, privacy, or price-freshness policy",
+      "The adopting project must provide approved official sources, current usage inputs, exchange-rate/tax assumptions, isolated reports, and separately authorized purchase, billing, resource, and deployment changes"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved Azure Retail Prices API usage, filters, region/SKU discovery, pagination, primary meters, savings plans, service families, and Copilot Studio estimation concepts",
+      "added WorkBuddy bounded requests, current-source requirements, units/currency/tax/discount disclosure, stale-price and unknown handling, secret-free estimates, input validation, and independent billing/resource change gates"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/azure-pricing/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/azure-pricing/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "056d4fe17e682fa3da36f8805ce0d8d2ccb8df76",
+  "source_url": "https://github.com/github/awesome-copilot/blob/0d4b3286bec3a0c795e70ed843f3ccad2fb5c6f5/skills/azure-pricing/SKILL.md"
+}

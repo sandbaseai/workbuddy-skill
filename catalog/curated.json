@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/azure-pricing/SKILL.md",
+    "skill": "azure-pricing",
+    "skill_path": "skills/azure-pricing",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/azure-pricing-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/aws-cost-optimize/SKILL.md",
     "skill": "aws-cost-optimize",
     "skill_path": "skills/aws-cost-optimize",

@@ -101,6 +101,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Repository Standardizer](skills/repo-standardizer/) | 清理公开 README 与文档，分离内部建设约束，并审计模板、CI、CODEOWNERS 和治理配置 |
 | [Azure Resource Health Diagnosis](skills/azure-resource-health-diagnose/) | 基于只读健康状态、日志、遥测和依赖证据诊断 Azure 资源并生成分阶段修复计划 |
 | [AWS Cost Optimization](skills/aws-cost-optimize/) | 基于 AWS IaC、使用指标、账单和价格证据生成可验证的成本优化建议 |
+| [Azure Pricing and Estimation](skills/azure-pricing/) | 查询 Azure 实时零售价格、比较 SKU/区域并生成带假设和区间的成本估算 |
 | [API Design Principles](skills/api-design-principles/) | 设计具备 HTTP/schema、幂等、分页、授权、版本和成本边界的 API 契约 |
 | [Microservices Architect](skills/microservices-architect/) | 设计服务边界、通信、数据所有权、故障隔离和迁移验证 |
 | [Cloud Design Patterns](skills/cloud-design-patterns/) | 按约束选择韧性、性能、消息、安全、部署和迁移模式 |
@@ -142,8 +143,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,715 |
-| Unique content SHAs | 8,088 |
+| Indexed GitHub paths | 12,716 |
+| Unique content SHAs | 8,089 |
 | Source repositories | 6,432 |
 <!-- CATALOG-METRICS:END -->
 
