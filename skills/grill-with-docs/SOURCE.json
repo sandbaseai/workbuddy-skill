@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source is a router that expects separate grilling and domain-modeling skills plus repository-specific document conventions; those resources are not packaged here",
+      "The adopting project must provide its ADR/glossary paths, domain vocabulary, repository evidence, and authorization for document or issue writes"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved routing to grilling and domain-modeling, adversarial clarification, and decision-document creation",
+      "added WorkBuddy scope, untrusted-context, evidence-ledger, public-redaction, write-authorization, status-separation, and implementation-boundary guidance"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:mattpocock/skills:skills/engineering/grill-with-docs/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/grill-with-docs/SKILL.md",
+  "repository": "mattpocock/skills",
+  "sha": "62b9efb6f991d1b229adee7506962f13ced0c499",
+  "source_url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/engineering/grill-with-docs/SKILL.md"
+}

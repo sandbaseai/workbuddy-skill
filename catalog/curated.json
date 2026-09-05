@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:mattpocock/skills:skills/engineering/grill-with-docs/SKILL.md",
+    "skill": "grill-with-docs",
+    "skill_path": "skills/grill-with-docs",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/grill-with-docs-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:addyosmani/agent-skills:skills/security-and-hardening/SKILL.md",
     "skill": "security-and-hardening",
     "skill_path": "skills/security-and-hardening",

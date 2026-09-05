@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Grill with Docs Skill with bounded adversarial clarification, domain vocabulary and state modeling, evidence-ledgered ADR drafts, explicit unknowns, and separate document-write and implementation authorization.
 - Added the MIT Security and Hardening Skill with trust-boundary and STRIDE modeling, input/auth/data/integration controls, SSRF and upload safeguards, dependency triage, secret-safe reporting, and evidence-bounded remediation gates.
 - Added the MIT Deprecation and Migration Skill with replacement-first decisions, consumer inventories, advisory/compulsory notices, incremental migration, strangler/adapter/feature-flag patterns, expand-contract schema changes, zombie-code governance, and zero-usage removal evidence.
 - Added the MIT Doubt-Driven Development Skill with claim/extract/adversarial-review/reconcile/stop cycles, fresh-context boundaries, bounded findings, cross-model disclosure, and evidence-scoped escalation.
