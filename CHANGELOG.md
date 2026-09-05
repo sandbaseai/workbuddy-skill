@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Human in the Loop Skill with risk-tiered oversight, immutable approval binding, quorum and separation-of-duties controls, timeout/escalation handling, execution-time reauthorization, redacted decision records, compensation, and recovery verification.
 - Added the MIT Agent Red Teaming Skill with target-specific authorization, rules of engagement, privilege mapping, safe synthetic test matrices, traceable findings, bounded execution, cleanup, remediation retesting, and explicit residual risk.
 - Added the MIT Context Optimization Skill with auditable context budgets, conservative deduplication, relevance and information-density scoring, provenance-preserving ordering, coverage validation, exclusion ledgers, and sensitive-domain safeguards.
 - Added the MIT Prompt Injection Defense Skill with trust-boundary mapping, enforceable authority invariants, least-privilege tool controls, safe synthetic adversarial tests, provenance preservation, incident containment, and explicit residual-risk reporting.

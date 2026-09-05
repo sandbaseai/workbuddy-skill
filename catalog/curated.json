@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:seb1n/awesome-ai-agent-skills:agent-engineering/human-in-the-loop/SKILL.md",
+    "skill": "human-in-the-loop",
+    "skill_path": "skills/human-in-the-loop",
+    "category": "security",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/human-in-the-loop-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:seb1n/awesome-ai-agent-skills:agent-security/agent-red-teaming/SKILL.md",
     "skill": "agent-red-teaming",
     "skill_path": "skills/agent-red-teaming",

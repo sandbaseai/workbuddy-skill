@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source approval-policy template, gate-design references, validator, and test fixtures were not packaged",
+      "Organization-specific identity, policy, audit, notification, compensation, and break-glass controls must be supplied by the adopting team"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved external authorization and immutable approval binding; added WorkBuddy metadata, fail-closed defaults, replay protection, redaction, and explicit recovery boundaries"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:seb1n/awesome-ai-agent-skills:agent-engineering/human-in-the-loop/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/human-in-the-loop/SKILL.md",
+  "repository": "seb1n/awesome-ai-agent-skills",
+  "sha": "706684dcf898970fba1ad1802ab39439d0244baa",
+  "source_url": "https://github.com/seb1n/awesome-ai-agent-skills/blob/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/agent-engineering/human-in-the-loop/SKILL.md"
+}

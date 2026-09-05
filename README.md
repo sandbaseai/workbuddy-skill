@@ -189,6 +189,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | [AI Agent Evaluation Engineering](skills/agent-evaluation-engineering/) | Build reproducible capability, trust, safety, trajectory, regression, latency, and cost evaluations | [MIT source](skills/agent-evaluation-engineering/SOURCE.json) |
 | [Prompt Injection Defense](skills/prompt-injection-defense/) | Threat-model direct, indirect, stored, cross-agent, and multimodal injection with enforceable boundaries and safe tests | [MIT source](skills/prompt-injection-defense/SOURCE.json) |
 | [Agent Red Teaming](skills/agent-red-teaming/) | Run authorized, synthetic, evidence-based security assessments with scope controls, safe cases, cleanup, and retesting | [MIT source](skills/agent-red-teaming/SOURCE.json) |
+| [Human in the Loop](skills/human-in-the-loop/) | Design auditable approval gates, immutable action binding, escalation, reauthorization, recovery, and safe human oversight | [MIT source](skills/human-in-the-loop/SOURCE.json) |
 | [Context Optimization](skills/context-optimization/) | Optimize retrieved context with conservative deduplication, budget allocation, coverage checks, provenance, and exclusion ledgers | [MIT source](skills/context-optimization/SOURCE.json) |
 | [Agent Observability](skills/agent-observability/) | Design privacy-aware traces, events, metrics, dashboards, alerts, and verification for AI agent workflows | [MIT source](skills/agent-observability/SOURCE.json) |
 | [Product Analytics](skills/product-analytics/) | Define event taxonomies, funnels, cohorts, retention, experiments, privacy boundaries, and evidence-backed product decisions | [MIT source](skills/product-analytics/SOURCE.json) |
@@ -469,8 +470,8 @@ The catalog is generated from public GitHub `SKILL.md` results with resumable, r
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,614 |
-| Unique content SHAs | 7,987 |
+| Indexed GitHub paths | 12,615 |
+| Unique content SHAs | 7,988 |
 | Source repositories | 6,425 |
 <!-- CATALOG-METRICS:END -->
 
@@ -481,7 +482,7 @@ Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.git
 For a manually curated index of WorkBuddy documentation, MCP integrations, workflows, benchmarks, and Skills, browse [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy).
 
 <!-- CATALOG-ANALYSIS:START -->
-The current static analysis successfully inspected 12,614 paths: 9,928 are structurally adaptable to WorkBuddy, 908 need manual review, 0 are currently WorkBuddy-ready, and 417 contain at least one conservative security signal.
+The current static analysis successfully inspected 12,615 paths: 9,929 are structurally adaptable to WorkBuddy, 908 need manual review, 0 are currently WorkBuddy-ready, and 417 contain at least one conservative security signal.
 <!-- CATALOG-ANALYSIS:END -->
 A clean static scan is never a security guarantee.
 
