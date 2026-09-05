@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references optional external references and chaos platforms but does not package a WorkBuddy-specific experiment runner, policy guard, dashboards, or rollback automation",
+      "The adopting project must supply approved environment selectors, observability, change authorization, tested recovery procedures, and platform-native tooling"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "generalized the source chaos workflow into WorkBuddy with explicit authorization, staging/canary defaults, dry-run preflight, selector validation, blast-radius caps, secret-safe evidence, and abort-on-uncertainty rules",
+      "removed direct production-oriented fault-injection commands and made execution contingent on a written experiment contract and tested rollback"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:Jeffallan/claude-skills:skills/chaos-engineer/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/chaos-engineer/SKILL.md",
+  "repository": "Jeffallan/claude-skills",
+  "sha": "4ae1de95aa44a6c1824ffc881979810589779bb8",
+  "source_url": "https://github.com/Jeffallan/claude-skills/blob/882ef55e377dbf9a4dbe496bb41ac6ccd0e555cf/skills/chaos-engineer/SKILL.md"
+}

@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:Jeffallan/claude-skills:skills/chaos-engineer/SKILL.md",
+    "skill": "chaos-engineer",
+    "skill_path": "skills/chaos-engineer",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/chaos-engineer-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:nimadorostkar/Claude-Skills-collection:skills/devops/network-troubleshooting/SKILL.md",
     "skill": "network-troubleshooting",
     "skill_path": "skills/network-troubleshooting",
