@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references provider-specific guidance but does not package current pricing, architecture diagrams, policy catalogs, provider SDKs, or migration automation",
+      "The adopting project must provide current infrastructure evidence, provider documentation, organization policies, observability, ownership, change authorization, and recovery test procedures"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "generalized the source architecture workflow into WorkBuddy with read-only discovery, explicit approval boundaries, secret/topology redaction, least-privilege checks, and plan-before-apply guidance",
+      "added evidence freshness, failure-domain and recovery proof, migration rollback, quota, data-integrity, privacy, cost, and residual-risk requirements"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:Jeffallan/claude-skills:skills/cloud-architect/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/cloud-architect/SKILL.md",
+  "repository": "Jeffallan/claude-skills",
+  "sha": "da96b34518618c033f14f19c13cd2cfec63f67cb",
+  "source_url": "https://github.com/Jeffallan/claude-skills/blob/882ef55e377dbf9a4dbe496bb41ac6ccd0e555cf/skills/cloud-architect/SKILL.md"
+}

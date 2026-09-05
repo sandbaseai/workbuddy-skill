@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:Jeffallan/claude-skills:skills/cloud-architect/SKILL.md",
+    "skill": "cloud-architect",
+    "skill_path": "skills/cloud-architect",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/cloud-architect-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:nimadorostkar/Claude-Skills-collection:skills/devops/aws-cost-optimization/SKILL.md",
     "skill": "cloud-cost-optimization",
     "skill_path": "skills/cloud-cost-optimization",
