@@ -85,6 +85,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Agent OWASP ASI Compliance](skills/agent-owasp-compliance/) | 按 Agentic Security Initiative 十项风险，以证据评估工具、身份、策略、供应链和运行时行为 |
 | [MCP Implementation Security Review](skills/mcp-implementation-security-review/) | 评审 MCP 传输、认证、会话、限流、Schema、RCE、供应链和 OWASP MCP 风险 |
 | [Multi-Stage Dockerfile](skills/multi-stage-dockerfile/) | 用可复现基础镜像、缓存、最小运行时、非 root、扫描、签名和回滚构建容器 |
+| [OpenAPI to Application Code](skills/openapi-to-application-code/) | 将版本化 OpenAPI 契约转换为带校验、鉴权、测试、溯源和发布门禁的应用代码 |
 | [API Design Principles](skills/api-design-principles/) | 设计具备 HTTP/schema、幂等、分页、授权、版本和成本边界的 API 契约 |
 | [Microservices Architect](skills/microservices-architect/) | 设计服务边界、通信、数据所有权、故障隔离和迁移验证 |
 | [Cloud Design Patterns](skills/cloud-design-patterns/) | 按约束选择韧性、性能、消息、安全、部署和迁移模式 |
@@ -126,8 +127,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,699 |
-| Unique content SHAs | 8,072 |
+| Indexed GitHub paths | 12,700 |
+| Unique content SHAs | 8,073 |
 | Source repositories | 6,432 |
 <!-- CATALOG-METRICS:END -->
 

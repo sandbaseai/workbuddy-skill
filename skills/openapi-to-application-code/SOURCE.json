@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides OpenAPI input requirements, specification analysis, layered application structure, generated models/routes/services/repositories, tests, documentation, configuration, and general security guidance but no specification provenance, authorization, ambiguity ledger, contract-test evidence, or deployment state",
+      "The adopting project must provide an authorized versioned spec, isolated generation workspace, target framework/toolchain, security and data policies, contract/negative tests, owners, and separately authorized deployment and rollback evidence"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved OpenAPI validation, endpoint/schema analysis, framework-aware architecture, generated code layers, tests, README/configuration examples, authentication, error handling, logging, and documentation guidance",
+      "added WorkBuddy source/SSRF and path boundaries, security-scheme ambiguity handling, server-side validation, authorization and side-effect controls, secret-safe examples, bidirectional contract checks, provenance, canary, and rollback gates"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/openapi-to-application-code/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/openapi-to-application-code/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "1d21db00bfc1dc2845bb3ee10987eed166a99505",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/openapi-to-application-code/SKILL.md"
+}

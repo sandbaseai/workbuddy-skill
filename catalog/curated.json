@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/openapi-to-application-code/SKILL.md",
+    "skill": "openapi-to-application-code",
+    "skill_path": "skills/openapi-to-application-code",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/openapi-to-application-code-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/multi-stage-dockerfile/SKILL.md",
     "skill": "multi-stage-dockerfile",
     "skill_path": "skills/multi-stage-dockerfile",
