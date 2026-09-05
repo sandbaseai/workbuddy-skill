@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Data Breach Blast Radius Skill with sensitive-data inventory, data-flow and exposure analysis, fact-versus-estimate labeling, current-source regulatory context, redacted reporting, and independent incident/remediation gates.
 - Added the MIT DevOps Rollout Plan Skill with change/approval inputs, preflight and go/no-go gates, progressive verification, communication, contingency, data compatibility, and tested rollback controls.
 - Added the MIT Azure Pricing Skill with bounded Retail Prices API queries, current-source requirements, SKU/region comparisons, unit and currency disclosure, savings-plan estimates, uncertainty ranges, and independent billing/resource change gates.
 - Added the MIT AWS Cost Optimization Skill with read-only IaC/inventory analysis, CloudWatch and Cost Explorer evidence, pricing provenance, savings-range calibration, risk/exit-cost checks, canary/rollback planning, and independent change gates.

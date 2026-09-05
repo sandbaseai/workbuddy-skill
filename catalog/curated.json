@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/data-breach-blast-radius/SKILL.md",
+    "skill": "data-breach-blast-radius",
+    "skill_path": "skills/data-breach-blast-radius",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/data-breach-blast-radius-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/devops-rollout-plan/SKILL.md",
     "skill": "devops-rollout-plan",
     "skill_path": "skills/devops-rollout-plan",

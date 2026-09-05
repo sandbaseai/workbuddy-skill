@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references classification, calculator, regulatory, hardening, source, and report-format documents that are not packaged in this WorkBuddy adaptation",
+      "The adopting project must provide authorized snapshot scope, current primary legal sources, data inventory evidence, population/cost inputs, privacy counsel, redaction policy, and separately authorized incident/remediation actions"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved sensitive-data discovery, classification, data-flow tracing, exposure vectors, blast-radius scoring, regulatory context, financial planning, reporting, and hardening roadmap guidance",
+      "added WorkBuddy read-only defaults, secret/PII-safe evidence, current-source requirements, fact-versus-estimate labels, unknown semantics, legal disclaimer, incident escalation boundaries, and independent remediation/notification gates"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/data-breach-blast-radius/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/data-breach-blast-radius/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "0496b1593ce4758a84aacd5b10198289681c2cb3",
+  "source_url": "https://github.com/github/awesome-copilot/blob/8ca38ffb9ed9f84e9a32252b27a4675e052d9d22/skills/data-breach-blast-radius/SKILL.md"
+}
