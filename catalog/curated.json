@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:beast-ofcourse/SWE-pro-Agents:skills/documentation/SKILL.md",
+    "skill": "documentation",
+    "skill_path": "skills/documentation",
+    "category": "content",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/documentation-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:windinwing/mchat:skills/code-reviewer/SKILL.md",
     "skill": "code-reviewer",
     "skill_path": "skills/code-reviewer",

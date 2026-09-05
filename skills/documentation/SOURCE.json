@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["Referenced section-planning notes were not packaged; their evidence-first documentation guidance was incorporated into the self-contained adaptation."],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:beast-ofcourse/SWE-pro-Agents:skills/documentation/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/documentation/SKILL.md",
+  "repository": "beast-ofcourse/SWE-pro-Agents",
+  "sha": "d8016f3b97a7122964fad91021235018b5b5bfd3",
+  "source_url": "https://github.com/beast-ofcourse/SWE-pro-Agents/blob/3ab0c5397a3876955a7a52d4b4e7140a3f57f5e2/skills/documentation/SKILL.md"
+}
