@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/python-development/skills/python-testing-patterns/SKILL.md",
+    "skill": "python-testing-patterns",
+    "skill_path": "skills/python-testing-patterns",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/python-testing-patterns-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/developer-essentials/skills/e2e-testing-patterns/SKILL.md",
     "skill": "e2e-testing-patterns",
     "skill_path": "skills/e2e-testing-patterns",

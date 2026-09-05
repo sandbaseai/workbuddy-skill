@@ -1,0 +1,21 @@
+{
+  "catalog_id": "github:wshobson/agents:plugins/python-development/skills/python-testing-patterns/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/python-testing-patterns/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "4fe8a4245c55e9e79e70b5f75ab387e2349f91dc",
+  "source_commit": "a30778f8c4e6b0a87567941b7cca4f534bf642b6",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/python-development/skills/python-testing-patterns/SKILL.md",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source references details.md and advanced-patterns.md, but those reference files are not packaged in this catalog entry",
+      "The adopting project must provide Python/pytest versions, dependency fixtures, disposable data, CI policy, coverage baseline, and artifact retention"
+    ],
+    "security_signals": [
+      "preserved pytest structure, fixtures, isolation, parameterization, mocking, time control, async/database testing, markers, coverage, and failure diagnosis",
+      "added secret-safe artifacts, production/data boundaries, mock contract checks, fail-closed unknown states, skip/xfail governance, and explicit BLOCKED handling"
+    ]
+  }
+}
