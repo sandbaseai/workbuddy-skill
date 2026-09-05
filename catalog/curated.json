@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:DrHepa/world-forge:.agents/skills/inspect-runtime-evidence/SKILL.md",
+    "skill": "inspect-runtime-evidence",
+    "skill_path": "skills/inspect-runtime-evidence",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/inspect-runtime-evidence-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:fadiwahba/lean-spec:skills/respec/SKILL.md",
     "skill": "respec",
     "skill_path": "skills/respec",

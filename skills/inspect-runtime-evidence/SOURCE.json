@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:DrHepa/world-forge:.agents/skills/inspect-runtime-evidence/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/inspect-runtime-evidence/SKILL.md",
+  "repository": "DrHepa/world-forge",
+  "sha": "86192c8d387f261b3a7e26892d0c5185e54283f7",
+  "source_url": "https://github.com/DrHepa/world-forge/blob/c455664b5791dbe6ccba4867ea23d952c86c7362/.agents/skills/inspect-runtime-evidence/SKILL.md"
+}
