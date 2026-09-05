@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/build-evidence-map/SKILL.md",
+    "skill": "evidence-map-builder",
+    "skill_path": "skills/evidence-map-builder",
+    "category": "research",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/evidence-map-builder-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/audit-integrity/SKILL.md",
     "skill": "audit-integrity-gate",
     "skill_path": "skills/audit-integrity-gate",

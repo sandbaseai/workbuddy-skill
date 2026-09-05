@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references evidence-ladder.md, map-schema.md, a Node validator, and the optional doubt-ai renderer; these resources were not packaged",
+      "The adopting project must provide its canonical schema/validator, source snapshot verifier, network permission model, and rendering integration"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "generalized the source's decision graph into a standalone WorkBuddy JSON contract; added authorized-network boundaries, secret-safe source handling, explicit unknowns, constrained edge types, and honest validation-status labels"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/build-evidence-map/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/evidence-map-builder/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "3d0ff9385a5603242e39989cbfc6e7a8d856d6cc",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/build-evidence-map/SKILL.md"
+}
