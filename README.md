@@ -53,6 +53,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 |---|---|
 | [SandBase](skills/sandbase/) | 发现、比较并调用实时 API 和模型 |
 | [Code Reviewer](skills/code-reviewer/) | 评审正确性、回归、维护性、安全和发布风险 |
+| [Code Review Excellence](skills/code-review-excellence/) | 以证据、行为和风险为中心组织建设性代码评审，区分阻断项与偏好 |
 | [Requesting Code Review](skills/requesting-code-review/) | 用独立上下文、精确 SHA、需求和测试证据请求合并前代码评审 |
 | [Writing Skills](skills/writing-skills/) | 用压力场景和 RED-GREEN-REFACTOR 验证 Skill 的触发、行为和安全边界 |
 | [Bug Reproduction Brief](skills/bug-reproduction-brief/) | 将模糊或间歇性缺陷收敛为最小、可重复、有证据的复现简报 |

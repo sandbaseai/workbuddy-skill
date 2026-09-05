@@ -1,0 +1,21 @@
+{
+  "catalog_id": "github:wshobson/agents:plugins/developer-essentials/skills/code-review-excellence/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/code-review-excellence/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "747aae267d996b1eb5826e4c0c42f6e81784dc0f",
+  "source_commit": "a30778f8c4e6b0a87567941b7cca4f534bf642b6",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/developer-essentials/skills/code-review-excellence/SKILL.md",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source provides guidance but no repository-specific review policy, test environment, severity taxonomy, or merge authority",
+      "The adopting project must provide an exact revision range, authorized code access, requirements, test evidence, and decision owner"
+    ],
+    "security_signals": [
+      "preserved context gathering, behavior-focused review, actionable feedback, severity labels, security/testing checklists, disagreement handling, and review templates",
+      "added exact-scope requirements, secret-safe handling, evidence and uncertainty states, explicit non-execution boundaries, and blocked merge gates"
+    ]
+  }
+}

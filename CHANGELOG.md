@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Code Review Excellence Skill with bounded review stages, behavior-focused feedback, severity calibration, security/testing checklists, disagreement handling, evidence requirements, and explicit merge-gate boundaries.
 - Added the MIT Multi-Reviewer Patterns Skill with independent review dimensions, exact-scope evidence, finding deduplication, severity calibration, dissent preservation, merge gates, and explicit no-automatic-change boundaries.
 - Added the MIT Parallel Debugging Skill with competing hypotheses, isolated investigation contexts, direct evidence citations, counter-evidence, independent arbitration, fix validation, and explicit Inconclusive/Blocked states.
 - Added the MIT Debugging Strategies Skill with reproducible evidence loops, bounded hypotheses, single-variable experiments, safe differential/profiling guidance, secret-safe evidence, regression checks, and explicit production boundaries.

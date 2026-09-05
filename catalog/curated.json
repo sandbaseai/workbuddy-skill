@@ -1,4 +1,11 @@
-[{
+[
+  {
+    "catalog_id": "github:wshobson/agents:plugins/developer-essentials/skills/code-review-excellence/SKILL.md",
+    "skill": "code-review-excellence",
+    "skill_path": "skills/code-review-excellence",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/code-review-excellence-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/agent-teams/skills/multi-reviewer-patterns/SKILL.md",
     "skill": "multi-reviewer-patterns",
     "skill_path": "skills/multi-reviewer-patterns",
