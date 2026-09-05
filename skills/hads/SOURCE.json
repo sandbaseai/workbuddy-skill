@@ -1,0 +1,21 @@
+{
+  "catalog_id": "github:wshobson/agents:plugins/documentation-standards/skills/hads/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/hads/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "c2019180f74f6cd7fde61e4ef2a4466cb2203c5c",
+  "source_commit": "a30778f8c4e6b0a87567941b7cca4f534bf642b6",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/documentation-standards/skills/hads/SKILL.md",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source mentions a planned validator that is not included",
+      "The adopting project must provide source links, document ownership, a Markdown/HADS checker when available, and publication approval"
+    ],
+    "security_signals": [
+      "preserved SPEC/NOTE/BUG/unknown block semantics, AI manifest ordering, conversion workflow, and validation requirements",
+      "added WorkBuddy evidence labels, source grounding, untrusted-input handling, public redaction, safe examples, and separate publication boundaries"
+    ]
+  }
+}

@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/documentation-standards/skills/hads/SKILL.md",
+    "skill": "hads",
+    "skill_path": "skills/hads",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/hads-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/plugin-eval/skills/evaluation-methodology/SKILL.md",
     "skill": "evaluation-methodology",
     "skill_path": "skills/evaluation-methodology",
