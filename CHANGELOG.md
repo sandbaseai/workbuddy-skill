@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Multi-Reviewer Patterns Skill with independent review dimensions, exact-scope evidence, finding deduplication, severity calibration, dissent preservation, merge gates, and explicit no-automatic-change boundaries.
 - Added the MIT Parallel Debugging Skill with competing hypotheses, isolated investigation contexts, direct evidence citations, counter-evidence, independent arbitration, fix validation, and explicit Inconclusive/Blocked states.
 - Added the MIT Debugging Strategies Skill with reproducible evidence loops, bounded hypotheses, single-variable experiments, safe differential/profiling guidance, secret-safe evidence, regression checks, and explicit production boundaries.
 - Added the MIT Incident Runbook Templates Skill with bounded triage, explicit target binding, read-only defaults, approval and dry-run gates, stop conditions, rollback, verification, escalation, and freshness checks.

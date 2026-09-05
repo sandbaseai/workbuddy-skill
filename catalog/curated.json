@@ -1,4 +1,10 @@
 [{
+    "catalog_id": "github:wshobson/agents:plugins/agent-teams/skills/multi-reviewer-patterns/SKILL.md",
+    "skill": "multi-reviewer-patterns",
+    "skill_path": "skills/multi-reviewer-patterns",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/multi-reviewer-patterns-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/agent-teams/skills/parallel-debugging/SKILL.md",
     "skill": "parallel-debugging",
     "skill_path": "skills/parallel-debugging",

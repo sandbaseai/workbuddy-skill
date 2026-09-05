@@ -1,0 +1,21 @@
+{
+  "catalog_id": "github:wshobson/agents:plugins/agent-teams/skills/multi-reviewer-patterns/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/multi-reviewer-patterns/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "282bd5d9fe81d801346c461ce262a4b407944c2f",
+  "source_commit": "a30778f8c4e6b0a87567941b7cca4f534bf642b6",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/agent-teams/skills/multi-reviewer-patterns/SKILL.md",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source does not package repository permissions, reviewer identities, evidence storage, severity policy, or merge governance",
+      "The adopting project must provide an exact revision range, isolated review contexts, authorized code access, and independent merge approval"
+    ],
+    "security_signals": [
+      "preserved dimension allocation, finding deduplication, severity calibration, consolidated reporting, and merge-gate concepts",
+      "added exact-scope and evidence requirements, context isolation, dissent preservation, secret-safe handling, no-automatic-change boundaries, and BLOCKED states"
+    ]
+  }
+}
