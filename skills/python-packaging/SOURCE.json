@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides Python package layouts, pyproject metadata, PEP 517/518/621/660 concepts, build backends, wheels, source distributions, CLI entry points, and registry guidance but no project source, lockfile, build environment, registry, signing policy, or release authorization",
+      "The adopting project must provide an isolated build target, dependency and license policy, artifact verification, provenance/signing controls, staging registry, ownership, and rollback evidence"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved source/flat/multi-package layouts, pyproject/build backend, PEP packaging concepts, wheel/sdist, metadata, entry points, namespace packages, and registry guidance",
+      "added WorkBuddy isolated no-secret builds, dependency/lock/provenance review, artifact content checks, offline installation, signing/SBOM, staging verification, immutable versions, least-privilege publishing, and rollback authorization"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:wshobson/agents:plugins/python-development/skills/python-packaging/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/python-packaging/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "c594b06b0dad18178133aab80fdc18f0bc719a31",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/python-development/skills/python-packaging/SKILL.md"
+}

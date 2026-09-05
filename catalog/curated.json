@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/python-development/skills/python-packaging/SKILL.md",
+    "skill": "python-packaging",
+    "skill_path": "skills/python-packaging",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/python-packaging-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/python-development/skills/async-python-patterns/SKILL.md",
     "skill": "async-python-patterns",
     "skill_path": "skills/async-python-patterns",

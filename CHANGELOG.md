@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Python Packaging Skill with modern pyproject metadata, source layout, locked dependencies, reproducible wheel/sdist builds, artifact inspection, provenance/signing, staging verification, immutable releases, and authorized publication gates.
 - Added the MIT Async Python Patterns Skill with sync/async boundary decisions, bounded concurrency, non-blocking I/O, queue backpressure, deadlines, structured cancellation, resource cleanup, event-loop health, and deterministic load/failure tests.
 - Added the MIT Python Background Jobs Skill with durable job state, at-least-once delivery, idempotency, bounded retries/deadlines, DLQs, backpressure, tenant reauthorization, cancellation, graceful shutdown, and recovery verification.
 - Added the MIT Python Resilience Patterns Skill with transient/permanent failure classification, deadline budgets, jittered bounded retries, idempotency, circuit breaking, rate limits, backpressure, safe fallbacks, fault injection, and recovery verification.
