@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:iamthenop/infurnet-skills:skills/api-docs/SKILL.md",
+    "skill": "api-documentation",
+    "skill_path": "skills/api-documentation",
+    "category": "content",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/api-documentation-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:ever-just/agentskills:skills/github-research/SKILL.md",
     "skill": "github-research",
     "skill_path": "skills/github-research",

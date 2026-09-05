@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["The source's repository vocabulary, type-notation reference, templates, and provider-specific bindings were not packaged"],
+    "packaged_resources": [],
+    "security_signals": ["generalized API documentation rules with synthetic examples, secret redaction, authority boundaries, and surgical-change safeguards; no runtime assets packaged"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:iamthenop/infurnet-skills:skills/api-docs/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/api-docs/SKILL.md",
+  "repository": "iamthenop/infurnet-skills",
+  "sha": "7e853abec70fa75937d6c630dec9412719ca9d02",
+  "source_url": "https://github.com/iamthenop/infurnet-skills/blob/998fa847d295890c4d3c612823992e42ac3b9411/skills/api-docs/SKILL.md"
+}
