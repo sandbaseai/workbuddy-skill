@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:seb1n/awesome-ai-agent-skills:agent-engineering/tool-schema-design/SKILL.md",
+    "skill": "tool-schema-design",
+    "skill_path": "skills/tool-schema-design",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/tool-schema-design-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:seb1n/awesome-ai-agent-skills:agent-engineering/mcp-server-building/SKILL.md",
     "skill": "mcp-server-building",
     "skill_path": "skills/mcp-server-building",

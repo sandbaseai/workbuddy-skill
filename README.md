@@ -191,6 +191,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | [Agent Red Teaming](skills/agent-red-teaming/) | Run authorized, synthetic, evidence-based security assessments with scope controls, safe cases, cleanup, and retesting | [MIT source](skills/agent-red-teaming/SOURCE.json) |
 | [Human in the Loop](skills/human-in-the-loop/) | Design auditable approval gates, immutable action binding, escalation, reauthorization, recovery, and safe human oversight | [MIT source](skills/human-in-the-loop/SOURCE.json) |
 | [MCP Server Building](skills/mcp-server-building/) | Build least-privilege MCP servers with precise tool contracts, safe transports, authorization, structured errors, and interoperability tests | [MIT source](skills/mcp-server-building/SOURCE.json) |
+| [Tool Schema Design](skills/tool-schema-design/) | Design bounded model-facing tool contracts with explicit effects, authorization, safe defaults, errors, idempotency, and selection tests | [MIT source](skills/tool-schema-design/SOURCE.json) |
 | [Context Optimization](skills/context-optimization/) | Optimize retrieved context with conservative deduplication, budget allocation, coverage checks, provenance, and exclusion ledgers | [MIT source](skills/context-optimization/SOURCE.json) |
 | [Agent Observability](skills/agent-observability/) | Design privacy-aware traces, events, metrics, dashboards, alerts, and verification for AI agent workflows | [MIT source](skills/agent-observability/SOURCE.json) |
 | [Product Analytics](skills/product-analytics/) | Define event taxonomies, funnels, cohorts, retention, experiments, privacy boundaries, and evidence-backed product decisions | [MIT source](skills/product-analytics/SOURCE.json) |
@@ -471,8 +472,8 @@ The catalog is generated from public GitHub `SKILL.md` results with resumable, r
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,616 |
-| Unique content SHAs | 7,989 |
+| Indexed GitHub paths | 12,617 |
+| Unique content SHAs | 7,990 |
 | Source repositories | 6,425 |
 <!-- CATALOG-METRICS:END -->
 
@@ -483,7 +484,7 @@ Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.git
 For a manually curated index of WorkBuddy documentation, MCP integrations, workflows, benchmarks, and Skills, browse [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy).
 
 <!-- CATALOG-ANALYSIS:START -->
-The current static analysis successfully inspected 12,616 paths: 9,930 are structurally adaptable to WorkBuddy, 908 need manual review, 0 are currently WorkBuddy-ready, and 417 contain at least one conservative security signal.
+The current static analysis successfully inspected 12,617 paths: 9,931 are structurally adaptable to WorkBuddy, 908 need manual review, 0 are currently WorkBuddy-ready, and 417 contain at least one conservative security signal.
 <!-- CATALOG-ANALYSIS:END -->
 A clean static scan is never a security guarantee.
 

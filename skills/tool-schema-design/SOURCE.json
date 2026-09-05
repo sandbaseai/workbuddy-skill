@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source schema-patterns reference, validator script, and test fixtures were not packaged",
+      "Target provider schema behavior, runtime authorization, sandbox, and implementation tests must be supplied by the adopting team"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved server-side authorization and effect contracts; added WorkBuddy metadata, bounded parameter guidance, confirmation defaults, fail-closed semantics, and provider/runtime evidence boundaries"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:seb1n/awesome-ai-agent-skills:agent-engineering/tool-schema-design/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/tool-schema-design/SKILL.md",
+  "repository": "seb1n/awesome-ai-agent-skills",
+  "sha": "1f76deaca17e096174f3a56393e5a828475b7b4d",
+  "source_url": "https://github.com/seb1n/awesome-ai-agent-skills/blob/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/agent-engineering/tool-schema-design/SKILL.md"
+}
