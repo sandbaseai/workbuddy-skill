@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides concise REST/GraphQL principles but no OpenAPI or schema parser, consumer registry, contract-test runner, traffic policy adapter, or migration tracker",
+      "The adopting project must provide authorized specifications, consumer inventory, compatibility policy, safe test environment, and evidence retention"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved resource-oriented REST, HTTP semantics, schema-first GraphQL, versioning, pagination, rate limiting, DataLoader/N+1 guidance, validation, errors, and documentation practices",
+      "added WorkBuddy authorization and data boundaries, tenant/security contracts, idempotency/concurrency, query-cost limits, migration/rollback gates, redaction, and evidence-backed compatibility review"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:wshobson/agents:plugins/backend-development/skills/api-design-principles/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/api-design-principles/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "e914fb423af914a6213a72ea537df179a7768233",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/backend-development/skills/api-design-principles/SKILL.md"
+}

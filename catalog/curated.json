@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/backend-development/skills/api-design-principles/SKILL.md",
+    "skill": "api-design-principles",
+    "skill_path": "skills/api-design-principles",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/api-design-principles-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/data-engineering/skills/data-quality-frameworks/SKILL.md",
     "skill": "data-quality-frameworks",
     "skill_path": "skills/data-quality-frameworks",

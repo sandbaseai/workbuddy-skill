@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT API Design Principles Skill with resource and HTTP semantics, schema-first GraphQL, pagination, idempotency, concurrency, authorization, versioning, consumer migration, query-cost, rate-limit, contract-test, and rollback boundaries.
 - Added the MIT Data Quality Frameworks Skill with versioned data contracts, six quality dimensions, bounded sampling, incremental validation, evidence-backed baselines, failure classification, expiry-aware exceptions, privacy-safe reports, and cost-controlled read-only boundaries.
 - Added the MIT Screen Reader Testing Skill with declared browser/assistive-technology matrices, landmark and keyboard checks, ARIA/form validation, dynamic announcements, automation-versus-manual evidence separation, and safe testing boundaries.
 - Added the MIT Test-Driven Development Skill with RED/GREEN/REFACTOR, expected-failure verification, real-behavior assertions, minimal implementation, mock limits, full regression gates, explicit exceptions, and safe fixture boundaries.
