@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/repo-standardizer/SKILL.md",
+    "skill": "repo-standardizer",
+    "skill_path": "skills/repo-standardizer",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/repo-standardizer-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/codeql/SKILL.md",
     "skill": "codeql",
     "skill_path": "skills/codeql",

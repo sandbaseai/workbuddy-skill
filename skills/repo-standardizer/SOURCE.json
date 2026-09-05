@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides broad repository metadata, labels, templates, CI, CODEOWNERS, rulesets, and documentation modules but its project-specific templates and automation assumptions are not packaged",
+      "The adopting project must provide public-audience policy, internal-content classification, authorized owner/team mapping, link/template validators, and rollback procedures for governance changes"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved repository detection, public-surface audit, idempotent standardization, labels, issue/PR templates, CI, CODEOWNERS, rulesets, docs, and verification concepts",
+      "added WorkBuddy separation of public content from internal build constraints, sensitive-data filtering, fork/PR trust boundaries, least-privilege CI, no-fabricated-metrics policy, conflict handling, and explicit destructive/write gates"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/repo-standardizer/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/repo-standardizer/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "2204b906dd36d4a0b3255c58f7ff2db248d8482d",
+  "source_url": "https://github.com/github/awesome-copilot/blob/09e7be729f591ed44eaf8e34492edcd4e2fbd8e2/skills/repo-standardizer/SKILL.md"
+}
