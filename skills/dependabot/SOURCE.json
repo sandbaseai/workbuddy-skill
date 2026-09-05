@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references an Advanced Security plugin and GitHub settings that were not packaged",
+      "The adopting project must provide manifest discovery, repository-setting access, alert state, registry credentials, and safe Dependabot PR validation"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved ecosystem mapping, monorepo grouping, schedules, cooldowns, security updates, and triage guidance",
+      "added security/version-policy separation, least-noise guardrails, unknown-state reporting, no-dismissal/no-merge defaults, and owner/expiry requirements"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/dependabot/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/dependabot/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "710ccb6c4f3e07d073a61714757d3b5bf9e187de",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/dependabot/SKILL.md"
+}
