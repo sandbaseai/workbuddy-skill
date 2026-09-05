@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides an OWASP ASI Top 10 assessment model and example static checks but no project-specific architecture, deployment configuration, runtime evidence, authorization, ownership, or remediation state",
+      "The adopting project must provide an authorized commit and environment scope, tool and identity inventory, policy and audit evidence, dependency provenance, behavioral baselines, owners, and separately authorized remediation and rollback evidence"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved ASI-01 through ASI-10 coverage for prompt injection, tool use, agency, escalation, trust boundaries, logging, identity, policy, supply chain, and behavioral monitoring",
+      "added WorkBuddy read-only and privacy boundaries, evidence/contra-evidence/unknown semantics, deterministic enforcement checks, delegation narrowing, runtime evidence requirements, anti-certification language, and authorized remediation gates"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/agent-owasp-compliance/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/agent-owasp-compliance/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "3c4032dc5e2f69709fbfc040caf5c77dee756136",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/agent-owasp-compliance/SKILL.md"
+}

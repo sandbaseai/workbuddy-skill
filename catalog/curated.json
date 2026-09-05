@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/agent-owasp-compliance/SKILL.md",
+    "skill": "agent-owasp-compliance",
+    "skill_path": "skills/agent-owasp-compliance",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/agent-owasp-compliance-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/observability-monitoring/skills/grafana-dashboards/SKILL.md",
     "skill": "grafana-dashboards",
     "skill_path": "skills/grafana-dashboards",

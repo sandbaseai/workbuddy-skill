@@ -82,6 +82,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [SLO Implementation](skills/slo-implementation/) | 用用户旅程 SLI、错误预算、多窗口 burn 告警和治理策略管理可靠性 |
 | [Prometheus Configuration](skills/prometheus-configuration/) | 用指标契约、受控抓取、规则、告警、HA、保留和高基数治理构建监控 |
 | [Grafana Dashboards](skills/grafana-dashboards/) | 用 RED/USE、SLO、变量、阈值、告警和 Dashboard as Code 构建可行动的观测视图 |
+| [Agent OWASP ASI Compliance](skills/agent-owasp-compliance/) | 按 Agentic Security Initiative 十项风险，以证据评估工具、身份、策略、供应链和运行时行为 |
 | [API Design Principles](skills/api-design-principles/) | 设计具备 HTTP/schema、幂等、分页、授权、版本和成本边界的 API 契约 |
 | [Microservices Architect](skills/microservices-architect/) | 设计服务边界、通信、数据所有权、故障隔离和迁移验证 |
 | [Cloud Design Patterns](skills/cloud-design-patterns/) | 按约束选择韧性、性能、消息、安全、部署和迁移模式 |
@@ -123,8 +124,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,696 |
-| Unique content SHAs | 8,069 |
+| Indexed GitHub paths | 12,697 |
+| Unique content SHAs | 8,070 |
 | Source repositories | 6,432 |
 <!-- CATALOG-METRICS:END -->
 
