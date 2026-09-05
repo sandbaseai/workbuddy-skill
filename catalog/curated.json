@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:mattpocock/skills:skills/misc/git-guardrails-claude-code/SKILL.md",
+    "skill": "git-guardrails",
+    "skill_path": "skills/git-guardrails",
+    "category": "security",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/git-guardrails-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:mattpocock/skills:skills/engineering/resolving-merge-conflicts/SKILL.md",
     "skill": "merge-conflict-resolution",
     "skill_path": "skills/merge-conflict-resolution",

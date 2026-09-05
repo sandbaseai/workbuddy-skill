@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references a Claude Code PreToolUse hook and a bundled shell script; WorkBuddy hook support and the script were not assumed or packaged",
+      "The adopting project must provide its supported policy mechanism, branch protection, command parser/runtime, owners, and test harness"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "generalized provider-specific hooks into repository-scoped policy; added command normalization, explicit exceptions, force-push separation, secret-safe diagnostics, and disposable-worktree verification"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:mattpocock/skills:skills/misc/git-guardrails-claude-code/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/git-guardrails/SKILL.md",
+  "repository": "mattpocock/skills",
+  "sha": "58bcdd875b164093b95f436fa32a65c6cb5eb572",
+  "source_url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/misc/git-guardrails-claude-code/SKILL.md"
+}
