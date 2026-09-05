@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references actions, reporting, patterns, and review-rubric files that were not packaged",
+      "The adopting project must provide workflow parsing, representative run history, cost data, and safe live validation"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "added required-check, cache-boundary, permission, release, and rollback guardrails",
+      "added explicit separation of measured versus modeled impact and static-only limitations"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/github-actions-efficiency/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/github-actions-efficiency/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "e63a2bad12e13978a52ddb655573856d12314746",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/github-actions-efficiency/SKILL.md"
+}

@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/github-actions-efficiency/SKILL.md",
+    "skill": "github-actions-efficiency",
+    "skill_path": "skills/github-actions-efficiency",
+    "category": "productivity",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/github-actions-efficiency-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/github-actions-hardening/SKILL.md",
     "skill": "github-actions-hardening",
     "skill_path": "skills/github-actions-hardening",
