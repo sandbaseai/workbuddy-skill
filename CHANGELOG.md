@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT GitHub Actions Hardening Skill with trigger trust mapping, expression-injection review, least-privilege permissions, secret and output boundaries, immutable action supply-chain checks, runner exposure analysis, and evidence-linked remediation reports.
 - Added the MIT Agentic Evaluation Skill with explicit evaluation contracts, deterministic-first checks, reflection and evaluator-optimizer patterns, bounded refinement, convergence detection, judge calibration, privacy-safe evidence, and human-review gates.
 - Added the MIT Code Tour Skill with persona-targeted narrative paths, verified repository anchors, CodeTour step guidance, manual validation fallbacks, secret-safe output, and explicit limits on commands and unsupported navigation behavior.
 - Added the MIT Cloud Resource Health Skill with exact-resource scoping, control-plane/data-plane separation, bounded metric and log diagnosis, dependency correlation, confidence states, privacy-safe reports, and authorized reversible remediation verification.

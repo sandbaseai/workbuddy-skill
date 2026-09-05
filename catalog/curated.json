@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/github-actions-hardening/SKILL.md",
+    "skill": "github-actions-hardening",
+    "skill_path": "skills/github-actions-hardening",
+    "category": "security",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/github-actions-hardening-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/agentic-eval/SKILL.md",
     "skill": "agentic-evaluation",
     "skill_path": "skills/agentic-evaluation",

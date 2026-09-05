@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references separate trigger, injection, permissions, supply-chain, and report-format reference files that were not packaged",
+      "The adopting project must provide YAML parsing, repository-setting inspection, action provenance checks, and authorized workflow validation"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved trigger, interpolation, privilege, secret, supply-chain, and runner threat modeling",
+      "added read-only defaults, redaction, evidence/confidence labels, and no-auto-apply boundaries"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/github-actions-hardening/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/github-actions-hardening/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "61fa956e0ca6a0958ff6713b7b94ed22ecdc2e7e",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/github-actions-hardening/SKILL.md"
+}
