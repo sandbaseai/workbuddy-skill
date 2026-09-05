@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/database-design/skills/postgresql-table-design/SKILL.md",
+    "skill": "postgresql-table-design",
+    "skill_path": "skills/postgresql-table-design",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/postgresql-table-design-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/python-development/skills/python-packaging/SKILL.md",
     "skill": "python-packaging",
     "skill_path": "skills/python-packaging",

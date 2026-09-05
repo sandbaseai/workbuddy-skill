@@ -77,6 +77,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Python Background Jobs](skills/python-background-jobs/) | 以持久状态、幂等投递、DLQ、背压、取消和优雅停机运行后台任务 |
 | [Async Python Patterns](skills/async-python-patterns/) | 用有界并发、非阻塞 I/O、取消传播、deadline、背压和资源清理构建异步服务 |
 | [Python Packaging](skills/python-packaging/) | 用现代元数据、锁定依赖、可复现构建、provenance 和发布门禁分发 Python 包 |
+| [PostgreSQL Table Design](skills/postgresql-table-design/) | 依据 workload 设计类型、约束、索引、分区、RLS 和可回滚在线迁移 |
 | [API Design Principles](skills/api-design-principles/) | 设计具备 HTTP/schema、幂等、分页、授权、版本和成本边界的 API 契约 |
 | [Microservices Architect](skills/microservices-architect/) | 设计服务边界、通信、数据所有权、故障隔离和迁移验证 |
 | [Cloud Design Patterns](skills/cloud-design-patterns/) | 按约束选择韧性、性能、消息、安全、部署和迁移模式 |
@@ -118,8 +119,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,691 |
-| Unique content SHAs | 8,064 |
+| Indexed GitHub paths | 12,692 |
+| Unique content SHAs | 8,065 |
 | Source repositories | 6,432 |
 <!-- CATALOG-METRICS:END -->
 

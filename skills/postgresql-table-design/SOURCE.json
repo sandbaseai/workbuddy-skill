@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides PostgreSQL types, keys, constraints, indexes, JSONB, partitioning, workload patterns, RLS, extensions, and migration guidance but no database schema, query workload, plan evidence, replication topology, or migration environment",
+      "The adopting project must provide authorized schema metadata, representative safe workload, isolated database clone, lock/replication baselines, privacy classification, and rollback/recovery evidence"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved PostgreSQL-specific data types, identity/UUID guidance, normalization, constraints, indexes, JSONB, partitioning, storage, RLS, extensions, workload patterns, and live migration guidance",
+      "added WorkBuddy read-only defaults, PII/tenant boundaries, fail-closed RLS testing, plan/lock/replication evidence, expand-contract migrations, bounded backfills, backup/rollback, extension review, and production authorization controls"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:wshobson/agents:plugins/database-design/skills/postgresql-table-design/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/postgresql-table-design/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "40133536f73d0d345dd159d41c2e2b93c0a67bd6",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/database-design/skills/postgresql-table-design/SKILL.md"
+}
