@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides general deprecation guidance and examples but no repository-specific consumer inventory, migration tooling, metrics, or database adapters",
+      "The adopting project must provide authorized usage/consumer evidence, a proven replacement, migration documentation, rollout controls, backups, and a recovery owner"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved replacement-first, advisory/compulsory, incremental consumer migration, strangler/adapter/feature-flag, expand-contract, zombie-code, and zero-usage verification guidance",
+      "added WorkBuddy evidence ledgers, production read/write separation, privacy-safe notices, authorization gates, recovery proof, and destructive-action boundaries"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:addyosmani/agent-skills:skills/deprecation-and-migration/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/deprecation-and-migration/SKILL.md",
+  "repository": "addyosmani/agent-skills",
+  "sha": "7bf884ca5743d63be448725f88041dde8a10cd5d",
+  "source_url": "https://github.com/addyosmani/agent-skills/blob/84ee50673804b95c287d1e4eb4f1c1dad7c5188a/skills/deprecation-and-migration/SKILL.md"
+}

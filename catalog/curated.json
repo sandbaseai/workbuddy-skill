@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:addyosmani/agent-skills:skills/deprecation-and-migration/SKILL.md",
+    "skill": "deprecation-and-migration",
+    "skill_path": "skills/deprecation-and-migration",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/deprecation-and-migration-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:addyosmani/agent-skills:skills/doubt-driven-development/SKILL.md",
     "skill": "doubt-driven-development",
     "skill_path": "skills/doubt-driven-development",
