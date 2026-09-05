@@ -1,0 +1,21 @@
+{
+  "catalog_id": "github:wshobson/agents:plugins/incident-response/skills/postmortem-writing/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/postmortem-writing/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "e57b15105f4fcc163efc2d33f1bf1431a20f9c95",
+  "source_commit": "a30778f8c4e6b0a87567941b7cca4f534bf642b6",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/incident-response/skills/postmortem-writing/SKILL.md",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source does not package an incident data set, organizational severity policy, ticketing integration, or retention/access policy",
+      "The adopting project must provide authorized evidence, incident-response ownership, privacy review, and a controlled document destination"
+    ],
+    "security_signals": [
+      "preserved blameless review, impact analysis, timelines, contributing conditions, action items, facilitation, and follow-up learning",
+      "removed internal wiki references; added evidence states, minimum-disclosure rules, authorization gates, disputed/unknown handling, and action-effectiveness verification"
+    ]
+  }
+}

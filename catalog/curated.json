@@ -1,4 +1,10 @@
 [{
+    "catalog_id": "github:wshobson/agents:plugins/incident-response/skills/postmortem-writing/SKILL.md",
+    "skill": "postmortem-writing",
+    "skill_path": "skills/postmortem-writing",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/postmortem-writing-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/reverse-engineering/skills/binary-analysis-patterns/SKILL.md",
     "skill": "binary-analysis-patterns",
     "skill_path": "skills/binary-analysis-patterns",

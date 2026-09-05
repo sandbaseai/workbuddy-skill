@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Postmortem Writing Skill with blameless evidence-led timelines, systemic contributing conditions, disputed/unknown states, bounded action items, privacy controls, and follow-up effectiveness verification.
 - Added the MIT Binary Analysis Patterns Skill with offline static triage, disassembly and control-flow evidence, cautious data-structure hypotheses, network-disabled tooling, and explicit no-execution boundaries.
 - Added the MIT Memory Forensics Skill with authorized offline-image triage, evidence ledgers, process/mapping cross-checks, redaction, untrusted-input controls, and explicit no-live-acquisition or credential-recovery boundaries.
 - Added the MIT Protocol Reverse Engineering Skill with authorized offline capture analysis, binary framing and field inference, state modeling, bounded parsers, redaction, and explicit no-live-interception safety gates.
