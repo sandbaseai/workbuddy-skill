@@ -1,0 +1,21 @@
+{
+  "catalog_id": "github:wshobson/agents:plugins/incident-response/skills/incident-runbook-templates/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/incident-runbook-templates/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "70632a7d6383d19bc32198ed52c6bee9db41bb9c",
+  "source_commit": "a30778f8c4e6b0a87567941b7cca4f534bf642b6",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/incident-response/skills/incident-runbook-templates/SKILL.md",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source does not package service-specific observability, ownership, approval, rollback, or environment metadata",
+      "The adopting project must provide authorized runbook references, exact target binding, change policy, and independent production approval"
+    ],
+    "security_signals": [
+      "preserved incident severity, runbook structure, preconditions, verification, rollback, escalation, communication, and freshness checks",
+      "removed direct production/database action examples; added read-only defaults, explicit target binding, dry-run and approval gates, stop conditions, and BLOCKED states"
+    ]
+  }
+}

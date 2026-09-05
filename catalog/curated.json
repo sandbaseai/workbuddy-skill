@@ -1,4 +1,10 @@
 [{
+    "catalog_id": "github:wshobson/agents:plugins/incident-response/skills/incident-runbook-templates/SKILL.md",
+    "skill": "incident-runbook-templates",
+    "skill_path": "skills/incident-runbook-templates",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/incident-runbook-templates-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/incident-response/skills/on-call-handoff-patterns/SKILL.md",
     "skill": "on-call-handoff-patterns",
     "skill_path": "skills/on-call-handoff-patterns",
