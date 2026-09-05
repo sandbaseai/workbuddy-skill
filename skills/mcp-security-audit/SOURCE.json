@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides MCP configuration parsing, hardcoded-secret detection, shell-injection patterns, unpinned-version checks, approved-server auditing, a combined audit runner, and report formatting but no project-approved inventory, authorization context, path/network scope, secret redaction policy, dependency provenance, or exception lifecycle",
+      "The adopting project must provide an authorized configuration scope, isolated non-executing parser, approved servers and registries, owner/permission policy, lock/provenance evidence, redacted artifact handling, and separately authorized remediation/merge/release controls"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved MCP config server enumeration, secret pattern review, shell-injection detection, floating dependency checks, approved-server comparison, combined findings, severity summary, and report format",
+      "added WorkBuddy non-execution and path/network boundaries, secret-safe evidence, env/URL/registry/fork trust checks, version provenance, lifecycle/exception handling, fail-closed unknown semantics, and merge/release gates"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/mcp-security-audit/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/mcp-security-audit/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "ef866b906abecd7368d124ce7ebf100c1785f203",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/mcp-security-audit/SKILL.md"
+}

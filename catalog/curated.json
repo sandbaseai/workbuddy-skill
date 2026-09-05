@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/mcp-security-audit/SKILL.md",
+    "skill": "mcp-security-audit",
+    "skill_path": "skills/mcp-security-audit",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/mcp-security-audit-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/documentation-writer/SKILL.md",
     "skill": "documentation-writer",
     "skill_path": "skills/documentation-writer",
