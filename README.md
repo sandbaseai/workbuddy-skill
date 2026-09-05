@@ -163,23 +163,9 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 
 浏览 [完整精选目录](skills/) 或直接打开 [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/)。每个精选条目都提供来源说明；外部来源的许可证和适配信息见对应的 `SOURCE.json`。
 
-### 目录与来源
+### 来源与安全
 
-目录收录公开 GitHub `SKILL.md` 条目，并提供来源路径、内容指纹、许可证/来源信息和兼容性提示。目录条目不是安装批准：安装前请自行阅读原始内容，尤其注意脚本、网络访问、凭据和副作用。
-
-<!-- CATALOG-METRICS:START -->
-| Metric | Current snapshot |
-|---|---:|
-| Indexed GitHub paths | 12,743 |
-| Unique content SHAs | 8,116 |
-| Source repositories | 6,434 |
-<!-- CATALOG-METRICS:END -->
-
-静态检查只能帮助筛选，不能替代人工安全审查。目录的字段说明和来源约定见[目录文档](catalog/README.md)；适配指南见[中文文档](docs/adapting-skills.zh-CN.md)和[English guide](docs/adapting-skills.md)。
-
-<!-- CATALOG-ANALYSIS:START -->
-The catalog is reviewed for structural compatibility and conservative security signals; inspect each source before installation.
-<!-- CATALOG-ANALYSIS:END -->
+目录中的 Skill 来自公开来源，并附有来源、许可证和适配说明。目录用于发现和比较，不能替代安装前的审阅；请特别留意脚本、网络访问、凭据、外部依赖和副作用。
 
 需要更多 WorkBuddy 文档、MCP、工作流、评测与 Skills，可浏览 [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy)。
 
