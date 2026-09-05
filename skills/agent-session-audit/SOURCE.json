@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source assumes the agenttrace CLI, its export schema, and a repository-specific Cargo fallback; these were not packaged",
+      "The adopting project must provide a local session format/parser, cost accounting, redaction policy, retention boundary, baseline thresholds, and CI integration"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "generalized the source's agenttrace workflow into WorkBuddy; added parser/capability disclosure, local-only privacy boundaries, no-data safeguards, missing-field handling, comparison controls, read-only defaults, and partial/unavailable outcomes"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:davepoon/buildwithclaude:plugins/all-skills/skills/agenttrace-session-audit/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/agent-session-audit/SKILL.md",
+  "repository": "davepoon/buildwithclaude",
+  "sha": "ccad2b89f04e2c92a91c255639b5612a0377dd1c",
+  "source_url": "https://github.com/davepoon/buildwithclaude/blob/f4362e9c2aa1b16f19018bd11ba4682ab0bd3682/plugins/all-skills/skills/agenttrace-session-audit/SKILL.md"
+}

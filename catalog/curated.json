@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:davepoon/buildwithclaude:plugins/all-skills/skills/agenttrace-session-audit/SKILL.md",
+    "skill": "agent-session-audit",
+    "skill_path": "skills/agent-session-audit",
+    "category": "productivity",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/agent-session-audit-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:davepoon/buildwithclaude:plugins/all-skills/skills/agent-memory-discipline/SKILL.md",
     "skill": "memory-discipline",
     "skill_path": "skills/memory-discipline",
