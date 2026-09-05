@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Data Quality Frameworks Skill with versioned data contracts, six quality dimensions, bounded sampling, incremental validation, evidence-backed baselines, failure classification, expiry-aware exceptions, privacy-safe reports, and cost-controlled read-only boundaries.
 - Added the MIT Screen Reader Testing Skill with declared browser/assistive-technology matrices, landmark and keyboard checks, ARIA/form validation, dynamic announcements, automation-versus-manual evidence separation, and safe testing boundaries.
 - Added the MIT Test-Driven Development Skill with RED/GREEN/REFACTOR, expected-failure verification, real-behavior assertions, minimal implementation, mock limits, full regression gates, explicit exceptions, and safe fixture boundaries.
 - Added the MIT Subagent-Driven Development Skill with isolated plan-task execution, fresh scoped workers, task-level specification and quality reviews, bounded fix loops, recovery ledgers, final whole-branch review, and explicit merge/release authority boundaries.

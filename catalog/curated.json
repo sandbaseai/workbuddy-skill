@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/data-engineering/skills/data-quality-frameworks/SKILL.md",
+    "skill": "data-quality-frameworks",
+    "skill_path": "skills/data-quality-frameworks",
+    "category": "data",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/data-quality-frameworks-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/accessibility-compliance/skills/screen-reader-testing/SKILL.md",
     "skill": "screen-reader-testing",
     "skill_path": "skills/screen-reader-testing",

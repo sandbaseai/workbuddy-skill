@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides examples for Great Expectations, dbt tests, and data contracts but no connector, warehouse adapter, schema registry, baseline store, or privacy-safe evidence sink",
+      "The adopting project must provide authorized datasets, rule execution, incremental partitioning, threshold policy, ownership, and retention controls"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved completeness, uniqueness, validity, accuracy, consistency, timeliness, contract versioning, incremental checks, baseline use, and CI failure handling",
+      "added WorkBuddy read-only data boundaries, bounded sampling, PII redaction, empty-input/error separation, expiry-aware exceptions, cost controls, and explicit mutation/alert authorization"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:wshobson/agents:plugins/data-engineering/skills/data-quality-frameworks/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/data-quality-frameworks/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "ee3b998a470fb11dc1bed7a392c304f05c7e8f0b",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/data-engineering/skills/data-quality-frameworks/SKILL.md"
+}

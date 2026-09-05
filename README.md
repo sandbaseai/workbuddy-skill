@@ -63,6 +63,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Cloud Cost Optimization](skills/cloud-cost-optimization/) | 按实际成本驱动因素排序，验证取舍，建模节省并治理授权变更 |
 | [Cloud Architect](skills/cloud-architect/) | 设计跨云架构、迁移波次、灾备、成本与安全取舍 |
 | [Database Query Optimizer](skills/database-query-optimizer/) | 从执行计划和性能基线定位慢 SQL，并验证单变量优化 |
+| [Data Quality Frameworks](skills/data-quality-frameworks/) | 以数据契约、质量维度、基线和有界证据治理数据管道质量 |
 | [Microservices Architect](skills/microservices-architect/) | 设计服务边界、通信、数据所有权、故障隔离和迁移验证 |
 | [Cloud Design Patterns](skills/cloud-design-patterns/) | 按约束选择韧性、性能、消息、安全、部署和迁移模式 |
 | [Technical Spike](skills/technical-spike/) | 用时间盒和最小实验解决实现前的关键技术未知数 |
@@ -100,8 +101,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,673 |
-| Unique content SHAs | 8,046 |
+| Indexed GitHub paths | 12,674 |
+| Unique content SHAs | 8,047 |
 | Source repositories | 6,432 |
 <!-- CATALOG-METRICS:END -->
 
