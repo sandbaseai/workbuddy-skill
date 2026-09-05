@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:seb1n/awesome-ai-agent-skills:agent-security/prompt-injection-defense/SKILL.md",
+    "skill": "prompt-injection-defense",
+    "skill_path": "skills/prompt-injection-defense",
+    "category": "security",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/prompt-injection-defense-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:seb1n/awesome-ai-agent-skills:agent-engineering/agent-observability/SKILL.md",
     "skill": "agent-observability",
     "skill_path": "skills/agent-observability",

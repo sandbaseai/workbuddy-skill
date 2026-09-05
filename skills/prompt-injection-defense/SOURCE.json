@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source boundary-manifest linter, defense-pattern references, and test fixtures were not packaged",
+      "Application-specific identity, policy, tool, egress, and incident controls must be supplied by the adopting team"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved the source's defense-in-depth model and added WorkBuddy metadata, explicit authorization boundaries, synthetic test requirements, secret exclusion, and residual-risk reporting"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:seb1n/awesome-ai-agent-skills:agent-security/prompt-injection-defense/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/prompt-injection-defense/SKILL.md",
+  "repository": "seb1n/awesome-ai-agent-skills",
+  "sha": "e09bac63913fdb9e2457e2498f389ee6d01fdf48",
+  "source_url": "https://github.com/seb1n/awesome-ai-agent-skills/blob/75865a5d037a4cdaa7f409a4ec14ab9b0292920b/agent-security/prompt-injection-defense/SKILL.md"
+}
