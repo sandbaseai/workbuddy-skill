@@ -1,4 +1,10 @@
 [{
+    "catalog_id": "github:wshobson/agents:plugins/reverse-engineering/skills/binary-analysis-patterns/SKILL.md",
+    "skill": "binary-analysis-patterns",
+    "skill_path": "skills/binary-analysis-patterns",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/binary-analysis-patterns-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/reverse-engineering/skills/memory-forensics/SKILL.md",
     "skill": "memory-forensics",
     "skill_path": "skills/memory-forensics",

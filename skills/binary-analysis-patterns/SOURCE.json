@@ -1,0 +1,21 @@
+{
+  "catalog_id": "github:wshobson/agents:plugins/reverse-engineering/skills/binary-analysis-patterns/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/binary-analysis-patterns/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "d613b18b072acee5855a50eee5b1239482dd8dae",
+  "source_commit": "a30778f8c4e6b0a87567941b7cca4f534bf642b6",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/reverse-engineering/skills/binary-analysis-patterns/SKILL.md",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source does not package an authorized sample set, isolated lab, symbol policy, or dynamic-analysis approval process",
+      "The adopting project must provide written scope, offline copies, retention rules, and separate approval for execution, unpacking, debugging, or network access"
+    ],
+    "security_signals": [
+      "preserved static disassembly, control-flow reconstruction, data-structure hypotheses, cross-reference review, and evidence reporting",
+      "restricted WorkBuddy use to read-only offline analysis; added no-execution defaults, network-disabled tooling, secret-safe handling, uncertainty labels, and BLOCKED/FAIL states"
+    ]
+  }
+}
