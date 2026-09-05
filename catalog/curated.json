@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/azure-well-architected-review/SKILL.md",
+    "skill": "azure-well-architected-review",
+    "skill_path": "skills/azure-well-architected-review",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/azure-well-architected-review-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:.github/skills/agentic-workflows/SKILL.md",
     "skill": "agentic-workflows",
     "skill_path": "skills/agentic-workflows",

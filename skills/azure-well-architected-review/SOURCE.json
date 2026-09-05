@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides Azure WAF reference loading, IaC and live resource discovery, drift comparison, five-pillar checklists, risk classification, architecture diagrams, GitHub issue/EPIC creation, error handling, and remediation examples but no project-specific authorization, subscription scope, secret policy, evidence provenance, privacy handling, or rollback state",
+      "The adopting project must provide authorized Azure read access, pinned official guidance, IaC and live inventory scope, isolated reporting, redaction rules, owners, issue-creation authorization, and separately authorized remediation/deployment/rollback evidence"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved Azure WAF reliability, security, cost, operational excellence, performance, IaC/live drift, risk classification, architecture diagram, report, issue, EPIC, and error-handling guidance",
+      "added WorkBuddy least-privilege/read-only defaults, subscription and network boundaries, secret/PII redaction, fixed-source and evidence taxonomy, no-production-command examples, explicit issue authorization, duplicate-write failure handling, independent remediation gates, and evidence freshness/update controls"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/azure-well-architected-review/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/azure-well-architected-review/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "c27e7594cd0e895113c266c9a5f415104e054be2",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/azure-well-architected-review/SKILL.md"
+}
