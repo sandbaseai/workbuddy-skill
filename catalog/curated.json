@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:.github/skills/agentic-workflows/SKILL.md",
+    "skill": "agentic-workflows",
+    "skill_path": "skills/agentic-workflows",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/agentic-workflows-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/web-design-reviewer/SKILL.md",
     "skill": "web-design-reviewer",
     "skill_path": "skills/web-design-reviewer",

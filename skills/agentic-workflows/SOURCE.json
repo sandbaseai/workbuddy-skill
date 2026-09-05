@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides an Agentic Workflows router, task-to-prompt mappings, repository overlay precedence, selective reference loading, and workflow design/update/debug/report/optimization routes but no project-specific permissions, network policy, safe-output schema, secret scope, budget, evidence, or release authorization",
+      "The adopting project must provide an authorized GitHub repository and commit, pinned prompt/action references, overlay policy, tool/network/secret allowlists, isolated validation, owners, and separately authorized workflow mutation/merge/deployment/release controls"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved Agentic Workflows routing, task categories, repository overlay loading and precedence, selective reference reading, OTEL-related routing note, and design/create/update/debug/upgrade/report/research/optimization paths",
+      "added WorkBuddy pinned-reference and untrusted-instruction boundaries, least-privilege permissions, fork/PR trust checks, trigger/context controls, tool/network/schema budgets, safe outputs, memory and delegation isolation, deterministic debugging, redaction, canary, and rollback gates"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:.github/skills/agentic-workflows/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/agentic-workflows/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "f11eaadd2e755a1c104a37bb3ab35795a2dcf057",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/.github/skills/agentic-workflows/SKILL.md"
+}
