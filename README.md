@@ -224,6 +224,7 @@ The skill does not bundle credentials, silently run paid calls when the user onl
 | [Email Drafting](skills/email-drafting/) | Draft accurate, actionable messages with recipient, attachment, privacy, and send checks | [MIT source](skills/email-drafting/SOURCE.json) |
 | [Deep Evidence Research](skills/deep-research/) | Produce reproducible multi-angle research reports with claim-level evidence, verification, disagreements, and limitations | [MIT source](skills/deep-research/SOURCE.json) |
 | [Multi-Source Knowledge Library](skills/multi-source-knowledge-library/) | Distill multiple books, documents, pages, or repositories into a routed, cross-referenced knowledge library | [MIT source](skills/multi-source-knowledge-library/SOURCE.json) |
+| [Agent Discoverability](skills/agent-discoverability/) | Make authorized Agent/MCP endpoints consistent, discoverable, and verifiably connectable | [MIT source](skills/agent-discoverability/SOURCE.json) |
 | [Research with Sources](skills/web-researcher/) | Answer current questions with authoritative evidence, citations, and explicit uncertainty | [MIT source](skills/web-researcher/SOURCE.json) |
 | [Software Release](skills/release-software/) | Prepare, verify, stage, publish, monitor, and roll back releases | [MIT source](skills/release-software/SOURCE.json) |
 | [Meeting Notes](skills/meeting-notes/) | Extract supported decisions, action items, owners, risks, and open questions | [MIT source](skills/meeting-notes/SOURCE.json) |
@@ -456,8 +457,8 @@ The catalog is generated from public GitHub `SKILL.md` results with resumable, r
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,501 |
-| Unique content SHAs | 7,908 |
+| Indexed GitHub paths | 12,502 |
+| Unique content SHAs | 7,909 |
 | Source repositories | 6,382 |
 <!-- CATALOG-METRICS:END -->
 
@@ -468,7 +469,7 @@ Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.git
 For a manually curated index of WorkBuddy documentation, MCP integrations, workflows, benchmarks, and Skills, browse [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy).
 
 <!-- CATALOG-ANALYSIS:START -->
-The current static analysis successfully inspected 12,501 paths: 9,921 are structurally adaptable to WorkBuddy, 901 need manual review, 0 are currently WorkBuddy-ready, and 412 contain at least one conservative security signal.
+The current static analysis successfully inspected 12,502 paths: 9,922 are structurally adaptable to WorkBuddy, 901 need manual review, 0 are currently WorkBuddy-ready, and 413 contain at least one conservative security signal.
 <!-- CATALOG-ANALYSIS:END -->
 A clean static scan is never a security guarantee.
 

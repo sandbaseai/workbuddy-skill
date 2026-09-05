@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Agent Discoverability Skill with four-surface registry/OAuth/manifest/DNS modeling, consistency checks, least-privilege publication, certificate-pinning safeguards, redacted diagnostics, and real-client verification.
 - Added the MIT Multi-Source Knowledge Library Skill with source manifests, one-reference-per-source structure, master routing, structure-over-summary extraction, coverage ledgers, conflict handling, and incremental maintenance safeguards.
 - Added the MIT Deep Evidence Research Skill with scoped research briefs, multi-angle retrieval, atomic claim ledgers, independent corroboration, citation audits, disagreement handling, and reproducible handoff.
 - Added the MIT Project Bindings Skill with single-source project values, rule/value separation, consumer inventories, secret exclusion, conflict detection, migration safety, and reference validation.

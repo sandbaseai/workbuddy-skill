@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:ever-just/agentskills:skills/agent-discoverability/SKILL.md",
+    "skill": "agent-discoverability",
+    "skill_path": "skills/agent-discoverability",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/agent-discoverability-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:ariel-lee-1023/Books-to-Skill-Refs:SKILL.md",
     "skill": "multi-source-knowledge-library",
     "skill_path": "skills/multi-source-knowledge-library",
