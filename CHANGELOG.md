@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Distributed Tracing Skill with OpenTelemetry context propagation, semantic spans, sampling, trace-log correlation, tail-latency diagnosis, collector backpressure, privacy-safe attributes, bounded overhead, and authorized telemetry changes.
 - Added the MIT Spark Optimization Skill with measured execution baselines, plan/stage diagnosis, partition and shuffle tuning, AQE, skew and join handling, cache and memory controls, result-equivalence checks, cost limits, and isolated production-write boundaries.
 - Added the MIT RAG Implementation Skill with ingestion and chunk provenance, ACL-before-retrieval, dense/sparse/hybrid search, reranking, citation verification, prompt-injection handling, refusal thresholds, evaluation, index lifecycle, privacy, cost, and authorization boundaries.
 - Added the MIT Airflow DAG Patterns Skill with idempotent and observable DAG design, logical-date scheduling, dependency sensors, bounded retries, branching, failure classification, testing, safe backfills, and production-side-effect boundaries.

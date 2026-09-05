@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides distributed tracing purpose, sampling, context propagation, tags, exception recording, log correlation, and Jaeger/Tempo troubleshooting guidance but no service topology, telemetry backend, collector, SDK configuration, or workload baseline",
+      "The adopting project must provide authorized telemetry access, an OpenTelemetry-compatible target, privacy classification, retention policy, representative safe traffic, and bounded cost evidence"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved trace/span visibility, sampling, context propagation, semantic naming, exception events, log correlation, overhead monitoring, and exporter troubleshooting guidance",
+      "added WorkBuddy privacy-safe attributes, baggage trust boundaries, isolated validation, collector backpressure, production-change authorization, retention controls, high-cardinality limits, and evidence-confidence reporting"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:wshobson/agents:plugins/observability-monitoring/skills/distributed-tracing/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/distributed-tracing/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "2ae052f1f640f4302eefda0720243af477f99781",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/observability-monitoring/skills/distributed-tracing/SKILL.md"
+}

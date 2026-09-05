@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/observability-monitoring/skills/distributed-tracing/SKILL.md",
+    "skill": "distributed-tracing",
+    "skill_path": "skills/distributed-tracing",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/distributed-tracing-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/data-engineering/skills/spark-optimization/SKILL.md",
     "skill": "spark-optimization",
     "skill_path": "skills/spark-optimization",
