@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides Python integrity-manifest examples but no WorkBuddy filesystem adapter, signing service, provenance store, or dependency advisory feed",
+      "The adopting project must provide an approved baseline policy, canonical build identity, safe hashing execution, and access-controlled evidence retention"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved deterministic SHA-256 manifests, verification of missing/modified/untracked files, dependency pinning audits, and promotion gates",
+      "added WorkBuddy read-only boundaries, symlink/root containment, explicit unknown states, provenance fields, redaction, and separate authorization for mutations"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/agent-supply-chain/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/agent-supply-chain/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "995c87835577fc396d31ff4447cea9d91ca61484",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/agent-supply-chain/SKILL.md"
+}

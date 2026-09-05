@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Agent Supply Chain Integrity Skill with deterministic manifests, file-drift classification, dependency pinning audits, provenance chains, fail-closed promotion gates, symlink/root containment, and read-only evidence boundaries.
 - Added the MIT AWS CloudWatch Investigation Skill with bounded Logs Insights and metric queries, alarm/deployment correlation, blast-radius narrowing, timeline reconstruction, baseline validation, counterevidence, and read-only redaction-safe evidence handoffs.
 - Added the MIT GitHub Release Skill with immutable diff classification, SemVer rationale, changelog preparation, repository-native gates, PR/direct authority modes, tag and asset reconciliation, failure handling, rollback, and evidence-bounded completion.
 - Added the MIT Architectural Decision Record Skill with decision-question framing, fact/assumption/unknown ledgers, evidence-backed alternatives, coded consequences, immutable ADR lifecycle links, approval-state integrity, and validation/review handoffs.

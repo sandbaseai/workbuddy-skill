@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/agent-supply-chain/SKILL.md",
+    "skill": "agent-supply-chain",
+    "skill_path": "skills/agent-supply-chain",
+    "category": "security",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/agent-supply-chain-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/aws-cloudwatch-investigation/SKILL.md",
     "skill": "aws-cloudwatch-investigation",
     "skill_path": "skills/aws-cloudwatch-investigation",
