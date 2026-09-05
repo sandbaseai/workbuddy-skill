@@ -492,7 +492,7 @@ The catalog is generated from public GitHub `SKILL.md` results with resumable, r
 |---|---:|
 | Indexed GitHub paths | 12,635 |
 | Unique content SHAs | 8,008 |
-| Source repositories | 6,427 |
+| Source repositories | 6,428 |
 <!-- CATALOG-METRICS:END -->
 
 Browse the catalog in the [English WorkBuddy Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) or [中文 Atlas](https://sandbaseai.github.io/workbuddy-skill/zh-CN.html), or query the JSONL directly. If it helps you discover a useful workflow, a star or a short review helps other WorkBuddy users find it.
