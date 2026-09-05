@@ -107,6 +107,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Before You Build](skills/before-you-build/) | 开工前审查需求、定位、信任、分发和采用风险，找出最小验证动作与暂缓范围 |
 | [Performance Review Writer](skills/performance-review-writer/) | 基于授权证据和 STAR 结构起草自评、同事评价、360 或向上反馈 |
 | [Project Architecture Blueprint](skills/architecture-blueprint-generator/) | 从代码、配置、依赖、测试和部署证据生成真实可追溯的架构蓝图 |
+| [Architecture Decision Records](skills/architecture-decision-records/) | 记录架构背景、替代方案、取舍、后果、状态和触发重审的证据 |
 | [Web Design Reviewer](skills/web-design-reviewer/) | 跨视口评审布局、响应式、可访问性和视觉一致性，并以证据安全回归验证 |
 | [Agentic Workflows Router](skills/agentic-workflows/) | 路由 GitHub Agentic Workflow 的设计、创建、调试、升级、报告和安全输出流程 |
 | [Skill Evaluation Methodology](skills/evaluation-methodology/) | 用静态、评审和模拟三层方法评估 Skill 的触发、输出、鲁棒性与编排质量 |
@@ -164,8 +165,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,737 |
-| Unique content SHAs | 8,110 |
+| Indexed GitHub paths | 12,738 |
+| Unique content SHAs | 8,111 |
 | Source repositories | 6,434 |
 <!-- CATALOG-METRICS:END -->
 

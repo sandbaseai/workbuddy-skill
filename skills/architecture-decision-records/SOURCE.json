@@ -1,0 +1,21 @@
+{
+  "catalog_id": "github:wshobson/agents:plugins/documentation-generation/skills/architecture-decision-records/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/architecture-decision-records/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "d77a13cc1b366d8af2cb7b9e150b43e42554cd88",
+  "source_commit": "a30778f8c4e6b0a87567941b7cca4f534bf642b6",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/documentation-generation/skills/architecture-decision-records/SKILL.md",
+  "adaptation": {
+    "tool": "manual WorkBuddy adaptation",
+    "packaged_resources": [],
+    "missing_resources": [
+      "The source is a standalone ADR guide and does not package repository-specific templates, validators, or decision evidence",
+      "The adopting project must provide authorized architecture context, consumer/operations reviewers, source snapshots, and separate implementation or production-change approval"
+    ],
+    "security_signals": [
+      "preserved ADR context/decision/consequences, decision drivers, alternatives, lifecycle, migration, RFC variants, and maintenance guidance",
+      "added WorkBuddy evidence states, untrusted-context handling, redaction, review triggers, rollback boundaries, and implementation separation"
+    ]
+  }
+}

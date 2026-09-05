@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/documentation-generation/skills/architecture-decision-records/SKILL.md",
+    "skill": "architecture-decision-records",
+    "skill_path": "skills/architecture-decision-records",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/architecture-decision-records-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/documentation-generation/skills/changelog-automation/SKILL.md",
     "skill": "changelog-automation",
     "skill_path": "skills/changelog-automation",
