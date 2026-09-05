@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source references harness-specific personas, orchestration references, and external reviewer agents that are not packaged",
+      "The adopting project must provide an isolated review context, artifact/contract transport, authorization for any external CLI, and an owner for unresolved findings"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved claim/extract/doubt/reconcile/stop cycle, adversarial review prompt, finding precedence, bounded three-cycle loop, cross-model disclosure, and orchestration anti-pattern guidance",
+      "added WorkBuddy untrusted-input, secret-safe, customer-data minimization, non-interactive, external-CLI authorization, and evidence-scoped completion boundaries"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:addyosmani/agent-skills:skills/doubt-driven-development/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/doubt-driven-development/SKILL.md",
+  "repository": "addyosmani/agent-skills",
+  "sha": "ea46342c5dcfe445004a6fa5bc43e71f3f25e78d",
+  "source_url": "https://github.com/addyosmani/agent-skills/blob/84ee50673804b95c287d1e4eb4f1c1dad7c5188a/skills/doubt-driven-development/SKILL.md"
+}

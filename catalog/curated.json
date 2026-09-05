@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:addyosmani/agent-skills:skills/doubt-driven-development/SKILL.md",
+    "skill": "doubt-driven-development",
+    "skill_path": "skills/doubt-driven-development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/doubt-driven-development-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:addyosmani/agent-skills:skills/source-driven-development/SKILL.md",
     "skill": "source-driven-development",
     "skill_path": "skills/source-driven-development",
