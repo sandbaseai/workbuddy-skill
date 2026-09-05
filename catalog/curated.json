@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:nimadorostkar/Claude-Skills-collection:skills/devops/aws-cost-optimization/SKILL.md",
+    "skill": "cloud-cost-optimization",
+    "skill_path": "skills/cloud-cost-optimization",
+    "category": "business",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/cloud-cost-optimization-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:Jeffallan/claude-skills:skills/chaos-engineer/SKILL.md",
     "skill": "chaos-engineer",
     "skill_path": "skills/chaos-engineer",

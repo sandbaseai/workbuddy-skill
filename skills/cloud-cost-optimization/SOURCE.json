@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source is a standalone AWS cost playbook and does not package provider-specific billing clients, pricing snapshots, dashboards, or change automation",
+      "The adopting project must provide current provider pricing, billing access, utilization telemetry, ownership metadata, approval workflow, and recovery procedures"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "generalized the source playbook into WorkBuddy with read-only defaults, explicit scope and ownership, current-price requirements, privacy-safe evidence, and authorization gates for destructive or financial actions",
+      "added reliability, security, recovery, data-residency, attribution, confidence, and rollback checks before treating an estimate as a saving"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:nimadorostkar/Claude-Skills-collection:skills/devops/aws-cost-optimization/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/cloud-cost-optimization/SKILL.md",
+  "repository": "nimadorostkar/Claude-Skills-collection",
+  "sha": "595c4ee1aee405a9b918966ed42f6dddb085b672",
+  "source_url": "https://github.com/nimadorostkar/Claude-Skills-collection/blob/03f39b7041ec2679255f8d6bb5b18421561821ae/skills/devops/aws-cost-optimization/SKILL.md"
+}
