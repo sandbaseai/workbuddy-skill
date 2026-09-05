@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source assumes provider-specific sub-agent tools, git-worktree helpers, and a plan-file convention; these were not packaged",
+      "The adopting project must provide its task tracker, workspace isolation, authority model, native validation commands, and rollback policy"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "generalized provider-specific plan execution into WorkBuddy; added authority boundaries, failure classification, secret-safe evidence, recovery checkpoints, and integrated verification"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:obra/superpowers:skills/executing-plans/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/plan-execution/SKILL.md",
+  "repository": "obra/superpowers",
+  "sha": "b51d97d2cc4c2ecc5eabecf27e499aa8c933efac",
+  "source_url": "https://github.com/obra/superpowers/blob/b36e0829c6d0140e93cfef2ca599b1b07d4a7797/skills/executing-plans/SKILL.md"
+}

@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:obra/superpowers:skills/executing-plans/SKILL.md",
+    "skill": "plan-execution",
+    "skill_path": "skills/plan-execution",
+    "category": "productivity",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/plan-execution-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:obra/superpowers:skills/dispatching-parallel-agents/SKILL.md",
     "skill": "parallel-agent-dispatch",
     "skill_path": "skills/parallel-agent-dispatch",

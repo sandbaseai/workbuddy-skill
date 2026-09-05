@@ -5,6 +5,7 @@ All notable changes to this project are documented here.
 ## Unreleased
 
 - Added the MIT Parallel Agent Dispatch Skill with independence proofs, isolated assignments, bounded concurrent orchestration, result review, conflict-aware integration, full verification, and secret/authority boundaries.
+- Added the MIT Plan Execution Skill with canonical-plan review, task ledgers, ordered checkpoints, focused and integrated verification, recovery boundaries, authority controls, deviation tracking, and durable handoffs.
 - Added the MIT Evidence Before Claims Skill with claim-to-proof mapping, fresh full-scope verification, regression evidence, remote-state checks, deletion safeguards, partial-evidence classification, redaction, and authority-aware handoff.
 - Added the MIT Agent Document Design Skill with context-pointer contracts, progressive disclosure, information hierarchy, exhaustive completion criteria, leading-word guidance, positive instructions, pruning, trigger evaluations, and safe WorkBuddy boundaries.
 - Added the MIT Architecture Friction Scan Skill with history-based hot-spot selection, deep-module/deletion-test analysis, seam and test-friction evidence, candidate ledgers, ADR-aware ranking, structured report guidance, and read-only WorkBuddy boundaries.
