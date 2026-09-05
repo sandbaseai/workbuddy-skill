@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/aws-resource-query/SKILL.md",
+    "skill": "aws-resource-query",
+    "skill_path": "skills/aws-resource-query",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/aws-resource-query-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/github-actions-efficiency/SKILL.md",
     "skill": "github-actions-efficiency",
     "skill_path": "skills/github-actions-efficiency",
