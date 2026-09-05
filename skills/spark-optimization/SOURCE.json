@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides Spark execution, partitioning, shuffle, skew, memory, caching, AQE, columnar format, and coding guidance but no Spark cluster, event logs, input data, workload baseline, or deployment system",
+      "The adopting project must provide authorized Spark metadata, isolated compute, representative safe snapshots, result-quality checks, ownership, and bounded cost evidence"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved Spark execution model, partitioning, shuffle, skew, serialization, memory, AQE, caching, and distributed transformation guidance",
+      "added WorkBuddy baseline-first analysis, isolated experiments, production-side-effect authorization, output atomicity, sensitive-log redaction, result equivalence, cost limits, rollback, and single-variable validation"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:wshobson/agents:plugins/data-engineering/skills/spark-optimization/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/spark-optimization/SKILL.md",
+  "repository": "wshobson/agents",
+  "sha": "74a58b10e13f7ac9f2917ec4eb11160a3b59ad4b",
+  "source_url": "https://github.com/wshobson/agents/blob/a30778f8c4e6b0a87567941b7cca4f534bf642b6/plugins/data-engineering/skills/spark-optimization/SKILL.md"
+}
