@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/bigquery-pipeline-audit/SKILL.md",
+    "skill": "bigquery-pipeline-audit",
+    "skill_path": "skills/bigquery-pipeline-audit",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/bigquery-pipeline-audit-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/data-breach-blast-radius/SKILL.md",
     "skill": "data-breach-blast-radius",
     "skill_path": "skills/data-breach-blast-radius",

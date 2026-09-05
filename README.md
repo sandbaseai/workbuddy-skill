@@ -104,6 +104,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Azure Pricing and Estimation](skills/azure-pricing/) | 查询 Azure 实时零售价格、比较 SKU/区域并生成带假设和区间的成本估算 |
 | [DevOps Rollout Plan](skills/devops-rollout-plan/) | 制定带 preflight、分阶段验证、go/no-go、沟通和回滚的发布计划 |
 | [Data Breach Blast Radius](skills/data-breach-blast-radius/) | 盘点敏感数据与数据流，识别暴露向量并生成事实/估算分离的影响报告 |
+| [BigQuery Pipeline Audit](skills/bigquery-pipeline-audit/) | 审计 Python/BigQuery 流水线的成本、dry-run、幂等写入、查询安全和可观测性 |
 | [API Design Principles](skills/api-design-principles/) | 设计具备 HTTP/schema、幂等、分页、授权、版本和成本边界的 API 契约 |
 | [Microservices Architect](skills/microservices-architect/) | 设计服务边界、通信、数据所有权、故障隔离和迁移验证 |
 | [Cloud Design Patterns](skills/cloud-design-patterns/) | 按约束选择韧性、性能、消息、安全、部署和迁移模式 |
@@ -145,8 +146,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 <!-- CATALOG-METRICS:START -->
 | Metric | Current snapshot |
 |---|---:|
-| Indexed GitHub paths | 12,718 |
-| Unique content SHAs | 8,091 |
+| Indexed GitHub paths | 12,719 |
+| Unique content SHAs | 8,092 |
 | Source repositories | 6,432 |
 <!-- CATALOG-METRICS:END -->
 

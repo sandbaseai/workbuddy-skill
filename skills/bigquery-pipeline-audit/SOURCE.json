@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides BigQuery job/cost checks, dry-run and execute modes, backfill design, query safety, idempotent writes, observability, and structured A-F reporting but no project-specific schema, billing, privacy, or production authorization context",
+      "The adopting project must provide authorized code and BigQuery metadata scope, cost/bytes baselines, data classification, redaction policy, staging/recovery evidence, and separately authorized query execution and patch/write actions"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved BigQuery cost exposure, job count, dry-run, backfill, partition pruning, query safety, idempotency, write disposition, run_id, observability, minimal patch, and A-F report guidance",
+      "added WorkBuddy read-only defaults, data/secret redaction, project and dataset boundaries, evidence taxonomy, dynamic SQL unknown handling, budget/retry limits, production gates, canary/rollback, and explicit write authorization"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/bigquery-pipeline-audit/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/bigquery-pipeline-audit/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "5894927e2b6be515b22e78e7ae0d18ee8f736c30",
+  "source_url": "https://github.com/github/awesome-copilot/blob/c10cb99a142de75756dab7456339587a122daa06/skills/bigquery-pipeline-audit/SKILL.md"
+}
