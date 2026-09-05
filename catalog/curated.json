@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/devops-rollout-plan/SKILL.md",
+    "skill": "devops-rollout-plan",
+    "skill_path": "skills/devops-rollout-plan",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/devops-rollout-plan-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/azure-pricing/SKILL.md",
     "skill": "azure-pricing",
     "skill_path": "skills/azure-pricing",

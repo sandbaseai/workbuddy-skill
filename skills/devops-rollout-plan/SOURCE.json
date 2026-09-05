@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides rollout inputs, preflight, staged procedure, verification signals, rollback, communication, contingency, and post-deployment sections but no project-specific environment, SLO, approval, data-compatibility, or recovery evidence",
+      "The adopting project must provide authorized change scope, canary environment, health baselines, artifact provenance, backup/restore evidence, owners, approvals, and separately authorized deployment and rollback actions"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved rollout planning, prerequisites, preflight, progressive deployment, verification windows, rollback, communications, contingency, and post-deployment review guidance",
+      "added WorkBuddy read-only defaults, placeholder commands, evidence taxonomy, no-go semantics, secret-safe plans, artifact/backup provenance, data-compatibility checks, and independent deployment/traffic/data/rollback gates"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/devops-rollout-plan/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/devops-rollout-plan/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "7da7c32dce0dfed422132534728ed3b3736ebe65",
+  "source_url": "https://github.com/github/awesome-copilot/blob/caab1f623bb68a330f294a11279597d7ae7be737/skills/devops-rollout-plan/SKILL.md"
+}
