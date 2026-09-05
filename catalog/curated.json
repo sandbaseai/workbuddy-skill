@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:wshobson/agents:plugins/framework-migration/skills/database-migration/SKILL.md",
+    "skill": "database-migration",
+    "skill_path": "skills/database-migration",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/database-migration-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/database-design/skills/postgresql-table-design/SKILL.md",
     "skill": "postgresql-table-design",
     "skill_path": "skills/postgresql-table-design",

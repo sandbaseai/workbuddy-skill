@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Database Migration Skill with expand-contract compatibility, ORM/schema transformations, bounded idempotent backfills, lock/WAL/replication analysis, consumer/CDC impact, validation, recovery, and authorized production-change gates.
 - Added the MIT PostgreSQL Table Design Skill with workload-backed types, constraints, access-path indexes, JSONB, partitioning, RLS, lock/replication analysis, expand-contract migrations, bounded backfills, backup/recovery, and authorized production DDL gates.
 - Added the MIT Python Packaging Skill with modern pyproject metadata, source layout, locked dependencies, reproducible wheel/sdist builds, artifact inspection, provenance/signing, staging verification, immutable releases, and authorized publication gates.
 - Added the MIT Async Python Patterns Skill with sync/async boundary decisions, bounded concurrency, non-blocking I/O, queue backpressure, deadlines, structured cancellation, resource cleanup, event-loop health, and deterministic load/failure tests.
