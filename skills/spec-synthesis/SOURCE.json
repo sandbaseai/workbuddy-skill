@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source assumes project-provided issue-tracker and triage-label configuration; none was packaged",
+      "The source references repository-specific domain vocabulary, seams, templates, and test prior art that must be supplied by the adopting project"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "removed implicit external publication and user-confirmation assumptions; added evidence labels, credential/privacy protection, authorization, and gated external-write guidance"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:mattpocock/skills:skills/engineering/to-spec/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/spec-synthesis/SKILL.md",
+  "repository": "mattpocock/skills",
+  "sha": "3f52599ae2a4347aee5a07432c2707518e691a7f",
+  "source_url": "https://github.com/mattpocock/skills/blob/3cca18b368ae95cdbdebbff572ccafa662551015/skills/engineering/to-spec/SKILL.md"
+}

@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Specification Synthesis Skill with evidence-led problem framing, user stories, highest-seam planning, implementation/testing decisions, explicit scope, consistency checks, and gated external publication.
 - Added the MIT Domain Modeling Skill with canonical vocabulary, glossary challenges, concrete scenario stress tests, code/evidence cross-checks, consumer mapping, implementation-free context files, selective ADRs, and safe WorkBuddy handoff boundaries.
 - Added the MIT Codebase Design Skill with deep-module vocabulary, smallest-honest interfaces, evidence-based seams, adapter discipline, test-surface design, safe refactoring, and explicit WorkBuddy execution boundaries.
 - Added the MIT Context Retrieval Skill with bounded query decomposition, semantic/keyword/hybrid search selection, access-before-context filtering, provenance and coverage ledgers, freshness/conflict handling, calibrated retrieval metrics, and explicit empty-result safeguards.
