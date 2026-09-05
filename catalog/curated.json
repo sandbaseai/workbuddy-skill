@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:ooocooc/open-skill-sunset:integrations/skill-sunset/SKILL.md",
+    "skill": "skill-sunset",
+    "skill_path": "skills/skill-sunset",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/skill-sunset-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:kleosr/kleosrules:shared/skills/premium-ui-craft/SKILL.md",
     "skill": "premium-ui-craft",
     "skill_path": "skills/premium-ui-craft",

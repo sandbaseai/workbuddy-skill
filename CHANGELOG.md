@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Skill Sunset Audit Skill with bounded read-only discovery, deterministic drift checks, conservative verdicts, reversible remediation, experiment safeguards, and evidence-based handoff.
 - Added the MIT Premium UI Craft Skill with evidence-driven hierarchy, semantic tokens, complete interaction states, responsive navigation, accessibility, restrained motion, and visual verification.
 - Added the MIT Data Engineering Pipeline Best Practices Skill with data contracts, delivery semantics, idempotent processing, quality and reconciliation gates, lineage, privacy, observability, replay, backfill, and recovery handoff.
 - Added the MIT Business Continuity Design Skill with business-impact analysis, critical dependency mapping, degraded and manual operating modes, RTO/RPO evidence, recovery exercises, communications, governance, and accountable retest handoff.

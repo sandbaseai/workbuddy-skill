@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["The source CLI, npm package, and provider-specific references were not packaged"],
+    "packaged_resources": [],
+    "security_signals": ["preserved read-only and no-execution boundaries; no scripts or runtime assets packaged"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:ooocooc/open-skill-sunset:integrations/skill-sunset/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "integrations/skill-sunset/SKILL.md",
+  "repository": "ooocooc/open-skill-sunset",
+  "sha": "92aab9f1f541490ede58f77da1dc69fe169b5179",
+  "source_url": "https://github.com/ooocooc/open-skill-sunset/blob/013317c06b11f2c6f226a64d83d4e238d8113be8/integrations/skill-sunset/SKILL.md"
+}
