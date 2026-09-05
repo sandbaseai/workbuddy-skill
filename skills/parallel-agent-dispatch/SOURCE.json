@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source assumes a provider-specific sub-agent dispatch tool and repository workflow; these were not packaged",
+      "The adopting project must provide its orchestration API, isolation mechanism, authority model, quotas, and integration checks"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "generalized provider-specific dispatch into WorkBuddy orchestration; added independence proof, isolated scopes, authority bounds, secret separation, conflict review, and integrated verification"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:obra/superpowers:skills/dispatching-parallel-agents/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/parallel-agent-dispatch/SKILL.md",
+  "repository": "obra/superpowers",
+  "sha": "3fa091b348bbe0a18eaa0e17e9092c97f7005cbe",
+  "source_url": "https://github.com/obra/superpowers/blob/b36e0829c6d0140e93cfef2ca599b1b07d4a7797/skills/dispatching-parallel-agents/SKILL.md"
+}

@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:obra/superpowers:skills/dispatching-parallel-agents/SKILL.md",
+    "skill": "parallel-agent-dispatch",
+    "skill_path": "skills/parallel-agent-dispatch",
+    "category": "productivity",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/parallel-agent-dispatch-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:obra/superpowers:skills/verification-before-completion/SKILL.md",
     "skill": "evidence-before-claims",
     "skill_path": "skills/evidence-before-claims",
