@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["portal-specific /api/ping and host contract"],
+    "packaged_resources": [],
+    "security_signals": ["repository-specific endpoint and service names generalized"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:ai-workspace-services/portal:skills/release-traceability/SKILL.md",
+  "declared_source_license": "Apache-2.0",
+  "path": "skills/release-traceability/SKILL.md",
+  "repository": "ai-workspace-services/portal",
+  "sha": "f2432d1c6879994943897667edef1c96ea1fc3aa",
+  "source_url": "https://github.com/ai-workspace-services/portal/blob/4ff1ee56e973c370b6daa3fc2f6e30ef3e3c249b/skills/release-traceability/SKILL.md"
+}
