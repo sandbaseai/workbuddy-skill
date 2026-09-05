@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Cloud Resource Health Skill with exact-resource scoping, control-plane/data-plane separation, bounded metric and log diagnosis, dependency correlation, confidence states, privacy-safe reports, and authorized reversible remediation verification.
 - Added the MIT Technical Spike Skill with one-question framing, evidence and confidence tracking, bounded prototypes, explicit stop conditions, safe synthetic-data defaults, cleanup verification, actionable recommendations, and unresolved-risk handoffs.
 - Added the MIT Cloud Design Patterns Skill with problem-first pattern selection, reliability/performance/messaging/security/deployment maps, explicit trade-offs, bounded contracts, anti-pattern checks, validation gates, and retirement criteria.
 - Added the MIT Microservices Architect Skill with evidence-backed boundary discovery, contract and data ownership design, sync/async trade-offs, bounded failure behavior, tracing, migration compatibility, rollback, and modular-monolith alternatives.

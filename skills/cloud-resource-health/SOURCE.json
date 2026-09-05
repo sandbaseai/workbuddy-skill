@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source is an AWS-focused diagnostic workflow and does not package current provider SDKs, metric query libraries, dashboards, incident integrations, or remediation automation",
+      "The adopting project must provide scoped provider access, current command syntax, resource ownership, observability, incident/change procedures, and recovery plans"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "generalized the source resource-health workflow into WorkBuddy with read-only defaults, exact-resource scoping, bounded log/metric queries, privacy-safe reporting, permission escalation guidance, and explicit mutation gates",
+      "added data-plane versus control-plane separation, confidence/unknown states, dependency checks, rollback, original-path verification, and no-data safeguards"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/aws-resource-health-diagnose/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/cloud-resource-health/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "2c44a40bf4634e234fcdab1cdf4d47afb88962ac",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/aws-resource-health-diagnose/SKILL.md"
+}
