@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/typespec-api-operations/SKILL.md",
+    "skill": "typespec-api-operations",
+    "skill_path": "skills/typespec-api-operations",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/typespec-api-operations-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/openapi-to-application-code/SKILL.md",
     "skill": "openapi-to-application-code",
     "skill_path": "skills/openapi-to-application-code",

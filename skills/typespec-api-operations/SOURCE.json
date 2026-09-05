@@ -1,0 +1,20 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source provides TypeSpec GET/POST/PATCH/DELETE operation examples, models, Adaptive Cards, confirmations, and a CRUD service example but no project compiler/emitter version, authorization matrix, idempotency/concurrency contract, privacy policy, tests, or deployment evidence",
+      "The adopting project must provide an authorized TypeSpec project and service scope, locked toolchain, resource and tenant model, isolated contract/card tests, owner and compatibility plan, and separately authorized rollout/rollback evidence"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved TypeSpec routing, path/query/body parameters, CRUD models, Adaptive Card rendering, confirmation capabilities, and service definition patterns",
+      "added WorkBuddy compiler/provenance and read-only boundaries, server-side auth and validation, pagination/idempotency/ETag, tenant isolation, safe URLs and card data, negative tests, consumer compatibility, canary, and rollback gates"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/typespec-api-operations/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/typespec-api-operations/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "0c9c31734f64c3c231ad97772de95d4ab9431ddd",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/typespec-api-operations/SKILL.md"
+}
