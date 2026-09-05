@@ -67,6 +67,7 @@ jobs:
           cp /tmp/stats.json catalog/stats.json
           test -f /tmp/analysis-stats.json
           cp /tmp/analysis-stats.json catalog/analysis-stats.json
+          python3 scripts/validate_catalog.py --minimum 10000 --require-analysis --check-stats
           python3 scripts/update_readme_stats.py
       - name: Publish catalog update
         if: steps.crawl.outputs.changed == 'true'

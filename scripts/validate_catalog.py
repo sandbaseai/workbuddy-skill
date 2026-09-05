@@ -22,8 +22,13 @@ def main() -> int:
     parser.add_argument("path", nargs="?", type=Path, default=Path("catalog/skills.jsonl"))
     parser.add_argument("--minimum", type=int, default=10_000)
     parser.add_argument("--require-analysis", action="store_true")
+    parser.add_argument(
+        "--check-stats",
+        action="store_true",
+        help="verify catalog/stats.json matches the records in the selected catalog",
+    )
     args = parser.parse_args()
-    seen_ids, rows = set(), 0
+    seen_ids, rows, items = set(), 0, []
     with args.path.open(encoding="utf-8") as handle:
         for rows, line in enumerate(handle, 1):
             try:
@@ -89,8 +94,23 @@ def main() -> int:
                         raise SystemExit(f"line {rows}: security_signals must be a list")
             elif args.require_analysis:
                 raise SystemExit(f"line {rows}: analysis is required")
+            items.append(item)
     if rows < args.minimum:
         raise SystemExit(f"catalog has {rows} records; minimum is {args.minimum}")
+    if args.check_stats:
+        stats_path = Path("catalog/stats.json")
+        try:
+            stats = json.loads(stats_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            raise SystemExit(f"unable to read {stats_path}: {exc}") from exc
+        expected = {
+            "records": len(items),
+            "unique_content_shas": len({item["sha"] for item in items}),
+            "repositories": len({item["repository"] for item in items}),
+        }
+        actual = {key: stats.get(key) for key in expected}
+        if actual != expected:
+            raise SystemExit(f"catalog stats mismatch: expected {expected}, found {actual}")
     print(f"OK: {rows} catalog records are structurally valid")
     return 0
 

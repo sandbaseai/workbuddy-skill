@@ -29,12 +29,12 @@ def catalog_row(source_ref: str) -> dict:
 
 
 class ValidateCatalogTests(unittest.TestCase):
-    def run_validator(self, row: dict):
+    def run_validator(self, row: dict, *extra_args: str):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "skills.jsonl"
             path.write_text(json.dumps(row) + "\n", encoding="utf-8")
             return subprocess.run(
-                [sys.executable, str(VALIDATOR), str(path), "--minimum", "1"],
+                [sys.executable, str(VALIDATOR), str(path), "--minimum", "1", *extra_args],
                 capture_output=True,
                 text=True,
             )
@@ -47,6 +47,11 @@ class ValidateCatalogTests(unittest.TestCase):
     def test_accepts_matching_immutable_urls(self):
         result = self.run_validator(catalog_row("a" * 40))
         self.assertEqual(result.returncode, 0, result.stderr)
+
+    def test_check_stats_requires_matching_snapshot(self):
+        result = self.run_validator(catalog_row("a" * 40), "--check-stats")
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("catalog stats mismatch", result.stderr)
 
 
 if __name__ == "__main__":
