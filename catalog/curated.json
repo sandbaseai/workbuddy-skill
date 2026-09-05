@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:obra/superpowers:skills/verification-before-completion/SKILL.md",
+    "skill": "evidence-before-claims",
+    "skill_path": "skills/evidence-before-claims",
+    "category": "security",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/evidence-before-claims-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:mattpocock/skills:skills/productivity/writing-for-agents/SKILL.md",
     "skill": "agent-document-design",
     "skill_path": "skills/agent-document-design",

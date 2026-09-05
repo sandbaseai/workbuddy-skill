@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The source assumes provider-specific repository commands and project verification conventions; these were not packaged",
+      "The adopting project must provide its native build/test/release checks, remote-state queries, evidence retention policy, and authorization model"
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "generalized evidence-before-claims into WorkBuddy release and handoff gates; added remote-state verification, deletion checks, redaction, partial-evidence classification, and authority boundaries"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:obra/superpowers:skills/verification-before-completion/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/evidence-before-claims/SKILL.md",
+  "repository": "obra/superpowers",
+  "sha": "7d45333cc4a49c57a80df6c1fe2fa777a207afbc",
+  "source_url": "https://github.com/obra/superpowers/blob/b36e0829c6d0140e93cfef2ca599b1b07d4a7797/skills/verification-before-completion/SKILL.md"
+}
