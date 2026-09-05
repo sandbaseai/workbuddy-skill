@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": ["repository-specific command generalized"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:microsoft/typespec:.github/skills/pnpm-format/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/repository-formatting/SKILL.md",
+  "repository": "microsoft/typespec",
+  "sha": "70f9f7f0885148b02a641aeee9cfbf0960c256d2",
+  "source_url": "https://github.com/microsoft/typespec/blob/13845fedc83a14fc3441f435f59246e0e4d41116/.github/skills/pnpm-format/SKILL.md"
+}

@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:microsoft/typespec:.github/skills/pnpm-format/SKILL.md",
+    "skill": "repository-formatting",
+    "skill_path": "skills/repository-formatting",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/repository-formatting-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:anthropics/claude-for-legal:product-legal/skills/launch-review/SKILL.md",
     "skill": "launch-risk-review",
     "skill_path": "skills/launch-risk-review",

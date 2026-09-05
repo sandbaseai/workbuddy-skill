@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Repository Formatting Skill with repository-root detection, declared formatter selection, dependency and scope safety, bounded recovery, formatting-only diff review, post-format checks, and reproducible handoff.
 - Added the Apache-2.0 Launch Risk Review Skill with scoped input and destination checks, AI detection, cross-functional risk categories, evidence calibration, blocker classification, specialist routing, rollout gates, and accountable handoff.
 - Added the Apache-2.0 Integration Health Check Skill with read-only connection validation, credential and scope checks, authorized target resolution, capability discovery, ambiguity handling, redaction, and safe continuation rules.
 - Added the Apache-2.0 Go Testing Skill with package-boundary decisions, `require` versus `assert` guidance, deterministic fixtures, race-aware diagnostics, scoped verification, and reproducible handoff.
