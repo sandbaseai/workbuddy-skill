@@ -1,5 +1,12 @@
 [
   {
+    "catalog_id": "github:OKHP3/skillz:.agents/skills/okhp3-process-capture/SKILL.md",
+    "skill": "process-capture",
+    "skill_path": "skills/process-capture",
+    "category": "productivity",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/process-capture-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:dEitY719/authoring-skills:skills/skill-create/SKILL.md",
     "skill": "skill-authoring",
     "skill_path": "skills/skill-authoring",

@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["The source repository's family-specific conventions, root AGENTS.md index, and companion skill-creator references were not packaged"],
+    "packaged_resources": [],
+    "security_signals": ["generalized repository indexing and authorization boundaries; added evidence thresholds, secret exclusion, planned/active state, and reversible handoff"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:OKHP3/skillz:.agents/skills/okhp3-process-capture/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/process-capture/SKILL.md",
+  "repository": "OKHP3/skillz",
+  "sha": "c97dc1deed48d300895cbd14c9ae0d2999e1b742",
+  "source_url": "https://github.com/OKHP3/skillz/blob/7647b437bf1680d549dc067b408295131cb328e6/.agents/skills/okhp3-process-capture/SKILL.md"
+}
