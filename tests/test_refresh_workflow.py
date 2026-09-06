@@ -121,6 +121,13 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("conversation resolution", contributing)
         self.assertIn("admin enforcement remains off", contributing)
 
+    def test_support_points_to_resource_and_use_case_guides(self):
+        support = (ROOT / "SUPPORT.md").read_text(encoding="utf-8")
+        self.assertIn("docs/resources.md", support)
+        self.assertIn("docs/use-cases.md", support)
+        self.assertIn("docs/resources.zh-CN.md", support)
+        self.assertIn("docs/quickstart.zh-CN.md", support)
+
 
 if __name__ == "__main__":
     unittest.main()

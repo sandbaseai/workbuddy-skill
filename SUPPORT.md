@@ -16,7 +16,12 @@ existing reviewed package; they do not add new catalog records.
 Every result points to an exact GitHub source. Indexed does not mean trusted;
 review provenance, license, permissions, and bundled code before installation.
 For help interpreting scores, source context, and static signals, read the
-[catalog reading guide](docs/catalog-guide.md).
+[catalog reading guide](docs/catalog-guide.md). For official product docs,
+community tutorials, evaluation references, and copy-ready prompts, use the
+[resource map](docs/resources.md) and [use-case examples](docs/use-cases.md).
+
+Chinese users can start with the [中文资源地图](docs/resources.zh-CN.md) and
+[中文快速开始](docs/quickstart.zh-CN.md).
 
 ## Ask for help
 
