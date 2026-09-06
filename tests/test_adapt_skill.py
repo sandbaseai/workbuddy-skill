@@ -112,6 +112,59 @@ class LocalPackagingTests(unittest.TestCase):
                     ["references/guide.md", "scripts/check.py"],
                 )
 
+    def test_rejects_symlinked_local_source_file(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            target = root / "outside" / "SKILL.md"
+            target.parent.mkdir()
+            target.write_text(
+                "---\nname: demo\ndescription: Demo\n---\n\n# Demo\n",
+                encoding="utf-8",
+            )
+            source = root / "linked" / "SKILL.md"
+            source.parent.mkdir()
+            source.symlink_to(target)
+            command = [
+                sys.executable, str(ROOT / "scripts" / "adapt_skill.py"),
+                "--source-file", str(source), "--output", str(root / "dist"),
+                "--display-name-zh", "演示", "--display-name-en", "Demo",
+                "--description-zh", "演示技能", "--description-en", "Demo skill",
+                "--author", "Test", "--source-license", "MIT",
+            ]
+            result = subprocess.run(
+                command, cwd=ROOT, capture_output=True, text=True
+            )
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("source file must not be a symlink", result.stderr)
+
+    def test_rejects_symlinked_local_resource(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source = root / "demo" / "SKILL.md"
+            source.parent.mkdir()
+            source.write_text(
+                "---\nname: demo\ndescription: Demo\n---\n\n"
+                "Read @references/guide.md.\n",
+                encoding="utf-8",
+            )
+            target = root / "outside.md"
+            target.write_text("# Outside\n", encoding="utf-8")
+            references = source.parent / "references"
+            references.mkdir()
+            (references / "guide.md").symlink_to(target)
+            command = [
+                sys.executable, str(ROOT / "scripts" / "adapt_skill.py"),
+                "--source-file", str(source), "--output", str(root / "dist"),
+                "--display-name-zh", "演示", "--display-name-en", "Demo",
+                "--description-zh", "演示技能", "--description-en", "Demo skill",
+                "--author", "Test", "--source-license", "MIT",
+            ]
+            result = subprocess.run(
+                command, cwd=ROOT, capture_output=True, text=True
+            )
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("symlinked bundled resource is not supported", result.stderr)
+
     def test_preserves_standard_license_metadata(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
