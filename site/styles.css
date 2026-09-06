@@ -77,6 +77,10 @@ input, select {
 }
 input::placeholder { color: #74786f; }
 input:focus, select:focus { outline: 3px solid rgba(17, 122, 75, .25); border-color: var(--accent); }
+.search-examples { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.search-example { padding: 5px 10px; border: 1px solid #bdc3b9; border-radius: 999px; color: var(--muted); background: transparent; font: 650 .72rem/1 inherit; cursor: pointer; }
+.search-example:hover, .search-example:focus-visible { color: white; border-color: var(--accent-dark); background: var(--accent-dark); }
+.search-example:disabled { cursor: wait; opacity: .5; }
 .result-controls { margin-top: 16px; display: flex; flex-wrap: wrap; align-items: end; gap: 20px; }
 .sort-field { width: min(240px, 100%); }
 .sort-field select { min-height: 46px; }

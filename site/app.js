@@ -12,6 +12,7 @@ const highSignal = document.querySelector("#high-signal");
 const resetFilters = document.querySelector("#reset-filters");
 const copyLink = document.querySelector("#copy-link");
 const copyStatus = document.querySelector("#copy-status");
+const searchExamples = [...document.querySelectorAll(".search-example")];
 const empty = document.querySelector("#empty");
 const error = document.querySelector("#error");
 const more = document.querySelector("#more");
@@ -196,6 +197,13 @@ function search({ historyMode = "replace" } = {}) {
 }
 
 input.addEventListener("input", search);
+for (const example of searchExamples) {
+  example.addEventListener("click", () => {
+    input.value = example.dataset.search || "";
+    search({ historyMode: "push" });
+    input.focus();
+  });
+}
 for (const control of [category, compatibility, security, sourceContext, sort, unique, minScore]) {
   control.addEventListener("change", () => search({ historyMode: "push" }));
 }
@@ -251,6 +259,7 @@ Promise.all([fetch("catalog.json"), fetch("catalog-meta.json")])
       : `Frozen snapshot: ${meta.records.toLocaleString()} indexed Skills. This site does not automatically add new catalog records.`;
     search();
     input.disabled = false;
+    searchExamples.forEach((example) => { example.disabled = false; });
   })
   .catch(() => {
     results.setAttribute("aria-busy", "false");
