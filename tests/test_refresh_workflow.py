@@ -166,6 +166,10 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertNotIn("git push", workflow)
         self.assertIn("Verify frozen catalog", workflow)
         self.assertIn("--check-stats", workflow)
+        self.assertIn("scripts/build_site_data.py", workflow)
+        self.assertIn("scripts/validate_site_data.py", workflow)
+        self.assertIn("scripts/verify_catalog_snapshot.py", workflow)
+        self.assertIn("scripts/check_resource_links.py", workflow)
 
     def test_resource_link_check_is_read_only_and_scheduled(self):
         workflow = (ROOT / ".github/workflows/check-resource-links.yml").read_text(encoding="utf-8")
