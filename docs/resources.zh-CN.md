@@ -24,6 +24,7 @@
 - [目录条目解读](catalog-guide.zh-CN.md)——理解来源和审阅信号。
 - [适配教程](adapting-skills.zh-CN.md)——将允许适配的公开来源制作成包。
 - [可复制使用场景](use-cases.md)——连接器调用提示词和停止条件示例。
+- [Starter Packs 入门包](starter-packs.zh-CN.md)——按任务选择已有的精选包。
 - [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/zh-CN.html)——搜索固定公开快照。
 
 官方文档是产品行为的准确信息源。社区教程和评测只是参考，不构成信任背书。

@@ -24,6 +24,7 @@ Use this page to choose the right source before searching the catalog.
 - [Catalog reading guide](catalog-guide.md) — interpret provenance and review signals.
 - [Adaptation guide](adapting-skills.md) — turn an allowed public source into a package.
 - [Copy-ready use cases](use-cases.md) — connector-oriented prompts and stopping conditions.
+- [Starter packs](starter-packs.md) — choose an existing reviewed package by task.
 - [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) — search the frozen public snapshot.
 
 Official documentation is the source of truth for product behavior. Community

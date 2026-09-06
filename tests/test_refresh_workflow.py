@@ -134,6 +134,15 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("template=showcase.yml", support)
         self.assertIn("github.com/sandbaseai/workbuddy-skill/discussions", support)
 
+    def test_starter_packs_reference_existing_curated_packages(self):
+        curated = (ROOT / "catalog/curated.json").read_text(encoding="utf-8")
+        for path in ("docs/starter-packs.md", "docs/starter-packs.zh-CN.md"):
+            content = (ROOT / path).read_text(encoding="utf-8")
+            self.assertIn("latest/download/", content)
+            for skill in ("code-review-excellence", "debugging-strategies", "mcp-security-audit"):
+                self.assertIn(f'"skill": "{skill}"', curated)
+                self.assertIn(f"{skill}-workbuddy-skill.zip", content)
+
 
 if __name__ == "__main__":
     unittest.main()
