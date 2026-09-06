@@ -41,6 +41,12 @@ Skills，查看来源与许可证，选择适合的能力，并下载经过整�
 | 编写或整理文档 | [Starter Packs：文档](docs/starter-packs.zh-CN.md) |
 需要程序化读取时，可直接使用[紧凑目录 JSON](https://sandbaseai.github.io/workbuddy-skill/catalog.json)及其[字段 Schema](https://sandbaseai.github.io/workbuddy-skill/catalog-schema.json)；目录快照字段见[元数据](https://sandbaseai.github.io/workbuddy-skill/catalog-meta.json)及其[Schema](https://sandbaseai.github.io/workbuddy-skill/catalog-meta-schema.json)；只想列出可安装精选包时，使用[精选包 JSON](https://sandbaseai.github.io/workbuddy-skill/packages.json)及其[Schema](https://sandbaseai.github.io/workbuddy-skill/packages-schema.json)。
 
+如果有本地 checkout，可用高信号筛选快速缩小候选范围：
+
+```bash
+python3 scripts/query_catalog.py research --high-signal --limit 10
+```
+
 1. 在 [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) 或[中文目录](https://sandbaseai.github.io/workbuddy-skill/zh-CN.html)中搜索需求。
 2. 打开条目的来源链接，阅读说明、许可证、权限和外部依赖。
 3. 从 [Releases](https://github.com/sandbaseai/workbuddy-skill/releases/latest) 下载所需 ZIP，在 WorkBuddy 的 **专家 · Skills · Connectors → Skills → 添加 Skill** 中上传。
@@ -260,6 +266,12 @@ If you are unsure where to begin, choose by task:
 | Use MCP safely | [Starter packs: MCP security](docs/starter-packs.md) |
 | Write maintainable documentation | [Starter packs: documentation](docs/starter-packs.md) |
 For programmatic access, use the [compact catalog JSON](https://sandbaseai.github.io/workbuddy-skill/catalog.json) and its [field Schema](https://sandbaseai.github.io/workbuddy-skill/catalog-schema.json). Snapshot fields are described by [catalog metadata](https://sandbaseai.github.io/workbuddy-skill/catalog-meta.json) and its [Schema](https://sandbaseai.github.io/workbuddy-skill/catalog-meta-schema.json). To list only installable reviewed packages, use the [reviewed package JSON](https://sandbaseai.github.io/workbuddy-skill/packages.json) and its [Schema](https://sandbaseai.github.io/workbuddy-skill/packages-schema.json).
+
+From a local checkout, use the high-signal shortcut to narrow candidates quickly:
+
+```bash
+python3 scripts/query_catalog.py research --high-signal --limit 10
+```
 
 1. Search the [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/).
 2. Read the immutable source, license, permissions, dependencies, and side effects.

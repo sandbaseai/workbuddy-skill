@@ -244,6 +244,10 @@ class RefreshWorkflowTests(unittest.TestCase):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         self.assertEqual(readme.count("gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/skills --pin v4.66.0"), 2)
 
+    def test_readme_exposes_high_signal_catalog_search(self):
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        self.assertEqual(readme.count("python3 scripts/query_catalog.py research --high-signal --limit 10"), 2)
+
     def test_frozen_check_does_not_publish_changes(self):
         workflow = (ROOT / ".github/workflows/refresh-catalog.yml").read_text(encoding="utf-8")
         self.assertNotIn("git commit", workflow)
