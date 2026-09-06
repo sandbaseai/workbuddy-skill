@@ -14,7 +14,7 @@ Skills，查看来源与许可证，选择适合的能力，并下载经过整�
 
 [中文](#中文) · [English](#english) · [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/)
 
-如果这个目录帮你更快找到可用能力，欢迎留下一个 Star；真实使用反馈和公开 Skill 推荐也很有帮助。
+如果这个目录帮你更快找到可用能力，欢迎留下一个 Star；真实使用反馈和公开使用案例也很有帮助。
 
 ## 中文
 
@@ -216,7 +216,7 @@ WorkBuddy Skill Hub is an open catalog of public Agent Skills plus a curated set
 
 The public catalog is currently frozen at **21,818 indexed Skills**. Future maintenance focuses on documentation, reviewed packages, and usability rather than automatically adding new Skills.
 
-If the catalog helps you find a useful capability, consider leaving a Star and sharing a public Skill or real usage example.
+If the catalog helps you find a useful capability, consider leaving a Star and sharing real usage feedback or a public workflow example.
 
 Start with the [English quickstart](docs/quickstart.md), read the [catalog reading guide](docs/catalog-guide.md) when reviewing results, or use the [adaptation guide](docs/adapting-skills.md) to package a public Skill for WorkBuddy.
 
