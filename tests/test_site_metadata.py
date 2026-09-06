@@ -72,6 +72,8 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("CITATION.cff", content)
         self.assertIn("not a security guarantee", content)
         self.assertIn("https://github.com/AlephAITech/WorkBuddyGuide", content)
+        self.assertIn("https://github.com/KimYx0207/AI-Coding-Guide-Zh", content)
+        self.assertIn("https://github.com/adongwanai/learn-workbuddy", content)
         self.assertIn("https://github.com/Tencent/workbuddy-bench", content)
         self.assertIn(
             "https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide",

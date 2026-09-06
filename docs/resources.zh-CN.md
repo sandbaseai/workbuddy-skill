@@ -13,6 +13,8 @@
 ## 学习与评测
 
 - [WorkBuddy 实战蓝皮书](https://github.com/AlephAITech/WorkBuddyGuide)——按真实任务学习。
+- [AI Coding / Agent 中文教程](https://github.com/KimYx0207/AI-Coding-Guide-Zh)——覆盖 WorkBuddy 及相关 Agent 工作流。
+- [Learn WorkBuddy](https://github.com/adongwanai/learn-workbuddy)——MIT clean-room 定位的 Agent Harness 架构课程。
 - [Tencent WorkBuddy Bench](https://github.com/Tencent/workbuddy-bench)——可复现的 Agent 任务评测资料。
 - [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy)——精选生态参考。
 

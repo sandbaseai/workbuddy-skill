@@ -13,6 +13,8 @@ Use this page to choose the right source before searching the catalog.
 ## Learning and evaluation
 
 - [WorkBuddyGuide](https://github.com/AlephAITech/WorkBuddyGuide) — task-oriented community walkthrough.
+- [AI Coding Guide 中文教程](https://github.com/KimYx0207/AI-Coding-Guide-Zh) — broad Chinese tutorial covering WorkBuddy and adjacent agent workflows.
+- [Learn WorkBuddy](https://github.com/adongwanai/learn-workbuddy) — MIT clean-room course on Agent harness architecture.
 - [Tencent WorkBuddy Bench](https://github.com/Tencent/workbuddy-bench) — reproducible Agent task evaluation material.
 - [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy) — curated ecosystem references.
 
