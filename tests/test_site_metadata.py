@@ -95,6 +95,13 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         width, height = struct.unpack(">II", data[16:24])
         self.assertEqual((width, height), (1280, 640))
 
+    def test_category_directory_is_bilingual_and_shareable(self):
+        page = (SITE / "categories.html").read_text(encoding="utf-8")
+        self.assertIn("按类别浏览", page)
+        self.assertIn("index.html?category=development#catalog", page)
+        self.assertIn("index.html?category=research#catalog", page)
+        self.assertIn("index.html?packageStatus=reviewed#catalog", page)
+
     def test_author_styles_preserve_hidden_state(self):
         styles = (SITE / "styles.css").read_text(encoding="utf-8")
         self.assertIn("[hidden] { display: none !important; }", styles)

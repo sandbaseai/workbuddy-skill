@@ -4,6 +4,7 @@ Choose the path that matches your goal:
 
 - **Use a curated Skill:** download a ZIP from Releases and import it into WorkBuddy.
 - **Find a public Skill:** search the [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/), review provenance and risk, then install it.
+- **Start from a task category:** open the [shareable category directory](https://sandbaseai.github.io/workbuddy-skill/categories.html), then continue with the filtered Atlas search.
 - **Package a public Skill for WorkBuddy:** follow the [adaptation guide](adapting-skills.md).
 - **Report a reviewed package problem:** use the [package feedback form](https://github.com/sandbaseai/workbuddy-skill/issues/new?template=package-feedback.yml) and include the failure stage.
 
