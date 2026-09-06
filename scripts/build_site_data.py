@@ -49,6 +49,9 @@ curated_entries = json.loads(CURATED.read_text(encoding="utf-8"))
 curated = {entry["catalog_id"]: entry for entry in curated_entries}
 if len(curated) != len(curated_entries):
     raise SystemExit("catalog/curated.json contains duplicate catalog IDs")
+skill_paths = [entry["skill_path"] for entry in curated_entries]
+if len(set(skill_paths)) != len(skill_paths):
+    raise SystemExit("catalog/curated.json contains duplicate skill paths")
 catalog_ids = {row["id"] for row in source_rows}
 for entry in curated_entries:
     if not (ROOT / entry["skill_path"] / "SKILL.md").is_file():

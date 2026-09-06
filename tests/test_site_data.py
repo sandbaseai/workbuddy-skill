@@ -8,6 +8,11 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class SiteDataTests(unittest.TestCase):
+    def test_curated_skill_paths_are_unique(self):
+        entries = json.loads((ROOT / "catalog" / "curated.json").read_text(encoding="utf-8"))
+        paths = [entry["skill_path"] for entry in entries]
+        self.assertEqual(len(paths), len(set(paths)))
+
     def test_curated_adaptations_are_installable_and_workbuddy_ready(self):
         subprocess.run(
             [sys.executable, str(ROOT / "scripts" / "build_site_data.py")],
@@ -319,8 +324,8 @@ class SiteDataTests(unittest.TestCase):
         debugging = next(
             item
             for item in records
-            if item["r"] == "GuicedEE/ai-rules"
-            and item["p"] == "skills/.curated/systematic-debugging/SKILL.md"
+            if item["r"] == "obra/superpowers"
+            and item["p"] == "skills/systematic-debugging/SKILL.md"
         )
         self.assertEqual(debugging["w"], "workbuddy-ready")
         self.assertEqual(

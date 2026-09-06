@@ -1308,13 +1308,6 @@
     "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/llm-app-security-workbuddy-skill.zip"
   },
   {
-    "catalog_id": "github:a5c-ai/babysitter:library/methodologies/superpowers/skills/test-driven-development/SKILL.md",
-    "skill": "test-driven-development",
-    "skill_path": "skills/test-driven-development",
-    "category": "development",
-    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/test-driven-development-workbuddy-skill.zip"
-  },
-  {
     "catalog_id": "github:aydabd/cacad:.github/skills/accessibility-review/SKILL.md",
     "skill": "accessibility-review",
     "skill_path": "skills/accessibility-review",
@@ -1758,12 +1751,6 @@
     "skill": "excel-ops",
     "skill_path": "skills/excel-ops",
     "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/excel-ops-workbuddy-skill.zip"
-  },
-  {
-    "catalog_id": "github:GuicedEE/ai-rules:skills/.curated/systematic-debugging/SKILL.md",
-    "skill": "systematic-debugging",
-    "skill_path": "skills/systematic-debugging",
-    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/systematic-debugging-workbuddy-skill.zip"
   },
   {
     "catalog_id": "github:github/awesome-copilot:skills/ruff-recursive-fix/SKILL.md",
