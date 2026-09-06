@@ -184,7 +184,6 @@ def adapted_text(source: str, args: argparse.Namespace) -> tuple[str, str]:
         "argument-hint",
         "compatibility",
         "disable-model-invocation",
-        "license",
         "user-invocable",
     ):
         if fields.get(optional):
@@ -241,6 +240,12 @@ def main() -> int:
         args.name_hint = args.source_file.parent.name
 
     analysis = analyze_text(source_text)
+    source_license = parse_frontmatter(source_text)[1].get("license")
+    if source_license and source_license != args.source_license:
+        raise SystemExit(
+            "source license does not match --source-license: "
+            f"{source_license} != {args.source_license}"
+        )
     if analysis["security_signals"] and not args.allow_flagged:
         raise SystemExit(
             "source has static review signals; inspect before retrying with --allow-flagged: "
