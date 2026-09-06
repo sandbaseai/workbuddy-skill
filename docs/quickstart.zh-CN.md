@@ -48,6 +48,12 @@ cd workbuddy-download
 sha256sum --check SHA256SUMS --ignore-missing
 ```
 
+如果环境没有 `sha256sum`，也可以使用仓库提供的跨平台 Python 校验器：
+
+```bash
+python3 scripts/verify_release.py workbuddy-download
+```
+
 ### 2. 导入
 
 在 WorkBuddy 打开 **专家 · Skills · Connectors → Skills → 添加 Skill**，上传 ZIP 并完成导入。需要连接器的 Skill，还要在当前工作区启用对应服务。

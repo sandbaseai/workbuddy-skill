@@ -29,6 +29,7 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn("--repo sandbaseai/workbuddy-skill", quickstart)
             self.assertIn("--pattern SHA256SUMS", quickstart)
             self.assertIn("sha256sum --check SHA256SUMS --ignore-missing", quickstart)
+            self.assertIn("scripts/verify_release.py", quickstart)
 
     def test_quickstarts_explain_reviewed_package_filter(self):
         english = (ROOT / "docs/quickstart.md").read_text(encoding="utf-8")

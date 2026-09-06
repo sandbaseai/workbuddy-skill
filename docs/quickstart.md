@@ -60,6 +60,13 @@ cd workbuddy-download
 sha256sum --check SHA256SUMS --ignore-missing
 ```
 
+If `sha256sum` is unavailable, use the repository's cross-platform Python
+helper instead:
+
+```bash
+python3 scripts/verify_release.py workbuddy-download
+```
+
 ### 2. Import
 
 In WorkBuddy, open **Experts · Skills · Connectors → Skills → Add Skill**, upload the ZIP, and finish the import. If the Skill uses a connector, enable that service in the current workspace.

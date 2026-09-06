@@ -21,6 +21,7 @@ All notable changes to this project are documented here.
 - Added the matching `--package-status reviewed|catalog-only` filter to the local catalog CLI, backed by the curated manifest.
 - Reviewed local CLI results now include a direct Release ZIP URL, including the `workbuddy_package_url` JSON field.
 - Added the official Open Platform Skill guide to the bilingual resource maps and machine-readable index.
+- Added a cross-platform Python release verifier for environments without `sha256sum`.
 - Added bilingual WorkBuddy resource maps covering official product docs, community learning, evaluation material, and local catalog guides.
 - Added direct Atlas navigation to the resource maps, plus a post-use feedback and Star prompt that does not perform account actions.
 - Atlas now derives and displays the current count of reviewed WorkBuddy packages from `catalog-meta.json`.
