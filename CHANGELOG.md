@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Clarify in the bilingual README that SandBase is maintained in the external Awesome WorkBuddy repository rather than packaged here.
 - Add a rights-aware cross-device WorkBuddy sync and handoff reference, with explicit database, identity, path, and credential warnings.
 - Add a direct reviewed-packages link to both Atlas language-page navigation bars.
 - Add the MIT-licensed MnemoPort resource for local WorkBuddy asset portability, with explicit limits around auto-memory, account data, and plugins.

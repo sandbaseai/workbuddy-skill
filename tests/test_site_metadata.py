@@ -153,6 +153,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertNotIn("分离内部建设约束", (ROOT / "README.md").read_text(encoding="utf-8"))
         self.assertIn("本 README 面向使用者", (ROOT / "README.md").read_text(encoding="utf-8"))
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        self.assertIn("SandBase 已从本仓库移出", readme)
         self.assertIn("https://www.workbuddy.ai/docs/zh/workbuddy/Quickstart", readme)
         self.assertIn("https://www.workbuddy.ai/docs/workbuddy/Quickstart", readme)
         self.assertIn("https://www.workbuddy.ai/docs/zh/ide/release-notes/release-notes", readme)
