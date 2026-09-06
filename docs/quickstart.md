@@ -29,12 +29,24 @@ This repository explains catalog discovery and packaging; the official docs rema
 
 ### 1. Download
 
-Download the ZIP you need from the [latest release](https://github.com/sandbaseai/workbuddy-skill/releases/latest). Do not unzip and repackage it: `SKILL.md` is already at the archive root.
+Download the ZIP you need from the [latest release](https://github.com/sandbaseai/workbuddy-skill/releases/latest). For a reproducible command-line download, replace `oss-review` with the package name shown in the Atlas and run:
+
+```bash
+mkdir -p workbuddy-download
+gh release download \
+  --repo sandbaseai/workbuddy-skill \
+  --pattern 'oss-review-workbuddy-skill.zip' \
+  --pattern SHA256SUMS \
+  --dir workbuddy-download
+```
+
+Do not unzip and repackage the archive: `SKILL.md` is already at the archive root.
 
 For reproducible downloads, also download `SHA256SUMS` from the same release and
 verify an archive in the same directory:
 
 ```bash
+cd workbuddy-download
 sha256sum --check SHA256SUMS --ignore-missing
 ```
 

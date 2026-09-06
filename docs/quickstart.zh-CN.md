@@ -20,11 +20,23 @@
 
 ### 1. 下载
 
-从[最新 Release](https://github.com/sandbaseai/workbuddy-skill/releases/latest)下载需要的 ZIP。不要解压后重新打包；安装包已经把 `SKILL.md` 放在 ZIP 根目录。
+从[最新 Release](https://github.com/sandbaseai/workbuddy-skill/releases/latest)下载需要的 ZIP。想用命令行精确下载时，把 `oss-review` 替换为 Atlas 中显示的包名，然后执行：
+
+```bash
+mkdir -p workbuddy-download
+gh release download \
+  --repo sandbaseai/workbuddy-skill \
+  --pattern 'oss-review-workbuddy-skill.zip' \
+  --pattern SHA256SUMS \
+  --dir workbuddy-download
+```
+
+不要解压后重新打包；安装包已经把 `SKILL.md` 放在 ZIP 根目录。
 
 需要可复现地校验下载内容时，同时下载同一 Release 中的 `SHA256SUMS`，并在 ZIP 所在目录执行：
 
 ```bash
+cd workbuddy-download
 sha256sum --check SHA256SUMS --ignore-missing
 ```
 

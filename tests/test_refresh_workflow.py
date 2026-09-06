@@ -22,6 +22,14 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("sha256sum *-workbuddy-skill.zip > SHA256SUMS", workflow)
         self.assertIn('gh release upload "$GITHUB_REF_NAME" dist/SHA256SUMS', workflow)
 
+    def test_quickstarts_document_exact_release_download_and_verification(self):
+        for name in ("docs/quickstart.md", "docs/quickstart.zh-CN.md"):
+            quickstart = (ROOT / name).read_text(encoding="utf-8")
+            self.assertIn("gh release download \\\n", quickstart)
+            self.assertIn("--repo sandbaseai/workbuddy-skill", quickstart)
+            self.assertIn("--pattern SHA256SUMS", quickstart)
+            self.assertIn("sha256sum --check SHA256SUMS --ignore-missing", quickstart)
+
     def test_catalog_refresh_is_frozen_without_automatic_additions(self):
         workflow = (ROOT / ".github/workflows/refresh-catalog.yml").read_text(encoding="utf-8")
         self.assertNotIn("schedule:", workflow)
