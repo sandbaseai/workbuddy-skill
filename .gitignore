@@ -4,6 +4,7 @@ __pycache__/
 *.zip
 dist/
 catalog/*.tmp
+catalog/*.checkpoint.json
 site/catalog.json
 site/catalog-meta.json
 site/packages.json

@@ -86,6 +86,11 @@ If you are evaluating a new GitHub source or crawler range, pass
 `--dry-run` to `scripts/crawl_github_skills.py`. It will perform discovery and
 report the candidate count without writing the output JSONL or its stats file;
 the published frozen catalog still requires a separate, explicit opt-in.
+Normal scans keep a checkpoint beside the output (or at the path supplied with
+`--checkpoint`). If a run is interrupted by a rate limit, network failure, or
+process stop, repeat the same command to resume the pending repository or size
+shard; the checkpoint is removed after a successful completion. `--dry-run`
+does not create a checkpoint.
 For a repository-specific preview that does not require global Code Search,
 combine it with `--repository owner/name --repository-only`.
 In repository-only mode, `--target` is only a cap: a smaller repository still

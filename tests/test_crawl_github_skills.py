@@ -59,6 +59,35 @@ class RateLimitTests(unittest.TestCase):
             self.assertFalse(output.exists())
             self.assertFalse((Path(directory) / "stats.json").exists())
 
+    def test_interrupted_scan_resumes_from_checkpoint(self):
+        item = {
+            "repository": {
+                "full_name": "owner/repo",
+                "html_url": "https://github.com/owner/repo",
+                "fork": False,
+            },
+            "path": "skills/demo/SKILL.md",
+            "sha": "a" * 40,
+            "html_url": "https://github.com/owner/repo/blob/" + "a" * 40 + "/skills/demo/SKILL.md",
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "preview.jsonl"
+            args = ["crawl_github_skills.py", "--target", "1", "--output", str(output)]
+            with patch("sys.argv", args), patch(
+                "crawl_github_skills.request_json", side_effect=RuntimeError("stop")
+            ):
+                self.assertEqual(main(), 2)
+            checkpoint = Path(str(output) + ".checkpoint.json")
+            self.assertTrue(checkpoint.exists())
+            with patch("sys.argv", args), patch(
+                "crawl_github_skills.request_json",
+                return_value=({"total_count": 1, "items": [item]}, {"X-RateLimit-Remaining": "1"}),
+            ) as request_json:
+                self.assertEqual(main(), 0)
+            self.assertEqual(request_json.call_count, 1)
+            self.assertTrue(output.exists())
+            self.assertFalse(checkpoint.exists())
+
     @patch("crawl_github_skills.request_json")
     @patch("crawl_github_skills.repository_skill_rows")
     def test_repository_only_skips_global_code_search(self, repository_skill_rows, request_json):

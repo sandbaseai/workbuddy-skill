@@ -216,6 +216,55 @@ def write_atomic(path: Path, rows: dict[str, dict]) -> None:
     temporary.replace(path)
 
 
+def checkpoint_file(output: Path, explicit: Path | None) -> Path:
+    return explicit or output.with_name(output.name + ".checkpoint.json")
+
+
+def write_checkpoint(
+    path: Path,
+    signature: dict,
+    remaining_repositories: list[str],
+    pending: list[tuple[int, int]],
+) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(
+        json.dumps(
+            {
+                "version": 1,
+                "signature": signature,
+                "remaining_repositories": remaining_repositories,
+                "pending": [list(shard) for shard in pending],
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    temporary.replace(path)
+
+
+def load_checkpoint(path: Path, signature: dict) -> tuple[list[str], list[tuple[int, int]]] | None:
+    if not path.exists():
+        return None
+    try:
+        state = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise SystemExit(f"invalid crawl checkpoint {path}: {exc}") from exc
+    if state.get("version") != 1 or state.get("signature") != signature:
+        print(f"Ignoring checkpoint with incompatible scan settings: {path}", file=sys.stderr)
+        return None
+    try:
+        repositories = [str(item) for item in state["remaining_repositories"]]
+        pending = [tuple(int(value) for value in shard) for shard in state["pending"]]
+    except (KeyError, TypeError, ValueError) as exc:
+        raise SystemExit(f"invalid crawl checkpoint {path}: missing scan state") from exc
+    if any(len(shard) != 2 or shard[0] < 1 or shard[1] < shard[0] for shard in pending):
+        raise SystemExit(f"invalid crawl checkpoint {path}: malformed search shard")
+    return repositories, pending
+
+
 def write_stats(path: Path, rows: dict[str, dict], requests: int, capped_queries: int) -> None:
     stats = {
         "records": len(rows),
@@ -255,6 +304,11 @@ def main() -> int:
         help="Largest SKILL.md size searched by default (override for broader scans)",
     )
     parser.add_argument("--output", type=Path, default=DEFAULT_OUT)
+    parser.add_argument(
+        "--checkpoint",
+        type=Path,
+        help="Checkpoint file for resumable discovery (defaults beside --output)",
+    )
     parser.add_argument(
         "--allow-frozen-catalog",
         action="store_true",
@@ -299,10 +353,26 @@ def main() -> int:
         )
 
     token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN", "")
+    checkpoint_path = checkpoint_file(args.output, args.checkpoint)
+    signature = {
+        "max_bytes": args.max_bytes,
+        "output": str(args.output.resolve()),
+        "repository_only": args.repository_only,
+        "repositories": args.repository,
+        "start_bytes": args.start_bytes,
+    }
+    saved_state = None if args.dry_run else load_checkpoint(checkpoint_path, signature)
     rows = load_existing(args.output)
+    remaining_repositories = saved_state[0] if saved_state else list(args.repository)
+    pending = saved_state[1] if saved_state else None
+
     def checkpoint() -> None:
         if not args.dry_run:
             write_atomic(args.output, rows)
+
+    def persist_state() -> None:
+        if not args.dry_run:
+            write_checkpoint(checkpoint_path, signature, remaining_repositories, pending or [])
 
     def persist_stats() -> None:
         if not args.dry_run:
@@ -314,13 +384,15 @@ def main() -> int:
     rate_waited = 0
 
     try:
-        for repository in args.repository:
+        while remaining_repositories:
+            repository = remaining_repositories[0]
             if len(rows) >= args.target:
                 break
             if requests + 3 > args.max_requests:
                 raise RuntimeError(
                     "request budget exhausted before repository tree scan; resume later"
                 )
+            persist_state()
             discovered, used = repository_skill_rows(repository, token)
             requests += used
             before = len(rows)
@@ -338,14 +410,17 @@ def main() -> int:
                 f"repository={repository!r} discovered={len(rows) - before} indexed={len(rows)}",
                 file=sys.stderr,
             )
+            remaining_repositories.pop(0)
             checkpoint()
-        pending = (
-            []
-            if args.repository_only
-            else search_shards(args.start_bytes, args.max_bytes)
-        )
+            persist_state()
+        if pending is None:
+            pending = [] if args.repository_only else search_shards(args.start_bytes, args.max_bytes)
+            persist_state()
         while pending:
             lower, upper = pending.pop()
+            pending.insert(0, (lower, upper))
+            persist_state()
+            pending.pop(0)
             query = query_for_range(lower, upper)
             if len(rows) >= args.target:
                 break
@@ -386,6 +461,7 @@ def main() -> int:
                     if lower < upper:
                         middle = (lower + upper) // 2
                         pending.extend(((lower, middle), (middle + 1, upper)))
+                        persist_state()
                         break
                 items = payload.get("items", [])
                 for item in items:
@@ -416,6 +492,7 @@ def main() -> int:
             # Persist after every completed shard so a long refresh loses at
             # most one shard when interrupted.
             checkpoint()
+            persist_state()
     except (KeyboardInterrupt, HTTPError, URLError, RuntimeError) as exc:
         checkpoint()
         persist_stats()
@@ -424,6 +501,8 @@ def main() -> int:
 
     checkpoint()
     persist_stats()
+    if not args.dry_run:
+        checkpoint_path.unlink(missing_ok=True)
     if args.dry_run:
         print(
             f"dry-run: discovered {len(rows)} records; no output or stats files written",
