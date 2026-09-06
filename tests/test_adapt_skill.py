@@ -209,6 +209,28 @@ class LocalPackagingTests(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("source license does not match", result.stderr)
 
+    def test_rejects_empty_source_license(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source = root / "unlicensed" / "SKILL.md"
+            source.parent.mkdir()
+            source.write_text(
+                "---\nname: unlicensed\ndescription: Unlicensed\n---\n\n# Skill\n",
+                encoding="utf-8",
+            )
+            command = [
+                sys.executable, str(ROOT / "scripts" / "adapt_skill.py"),
+                "--source-file", str(source), "--output", str(root / "dist"),
+                "--display-name-zh", "无许可证", "--display-name-en", "Unlicensed",
+                "--description-zh", "无许可证", "--description-en", "Unlicensed",
+                "--author", "Test", "--source-license", "",
+            ]
+            result = subprocess.run(
+                command, cwd=ROOT, capture_output=True, text=True
+            )
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("--source-license must not be empty", result.stderr)
+
     def test_preserves_compatibility_metadata(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
