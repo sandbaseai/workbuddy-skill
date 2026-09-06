@@ -17,6 +17,7 @@ const searchExamples = [...document.querySelectorAll(".search-example")];
 const empty = document.querySelector("#empty");
 const externalSearch = document.querySelector("#external-search");
 const error = document.querySelector("#error");
+const retryLoad = document.querySelector("#retry-load");
 const more = document.querySelector("#more");
 const languageLink = document.querySelector("#language-link");
 const metricRecords = document.querySelector("#metric-records");
@@ -311,12 +312,15 @@ results.addEventListener("click", (event) => {
 restoreUrlState();
 syncLanguageLink();
 
-Promise.all([fetch("catalog.json"), fetch("catalog-meta.json"), fetch("packages.json")])
-  .then(async ([catalogResponse, metaResponse, packagesResponse]) => {
+async function loadCatalog() {
+  error.hidden = true;
+  retryLoad.disabled = true;
+  count.textContent = isChinese ? "正在加载目录…" : "Loading catalog…";
+  results.setAttribute("aria-busy", "true");
+  try {
+    const [catalogResponse, metaResponse, packagesResponse] = await Promise.all([fetch("catalog.json"), fetch("catalog-meta.json"), fetch("packages.json")]);
     if (!catalogResponse.ok || !metaResponse.ok || !packagesResponse.ok) throw new Error("catalog unavailable");
-    return Promise.all([catalogResponse.json(), metaResponse.json(), packagesResponse.json()]);
-  })
-  .then(([data, meta, packages]) => {
+    const [data, meta, packages] = await Promise.all([catalogResponse.json(), metaResponse.json(), packagesResponse.json()]);
     if (meta.snapshot_frozen !== true) throw new Error("catalog snapshot is not frozen");
     catalog = data;
     packagesByDownload = new Map(packages.map((packageRecord) => [packageRecord.download_url, packageRecord]));
@@ -337,9 +341,14 @@ Promise.all([fetch("catalog.json"), fetch("catalog-meta.json"), fetch("packages.
     search();
     input.disabled = false;
     searchExamples.forEach((example) => { example.disabled = false; });
-  })
-  .catch(() => {
+  } catch {
     results.setAttribute("aria-busy", "false");
     count.textContent = isChinese ? "目录暂时不可用" : "Catalog unavailable";
     error.hidden = false;
-  });
+  } finally {
+    retryLoad.disabled = false;
+  }
+}
+
+retryLoad.addEventListener("click", loadCatalog);
+loadCatalog();
