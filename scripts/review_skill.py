@@ -12,6 +12,7 @@ from adapt_skill import (
     catalog_record,
     collect_resources,
     fetch_text,
+    immutable_github_source,
     resource_paths,
 )
 from analyze_catalog import analyze_text, parse_frontmatter
@@ -36,6 +37,8 @@ FRONTMATTER_FIELDS = (
 def build_report(
     source_text: str, *, record: dict | None = None, source_file: Path | None = None
 ) -> dict:
+    if record:
+        immutable_github_source(record)
     analysis = analyze_text(source_text)
     valid, fields = parse_frontmatter(source_text)
     requested = [str(path) for path in resource_paths(source_text)]
