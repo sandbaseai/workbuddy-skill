@@ -217,6 +217,8 @@ def main() -> int:
     parser.add_argument("--allow-missing-resources", action="store_true")
     parser.add_argument("--force", action="store_true")
     args = parser.parse_args()
+    if not args.source_license.strip():
+        parser.error("--source-license must not be empty")
 
     if args.catalog_id:
         record = catalog_record(args.catalog, args.catalog_id)
