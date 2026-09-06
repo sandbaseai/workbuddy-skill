@@ -51,6 +51,7 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn("open.workbuddy.cn", quickstart)
             self.assertIn("Permission-Modes", quickstart)
             self.assertIn("Function-Description/Model", quickstart)
+            self.assertIn("Function-Description/Skills-Market", quickstart)
             expected_connector = (
                 "open.workbuddy.cn/docs/connector"
                 if name.endswith("zh-CN.md")
