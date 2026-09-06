@@ -21,8 +21,8 @@ class RefreshWorkflowTests(unittest.TestCase):
     def test_public_freshness_metadata_matches_site_schedule(self):
         catalog_docs = (ROOT / "catalog/README.md").read_text(encoding="utf-8")
         sitemap = (ROOT / "site/sitemap.xml").read_text(encoding="utf-8")
-        self.assertIn("published snapshot is currently", catalog_docs)
-        self.assertIn("refresh workflow is currently frozen", catalog_docs)
+        self.assertIn("The published snapshot is frozen", catalog_docs)
+        self.assertIn("read-only frozen-catalog check", catalog_docs)
         self.assertEqual(sitemap.count("<changefreq>daily</changefreq>"), 2)
 
     def test_pages_actions_use_current_node_runtime_generations(self):

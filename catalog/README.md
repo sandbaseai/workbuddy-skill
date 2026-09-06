@@ -31,35 +31,23 @@ the documented patterns did not match.
 
 Duplicate content can occur in multiple repositories. Consumers should group by `sha` when they need unique content and retain all source occurrences for attribution.
 
-## Refresh
+## Snapshot maintenance
 
 ```bash
-GH_TOKEN="..." python3 scripts/crawl_github_skills.py --target 10000
-python3 scripts/validate_catalog.py --minimum 10000
-python3 scripts/analyze_catalog.py
-# Re-run all immutable source analyses after changing review rules:
-python3 scripts/analyze_catalog.py --refresh
+python3 scripts/validate_catalog.py --minimum 10000 --require-analysis --check-stats
+python3 scripts/build_site_data.py
 ```
 
-Analysis is incremental: unchanged blob SHAs reuse their prior result, while
-new or changed contents are fetched and inspected. The published snapshot is currently
-step before validation and publication.
-
-The crawler searches `SKILL.md` files up to 100 KB by default so longer,
-reference-rich Skills are not silently excluded. Use `--max-bytes` to widen
-the range for a broader scan; the catalog stores metadata and immutable source
-links only, and never executes downloaded Skill content.
+The published snapshot is frozen. Do not run the crawler or add records; use the
+validation and site-build commands above to verify documentation and presentation
+changes without changing the catalog.
 
 The Atlas build derives deterministic work categories from skill names and
 paths and counts identical SHA occurrences. Categories and copy counts are
 navigation aids, not quality or safety endorsements.
 
-The crawler uses GitHub's public code-search API, respects rate-limit headers, retries transient network/server errors with bounded backoff, and atomically checkpoints after each size shard. It starts with a broad byte-size range and bisects only ranges that exceed GitHub's 1,000-result search cap. Tokens are read only from the environment and are never stored.
-
-The refresh workflow is currently frozen to preserve this published snapshot. It can
-also be started from the Actions tab. Only a complete, validated 10,000-record
-snapshot replaces the committed files. It then opens an update pull request and
-enables auto-merge after required checks pass.
+The refresh workflow is a read-only frozen-catalog check. It does not crawl GitHub,
+write catalog files, open pull requests, or enable auto-merge.
 
 ## Search locally
 
