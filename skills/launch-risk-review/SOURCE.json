@@ -2,7 +2,7 @@
   "adaptation": {
     "missing_resources": ["claude-for-legal practice-level calibration and matter workspace configuration"],
     "packaged_resources": [],
-    "security_signals": ["internal legal configuration paths and posting commands removed from adaptation"],
+    "security_signals": ["internal legal configuration paths and posting commands removed from adaptation", "added portable evidence/unknown classification and sanitized tracker-output gates"],
     "tool": "manual WorkBuddy adaptation"
   },
   "catalog_id": "github:anthropics/claude-for-legal:product-legal/skills/launch-review/SKILL.md",

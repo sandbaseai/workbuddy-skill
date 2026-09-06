@@ -48,3 +48,30 @@ For every blocker or material finding, include the affected flow, evidence and l
 ## Produce the handoff
 
 The final memo includes scope and inputs, plain-language launch summary, category results, AI detection, evidence and limitations, findings by decision class, required specialist reviews, rollout and rollback gates, owners and dates, accepted residual risks, communication constraints, and the next authorized action. Re-check changed claims or implementation before launch and define triggers for post-launch review after material incidents, architecture, vendor, model, data, market, or regulatory changes.
+
+Use this compact record for every category so a reviewer can distinguish facts from conclusions:
+
+```markdown
+### [Category]
+
+**Checked:** [documents, code, tests, policy, or research source]
+**Finding:** [Clear | Needs work | Blocker | Skipped | Unknown]
+**Evidence:** [file, section, commit, link, or evidence date]
+**Detail:** [specific impact on this launch]
+**Action:** [owner, deadline, acceptance evidence, and retest]
+```
+
+Every material statement is one of `Observed`, `Derived`, or `Unknown`, with a `High`, `Medium`, or `Low` confidence. If an applicable research system or authoritative source is unavailable, report the coverage gap and escalate; do not fabricate a citation or silently treat model memory as verified law or policy.
+
+When the decision destination is a broad tracker or public channel, emit a separate sanitized handoff containing only status, conditions, owners, deadlines, and completion evidence. Never include privileged reasoning, personal data, credentials, secrets, or unnecessary exploit detail in that handoff:
+
+```markdown
+## SAFE TO POST TO TRACKER
+
+**Launch status:** [green | yellow | red]
+
+**Conditions:**
+- [ ] [action] — Owner: [role] — Due: [date] — Evidence: [link/test/approval]
+```
+
+Before returning a clear-to-ship result, verify that the decision owner has authority, all blockers have acceptance evidence, unknowns are either resolved or explicitly accepted by the accountable owner, and rollback or pause criteria are documented. This Skill never grants legal, privacy, security, or business approval.
