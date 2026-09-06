@@ -18,6 +18,10 @@ environment.
 | Prepare a release | [github-release](https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/github-release-workbuddy-skill.zip) | Versioning, release evidence, checksums, and asset checks |
 | Write maintainable docs | [documentation-writer](https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/documentation-writer-workbuddy-skill.zip) | Tutorials, how-to guides, reference, and explanation |
 
+For the exact package asset, pinned source, ready-to-copy download command, and
+the matching `SHA256SUMS`, use the [no-JavaScript reviewed package index](https://sandbaseai.github.io/workbuddy-skill/packages.html)
+before importing a package.
+
 ## A safe first run
 
 1. Download the ZIP from the link above, or use the [quickstart](quickstart.md)
