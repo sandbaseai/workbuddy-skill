@@ -197,6 +197,7 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("pull_request_target", workflow)
         self.assertIn("group: auto-merge-pr-${{ github.event.pull_request.number }}", workflow)
         self.assertIn("cancel-in-progress: true", workflow)
+        self.assertIn("timeout-minutes: 15", workflow)
         self.assertIn("ready_for_review", workflow)
         self.assertIn("HEAD_REPOSITORY", workflow)
         self.assertIn('[[ \"$HEAD_REPOSITORY\" != \"$GITHUB_REPOSITORY\" ]]', workflow)

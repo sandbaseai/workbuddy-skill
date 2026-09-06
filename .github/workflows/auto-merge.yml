@@ -20,6 +20,7 @@ jobs:
   queue:
     name: Queue trusted pull request
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Enable squash auto-merge
         env:
