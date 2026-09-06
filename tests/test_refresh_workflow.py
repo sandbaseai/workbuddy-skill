@@ -160,6 +160,15 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("GitHub auto-merge is enabled", contributing)
         self.assertIn("merged branches are deleted", contributing)
         self.assertIn("does not bypass validation", contributing)
+        self.assertIn("Pull requests from forks remain manual", contributing)
+
+    def test_auto_merge_only_queues_trusted_same_repository_pull_requests(self):
+        workflow = (ROOT / ".github/workflows/auto-merge.yml").read_text(encoding="utf-8")
+        self.assertIn("pull_request_target", workflow)
+        self.assertIn("head.repo.full_name == github.repository", workflow)
+        self.assertIn("author_association", workflow)
+        self.assertIn("--auto --squash --delete-branch", workflow)
+        self.assertNotIn("actions/checkout", workflow)
 
     def test_unreleased_changelog_covers_current_public_improvements(self):
         changelog = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")

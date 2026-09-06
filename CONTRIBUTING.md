@@ -36,6 +36,10 @@ Describe the real user request or failure that motivated an instruction change. 
 GitHub auto-merge is enabled for this repository, and merged branches are deleted
 automatically. Use auto-merge only after the required checks and human review for
 the change have completed; this setting does not bypass validation or source review.
+The restricted `Enable safe auto-merge` workflow queues squash auto-merge only for
+trusted contributors working from branches in this repository; it never checks out
+pull-request code. Pull requests from forks remain manual so untrusted workflow
+content cannot receive write permissions.
 The `main` branch requires the `validate` status check for pull requests and
 conversation resolution; admin enforcement remains off so authorized direct
 maintenance commits can continue when appropriate.
