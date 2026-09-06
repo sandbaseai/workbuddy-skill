@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Keep the machine-readable Atlas entrypoint focused on discovery and safe installation instead of internal catalog maintenance.
 - Simplify the bilingual quickstarts with shortest-path guidance for installing, searching, and adapting Skills.
 - Remove internal catalog maintenance instructions from the public catalog README.
 - Reject query-bearing or structurally incomplete immutable raw URLs.

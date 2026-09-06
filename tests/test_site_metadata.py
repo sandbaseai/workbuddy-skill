@@ -122,8 +122,10 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
             "https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide",
             content,
         )
-        self.assertIn("21,818 indexed Skills", content)
-        self.assertIn("new catalog records are not automatically added", content)
+        self.assertIn("21,818 Skills", content)
+        self.assertIn("inspect the linked source, license, and permissions", content)
+        self.assertNotIn("new catalog records are not automatically added", content)
+        self.assertNotIn("Future maintenance focuses", content)
         self.assertIn("github.com/search?q=filename%3ASKILL.md&type=code", content)
         self.assertIn("docs/catalog-guide.md", content)
         self.assertIn("docs/catalog-guide.zh-CN.md", content)
