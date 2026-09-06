@@ -51,6 +51,7 @@ function restoreUrlState() {
   const params = new URLSearchParams(location.search);
   input.value = params.get("q") || "";
   for (const [name, control] of Object.entries({ category, compatibility, security, source: sourceContext, sort, minScore })) {
+    control.value = control.options[0].value;
     const value = params.get(name);
     if (value && FILTERS[name].has(value)) control.value = value;
   }
@@ -201,6 +202,10 @@ resetFilters.addEventListener("click", () => {
   search();
 });
 copyLink.addEventListener("click", copySearchLink);
+window.addEventListener("popstate", () => {
+  restoreUrlState();
+  if (catalog.length) search();
+});
 more.addEventListener("click", () => render(false));
 results.addEventListener("click", (event) => {
   const button = event.target.closest(".copy-id");
