@@ -15,7 +15,7 @@ review provenance, license, permissions, and bundled code before installation.
 ## Ask for help
 
 - For a reproducible package or workflow bug, use the [bug report template](https://github.com/sandbaseai/workbuddy-skill/issues/new?template=bug.yml).
-- To request a capability or nominate a public Skill, use the [capability template](https://github.com/sandbaseai/workbuddy-skill/issues/new?template=feature.yml).
+- To request a capability or propose an improvement to an existing reviewed package, use the [capability template](https://github.com/sandbaseai/workbuddy-skill/issues/new?template=feature.yml).
 - For security concerns, follow [SECURITY.md](SECURITY.md) and do not post exploit details publicly.
 
 Include the WorkBuddy version, the requested task, expected behavior, and
