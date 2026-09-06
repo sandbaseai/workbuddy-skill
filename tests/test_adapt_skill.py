@@ -210,6 +210,31 @@ class LocalPackagingTests(unittest.TestCase):
                     archive.read("SKILL.md").decode(),
                 )
 
+    def test_preserves_boolean_invocation_metadata_as_booleans(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source = root / "boolean-fields" / "SKILL.md"
+            source.parent.mkdir()
+            source.write_text(
+                "---\nname: boolean-fields\ndescription: Boolean fields\n"
+                "disable-model-invocation: true\nuser-invocable: false\n"
+                "---\n\n# Boolean fields\n", encoding="utf-8",
+            )
+            command = [
+                sys.executable, str(ROOT / "scripts" / "adapt_skill.py"),
+                "--source-file", str(source), "--output", str(root / "dist"),
+                "--display-name-zh", "布尔字段", "--display-name-en", "Boolean fields",
+                "--description-zh", "布尔字段", "--description-en", "Boolean fields",
+                "--author", "Test", "--source-license", "MIT",
+            ]
+            subprocess.run(command, cwd=ROOT, check=True, capture_output=True, text=True)
+            with ZipFile(root / "dist/boolean-fields-workbuddy.zip") as archive:
+                content = archive.read("SKILL.md").decode()
+                self.assertIn("disable-model-invocation: true", content)
+                self.assertIn("user-invocable: false", content)
+                self.assertNotIn('disable-model-invocation: "true"', content)
+                self.assertNotIn('user-invocable: "false"', content)
+
     def test_preserves_string_metadata_map(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

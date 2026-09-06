@@ -30,6 +30,7 @@ MAX_RESOURCE_BYTES = 4 * 1024 * 1024
 RESOURCE_REFERENCE = re.compile(
     r"(?:@|\]\(|`)(?P<path>(?:\./)?(?:references|scripts|assets|templates)/[^\s)>'\"`]+)"
 )
+BOOLEAN_FIELDS = {"disable-model-invocation", "user-invocable"}
 
 
 def catalog_record(path: Path, record_id: str) -> dict:
@@ -136,6 +137,12 @@ def yaml_value(value: str) -> str:
     return json.dumps(value, ensure_ascii=False)
 
 
+def rendered_value(key: str, value: str) -> str:
+    if key in BOOLEAN_FIELDS and value.casefold() in {"true", "false"}:
+        return value.casefold()
+    return yaml_value(value)
+
+
 def metadata_block(frontmatter: str) -> list[str]:
     """Preserve the standard metadata mapping while normalizing other fields."""
     lines = frontmatter.splitlines()
@@ -183,7 +190,7 @@ def adapted_text(source: str, args: argparse.Namespace) -> tuple[str, str]:
         if fields.get(optional):
             frontmatter[optional] = fields[optional]
     rendered_frontmatter = [
-        f"{key}: {yaml_value(value)}" for key, value in frontmatter.items()
+        f"{key}: {rendered_value(key, value)}" for key, value in frontmatter.items()
     ]
     preserved_metadata = metadata_block(match.group(1)) if valid and match else []
     if preserved_metadata:
