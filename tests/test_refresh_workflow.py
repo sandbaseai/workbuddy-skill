@@ -143,6 +143,17 @@ class RefreshWorkflowTests(unittest.TestCase):
                 self.assertIn(f'"skill": "{skill}"', curated)
                 self.assertIn(f"{skill}-workbuddy-skill.zip", content)
 
+    def test_resource_maps_label_external_references_and_rights_boundaries(self):
+        for path in ("docs/resources.md", "docs/resources.zh-CN.md", "site/llms.txt"):
+            content = (ROOT / path).read_text(encoding="utf-8")
+            self.assertIn("zjp1997720/zhijian-ai-bluebook-workbuddy-harness", content)
+            self.assertIn("staruhub/awesome-workbuddy", content)
+            self.assertIn("infometa/workbuddyskills", content)
+        english = (ROOT / "docs/resources.md").read_text(encoding="utf-8")
+        chinese = (ROOT / "docs/resources.zh-CN.md").read_text(encoding="utf-8")
+        self.assertIn("not as a trust or license decision", english)
+        self.assertIn("不替代信任或许可证判断", chinese)
+
 
 if __name__ == "__main__":
     unittest.main()
