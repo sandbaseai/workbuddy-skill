@@ -123,6 +123,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("https://github.com/huaweicloud/huaweicloud-devkit", content)
         self.assertIn("https://github.com/QwenLM/Qwen-MM-Plugins", content)
         self.assertIn("https://github.com/muzishuiji/mnemoport", content)
+        self.assertIn("https://github.com/Elisabeth15501/agent-analytics-report", content)
         self.assertIn("https://github.com/jamesting-eng/workbuddy-skills", content)
         self.assertIn("https://github.com/TencentCloudBase/CloudBase-AI-Toolkit", content)
         self.assertIn("Installation-Mac-Guide", content)
