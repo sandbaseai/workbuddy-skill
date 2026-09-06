@@ -20,6 +20,7 @@ class AtlasFrontendTests(unittest.TestCase):
             self.assertIn("catalog.json", page)
             self.assertIn('id="language-link"', page)
             self.assertIn('id="snapshot-note"', page)
+            self.assertIn('id="snapshot-fingerprint"', page)
             self.assertIn('id="curated-note"', page)
             self.assertIn('id="curated-count-text"', page)
             self.assertIn("?packageStatus=reviewed#catalog", page)
@@ -162,6 +163,8 @@ class AtlasFrontendTests(unittest.TestCase):
             self.assertNotIn("不会自动增加新的目录记录", page)
         self.assertIn("Follow each source link for upstream updates.", self.app)
         self.assertIn("请通过来源链接查看上游更新。", self.app)
+        self.assertIn('snapshotFingerprint.textContent = meta.catalog_sha256.slice(0, 12)', self.app)
+        self.assertIn('snapshotFingerprint.title = meta.catalog_sha256', self.app)
 
 
 if __name__ == "__main__":
