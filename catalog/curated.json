@@ -1806,5 +1806,12 @@
     "skill_path": "skills/expense-report-writer",
     "category": "business",
     "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/expense-report-writer-workbuddy-skill.zip"
+  },
+  {
+    "catalog_id": "github:microsoft/playwright:packages/playwright-core/src/tools/skills/playwright-cli/SKILL.md",
+    "skill": "playwright-cli",
+    "skill_path": "skills/playwright-cli",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/playwright-cli-workbuddy-skill.zip"
   }
 ]

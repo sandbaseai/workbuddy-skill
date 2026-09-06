@@ -189,6 +189,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Review and Refactor](skills/review-and-refactor/) | 按项目约定审查代码并规划可验证的重构 |
 | [Spring Boot Testing](skills/spring-boot-testing/) | 选择测试切片、断言、Mock 和 Testcontainers 策略 |
 | [Expense Report Writer](skills/expense-report-writer/) | 按政策和模板整理费用并标记审批要求 |
+| [Playwright CLI](skills/playwright-cli/) | 通过快照和元素引用执行可审计的浏览器操作与测试 |
 
 浏览 [完整精选目录](skills/) 或直接打开 [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/)。每个精选条目都提供来源说明；外部来源的许可证和适配信息见对应的 `SOURCE.json`。
 

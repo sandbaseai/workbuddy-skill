@@ -1,0 +1,24 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [
+      "references/element-attributes.md",
+      "references/playwright-tests.md",
+      "references/request-mocking.md",
+      "references/running-code.md",
+      "references/session-management.md",
+      "references/storage-state.md",
+      "references/test-generation.md",
+      "references/tracing.md",
+      "references/video-recording.md"
+    ],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:microsoft/playwright:packages/playwright-core/src/tools/skills/playwright-cli/SKILL.md",
+  "declared_source_license": "Apache-2.0",
+  "path": "packages/playwright-core/src/tools/skills/playwright-cli/SKILL.md",
+  "repository": "microsoft/playwright",
+  "sha": "b7c883842d260be064580215a7ccb0d91c1270ef",
+  "source_url": "https://github.com/microsoft/playwright/blob/46cd5008d12d4e1297793d921e6cc3b595e388da/packages/playwright-core/src/tools/skills/playwright-cli/SKILL.md"
+}
