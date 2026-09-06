@@ -31,7 +31,8 @@ let catalog = [];
 let filtered = [];
 let shown = 0;
 const PAGE_SIZE = 40;
-const CHECKSUM_URL = "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/SHA256SUMS";
+const DEFAULT_CHECKSUM_URL = "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/SHA256SUMS";
+let checksumUrl = DEFAULT_CHECKSUM_URL;
 const FILTERS = {
   category: new Set([...category.options].map((option) => option.value)),
   compatibility: new Set([...compatibility.options].map((option) => option.value)),
@@ -151,7 +152,7 @@ function render(reset = true) {
         ${skill.a ? `<span class="badge package-review">${isChinese ? "精选包" : "reviewed package"}</span>` : ""}
         <button class="copy-id" type="button" data-catalog-id="${escapeHtml(catalogId(skill))}">${isChinese ? "复制 ID" : "Copy ID"}</button>
         ${skill.a ? `<a class="result-install" href="${escapeHtml(skill.a)}">${isChinese ? "安装 ZIP" : "Install ZIP"} ↓</a>` : ""}
-        ${skill.a ? `<a class="result-verify" href="${CHECKSUM_URL}" target="_blank" rel="noreferrer">${isChinese ? "校验 SHA256" : "Verify SHA256"} ↗</a>` : ""}
+        ${skill.a ? `<a class="result-verify" href="${escapeHtml(checksumUrl)}" target="_blank" rel="noreferrer">${isChinese ? "校验 SHA256" : "Verify SHA256"} ↗</a>` : ""}
         <a class="result-open" href="${escapeHtml(skill.u)}" target="_blank" rel="noreferrer">${isChinese ? "查看来源" : "Inspect"} ↗</a>
       </span>
     </article>`).join("");
@@ -259,6 +260,9 @@ Promise.all([fetch("catalog.json"), fetch("catalog-meta.json")])
   .then(([data, meta]) => {
     if (meta.snapshot_frozen !== true) throw new Error("catalog snapshot is not frozen");
     catalog = data;
+    if (typeof meta.release_checksum_url === "string" && meta.release_checksum_url.startsWith("https://")) {
+      checksumUrl = meta.release_checksum_url;
+    }
     filtered = data;
     metricRecords.textContent = meta.records.toLocaleString();
     heroCount.textContent = meta.records.toLocaleString();

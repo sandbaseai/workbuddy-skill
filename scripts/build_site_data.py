@@ -104,6 +104,7 @@ meta = {
     "repositories": len(repositories),
     "unique_content_shas": len(shas),
     "curated_adaptations": len(curated),
+    "release_checksum_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/SHA256SUMS",
 }
 meta_output = ROOT / "site" / "catalog-meta.json"
 meta_temporary = meta_output.with_suffix(".json.tmp")

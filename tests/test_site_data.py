@@ -22,6 +22,11 @@ class SiteDataTests(unittest.TestCase):
             text=True,
         )
         records = json.loads((ROOT / "site" / "catalog.json").read_text(encoding="utf-8"))
+        metadata = json.loads((ROOT / "site" / "catalog-meta.json").read_text(encoding="utf-8"))
+        self.assertEqual(
+            metadata["release_checksum_url"],
+            "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/SHA256SUMS",
+        )
         playwright_components = next(
             item
             for item in records
