@@ -1,5 +1,17 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/eval-driven-dev/SKILL.md",
+    "skill": "eval-driven-dev",
+    "skill_path": "skills/eval-driven-dev",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/eval-driven-dev-workbuddy-skill.zip"
+  },
+  {
+    "catalog_id": "github:github/awesome-copilot:skills/postgresql-code-review/SKILL.md",
+    "skill": "postgresql-code-review",
+    "skill_path": "skills/postgresql-code-review",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/postgresql-code-review-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/create-tldr-page/SKILL.md",
     "skill": "create-tldr-page",
     "skill_path": "skills/create-tldr-page",

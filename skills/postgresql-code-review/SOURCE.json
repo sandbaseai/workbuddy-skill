@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["The upstream skill is a prompt-only review guide and does not bundle a database fixture, schema, or workload baseline."],
+    "packaged_resources": [],
+    "security_signals": ["preserved PostgreSQL-specific review areas including JSONB, arrays, schema, indexes, query optimization, and RLS", "added WorkBuddy read-only defaults, parameterization, evidence requirements, redaction, and production mutation gates"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/postgresql-code-review/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/postgresql-code-review/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "7b1ebe6333397841ca918dec904d24d4695fe953",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/postgresql-code-review/SKILL.md"
+}

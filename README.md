@@ -88,6 +88,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Spark Optimization](skills/spark-optimization/) | 依据运行基线优化分区、shuffle、AQE、倾斜、缓存、内存和分布式作业成本 |
 | [Distributed Tracing](skills/distributed-tracing/) | 用隐私安全的 OpenTelemetry 追踪上下文、依赖、延迟、故障和日志关联 |
 | [LLM Evaluation](skills/llm-evaluation/) | 用可复现数据集、分层指标、人工校准和回归门禁验证模型与 RAG 质量 |
+| [Eval-Driven Development](skills/eval-driven-dev/) | 用黄金数据集、运行证据和分层评分改进 Python LLM 应用 |
 | [Hybrid Search Implementation](skills/hybrid-search-implementation/) | 组合向量与关键词召回，以融合、重排、权限过滤和评测提升检索质量 |
 | [Vector Index Tuning](skills/vector-index-tuning/) | 依据召回、延迟、内存、构建和删除证据调优向量索引与生命周期 |
 | [Python Observability](skills/python-observability/) | 以隐私安全的日志、黄金信号、关联 ID、指标和追踪诊断 Python 服务 |
@@ -96,6 +97,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Async Python Patterns](skills/async-python-patterns/) | 用有界并发、非阻塞 I/O、取消传播、deadline、背压和资源清理构建异步服务 |
 | [Python Packaging](skills/python-packaging/) | 用现代元数据、锁定依赖、可复现构建、provenance 和发布门禁分发 Python 包 |
 | [PostgreSQL Table Design](skills/postgresql-table-design/) | 依据 workload 设计类型、约束、索引、分区、RLS 和可回滚在线迁移 |
+| [PostgreSQL Code Review](skills/postgresql-code-review/) | 评审 PostgreSQL 查询、schema、迁移、索引、计划和 RLS 安全边界 |
 | [Database Migration](skills/database-migration/) | 用 expand-contract、幂等回填、兼容窗口、锁/复制证据和回滚设计数据库演进 |
 | [SLO Implementation](skills/slo-implementation/) | 用用户旅程 SLI、错误预算、多窗口 burn 告警和治理策略管理可靠性 |
 | [Prometheus Configuration](skills/prometheus-configuration/) | 用指标契约、受控抓取、规则、告警、HA、保留和高基数治理构建监控 |

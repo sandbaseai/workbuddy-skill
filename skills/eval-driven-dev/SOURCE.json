@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["The upstream skill references pixie-qa and project-specific setup resources that are not bundled here."],
+    "packaged_resources": [],
+    "security_signals": ["preserved evaluation-driven criteria, golden datasets, instrumentation, real application paths, evaluator calibration, and regression workflow", "added WorkBuddy budget, authorization, privacy, non-production, and evidence-boundary controls"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/eval-driven-dev/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/eval-driven-dev/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "7b1ebe6333397841ca918dec904d24d4695fe953",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/eval-driven-dev/SKILL.md"
+}
