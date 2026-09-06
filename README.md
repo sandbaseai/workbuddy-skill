@@ -6,6 +6,9 @@
 Skills，查看来源与许可证，选择适合的能力，并下载经过整理的 WorkBuddy
 版本。
 
+本 README 面向使用者，聚焦目录发现、来源审阅和 WorkBuddy 导入；项目维护、
+自动化校验和贡献流程不作为使用前提，分别放在贡献与安全文档中。
+
 当前公开目录包含 **21,818 条 Skill 快照**，另有 **277 个经过审阅、可直接安装的 WorkBuddy 包**。
 
 [![Latest release](https://img.shields.io/github/v/release/sandbaseai/workbuddy-skill)](https://github.com/sandbaseai/workbuddy-skill/releases/latest)
@@ -246,6 +249,10 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 [Open Atlas](https://sandbaseai.github.io/workbuddy-skill/) · [English quickstart](docs/quickstart.md) · [Resource map](docs/resources.md) · [Starter packs](docs/starter-packs.md) · [Browse reviewed packages in Atlas](https://sandbaseai.github.io/workbuddy-skill/?packageStatus=reviewed#catalog) · [No-JavaScript package index](https://sandbaseai.github.io/workbuddy-skill/packages.html) · [Copy-ready use cases](docs/use-cases.md) · [Share a result](https://github.com/sandbaseai/workbuddy-skill/discussions) · [Request a capability](https://github.com/sandbaseai/workbuddy-skill/issues/new?template=feature.yml) · [Report package feedback](https://github.com/sandbaseai/workbuddy-skill/issues/new?template=package-feedback.yml)
 
 WorkBuddy Skill Hub is an open catalog of public Agent Skills plus a curated set of reviewed, bilingual WorkBuddy workflows.
+
+This README is for users: discovery, provenance review, and WorkBuddy import come
+first. Repository maintenance, automation checks, and contribution procedures are
+documented separately and are not prerequisites for using the catalog.
 
 The public catalog contains **21,818 indexed Skills**, alongside **277 reviewed WorkBuddy packages** ready to install.
 

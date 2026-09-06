@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Clarify in the bilingual README that the public entry point focuses on discovery, provenance review, and WorkBuddy usage rather than repository maintenance rules.
 - Add Tencent CloudBase AI Toolkit as a WorkBuddy backend, Skills, MCP, and deployment reference without copying its code or Skills.
 - Add current references for the read-only-first `skill-manager` governance CLI and the cross-platform Skills Hub manager.
 - Add a bilingual quick path for installing and managing Skills through WorkBuddy's built-in Skill Marketplace.
