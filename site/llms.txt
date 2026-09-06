@@ -139,6 +139,8 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 
 The Atlas stores metadata, immutable source links, compatibility signals, and conservative static review signals. A clean signal is not a security guarantee. Review the original license, instructions, bundled resources, scripts, network behavior, and permissions before adapting or installing any Skill.
 
+For a copy-ready pre-publication content-review workflow, use the “Pre-publication content review” section in `docs/use-cases.md`. Keep it local and read-only by default; real-time platform searches require explicit confirmation of tools, credentials, network access, and cost.
+
 ## Install a reviewed package
 
 Use a package's `asset` value from `packages.json` in the following command, then verify the ZIP before importing it into WorkBuddy under **Experts · Skills · Connectors → Skills → Add Skill**:

@@ -373,6 +373,13 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("docs/quickstart.zh-CN.md", support)
         self.assertIn("sandbaseai.github.io/workbuddy-skill/packages.html", support)
 
+    def test_use_cases_include_local_first_content_review(self):
+        use_cases = (ROOT / "docs/use-cases.md").read_text(encoding="utf-8")
+        self.assertIn("self-media-compliance-review", use_cases)
+        self.assertIn("Pre-publication content review", use_cases)
+        self.assertIn("不要发布", use_cases)
+        self.assertIn("实时平台接口", use_cases)
+
     def test_support_has_separate_showcase_and_discussion_paths(self):
         support = (ROOT / "SUPPORT.md").read_text(encoding="utf-8")
         self.assertIn("template=showcase.yml", support)
