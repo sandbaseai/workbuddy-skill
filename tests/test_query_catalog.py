@@ -2,6 +2,7 @@ from pathlib import Path
 from contextlib import redirect_stderr, redirect_stdout
 import io
 import json
+import subprocess
 import sys
 from tempfile import TemporaryDirectory
 import unittest
@@ -27,6 +28,18 @@ def row(name, sha, score, *, status="adaptable", security="no-static-flags", rep
 
 
 class QueryCatalogTests(unittest.TestCase):
+    def test_cli_default_data_paths_work_outside_repository_root(self):
+        with TemporaryDirectory() as directory:
+            result = subprocess.run(
+                [sys.executable, str(ROOT / "scripts/query_catalog.py"), "research", "--limit", "1"],
+                cwd=directory,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("1 result(s)", result.stderr)
+
     def test_help_exposes_copy_ready_search_examples_and_safety_boundary(self):
         output = io.StringIO()
         with redirect_stdout(output):

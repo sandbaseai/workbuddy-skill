@@ -19,6 +19,9 @@ CHECKSUM_URL = "https://github.com/sandbaseai/workbuddy-skill/releases/latest/do
 RELEASE_REPO = "sandbaseai/workbuddy-skill"
 ATLAS_URL = "https://sandbaseai.github.io/workbuddy-skill/"
 GITHUB_SKILL_SEARCH_URL = "https://github.com/search?q=filename%3ASKILL.md&type=code"
+REPO_ROOT = Path(__file__).resolve().parents[1]
+
+
 def catalog_id(row: dict) -> str:
     return str(row.get("id") or f"github:{row.get('repository', '')}:{row.get('path', '')}")
 
@@ -148,7 +151,7 @@ def main() -> int:
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument("terms", nargs="*", help="Words that must all match")
-    parser.add_argument("--catalog", type=Path, default=Path("catalog/skills.jsonl"))
+    parser.add_argument("--catalog", type=Path, default=REPO_ROOT / "catalog/skills.jsonl")
     parser.add_argument("--limit", type=int, default=20)
     parser.add_argument(
         "--status",
@@ -175,7 +178,7 @@ def main() -> int:
     parser.add_argument(
         "--curated",
         type=Path,
-        default=Path("catalog/curated.json"),
+        default=REPO_ROOT / "catalog/curated.json",
         help="Curated package manifest used by --package-status",
     )
     parser.add_argument(
