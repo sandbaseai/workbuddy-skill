@@ -47,6 +47,7 @@ Use this page to choose the right source before searching the catalog.
 - [Community Awesome WorkBuddy](https://github.com/staruhub/awesome-workbuddy) — another bilingual index of official resources, workflows, tutorials, and comparisons; use as navigation, not as a trust or license decision.
 - [WorkBuddy Skill Groups](https://github.com/darker2016/workbuddy-skill-groups) — an open collection of multi-agent team workflows across engineering, research, marketing, design, legal, finance, and data; inspect each folder's attribution and license before reuse.
 - [WorkBuddy Skills archive](https://github.com/infometa/workbuddyskills) — public-market archive for offline study; the repository states that its contents remain the property of their original authors and are not a license to redistribute.
+- [Community WorkBuddy skills collection](https://github.com/bitcjm/workbuddy-skills) — category-based community collection with user/project installation notes; inspect scripts, dependencies, and license before reuse.
 
 ## This repository
 

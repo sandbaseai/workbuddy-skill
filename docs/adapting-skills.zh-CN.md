@@ -45,6 +45,33 @@ python3 scripts/adapt_skill.py \
 
 生成的 ZIP 可以直接导入 WorkBuddy，`SKILL.md` 位于 ZIP 根目录，并附带 `SOURCE.json`。后者记录不可变来源 URL、blob SHA、声明的许可证、适配说明和已打包资源，方便追溯。
 
+### 导入前快速检查
+
+确认 ZIP 至少符合下面的结构：
+
+```text
+my-skill.zip
+├── SKILL.md              # 必须位于 ZIP 根目录
+├── SOURCE.json           # 本仓库适配器生成的来源信息
+└── references/           # 只有 SKILL.md 引用了资源时才需要
+```
+
+打开 `SKILL.md` 的前 35 行，确认 frontmatter 包含官方指南要求的
+`description`、`description_zh`、`description_en`、`version` 和 `author`。
+适配器还会写入 `license`、`category` 和中英文展示名称，让包离开本仓库后仍然
+可理解。若正文引用了不存在的资源文件，应补齐文件或删除引用，不能把它当作
+普通提示忽略。
+
+不解压也可以先做一次快速检查：
+
+```bash
+unzip -l dist/adapted/*.zip
+unzip -p dist/adapted/*.zip SKILL.md | sed -n '1,35p'
+```
+
+如果 Marketplace 的解析规则或必填字段发生变化，以[官方 Skill 指南](https://open.workbuddy.cn/zh/docs/skill)
+为准。
+
 ## 第三步：验证后再分享
 
 导入前检查 ZIP 结构和 `SOURCE.json`；导入后用只读提示词做一次小范围测试。确认来源、权限、费用和副作用都清楚，再分享给其他用户或用于真实数据。
