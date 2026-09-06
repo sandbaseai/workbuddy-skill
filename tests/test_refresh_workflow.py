@@ -188,6 +188,15 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("--auto --squash --delete-branch", workflow)
         self.assertNotIn("actions/checkout", workflow)
 
+    def test_merged_branch_cleanup_only_deletes_safe_same_repository_refs(self):
+        workflow = (ROOT / ".github/workflows/cleanup-merged-branches.yml").read_text(encoding="utf-8")
+        self.assertIn("types: [closed]", workflow)
+        self.assertIn('[[ "$MERGED" != "true" ]]', workflow)
+        self.assertIn('[[ "$HEAD_REPOSITORY" != "$GITHUB_REPOSITORY" ]]', workflow)
+        self.assertIn('[[ -z "$BRANCH" || "$BRANCH" == "main" ]]', workflow)
+        self.assertIn("gh api --method DELETE", workflow)
+        self.assertNotIn("actions/checkout", workflow)
+
     def test_unreleased_changelog_covers_current_public_improvements(self):
         changelog = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
         unreleased = changelog.split("## [", 1)[0]

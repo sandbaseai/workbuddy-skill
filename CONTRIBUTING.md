@@ -44,6 +44,9 @@ content cannot receive write permissions.
 Draft pull requests are queued after they emit `ready_for_review`; keep a draft
 until the scope and local checks are ready, then mark it ready to activate the
 same trusted-branch flow.
+After a trusted same-repository PR is merged, a separate read-only-to-PR-data
+cleanup workflow removes its non-default branch without checking out PR code;
+fork branches remain owned by their original repository.
 The `main` branch requires the `validate` status check for pull requests and
 conversation resolution; admin enforcement remains off so authorized direct
 maintenance commits can continue when appropriate.
