@@ -186,6 +186,29 @@ class LocalPackagingTests(unittest.TestCase):
             with ZipFile(root / "dist/licensed-workbuddy.zip") as archive:
                 self.assertIn('license: "Apache-2.0"', archive.read("SKILL.md").decode())
 
+    def test_rejects_license_mismatch(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source = root / "licensed" / "SKILL.md"
+            source.parent.mkdir()
+            source.write_text(
+                "---\nname: licensed\ndescription: Licensed skill\n"
+                "license: MIT\n---\n\n# Licensed\n",
+                encoding="utf-8",
+            )
+            command = [
+                sys.executable, str(ROOT / "scripts" / "adapt_skill.py"),
+                "--source-file", str(source), "--output", str(root / "dist"),
+                "--display-name-zh", "授权技能", "--display-name-en", "Licensed",
+                "--description-zh", "授权技能", "--description-en", "Licensed skill",
+                "--author", "Test", "--source-license", "Apache-2.0",
+            ]
+            result = subprocess.run(
+                command, cwd=ROOT, capture_output=True, text=True
+            )
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("source license does not match", result.stderr)
+
     def test_preserves_compatibility_metadata(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
