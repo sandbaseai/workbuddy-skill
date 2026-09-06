@@ -219,6 +219,12 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertNotIn("re-enable the crawler", readme.lower())
         self.assertNotIn("future maintenance focuses", readme.lower())
 
+    def test_external_sandbase_migration_pointer_is_not_a_skill(self):
+        pointer = (ROOT / "skills/sandbase/README.md").read_text(encoding="utf-8")
+        self.assertIn("awesome-workbuddy/tree/main/skills/sandbase", pointer)
+        self.assertIn("contains no\n`SKILL.md`", pointer)
+        self.assertFalse((ROOT / "skills/sandbase/SKILL.md").exists())
+
     def test_catalog_guides_document_catalog_id_roundtrip(self):
         for path in ("docs/catalog-guide.md", "docs/catalog-guide.zh-CN.md"):
             guide = (ROOT / path).read_text(encoding="utf-8")
