@@ -73,6 +73,28 @@ URL, stable asset filename, checksum URL, and a copy-ready GitHub CLI command ar
 `workbuddy_checksum_url`, and `workbuddy_download_command`, so a small script can download and verify the selected
 package without reconstructing release paths.
 
+For a machine-readable shortlist of installable, high-signal results, combine
+the reviewed-package filter with `--json` and inspect the first result before
+copying its command:
+
+```bash
+python3 scripts/query_catalog.py research \
+  --high-signal --package-status reviewed --limit 5 --json \
+  > research-packages.json
+jq -r '.[].workbuddy_download_command' research-packages.json
+```
+
+If `jq` is not available, use the Python standard library instead:
+
+```bash
+python3 -c 'import json; from pathlib import Path; print("\\n".join(item["workbuddy_download_command"] for item in json.loads(Path("research-packages.json").read_text())))'
+```
+
+The second command only prints commands; it does not run them. Open the
+selected `source_url`, confirm its license and side effects, then run the
+chosen `gh release download` command and verify `SHA256SUMS` as described in
+the [quickstart](quickstart.md).
+
 The human-readable output includes a complete `catalog id`. Copy that value
 directly into `review_skill.py` or `adapt_skill.py`; do not reconstruct an ID
 from the display name.
