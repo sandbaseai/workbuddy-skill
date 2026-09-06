@@ -249,6 +249,8 @@ package_page = """<!doctype html>
       <nav class="category-nav page-nav" aria-label="Atlas navigation">
         <a href="index.html">English Atlas</a>
         <a href="zh-CN.html">中文 Atlas</a>
+        <a href="categories.html">Categories</a>
+        <a href="categories.zh-CN.html">中文类别</a>
       </nav>
       <h1>Reviewed WorkBuddy Packages / 精选 WorkBuddy 包</h1>
       <p>Browse __PACKAGE_COUNT__ installable packages without JavaScript. Each entry keeps an immutable source link, a Release ZIP, and SHA256SUMS verification.</p>

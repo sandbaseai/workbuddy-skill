@@ -70,6 +70,8 @@ class SiteDataTests(unittest.TestCase):
         self.assertIn("docs/resources.zh-CN.md", package_page)
         self.assertIn('href="index.html">English Atlas</a>', package_page)
         self.assertIn('href="zh-CN.html">中文 Atlas</a>', package_page)
+        self.assertIn('href="categories.html">Categories</a>', package_page)
+        self.assertIn('href="categories.zh-CN.html">中文类别</a>', package_page)
         self.assertIn("Press / to focus · Esc to clear", package_page)
         self.assertIn("event.key === '/'", package_page)
         self.assertIn("event.key === 'Escape'", package_page)
