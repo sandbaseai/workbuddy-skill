@@ -17,6 +17,9 @@
 | 准备发布 | [github-release](https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/github-release-workbuddy-skill.zip) | 版本、发布证据、校验和资产核对 |
 | 编写可维护文档 | [documentation-writer](https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/documentation-writer-workbuddy-skill.zip) | 教程、操作指南、参考和解释 |
 
+如果需要精确的包文件名、固定来源、可复制下载命令和对应的 `SHA256SUMS`，
+导入前请打开[无脚本精选包清单](https://sandbaseai.github.io/workbuddy-skill/packages.html)核对。
+
 ## 安全试运行
 
 1. 点击上面的 ZIP 链接下载，或按[快速开始](quickstart.zh-CN.md)中的命令行

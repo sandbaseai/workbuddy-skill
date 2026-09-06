@@ -31,6 +31,7 @@ All notable changes to this project are documented here.
 - Added the MIT-licensed `agency-agents-zh` expert-role collection to the bilingual resource map as an inspect-before-adapting reference.
 - Added the MIT-licensed offline-first WorkBuddy Usage Status dashboard to the bilingual resource map for usage-observability research.
 - Added the MIT-licensed markitdown-skill document-conversion workflow to the bilingual resource map with its SSRF and optional-capability boundaries noted.
+- Linked both Starter Packs guides directly to the reviewed package index for pinned assets, download commands, and SHA256SUMS verification.
 - Added direct bilingual resource-map and Starter Packs links to the README entry navigation.
 - Linked the copy-ready WorkBuddy use-case guide from both README language entry points.
 - Fixed trusted auto-merge coverage for draft pull requests when they become ready for review.
