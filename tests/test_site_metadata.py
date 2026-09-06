@@ -67,6 +67,10 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("new catalog records are not automatically added", content)
         self.assertIn("docs/catalog-guide.md", content)
         self.assertIn("docs/catalog-guide.zh-CN.md", content)
+        self.assertIn("www.workbuddy.ai/docs/zh/workbuddy/Quickstart", content)
+        self.assertIn("Create-Skills", content)
+        self.assertIn("MCP-Guide", content)
+        self.assertIn("Automation-Guide", content)
 
 
 if __name__ == "__main__":

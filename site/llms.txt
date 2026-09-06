@@ -17,6 +17,10 @@ reviewed packages; new catalog records are not automatically added.
 - Chinese quickstart: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.zh-CN.md
 - Catalog reading guide: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/catalog-guide.md
 - Chinese catalog reading guide: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/catalog-guide.zh-CN.md
+- Official WorkBuddy quickstart: https://www.workbuddy.ai/docs/zh/workbuddy/Quickstart
+- Official Skills tutorial: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills
+- Official MCP guide: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide
+- Official Automation guide: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide
 - Adaptation guide: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/adapting-skills.md
 - Chinese adaptation guide: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/adapting-skills.zh-CN.md
 
