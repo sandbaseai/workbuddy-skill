@@ -30,6 +30,7 @@ class SiteDataTests(unittest.TestCase):
         )
         self.assertEqual(len(packages), metadata["curated_adaptations"])
         self.assertTrue(all(package["download_url"].endswith("-workbuddy-skill.zip") for package in packages))
+        self.assertTrue(all(package["checksum_url"].endswith("/SHA256SUMS") for package in packages))
         playwright_components = next(
             item
             for item in records

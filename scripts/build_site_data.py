@@ -13,6 +13,7 @@ SOURCE = ROOT / "catalog" / "skills.jsonl"
 CURATED = ROOT / "catalog" / "curated.json"
 OUTPUT = ROOT / "site" / "catalog.json"
 PACKAGES_OUTPUT = ROOT / "site" / "packages.json"
+CHECKSUM_URL = "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/SHA256SUMS"
 
 CATEGORY_RULES = (
     ("security", ("security", "audit", "pentest", "vulnerability", "sast", "threat", "auth")),
@@ -104,6 +105,7 @@ for entry in sorted(curated_entries, key=lambda item: item["skill"]):
             "source_url": source["source_url"],
             "sha": source["sha"],
             "download_url": entry["download_url"],
+            "checksum_url": CHECKSUM_URL,
             "category": curated.get(entry["catalog_id"], {}).get(
                 "category", category_for(source)
             ),
@@ -130,7 +132,7 @@ meta = {
     "repositories": len(repositories),
     "unique_content_shas": len(shas),
     "curated_adaptations": len(curated),
-    "release_checksum_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/SHA256SUMS",
+    "release_checksum_url": CHECKSUM_URL,
 }
 meta_output = ROOT / "site" / "catalog-meta.json"
 meta_temporary = meta_output.with_suffix(".json.tmp")

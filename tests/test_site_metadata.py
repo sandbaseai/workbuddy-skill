@@ -22,6 +22,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertEqual(schema["type"], "array")
         properties = schema["items"]["properties"]
         self.assertEqual(properties["download_url"]["format"], "uri")
+        self.assertEqual(properties["checksum_url"]["format"], "uri")
         self.assertIn("sha", schema["items"]["required"])
 
     def test_citation_file_describes_the_public_atlas(self):
