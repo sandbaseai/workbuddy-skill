@@ -3,6 +3,9 @@ description: Suggest a real workflow the skill should handle better
 title: "[Capability]: "
 labels: [enhancement]
 body:
+  - type: markdown
+    attributes:
+      value: The public catalog is a frozen snapshot. Please use this form for an existing reviewed package or workflow improvement, not to request a new catalog record.
   - type: textarea
     id: job
     attributes:
@@ -29,4 +32,3 @@ body:
         - Other
     validations:
       required: true
-

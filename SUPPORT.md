@@ -9,6 +9,10 @@ or use the local helper:
 python3 scripts/query_catalog.py browser --limit 10
 ```
 
+The public catalog is a frozen snapshot of 21,818 indexed Skills. Support and
+capability requests should improve documentation, usability, validation, or an
+existing reviewed package; they do not add new catalog records.
+
 Every result points to an exact GitHub source. Indexed does not mean trusted;
 review provenance, license, permissions, and bundled code before installation.
 

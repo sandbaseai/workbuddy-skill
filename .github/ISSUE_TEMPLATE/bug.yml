@@ -9,8 +9,8 @@ body:
   - type: input
     id: version
     attributes:
-      label: Release version
-      placeholder: v0.1.0
+      label: WorkBuddy or package version
+      placeholder: WorkBuddy 4.x / package v4.66.0
     validations:
       required: true
   - type: textarea
@@ -31,4 +31,3 @@ body:
     attributes:
       label: Sanitized error or trace
       render: shell
-
