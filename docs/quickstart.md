@@ -12,6 +12,12 @@ before choosing a candidate.
 The catalog is a frozen snapshot of 21,818 indexed Skills. Use it to find and review
 existing entries; new additions are not automatically published.
 
+For platform-level instructions, use the [official WorkBuddy quickstart](https://www.workbuddy.ai/docs/zh/workbuddy/Quickstart),
+[official Skills tutorial](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills),
+[MCP guide](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide),
+and [Automation guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide).
+This repository explains catalog discovery and packaging; the official docs remain the source of truth for product UI and platform behavior.
+
 ## Install one curated Skill in 5 minutes
 
 ### 1. Download
