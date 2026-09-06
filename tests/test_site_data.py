@@ -63,6 +63,8 @@ class SiteDataTests(unittest.TestCase):
         self.assertIn("docs/quickstart.zh-CN.md", package_page)
         self.assertIn("docs/resources.md", package_page)
         self.assertIn("docs/resources.zh-CN.md", package_page)
+        self.assertIn('href="index.html">English Atlas</a>', package_page)
+        self.assertIn('href="zh-CN.html">中文 Atlas</a>', package_page)
         self.assertIn("Privacy Policy", package_page)
         self.assertIn("star the project", package_page)
         self.assertIn("/discussions", package_page)
