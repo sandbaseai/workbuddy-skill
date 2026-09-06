@@ -29,6 +29,7 @@ class AtlasFrontendTests(unittest.TestCase):
         self.assertIn("control.value = control.options[0].value", self.app)
         self.assertIn("meta.records.toLocaleString()", self.app)
         self.assertIn("heroCount.textContent", self.app)
+        self.assertIn('meta.snapshot_frozen !== true', self.app)
 
 
 if __name__ == "__main__":

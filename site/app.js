@@ -219,6 +219,7 @@ Promise.all([fetch("catalog.json"), fetch("catalog-meta.json")])
     return Promise.all([catalogResponse.json(), metaResponse.json()]);
   })
   .then(([data, meta]) => {
+    if (meta.snapshot_frozen !== true) throw new Error("catalog snapshot is not frozen");
     catalog = data;
     filtered = data;
     metricRecords.textContent = meta.records.toLocaleString();
