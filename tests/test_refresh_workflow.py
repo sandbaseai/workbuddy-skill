@@ -10,6 +10,13 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("softprops/action-gh-release@v3.0.3", workflow)
         self.assertNotIn("softprops/action-gh-release@v2", workflow)
 
+    def test_release_validates_the_frozen_catalog_before_packaging(self):
+        workflow = (ROOT / ".github/workflows/release.yml").read_text(encoding="utf-8")
+        self.assertIn(
+            "validate_catalog.py --minimum 10000 --require-analysis --check-stats",
+            workflow,
+        )
+
     def test_catalog_refresh_is_frozen_without_automatic_additions(self):
         workflow = (ROOT / ".github/workflows/refresh-catalog.yml").read_text(encoding="utf-8")
         self.assertNotIn("schedule:", workflow)

@@ -16,6 +16,8 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.x"
+      - name: Validate frozen catalog
+        run: python3 scripts/validate_catalog.py --minimum 10000 --require-analysis --check-stats
       - run: ./scripts/package_skill.sh
       # Replaces softprops/action-gh-release@v3.0.3 with rate-limited CLI uploads.
       - name: Create release
