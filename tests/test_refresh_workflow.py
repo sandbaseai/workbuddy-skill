@@ -73,6 +73,7 @@ class RefreshWorkflowTests(unittest.TestCase):
             )
             self.assertIn(expected_open_platform, resources)
             self.assertIn("WorkBuddyGuide", resources)
+            self.assertIn("agentic-awesome-skills", resources)
             self.assertIn("AI-Coding-Guide-Zh", resources)
             self.assertIn("learn-workbuddy", resources)
             self.assertIn("yinqd3/workbuddy-skills", resources)
