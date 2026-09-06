@@ -177,11 +177,13 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("Reviewed package availability", english)
         self.assertIn("精选包是否可用", chinese)
 
-    def test_public_freshness_metadata_matches_site_schedule(self):
+    def test_catalog_readme_stays_user_facing_and_site_schedule_is_published(self):
         catalog_docs = (ROOT / "catalog/README.md").read_text(encoding="utf-8")
         sitemap = (ROOT / "site/sitemap.xml").read_text(encoding="utf-8")
-        self.assertIn("The published snapshot is frozen", catalog_docs)
-        self.assertIn("read-only frozen-catalog check", catalog_docs)
+        self.assertIn("Search locally", catalog_docs)
+        self.assertNotIn("Snapshot maintenance", catalog_docs)
+        self.assertNotIn("The published snapshot is frozen", catalog_docs)
+        self.assertNotIn("auto-merge", catalog_docs.lower())
         self.assertEqual(sitemap.count("<changefreq>daily</changefreq>"), 2)
         self.assertIn("https://sandbaseai.github.io/workbuddy-skill/catalog.json", sitemap)
         self.assertIn("https://sandbaseai.github.io/workbuddy-skill/packages.json", sitemap)

@@ -23,6 +23,15 @@
 
 当前目录提供 **21,818 条公开 Skill 快照**，适合先缩小搜索范围，再通过每条结果的来源链接确认上游最新版本。
 
+## 最短使用路径
+
+| 如果你想…… | 先做什么 |
+|---|---|
+| 现在就安装精选包 | 打开[精选包清单](https://sandbaseai.github.io/workbuddy-skill/packages.html)，下载 ZIP，校验 `SHA256SUMS`，再把原始 ZIP 上传到 WorkBuddy。 |
+| 找一个特定能力 | 在 [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) 搜索；需要可安装结果时打开“有精选包可用”，然后检查来源和许可证。 |
+| 在本地搜索目录 | 执行 `python3 scripts/query_catalog.py <关键词> --package-status reviewed --sort score --limit 10`。 |
+| 把公开来源制作成 WorkBuddy 包 | 阅读[适配教程](adapting-skills.zh-CN.md)，确认固定来源和许可证后再制作。 |
+
 平台功能请优先参考[官方快速开始](https://www.workbuddy.ai/docs/zh/workbuddy/Quickstart)、[官方 Skills 教程](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills)、[MCP 指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide)和[Automation 指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide)。如果导入的 Skill 需要连接器，请先阅读[官方连接器指南](https://open.workbuddy.cn/docs/connector)，确认选择 MCP + Skill 还是 CLI + Skill，并检查认证和权限。也可以浏览官方的 [Skill Marketplace](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) 和 [Explore](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Explore)，查看现成能力和案例。如果需要确认 Open Platform 的 ZIP 结构、必填 frontmatter 和解析失败排查，请查看[官方 Open Platform Skill 指南](https://open.workbuddy.cn/zh/docs/skill)。本仓库负责目录发现与打包说明；产品界面和平台行为以官方文档为准。
 
 ## 先选择安装路径
