@@ -244,6 +244,8 @@ package_page = """<!doctype html>
       <h1>Reviewed WorkBuddy Packages / 精选 WorkBuddy 包</h1>
       <p>Browse __PACKAGE_COUNT__ installable packages without JavaScript. Each entry keeps an immutable source link, a Release ZIP, and SHA256SUMS verification.</p>
       <p>无需 JavaScript 即可浏览 __PACKAGE_COUNT__ 个可安装精选包；每条记录都保留不可变来源、Release ZIP 和 SHA256SUMS 校验入口。</p>
+      <p>Download the original ZIP, verify it with SHA256SUMS, then import it in WorkBuddy under <strong>Experts · Skills · Connectors → Skills → Add Skill</strong>. Read the <a href="https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.md">English quickstart</a> or <a href="https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.zh-CN.md">中文快速开始</a> before the first run.</p>
+      <p>下载原始 ZIP 并用 SHA256SUMS 校验后，在 WorkBuddy 的<strong>专家 · Skills · Connectors → Skills → 添加 Skill</strong>中导入；首次运行前请阅读<a href="https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.zh-CN.md">中文快速开始</a>或<a href="https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.md">English quickstart</a>。</p>
       <nav class="category-nav" aria-label="Package categories">""" + category_nav + """</nav>
       <form class="package-search" role="search" onsubmit="return false">
         <label for="package-filter">Filter packages by name, repository, path, or category / 按名称、仓库、路径或分类筛选</label>

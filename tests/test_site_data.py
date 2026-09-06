@@ -42,6 +42,9 @@ class SiteDataTests(unittest.TestCase):
             package_page,
         )
         self.assertIn("Copy command / 复制命令", package_page)
+        self.assertIn("Experts · Skills · Connectors → Skills → Add Skill", package_page)
+        self.assertIn("专家 · Skills · Connectors → Skills → 添加 Skill", package_page)
+        self.assertIn("docs/quickstart.zh-CN.md", package_page)
         self.assertIn("item.dataset.search.toLowerCase().includes(query)", package_page)
         self.assertEqual(package_page.count('class="copy-command"'), len(packages))
         self.assertEqual(package_page.count('class="copy-status"'), len(packages))
