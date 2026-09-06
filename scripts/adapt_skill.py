@@ -100,8 +100,16 @@ def collect_resources(
                 url = f"https://raw.githubusercontent.com/{repository}/{commit}/{remote_path}"
                 content = fetch_bytes(url)
             else:
-                candidate = (source_file.parent / Path(*path.parts)).resolve()
                 root = source_file.parent.resolve()
+                unresolved = source_file.parent.joinpath(*path.parts)
+                cursor = source_file.parent
+                for part in path.parts:
+                    cursor = cursor / part
+                    if cursor.is_symlink():
+                        raise SystemExit(
+                            f"symlinked bundled resource is not supported: {relative}"
+                        )
+                candidate = unresolved.resolve()
                 if not candidate.is_relative_to(root) or not candidate.is_file():
                     missing.append(relative)
                     continue
@@ -217,6 +225,10 @@ def main() -> int:
         args.name_hint = record["name_hint"]
     else:
         record = None
+        if args.source_file.is_symlink():
+            raise SystemExit("source file must not be a symlink")
+        if not args.source_file.is_file():
+            raise SystemExit(f"source file is not a regular file: {args.source_file}")
         source_text = args.source_file.read_text(encoding="utf-8")
         source_info = {"source_file": str(args.source_file)}
         args.name_hint = args.source_file.parent.name
