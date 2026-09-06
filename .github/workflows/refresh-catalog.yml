@@ -1,10 +1,6 @@
 name: Refresh skill catalog
 
 on:
-  schedule:
-    # Revisit GitHub's public Skill surface throughout the day while the
-    # crawler's request/rate-limit bounds keep each run finite and resumable.
-    - cron: "17 */6 * * *"
   workflow_dispatch:
 
 permissions:
@@ -17,6 +13,9 @@ concurrency:
 
 jobs:
   refresh:
+    # The public catalog is intentionally frozen. Keep this workflow file for
+    # provenance and a reversible maintenance switch without adding records.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:

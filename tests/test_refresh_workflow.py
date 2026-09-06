@@ -10,33 +10,19 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("softprops/action-gh-release@v3.0.3", workflow)
         self.assertNotIn("softprops/action-gh-release@v2", workflow)
 
-    def test_six_hour_incremental_refresh_is_serial_and_non_interrupting(self):
+    def test_catalog_refresh_is_frozen_without_automatic_additions(self):
         workflow = (ROOT / ".github/workflows/refresh-catalog.yml").read_text(encoding="utf-8")
-        self.assertIn('cron: "17 */6 * * *"', workflow)
+        self.assertNotIn('cron: "17 */6 * * *"', workflow)
+        self.assertIn("if: ${{ false }}", workflow)
         self.assertIn("group: refresh-skill-catalog", workflow)
         self.assertIn("cancel-in-progress: false", workflow)
-        self.assertIn("target=$((current + 100))", workflow)
-        self.assertIn("--repository github/awesome-copilot", workflow)
-        for repository in (
-            "anthropics/skills",
-            "microsoft/playwright",
-            "aws-samples/sample-agentcore-launchpad",
-            "aws-samples/sample-aws-resilience-skill",
-        ):
-            self.assertIn(f"--repository {repository}", workflow)
-        self.assertIn("--max-rate-wait 120", workflow)
-        self.assertIn('"$crawl_status" -ne 2', workflow)
-        self.assertIn('echo "changed=false" >> "$GITHUB_OUTPUT"', workflow)
-        self.assertEqual(
-            workflow.count("if: steps.crawl.outputs.changed == 'true'"),
-            3,
-        )
+        self.assertIn("The public catalog is intentionally frozen", workflow)
 
     def test_public_freshness_metadata_matches_site_schedule(self):
         catalog_docs = (ROOT / "catalog/README.md").read_text(encoding="utf-8")
         sitemap = (ROOT / "site/sitemap.xml").read_text(encoding="utf-8")
-        self.assertIn("Every-six-hour refreshes", catalog_docs)
-        self.assertIn("rebuilds this index every six hours", catalog_docs)
+        self.assertIn("published snapshot is currently", catalog_docs)
+        self.assertIn("refresh workflow is currently frozen", catalog_docs)
         self.assertEqual(sitemap.count("<changefreq>daily</changefreq>"), 2)
 
     def test_pages_actions_use_current_node_runtime_generations(self):
