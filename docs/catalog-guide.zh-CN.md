@@ -53,6 +53,12 @@ blob 去重并按分数排序。它只是缩小候选范围的辅助条件，不
 将关键词替换成你的任务即可；如果需要从本仓库 Release 下载精选包，再加上
 `--package-status reviewed`。
 
+如果要评估新的 GitHub 来源或爬取范围，可以给
+`scripts/crawl_github_skills.py` 加上 `--dry-run`。它会执行发现并报告候选数量，
+但不会写入 JSONL 输出或统计文件；公开冻结目录仍需要另外显式授权。只想审阅某个
+仓库而不触发全局 Code Search 时，组合使用
+`--repository owner/name --repository-only`。
+
 如果只想查看本仓库已经提供审阅版 Release ZIP 的条目，可以使用精选清单：
 
 ```bash
