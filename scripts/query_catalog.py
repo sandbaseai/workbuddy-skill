@@ -157,11 +157,17 @@ def main() -> int:
     if not args.catalog.exists():
         raise SystemExit(f"catalog not found: {args.catalog}")
     curated_ids = None
+    curated_urls: dict[str, str] = {}
     if args.package_status != "all":
         if not args.curated.exists():
             raise SystemExit(f"curated manifest not found: {args.curated}")
         curated_entries = json.loads(args.curated.read_text(encoding="utf-8"))
         curated_ids = {entry["catalog_id"] for entry in curated_entries}
+        curated_urls = {
+            entry["catalog_id"]: entry["download_url"]
+            for entry in curated_entries
+            if entry.get("download_url")
+        }
 
     rows: list[dict] = []
     with args.catalog.open(encoding="utf-8") as handle:
@@ -189,14 +195,24 @@ def main() -> int:
     )
 
     if args.as_json:
-        json.dump(results, sys.stdout, ensure_ascii=False, indent=2)
+        output_rows = []
+        for row in results:
+            output = dict(row)
+            package_url = curated_urls.get(catalog_id(row))
+            if package_url:
+                output["workbuddy_package_url"] = package_url
+            output_rows.append(output)
+        json.dump(output_rows, sys.stdout, ensure_ascii=False, indent=2)
         sys.stdout.write("\n")
         return 0
     for row in results:
         print(f"{row['repository']}:{row['path']}")
-        catalog_id = row.get("id") or f"github:{row['repository']}:{row['path']}"
-        print(f"  catalog id: {catalog_id}")
+        display_catalog_id = catalog_id(row)
+        print(f"  catalog id: {display_catalog_id}")
         print(f"  source: {row['source_url']}")
+        package_url = curated_urls.get(catalog_id(row))
+        if package_url:
+            print(f"  WorkBuddy package: {package_url}")
         print(
             f"  review: {row['workbuddy_status']} ({row.get('workbuddy_score', '—')}/100); "
             f"security: {row['security_status']}; copies: {copies[row.get('sha')]}"

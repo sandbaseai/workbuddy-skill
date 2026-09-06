@@ -53,6 +53,10 @@ curated manifest maintained by this repository:
 python3 scripts/query_catalog.py research --package-status reviewed
 ```
 
+Reviewed results include the direct Release ZIP URL. With `--json`, the same
+value is available as `workbuddy_package_url`, so a small script can download
+the selected package without reconstructing the release path.
+
 The human-readable output includes a complete `catalog id`. Copy that value
 directly into `review_skill.py` or `adapt_skill.py`; do not reconstruct an ID
 from the display name.

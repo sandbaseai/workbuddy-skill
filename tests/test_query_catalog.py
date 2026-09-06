@@ -151,6 +151,62 @@ class QueryCatalogTests(unittest.TestCase):
                     sys.argv = old_argv
         self.assertIn("catalog id: github:owner/repo:skills/research/SKILL.md", output.getvalue())
 
+    def test_cli_prints_reviewed_package_url_in_human_output(self):
+        record = row("research", "sha", 90)
+        record.update({
+            "id": "github:owner/repo:skills/research/SKILL.md",
+            "source_url": "https://github.com/owner/repo/blob/sha/skills/research/SKILL.md",
+        })
+        package_url = "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/research-workbuddy-skill.zip"
+        with TemporaryDirectory() as directory:
+            catalog = Path(directory) / "skills.jsonl"
+            curated = Path(directory) / "curated.json"
+            catalog.write_text(json.dumps(record) + "\n", encoding="utf-8")
+            curated.write_text(json.dumps([{
+                "catalog_id": record["id"],
+                "download_url": package_url,
+            }]), encoding="utf-8")
+            output = io.StringIO()
+            with redirect_stdout(output):
+                old_argv = sys.argv
+                try:
+                    sys.argv = [
+                        "query_catalog.py", "research", "--catalog", str(catalog),
+                        "--curated", str(curated), "--package-status", "reviewed",
+                    ]
+                    main()
+                finally:
+                    sys.argv = old_argv
+        self.assertIn(f"WorkBuddy package: {package_url}", output.getvalue())
+
+    def test_cli_includes_reviewed_package_url_in_json(self):
+        record = row("research", "sha", 90)
+        record.update({
+            "id": "github:owner/repo:skills/research/SKILL.md",
+            "source_url": "https://github.com/owner/repo/blob/sha/skills/research/SKILL.md",
+        })
+        package_url = "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/research-workbuddy-skill.zip"
+        with TemporaryDirectory() as directory:
+            catalog = Path(directory) / "skills.jsonl"
+            curated = Path(directory) / "curated.json"
+            catalog.write_text(json.dumps(record) + "\n", encoding="utf-8")
+            curated.write_text(json.dumps([{
+                "catalog_id": record["id"],
+                "download_url": package_url,
+            }]), encoding="utf-8")
+            output = io.StringIO()
+            with redirect_stdout(output):
+                old_argv = sys.argv
+                try:
+                    sys.argv = [
+                        "query_catalog.py", "research", "--catalog", str(catalog),
+                        "--curated", str(curated), "--package-status", "reviewed", "--json",
+                    ]
+                    main()
+                finally:
+                    sys.argv = old_argv
+        self.assertEqual(json.loads(output.getvalue())[0]["workbuddy_package_url"], package_url)
+
 
 if __name__ == "__main__":
     unittest.main()

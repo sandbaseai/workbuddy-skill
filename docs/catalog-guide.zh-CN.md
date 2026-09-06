@@ -36,6 +36,9 @@ python3 scripts/query_catalog.py research --security no-static-flags \
 python3 scripts/query_catalog.py research --package-status reviewed
 ```
 
+精选结果会直接显示 Release ZIP 地址；使用 `--json` 时，对应字段名是
+`workbuddy_package_url`，脚本可以直接使用它下载包，不需要手工拼接 Release 路径。
+
 人类可读输出会直接给出完整的 `catalog id`。把这个值复制给
 `review_skill.py` 或 `adapt_skill.py` 即可，不要根据显示名称手工拼接 ID。
 
