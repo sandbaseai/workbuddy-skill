@@ -18,6 +18,11 @@ jobs:
           python-version: "3.x"
       - name: Validate frozen catalog
         run: python3 scripts/validate_catalog.py --minimum 10000 --require-analysis --check-stats
+      - name: Validate generated site and package data
+        run: |
+          python3 scripts/build_site_data.py
+          python3 scripts/validate_site_data.py
+          python3 scripts/verify_catalog_snapshot.py
       - run: ./scripts/package_skill.sh
       - name: Create release checksums
         run: (cd dist && sha256sum *-workbuddy-skill.zip > SHA256SUMS)

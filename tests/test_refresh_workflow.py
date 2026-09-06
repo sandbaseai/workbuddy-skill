@@ -16,6 +16,9 @@ class RefreshWorkflowTests(unittest.TestCase):
             "validate_catalog.py --minimum 10000 --require-analysis --check-stats",
             workflow,
         )
+        self.assertIn("scripts/build_site_data.py", workflow)
+        self.assertIn("scripts/validate_site_data.py", workflow)
+        self.assertIn("scripts/verify_catalog_snapshot.py", workflow)
 
     def test_release_publishes_sha256_checksums(self):
         workflow = (ROOT / ".github/workflows/release.yml").read_text(encoding="utf-8")
