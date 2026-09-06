@@ -16,6 +16,8 @@ class AtlasFrontendTests(unittest.TestCase):
         for page in (self.english, self.chinese):
             self.assertIn('id="copy-link"', page)
             self.assertIn('id="copy-status"', page)
+            self.assertIn("<noscript>", page)
+            self.assertIn("catalog.json", page)
             self.assertIn('id="language-link"', page)
             self.assertIn('id="snapshot-note"', page)
             self.assertIn('id="hero-count"', page)
