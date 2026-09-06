@@ -1,0 +1,16 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [
+      "references/uizze-reference-policy.md"
+    ],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/anti-ui-slop/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/anti-ui-slop/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "63c9375fb01068f57d2a07f3e33be6e584cbed84",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/anti-ui-slop/SKILL.md"
+}

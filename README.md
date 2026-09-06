@@ -190,6 +190,10 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Spring Boot Testing](skills/spring-boot-testing/) | 选择测试切片、断言、Mock 和 Testcontainers 策略 |
 | [Expense Report Writer](skills/expense-report-writer/) | 按政策和模板整理费用并标记审批要求 |
 | [Playwright CLI](skills/playwright-cli/) | 通过快照和元素引用执行可审计的浏览器操作与测试 |
+| [Anti-UI-Slop](skills/anti-ui-slop/) | 以产品上下文、完整状态和发布前检查减少模板化界面 |
+| [Ad Campaign Analyzer](skills/ad-campaign-analyzer/) | 从广告数据生成预算调整、扩量和实验建议 |
+| [AI Team Orchestration](skills/ai-team-orchestration/) | 协调轻量级代理团队的规划、实现、测试和合并 |
+| [Prompt Safety Review](skills/ai-prompt-engineering-safety-review/) | 从安全、偏差、隐私和有效性角度审查提示词 |
 
 浏览 [完整精选目录](skills/) 或直接打开 [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/)。每个精选条目都提供来源说明；外部来源的许可证和适配信息见对应的 `SOURCE.json`。
 

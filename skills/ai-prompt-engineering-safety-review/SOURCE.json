@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/ai-prompt-engineering-safety-review/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/ai-prompt-engineering-safety-review/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "86d8622d384e77056c4065cd616cb9285131d946",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/ai-prompt-engineering-safety-review/SKILL.md"
+}

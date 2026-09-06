@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/ad-campaign-analyzer/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/ad-campaign-analyzer/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "b3312d058aeb36c047edda1e8a4d592071eec450",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/ad-campaign-analyzer/SKILL.md"
+}

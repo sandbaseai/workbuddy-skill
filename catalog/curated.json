@@ -1800,5 +1800,33 @@
     "skill_path": "skills/playwright-cli",
     "category": "development",
     "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/playwright-cli-workbuddy-skill.zip"
+  },
+  {
+    "catalog_id": "github:github/awesome-copilot:skills/anti-ui-slop/SKILL.md",
+    "skill": "anti-ui-slop",
+    "skill_path": "skills/anti-ui-slop",
+    "category": "design",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/anti-ui-slop-workbuddy-skill.zip"
+  },
+  {
+    "catalog_id": "github:github/awesome-copilot:skills/ad-campaign-analyzer/SKILL.md",
+    "skill": "ad-campaign-analyzer",
+    "skill_path": "skills/ad-campaign-analyzer",
+    "category": "business",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/ad-campaign-analyzer-workbuddy-skill.zip"
+  },
+  {
+    "catalog_id": "github:github/awesome-copilot:skills/ai-team-orchestration/SKILL.md",
+    "skill": "ai-team-orchestration",
+    "skill_path": "skills/ai-team-orchestration",
+    "category": "productivity",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/ai-team-orchestration-workbuddy-skill.zip"
+  },
+  {
+    "catalog_id": "github:github/awesome-copilot:skills/ai-prompt-engineering-safety-review/SKILL.md",
+    "skill": "ai-prompt-engineering-safety-review",
+    "skill_path": "skills/ai-prompt-engineering-safety-review",
+    "category": "security",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/ai-prompt-engineering-safety-review-workbuddy-skill.zip"
   }
 ]
