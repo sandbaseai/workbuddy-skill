@@ -12,6 +12,7 @@
 | 设计后端架构 | [architecture-patterns](https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/architecture-patterns-workbuddy-skill.zip) | 边界、依赖、端口、适配器和不变量 |
 | 设计 API | [api-design-principles](https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/api-design-principles-workbuddy-skill.zip) | HTTP 契约、授权、幂等和分页 |
 | 做有来源的研究 | [deep-research](https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/deep-research-workbuddy-skill.zip) | 结构化研究、来源比较和不确定性说明 |
+| 构建证据地图 | [evidence-map-builder](https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/evidence-map-builder-workbuddy-skill.zip) | 整理主张、来源、置信度和未解决问题 |
 | 安全使用 MCP | [mcp-security-audit](https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/mcp-security-audit-workbuddy-skill.zip) | 凭据、命令注入、依赖和权限边界 |
 | 准备发布 | [github-release](https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/github-release-workbuddy-skill.zip) | 版本、发布证据、校验和资产核对 |
 | 编写可维护文档 | [documentation-writer](https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/documentation-writer-workbuddy-skill.zip) | 教程、操作指南、参考和解释 |

@@ -482,7 +482,7 @@ class RefreshWorkflowTests(unittest.TestCase):
         for path in ("docs/starter-packs.md", "docs/starter-packs.zh-CN.md"):
             content = (ROOT / path).read_text(encoding="utf-8")
             self.assertIn("latest/download/", content)
-            for skill in ("code-review-excellence", "debugging-strategies", "mcp-security-audit"):
+            for skill in ("code-review-excellence", "debugging-strategies", "evidence-map-builder", "mcp-security-audit"):
                 self.assertIn(f'"skill": "{skill}"', curated)
                 self.assertIn(f"{skill}-workbuddy-skill.zip", content)
 
