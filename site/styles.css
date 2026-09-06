@@ -133,6 +133,11 @@ input:focus, select:focus { outline: 3px solid rgba(17, 122, 75, .25); border-co
   color: var(--accent-dark); background: #eef7f1; font: 750 .72rem/1 inherit; cursor: pointer;
 }
 .copy-install:hover, .copy-install:focus-visible { color: white; background: var(--accent-dark); }
+.copy-review {
+  padding: 6px 9px; border: 1px solid #c5b28d; border-radius: 999px;
+  color: #725116; background: #fffaf0; font: 750 .72rem/1 inherit; cursor: pointer;
+}
+.copy-review:hover, .copy-review:focus-visible { color: white; background: #725116; }
 .message { padding: 36px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); }
 .error { color: #8b2929; border-color: #d7aaaa; background: #fff8f7; }
 .more { margin-top: 28px; }

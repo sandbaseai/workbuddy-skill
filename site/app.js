@@ -75,6 +75,15 @@ function catalogId(skill) {
   return `github:${skill.r}:${skill.p}`;
 }
 
+function shellQuote(value) {
+  return `'${String(value).replaceAll("'", "'\"'\"'")}'`;
+}
+
+function reviewCommand(skill) {
+  const language = isChinese ? " --language zh-CN" : "";
+  return `python3 scripts/review_skill.py --catalog-id ${shellQuote(catalogId(skill))}${language} --output review.md`;
+}
+
 function packageAsset(skill) {
   if (!skill.a) return "";
   try {
@@ -189,6 +198,19 @@ async function copyInstallCommand(button) {
   setTimeout(() => { button.textContent = original; }, 1600);
 }
 
+async function copyReviewCommand(button) {
+  try {
+    await copyText(button.dataset.reviewCommand);
+  } catch {
+    announceCopy(isChinese ? "复制审阅命令失败" : "Could not copy review command");
+    return;
+  }
+  const original = button.textContent;
+  button.textContent = isChinese ? "命令已复制" : "Command copied";
+  announceCopy(isChinese ? "审阅命令已复制" : "Review command copied");
+  setTimeout(() => { button.textContent = original; }, 1600);
+}
+
 function render(reset = true) {
   if (reset) {
     shown = 0;
@@ -209,6 +231,7 @@ function render(reset = true) {
         ${skill.o === "review-source" ? `<span class="badge source-review" title="${escapeHtml((skill.x || []).join(", "))}">${isChinese ? "来源待审" : "source review"}</span>` : ""}
         ${skill.a ? `<span class="badge package-review">${isChinese ? "精选包" : "reviewed package"}</span>` : ""}
         <button class="copy-id" type="button" aria-label="${isChinese ? `复制 ${escapeHtml(skill.n)} 的目录 ID` : `Copy catalog ID for ${escapeHtml(skill.n)}`}" data-catalog-id="${escapeHtml(catalogId(skill))}">${isChinese ? "复制 ID" : "Copy ID"}</button>
+        <button class="copy-review" type="button" aria-label="${isChinese ? `复制 ${escapeHtml(skill.n)} 的审阅命令` : `Copy review command for ${escapeHtml(skill.n)}`}" data-review-command="${escapeHtml(reviewCommand(skill))}">${isChinese ? "复制审阅命令" : "Copy review command"}</button>
         ${skill.a ? `<a class="result-install" href="${escapeHtml(skill.a)}" aria-label="${isChinese ? `下载 ${escapeHtml(skill.n)} 安装包` : `Download install ZIP for ${escapeHtml(skill.n)}`}">${isChinese ? "安装 ZIP" : "Install ZIP"} ↓</a>` : ""}
         ${skill.a ? `<a class="result-verify" href="${escapeHtml(checksumUrl)}" target="_blank" rel="noreferrer" aria-label="${isChinese ? `校验 ${escapeHtml(skill.n)} 的 SHA256` : `Verify SHA256 for ${escapeHtml(skill.n)}`}">${isChinese ? "校验 SHA256" : "Verify SHA256"} ↗</a>` : ""}
         ${installCommand ? `<button class="copy-install" type="button" aria-label="${isChinese ? `复制 ${escapeHtml(skill.n)} 的安装命令` : `Copy install command for ${escapeHtml(skill.n)}`}" data-install-command="${escapeHtml(installCommand)}">${isChinese ? "复制命令" : "Copy command"}</button>` : ""}
@@ -336,6 +359,8 @@ results.addEventListener("click", (event) => {
   if (button) copyCatalogId(button);
   const installButton = event.target.closest(".copy-install");
   if (installButton) copyInstallCommand(installButton);
+  const reviewButton = event.target.closest(".copy-review");
+  if (reviewButton) copyReviewCommand(reviewButton);
 });
 
 restoreUrlState();
