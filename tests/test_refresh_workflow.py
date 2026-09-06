@@ -179,6 +179,8 @@ class RefreshWorkflowTests(unittest.TestCase):
         workflow = (ROOT / ".github/workflows/auto-merge.yml").read_text(encoding="utf-8")
         self.assertIn("pull_request_target", workflow)
         self.assertIn("ready_for_review", workflow)
+        self.assertIn("!github.event.pull_request.draft", workflow)
+        self.assertIn("author_association == 'MEMBER'", workflow)
         self.assertIn("head.repo.full_name == github.repository", workflow)
         self.assertIn("author_association", workflow)
         self.assertIn("--auto --squash --delete-branch", workflow)
