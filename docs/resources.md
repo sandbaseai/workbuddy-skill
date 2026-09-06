@@ -12,6 +12,7 @@ Use this page to choose the right source before searching the catalog.
 | Build an OAuth app or call Open APIs | [Third-Party App guide](https://open.workbuddy.cn/en/docs/third-party-app) and [Open API reference](https://open.workbuddy.cn/en/docs/openapi) |
 | Understand product data boundaries | [WorkBuddy Privacy Policy](https://www.workbuddy.ai/document/privacy-policy) |
 | Review service terms and permitted use | [Service Agreement](https://www.workbuddy.ai/document/term) and [Acceptable Use Policy](https://www.workbuddy.ai/document/acceptable-use-policy) |
+| Configure task permission boundaries | [Permission Modes](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Permission-Modes) |
 | Assemble a marketplace Expert or Team | [Expert guide](https://open.workbuddy.cn/en/docs/expert) and [Expert Team guide](https://open.workbuddy.cn/en/docs/expert-team) |
 | Package a public catalog result yourself | [Adaptation guide](adapting-skills.md) |
 
@@ -22,6 +23,7 @@ Use this page to choose the right source before searching the catalog.
 - [FAQ](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/FQA) — common questions about WorkBuddy, Skill updates, permissions, and connectors.
 - [Privacy Policy](https://www.workbuddy.ai/document/privacy-policy) — official product data-handling and privacy disclosures to review before using sensitive inputs or connectors.
 - [Service Agreement](https://www.workbuddy.ai/document/term) and [Acceptable Use Policy](https://www.workbuddy.ai/document/acceptable-use-policy) — official account, service-use, permitted-use, and responsibility terms.
+- [Permission Modes](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Permission-Modes) — official guidance for workspace scope and operation permissions before allowing a Skill or connector to act.
 - [Create Skills](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills) — authoring Skills.
 - [MCP guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide) — MCP concepts and configuration.
 - [Open Platform Connector guide](https://open.workbuddy.cn/en/docs/connector) — recommends MCP + Skill for network APIs, limits CLI + Skill to mature cross-platform CLIs, and documents runtime, credentials, OAuth, and permissions.
