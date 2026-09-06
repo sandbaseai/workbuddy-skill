@@ -13,6 +13,7 @@ All notable changes to this project are documented here.
 - Add a `query_catalog.py --high-signal` shortcut matching the Atlas triage filters.
 - Surface the high-signal catalog search shortcut in the bilingual README entry points.
 - Add official WorkBuddy service terms and acceptable-use guidance to the bilingual resource map and machine-readable entrypoint.
+- Add the official WorkBuddy Permission Modes guide to the safety-oriented resource navigation.
 - Simplify the bilingual quickstarts with shortest-path guidance for installing, searching, and adapting Skills.
 - Remove internal catalog maintenance instructions from the public catalog README.
 - Reject query-bearing or structurally incomplete immutable raw URLs.
