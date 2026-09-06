@@ -63,6 +63,34 @@ def validate_package_consistency(rows: object) -> list[str]:
     return errors
 
 
+def validate_metadata(metadata: object, schema: dict) -> list[str]:
+    if not isinstance(metadata, dict):
+        return ["catalog metadata root must be an object"]
+    errors: list[str] = []
+    properties = schema.get("properties", {})
+    required = set(schema.get("required", []))
+    errors.extend(f"metadata missing {field}" for field in sorted(required - metadata.keys()))
+    errors.extend(f"metadata has unknown field {field}" for field in sorted(metadata.keys() - set(properties)))
+    if metadata.get("snapshot_frozen") is not True:
+        errors.append("metadata.snapshot_frozen must be true")
+    for field in ("records", "repositories", "unique_content_shas", "curated_adaptations"):
+        value = metadata.get(field)
+        if not isinstance(value, int) or isinstance(value, bool) or value < 0:
+            errors.append(f"metadata.{field} must be a non-negative integer")
+    digest = metadata.get("catalog_sha256")
+    if not isinstance(digest, str) or not re.fullmatch(r"[0-9a-f]{64}", digest):
+        errors.append("metadata.catalog_sha256 must be a 64-character lowercase hex SHA-256")
+    checksum_url = metadata.get("release_checksum_url")
+    if not isinstance(checksum_url, str) or urlparse(checksum_url).scheme not in {"http", "https"}:
+        errors.append("metadata.release_checksum_url must be an HTTP(S) URL")
+    categories = metadata.get("categories")
+    if not isinstance(categories, dict):
+        errors.append("metadata.categories must be an object")
+    elif any(not isinstance(value, int) or isinstance(value, bool) or value < 0 for value in categories.values()):
+        errors.append("metadata.categories values must be non-negative integers")
+    return errors
+
+
 def validate_rows(rows: object, schema: dict) -> list[str]:
     errors: list[str] = []
     if not isinstance(rows, list):
@@ -135,12 +163,16 @@ def main() -> int:
     parser.add_argument("--schema", type=Path, default=Path("site/catalog-schema.json"))
     parser.add_argument("--packages", type=Path, default=Path("site/packages.json"))
     parser.add_argument("--packages-schema", type=Path, default=Path("site/packages-schema.json"))
+    parser.add_argument("--metadata", type=Path, default=Path("site/catalog-meta.json"))
+    parser.add_argument("--metadata-schema", type=Path, default=Path("site/catalog-meta-schema.json"))
     args = parser.parse_args()
     try:
         rows = json.loads(args.catalog.read_text(encoding="utf-8"))
         schema = json.loads(args.schema.read_text(encoding="utf-8"))
         packages = json.loads(args.packages.read_text(encoding="utf-8"))
         packages_schema = json.loads(args.packages_schema.read_text(encoding="utf-8"))
+        metadata = json.loads(args.metadata.read_text(encoding="utf-8"))
+        metadata_schema = json.loads(args.metadata_schema.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 1
@@ -149,6 +181,7 @@ def main() -> int:
     errors.extend(f"packages: {error}" for error in package_errors)
     errors.extend(validate_unique_fields(packages, ("id", "download_url"), "packages"))
     errors.extend(validate_package_consistency(packages))
+    errors.extend(validate_metadata(metadata, metadata_schema))
     if errors:
         for error in errors[:20]:
             print(f"error: {error}", file=sys.stderr)

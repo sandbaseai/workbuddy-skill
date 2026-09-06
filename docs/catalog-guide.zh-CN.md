@@ -68,6 +68,9 @@ python3 scripts/verify_catalog_snapshot.py
 该命令会比较 `catalog/skills.jsonl` 的 SHA-256 与
 `site/catalog-meta.json` 中的 `catalog_sha256`，不会抓取或修改第三方内容。
 
+程序可以根据公开的[目录元数据 Schema](https://sandbaseai.github.io/workbuddy-skill/catalog-meta-schema.json)
+验证元数据字段结构。
+
 ## 4. 先做只读试运行
 
 确认输入和副作用后再导入。第一次只使用公开、非敏感数据；在允许写入、发送消息、付费 API 调用或访问生产环境前，先要求 Skill 给出执行计划。需要复现结果时，保存来源提交版本和包版本。

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sandbaseai.github.io/workbuddy-skill/catalog-meta-schema.json",
+  "title": "WorkBuddy Skill Atlas catalog metadata",
+  "description": "Schema for metadata describing the frozen catalog snapshot and generated site indexes.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["categories", "catalog_sha256", "snapshot_frozen", "records", "repositories", "unique_content_shas", "curated_adaptations", "release_checksum_url"],
+  "properties": {
+    "categories": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+    "catalog_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "snapshot_frozen": {"const": true},
+    "records": {"type": "integer", "minimum": 0},
+    "repositories": {"type": "integer", "minimum": 0},
+    "unique_content_shas": {"type": "integer", "minimum": 0},
+    "curated_adaptations": {"type": "integer", "minimum": 0},
+    "release_checksum_url": {"type": "string", "format": "uri"}
+  }
+}

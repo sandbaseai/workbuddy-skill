@@ -22,6 +22,12 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertEqual(properties["u"]["format"], "uri")
         self.assertEqual(properties["a"]["description"], "Release ZIP URL for a reviewed package.")
 
+    def test_catalog_metadata_schema_describes_the_snapshot_contract(self):
+        schema = json.loads((SITE / "catalog-meta-schema.json").read_text(encoding="utf-8"))
+        self.assertEqual(schema["type"], "object")
+        self.assertIn("catalog_sha256", schema["required"])
+        self.assertEqual(schema["properties"]["snapshot_frozen"]["const"], True)
+
     def test_packages_schema_describes_installable_reviewed_packages(self):
         schema = json.loads((SITE / "packages-schema.json").read_text(encoding="utf-8"))
         self.assertEqual(schema["type"], "array")

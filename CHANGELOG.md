@@ -6,6 +6,7 @@ All notable changes to this project are documented here.
 
 - Added a restricted auto-merge workflow for trusted same-repository pull requests; fork pull requests remain manual and untrusted code is never checked out by the merge workflow.
 - Added a dependency-free `verify_catalog_snapshot.py` command and CI gate for checking the frozen catalog against its published SHA-256 fingerprint.
+- Published `catalog-meta-schema.json` and added metadata contract validation for machine consumers of the Atlas.
 - Added bilingual package-import checklists covering ZIP layout, required WorkBuddy frontmatter, referenced resources, and a no-extract smoke test.
 - Added bilingual installation-scope guidance for the WorkBuddy UI, `gh skill install`, and local `~/.workbuddy/skills/` workflows.
 - Added a rights-aware navigation entry for the community [WorkBuddy skills collection](https://github.com/bitcjm/workbuddy-skills); it does not add or copy catalog records.

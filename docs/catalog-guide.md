@@ -99,6 +99,9 @@ The command compares the SHA-256 of `catalog/skills.jsonl` with the
 `catalog_sha256` value in `site/catalog-meta.json`; it does not fetch or modify
 third-party content.
 
+Machine consumers can validate the metadata shape against the published
+[catalog metadata Schema](https://sandbaseai.github.io/workbuddy-skill/catalog-meta-schema.json).
+
 ## 4. Run a read-only first test
 
 Import the package only after checking its inputs and side effects. Start with
