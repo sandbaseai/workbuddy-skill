@@ -86,7 +86,7 @@ class ReviewSkillTests(unittest.TestCase):
             "id": "github:owner/repo:skills/demo/SKILL.md",
             "repository": "owner/repo",
             "path": "skills/demo/SKILL.md",
-            "sha": "blob",
+            "sha": "b" * 40,
             "source_url": "https://github.com/owner/repo/blob/main/skills/demo/SKILL.md",
             "raw_url": "https://raw.githubusercontent.com/owner/repo/main/skills/demo/SKILL.md",
         }

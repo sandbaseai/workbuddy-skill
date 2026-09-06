@@ -68,6 +68,15 @@ class ResourceDiscoveryTests(unittest.TestCase):
         ):
             immutable_github_source(record)
 
+    def test_rejects_immutable_source_with_invalid_blob_sha(self):
+        record = {
+            "sha": "not-a-blob-sha",
+            "raw_url": "https://raw.githubusercontent.com/acme/tools/"
+            + "a" * 40 + "/skills/demo/SKILL.md",
+        }
+        with self.assertRaisesRegex(SystemExit, "valid blob SHA"):
+            immutable_github_source(record)
+
 
 class LocalPackagingTests(unittest.TestCase):
     def test_parses_folded_frontmatter_and_preserves_argument_hint(self):
