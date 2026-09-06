@@ -55,3 +55,19 @@ jobs:
           else
             gh release upload "$GITHUB_REF_NAME" dist/SHA256SUMS
           fi
+      - name: Verify uploaded assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          release_assets=$(gh release view "$GITHUB_REF_NAME" --json assets --jq '.assets[].name')
+          for archive in dist/*-workbuddy-skill.zip; do
+            asset_name=$(basename "$archive")
+            if ! printf '%s\n' "$release_assets" | grep -Fxq "$asset_name"; then
+              echo "Missing uploaded release asset: $asset_name" >&2
+              exit 1
+            fi
+          done
+          if ! printf '%s\n' "$release_assets" | grep -Fxq "SHA256SUMS"; then
+            echo "Missing uploaded release asset: SHA256SUMS" >&2
+            exit 1
+          fi
