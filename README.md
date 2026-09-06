@@ -194,6 +194,9 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Ad Campaign Analyzer](skills/ad-campaign-analyzer/) | 从广告数据生成预算调整、扩量和实验建议 |
 | [AI Team Orchestration](skills/ai-team-orchestration/) | 协调轻量级代理团队的规划、实现、测试和合并 |
 | [Prompt Safety Review](skills/ai-prompt-engineering-safety-review/) | 从安全、偏差、隐私和有效性角度审查提示词 |
+| [Agent Skill Stack](skills/agent-skill-stack/) | 根据用户目标寻找、评估并组合最小可用的 Skill 集合 |
+| [Landing Page Conversion Audit](skills/landing-page-conversion-audit/) | 按预期收入影响审计落地页和结账页 |
+| [Prompt Optimizer](skills/prompt-optimizer/) | 将粗略想法整理成可直接发送的完整聊天提示词 |
 
 浏览 [完整精选目录](skills/) 或直接打开 [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/)。每个精选条目都提供来源说明；外部来源的许可证和适配信息见对应的 `SOURCE.json`。
 

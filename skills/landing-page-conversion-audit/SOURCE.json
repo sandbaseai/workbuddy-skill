@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/landing-page-conversion-audit/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/landing-page-conversion-audit/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "e1d627d2bdb38cac223c87eb046a4b520d429a26",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/landing-page-conversion-audit/SKILL.md"
+}

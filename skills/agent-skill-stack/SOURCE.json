@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [
+      "references/discovery-ranking.md",
+      "references/local-index-and-profiles.md",
+      "references/security-installation.md",
+      "references/workflow-model.md"
+    ],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/agent-skill-stack/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/agent-skill-stack/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "e89c861c51f249247ec923e0e8fa69251d3c169e",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/agent-skill-stack/SKILL.md"
+}

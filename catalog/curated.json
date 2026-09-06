@@ -1828,5 +1828,26 @@
     "skill_path": "skills/ai-prompt-engineering-safety-review",
     "category": "security",
     "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/ai-prompt-engineering-safety-review-workbuddy-skill.zip"
+  },
+  {
+    "catalog_id": "github:github/awesome-copilot:skills/agent-skill-stack/SKILL.md",
+    "skill": "agent-skill-stack",
+    "skill_path": "skills/agent-skill-stack",
+    "category": "productivity",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/agent-skill-stack-workbuddy-skill.zip"
+  },
+  {
+    "catalog_id": "github:github/awesome-copilot:skills/landing-page-conversion-audit/SKILL.md",
+    "skill": "landing-page-conversion-audit",
+    "skill_path": "skills/landing-page-conversion-audit",
+    "category": "business",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/landing-page-conversion-audit-workbuddy-skill.zip"
+  },
+  {
+    "catalog_id": "github:github/awesome-copilot:skills/prompt-optimizer/SKILL.md",
+    "skill": "prompt-optimizer",
+    "skill_path": "skills/prompt-optimizer",
+    "category": "productivity",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/prompt-optimizer-workbuddy-skill.zip"
   }
 ]

@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added MIT Agent Skill Stack, Landing Page Conversion Audit, and Prompt Optimizer packages from the pinned GitHub awesome-copilot source; a security-review candidate remains cataloged but was not packaged after static credential-path signals.
 - Added four MIT WorkBuddy packages from the pinned GitHub awesome-copilot source: Anti-UI-Slop, Ad Campaign Analyzer, AI Team Orchestration, and Prompt Safety Review.
 - Synced the public GitHub repository description and Atlas metadata copy with the current 13,000+ indexed-record scale.
 - Added MIT Ruff Recursive Fix, SQL Optimization, and WebMCPify Skills from the pinned GitHub awesome-copilot source, with bilingual metadata, provenance, and WorkBuddy-safe package boundaries.
