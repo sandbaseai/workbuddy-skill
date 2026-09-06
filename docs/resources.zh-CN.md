@@ -15,6 +15,7 @@
 | 了解服务条款和允许的使用范围 | [服务协议](https://www.workbuddy.ai/document/term) 和 [可接受使用政策](https://www.workbuddy.ai/document/acceptable-use-policy) |
 | 配置任务权限边界 | [权限模式说明](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Permission-Modes) |
 | 新建任务并选择工作目录和 Skill | [新建任务栏](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar) |
+| 让单体仓库或大型代码库保持聚焦 | [大型代码库指南](https://www.workbuddy.ai/docs/cli/large-codebases) |
 | 通过聊天应用远程控制 WorkBuddy | [助理远程控制](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Assistant) |
 | 选择自动模式、供应商或本地模型 | [模型配置](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Model) |
 | 更新、停用或移除已安装的 Skill | [快速开始中的生命周期说明](quickstart.zh-CN.md) 和 [Skill Marketplace](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) |
@@ -34,6 +35,7 @@
 - [服务协议](https://www.workbuddy.ai/document/term)和[可接受使用政策](https://www.workbuddy.ai/document/acceptable-use-policy)——使用账号、服务和外部能力前，先确认官方的使用范围与责任要求。
 - [权限模式说明](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Permission-Modes)——让 Skill 或连接器执行任务前，先确认工作区范围与操作权限。
 - [新建任务栏](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar)——执行前选择工作目录、模型、已安装的 Skill、连接器和权限模式。
+- [大型代码库与单体仓库](https://www.workbuddy.ai/docs/cli/large-codebases)——官方说明如何使用目录级指令、聚焦 worktree 和按包配置，减少无关上下文。
 - [助理远程控制](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Assistant)——配置聊天应用来发送任务并接收结果；WorkBuddy 需要保持运行，每个平台也有独立的账号和权限设置。
 - [模型配置](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Model)——配置自动模式、供应商预设、自定义模型和本地 Ollama 接入。
 - [创建 Skills](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills)——编写 Skill。

@@ -166,6 +166,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("Create-Skills", content)
         self.assertIn("MCP-Guide", content)
         self.assertIn("Automation-Guide", content)
+        self.assertIn("large-codebases", content)
         self.assertIn("www.workbuddy.ai/docs/workbuddy/Quickstart", content)
         self.assertIn("open.workbuddy.cn/en/docs/skill", content)
         self.assertIn("open.workbuddy.cn/zh/docs/skill", content)
