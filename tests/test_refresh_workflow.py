@@ -24,6 +24,8 @@ class RefreshWorkflowTests(unittest.TestCase):
         workflow = (ROOT / ".github/workflows/release.yml").read_text(encoding="utf-8")
         self.assertIn("sha256sum *-workbuddy-skill.zip > SHA256SUMS", workflow)
         self.assertIn('gh release upload "$GITHUB_REF_NAME" dist/SHA256SUMS', workflow)
+        self.assertIn("Verify uploaded assets", workflow)
+        self.assertIn("Missing uploaded release asset", workflow)
 
     def test_quickstarts_document_exact_release_download_and_verification(self):
         for name in ("docs/quickstart.md", "docs/quickstart.zh-CN.md"):
