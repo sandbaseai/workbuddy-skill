@@ -7,6 +7,7 @@ import argparse
 from collections import Counter
 import json
 from pathlib import Path
+import re
 import sys
 from urllib.parse import urlparse
 
@@ -17,6 +18,18 @@ CHECKSUM_URL = "https://github.com/sandbaseai/workbuddy-skill/releases/latest/do
 RELEASE_REPO = "sandbaseai/workbuddy-skill"
 ATLAS_URL = "https://sandbaseai.github.io/workbuddy-skill/"
 GITHUB_SKILL_SEARCH_URL = "https://github.com/search?q=filename%3ASKILL.md&type=code"
+CATEGORY_RULES = (
+    ("security", ("security", "audit", "pentest", "vulnerability", "sast", "threat", "auth")),
+    ("media", ("video", "audio", "podcast", "voice", "music", "subtitle", "animation")),
+    ("design", ("design", "ui", "ux", "frontend", "css", "figma", "brand", "visual")),
+    ("research", ("research", "search", "academic", "paper", "literature", "citation", "analysis")),
+    ("data", ("data", "database", "sql", "spreadsheet", "excel", "csv", "etl", "analytics")),
+    ("content", ("content", "writing", "writer", "copy", "blog", "document", "markdown", "seo")),
+    ("business", ("sales", "marketing", "finance", "legal", "hr", "customer", "commerce", "product")),
+    ("productivity", ("task", "calendar", "email", "meeting", "note", "workflow", "automation", "planning")),
+    ("development", ("code", "coding", "test", "debug", "deploy", "api", "git", "python", "javascript", "typescript")),
+)
+CATEGORIES = tuple(category for category, _ in CATEGORY_RULES) + ("other",)
 
 
 def catalog_id(row: dict) -> str:
@@ -30,7 +43,20 @@ def package_download_command(asset: str) -> str:
     )
 
 
-def matches(row: dict, terms: list[str]) -> bool:
+def inferred_category(row: dict) -> str:
+    explicit = row.get("category")
+    if explicit in CATEGORIES:
+        return explicit
+    haystack = f"{row.get('name_hint', '')} {row.get('path', '')}".casefold()
+    tokens = set(re.findall(r"[a-z0-9]+", haystack))
+    for category, keywords in CATEGORY_RULES:
+        if any(keyword in tokens for keyword in keywords):
+            return category
+    return "other"
+
+
+def matches(row: dict, terms: list[str], category_overrides: dict[str, str] | None = None) -> bool:
+    category = (category_overrides or {}).get(catalog_id(row), inferred_category(row))
     haystack = " ".join(
         str(row.get(field, ""))
         for field in (
@@ -44,7 +70,7 @@ def matches(row: dict, terms: list[str]) -> bool:
             "security_signals",
         )
     ).casefold()
-    haystack = f"{haystack} {catalog_id(row).casefold()}"
+    haystack = f"{haystack} {category} {catalog_id(row).casefold()}"
     return all(term.casefold() in haystack for term in terms)
 
 
@@ -56,6 +82,8 @@ def query_rows(
     security: str | None = None,
     source: str | None = None,
     min_score: int | None = None,
+    category: str | None = None,
+    category_overrides: dict[str, str] | None = None,
     package_status: str = "all",
     curated_ids: set[str] | None = None,
     unique: bool = False,
@@ -69,7 +97,11 @@ def query_rows(
     copies = Counter(row.get("sha") for row in rows if row.get("sha"))
     results = [
         row for row in rows
-        if matches(row, terms)
+        if matches(row, terms, category_overrides)
+        and (
+            category is None
+            or (category_overrides or {}).get(catalog_id(row), inferred_category(row)) == category
+        )
         and (status is None or row.get("workbuddy_status") == status)
         and (security is None or row.get("security_status") == security)
         and (source is None or source_context(row) == source)
@@ -124,7 +156,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(
         description="Search catalog/skills.jsonl by catalog ID, repository, path, or skill name."
     )
-    parser.add_argument("terms", nargs="+", help="Words that must all match")
+    parser.add_argument("terms", nargs="*", help="Words that must all match")
     parser.add_argument("--catalog", type=Path, default=Path("catalog/skills.jsonl"))
     parser.add_argument("--limit", type=int, default=20)
     parser.add_argument(
@@ -138,6 +170,11 @@ def main() -> int:
         help="Require an exact static review state",
     )
     parser.add_argument("--min-score", type=int, help="Require a WorkBuddy score from 0 to 100")
+    parser.add_argument(
+        "--category",
+        choices=CATEGORIES,
+        help="Require the Atlas category inferred from the name/path or curated package metadata",
+    )
     parser.add_argument(
         "--package-status",
         choices=("all", "reviewed", "catalog-only"),
@@ -169,6 +206,8 @@ def main() -> int:
     )
     parser.add_argument("--json", action="store_true", dest="as_json")
     args = parser.parse_args()
+    if not args.terms and args.category is None:
+        parser.error("provide at least one search term or --category")
     if args.high_signal:
         if args.security is not None or args.source_context is not None or args.min_score is not None:
             parser.error("--high-signal cannot be combined with --security, --source-context, or --min-score")
@@ -185,12 +224,18 @@ def main() -> int:
         raise SystemExit(f"catalog not found: {args.catalog}")
     curated_ids = None
     curated_urls: dict[str, str] = {}
+    category_overrides: dict[str, str] = {}
     if args.curated.exists():
         curated_entries = json.loads(args.curated.read_text(encoding="utf-8"))
         curated_urls = {
             entry["catalog_id"]: entry["download_url"]
             for entry in curated_entries
             if entry.get("download_url")
+        }
+        category_overrides = {
+            entry["catalog_id"]: entry["category"]
+            for entry in curated_entries
+            if entry.get("category") in CATEGORIES
         }
         if args.package_status != "all":
             curated_ids = {entry["catalog_id"] for entry in curated_entries}
@@ -215,6 +260,8 @@ def main() -> int:
         security=args.security,
         source=args.source_context,
         min_score=args.min_score,
+        category=args.category,
+        category_overrides=category_overrides,
         package_status=args.package_status,
         curated_ids=curated_ids,
         unique=args.unique,

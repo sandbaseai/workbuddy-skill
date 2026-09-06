@@ -60,6 +60,15 @@ python3 scripts/query_catalog.py research --high-signal --limit 10
 least 80, one result per unique blob, and score ordering. It is a triage aid,
 not a trust or safety guarantee.
 
+To use the same category vocabulary as Atlas, add `--category` (for example,
+`research`, `development`, or `security`). The filter uses name/path inference
+and honors curated package category metadata:
+
+```bash
+python3 scripts/query_catalog.py --category research --package-status reviewed \
+  --sort score --limit 10
+```
+
 Useful starting queries (all use the same review-oriented filter):
 
 | Goal | Command |

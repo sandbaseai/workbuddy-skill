@@ -12,7 +12,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from query_catalog import main, query_rows  # noqa: E402
 
 
-def row(name, sha, score, *, status="adaptable", security="no-static-flags", repository="owner/repo"):
+def row(name, sha, score, *, status="adaptable", security="no-static-flags", repository="owner/repo", category=None):
     return {
         "name_hint": name,
         "repository": repository,
@@ -21,6 +21,7 @@ def row(name, sha, score, *, status="adaptable", security="no-static-flags", rep
         "workbuddy_score": score,
         "workbuddy_status": status,
         "security_status": security,
+        **({"category": category} if category else {}),
     }
 
 
@@ -106,6 +107,25 @@ class QueryCatalogTests(unittest.TestCase):
         }
         results, _ = query_rows([compatible], ["Python", "3.12"])
         self.assertEqual(results, [compatible])
+
+    def test_category_filter_uses_inferred_category(self):
+        results, _ = query_rows(
+            [row("research-notes", "research", 90), row("invoice-tool", "invoice", 90)],
+            [],
+            category="research",
+        )
+        self.assertEqual([item["sha"] for item in results], ["research"])
+
+    def test_category_filter_prefers_curated_override(self):
+        record = row("workflow", "workflow", 90)
+        record["id"] = "github:owner/repo:skills/workflow/SKILL.md"
+        results, _ = query_rows(
+            [record],
+            [],
+            category="research",
+            category_overrides={record["id"]: "research"},
+        )
+        self.assertEqual(results, [record])
 
     def test_search_includes_full_catalog_id(self):
         record = row("research", "sha", 90)
