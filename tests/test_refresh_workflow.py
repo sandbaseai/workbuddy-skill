@@ -285,6 +285,13 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("SHA256 verification", package_feedback)
         self.assertIn("reviewed-package", package_feedback)
 
+    def test_issue_template_config_routes_public_questions(self):
+        config = (ROOT / ".github/ISSUE_TEMPLATE/config.yml").read_text(encoding="utf-8")
+        self.assertIn("blank_issues_enabled: false", config)
+        self.assertIn("/discussions", config)
+        self.assertIn("/security/advisories/new", config)
+        self.assertIn("#english", config)
+
     def test_pull_request_template_preserves_frozen_catalog_and_validation_gates(self):
         template = (ROOT / ".github/PULL_REQUEST_TEMPLATE.md").read_text(encoding="utf-8")
         self.assertIn("did not add catalog records", template)
