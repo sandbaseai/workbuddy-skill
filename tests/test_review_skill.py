@@ -128,6 +128,27 @@ class ReviewSkillTests(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("source file must not be a symlink", result.stderr)
 
+    def test_cli_can_write_localized_markdown_report(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            skill = root / "SKILL.md"
+            report_file = root / "reports" / "review.md"
+            skill.write_text(
+                "---\nname: demo\ndescription: Demo\n---\n\n# Demo\n",
+                encoding="utf-8",
+            )
+            result = subprocess.run(
+                [sys.executable, str(ROOT / "scripts" / "review_skill.py"),
+                 "--source-file", str(skill), "--language", "zh-CN",
+                 "--output", str(report_file)],
+                cwd=ROOT, capture_output=True, text=True,
+            )
+            self.assertEqual(result.returncode, 0, result.stderr)
+            self.assertEqual(result.stdout, "")
+            rendered = report_file.read_text(encoding="utf-8")
+            self.assertIn("# WorkBuddy Skill 审阅报告", rendered)
+            self.assertIn("## 人工审阅清单", rendered)
+
 
 if __name__ == "__main__":
     unittest.main()

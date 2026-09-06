@@ -38,10 +38,11 @@ python3 scripts/query_catalog.py invoice OCR --json
 
 ```bash
 python3 scripts/review_skill.py \
-  --catalog-id 'github:owner/repository:path/to/SKILL.md'
+  --catalog-id 'github:owner/repository:path/to/SKILL.md' \
+  --language zh-CN --output review.md
 ```
 
-报告会列出来源、引用资源、指令和脚本信号，以及缺失的 WorkBuddy 字段。它不能替代人工完成的许可证、安全、网络和权限审查。
+报告会列出来源、引用资源、指令和脚本信号，以及缺失的 WorkBuddy 字段，并保存为 `review.md`。如果要交给自动化工具处理，可改用 `--json --output review.json`。它不能替代人工完成的许可证、安全、网络和权限审查。
 
 ## 第二步：生成 WorkBuddy 包
 

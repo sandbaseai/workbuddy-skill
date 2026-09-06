@@ -109,54 +109,78 @@ def build_report(
     }
 
 
-def render_markdown(report: dict) -> str:
+def render_markdown(report: dict, *, language: str = "en") -> str:
     source = report["source"]
     compatibility = report["compatibility"]
     static = report["static_review"]
     resources = report["resources"]
     checklist = report["review_checklist"]
     source_context_report = report["source_context"]
+    zh = language == "zh-CN"
+    labels = {
+        "title": "WorkBuddy Skill 审阅报告" if zh else "WorkBuddy Skill review report",
+        "source": "来源" if zh else "Source",
+        "immutable": "不可变来源" if zh else "Immutable source",
+        "yes": "是" if zh else "yes",
+        "no": "否" if zh else "no",
+        "source_context": "来源上下文" if zh else "Source context",
+        "compatibility": "WorkBuddy 兼容性" if zh else "WorkBuddy compatibility",
+        "static": "静态审阅" if zh else "Static review",
+        "referenced": "引用资源" if zh else "Referenced resources",
+        "missing": "缺失" if zh else "missing",
+        "frontmatter": "Frontmatter 元数据" if zh else "Frontmatter",
+        "signals": "审阅信号" if zh else "Review signals",
+        "skill_signals": "Skill 信号" if zh else "Skill signals",
+        "script_signals": "引用脚本信号" if zh else "Referenced-script signals",
+        "missing_fields": "缺失的 WorkBuddy 字段" if zh else "Missing WorkBuddy fields",
+        "missing_resources": "缺失资源" if zh else "Missing resources",
+        "source_signals": "来源上下文信号" if zh else "Source-context signals",
+        "checklist": "人工审阅清单" if zh else "Human review checklist",
+        "none": "无" if zh else "none detected",
+        "none_plain": "无" if zh else "none",
+        "note": "静态审阅干净不代表安全保证。" if zh else static["note"],
+    }
+    checklist_labels = {
+        "immutable_source": "来源已固定到不可变 Git 提交" if zh else "Source is pinned to an immutable Git commit",
+        "primary_source_context": "未检测到 Fork、镜像或休眠路径信号" if zh else "No fork, mirror, or dormant-path signal was detected",
+        "resources_complete": "所有引用资源均已获取" if zh else "All referenced resources were retrieved",
+        "static_review_clear": "未检测到配置的静态信号" if zh else "No configured static signal was detected",
+        "license_verified": "仓库许可证允许适配和再分发" if zh else "Repository license permits adaptation and redistribution",
+        "instructions_reviewed": "指令和随附文件已人工审阅" if zh else "Instructions and bundled files were manually reviewed",
+        "network_behavior_reviewed": "网络目标和数据处理方式已审阅" if zh else "Network destinations and data handling were reviewed",
+        "permissions_reviewed": "请求的工具和权限已审阅" if zh else "Requested tools and permissions were reviewed",
+    }
     lines = [
-        "# WorkBuddy Skill review report",
+        f"# {labels['title']}",
         "",
-        f"- Source: {source.get('source_url', source.get('source_file'))}",
-        f"- Immutable source: {'yes' if source['immutable'] else 'no'}",
-        f"- Source context: {source_context_report['status']}",
-        f"- WorkBuddy compatibility: {compatibility['status']} ({compatibility['score']}/100)",
-        f"- Static review: {static['status']}",
-        f"- Referenced resources: {len(resources['requested'])}; missing: {len(resources['missing'])}",
+        f"- {labels['source']}: {source.get('source_url', source.get('source_file'))}",
+        f"- {labels['immutable']}: {labels['yes'] if source['immutable'] else labels['no']}",
+        f"- {labels['source_context']}: {source_context_report['status']}",
+        f"- {labels['compatibility']}: {compatibility['status']} ({compatibility['score']}/100)",
+        f"- {labels['static']}: {static['status']}",
+        f"- {labels['referenced']}: {len(resources['requested'])}; {labels['missing']}: {len(resources['missing'])}",
         "",
-        "## Frontmatter",
+        f"## {labels['frontmatter']}",
         "",
         "```json",
         json.dumps(report["frontmatter"], ensure_ascii=False, indent=2, sort_keys=True),
         "```",
         "",
-        "## Review signals",
+        f"## {labels['signals']}",
         "",
-        f"- Skill signals: {', '.join(static['skill_signals']) or 'none detected'}",
-        f"- Referenced-script signals: {', '.join(static['script_signals']) or 'none detected'}",
-        f"- Missing WorkBuddy fields: {', '.join(compatibility['missing_fields']) or 'none'}",
-        f"- Missing resources: {', '.join(resources['missing']) or 'none'}",
-        f"- Source-context signals: {', '.join(source_context_report['signals']) or 'none'}",
+        f"- {labels['skill_signals']}: {', '.join(static['skill_signals']) or labels['none']}",
+        f"- {labels['script_signals']}: {', '.join(static['script_signals']) or labels['none']}",
+        f"- {labels['missing_fields']}: {', '.join(compatibility['missing_fields']) or labels['none_plain']}",
+        f"- {labels['missing_resources']}: {', '.join(resources['missing']) or labels['none_plain']}",
+        f"- {labels['source_signals']}: {', '.join(source_context_report['signals']) or labels['none_plain']}",
         "",
-        "## Human review checklist",
+        f"## {labels['checklist']}",
         "",
     ]
-    labels = {
-        "immutable_source": "Source is pinned to an immutable Git commit",
-        "primary_source_context": "No fork, mirror, or dormant-path signal was detected",
-        "resources_complete": "All referenced resources were retrieved",
-        "static_review_clear": "No configured static signal was detected",
-        "license_verified": "Repository license permits adaptation and redistribution",
-        "instructions_reviewed": "Instructions and bundled files were manually reviewed",
-        "network_behavior_reviewed": "Network destinations and data handling were reviewed",
-        "permissions_reviewed": "Requested tools and permissions were reviewed",
-    }
     lines.extend(
-        f"- [{'x' if value else ' '}] {labels[key]}" for key, value in checklist.items()
+        f"- [{'x' if value else ' '}] {checklist_labels[key]}" for key, value in checklist.items()
     )
-    lines.extend(["", f"> {static['note']}"])
+    lines.extend(["", f"> {labels['note']}"])
     return "\n".join(lines) + "\n"
 
 
@@ -167,6 +191,8 @@ def main() -> int:
     source.add_argument("--source-file", type=Path)
     parser.add_argument("--catalog", type=Path, default=DEFAULT_CATALOG)
     parser.add_argument("--json", action="store_true")
+    parser.add_argument("--language", choices=("en", "zh-CN"), default="en")
+    parser.add_argument("--output", type=Path, help="write the rendered report to a file")
     args = parser.parse_args()
 
     if args.catalog_id:
@@ -181,9 +207,14 @@ def main() -> int:
         source_text = args.source_file.read_text(encoding="utf-8")
         report = build_report(source_text, source_file=args.source_file)
     if args.json:
-        print(json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True))
+        rendered = json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
     else:
-        print(render_markdown(report), end="")
+        rendered = render_markdown(report, language=args.language)
+    if args.output:
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        args.output.write_text(rendered, encoding="utf-8")
+    else:
+        print(rendered, end="")
     return 0
 
 

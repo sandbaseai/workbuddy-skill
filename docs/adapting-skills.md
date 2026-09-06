@@ -42,10 +42,11 @@ Generate a non-executing review report first:
 
 ```bash
 python3 scripts/review_skill.py \
-  --catalog-id 'github:owner/repository:path/to/SKILL.md'
+  --catalog-id 'github:owner/repository:path/to/SKILL.md' \
+  --output review.md
 ```
 
-The report lists provenance, referenced resources, instruction and script signals, and missing WorkBuddy fields. It does not replace human review of the license, security, network behavior, or permissions.
+The report lists provenance, referenced resources, instruction and script signals, and missing WorkBuddy fields, then saves the result to `review.md`. Use `--json --output review.json` when a later automation step needs structured data. It does not replace human review of the license, security, network behavior, or permissions.
 
 ## Step 2: Generate the WorkBuddy package
 
