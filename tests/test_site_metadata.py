@@ -60,6 +60,8 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
                 self.assertIn('type="application/opensearchdescription+xml"', html)
                 self.assertIn('rel="icon" href="favicon.svg"', html)
                 self.assertIn('property="og:image"', html)
+                self.assertIn('property="og:locale"', html)
+                self.assertIn('property="og:locale:alternate"', html)
                 self.assertIn('content="1280"', html)
                 self.assertIn('content="640"', html)
                 self.assertIn(
@@ -73,6 +75,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
                 self.assertIsNotNone(match)
                 metadata = json.loads(match.group(1))
                 self.assertEqual(metadata["@type"], "Dataset")
+                self.assertIn(metadata["inLanguage"], ("en", "zh-CN"))
                 self.assertEqual(
                     metadata["distribution"]["contentUrl"],
                     "https://sandbaseai.github.io/workbuddy-skill/catalog.json",

@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Add language metadata to the bilingual Atlas pages for more accurate search and social previews.
 - Add Huawei Cloud DevKit and Qwen-MM-Plugins as rights-aware WorkBuddy ecosystem references without copying their Skills or code.
 - Add SkillDeck as a rights-aware cross-agent Skill management reference without copying its app or Skills.
 - Link copy-ready use cases to matching reviewed Starter Packs so users can move from an example prompt to an installable package.
