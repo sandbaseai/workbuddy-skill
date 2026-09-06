@@ -189,17 +189,18 @@ package_item_list = json.dumps(
     ensure_ascii=False,
     separators=(",", ":"),
 ).replace("</", "<\\/")
+package_count = f"{len(packages):,}"
 package_page = """<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://sandbaseai.github.io/workbuddy-skill/packages.html">
-    <meta name="description" content="Browse 277 reviewed WorkBuddy packages with pinned GitHub sources, ZIP downloads, and SHA256 checksums.">
+    <meta name="description" content="Browse __PACKAGE_COUNT__ reviewed WorkBuddy packages with pinned GitHub sources, ZIP downloads, and SHA256 checksums.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sandbaseai.github.io/workbuddy-skill/packages.html">
     <meta property="og:title" content="Reviewed WorkBuddy Packages · Skill Atlas">
-    <meta property="og:description" content="Browse 277 reviewed WorkBuddy packages with pinned GitHub sources, ZIP downloads, and SHA256 checksums.">
+    <meta property="og:description" content="Browse __PACKAGE_COUNT__ reviewed WorkBuddy packages with pinned GitHub sources, ZIP downloads, and SHA256 checksums.">
     <meta property="og:site_name" content="WorkBuddy Skill Atlas">
     <meta property="og:image" content="https://sandbaseai.github.io/workbuddy-skill/social-preview.png">
     <meta property="og:image:width" content="1280">
@@ -241,13 +242,13 @@ package_page = """<!doctype html>
     <header>
       <p><a href="index.html">← WorkBuddy Skill Atlas</a></p>
       <h1>Reviewed WorkBuddy Packages / 精选 WorkBuddy 包</h1>
-      <p>Browse 277 installable packages without JavaScript. Each entry keeps an immutable source link, a Release ZIP, and SHA256SUMS verification.</p>
-      <p>无需 JavaScript 即可浏览 277 个可安装精选包；每条记录都保留不可变来源、Release ZIP 和 SHA256SUMS 校验入口。</p>
+      <p>Browse __PACKAGE_COUNT__ installable packages without JavaScript. Each entry keeps an immutable source link, a Release ZIP, and SHA256SUMS verification.</p>
+      <p>无需 JavaScript 即可浏览 __PACKAGE_COUNT__ 个可安装精选包；每条记录都保留不可变来源、Release ZIP 和 SHA256SUMS 校验入口。</p>
       <nav class="category-nav" aria-label="Package categories">""" + category_nav + """</nav>
       <form class="package-search" role="search" onsubmit="return false">
         <label for="package-filter">Filter packages by name, repository, path, or category / 按名称、仓库、路径或分类筛选</label>
         <input id="package-filter" type="search" autocomplete="off" placeholder="Try: security, playwright, or mcp / 例如：security、playwright、mcp">
-        <output id="package-count" aria-live="polite">Showing all 277 packages / 共 277 个精选包</output>
+        <output id="package-count" aria-live="polite">Showing all __PACKAGE_COUNT__ packages / 共 __PACKAGE_COUNT__ 个精选包</output>
       </form>
     </header>
     <main>
@@ -294,6 +295,7 @@ package_page = """<!doctype html>
   </body>
 </html>
 """
+package_page = package_page.replace("__PACKAGE_COUNT__", package_count)
 packages_page_temporary = PACKAGES_PAGE_OUTPUT.with_suffix(".html.tmp")
 packages_page_temporary.write_text(package_page, encoding="utf-8")
 packages_page_temporary.replace(PACKAGES_PAGE_OUTPUT)
