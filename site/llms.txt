@@ -40,7 +40,10 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Chinese WorkBuddy practice guide (verify freshness and license before reuse): https://github.com/opcspace/WorkBuddy-Guide
 - MIT WorkBuddy beginner starter: https://github.com/sunyet-01/WorkBuddy-Starter
 - MIT WorkBuddy-compatible QA testing reference: https://github.com/genapohub/qa-testing-guide
+- Apache-2.0 WorkBuddy-compatible Chinese WeChat article workflow (review credentials and publishing permissions): https://github.com/aiworkskills/wechat-article-skills
 - MIT agentic Skill catalog and control plane (research reference): https://github.com/sickn33/agentic-awesome-skills
+- Auto-updated Agent Skills index with no repository license declaration (navigation only): https://github.com/linny006/awesome-agent-skills
+- MIT cross-harness Skill and extension manager with preview and source tracking (separate tool): https://github.com/vanillagreencom/kendex
 - CC0 WorkBuddy resource index: https://github.com/semlinker/awesome-workbuddy
 - Chinese AI coding and WorkBuddy tutorial: https://github.com/KimYx0207/AI-Coding-Guide-Zh
 - MIT WorkBuddy-compatible e-commerce visual-copywriting Skill (inspect bundled assets and scripts before reuse): https://github.com/feichanggege/ecommerce-visual-copywriting-skill
