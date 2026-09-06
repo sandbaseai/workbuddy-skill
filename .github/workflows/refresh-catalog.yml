@@ -20,6 +20,10 @@ jobs:
           python-version: "3.x"
       - name: Validate frozen catalog
         run: python3 scripts/validate_catalog.py --minimum 10000 --require-analysis --check-stats
+      - name: Verify catalog README statistics
+        run: |
+          python3 scripts/update_readme_stats.py --catalog-only
+          git diff --exit-code -- catalog/README.md
       - name: Rebuild and validate published site data
         run: |
           python3 scripts/build_site_data.py

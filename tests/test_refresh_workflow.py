@@ -174,6 +174,8 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertNotIn("git push", workflow)
         self.assertIn("Verify frozen catalog", workflow)
         self.assertIn("--check-stats", workflow)
+        self.assertIn("scripts/update_readme_stats.py --catalog-only", workflow)
+        self.assertIn("git diff --exit-code -- catalog/README.md", workflow)
         self.assertIn("scripts/build_site_data.py", workflow)
         self.assertIn("scripts/validate_site_data.py", workflow)
         self.assertIn("scripts/verify_catalog_snapshot.py", workflow)

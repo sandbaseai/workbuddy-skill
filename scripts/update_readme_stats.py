@@ -58,6 +58,7 @@ def main() -> int:
         f"- {records} indexed GitHub paths",
         f"- {shas} unique Git blob SHAs",
         f"- {repositories} source repositories",
+        "- The generated site metadata exposes a SHA-256 fingerprint for the exact published `skills.jsonl` bytes.",
     ])
     catalog_text = args.catalog_readme.read_text(encoding="utf-8")
     catalog_text = replace_between(
