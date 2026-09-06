@@ -92,6 +92,19 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn("Skill Atlas", resources)
             self.assertIn("use-cases.md", resources)
 
+        self.assertIn(
+            "Search current GitHub Skill files",
+            (ROOT / "docs/catalog-guide.md").read_text(encoding="utf-8"),
+        )
+        self.assertIn(
+            "在 GitHub 搜索当前 Skill 文件",
+            (ROOT / "docs/catalog-guide.zh-CN.md").read_text(encoding="utf-8"),
+        )
+        self.assertIn(
+            "current GitHub `SKILL.md` files",
+            (ROOT / "site/llms.txt").read_text(encoding="utf-8"),
+        )
+
     def test_catalog_refresh_is_frozen_without_automatic_additions(self):
         workflow = (ROOT / ".github/workflows/refresh-catalog.yml").read_text(encoding="utf-8")
         self.assertNotIn("schedule:", workflow)
