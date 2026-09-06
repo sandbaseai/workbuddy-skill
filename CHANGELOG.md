@@ -4,6 +4,8 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Simplify the bilingual quickstarts with shortest-path guidance for installing, searching, and adapting Skills.
+- Remove internal catalog maintenance instructions from the public catalog README.
 - Reject query-bearing or structurally incomplete immutable raw URLs.
 - Apply blob SHA validation to adapted package provenance as well as review reports.
 - Validate catalog blob SHAs before review reports expose provenance.

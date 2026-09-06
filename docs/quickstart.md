@@ -28,6 +28,15 @@ Use these references alongside the exact source and license of any Skill you cho
 The catalog is a review-oriented snapshot of 21,818 indexed Skills. Use it to narrow
 your search, then follow each result's source link for the latest upstream version.
 
+## The shortest path
+
+| If you want to… | Do this first |
+|---|---|
+| Install a reviewed package now | Open [curated packages](https://sandbaseai.github.io/workbuddy-skill/packages.html), download its ZIP, verify `SHA256SUMS`, and upload the original ZIP in WorkBuddy. |
+| Find a capability | Search the [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/), enable **Reviewed package available** when you need an installable result, then inspect the source and license. |
+| Search from a checkout | Run `python3 scripts/query_catalog.py <term> --package-status reviewed --sort score --limit 10`. |
+| Turn a public source into a package | Use the [adaptation guide](adapting-skills.md) after reviewing the immutable source and license. |
+
 For platform-level instructions, use the [official WorkBuddy quickstart](https://www.workbuddy.ai/docs/workbuddy/Quickstart),
 [official Skills tutorial](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills),
 [MCP guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide),

@@ -34,29 +34,9 @@ the documented patterns did not match.
 
 Duplicate content can occur in multiple repositories. Consumers should group by `sha` when they need unique content and retain all source occurrences for attribution.
 
-## Snapshot maintenance
-
-```bash
-python3 scripts/validate_catalog.py --minimum 10000 --require-analysis --check-stats
-python3 scripts/build_site_data.py
-python3 scripts/verify_catalog_snapshot.py
-```
-
-The published snapshot is frozen. Do not run the crawler or add records; use the
-validation and site-build commands above to verify documentation and presentation
-changes without changing the catalog.
-
-The historical crawler also refuses to write the published `skills.jsonl` by
-default. Use another output path for research exports; changing the published
-snapshot requires the explicit `--allow-frozen-catalog` opt-in and a deliberate
-review of the resulting metadata.
-
 The Atlas build derives deterministic work categories from skill names and
 paths and counts identical SHA occurrences. Categories and copy counts are
 navigation aids, not quality or safety endorsements.
-
-The refresh workflow is a read-only frozen-catalog check. It does not crawl GitHub,
-write catalog files, open pull requests, or enable auto-merge.
 
 ## Search locally
 
