@@ -35,6 +35,7 @@ SOURCE_FILES = (
 URL_PATTERN = re.compile(r'''https?://[^\s)<>`"']+''')
 DOWNLOAD_PATTERN = re.compile(r"/releases/latest/download/")
 SITE_URL_PREFIX = "https://sandbaseai.github.io/workbuddy-skill/"
+RETRYABLE_HTTP_STATUS = {408, 429, 500, 502, 503, 504}
 
 
 def extract_urls(paths: tuple[Path, ...] = SOURCE_FILES) -> list[str]:
@@ -53,7 +54,15 @@ def extract_urls(paths: tuple[Path, ...] = SOURCE_FILES) -> list[str]:
     return sorted(urls)
 
 
-def check_url(url: str, timeout: float = 20.0, attempts: int = 2) -> tuple[str, int | None, str | None]:
+def retry_delay(error: HTTPError, attempt: int) -> float:
+    retry_after = error.headers.get("Retry-After")
+    try:
+        return min(8.0, max(0.5, float(retry_after))) if retry_after else min(8.0, 0.5 * 2**attempt)
+    except (TypeError, ValueError):
+        return min(8.0, 0.5 * 2**attempt)
+
+
+def check_url(url: str, timeout: float = 20.0, attempts: int = 3) -> tuple[str, int | None, str | None]:
     """Fetch one URL without downloading its response body."""
 
     request = Request(url, headers={"User-Agent": "workbuddy-skill-resource-check/1.0"})
@@ -67,6 +76,11 @@ def check_url(url: str, timeout: float = 20.0, attempts: int = 2) -> tuple[str, 
         except HTTPError as error:
             last_status = error.code
             last_error = f"HTTP {error.code}"
+            if error.code not in RETRYABLE_HTTP_STATUS:
+                break
+            if attempt + 1 < attempts:
+                time.sleep(retry_delay(error, attempt))
+                continue
         except (URLError, TimeoutError, OSError) as error:
             last_error = str(error.reason if isinstance(error, URLError) else error)
         if attempt + 1 < attempts:

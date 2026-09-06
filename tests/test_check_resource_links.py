@@ -1,8 +1,10 @@
 from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
+from urllib.error import HTTPError
+from unittest.mock import patch
 
-from scripts.check_resource_links import extract_urls
+from scripts.check_resource_links import check_url, extract_urls
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -66,6 +68,20 @@ class ResourceLinkCheckTests(unittest.TestCase):
         source = (ROOT / "scripts/check_resource_links.py").read_text(encoding="utf-8")
         self.assertIn("if status == 429:", source)
         self.assertIn("rate_limited", source)
+
+    def test_transient_http_errors_are_retried_with_bounded_backoff(self):
+        error = HTTPError("https://example.com", 503, "busy", {"Retry-After": "1"}, None)
+        response = type("Response", (), {
+            "status": 200,
+            "__enter__": lambda self: self,
+            "__exit__": lambda self, *args: None,
+            "read": lambda self, count: b"o",
+        })()
+        with patch("scripts.check_resource_links.urlopen", side_effect=[error, response]), patch(
+            "scripts.check_resource_links.time.sleep"
+        ) as sleep:
+            self.assertEqual(check_url("https://example.com"), ("https://example.com", 200, None))
+        sleep.assert_called_once_with(1.0)
 
 
 if __name__ == "__main__":
