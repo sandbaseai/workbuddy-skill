@@ -31,6 +31,15 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("rebuilds this index every six hours", catalog_docs)
         self.assertEqual(sitemap.count("<changefreq>daily</changefreq>"), 2)
 
+    def test_pages_actions_use_current_node_runtime_generations(self):
+        workflow = (ROOT / ".github/workflows/pages.yml").read_text(encoding="utf-8")
+        self.assertIn("actions/configure-pages@v6", workflow)
+        self.assertIn("actions/upload-pages-artifact@v5", workflow)
+        self.assertIn("actions/deploy-pages@v5", workflow)
+        self.assertNotIn("actions/configure-pages@v5", workflow)
+        self.assertNotIn("actions/upload-pages-artifact@v4", workflow)
+        self.assertNotIn("actions/deploy-pages@v4", workflow)
+
     def test_concurrent_publish_reconciles_snapshots_before_retrying(self):
         workflow = (ROOT / ".github/workflows/refresh-catalog.yml").read_text(encoding="utf-8")
         self.assertIn("git rebase --abort", workflow)
