@@ -193,6 +193,19 @@ package_page = """<!doctype html>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="https://sandbaseai.github.io/workbuddy-skill/packages.html">
     <meta name="description" content="Browse 277 reviewed WorkBuddy packages with pinned GitHub sources, ZIP downloads, and SHA256 checksums.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sandbaseai.github.io/workbuddy-skill/packages.html">
+    <meta property="og:title" content="Reviewed WorkBuddy Packages · Skill Atlas">
+    <meta property="og:description" content="Browse 277 reviewed WorkBuddy packages with pinned GitHub sources, ZIP downloads, and SHA256 checksums.">
+    <meta property="og:site_name" content="WorkBuddy Skill Atlas">
+    <meta property="og:image" content="https://sandbaseai.github.io/workbuddy-skill/social-preview.png">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="640">
+    <meta property="og:image:alt" content="Reviewed WorkBuddy packages with pinned GitHub provenance">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Reviewed WorkBuddy Packages · Skill Atlas">
+    <meta name="twitter:description" content="Browse reviewed WorkBuddy packages with pinned sources, downloads, and checksums.">
+    <meta name="twitter:image" content="https://sandbaseai.github.io/workbuddy-skill/social-preview.png">
     <title>Reviewed WorkBuddy Packages · Skill Atlas</title>
     <script type="application/ld+json">""" + package_item_list + """</script>
     <style>

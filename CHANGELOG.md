@@ -18,6 +18,7 @@ All notable changes to this project are documented here.
 - Added each reviewed package's immutable Git blob SHA to the no-JavaScript package index for direct provenance checks.
 - Added an expandable, copy-ready `gh release download` command to each no-JavaScript reviewed-package entry.
 - Added progressive package search by name, repository, path, or category while preserving the full no-JavaScript list.
+- Added Open Graph and Twitter sharing metadata to the standalone reviewed-package index.
 - Added bilingual guidance distinguishing the portable Agent Skills specification from WorkBuddy's Marketplace metadata and connector contracts.
 - Added a SHA-256 snapshot fingerprint to generated catalog metadata so consumers can verify the exact frozen `skills.jsonl` bytes.
 - Added task-based bilingual resource navigation, Skill evaluation references, and an English `gh skill` installation example.
