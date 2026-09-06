@@ -67,6 +67,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Official WorkBuddy Service Agreement: https://www.workbuddy.ai/document/term
 - Official WorkBuddy Acceptable Use Policy: https://www.workbuddy.ai/document/acceptable-use-policy
 - Official WorkBuddy Permission Modes: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Permission-Modes
+- Official WorkBuddy Task Bar: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar
 - Official WorkBuddy tips and tricks: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Efficient-Tips
 - Official WorkBuddy FAQ: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/FQA
 - Vendor-neutral Agent Skills specification: https://agentskills.io/specification
@@ -79,6 +80,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - English official MCP guide: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide
 - Official Skill Marketplace: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market
 - Official Explore: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Explore
+- Chinese official WorkBuddy Task Bar: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar
 - English official Skill Marketplace: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market
 - English official Explore: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Explore
 - Official Open Platform Skill guide: https://open.workbuddy.cn/en/docs/skill
