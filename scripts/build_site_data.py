@@ -245,7 +245,10 @@ package_page = """<!doctype html>
   </head>
   <body>
     <header>
-      <p><a href="index.html">← WorkBuddy Skill Atlas</a></p>
+      <nav class="category-nav page-nav" aria-label="Atlas navigation">
+        <a href="index.html">English Atlas</a>
+        <a href="zh-CN.html">中文 Atlas</a>
+      </nav>
       <h1>Reviewed WorkBuddy Packages / 精选 WorkBuddy 包</h1>
       <p>Browse __PACKAGE_COUNT__ installable packages without JavaScript. Each entry keeps an immutable source link, a Release ZIP, and SHA256SUMS verification.</p>
       <p>无需 JavaScript 即可浏览 __PACKAGE_COUNT__ 个可安装精选包；每条记录都保留不可变来源、Release ZIP 和 SHA256SUMS 校验入口。</p>
