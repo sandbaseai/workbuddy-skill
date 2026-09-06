@@ -157,6 +157,31 @@ class ValidateSkillTests(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("packaged_resources mismatch", result.stderr)
 
+    def test_rejects_symlinked_skill_content(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            skills_root = root / "skills"
+            skill_dir = skills_root / "demo"
+            skill_dir.mkdir(parents=True)
+            (skill_dir / "SKILL.md").write_text(
+                "---\nname: demo\ndescription: Demo\ndescription_zh: 演示\n"
+                "description_en: Demo\nversion: 1.0.0\nauthor: Test\nlicense: MIT\n"
+                "---\n\n# Demo\n",
+                encoding="utf-8",
+            )
+            outside = root / "outside.txt"
+            outside.write_text("must not be packaged\n", encoding="utf-8")
+            linked = skill_dir / "references"
+            linked.mkdir()
+            (linked / "outside.txt").symlink_to(outside)
+            result = subprocess.run(
+                [sys.executable, str(VALIDATOR), "--skills-root", str(skills_root)],
+                capture_output=True,
+                text=True,
+            )
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("unsupported symlink", result.stderr)
+
 
 if __name__ == "__main__":
     unittest.main()

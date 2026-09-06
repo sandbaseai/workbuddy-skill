@@ -30,6 +30,11 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn('gh release download "$GITHUB_REF_NAME"', workflow)
         self.assertIn("python3 scripts/verify_release.py release-download", workflow)
 
+    def test_packaging_rejects_symlinks(self):
+        script = (ROOT / "scripts/package_skill.sh").read_text(encoding="utf-8")
+        self.assertIn("path.is_symlink()", script)
+        self.assertIn("symlink is not allowed", script)
+
     def test_quickstarts_document_exact_release_download_and_verification(self):
         for name in ("docs/quickstart.md", "docs/quickstart.zh-CN.md"):
             quickstart = (ROOT / name).read_text(encoding="utf-8")

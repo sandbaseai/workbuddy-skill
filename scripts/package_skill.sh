@@ -23,6 +23,8 @@ import sys
 archive = Path(sys.argv[1])
 with ZipFile(archive, "w", compression=ZIP_DEFLATED) as package:
     for path in sorted(Path(".").rglob("*")):
+        if path.is_symlink():
+            raise SystemExit(f"package error: symlink is not allowed: {path}")
         if path.is_file():
             package.write(path)
 PY
