@@ -1,0 +1,28 @@
+from pathlib import Path
+import unittest
+
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+class AtlasFrontendTests(unittest.TestCase):
+    def setUp(self):
+        self.app = (ROOT / "site/app.js").read_text(encoding="utf-8")
+        self.english = (ROOT / "site/index.html").read_text(encoding="utf-8")
+        self.chinese = (ROOT / "site/zh-CN.html").read_text(encoding="utf-8")
+
+    def test_both_languages_expose_shareable_result_controls(self):
+        for page in (self.english, self.chinese):
+            self.assertIn('id="copy-link"', page)
+            self.assertIn('id="language-link"', page)
+
+    def test_url_state_supports_sharing_and_browser_history(self):
+        self.assertIn("new URLSearchParams(location.search)", self.app)
+        self.assertIn("copySearchLink", self.app)
+        self.assertIn('window.addEventListener("popstate"', self.app)
+        self.assertIn("syncLanguageLink", self.app)
+        self.assertIn("control.value = control.options[0].value", self.app)
+
+
+if __name__ == "__main__":
+    unittest.main()
