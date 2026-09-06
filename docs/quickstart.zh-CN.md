@@ -161,6 +161,7 @@ python3 scripts/verify_release.py workbuddy-download
 
 支持开放 Agent Skills 约定的宿主，也可以从 GitHub 预览并安装：
 命令细节以 [GitHub CLI 官方 `gh skill` 手册](https://cli.github.com/manual/gh_skill) 为准；该命令族目前仍处于 preview 阶段。
+`gh skill` 是宿主侧安装器，不是 WorkBuddy 桌面端的 ZIP 导入功能。使用 WorkBuddy 桌面应用时，请走上面的 Release ZIP 路径；只有目标宿主明确支持它时，才使用 `gh skill`。
 
 ```bash
 gh skill search incident --limit 10

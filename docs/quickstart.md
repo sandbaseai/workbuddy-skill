@@ -196,6 +196,7 @@ After reviewing the source, permissions, and plan, run a small task with public 
 
 Hosts supporting the open Agent Skills convention can preview and install from GitHub:
 The command details are maintained in the [official GitHub CLI `gh skill` manual](https://cli.github.com/manual/gh_skill); this command family is currently in preview.
+`gh skill` is a host-side installer, not WorkBuddy desktop's ZIP importer. For the WorkBuddy desktop app, use the Release ZIP path above; use `gh skill` only when your target host explicitly supports it.
 
 ```bash
 gh skill search incident --limit 10

@@ -85,6 +85,12 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn('--pin "$release_tag"', quickstart)
             self.assertIn("cli.github.com/manual/gh_skill_install", quickstart)
 
+    def test_quickstarts_distinguish_gh_skill_from_workbuddy_zip_import(self):
+        english = (ROOT / "docs/quickstart.md").read_text(encoding="utf-8")
+        chinese = (ROOT / "docs/quickstart.zh-CN.md").read_text(encoding="utf-8")
+        self.assertIn("not WorkBuddy desktop's ZIP importer", english)
+        self.assertIn("不是 WorkBuddy 桌面端的 ZIP 导入功能", chinese)
+
     def test_quickstarts_use_catalog_metadata_for_current_size(self):
         for name in ("docs/quickstart.md", "docs/quickstart.zh-CN.md"):
             quickstart = (ROOT / name).read_text(encoding="utf-8")
