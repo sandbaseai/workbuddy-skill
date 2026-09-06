@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Add current references for the read-only-first `skill-manager` governance CLI and the cross-platform Skills Hub manager.
 - Add a bilingual quick path for installing and managing Skills through WorkBuddy's built-in Skill Marketplace.
 - Add the official WorkBuddy model configuration guide to the bilingual resource maps and quickstarts for Auto Mode, custom providers, and local Ollama setup.
 - Put official permission-mode guidance in the first-run path, with a default-permissions and isolated-workspace recommendation.
