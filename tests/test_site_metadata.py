@@ -75,6 +75,8 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("Automation-Guide", content)
         self.assertIn("www.workbuddy.ai/docs/workbuddy/Quickstart", content)
         self.assertIn("www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills", content)
+        self.assertIn("Function-Description/Skills-Market", content)
+        self.assertIn("Function-Description/Explore", content)
 
 
 if __name__ == "__main__":
