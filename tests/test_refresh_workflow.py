@@ -175,6 +175,18 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertNotIn("actions/upload-pages-artifact@v4", workflow)
         self.assertNotIn("actions/deploy-pages@v4", workflow)
 
+    def test_long_running_jobs_have_explicit_timeouts(self):
+        expected = {
+            ".github/workflows/validate.yml": "timeout-minutes: 15",
+            ".github/workflows/release.yml": "timeout-minutes: 30",
+            ".github/workflows/pages.yml": "timeout-minutes: 10",
+            ".github/workflows/refresh-catalog.yml": "timeout-minutes: 10",
+            ".github/workflows/cleanup-merged-branches.yml": "timeout-minutes: 10",
+        }
+        for path, marker in expected.items():
+            with self.subTest(path=path):
+                self.assertIn(marker, (ROOT / path).read_text(encoding="utf-8"))
+
     def test_validate_workflow_checks_generated_site_data(self):
         workflow = (ROOT / ".github/workflows/validate.yml").read_text(encoding="utf-8")
         self.assertIn("scripts/build_site_data.py", workflow)

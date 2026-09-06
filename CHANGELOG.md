@@ -7,6 +7,7 @@ All notable changes to this project are documented here.
 - Added a post-upload release check that downloads every published ZIP and verifies it against `SHA256SUMS` before the workflow succeeds.
 - Made same-repository branch cleanup idempotent so auto-merge and fallback cleanup do not fail when either one wins the deletion race.
 - Added bilingual task-first Starter Pack links to the public README for faster onboarding.
+- Added explicit time limits to validation, release, Pages, catalog, and branch-cleanup jobs so stalled automation cannot block delivery indefinitely.
 - Added a restricted auto-merge workflow for trusted same-repository pull requests; fork pull requests remain manual and untrusted code is never checked out by the merge workflow.
 - Added a dependency-free `verify_catalog_snapshot.py` command and CI gate for checking the frozen catalog against its published SHA-256 fingerprint.
 - Published `catalog-meta-schema.json` and added metadata contract validation for machine consumers of the Atlas.
