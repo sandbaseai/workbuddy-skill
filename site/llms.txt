@@ -17,6 +17,8 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Source repository: https://github.com/sandbaseai/workbuddy-skill
 - Citation metadata: https://github.com/sandbaseai/workbuddy-skill/blob/main/CITATION.cff
 - Curated WorkBuddy ecosystem index: https://github.com/sandbaseai/awesome-workbuddy
+- Community task-oriented guide: https://github.com/AlephAITech/WorkBuddyGuide
+- Tencent WorkBuddy benchmark: https://github.com/Tencent/workbuddy-bench
 - Discussions for usage examples and reviewed-package feedback: https://github.com/sandbaseai/workbuddy-skill/discussions
 - English quickstart: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.md
 - Chinese quickstart: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.zh-CN.md

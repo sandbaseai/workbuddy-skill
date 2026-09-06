@@ -214,6 +214,9 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 
 需要更多 WorkBuddy 文档、MCP、工作流、评测与 Skills，可浏览 [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy)。
 
+延伸资料： [WorkBuddy 实战蓝皮书](https://github.com/AlephAITech/WorkBuddyGuide) 适合按真实任务学习，
+[Tencent WorkBuddy Bench](https://github.com/Tencent/workbuddy-bench) 适合了解可复现的 Agent 任务评测。
+
 ## English
 
 WorkBuddy Skill Hub is an open catalog of public Agent Skills plus a curated set of reviewed, bilingual WorkBuddy workflows.
@@ -230,6 +233,8 @@ Start with the [English quickstart](docs/quickstart.md), read the [catalog readi
 3. Download a ZIP from [Releases](https://github.com/sandbaseai/workbuddy-skill/releases/latest) and add it in WorkBuddy under **Experts · Skills · Connectors → Skills → Add Skill**.
 
 The catalog is for discovery, not automatic approval. Review every external Skill before use, and pin a release or commit when reproducibility matters. See the [English adaptation guide](docs/adapting-skills.md) for preparing a reviewed workflow.
+
+Further reading: the [WorkBuddyGuide](https://github.com/AlephAITech/WorkBuddyGuide) is a task-oriented community guide, while [Tencent WorkBuddy Bench](https://github.com/Tencent/workbuddy-bench) provides reproducible Agent task evaluation material. These are reference resources, not additional catalog records or trust endorsements.
 
 ## Compatibility
 
