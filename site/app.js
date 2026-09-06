@@ -28,6 +28,7 @@ const heroCount = document.querySelector("#hero-count");
 const isChinese = document.documentElement.lang.startsWith("zh");
 
 let catalog = [];
+let packagesByDownload = new Map();
 let filtered = [];
 let shown = 0;
 const PAGE_SIZE = 40;
@@ -68,6 +69,8 @@ function packageAsset(skill) {
 }
 
 function packageInstallCommand(skill) {
+  const indexedCommand = packagesByDownload.get(skill.a)?.download_command;
+  if (indexedCommand) return indexedCommand;
   const asset = packageAsset(skill);
   return asset
     ? `gh release download --repo sandbaseai/workbuddy-skill --pattern '${asset}' --pattern SHA256SUMS --dir workbuddy-download --clobber`
@@ -288,14 +291,15 @@ results.addEventListener("click", (event) => {
 restoreUrlState();
 syncLanguageLink();
 
-Promise.all([fetch("catalog.json"), fetch("catalog-meta.json")])
-  .then(async ([catalogResponse, metaResponse]) => {
-    if (!catalogResponse.ok || !metaResponse.ok) throw new Error("catalog unavailable");
-    return Promise.all([catalogResponse.json(), metaResponse.json()]);
+Promise.all([fetch("catalog.json"), fetch("catalog-meta.json"), fetch("packages.json")])
+  .then(async ([catalogResponse, metaResponse, packagesResponse]) => {
+    if (!catalogResponse.ok || !metaResponse.ok || !packagesResponse.ok) throw new Error("catalog unavailable");
+    return Promise.all([catalogResponse.json(), metaResponse.json(), packagesResponse.json()]);
   })
-  .then(([data, meta]) => {
+  .then(([data, meta, packages]) => {
     if (meta.snapshot_frozen !== true) throw new Error("catalog snapshot is not frozen");
     catalog = data;
+    packagesByDownload = new Map(packages.map((packageRecord) => [packageRecord.download_url, packageRecord]));
     if (typeof meta.release_checksum_url === "string" && meta.release_checksum_url.startsWith("https://")) {
       checksumUrl = meta.release_checksum_url;
     }
