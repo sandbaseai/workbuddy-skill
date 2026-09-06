@@ -59,12 +59,14 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Official Buddy App guide: https://open.workbuddy.cn/en/docs/buddy-app
 - Official Open Platform Connector guide: https://open.workbuddy.cn/en/docs/connector
 - Official Open API reference: https://open.workbuddy.cn/en/docs/openapi
+- Official Third-Party App guide: https://open.workbuddy.cn/en/docs/third-party-app
 - Chinese Open Platform Skill guide: https://open.workbuddy.cn/zh/docs/skill
 - Chinese Open Platform overview: https://open.workbuddy.cn/docs/what-is-open-platform
 - Chinese Open Platform onboarding: https://open.workbuddy.cn/docs/onboarding
 - Chinese Buddy App guide: https://open.workbuddy.cn/docs/buddy-app
 - Chinese Open Platform Connector guide: https://open.workbuddy.cn/docs/connector
 - Chinese Open API reference: https://open.workbuddy.cn/docs/openapi
+- Chinese Third-Party App guide: https://open.workbuddy.cn/docs/third-party-app
 - GitHub CLI gh skill manual (preview): https://cli.github.com/manual/gh_skill
 - Adaptation guide: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/adapting-skills.md
 - Chinese adaptation guide: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/adapting-skills.zh-CN.md

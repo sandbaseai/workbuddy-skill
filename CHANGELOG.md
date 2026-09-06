@@ -45,6 +45,7 @@ All notable changes to this project are documented here.
 - Added a one-click public showcase path so users can share real WorkBuddy results after trying a package.
 - Added official Open Platform onboarding and Buddy App references to the bilingual resource maps and LLM index.
 - Resource-link validation now runs automatically on relevant documentation and site changes as well as weekly.
+- Kept the LLM resource index aligned with the human-facing Third-Party App documentation links.
 - Added bilingual WorkBuddy resource maps covering official product docs, community learning, evaluation material, and local catalog guides.
 - Added direct Atlas navigation to the resource maps, plus a post-use feedback and Star prompt that does not perform account actions.
 - Atlas now derives and displays the current count of reviewed WorkBuddy packages from `catalog-meta.json`.

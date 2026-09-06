@@ -117,6 +117,8 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("open.workbuddy.cn/docs/connector", content)
         self.assertIn("open.workbuddy.cn/en/docs/openapi", content)
         self.assertIn("open.workbuddy.cn/docs/openapi", content)
+        self.assertIn("open.workbuddy.cn/en/docs/third-party-app", content)
+        self.assertIn("open.workbuddy.cn/docs/third-party-app", content)
         self.assertIn("what-is-open-platform", content)
         self.assertIn("https://cli.github.com/manual/gh_skill", content)
         self.assertIn("scripts/verify_release.py", content)
