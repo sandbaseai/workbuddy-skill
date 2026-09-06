@@ -130,6 +130,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("Function-Description/Skills-Market", content)
         self.assertIn("https://www.workbuddy.ai/docs/zh/", content)
         self.assertIn("User-guide/Agent-Mode/Quickstart", content)
+        self.assertIn("Function-Description/Memory", content)
         self.assertIn("https://github.com/crossoverJie/SkillDeck", content)
         self.assertIn("https://github.com/GrubbyLee/skill-manager", content)
         self.assertIn("https://github.com/qufei1993/skills-hub", content)
