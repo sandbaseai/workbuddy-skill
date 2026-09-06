@@ -13,6 +13,7 @@
 | 了解产品数据边界 | [WorkBuddy 隐私政策](https://www.workbuddy.ai/document/privacy-policy) |
 | 了解服务条款和允许的使用范围 | [服务协议](https://www.workbuddy.ai/document/term) 和 [可接受使用政策](https://www.workbuddy.ai/document/acceptable-use-policy) |
 | 配置任务权限边界 | [权限模式说明](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Permission-Modes) |
+| 更新、停用或移除已安装的 Skill | [快速开始中的生命周期说明](quickstart.zh-CN.md) 和 [Skill Marketplace](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) |
 | 组装市场专家或专家团 | [专家指南](https://open.workbuddy.cn/docs/expert) 与 [专家团指南](https://open.workbuddy.cn/docs/expert-team) |
 | 把公开目录结果制作成自己的包 | [适配教程](adapting-skills.zh-CN.md) |
 

@@ -13,6 +13,7 @@ Use this page to choose the right source before searching the catalog.
 | Understand product data boundaries | [WorkBuddy Privacy Policy](https://www.workbuddy.ai/document/privacy-policy) |
 | Review service terms and permitted use | [Service Agreement](https://www.workbuddy.ai/document/term) and [Acceptable Use Policy](https://www.workbuddy.ai/document/acceptable-use-policy) |
 | Configure task permission boundaries | [Permission Modes](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Permission-Modes) |
+| Update, disable, or remove an installed Skill | [Quickstart lifecycle guide](quickstart.md) and the [Skill Marketplace](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) |
 | Assemble a marketplace Expert or Team | [Expert guide](https://open.workbuddy.cn/en/docs/expert) and [Expert Team guide](https://open.workbuddy.cn/en/docs/expert-team) |
 | Package a public catalog result yourself | [Adaptation guide](adapting-skills.md) |
 
