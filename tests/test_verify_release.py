@@ -41,6 +41,19 @@ class VerifyReleaseTests(unittest.TestCase):
             self.assertIn("checksum mismatch", errors.getvalue())
             self.assertNotIn("Verified", output.getvalue())
 
+    def test_rejects_unlisted_workbuddy_zip_assets(self):
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            signed = root / "signed-workbuddy-skill.zip"
+            signed.write_bytes(b"signed")
+            digest = hashlib.sha256(signed.read_bytes()).hexdigest()
+            (root / "unsigned-workbuddy-skill.zip").write_bytes(b"unsigned")
+            (root / "SHA256SUMS").write_text(
+                f"{digest}  {signed.name}\n", encoding="utf-8"
+            )
+            with self.assertRaisesRegex(ValueError, "release assets without checksums"):
+                verify(root)
+
 
 if __name__ == "__main__":
     unittest.main()

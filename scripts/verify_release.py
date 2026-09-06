@@ -44,6 +44,16 @@ def verify(directory: Path, checksum_name: str = "SHA256SUMS", selected: list[st
     if not checksum_path.is_file():
         raise FileNotFoundError(f"checksum file not found: {checksum_path}")
     checksums = read_checksums(checksum_path)
+    if not selected:
+        unlisted = sorted(
+            path.name
+            for path in directory.glob("*-workbuddy-skill.zip")
+            if path.name not in checksums
+        )
+        if unlisted:
+            raise ValueError(
+                "release assets without checksums: " + ", ".join(unlisted)
+            )
     names = selected or sorted(checksums)
     missing_entries = [name for name in names if name not in checksums]
     if missing_entries:
