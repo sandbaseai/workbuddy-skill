@@ -50,6 +50,16 @@ python3 scripts/query_catalog.py research --security no-static-flags \
   --source-context primary-looking --min-score 80 --unique --sort score
 ```
 
+The same review-oriented filter is available as a shortcut:
+
+```bash
+python3 scripts/query_catalog.py research --high-signal --limit 10
+```
+
+`--high-signal` means no static flags, a primary-looking source, a score of at
+least 80, one result per unique blob, and score ordering. It is a triage aid,
+not a trust or safety guarantee.
+
 To restrict local results to packages that have a reviewed Release ZIP, use the
 curated manifest maintained by this repository:
 

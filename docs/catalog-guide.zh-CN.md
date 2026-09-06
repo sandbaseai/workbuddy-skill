@@ -31,6 +31,15 @@ python3 scripts/query_catalog.py research --security no-static-flags \
   --source-context primary-looking --min-score 80 --unique --sort score
 ```
 
+同样的审阅筛选也可以使用快捷参数：
+
+```bash
+python3 scripts/query_catalog.py research --high-signal --limit 10
+```
+
+`--high-signal` 等价于无静态标记、优先疑似主来源、兼容分数至少 80、按唯一
+blob 去重并按分数排序。它只是缩小候选范围的辅助条件，不代表可信或安全。
+
 如果只想查看本仓库已经提供审阅版 Release ZIP 的条目，可以使用精选清单：
 
 ```bash

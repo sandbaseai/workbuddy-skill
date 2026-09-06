@@ -113,6 +113,28 @@ class QueryCatalogTests(unittest.TestCase):
         results, _ = query_rows([record], ["github:owner/repo:skills/research/SKILL.md"])
         self.assertEqual(results, [record])
 
+    def test_cli_high_signal_shortcut_applies_review_defaults(self):
+        records = [
+            {**row("research-best", "best", 95), "source_url": "https://example.test/best"},
+            {**row("research-low", "low", 70), "source_url": "https://example.test/low"},
+            {**row("research-risk", "risk", 100, security="flagged"), "source_url": "https://example.test/risk"},
+        ]
+        with TemporaryDirectory() as directory:
+            catalog = Path(directory) / "skills.jsonl"
+            catalog.write_text("".join(json.dumps(record) + "\n" for record in records), encoding="utf-8")
+            output = io.StringIO()
+            with redirect_stdout(output):
+                old_argv = sys.argv
+                try:
+                    sys.argv = ["query_catalog.py", "research", "--high-signal", "--catalog", str(catalog)]
+                    main()
+                finally:
+                    sys.argv = old_argv
+        rendered = output.getvalue()
+        self.assertIn("research-best", rendered)
+        self.assertNotIn("research-low", rendered)
+        self.assertNotIn("research-risk", rendered)
+
     def test_filters_reviewed_and_catalog_only_packages(self):
         reviewed = {**row("reviewed", "reviewed", 90), "id": "github:owner/repo:skills/reviewed/SKILL.md"}
         catalog_only = {**row("catalog-only", "catalog-only", 90), "id": "github:owner/repo:skills/catalog-only/SKILL.md"}

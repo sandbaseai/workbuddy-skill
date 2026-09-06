@@ -153,6 +153,11 @@ def main() -> int:
         choices=("primary-looking", "review-source"),
         help="Filter deterministic fork, mirror, and dormant-path context",
     )
+    parser.add_argument(
+        "--high-signal",
+        action="store_true",
+        help="Use no-static-flags, primary-looking, score >= 80, unique, and score order",
+    )
     parser.add_argument("--unique", action="store_true", help="Return one path per unique blob SHA")
     parser.add_argument(
         "--sort",
@@ -162,6 +167,14 @@ def main() -> int:
     )
     parser.add_argument("--json", action="store_true", dest="as_json")
     args = parser.parse_args()
+    if args.high_signal:
+        if args.security is not None or args.source_context is not None or args.min_score is not None:
+            parser.error("--high-signal cannot be combined with --security, --source-context, or --min-score")
+        args.security = "no-static-flags"
+        args.source_context = "primary-looking"
+        args.min_score = 80
+        args.unique = True
+        args.sort = "score"
     if args.limit < 1:
         parser.error("--limit must be positive")
     if args.min_score is not None and not 0 <= args.min_score <= 100:
