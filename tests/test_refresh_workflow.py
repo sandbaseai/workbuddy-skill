@@ -159,6 +159,7 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("schedule:", workflow)
         self.assertIn("pull_request:", workflow)
         self.assertIn('"README.md"', workflow)
+        self.assertIn('"scripts/build_site_data.py"', workflow)
         self.assertIn("workflow_dispatch", workflow)
         self.assertIn("contents: read", workflow)
         self.assertIn("scripts/check_resource_links.py", workflow)
