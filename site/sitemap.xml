@@ -31,6 +31,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://sandbaseai.github.io/workbuddy-skill/categories.zh-CN.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://sandbaseai.github.io/workbuddy-skill/llms.txt</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

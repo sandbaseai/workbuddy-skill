@@ -61,7 +61,8 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
                 self.assertIn('type="application/opensearchdescription+xml"', html)
                 self.assertIn('rel="icon" href="favicon.svg"', html)
                 self.assertIn('href="packages.html"', html)
-                self.assertIn('href="categories.html"', html)
+                expected_categories = "categories.html" if filename == "index.html" else "categories.zh-CN.html"
+                self.assertIn(f'href="{expected_categories}"', html)
                 self.assertIn('property="og:image"', html)
                 self.assertIn('property="og:locale"', html)
                 self.assertIn('property="og:locale:alternate"', html)
@@ -196,6 +197,12 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("--repository-only", catalog_guide_zh)
         self.assertIn("docs/starter-packs.md", content)
         self.assertIn("docs/starter-packs.zh-CN.md", content)
+        self.assertIn("categories.zh-CN.html", (ROOT / "README.md").read_text(encoding="utf-8"))
+        categories_zh = (ROOT / "site/categories.zh-CN.html").read_text(encoding="utf-8")
+        self.assertIn('lang="zh-CN"', categories_zh)
+        self.assertIn("categories.zh-CN.html", categories_zh)
+        self.assertIn("zh-CN.html?category=research#catalog", categories_zh)
+        self.assertIn("categories.zh-CN.html", (ROOT / "site/sitemap.xml").read_text(encoding="utf-8"))
         for path in ("docs/starter-packs.md", "docs/starter-packs.zh-CN.md"):
             starter_packs = (ROOT / path).read_text(encoding="utf-8")
             self.assertNotIn("does not add catalog records", starter_packs)
