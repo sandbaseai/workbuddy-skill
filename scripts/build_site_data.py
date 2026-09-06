@@ -146,6 +146,8 @@ for package in packages:
             f"{package['name']} {package['repository']} {package['path']} {package['category']}",
             quote=True,
         )
+        + "\" data-category=\""
+        + escape(package["category"], quote=True)
         + "\"><h3>"
         f"<a href=\"{escape(package['download_url'], quote=True)}\">{escape(package['name'])}</a>"
         "</h3>"
@@ -168,6 +170,10 @@ category_sections = "\n".join(
     f"<section id=\"category-{escape(category, quote=True)}\"><h2>{escape(category.title())} ({len(package_items_by_category[category])})</h2><ol>"
     + "\n".join(package_items_by_category[category])
     + "</ol></section>"
+    for category in sorted(package_items_by_category)
+)
+category_options = "".join(
+    f'<option value="{escape(category, quote=True)}">{escape(category.title())}</option>'
     for category in sorted(package_items_by_category)
 )
 package_item_list = json.dumps(
@@ -232,6 +238,8 @@ package_page = """<!doctype html>
       .package-search { margin: 1rem 0; padding: .75rem; background: #fffdf8; border: 1px solid #d8d0c2; border-radius: .7rem; }
       .package-search label { display: block; font-weight: 650; margin-bottom: .35rem; }
       .package-search input { box-sizing: border-box; width: 100%; padding: .55rem .65rem; border: 1px solid #aebeb8; border-radius: .4rem; font: inherit; }
+      .package-search select { box-sizing: border-box; width: 100%; padding: .55rem .65rem; border: 1px solid #aebeb8; border-radius: .4rem; font: inherit; background: white; }
+      .package-category { display: block; margin-top: .7rem; }
       .package-search output { display: block; margin-top: .35rem; color: #53615e; font-size: .9rem; }
       .package-link-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; margin-top: .5rem; }
       .copy-package-link { padding: .25rem .55rem; border: 1px solid #8eaaa0; border-radius: .4rem; color: #174f49; background: #f4fbf7; cursor: pointer; font: inherit; }
@@ -260,6 +268,8 @@ package_page = """<!doctype html>
       <form class="package-search" role="search" onsubmit="return false">
         <label for="package-filter">Filter packages by name, repository, path, or category / 按名称、仓库、路径或分类筛选 <span class="keyboard-hint">Press / to focus · Esc to clear</span></label>
         <input id="package-filter" type="search" autocomplete="off" placeholder="Try: security, playwright, or mcp / 例如：security、playwright、mcp">
+        <label class="package-category" for="package-category">Category / 分类</label>
+        <select id="package-category"><option value="all">All categories / 全部分类</option>""" + category_options + """</select>
         <output id="package-count" aria-live="polite">Showing all __PACKAGE_COUNT__ packages / 共 __PACKAGE_COUNT__ 个精选包</output>
         <div class="package-link-actions"><button type="button" class="copy-package-link" hidden>Copy filtered link / 复制筛选链接</button><span class="package-link-status" role="status" aria-live="polite"></span></div>
         <p id="package-empty" class="package-empty" role="status" hidden>No matching packages / 没有匹配的精选包。<button type="button" class="clear-package-filter">Clear filter / 清除筛选</button></p>
@@ -272,6 +282,7 @@ package_page = """<!doctype html>
     <script>
       (() => {
         const input = document.querySelector('#package-filter');
+        const categoryInput = document.querySelector('#package-category');
         const output = document.querySelector('#package-count');
         const empty = document.querySelector('#package-empty');
         const clear = document.querySelector('.clear-package-filter');
@@ -286,17 +297,25 @@ package_page = """<!doctype html>
           const params = new URLSearchParams();
           const query = input.value.trim();
           if (query) params.set('q', query);
+          if (categoryInput.value !== 'all') params.set('category', categoryInput.value);
           const suffix = params.toString() ? `?${params}` : '';
           history[`${historyMode}State`](null, '', `${location.pathname}${suffix}${location.hash}`);
         };
         const restoreUrl = () => {
           input.value = new URLSearchParams(location.search).get('q') || '';
+          const category = new URLSearchParams(location.search).get('category');
+          categoryInput.value = category && [...categoryInput.options].some((option) => option.value === category)
+            ? category
+            : 'all';
         };
         const update = ({ sync = true, historyMode = 'replace' } = {}) => {
           const query = input.value.trim().toLowerCase();
+          const category = categoryInput.value;
           let visible = 0;
           for (const item of items) {
-            const match = !query || item.dataset.search.toLowerCase().includes(query);
+            const textMatch = !query || item.dataset.search.toLowerCase().includes(query);
+            const categoryMatch = category === 'all' || item.dataset.category === category;
+            const match = textMatch && categoryMatch;
             item.hidden = !match;
             if (match) visible += 1;
           }
@@ -304,12 +323,13 @@ package_page = """<!doctype html>
             section.hidden = !section.querySelector('li:not([hidden])');
           }
           empty.hidden = visible !== 0;
-          output.textContent = query
+          output.textContent = query || category !== 'all'
             ? `Showing ${visible} of ${items.length} packages / 匹配 ${visible} / ${items.length}`
             : `Showing all ${items.length} packages / 共 ${items.length} 个精选包`;
           if (sync) syncUrl(historyMode);
         };
         input.addEventListener('input', () => update({ historyMode: 'replace' }));
+        categoryInput.addEventListener('change', () => update({ historyMode: 'push' }));
         document.addEventListener('keydown', (event) => {
           const target = event.target;
           const isFormControl = target instanceof HTMLElement
@@ -319,11 +339,13 @@ package_page = """<!doctype html>
             input.focus();
           } else if (event.key === 'Escape' && document.activeElement === input && input.value) {
             input.value = '';
+            categoryInput.value = 'all';
             update({ historyMode: 'push' });
           }
         });
         clear.addEventListener('click', () => {
           input.value = '';
+          categoryInput.value = 'all';
           update({ historyMode: 'push' });
           input.focus();
         });
