@@ -16,6 +16,8 @@ Use this page to choose the right source before searching the catalog.
 ## Official product documentation
 
 - [Quickstart](https://www.workbuddy.ai/docs/workbuddy/Quickstart) — platform setup and first use.
+- [Tips & Tricks](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Efficient-Tips) — practical guidance for clearer prompts, references, iteration, workspaces, and Skills.
+- [FAQ](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/FQA) — common questions about WorkBuddy, Skill updates, permissions, and connectors.
 - [Create Skills](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills) — authoring Skills.
 - [MCP guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide) — MCP concepts and configuration.
 - [Open Platform Connector guide](https://open.workbuddy.cn/en/docs/connector) — recommends MCP + Skill for network APIs, limits CLI + Skill to mature cross-platform CLIs, and documents runtime, credentials, OAuth, and permissions.
