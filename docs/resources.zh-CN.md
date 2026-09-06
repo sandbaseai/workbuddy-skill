@@ -9,6 +9,7 @@
 | 把精选包安装到 WorkBuddy | [快速开始](quickstart.zh-CN.md) |
 | 了解产品能力和官方阅读顺序 | [WorkBuddy 产品简介](https://www.workbuddy.ai/docs/zh/) |
 | 管理任务列表、并行任务、任务对话和结果面板 | [Agents 快速开始](https://www.workbuddy.ai/docs/zh/ide/User-guide/Agent-Mode/Quickstart) |
+| 管理长期偏好和对话记忆 | [记忆说明](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Memory) |
 | 排查导入或更新问题 | [快速开始中的常见问题](quickstart.zh-CN.md) 和[官方常见问题](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/FQA) |
 | 编写或排查 Skill ZIP | [Open Platform Skill 指南](https://open.workbuddy.cn/zh/docs/skill) |
 | 接入 API、MCP Server 或 CLI | [Open Platform 连接器指南](https://open.workbuddy.cn/docs/connector) |
@@ -30,6 +31,7 @@
 - [快速开始](https://www.workbuddy.ai/docs/zh/workbuddy/Quickstart)——安装和第一次使用。
 - [WorkBuddy 产品简介](https://www.workbuddy.ai/docs/zh/)——官方介绍核心能力、适用场景和建议阅读顺序。
 - [Agents 快速开始](https://www.workbuddy.ai/docs/zh/ide/User-guide/Agent-Mode/Quickstart)——官方说明如何创建任务、管理任务列表、并行处理、持续对话和查看结果面板。
+- [记忆](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Memory)——管理对话生成的偏好、查看已生成记忆，并控制 WorkBuddy 记住的内容。
 - [Mac 安装指南](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Installation-Mac-Guide)——官方 macOS 要求、通用 DMG 安装、首次启动安全提示、登录和系统权限说明。
 - [Windows 安装指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Installation-Win-Guide)——官方 Windows 要求、x64/ARM64 安装步骤、SmartScreen 处理、登录和首次启动排查。
 - [使用技巧](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Efficient-Tips)——提示词具体化、文件引用、迭代、工作区和 Skill 使用建议。
