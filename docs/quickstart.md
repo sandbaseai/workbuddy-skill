@@ -75,6 +75,13 @@ python3 scripts/verify_release.py workbuddy-download
 
 In WorkBuddy, open **Experts · Skills · Connectors → Skills → Add Skill**, upload the ZIP, and finish the import. If the Skill uses a connector, enable that service in the current workspace.
 
+If a connector is involved, complete this preflight before the first real task:
+
+1. Identify the connector's required service, account, scopes, and whether it uses MCP + Skill or CLI + Skill.
+2. Authenticate through WorkBuddy's connector flow; never paste tokens or API keys into the conversation.
+3. Run its status or read-only operation first, and confirm the target workspace and data boundary.
+4. Ask the Skill to name every write, message, paid call, and external side effect before approving it.
+
 ### 3. Run a safe first check
 
 Ask the Skill to explain its plan before allowing paid calls, data writes, or messages. Copy this prompt:

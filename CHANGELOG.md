@@ -28,6 +28,7 @@ All notable changes to this project are documented here.
 - Localized the duplicate-copy count in the Chinese Atlas results and refreshed its asset cache version.
 - Added a direct SHA256SUMS verification link beside every reviewed package in Atlas.
 - Added official Open Platform Connector and Open API references to the bilingual onboarding path.
+- Added a bilingual connector preflight checklist covering authentication, scopes, read-only checks, and side effects.
 - Added bilingual WorkBuddy resource maps covering official product docs, community learning, evaluation material, and local catalog guides.
 - Added direct Atlas navigation to the resource maps, plus a post-use feedback and Star prompt that does not perform account actions.
 - Atlas now derives and displays the current count of reviewed WorkBuddy packages from `catalog-meta.json`.

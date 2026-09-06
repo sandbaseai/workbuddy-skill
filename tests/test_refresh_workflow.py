@@ -37,6 +37,12 @@ class RefreshWorkflowTests(unittest.TestCase):
                 else "open.workbuddy.cn/en/docs/connector"
             )
             self.assertIn(expected_connector, quickstart)
+            if name.endswith("zh-CN.md"):
+                self.assertIn("只读", quickstart)
+                self.assertIn("API Key", quickstart)
+            else:
+                self.assertIn("read-only", quickstart.lower())
+                self.assertIn("API keys", quickstart)
 
     def test_quickstarts_explain_reviewed_package_filter(self):
         english = (ROOT / "docs/quickstart.md").read_text(encoding="utf-8")

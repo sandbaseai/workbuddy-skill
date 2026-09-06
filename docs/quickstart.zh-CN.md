@@ -58,6 +58,13 @@ python3 scripts/verify_release.py workbuddy-download
 
 在 WorkBuddy 打开 **专家 · Skills · Connectors → Skills → 添加 Skill**，上传 ZIP 并完成导入。需要连接器的 Skill，还要在当前工作区启用对应服务。
 
+如果使用连接器，第一次执行真实任务前先做以下检查：
+
+1. 确认连接器需要的服务、账号、权限范围，以及它采用 MCP + Skill 还是 CLI + Skill。
+2. 通过 WorkBuddy 的连接器流程完成认证，不要把 Token 或 API Key 粘贴到对话中。
+3. 先执行状态检查或只读操作，并确认目标工作区和数据边界。
+4. 让 Skill 在批准前列出所有写入、发消息、付费调用和外部副作用。
+
 ### 3. 先做一次安全的试运行
 
 第一次使用时，先让 Skill 解释计划，不要立刻执行有费用、写入数据或发送消息的操作。可以直接复制：
