@@ -2,6 +2,10 @@
 
 > Search public Agent Skills and adapt reviewed workflows for WorkBuddy. Every catalog record links to an immutable GitHub commit. Indexed content is not automatically trusted or installed.
 
+The public catalog is a frozen snapshot of 21,818 indexed Skills. Future
+maintenance focuses on documentation, usability, validation, and existing
+reviewed packages; new catalog records are not automatically added.
+
 ## Use the catalog
 
 - Web search: https://sandbaseai.github.io/workbuddy-skill/
