@@ -40,6 +40,8 @@ class AtlasFrontendTests(unittest.TestCase):
             self.assertIn("/tree/main/catalog", page)
             self.assertIn("quickstart", page)
             self.assertIn("catalog-schema.json", page)
+            self.assertIn("catalog-meta.json", page)
+            self.assertIn("catalog-meta-schema.json", page)
             self.assertIn("packages.json", page)
             self.assertIn("packages.html", page)
             self.assertIn("packages-schema.json", page)
