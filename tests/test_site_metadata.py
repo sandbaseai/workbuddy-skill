@@ -124,6 +124,8 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("Function-Description/Model", content)
         self.assertIn("Function-Description/Skills-Market", content)
         self.assertIn("https://github.com/crossoverJie/SkillDeck", content)
+        self.assertIn("https://github.com/GrubbyLee/skill-manager", content)
+        self.assertIn("https://github.com/qufei1993/skills-hub", content)
         self.assertIn("https://github.com/mrzhangguoguo/oh-my-workbuddy", content)
         self.assertIn("https://github.com/Tencent/workbuddy-bench", content)
         self.assertIn("arxiv.org/abs/2602.12670", content)
