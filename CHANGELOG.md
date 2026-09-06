@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Add the official WorkBuddy model configuration guide to the bilingual resource maps and quickstarts for Auto Mode, custom providers, and local Ollama setup.
 - Put official permission-mode guidance in the first-run path, with a default-permissions and isolated-workspace recommendation.
 - Put official macOS and Windows WorkBuddy installation links at the top of both quickstarts before the Skill import steps.
 - Show a short frozen-catalog fingerprint in the bilingual Atlas so users can match a page to its full metadata record.

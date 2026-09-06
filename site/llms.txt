@@ -69,6 +69,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Official WorkBuddy quickstart: https://www.workbuddy.ai/docs/zh/workbuddy/Quickstart
 - Official WorkBuddy macOS installation guide: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Installation-Mac-Guide
 - Official WorkBuddy Windows installation guide: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Installation-Win-Guide
+- Official WorkBuddy model configuration guide: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Model
 - Official WorkBuddy Privacy Policy: https://www.workbuddy.ai/document/privacy-policy
 - Official WorkBuddy Service Agreement: https://www.workbuddy.ai/document/term
 - Official WorkBuddy Acceptable Use Policy: https://www.workbuddy.ai/document/acceptable-use-policy

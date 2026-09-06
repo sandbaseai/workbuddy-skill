@@ -56,6 +56,7 @@ For platform-level instructions, use the [official WorkBuddy quickstart](https:/
 and [Automation guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide).
 Before starting a task, use the official [Task Bar guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar)
 to choose the workspace, model, installed Skills, connectors, and permission mode.
+For model selection, Auto Mode, provider presets, custom endpoints, or local Ollama, use the official [Model Configuration guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Model).
 If an imported Skill needs a connector, use the [official Connector guide](https://open.workbuddy.cn/en/docs/connector)
 to choose MCP + Skill or CLI + Skill and review authentication and permissions.
 You can also browse the official [Skill Marketplace](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)
