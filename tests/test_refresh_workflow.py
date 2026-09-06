@@ -17,6 +17,13 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("cancel-in-progress: false", workflow)
         self.assertIn("target=$((current + 100))", workflow)
         self.assertIn("--repository github/awesome-copilot", workflow)
+        for repository in (
+            "anthropics/skills",
+            "microsoft/playwright",
+            "aws-samples/sample-agentcore-launchpad",
+            "aws-samples/sample-aws-resilience-skill",
+        ):
+            self.assertIn(f"--repository {repository}", workflow)
         self.assertIn("--max-rate-wait 120", workflow)
         self.assertIn('"$crawl_status" -ne 2', workflow)
         self.assertIn('echo "changed=false" >> "$GITHUB_OUTPUT"', workflow)

@@ -41,7 +41,12 @@ jobs:
           echo "Refreshing catalog from $current toward $target records"
           set +e
           python3 scripts/crawl_github_skills.py --target "$target" \
-            --repository github/awesome-copilot --max-requests 60 \
+            --repository github/awesome-copilot \
+            --repository anthropics/skills \
+            --repository microsoft/playwright \
+            --repository aws-samples/sample-agentcore-launchpad \
+            --repository aws-samples/sample-aws-resilience-skill \
+            --max-requests 60 \
             --max-rate-wait 120 --output /tmp/skills.jsonl
           crawl_status=$?
           set -e
