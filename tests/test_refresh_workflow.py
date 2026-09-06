@@ -1,4 +1,5 @@
 from pathlib import Path
+import json
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -225,6 +226,17 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("### Three-step start", readme)
         self.assertIn("SHA256SUMS", readme)
         self.assertIn("Reviewed package available", readme)
+
+    def test_readme_public_counts_match_catalog_and_curated_data(self):
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        stats = json.loads((ROOT / "catalog/stats.json").read_text(encoding="utf-8"))
+        curated = json.loads((ROOT / "catalog/curated.json").read_text(encoding="utf-8"))
+        records = f"{stats['records']:,}"
+        packages = f"{len(curated):,}"
+        self.assertIn(f"当前公开目录包含 **{records} 条", readme)
+        self.assertIn(f"另有 **{packages} 个经过审阅", readme)
+        self.assertIn(f"contains **{records} indexed", readme)
+        self.assertIn(f"alongside **{packages} reviewed", readme)
 
     def test_external_sandbase_migration_pointer_is_not_a_skill(self):
         pointer = (ROOT / "skills/sandbase/README.md").read_text(encoding="utf-8")
