@@ -38,6 +38,8 @@ class AtlasFrontendTests(unittest.TestCase):
         self.assertIn("meta.records.toLocaleString()", self.app)
         self.assertIn("heroCount.textContent", self.app)
         self.assertIn("function announceCopy(message)", self.app)
+        self.assertIn('return String(value ?? "").replace', self.app)
+        self.assertIn('(skill.x || []).join', self.app)
         self.assertIn("async function copyText(value)", self.app)
         self.assertIn('throw new Error("copy failed")', self.app)
         self.assertIn("Could not copy catalog ID", self.app)
