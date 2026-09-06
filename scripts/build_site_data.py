@@ -282,11 +282,27 @@ package_page = """<!doctype html>
             : `Showing all ${items.length} packages / 共 ${items.length} 个精选包`;
         };
         input.addEventListener('input', update);
+        const copyText = async (text) => {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(text);
+            return;
+          }
+          const fallback = document.createElement('textarea');
+          fallback.value = text;
+          fallback.setAttribute('readonly', '');
+          fallback.style.position = 'fixed';
+          fallback.style.opacity = '0';
+          document.body.appendChild(fallback);
+          fallback.select();
+          const copied = document.execCommand('copy');
+          fallback.remove();
+          if (!copied) throw new Error('copy unavailable');
+        };
         for (const button of copyButtons) {
           button.addEventListener('click', async () => {
             const status = button.nextElementSibling;
             try {
-              await navigator.clipboard.writeText(button.dataset.command);
+              await copyText(button.dataset.command);
               status.textContent = 'Copied / 已复制';
               window.setTimeout(() => { status.textContent = ''; }, 1500);
             } catch {
