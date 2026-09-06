@@ -33,6 +33,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - GitSkills public Skill dataset research: https://arxiv.org/abs/2608.10906
 - SWE-Skills-Bench requirement-driven evaluation: https://arxiv.org/abs/2603.15401
 - Community Awesome WorkBuddy index (navigation only): https://github.com/staruhub/awesome-workbuddy
+- WorkBuddy multi-agent skill groups (inspect attribution and licenses): https://github.com/darker2016/workbuddy-skill-groups
 - WorkBuddy public-market archive (offline study; respect original rights): https://github.com/infometa/workbuddyskills
 - Discussions for usage examples and reviewed-package feedback: https://github.com/sandbaseai/workbuddy-skill/discussions
 - English quickstart: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.md

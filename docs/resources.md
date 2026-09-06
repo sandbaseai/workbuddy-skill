@@ -43,6 +43,7 @@ Use this page to choose the right source before searching the catalog.
 - [SWE-Skills-Bench](https://arxiv.org/abs/2603.15401) — requirement-driven benchmark for measuring whether public Skills improve real software-engineering tasks.
 - [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy) — curated ecosystem references.
 - [Community Awesome WorkBuddy](https://github.com/staruhub/awesome-workbuddy) — another bilingual index of official resources, workflows, tutorials, and comparisons; use as navigation, not as a trust or license decision.
+- [WorkBuddy Skill Groups](https://github.com/darker2016/workbuddy-skill-groups) — an open collection of multi-agent team workflows across engineering, research, marketing, design, legal, finance, and data; inspect each folder's attribution and license before reuse.
 - [WorkBuddy Skills archive](https://github.com/infometa/workbuddyskills) — public-market archive for offline study; the repository states that its contents remain the property of their original authors and are not a license to redistribute.
 
 ## This repository

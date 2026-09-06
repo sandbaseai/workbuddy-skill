@@ -43,6 +43,7 @@
 - [SWE-Skills-Bench](https://arxiv.org/abs/2603.15401)——以需求驱动的基准，评估公开 Skill 是否能改善真实软件工程任务。
 - [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy)——精选生态参考。
 - [Community Awesome WorkBuddy](https://github.com/staruhub/awesome-workbuddy)——另一份双语官方资源、工作流、教程和对比索引；仅用于导航，不替代信任或许可证判断。
+- [WorkBuddy Skill Groups](https://github.com/darker2016/workbuddy-skill-groups)——覆盖工程、研究、营销、设计、法律、财税和数据的多 Agent 专家团工作流集合；复用前仍需逐目录检查归属和许可证。
 - [WorkBuddy Skills 归档](https://github.com/infometa/workbuddyskills)——用于离线学习的公开市场归档；该仓库明确说明内容版权归原作者，不代表允许再分发。
 
 ## 本仓库
