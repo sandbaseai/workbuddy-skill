@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Validate catalog blob SHAs before review reports expose provenance.
 - Add the MIT-licensed QA Testing Guide as a reviewed external learning reference.
 - Require immutable catalog sources to point to a `SKILL.md` file.
 - Validate catalog raw URLs before review reports claim an immutable source.
