@@ -233,6 +233,8 @@ package_page = """<!doctype html>
       .package-search label { display: block; font-weight: 650; margin-bottom: .35rem; }
       .package-search input { box-sizing: border-box; width: 100%; padding: .55rem .65rem; border: 1px solid #aebeb8; border-radius: .4rem; font: inherit; }
       .package-search output { display: block; margin-top: .35rem; color: #53615e; font-size: .9rem; }
+      .package-empty { margin: 1rem 0; padding: .75rem; background: #fffdf8; border: 1px solid #d8d0c2; border-radius: .7rem; }
+      .clear-package-filter { margin-left: .35rem; padding: .25rem .55rem; border: 1px solid #8eaaa0; border-radius: .4rem; color: #174f49; background: #f4fbf7; cursor: pointer; font: inherit; }
       .copy-command { margin-top: .6rem; padding: .35rem .6rem; border: 1px solid #8eaaa0; border-radius: .4rem; color: #174f49; background: #f4fbf7; cursor: pointer; font: inherit; }
       .copy-status { margin-left: .5rem; color: #53615e; font-size: .9rem; }
       .machine { margin-top: 2rem; }
@@ -253,6 +255,7 @@ package_page = """<!doctype html>
         <label for="package-filter">Filter packages by name, repository, path, or category / 按名称、仓库、路径或分类筛选</label>
         <input id="package-filter" type="search" autocomplete="off" placeholder="Try: security, playwright, or mcp / 例如：security、playwright、mcp">
         <output id="package-count" aria-live="polite">Showing all __PACKAGE_COUNT__ packages / 共 __PACKAGE_COUNT__ 个精选包</output>
+        <p id="package-empty" class="package-empty" role="status" hidden>No matching packages / 没有匹配的精选包。<button type="button" class="clear-package-filter">Clear filter / 清除筛选</button></p>
       </form>
     </header>
     <main>
@@ -263,6 +266,8 @@ package_page = """<!doctype html>
       (() => {
         const input = document.querySelector('#package-filter');
         const output = document.querySelector('#package-count');
+        const empty = document.querySelector('#package-empty');
+        const clear = document.querySelector('.clear-package-filter');
         const items = [...document.querySelectorAll('li[data-search]')];
         const sections = [...document.querySelectorAll('main section')];
         const copyButtons = [...document.querySelectorAll('.copy-command')];
@@ -277,11 +282,17 @@ package_page = """<!doctype html>
           for (const section of sections) {
             section.hidden = !section.querySelector('li:not([hidden])');
           }
+          empty.hidden = visible !== 0;
           output.textContent = query
             ? `Showing ${visible} of ${items.length} packages / 匹配 ${visible} / ${items.length}`
             : `Showing all ${items.length} packages / 共 ${items.length} 个精选包`;
         };
         input.addEventListener('input', update);
+        clear.addEventListener('click', () => {
+          input.value = '';
+          update();
+          input.focus();
+        });
         const copyText = async (text) => {
           if (navigator.clipboard && navigator.clipboard.writeText) {
             await navigator.clipboard.writeText(text);

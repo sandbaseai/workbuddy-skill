@@ -35,6 +35,11 @@ class SiteDataTests(unittest.TestCase):
         self.assertEqual(package_page.count('<section id="category-'), len({package["category"] for package in packages}))
         self.assertIn('id="category-security"', package_page)
         self.assertIn('id="package-filter"', package_page)
+        self.assertIn('id="package-empty"', package_page)
+        self.assertIn("No matching packages / 没有匹配的精选包", package_page)
+        self.assertIn("clear-package-filter", package_page)
+        self.assertIn("empty.hidden = visible !== 0", package_page)
+        self.assertIn("input.focus()", package_page)
         self.assertIn('data-search=', package_page)
         package_count = f"{len(packages):,}"
         self.assertIn(
