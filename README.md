@@ -173,7 +173,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [STRIDE-A Threat Model Analyst](skills/threat-model-analyst/) | 对代码库建立信任边界、数据流和 STRIDE-A 威胁模型，并支持增量安全态势对比 |
 | [Secret Scanning](skills/secret-scanning/) | 配置 Secret Scanning、Push Protection、自定义模式和安全的凭据泄露处置流程 |
 | [CodeQL Code Scanning](skills/codeql/) | 配置最小权限的 CodeQL Actions/CLI 扫描、语言矩阵、SARIF 和 monorepo 分析 |
-| [Repository Standardizer](skills/repo-standardizer/) | 清理公开 README 与文档，分离内部建设约束，并审计模板、CI、CODEOWNERS 和治理配置 |
+| [Repository Standardizer](skills/repo-standardizer/) | 清理公开 README 与文档，并审计模板、CI、CODEOWNERS 和治理配置 |
 | [Azure Resource Health Diagnosis](skills/azure-resource-health-diagnose/) | 基于只读健康状态、日志、遥测和依赖证据诊断 Azure 资源并生成分阶段修复计划 |
 | [AWS Cost Optimization](skills/aws-cost-optimize/) | 基于 AWS IaC、使用指标、账单和价格证据生成可验证的成本优化建议 |
 | [Azure Pricing and Estimation](skills/azure-pricing/) | 查询 Azure 实时零售价格、比较 SKU/区域并生成带假设和区间的成本估算 |
