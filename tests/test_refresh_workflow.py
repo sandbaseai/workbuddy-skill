@@ -107,6 +107,14 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("Skill, connector, or external capability", showcase)
         self.assertIn("frozen snapshot", feature)
 
+    def test_pull_request_template_preserves_frozen_catalog_and_validation_gates(self):
+        template = (ROOT / ".github/PULL_REQUEST_TEMPLATE.md").read_text(encoding="utf-8")
+        self.assertIn("did not add catalog records", template)
+        self.assertIn("source commit, license, compatibility notes", template)
+        self.assertIn("python3 scripts/validate_catalog.py --minimum 10000", template)
+        self.assertIn("python3 -m unittest discover -s tests -q", template)
+        self.assertIn("human review", template)
+
 
 if __name__ == "__main__":
     unittest.main()
