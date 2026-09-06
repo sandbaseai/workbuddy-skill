@@ -82,6 +82,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Official WorkBuddy Acceptable Use Policy: https://www.workbuddy.ai/document/acceptable-use-policy
 - Official WorkBuddy Permission Modes: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Permission-Modes
 - Official WorkBuddy Task Bar: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar
+- Official large repositories and monorepos guide: https://www.workbuddy.ai/docs/cli/large-codebases
 - Official WorkBuddy tips and tricks: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Efficient-Tips
 - Official WorkBuddy FAQ: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/FQA
 - Official WorkBuddy release notes (SkillHub, plugins, connectors, models, and platform updates): https://www.workbuddy.ai/docs/zh/ide/release-notes/release-notes

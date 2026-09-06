@@ -15,6 +15,7 @@ Use this page to choose the right source before searching the catalog.
 | Review service terms and permitted use | [Service Agreement](https://www.workbuddy.ai/document/term) and [Acceptable Use Policy](https://www.workbuddy.ai/document/acceptable-use-policy) |
 | Configure task permission boundaries | [Permission Modes](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Permission-Modes) |
 | Create a task and choose its workspace and Skills | [Task Bar](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar) |
+| Keep a monorepo or large checkout focused | [Large repositories guide](https://www.workbuddy.ai/docs/cli/large-codebases) |
 | Control WorkBuddy from a messaging app | [Assistant Remote Control](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Assistant) |
 | Choose Auto Mode, a provider, or a local model | [Model Configuration](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Model) |
 | Update, disable, or remove an installed Skill | [Quickstart lifecycle guide](quickstart.md) and the [Skill Marketplace](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) |
@@ -34,6 +35,7 @@ Use this page to choose the right source before searching the catalog.
 - [Service Agreement](https://www.workbuddy.ai/document/term) and [Acceptable Use Policy](https://www.workbuddy.ai/document/acceptable-use-policy) — official account, service-use, permitted-use, and responsibility terms.
 - [Permission Modes](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Permission-Modes) — official guidance for workspace scope and operation permissions before allowing a Skill or connector to act.
 - [Task Bar](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar) — choose a task workspace, model, installed Skills, connectors, and permission mode before execution.
+- [Large repositories and monorepos](https://www.workbuddy.ai/docs/cli/large-codebases) — official guidance for directory-level instructions, focused worktrees, per-package configuration, and keeping agent context scoped.
 - [Assistant Remote Control](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Assistant) — configure supported messaging integrations for sending tasks and receiving results; WorkBuddy must remain running, and each platform has its own account and permission setup.
 - [Model Configuration](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Model) — configure Auto Mode, provider presets, custom models, and local Ollama connections.
 - [Create Skills](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills) — authoring Skills.
