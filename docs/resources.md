@@ -16,6 +16,8 @@ Use this page to choose the right source before searching the catalog.
 - [WorkBuddyGuide](https://github.com/AlephAITech/WorkBuddyGuide) — task-oriented community walkthrough; its [online reading site](https://workbuddy.homes) is convenient for browsing.
 - [AI Coding Guide 中文教程](https://github.com/KimYx0207/AI-Coding-Guide-Zh) — broad Chinese tutorial covering WorkBuddy and adjacent agent workflows.
 - [Learn WorkBuddy](https://github.com/adongwanai/learn-workbuddy) — MIT clean-room course on Agent harness architecture.
+- [yinqd3/workbuddy-skills](https://github.com/yinqd3/workbuddy-skills) — MIT-licensed community collection with academic research, frontend slides, and tool-call workflows; use it as a source to inspect, not an automatic trust signal.
+- [oh-my-workbuddy](https://github.com/mrzhangguoguo/oh-my-workbuddy) — MIT-licensed bilingual WorkBuddy port with catalog-driven workflow conventions.
 - [WorkBuddy Harness blue book](https://github.com/zjp1997720/zhijian-ai-bluebook-workbuddy-harness) — evidence-bounded deep dive into local files, prompt assembly, extensions, and safety boundaries; its [online edition](https://zjp1997720.github.io/zhijian-ai-bluebook-workbuddy-harness/) is convenient for browsing. Research reference without a repository license declaration.
 - [Tencent WorkBuddy Bench](https://github.com/Tencent/workbuddy-bench) — reproducible Agent task evaluation material.
 - [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy) — curated ecosystem references.

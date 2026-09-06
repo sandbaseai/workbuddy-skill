@@ -60,6 +60,8 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn("WorkBuddyGuide", resources)
             self.assertIn("AI-Coding-Guide-Zh", resources)
             self.assertIn("learn-workbuddy", resources)
+            self.assertIn("yinqd3/workbuddy-skills", resources)
+            self.assertIn("oh-my-workbuddy", resources)
             self.assertIn("workbuddy-bench", resources)
             self.assertIn("Skill Atlas", resources)
             self.assertIn("use-cases.md", resources)
