@@ -131,6 +131,11 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertNotIn("actions/upload-pages-artifact@v4", workflow)
         self.assertNotIn("actions/deploy-pages@v4", workflow)
 
+    def test_validate_workflow_checks_generated_site_data(self):
+        workflow = (ROOT / ".github/workflows/validate.yml").read_text(encoding="utf-8")
+        self.assertIn("scripts/build_site_data.py", workflow)
+        self.assertIn("scripts/validate_site_data.py", workflow)
+
     def test_frozen_check_does_not_publish_changes(self):
         workflow = (ROOT / ".github/workflows/refresh-catalog.yml").read_text(encoding="utf-8")
         self.assertNotIn("git commit", workflow)

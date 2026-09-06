@@ -21,6 +21,7 @@ Run the same checks used by automation:
 python3 scripts/validate_skill.py
 python3 scripts/validate_catalog.py --minimum 10000 --require-analysis
 python3 scripts/build_site_data.py
+python3 scripts/validate_site_data.py
 python3 -m unittest discover -s tests -q
 ./scripts/package_skill.sh
 git diff --check
