@@ -17,6 +17,7 @@ class AtlasFrontendTests(unittest.TestCase):
             self.assertIn('id="language-link"', page)
             self.assertIn('id="snapshot-note"', page)
             self.assertIn('id="hero-count"', page)
+            self.assertIn('aria-live="polite"', page)
 
     def test_url_state_supports_sharing_and_browser_history(self):
         self.assertIn("new URLSearchParams(location.search)", self.app)
