@@ -139,6 +139,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("https://github.com/somo-ui/workbuddy-codex-hub-mcp", content)
         self.assertIn("https://github.com/sutupikk-cyber/workbuddy-chat-manager", content)
         self.assertIn("https://github.com/xiaoliuzhuan666/workbuddy-account-migrate", content)
+        self.assertIn("https://github.com/JuneYaooo/self-media-compliance-review", content)
         self.assertIn("https://github.com/jamesting-eng/workbuddy-skills", content)
         self.assertIn("https://github.com/TencentCloudBase/CloudBase-AI-Toolkit", content)
         self.assertIn("Installation-Mac-Guide", content)

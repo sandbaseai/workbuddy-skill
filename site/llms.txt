@@ -27,6 +27,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Curated WorkBuddy ecosystem index: https://github.com/sandbaseai/awesome-workbuddy
 - Community task-oriented guide: https://github.com/AlephAITech/WorkBuddyGuide
 - MIT WorkBuddy account migration reference (diagnose first; modifies local sessions, memory, and connector data): https://github.com/xiaoliuzhuan666/workbuddy-account-migrate
+- MIT WorkBuddy-compatible self-media compliance review (local evidence by default; optional real-time channels may require credentials, network access, and paid quota): https://github.com/JuneYaooo/self-media-compliance-review
 - WorkBuddyGuide online reading site: https://workbuddy.homes
 - MIT community WorkBuddy usage and troubleshooting reference: https://github.com/Neo5093/workbuddy-guide
 - Chinese WorkBuddy practice guide (verify freshness and license before reuse): https://github.com/opcspace/WorkBuddy-Guide

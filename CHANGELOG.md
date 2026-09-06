@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Add the MIT-licensed self-media compliance review project as a WorkBuddy-compatible, local-first reference with explicit credential and paid-quota boundaries.
 - Add a shareable, bilingual category directory with structured metadata and a checksum-first installation path, without adding catalog records.
 - Make no-match local catalog searches actionable with Atlas and current GitHub `SKILL.md` discovery links while keeping JSON output machine-readable.
 - Add a backup-first WorkBuddy account-migration troubleshooting path and a rights-aware external reference for restoring conversations, memory, and connectors.
