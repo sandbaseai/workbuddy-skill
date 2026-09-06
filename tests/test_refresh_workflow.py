@@ -26,6 +26,9 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn('gh release upload "$GITHUB_REF_NAME" dist/SHA256SUMS', workflow)
         self.assertIn("Verify uploaded assets", workflow)
         self.assertIn("Missing uploaded release asset", workflow)
+        self.assertIn("Verify downloaded release checksums", workflow)
+        self.assertIn('gh release download "$GITHUB_REF_NAME"', workflow)
+        self.assertIn("python3 scripts/verify_release.py release-download", workflow)
 
     def test_quickstarts_document_exact_release_download_and_verification(self):
         for name in ("docs/quickstart.md", "docs/quickstart.zh-CN.md"):
