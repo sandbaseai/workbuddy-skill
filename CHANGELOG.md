@@ -26,6 +26,7 @@ All notable changes to this project are documented here.
 - Added two MIT-licensed WorkBuddy community references to the bilingual resource maps; they remain navigation material, not catalog additions.
 - Added visible validation, Pages deployment, and resource-link health badges to the README.
 - Localized the duplicate-copy count in the Chinese Atlas results and refreshed its asset cache version.
+- Added a direct SHA256SUMS verification link beside every reviewed package in Atlas.
 - Added bilingual WorkBuddy resource maps covering official product docs, community learning, evaluation material, and local catalog guides.
 - Added direct Atlas navigation to the resource maps, plus a post-use feedback and Star prompt that does not perform account actions.
 - Atlas now derives and displays the current count of reviewed WorkBuddy packages from `catalog-meta.json`.
