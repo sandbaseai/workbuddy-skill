@@ -24,6 +24,7 @@ Use this page to choose the right source before searching the catalog.
 
 - [Quickstart](https://www.workbuddy.ai/docs/workbuddy/Quickstart) — platform setup and first use.
 - [Mac Installation Guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Installation-Mac-Guide) — official macOS requirements, universal DMG installation, first-launch security prompt, sign-in, and requested system permissions.
+- [Windows Installation Guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Installation-Win-Guide) — official Windows requirements, x64/ARM64 installer steps, SmartScreen handling, sign-in, and first-launch troubleshooting.
 - [Tips & Tricks](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Efficient-Tips) — practical guidance for clearer prompts, references, iteration, workspaces, and Skills.
 - [FAQ](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/FQA) — common questions about WorkBuddy, Skill updates, permissions, and connectors.
 - [Privacy Policy](https://www.workbuddy.ai/document/privacy-policy) — official product data-handling and privacy disclosures to review before using sensitive inputs or connectors.

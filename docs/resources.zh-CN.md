@@ -24,6 +24,7 @@
 
 - [快速开始](https://www.workbuddy.ai/docs/zh/workbuddy/Quickstart)——安装和第一次使用。
 - [Mac 安装指南](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Installation-Mac-Guide)——官方 macOS 要求、通用 DMG 安装、首次启动安全提示、登录和系统权限说明。
+- [Windows 安装指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Installation-Win-Guide)——官方 Windows 要求、x64/ARM64 安装步骤、SmartScreen 处理、登录和首次启动排查。
 - [使用技巧](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Efficient-Tips)——提示词具体化、文件引用、迭代、工作区和 Skill 使用建议。
 - [常见问题](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/FQA)——WorkBuddy、Skill 更新、权限和连接器的常见问题。
 - [隐私政策](https://www.workbuddy.ai/document/privacy-policy)——使用敏感输入或连接器前，先查看官方的数据处理与隐私说明。
