@@ -12,10 +12,10 @@
 
 ## 学习与评测
 
-- [WorkBuddy 实战蓝皮书](https://github.com/AlephAITech/WorkBuddyGuide)——按真实任务学习。
+- [WorkBuddy 实战蓝皮书](https://github.com/AlephAITech/WorkBuddyGuide)——按真实任务学习，也可以直接阅读[在线版](https://workbuddy.homes)。
 - [AI Coding / Agent 中文教程](https://github.com/KimYx0207/AI-Coding-Guide-Zh)——覆盖 WorkBuddy 及相关 Agent 工作流。
 - [Learn WorkBuddy](https://github.com/adongwanai/learn-workbuddy)——MIT clean-room 定位的 Agent Harness 架构课程。
-- [WorkBuddy Harness 机制蓝皮书](https://github.com/zjp1997720/zhijian-ai-bluebook-workbuddy-harness)——从本地文件、提示词拼装、扩展机制和安全边界理解 WorkBuddy；仓库未声明许可证，仅作研究参考。
+- [WorkBuddy Harness 机制蓝皮书](https://github.com/zjp1997720/zhijian-ai-bluebook-workbuddy-harness)——从本地文件、提示词拼装、扩展机制和安全边界理解 WorkBuddy，也提供[在线版](https://zjp1997720.github.io/zhijian-ai-bluebook-workbuddy-harness/)；仓库未声明许可证，仅作研究参考。
 - [Tencent WorkBuddy Bench](https://github.com/Tencent/workbuddy-bench)——可复现的 Agent 任务评测资料。
 - [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy)——精选生态参考。
 - [Community Awesome WorkBuddy](https://github.com/staruhub/awesome-workbuddy)——另一份双语官方资源、工作流、教程和对比索引；仅用于导航，不替代信任或许可证判断。

@@ -153,6 +153,8 @@ class RefreshWorkflowTests(unittest.TestCase):
         chinese = (ROOT / "docs/resources.zh-CN.md").read_text(encoding="utf-8")
         self.assertIn("not as a trust or license decision", english)
         self.assertIn("不替代信任或许可证判断", chinese)
+        self.assertIn("https://workbuddy.homes", english)
+        self.assertIn("https://zjp1997720.github.io/zhijian-ai-bluebook-workbuddy-harness/", chinese)
 
 
 if __name__ == "__main__":

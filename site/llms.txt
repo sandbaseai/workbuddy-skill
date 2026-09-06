@@ -18,9 +18,11 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Citation metadata: https://github.com/sandbaseai/workbuddy-skill/blob/main/CITATION.cff
 - Curated WorkBuddy ecosystem index: https://github.com/sandbaseai/awesome-workbuddy
 - Community task-oriented guide: https://github.com/AlephAITech/WorkBuddyGuide
+- WorkBuddyGuide online reading site: https://workbuddy.homes
 - Chinese AI coding and WorkBuddy tutorial: https://github.com/KimYx0207/AI-Coding-Guide-Zh
 - Clean-room WorkBuddy architecture course: https://github.com/adongwanai/learn-workbuddy
 - WorkBuddy Harness blue book (research reference; no license declaration): https://github.com/zjp1997720/zhijian-ai-bluebook-workbuddy-harness
+- WorkBuddy Harness blue book online edition: https://zjp1997720.github.io/zhijian-ai-bluebook-workbuddy-harness/
 - Tencent WorkBuddy benchmark: https://github.com/Tencent/workbuddy-bench
 - Community Awesome WorkBuddy index (navigation only): https://github.com/staruhub/awesome-workbuddy
 - WorkBuddy public-market archive (offline study; respect original rights): https://github.com/infometa/workbuddyskills
