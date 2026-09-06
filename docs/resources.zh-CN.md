@@ -15,6 +15,8 @@
 - [Skill Marketplace](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) 和 [Explore](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Explore)——内置能力。
 - [Open Platform Skill 指南](https://open.workbuddy.cn/zh/docs/skill)——官方说明 Marketplace 入口、ZIP 解析排查、frontmatter 字段和子资源目录结构。
 - [Open Platform 总览](https://open.workbuddy.cn/docs/what-is-open-platform)——从入驻、开发、测试、审核到发布和维护的完整流程。
+- [Open Platform 入驻指南](https://open.workbuddy.cn/docs/onboarding)——发布生态能力前准备开发者或企业认证。
+- [Buddy 应用指南](https://open.workbuddy.cn/docs/buddy-app)——将行业工作流封装成可直接使用的 WorkBuddy 工作台，并配置 Skill、连接器和预览测试。
 
 ## 学习与评测
 

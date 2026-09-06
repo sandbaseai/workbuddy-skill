@@ -15,6 +15,8 @@ Use this page to choose the right source before searching the catalog.
 - [Skill Marketplace](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) and [Explore](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Explore) — built-in capabilities.
 - [Open Platform Skill guide](https://open.workbuddy.cn/en/docs/skill) — official Marketplace placement, ZIP troubleshooting, frontmatter fields, and sub-resource layout.
 - [Open Platform overview](https://open.workbuddy.cn/en/docs/what-is-open-platform) — the full onboarding, development, test, review, publishing, and maintenance path.
+- [Open Platform onboarding](https://open.workbuddy.cn/en/docs/onboarding) — developer and enterprise verification preparation before publishing ecosystem assets.
+- [Buddy App guide](https://open.workbuddy.cn/en/docs/buddy-app) — package industry workflows into a ready-to-use WorkBuddy workspace with Skills, connectors, and preview testing.
 
 ## Learning and evaluation
 
