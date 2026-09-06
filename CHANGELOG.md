@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Synced the public GitHub repository description and Atlas metadata copy with the current 13,000+ indexed-record scale.
 - Added MIT Ruff Recursive Fix, SQL Optimization, and WebMCPify Skills from the pinned GitHub awesome-copilot source, with bilingual metadata, provenance, and WorkBuddy-safe package boundaries.
 - Added MIT Review and Refactor and Spring Boot Testing Skills from the pinned GitHub awesome-copilot source, plus the MIT-0 Expense Report Writer from AWS Samples with packaged references, policies, and templates.
 - Added Apache-2.0 Playwright CLI Browser Automation from the pinned Microsoft Playwright source with its browser, storage, network, tracing, and test references.
