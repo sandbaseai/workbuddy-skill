@@ -65,6 +65,7 @@ For platform-level instructions, use the [official WorkBuddy quickstart](https:/
 [official Skills tutorial](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills),
 [MCP guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide),
 and [Automation guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide).
+For the product reading order, first see the official [WorkBuddy overview](https://www.workbuddy.ai/docs/zh/); for task lists, parallel tasks, conversations, and result panels, see the official [Agents quickstart](https://www.workbuddy.ai/docs/zh/ide/User-guide/Agent-Mode/Quickstart).
 Before starting a task, use the official [Task Bar guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar)
 to choose the workspace, model, installed Skills, connectors, and permission mode.
 
