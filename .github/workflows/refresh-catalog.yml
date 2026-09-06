@@ -10,6 +10,7 @@ jobs:
   frozen-catalog-check:
     name: Verify frozen catalog
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
