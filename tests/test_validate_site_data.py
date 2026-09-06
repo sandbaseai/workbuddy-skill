@@ -50,6 +50,20 @@ class ValidateSiteDataTests(unittest.TestCase):
         errors = validate_package_consistency(rows)
         self.assertEqual(errors, ["packages record 0 asset does not match download_url"])
 
+    def test_rejects_package_download_command_without_matching_asset(self):
+        rows = [{
+            "asset": "one-workbuddy-skill.zip",
+            "download_url": "https://example.com/one-workbuddy-skill.zip",
+            "download_command": "gh release download --repo sandbaseai/workbuddy-skill --pattern 'two-workbuddy-skill.zip'",
+        }]
+        errors = validate_package_consistency(rows)
+        self.assertEqual(
+            errors,
+            [
+                "packages record 0 download_command is missing: --pattern 'one-workbuddy-skill.zip', --pattern SHA256SUMS, --clobber"
+            ],
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

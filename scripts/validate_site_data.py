@@ -42,10 +42,23 @@ def validate_package_consistency(rows: object) -> list[str]:
             continue
         asset = row.get("asset")
         download_url = row.get("download_url")
+        download_command = row.get("download_command")
         if isinstance(asset, str) and isinstance(download_url, str):
             if Path(urlparse(download_url).path).name != asset:
                 errors.append(
                     f"packages record {index} asset does not match download_url"
+                )
+        if isinstance(asset, str) and isinstance(download_command, str):
+            required_fragments = (
+                "gh release download --repo sandbaseai/workbuddy-skill",
+                f"--pattern '{asset}'",
+                "--pattern SHA256SUMS",
+                "--clobber",
+            )
+            missing = [fragment for fragment in required_fragments if fragment not in download_command]
+            if missing:
+                errors.append(
+                    f"packages record {index} download_command is missing: {', '.join(missing)}"
                 )
     return errors
 
