@@ -16,6 +16,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Reviewed package JSON: https://sandbaseai.github.io/workbuddy-skill/packages.json
 - Human-readable reviewed package index: https://sandbaseai.github.io/workbuddy-skill/packages.html
 - Shareable category directory: https://sandbaseai.github.io/workbuddy-skill/categories.html
+- Chinese category directory: https://sandbaseai.github.io/workbuddy-skill/categories.zh-CN.html
 - Reviewed package JSON Schema: https://sandbaseai.github.io/workbuddy-skill/packages-schema.json
 - Each reviewed package record includes `source_url`, pinned `sha`, `download_url`, `asset`, `download_command`, and `checksum_url`.
 - If a query has no catalog match, use the Atlas empty-state link or [GitHub's current `SKILL.md` code search](https://github.com/search?q=filename%3ASKILL.md&type=code); this is discovery only and does not install or trust external code automatically.

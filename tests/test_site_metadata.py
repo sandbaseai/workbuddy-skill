@@ -125,6 +125,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("packages.html", content)
         self.assertIn("packages-schema.json", content)
         self.assertIn("categories.html", content)
+        self.assertIn("categories.zh-CN.html", content)
         self.assertIn("download_command", content)
         self.assertIn("sha256sum --check SHA256SUMS --ignore-missing", content)
         self.assertIn("rejects extra", content)
