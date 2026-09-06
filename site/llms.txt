@@ -40,8 +40,8 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT agentic Skill catalog and control plane (research reference): https://github.com/sickn33/agentic-awesome-skills
 - CC0 WorkBuddy resource index: https://github.com/semlinker/awesome-workbuddy
 - Chinese AI coding and WorkBuddy tutorial: https://github.com/KimYx0207/AI-Coding-Guide-Zh
-- WorkBuddy-compatible e-commerce visual-copywriting Skill with no declared repository license (research reference only): https://github.com/feichanggege/ecommerce-visual-copywriting-skill
-- Chinese multi-domain expert-role collection with no declared repository license (research reference only): https://github.com/jnMetaCode/agency-agents-zh
+- MIT WorkBuddy-compatible e-commerce visual-copywriting Skill (inspect bundled assets and scripts before reuse): https://github.com/feichanggege/ecommerce-visual-copywriting-skill
+- MIT Chinese multi-domain expert-role collection (inspect attribution and bundled assets before reuse): https://github.com/jnMetaCode/agency-agents-zh
 - MIT offline-first WorkBuddy usage analytics dashboard (inspect credential boundaries): https://github.com/clancy-feng/workbuddy-usage-status
 - MIT WorkBuddy usage-analysis tool (reads local traces, database, and usage logs; share only redacted reports): https://github.com/Elisabeth15501/agent-analytics-report
 - MIT early local MCP task-pool reference for WorkBuddy/Codex collaboration (not production-hardened): https://github.com/somo-ui/workbuddy-codex-hub-mcp

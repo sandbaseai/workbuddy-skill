@@ -152,11 +152,13 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn("ecommerce-visual-copywriting-skill", resources)
             self.assertIn("agency-agents-zh", resources)
             if name.endswith("zh-CN.md"):
-                self.assertIn("仓库当前未声明许可证", resources)
-                self.assertNotIn("MIT 许可的中文专家角色集合", resources)
+                self.assertIn("MIT 许可、覆盖工程、设计、营销、金融等工作流", resources)
+                self.assertIn("MIT 许可、明确兼容 WorkBuddy 的电商视觉文案工作流", resources)
+                self.assertNotIn("仓库当前未声明许可证", resources)
             else:
-                self.assertIn("no repository license is currently declared", resources)
-                self.assertNotIn("MIT-licensed Chinese collection", resources)
+                self.assertIn("MIT-licensed Chinese collection", resources)
+                self.assertIn("an MIT-licensed WorkBuddy-compatible e-commerce visual-copy workflow", resources)
+                self.assertNotIn("no repository license is currently declared", resources)
             self.assertIn("workbuddy-usage-status", resources)
             self.assertIn("markitdown-skill", resources)
             self.assertIn("learn-workbuddy", resources)

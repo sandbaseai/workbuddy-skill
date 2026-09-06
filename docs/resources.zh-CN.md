@@ -76,8 +76,8 @@
 - [Agentic Awesome Skills](https://github.com/sickn33/agentic-awesome-skills)——MIT 许可的本地 Agent Skill 目录与控制平面，可用于研究发现、选择和验证 Skill；仅作资料参考，不要当作自动安装源。
 - [semlinker/awesome-workbuddy](https://github.com/semlinker/awesome-workbuddy)——CC0 许可的 WorkBuddy 教程、提示词、Skills、MCP 和场景实践导航；使用其中链接时仍需核对各项目的最新条款。
 - [AI Coding / Agent 中文教程](https://github.com/KimYx0207/AI-Coding-Guide-Zh)——覆盖 WorkBuddy 及相关 Agent 工作流。
-- [电商视觉文案 Skill](https://github.com/feichanggege/ecommerce-visual-copywriting-skill)——明确兼容 WorkBuddy 的电商视觉文案工作流，社区关注度较高；仓库当前未声明许可证，在权利和随附素材明确前仅作研究参考，不要直接再分发。
-- [agency-agents-zh](https://github.com/jnMetaCode/agency-agents-zh)——覆盖工程、设计、营销、金融等工作流的中文专家角色集合；仓库当前未声明许可证，在权利边界明确前仅作研究参考，不要直接再分发或适配。
+- [电商视觉文案 Skill](https://github.com/feichanggege/ecommerce-visual-copywriting-skill)——MIT 许可、明确兼容 WorkBuddy 的电商视觉文案工作流，社区关注度较高；复用前仍需检查随附素材和脚本。
+- [agency-agents-zh](https://github.com/jnMetaCode/agency-agents-zh)——MIT 许可、覆盖工程、设计、营销、金融等工作流的中文专家角色集合；复用前仍需检查归属说明和随附素材。
 - [WorkBuddy Usage Status](https://github.com/clancy-feng/workbuddy-usage-status)——MIT 许可、离线优先的用量看板，可分析本地 Token、credit、模型效率和错误；使用前仍需检查本地数据读取及可选凭据边界。
 - [Agent Analytics Report](https://github.com/Elisabeth15501/agent-analytics-report)——MIT 许可的 WorkBuddy 用量分析工具，可生成 Token、模型成本和异常报告；它会读取本地 traces、数据库和 usage 日志，使用前先确认隐私边界并只分享脱敏报告。
 - [WorkBuddy Codex Hub MCP](https://github.com/somo-ui/workbuddy-codex-hub-mcp)——MIT 许可的早期本地 MCP 协作参考，用 SQLite 任务池协调 WorkBuddy 与 Codex 的认领、提交和独立审阅；项目明确尚未提供生产级加固、并发写锁或托管服务，复用前应先审阅代码和部署边界。
