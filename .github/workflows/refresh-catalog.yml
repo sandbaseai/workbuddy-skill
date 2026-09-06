@@ -47,6 +47,8 @@ jobs:
             --repository calesthio/OpenMontage \
             --repository blader/humanizer \
             --repository muratcankoylan/Agent-Skills-for-Context-Engineering \
+            --repository earthtojake/text-to-cad \
+            --repository kangarooking/cangjie-skill \
             --repository mvanhorn/last30days-skill \
             --repository kepano/obsidian-skills \
             --repository op7418/guizang-ppt-skill \
