@@ -71,6 +71,8 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Community WorkBuddy skills collection (navigation only; inspect license and scripts): https://github.com/bitcjm/workbuddy-skills
 - WorkBuddy ChatCut MCP integration (MIT; inspect OAuth, credentials, and media-data scope): https://github.com/chonpszhou/workbuddy-chatcut-mcp
 - Discussions for usage examples and reviewed-package feedback: https://github.com/sandbaseai/workbuddy-skill/discussions
+- English support and troubleshooting: https://github.com/sandbaseai/workbuddy-skill/blob/main/SUPPORT.md
+- Chinese support and troubleshooting: https://github.com/sandbaseai/workbuddy-skill/blob/main/SUPPORT.zh-CN.md
 - Documentation, usability, validation, and existing-package feedback (the public catalog is frozen): https://github.com/sandbaseai/workbuddy-skill/issues/new?template=feature.yml
 - English quickstart: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.md
 - Chinese quickstart: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.zh-CN.md

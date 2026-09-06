@@ -169,6 +169,8 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
             content,
         )
         self.assertIn("catalog-meta.json", content)
+        self.assertIn("SUPPORT.md", content)
+        self.assertIn("SUPPORT.zh-CN.md", content)
         self.assertIn("under `records`", content)
         self.assertNotIn("currently indexes 21,818", content)
         self.assertIn("inspect the linked source, license, and permissions", content)
