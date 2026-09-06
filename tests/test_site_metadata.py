@@ -103,6 +103,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("sha256sum --check SHA256SUMS --ignore-missing", content)
         self.assertIn("Experts · Skills · Connectors", content)
         self.assertIn("catalog-only", content)
+        self.assertIn("https://agentskills.io/specification", content)
         self.assertIn("docs/quickstart.zh-CN.md", content)
         self.assertIn("scripts/adapt_skill.py", content)
         self.assertIn("CITATION.cff", content)
