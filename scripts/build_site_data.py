@@ -5,6 +5,7 @@ from pathlib import Path
 from collections import Counter
 import json
 import re
+from urllib.parse import urlparse
 
 from catalog_signals import source_context, source_signals
 
@@ -105,6 +106,7 @@ for entry in sorted(curated_entries, key=lambda item: item["skill"]):
             "source_url": source["source_url"],
             "sha": source["sha"],
             "download_url": entry["download_url"],
+            "asset": Path(urlparse(entry["download_url"]).path).name,
             "checksum_url": CHECKSUM_URL,
             "category": curated.get(entry["catalog_id"], {}).get(
                 "category", category_for(source)

@@ -55,7 +55,7 @@ python3 scripts/query_catalog.py 'github:owner/repository:path/to/SKILL.md'
 
 搜索只负责缩小候选范围，不会自动安装。选定条目后，先检查来源，再按照[适配教程](adapting-skills.zh-CN.md)制作经过审阅的 WorkBuddy 包。
 
-脚本和数据看板可以直接读取[紧凑目录数据](https://sandbaseai.github.io/workbuddy-skill/catalog.json)，字段定义见对应的 [JSON Schema](https://sandbaseai.github.io/workbuddy-skill/catalog-schema.json)。如果只需要带有 Release ZIP 的精选包，可直接使用独立的[精选包索引](https://sandbaseai.github.io/workbuddy-skill/packages.json)及其 [Schema](https://sandbaseai.github.io/workbuddy-skill/packages-schema.json)；每条包记录都提供用于校验 ZIP 的 `checksum_url`。
+脚本和数据看板可以直接读取[紧凑目录数据](https://sandbaseai.github.io/workbuddy-skill/catalog.json)，字段定义见对应的 [JSON Schema](https://sandbaseai.github.io/workbuddy-skill/catalog-schema.json)。如果只需要带有 Release ZIP 的精选包，可直接使用独立的[精选包索引](https://sandbaseai.github.io/workbuddy-skill/packages.json)及其 [Schema](https://sandbaseai.github.io/workbuddy-skill/packages-schema.json)；每条包记录都提供用于 GitHub CLI 下载的 `asset` 文件名和用于校验 ZIP 的 `checksum_url`。
 
 选择“来源顺序”时，结果会先按仓库、再按路径稳定排序，不依赖目录文件的爬取顺序，便于复查和分享同一个查询。
 

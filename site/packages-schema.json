@@ -7,7 +7,7 @@
   "items": {
     "type": "object",
     "additionalProperties": false,
-    "required": ["id", "name", "path", "repository", "source_url", "sha", "download_url", "checksum_url", "category"],
+    "required": ["id", "name", "path", "repository", "source_url", "sha", "download_url", "asset", "checksum_url", "category"],
     "properties": {
       "id": {"type": "string", "description": "Catalog ID of the reviewed source."},
       "name": {"type": "string", "description": "Package name."},
@@ -16,6 +16,7 @@
       "source_url": {"type": "string", "format": "uri", "description": "Immutable source URL."},
       "sha": {"type": "string", "pattern": "^[0-9a-f]{40}$", "description": "Source blob SHA."},
       "download_url": {"type": "string", "format": "uri", "description": "Latest Release ZIP URL."},
+      "asset": {"type": "string", "description": "Release asset filename used by GitHub CLI downloads."},
       "checksum_url": {"type": "string", "format": "uri", "description": "SHA256SUMS URL for the latest Release."},
       "category": {"type": "string", "description": "Derived or reviewed category."}
     }
