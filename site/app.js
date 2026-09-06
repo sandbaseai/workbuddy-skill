@@ -216,7 +216,17 @@ function render(reset = true) {
 function search({ historyMode = "replace" } = {}) {
   const terms = input.value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
   filtered = catalog.filter((skill) => {
-    const searchable = `${skill.n} ${skill.r} ${skill.p} ${catalogId(skill)}`.toLocaleLowerCase();
+    const searchable = [
+      skill.n,
+      skill.r,
+      skill.p,
+      catalogId(skill),
+      skill.g,
+      skill.w,
+      skill.k,
+      skill.o,
+      ...(skill.x || []),
+    ].join(" ").toLocaleLowerCase();
     const textMatch = terms.every((term) => searchable.includes(term));
     const categoryMatch = category.value === "all" || skill.g === category.value;
     const compatibilityMatch = compatibility.value === "all" || skill.w === compatibility.value;
