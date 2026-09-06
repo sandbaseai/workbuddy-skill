@@ -113,6 +113,16 @@ gh skill preview owner/repository skills/path/to/skill
 gh skill install owner/repository skills/path/to/skill --pin v1.2.0 --dir .workbuddy/skills
 ```
 
+如果希望由命令行按宿主管理安装位置，请显式指定宿主和作用域；需要可复现时同时固定版本，避免无意中安装默认分支的最新内容：
+
+```bash
+gh skill preview sandbaseai/workbuddy-skill skills/oss-review
+gh skill install sandbaseai/workbuddy-skill skills/oss-review \
+  --agent codex --scope project --pin v4.66.0
+```
+
+使用 `--scope user` 可安装到用户级目录；需要自定义目录时继续使用 `--dir`。由于该命令仍处于 preview，支持的宿主和作用域可能变化，复制命令到自动化流程前请查看[当前安装参考](https://cli.github.com/manual/gh_skill_install)。
+
 如果你的宿主没有提供 `gh skill`，请使用 Atlas 中的来源链接，并按照[适配教程](adapting-skills.zh-CN.md)制作包。安装始终应在审阅来源和权限后显式执行。
 
 ## 一个可复制的任务模板

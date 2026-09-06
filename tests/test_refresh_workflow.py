@@ -63,6 +63,14 @@ class RefreshWorkflowTests(unittest.TestCase):
                 self.assertIn("API keys", quickstart)
             self.assertIn("cli.github.com/manual/gh_skill", quickstart)
 
+    def test_quickstarts_document_host_scope_and_version_pinning(self):
+        for name in ("docs/quickstart.md", "docs/quickstart.zh-CN.md"):
+            quickstart = (ROOT / name).read_text(encoding="utf-8")
+            self.assertIn("--agent codex", quickstart)
+            self.assertIn("--scope project", quickstart)
+            self.assertIn("--pin v4.66.0", quickstart)
+            self.assertIn("cli.github.com/manual/gh_skill_install", quickstart)
+
     def test_quickstarts_explain_reviewed_package_filter(self):
         english = (ROOT / "docs/quickstart.md").read_text(encoding="utf-8")
         chinese = (ROOT / "docs/quickstart.zh-CN.md").read_text(encoding="utf-8")

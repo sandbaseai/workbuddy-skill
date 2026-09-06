@@ -271,6 +271,19 @@ Hosts that support the preview [GitHub CLI `gh skill` command](https://cli.githu
 gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/skills
 ```
 
+To install into a supported host's normal project or user location, let the CLI
+select the destination and pin the source version when reproducibility matters:
+
+```bash
+gh skill preview sandbaseai/workbuddy-skill skills/oss-review
+gh skill install sandbaseai/workbuddy-skill skills/oss-review \
+  --agent codex --scope project --pin v4.66.0
+```
+
+`gh skill` is still in preview. Check the [current command manual](https://cli.github.com/manual/gh_skill_install)
+for supported agents and scopes; use `--dir` when you need a custom WorkBuddy
+directory.
+
 The catalog is for discovery, not automatic approval. Review every external Skill before use, and pin a release or commit when reproducibility matters. See the [English adaptation guide](docs/adapting-skills.md) for preparing a reviewed workflow.
 
 Further reading: the [WorkBuddyGuide](https://github.com/AlephAITech/WorkBuddyGuide) is a task-oriented community guide, while [Tencent WorkBuddy Bench](https://github.com/Tencent/workbuddy-bench) provides reproducible Agent task evaluation material. Use them as references alongside the exact source and license of any Skill you choose.
