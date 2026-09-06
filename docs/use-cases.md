@@ -10,6 +10,21 @@ Each prompt is designed to make the expected stopping condition explicit and red
 
 如果找不到合适的连接器，先让 WorkBuddy 返回“未配置/不可用”的原因和替代方案，不要把密钥直接粘贴到对话中。
 
+## 先用现成包 / Start with a reviewed package
+
+如果你还没有合适的 Skill，可以先从对应的精选包开始，再把下面的提示词替换成自己的主题：
+
+| 任务 | 推荐起点 |
+|---|---|
+| 有来源的网页调研 | [deep-research Starter Pack](starter-packs.md) |
+| 代码评审和风险排序 | [code-review-excellence Starter Pack](starter-packs.md) |
+| 测试失败排查 | [debugging-strategies Starter Pack](starter-packs.md) |
+| MCP、凭据和权限检查 | [mcp-security-audit Starter Pack](starter-packs.md) |
+
+先下载并校验精选包，再复制下面最接近的提示词。想查看每个包的固定来源、资产文件名和校验命令，请打开[精选包清单](https://sandbaseai.github.io/workbuddy-skill/packages.html)。
+
+If you do not have a suitable Skill yet, start with the matching [Starter Pack](starter-packs.md), then replace the topic in the prompt below. Download and verify the package before using it.
+
 ## Research / 调研
 
 ```text
