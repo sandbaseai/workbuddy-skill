@@ -108,6 +108,11 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("index.html?category=research#catalog", page)
         self.assertIn("index.html?packageStatus=reviewed#catalog", page)
 
+    def test_static_package_index_exposes_bilingual_support_links(self):
+        page = (SITE / "packages.html").read_text(encoding="utf-8")
+        self.assertIn("blob/main/SUPPORT.md", page)
+        self.assertIn("blob/main/SUPPORT.zh-CN.md", page)
+
     def test_author_styles_preserve_hidden_state(self):
         styles = (SITE / "styles.css").read_text(encoding="utf-8")
         self.assertIn("[hidden] { display: none !important; }", styles)
