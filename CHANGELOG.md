@@ -54,6 +54,7 @@ All notable changes to this project are documented here.
 - Added above-the-fold README links for Atlas, quickstart, reviewed packages, and discussions.
 - Added a focused issue form for reviewed-package download, verification, import, and runtime feedback.
 - Linked the reviewed-package feedback form from the bilingual README and quickstarts.
+- Added official Expert and Expert Team references to the resource maps and LLM index.
 - Added bilingual WorkBuddy resource maps covering official product docs, community learning, evaluation material, and local catalog guides.
 - Added direct Atlas navigation to the resource maps, plus a post-use feedback and Star prompt that does not perform account actions.
 - Atlas now derives and displays the current count of reviewed WorkBuddy packages from `catalog-meta.json`.

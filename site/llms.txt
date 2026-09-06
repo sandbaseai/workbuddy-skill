@@ -57,6 +57,8 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Official Open Platform overview: https://open.workbuddy.cn/en/docs/what-is-open-platform
 - Official Open Platform onboarding: https://open.workbuddy.cn/en/docs/onboarding
 - Official Buddy App guide: https://open.workbuddy.cn/en/docs/buddy-app
+- Official Expert guide: https://open.workbuddy.cn/en/docs/expert
+- Official Expert Team guide: https://open.workbuddy.cn/en/docs/expert-team
 - Official Open Platform Connector guide: https://open.workbuddy.cn/en/docs/connector
 - Official Open API reference: https://open.workbuddy.cn/en/docs/openapi
 - Official Third-Party App guide: https://open.workbuddy.cn/en/docs/third-party-app
@@ -64,6 +66,8 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Chinese Open Platform overview: https://open.workbuddy.cn/docs/what-is-open-platform
 - Chinese Open Platform onboarding: https://open.workbuddy.cn/docs/onboarding
 - Chinese Buddy App guide: https://open.workbuddy.cn/docs/buddy-app
+- Chinese Expert guide: https://open.workbuddy.cn/docs/expert
+- Chinese Expert Team guide: https://open.workbuddy.cn/docs/expert-team
 - Chinese Open Platform Connector guide: https://open.workbuddy.cn/docs/connector
 - Chinese Open API reference: https://open.workbuddy.cn/docs/openapi
 - Chinese Third-Party App guide: https://open.workbuddy.cn/docs/third-party-app

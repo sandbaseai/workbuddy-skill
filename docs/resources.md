@@ -17,6 +17,7 @@ Use this page to choose the right source before searching the catalog.
 - [Open Platform overview](https://open.workbuddy.cn/en/docs/what-is-open-platform) — the full onboarding, development, test, review, publishing, and maintenance path.
 - [Open Platform onboarding](https://open.workbuddy.cn/en/docs/onboarding) — developer and enterprise verification preparation before publishing ecosystem assets.
 - [Buddy App guide](https://open.workbuddy.cn/en/docs/buddy-app) — package industry workflows into a ready-to-use WorkBuddy workspace with Skills, connectors, and preview testing.
+- [Expert guide](https://open.workbuddy.cn/en/docs/expert) and [Expert Team guide](https://open.workbuddy.cn/en/docs/expert-team) — configure marketplace experts, teams, agents, Skills, prompts, and connector dependencies.
 
 ## Learning and evaluation
 

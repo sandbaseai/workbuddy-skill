@@ -17,6 +17,7 @@
 - [Open Platform 总览](https://open.workbuddy.cn/docs/what-is-open-platform)——从入驻、开发、测试、审核到发布和维护的完整流程。
 - [Open Platform 入驻指南](https://open.workbuddy.cn/docs/onboarding)——发布生态能力前准备开发者或企业认证。
 - [Buddy 应用指南](https://open.workbuddy.cn/docs/buddy-app)——将行业工作流封装成可直接使用的 WorkBuddy 工作台，并配置 Skill、连接器和预览测试。
+- [专家指南](https://open.workbuddy.cn/docs/expert)与[专家团指南](https://open.workbuddy.cn/docs/expert-team)——配置市场专家、专家团、Agent、Skill、提示词和连接器依赖。
 
 ## 学习与评测
 
