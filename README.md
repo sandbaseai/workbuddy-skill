@@ -10,6 +10,7 @@ Skills，查看来源与许可证，选择适合的能力，并下载经过整�
 自动化校验和贡献流程不作为使用前提，分别放在贡献与安全文档中。
 
 当前公开目录包含 **21,818 条 Skill 快照**，另有 **277 个经过审阅、可直接安装的 WorkBuddy 包**。
+这是一个冻结的公开快照；反馈不会自动新增目录记录，请通过反馈入口提交文档、可用性、校验或已有精选包改进。
 
 [![Latest release](https://img.shields.io/github/v/release/sandbaseai/workbuddy-skill)](https://github.com/sandbaseai/workbuddy-skill/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -262,6 +263,7 @@ first. Repository maintenance, automation checks, and contribution procedures ar
 documented separately and are not prerequisites for using the catalog.
 
 The public catalog contains **21,818 indexed Skills**, alongside **277 reviewed WorkBuddy packages** ready to install.
+This is a frozen public snapshot; feedback does not automatically add catalog records. Use the feedback form for documentation, usability, validation, or existing reviewed-package improvements.
 
 If the catalog helps you find a useful capability, [Star the project](https://github.com/sandbaseai/workbuddy-skill) and share real usage feedback or a public workflow example. After trying a package, use [Discussions](https://github.com/sandbaseai/workbuddy-skill/discussions) or [submit a WorkBuddy showcase](https://github.com/sandbaseai/workbuddy-skill/issues/new?template=showcase.yml).
 For formal citations in papers, reports, or internal documentation, see [CITATION.cff](CITATION.cff).

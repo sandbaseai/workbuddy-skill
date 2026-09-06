@@ -194,6 +194,8 @@ class RefreshWorkflowTests(unittest.TestCase):
     def test_readme_keeps_internal_catalog_governance_out_of_the_user_entrypoint(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         self.assertIn("21,818", readme)
+        self.assertIn("冻结的公开快照", readme)
+        self.assertIn("frozen public snapshot", readme)
         self.assertIn("给项目加一个 Star](https://github.com/sandbaseai/workbuddy-skill)", readme)
         self.assertIn("[Star the project](https://github.com/sandbaseai/workbuddy-skill)", readme)
         self.assertIn("actions/workflows/validate.yml/badge.svg", readme)
