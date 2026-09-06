@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: WorkBuddy quickstart and resource map
+    url: https://github.com/sandbaseai/workbuddy-skill#english
+    about: Start with the installation guide, catalog guide, and public resources.
+  - name: Share a workflow or ask the community
+    url: https://github.com/sandbaseai/workbuddy-skill/discussions
+    about: Share results, compare approaches, or ask a usage question.
+  - name: Report a vulnerability privately
+    url: https://github.com/sandbaseai/workbuddy-skill/security/advisories/new
+    about: Do not disclose secrets or exploit details in a public issue.
