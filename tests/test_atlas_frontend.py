@@ -24,6 +24,8 @@ class AtlasFrontendTests(unittest.TestCase):
             self.assertIn('id="search"', page)
             self.assertIn('class="search-example"', page)
             self.assertIn("data-search=", page)
+            self.assertIn("catalog-action-note", page)
+            self.assertIn("Star", page)
             self.assertIn("disabled", page)
             self.assertIn('aria-live="polite"', page)
             self.assertIn("/discussions", page)

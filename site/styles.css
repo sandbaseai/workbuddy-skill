@@ -68,6 +68,8 @@ h1 em { color: var(--accent); font-style: italic; line-height: 1.1; }
 h2 { margin: 0; font-size: clamp(2.2rem, 5vw, 5rem); line-height: .98; letter-spacing: -.055em; }
 .catalog-heading p { max-width: 56ch; color: var(--muted); font-size: 1.08rem; line-height: 1.6; }
 .catalog-heading .snapshot-note { color: var(--accent-dark); font-size: .9rem; font-weight: 700; }
+.catalog-heading .catalog-action-note { margin-top: 10px; color: var(--muted); font-size: .88rem; }
+.catalog-action-note a { color: var(--accent-dark); font-weight: 750; text-underline-offset: 3px; }
 .search-panel { margin: 55px 0 28px; }
 .field label { display: block; margin-bottom: 10px; font-size: .82rem; font-weight: 700; }
 .filter-grid { display: grid; grid-template-columns: minmax(240px, 1.25fr) repeat(4, minmax(145px, 190px)); align-items: end; gap: 14px; }
