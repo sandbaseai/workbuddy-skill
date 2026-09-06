@@ -37,6 +37,8 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Clean-room WorkBuddy architecture course: https://github.com/adongwanai/learn-workbuddy
 - WorkBuddy Harness v2 architecture and evaluation reference (no formal LICENSE file; research only): https://github.com/zhuang-HE/workbuddy-harness
 - MIT WorkBuddy community skills collection: https://github.com/yinqd3/workbuddy-skills
+- Apache-2.0 Huawei Cloud DevKit with explicit WorkBuddy support and safety checks (research reference): https://github.com/huaweicloud/huaweicloud-devkit
+- Apache-2.0 Qwen multimodal Skill + optional MCP plugins (research reference): https://github.com/QwenLM/Qwen-MM-Plugins
 - MIT bilingual WorkBuddy port and workflow conventions: https://github.com/mrzhangguoguo/oh-my-workbuddy
 - WorkBuddy Harness blue book (research reference; no license declaration): https://github.com/zjp1997720/zhijian-ai-bluebook-workbuddy-harness
 - WorkBuddy Harness blue book online edition: https://zjp1997720.github.io/zhijian-ai-bluebook-workbuddy-harness/
