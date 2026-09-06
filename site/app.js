@@ -36,6 +36,7 @@ let packagesByDownload = new Map();
 let filtered = [];
 let shown = 0;
 const PAGE_SIZE = 40;
+const CATALOG_LOAD_TIMEOUT_MS = 15000;
 const DEFAULT_CHECKSUM_URL = "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/SHA256SUMS";
 let checksumUrl = DEFAULT_CHECKSUM_URL;
 const FILTERS = {
@@ -332,8 +333,10 @@ async function loadCatalog() {
   retryLoad.disabled = true;
   count.textContent = isChinese ? "正在加载目录…" : "Loading catalog…";
   results.setAttribute("aria-busy", "true");
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), CATALOG_LOAD_TIMEOUT_MS);
   try {
-    const requestOptions = { cache: "no-cache" };
+    const requestOptions = { cache: "no-cache", signal: controller.signal };
     const [catalogResponse, metaResponse, packagesResponse] = await Promise.all([
       fetch("catalog.json", requestOptions),
       fetch("catalog-meta.json", requestOptions),
@@ -368,6 +371,7 @@ async function loadCatalog() {
     count.textContent = isChinese ? "目录暂时不可用" : "Catalog unavailable";
     error.hidden = false;
   } finally {
+    clearTimeout(timeout);
     retryLoad.disabled = false;
   }
 }
