@@ -23,6 +23,9 @@ reviewed packages; new catalog records are not automatically added.
 - Official Skills tutorial: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills
 - Official MCP guide: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide
 - Official Automation guide: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide
+- English official quickstart: https://www.workbuddy.ai/docs/workbuddy/Quickstart
+- English official Skills tutorial: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills
+- English official MCP guide: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide
 - Adaptation guide: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/adapting-skills.md
 - Chinese adaptation guide: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/adapting-skills.zh-CN.md
 
