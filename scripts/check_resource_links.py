@@ -26,6 +26,7 @@ SOURCE_FILES = (
     ROOT / "docs/quickstart.zh-CN.md",
     ROOT / "docs/starter-packs.md",
     ROOT / "docs/starter-packs.zh-CN.md",
+    ROOT / "docs/use-cases.md",
     ROOT / "site/llms.txt",
     ROOT / "site/packages.html",
 )

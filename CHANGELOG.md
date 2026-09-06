@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Link copy-ready use cases to matching reviewed Starter Packs so users can move from an example prompt to an installable package.
 - Keep the machine-readable Atlas entrypoint focused on discovery and safe installation instead of internal catalog maintenance.
 - Keep the catalog guide and resource map focused on public discovery instead of snapshot verification details.
 - Make the Atlas status note point users to upstream source links instead of exposing catalog construction behavior.
