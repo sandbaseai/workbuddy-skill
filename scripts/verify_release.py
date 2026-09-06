@@ -43,6 +43,8 @@ def sha256(path: Path) -> str:
 
 def verify(directory: Path, checksum_name: str = "SHA256SUMS", selected: list[str] | None = None) -> list[str]:
     checksum_path = directory / checksum_name
+    if checksum_path.is_symlink():
+        raise ValueError(f"checksum file must not be a symlink: {checksum_path}")
     if not checksum_path.is_file():
         raise FileNotFoundError(f"checksum file not found: {checksum_path}")
     checksums = read_checksums(checksum_path)
@@ -64,6 +66,8 @@ def verify(directory: Path, checksum_name: str = "SHA256SUMS", selected: list[st
     verified = []
     for name in names:
         path = directory / name
+        if path.is_symlink():
+            raise ValueError(f"release asset must not be a symlink: {path}")
         if not path.is_file():
             raise FileNotFoundError(f"release asset not found: {path}")
         actual = sha256(path)
