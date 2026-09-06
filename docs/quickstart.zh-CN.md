@@ -22,7 +22,9 @@
 想了解可复现的 Agent 任务评测，可以看 [Tencent WorkBuddy Bench](https://github.com/Tencent/workbuddy-bench)。
 这些资料可以作为参考，但仍请结合你选择的 Skill 的具体来源和许可证进行判断。
 
-当前目录提供 **21,818 条公开 Skill 快照**，适合先缩小搜索范围，再通过每条结果的来源链接确认上游最新版本。
+当前目录是面向审阅的公开 Skill 快照；最新规模以
+[`catalog-meta.json`](https://sandbaseai.github.io/workbuddy-skill/catalog-meta.json)
+中的 `records` 字段为准。先用目录缩小搜索范围，再通过每条结果的来源链接确认上游最新版本。
 
 ## 先安装 WorkBuddy
 

@@ -26,8 +26,10 @@ For a task-oriented community walkthrough, see the [WorkBuddyGuide](https://gith
 For reproducible Agent task evaluation, see [Tencent WorkBuddy Bench](https://github.com/Tencent/workbuddy-bench).
 Use these references alongside the exact source and license of any Skill you choose.
 
-The catalog is a review-oriented snapshot of 21,818 indexed Skills. Use it to narrow
-your search, then follow each result's source link for the latest upstream version.
+The catalog is a review-oriented snapshot. Its current size is published in
+[`catalog-meta.json`](https://sandbaseai.github.io/workbuddy-skill/catalog-meta.json)
+under `records`; use it to narrow your search, then follow each result's source
+link for the latest upstream version.
 
 ## Install WorkBuddy first
 
