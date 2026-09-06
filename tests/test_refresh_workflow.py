@@ -147,6 +147,12 @@ class RefreshWorkflowTests(unittest.TestCase):
         workflow = (ROOT / ".github/workflows/validate.yml").read_text(encoding="utf-8")
         self.assertIn("scripts/build_site_data.py", workflow)
         self.assertIn("scripts/validate_site_data.py", workflow)
+        self.assertIn("scripts/verify_catalog_snapshot.py", workflow)
+
+    def test_snapshot_verifier_is_documented_in_both_catalog_guides(self):
+        for path in ("docs/catalog-guide.md", "docs/catalog-guide.zh-CN.md"):
+            content = (ROOT / path).read_text(encoding="utf-8")
+            self.assertIn("scripts/verify_catalog_snapshot.py", content)
 
     def test_frozen_check_does_not_publish_changes(self):
         workflow = (ROOT / ".github/workflows/refresh-catalog.yml").read_text(encoding="utf-8")

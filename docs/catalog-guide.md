@@ -87,6 +87,18 @@ If you only need reviewed packages that have a Release ZIP, use the separate
 [machine-readable package index](https://sandbaseai.github.io/workbuddy-skill/packages.json), and
 its [Schema](https://sandbaseai.github.io/workbuddy-skill/packages-schema.json). Each package record includes an `asset` filename, a ready-to-copy `download_command` for GitHub CLI, and a `checksum_url` for verifying the ZIP.
 
+To verify that a local checkout still contains the exact frozen snapshot used by
+the Atlas, run:
+
+```bash
+python3 scripts/build_site_data.py
+python3 scripts/verify_catalog_snapshot.py
+```
+
+The command compares the SHA-256 of `catalog/skills.jsonl` with the
+`catalog_sha256` value in `site/catalog-meta.json`; it does not fetch or modify
+third-party content.
+
 ## 4. Run a read-only first test
 
 Import the package only after checking its inputs and side effects. Start with

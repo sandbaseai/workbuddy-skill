@@ -39,6 +39,7 @@ Duplicate content can occur in multiple repositories. Consumers should group by 
 ```bash
 python3 scripts/validate_catalog.py --minimum 10000 --require-analysis --check-stats
 python3 scripts/build_site_data.py
+python3 scripts/verify_catalog_snapshot.py
 ```
 
 The published snapshot is frozen. Do not run the crawler or add records; use the

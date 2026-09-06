@@ -58,6 +58,16 @@ python3 scripts/query_catalog.py 'github:owner/repository:path/to/SKILL.md'
 
 选择“来源顺序”时，结果会先按仓库、再按路径稳定排序，不依赖目录文件的爬取顺序，便于复查和分享同一个查询。
 
+如果要确认本地 checkout 与 Atlas 使用的是同一份冻结快照，可以运行：
+
+```bash
+python3 scripts/build_site_data.py
+python3 scripts/verify_catalog_snapshot.py
+```
+
+该命令会比较 `catalog/skills.jsonl` 的 SHA-256 与
+`site/catalog-meta.json` 中的 `catalog_sha256`，不会抓取或修改第三方内容。
+
 ## 4. 先做只读试运行
 
 确认输入和副作用后再导入。第一次只使用公开、非敏感数据；在允许写入、发送消息、付费 API 调用或访问生产环境前，先要求 Skill 给出执行计划。需要复现结果时，保存来源提交版本和包版本。

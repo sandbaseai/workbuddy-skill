@@ -19,6 +19,7 @@ jobs:
       - run: python3 scripts/validate_catalog.py --minimum 10000 --require-analysis
       - run: python3 scripts/build_site_data.py
       - run: python3 scripts/validate_site_data.py
+      - run: python3 scripts/verify_catalog_snapshot.py
       - run: python3 -m py_compile scripts/*.py
       - run: python3 -m unittest discover -s tests -v
       - run: ./scripts/package_skill.sh
