@@ -88,7 +88,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 
 | Skill | 适合场景 |
 |---|---|
-| [SandBase（外部）](https://github.com/sandbaseai/awesome-workbuddy/tree/main/skills/sandbase) | 在外部 WorkBuddy 资源库中发现、比较并调用实时 API 和模型 |
+| [SandBase（已外置）](https://github.com/sandbaseai/awesome-workbuddy/tree/main/skills/sandbase) | SandBase 已从本仓库移出；请在外部 WorkBuddy 资源库中发现、比较并调用实时 API 和模型 |
 | [Code Reviewer](skills/code-reviewer/) | 评审正确性、回归、维护性、安全和发布风险 |
 | [Backend Architecture Patterns](skills/architecture-patterns/) | 用边界、依赖方向、端口适配器和领域不变量设计可测试后端架构 |
 | [E2E Testing Patterns](skills/e2e-testing-patterns/) | 用稳定定位、独立数据、可访问性和证据化 flaky 诊断构建可靠端到端测试 |
