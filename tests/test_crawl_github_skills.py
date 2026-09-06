@@ -1,3 +1,5 @@
+import contextlib
+import io
 import json
 from pathlib import Path
 import sys
@@ -20,10 +22,12 @@ from crawl_github_skills import (  # noqa: E402
 
 class RateLimitTests(unittest.TestCase):
     def test_default_published_catalog_requires_explicit_opt_in(self):
-        with patch("sys.argv", ["crawl_github_skills.py"]):
+        stderr = io.StringIO()
+        with patch("sys.argv", ["crawl_github_skills.py"]), contextlib.redirect_stderr(stderr):
             with self.assertRaises(SystemExit) as raised:
                 main()
         self.assertEqual(raised.exception.code, 2)
+        self.assertIn("catalog/skills.jsonl is frozen", stderr.getvalue())
 
     @patch("crawl_github_skills.time.time", return_value=1_000)
     def test_delay_uses_largest_server_boundary(self, _time):
