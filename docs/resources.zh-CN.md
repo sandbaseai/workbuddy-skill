@@ -38,6 +38,7 @@
 - [Agentic Awesome Skills](https://github.com/sickn33/agentic-awesome-skills)——MIT 许可的本地 Agent Skill 目录与控制平面，可用于研究发现、选择和验证 Skill；仅作资料参考，不要当作自动安装源。
 - [semlinker/awesome-workbuddy](https://github.com/semlinker/awesome-workbuddy)——CC0 许可的 WorkBuddy 教程、提示词、Skills、MCP 和场景实践导航；使用其中链接时仍需核对各项目的最新条款。
 - [AI Coding / Agent 中文教程](https://github.com/KimYx0207/AI-Coding-Guide-Zh)——覆盖 WorkBuddy 及相关 Agent 工作流。
+- [agency-agents-zh](https://github.com/jnMetaCode/agency-agents-zh)——MIT 许可的中文专家角色集合，覆盖工程、设计、营销、金融等工作流；仅作为可审阅来源，适配前仍需检查具体内容和权限。
 - [Learn WorkBuddy](https://github.com/adongwanai/learn-workbuddy)——MIT clean-room 定位的 Agent Harness 架构课程。
 - [yinqd3/workbuddy-skills](https://github.com/yinqd3/workbuddy-skills)——MIT 许可的社区技能集合，包含学术研究、前端幻灯片和工具调用工作流；仅作为可审阅来源，不代表自动可信。
 - [oh-my-workbuddy](https://github.com/mrzhangguoguo/oh-my-workbuddy)——MIT 许可的双语 WorkBuddy 端口，可参考其目录化工作流约定。

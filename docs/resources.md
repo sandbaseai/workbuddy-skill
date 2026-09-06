@@ -38,6 +38,7 @@ Use this page to choose the right source before searching the catalog.
 - [Agentic Awesome Skills](https://github.com/sickn33/agentic-awesome-skills) — MIT-licensed local catalog and control plane for discovering, selecting, and validating agentic Skills; use it as a research reference, not an automatic installer.
 - [semlinker/awesome-workbuddy](https://github.com/semlinker/awesome-workbuddy) — CC0 resource navigation for WorkBuddy tutorials, prompts, Skills, MCP, and practical scenarios; verify each linked project's current terms.
 - [AI Coding Guide 中文教程](https://github.com/KimYx0207/AI-Coding-Guide-Zh) — broad Chinese tutorial covering WorkBuddy and adjacent agent workflows.
+- [agency-agents-zh](https://github.com/jnMetaCode/agency-agents-zh) — MIT-licensed Chinese collection of reusable expert roles across engineering, design, marketing, finance, and other workflows; use it as a source to inspect before adapting.
 - [Learn WorkBuddy](https://github.com/adongwanai/learn-workbuddy) — MIT clean-room course on Agent harness architecture.
 - [yinqd3/workbuddy-skills](https://github.com/yinqd3/workbuddy-skills) — MIT-licensed community collection with academic research, frontend slides, and tool-call workflows; use it as a source to inspect, not an automatic trust signal.
 - [oh-my-workbuddy](https://github.com/mrzhangguoguo/oh-my-workbuddy) — MIT-licensed bilingual WorkBuddy port with catalog-driven workflow conventions.

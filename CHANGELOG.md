@@ -28,6 +28,7 @@ All notable changes to this project are documented here.
 - Added a safe post-merge cleanup workflow for stale same-repository branches while preserving fork branches.
 - Made post-merge branch cleanup run from the target repository so merged same-repository branches are actually removed.
 - Added the MIT-licensed Agentic Awesome Skills catalog to the bilingual resource map as a discovery and evaluation reference, without importing its Skills.
+- Added the MIT-licensed `agency-agents-zh` expert-role collection to the bilingual resource map as an inspect-before-adapting reference.
 - Linked the copy-ready WorkBuddy use-case guide from both README language entry points.
 - Fixed trusted auto-merge coverage for draft pull requests when they become ready for review.
 - Added the vendor-neutral Agent Skills specification to the machine-readable resource map.
