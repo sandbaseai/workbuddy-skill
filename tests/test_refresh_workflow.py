@@ -283,6 +283,7 @@ class RefreshWorkflowTests(unittest.TestCase):
     def test_readme_exposes_high_signal_catalog_search(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         self.assertEqual(readme.count("python3 scripts/query_catalog.py research --high-signal --limit 10"), 2)
+        self.assertEqual(readme.count("python3 scripts/query_catalog.py --category research --package-status reviewed --sort score --limit 10"), 2)
 
     def test_frozen_check_does_not_publish_changes(self):
         workflow = (ROOT / ".github/workflows/refresh-catalog.yml").read_text(encoding="utf-8")

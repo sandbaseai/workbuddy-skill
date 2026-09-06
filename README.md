@@ -50,6 +50,12 @@ Skills，查看来源与许可证，选择适合的能力，并下载经过整�
 python3 scripts/query_catalog.py research --high-signal --limit 10
 ```
 
+也可以按 Atlas 分类直接查找可安装精选包：
+
+```bash
+python3 scripts/query_catalog.py --category research --package-status reviewed --sort score --limit 10
+```
+
 1. 在 [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) 或[中文目录](https://sandbaseai.github.io/workbuddy-skill/zh-CN.html)中搜索需求。
 2. 打开条目的来源链接，阅读说明、许可证、权限和外部依赖。
 3. 从 [Releases](https://github.com/sandbaseai/workbuddy-skill/releases/latest) 下载所需 ZIP，在 WorkBuddy 的 **专家 · Skills · Connectors → Skills → 添加 Skill** 中上传。
@@ -279,6 +285,12 @@ From a local checkout, use the high-signal shortcut to narrow candidates quickly
 
 ```bash
 python3 scripts/query_catalog.py research --high-signal --limit 10
+```
+
+To find installable reviewed packages by Atlas category:
+
+```bash
+python3 scripts/query_catalog.py --category research --package-status reviewed --sort score --limit 10
 ```
 
 1. Search the [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/).
