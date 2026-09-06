@@ -69,6 +69,8 @@ python3 scripts/query_catalog.py research --high-signal --limit 10
 python3 scripts/query_catalog.py --category research --package-status reviewed --sort score --limit 10
 ```
 
+中文用户也可以直接使用分类别名，例如 `--category 研究`；CLI 会统一转换为 Atlas 的标准分类。
+
 1. 在 [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) 或[中文目录](https://sandbaseai.github.io/workbuddy-skill/zh-CN.html)中搜索需求。
 2. 打开条目的来源链接，阅读说明、许可证、权限和外部依赖。
 3. 从 [Releases](https://github.com/sandbaseai/workbuddy-skill/releases/latest) 下载所需 ZIP，在 WorkBuddy 的 **专家 · Skills · Connectors → Skills → 添加 Skill** 中上传。
@@ -312,6 +314,8 @@ To find installable reviewed packages by Atlas category:
 ```bash
 python3 scripts/query_catalog.py --category research --package-status reviewed --sort score --limit 10
 ```
+
+Chinese category aliases are accepted too, for example `--category 研究`; the CLI normalizes them to the Atlas category.
 
 1. Search the [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/).
 2. Read the immutable source, license, permissions, dependencies, and side effects.

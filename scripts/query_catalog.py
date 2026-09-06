@@ -11,7 +11,7 @@ import sys
 from textwrap import dedent
 from urllib.parse import urlparse
 
-from catalog_categories import CATEGORIES, category_for
+from catalog_categories import CATEGORIES, category_for, normalize_category
 from catalog_signals import source_context
 
 
@@ -54,6 +54,13 @@ def matches(row: dict, terms: list[str], category_overrides: dict[str, str] | No
 
 def row_category(row: dict, category_overrides: dict[str, str] | None = None) -> str:
     return (category_overrides or {}).get(catalog_id(row), category_for(row))
+
+
+def _parse_category(value: str) -> str:
+    try:
+        return normalize_category(value)
+    except ValueError as exc:
+        raise argparse.ArgumentTypeError(str(exc)) from exc
 
 
 def query_rows(
@@ -142,6 +149,7 @@ def main() -> int:
             Examples:
               %(prog)s research --high-signal --limit 10
               %(prog)s --category research --package-status reviewed --sort score --limit 10
+              %(prog)s --category 研究 --package-status reviewed --sort score --limit 10
               %(prog)s browser OCR --security no-static-flags --unique --json
 
             Search only narrows candidates. Inspect the pinned source, license,
@@ -166,8 +174,9 @@ def main() -> int:
     parser.add_argument("--min-score", type=int, help="Require a WorkBuddy score from 0 to 100")
     parser.add_argument(
         "--category",
+        type=_parse_category,
         choices=CATEGORIES,
-        help="Require the Atlas category inferred from the name/path or curated package metadata",
+        help="Require an Atlas category (English, or Chinese such as 研究)",
     )
     parser.add_argument(
         "--package-status",

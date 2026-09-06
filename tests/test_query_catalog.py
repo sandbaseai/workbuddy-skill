@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from query_catalog import main, query_rows  # noqa: E402
-from catalog_categories import category_for  # noqa: E402
+from catalog_categories import category_for, normalize_category  # noqa: E402
 
 
 def row(name, sha, score, *, status="adaptable", security="no-static-flags", repository="owner/repo", category=None):
@@ -55,6 +55,26 @@ class QueryCatalogTests(unittest.TestCase):
         self.assertIn("research --high-signal --limit 10", help_text)
         self.assertIn("--package-status reviewed", help_text)
         self.assertIn("Inspect the pinned source", help_text)
+
+    def test_category_aliases_accept_english_and_chinese_labels(self):
+        self.assertEqual(normalize_category("research"), "research")
+        self.assertEqual(normalize_category("  研究  "), "research")
+
+    def test_cli_accepts_chinese_category_alias(self):
+        with TemporaryDirectory() as directory:
+            catalog = Path(directory) / "skills.jsonl"
+            catalog.write_text(json.dumps(row("research-notes", "research", 90)) + "\n", encoding="utf-8")
+            output = io.StringIO()
+            with redirect_stdout(output):
+                old_argv = sys.argv
+                try:
+                    sys.argv = ["query_catalog.py", "--category", "研究", "--catalog", str(catalog), "--json"]
+                    main()
+                finally:
+                    sys.argv = old_argv
+        result = json.loads(output.getvalue())
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result[0]["workbuddy_category"], "research")
 
     def test_filters_deduplicates_and_sorts_by_score(self):
         rows = [

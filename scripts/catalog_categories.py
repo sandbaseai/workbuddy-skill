@@ -17,6 +17,32 @@ CATEGORY_RULES = (
     ("development", ("code", "coding", "test", "debug", "deploy", "api", "git", "python", "javascript", "typescript")),
 )
 CATEGORIES = tuple(category for category, _ in CATEGORY_RULES) + ("other",)
+CATEGORY_LABELS_ZH = {
+    "business": "商业",
+    "content": "内容",
+    "data": "数据",
+    "design": "设计",
+    "development": "开发",
+    "media": "媒体",
+    "productivity": "效率",
+    "research": "研究",
+    "security": "安全",
+    "other": "其他",
+}
+CATEGORY_ALIASES = {
+    **{category: category for category in CATEGORIES},
+    **{label: category for category, label in CATEGORY_LABELS_ZH.items()},
+}
+
+
+def normalize_category(value: str) -> str:
+    """Return the canonical category for an English or Chinese label."""
+
+    normalized = value.strip().casefold()
+    try:
+        return CATEGORY_ALIASES[normalized]
+    except KeyError as exc:
+        raise ValueError(f"unknown category: {value}") from exc
 
 
 def category_for(row: dict) -> str:
