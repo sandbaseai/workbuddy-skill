@@ -17,6 +17,7 @@
 | 新建任务并选择工作目录和 Skill | [新建任务栏](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar) |
 | 更新、停用或移除已安装的 Skill | [快速开始中的生命周期说明](quickstart.zh-CN.md) 和 [Skill Marketplace](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) |
 | 组装市场专家或专家团 | [专家指南](https://open.workbuddy.cn/docs/expert) 与 [专家团指南](https://open.workbuddy.cn/docs/expert-team) |
+| 发布 Skill、连接器或 Buddy 应用 | [Open Platform 总览](https://open.workbuddy.cn/docs/what-is-open-platform) 和 [入驻指南](https://open.workbuddy.cn/docs/onboarding) |
 | 把公开目录结果制作成自己的包 | [适配教程](adapting-skills.zh-CN.md) |
 
 ## 官方产品文档

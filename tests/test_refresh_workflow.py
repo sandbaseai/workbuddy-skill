@@ -103,6 +103,12 @@ class RefreshWorkflowTests(unittest.TestCase):
                 else "open.workbuddy.cn/en/docs/skill"
             )
             self.assertIn(expected_open_platform, resources)
+            expected_onboarding = (
+                "open.workbuddy.cn/docs/onboarding"
+                if name.endswith("zh-CN.md")
+                else "open.workbuddy.cn/en/docs/onboarding"
+            )
+            self.assertIn(expected_onboarding, resources)
             self.assertIn("WorkBuddyGuide", resources)
             self.assertIn("qa-testing-guide", resources)
             self.assertIn("agentic-awesome-skills", resources)
