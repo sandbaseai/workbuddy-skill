@@ -157,6 +157,7 @@ for package in packages:
         f"<a href=\"{escape(package['checksum_url'], quote=True)}\">SHA256SUMS</a></p>"
         f"<details><summary>Copy download command</summary>"
         f"<button type=\"button\" class=\"copy-command\" data-command=\"{escape(package['download_command'], quote=True)}\">Copy command / 复制命令</button>"
+        "<span class=\"copy-status\" role=\"status\" aria-live=\"polite\"></span>"
         f"<pre class=\"command\"><code>{escape(package['download_command'])}</code></pre></details></li>"
     )
 category_nav = " ".join(
@@ -231,6 +232,7 @@ package_page = """<!doctype html>
       .package-search input { box-sizing: border-box; width: 100%; padding: .55rem .65rem; border: 1px solid #aebeb8; border-radius: .4rem; font: inherit; }
       .package-search output { display: block; margin-top: .35rem; color: #53615e; font-size: .9rem; }
       .copy-command { margin-top: .6rem; padding: .35rem .6rem; border: 1px solid #8eaaa0; border-radius: .4rem; color: #174f49; background: #f4fbf7; cursor: pointer; font: inherit; }
+      .copy-status { margin-left: .5rem; color: #53615e; font-size: .9rem; }
       .machine { margin-top: 2rem; }
     </style>
   </head>
@@ -276,13 +278,13 @@ package_page = """<!doctype html>
         input.addEventListener('input', update);
         for (const button of copyButtons) {
           button.addEventListener('click', async () => {
-            const original = button.textContent;
+            const status = button.nextElementSibling;
             try {
               await navigator.clipboard.writeText(button.dataset.command);
-              button.textContent = 'Copied / 已复制';
-              window.setTimeout(() => { button.textContent = original; }, 1500);
+              status.textContent = 'Copied / 已复制';
+              window.setTimeout(() => { status.textContent = ''; }, 1500);
             } catch {
-              button.textContent = 'Copy failed / 复制失败，请手动选择下方命令';
+              status.textContent = 'Copy failed / 复制失败，请手动选择下方命令';
             }
           });
         }
