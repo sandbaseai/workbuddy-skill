@@ -6,6 +6,8 @@
 - **想寻找更多公开 Skill：** 在 [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) 搜索，先阅读来源和风险，再安装。
 - **想把公开 Skill 做成自己的 WorkBuddy 包：** 阅读[适配教程](adapting-skills.zh-CN.md)。
 
+不确定如何判断搜索结果？先阅读[目录条目解读](catalog-guide.zh-CN.md)，再选择候选 Skill。
+
 当前目录是 **21,818 条 Skill 的固定快照**。你可以用它寻找和审阅已有条目；不会自动发布新的 Skill。
 
 ## 5 分钟安装一个精选 Skill
