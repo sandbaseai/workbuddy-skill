@@ -141,7 +141,12 @@ packages_temporary.replace(PACKAGES_OUTPUT)
 package_items_by_category: dict[str, list[str]] = {}
 for package in packages:
     package_items_by_category.setdefault(package["category"], []).append(
-        "<li><h3>"
+        "<li data-search=\""
+        + escape(
+            f"{package['name']} {package['repository']} {package['path']} {package['category']}",
+            quote=True,
+        )
+        + "\"><h3>"
         f"<a href=\"{escape(package['download_url'], quote=True)}\">{escape(package['name'])}</a>"
         "</h3>"
         f"<p><span class=\"badge\">{escape(package['category'])}</span> "
@@ -206,6 +211,10 @@ package_page = """<!doctype html>
       .badge { display: inline-block; padding: .1rem .45rem; border-radius: 999px; background: #dceee8; font-size: .8rem; }
       .category-nav { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: 1rem; }
       .category-nav a { padding: .25rem .6rem; border: 1px solid #b8cec7; border-radius: 999px; text-decoration: none; }
+      .package-search { margin: 1rem 0; padding: .75rem; background: #fffdf8; border: 1px solid #d8d0c2; border-radius: .7rem; }
+      .package-search label { display: block; font-weight: 650; margin-bottom: .35rem; }
+      .package-search input { box-sizing: border-box; width: 100%; padding: .55rem .65rem; border: 1px solid #aebeb8; border-radius: .4rem; font: inherit; }
+      .package-search output { display: block; margin-top: .35rem; color: #53615e; font-size: .9rem; }
       .machine { margin-top: 2rem; }
     </style>
   </head>
@@ -216,11 +225,40 @@ package_page = """<!doctype html>
       <p>Browse 277 installable packages without JavaScript. Each entry keeps an immutable source link, a Release ZIP, and SHA256SUMS verification.</p>
       <p>无需 JavaScript 即可浏览 277 个可安装精选包；每条记录都保留不可变来源、Release ZIP 和 SHA256SUMS 校验入口。</p>
       <nav class="category-nav" aria-label="Package categories">""" + category_nav + """</nav>
+      <form class="package-search" role="search" onsubmit="return false">
+        <label for="package-filter">Filter packages by name, repository, path, or category</label>
+        <input id="package-filter" type="search" autocomplete="off" placeholder="Try: security, playwright, or mcp">
+        <output id="package-count" aria-live="polite">Showing all 277 packages</output>
+      </form>
     </header>
     <main>
 """ + category_sections + """
       <p class="machine"><a href="packages.json">Machine-readable JSON index</a> · <a href="packages-schema.json">JSON Schema</a> · <a href="https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.md">English quickstart</a> · <a href="https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.zh-CN.md">中文快速开始</a></p>
     </main>
+    <script>
+      (() => {
+        const input = document.querySelector('#package-filter');
+        const output = document.querySelector('#package-count');
+        const items = [...document.querySelectorAll('li[data-search]')];
+        const sections = [...document.querySelectorAll('main section')];
+        const update = () => {
+          const query = input.value.trim().toLowerCase();
+          let visible = 0;
+          for (const item of items) {
+            const match = !query || item.dataset.search.toLowerCase().includes(query);
+            item.hidden = !match;
+            if (match) visible += 1;
+          }
+          for (const section of sections) {
+            section.hidden = !section.querySelector('li:not([hidden])');
+          }
+          output.textContent = query
+            ? `Showing ${visible} of ${items.length} packages`
+            : `Showing all ${items.length} packages`;
+        };
+        input.addEventListener('input', update);
+      })();
+    </script>
   </body>
 </html>
 """
