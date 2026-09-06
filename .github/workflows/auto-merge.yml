@@ -7,7 +7,9 @@ on:
 # This workflow never checks out or executes pull-request code. It only asks
 # GitHub to queue an auto-merge for trusted branches in this repository. Once
 # the queued merge completes, it removes the same-repository source ref itself;
-# this avoids relying on a follow-up event emitted by the merge bot.
+# this avoids relying on a follow-up event emitted by the merge bot. Branch
+# deletion is handled idempotently below so the merge and cleanup workflows do
+# not race over the same ref.
 permissions:
   contents: write
   pull-requests: write
@@ -43,12 +45,18 @@ jobs:
             *,OWNER,*|*,MEMBER,*|*,COLLABORATOR,*|*,CONTRIBUTOR,*) ;;
             *) echo "Untrusted author association ($AUTHOR_ASSOCIATION); leaving merge manual."; exit 0 ;;
           esac
-          gh pr merge "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --auto --squash --delete-branch
+          gh pr merge "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --auto --squash
           for attempt in {1..60}; do
             STATE=$(gh pr view "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --json state --jq '.state')
             if [[ "$STATE" == "MERGED" ]]; then
               if [[ -n "$BRANCH" && "$BRANCH" != "main" ]]; then
-                gh api --method DELETE "repos/$GITHUB_REPOSITORY/git/refs/heads/$BRANCH"
+                if ! gh api --method DELETE "repos/$GITHUB_REPOSITORY/git/refs/heads/$BRANCH"; then
+                  if gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/$BRANCH" >/dev/null 2>&1; then
+                    echo "Unable to delete merged branch: $BRANCH" >&2
+                    exit 1
+                  fi
+                  echo "Merged branch already deleted: $BRANCH"
+                fi
               fi
               exit 0
             fi
