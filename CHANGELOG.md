@@ -40,6 +40,7 @@ All notable changes to this project are documented here.
 - Reworded public README and quickstarts around user discovery instead of catalog-building internals.
 - Added direct machine-readable catalog JSON and Schema links to the bilingual README entrypoints.
 - Updated the bilingual connector preflight with the official MCP/CLI selection and managed-runtime guidance.
+- Added the official bilingual Third-Party App and OAuth 2.1 references to the resource maps.
 - Added bilingual WorkBuddy resource maps covering official product docs, community learning, evaluation material, and local catalog guides.
 - Added direct Atlas navigation to the resource maps, plus a post-use feedback and Star prompt that does not perform account actions.
 - Atlas now derives and displays the current count of reviewed WorkBuddy packages from `catalog-meta.json`.

@@ -9,6 +9,7 @@ Use this page to choose the right source before searching the catalog.
 - [MCP guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide) — MCP concepts and configuration.
 - [Open Platform Connector guide](https://open.workbuddy.cn/en/docs/connector) — recommends MCP + Skill for network APIs, limits CLI + Skill to mature cross-platform CLIs, and documents runtime, credentials, OAuth, and permissions.
 - [Open API reference](https://open.workbuddy.cn/en/docs/openapi) — official API and OAuth reference for WorkBuddy integrations.
+- [Third-Party App guide](https://open.workbuddy.cn/en/docs/third-party-app) — OAuth 2.1 authorization, app registration, callback configuration, and the boundary between user approval and Open API access.
 - [GitHub CLI `gh skill` manual](https://cli.github.com/manual/gh_skill) — preview commands for searching, previewing, installing, and updating Agent Skills.
 - [Automation guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide) — automation workflows.
 - [Skill Marketplace](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) and [Explore](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Explore) — built-in capabilities.
