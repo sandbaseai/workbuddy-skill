@@ -28,6 +28,7 @@ class AtlasFrontendTests(unittest.TestCase):
             self.assertIn('aria-live="polite"', page)
             self.assertIn("/discussions", page)
             self.assertIn("sandbaseai/awesome-workbuddy", page)
+            self.assertIn("docs/resources", page)
             self.assertIn("/tree/main/catalog", page)
             self.assertIn("quickstart", page)
 
