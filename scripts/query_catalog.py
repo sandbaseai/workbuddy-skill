@@ -8,8 +8,12 @@ from collections import Counter
 import json
 from pathlib import Path
 import sys
+from urllib.parse import urlparse
 
 from catalog_signals import source_context
+
+
+CHECKSUM_URL = "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/SHA256SUMS"
 
 
 def catalog_id(row: dict) -> str:
@@ -201,6 +205,8 @@ def main() -> int:
             package_url = curated_urls.get(catalog_id(row))
             if package_url:
                 output["workbuddy_package_url"] = package_url
+                output["workbuddy_package_asset"] = Path(urlparse(package_url).path).name
+                output["workbuddy_checksum_url"] = CHECKSUM_URL
             output_rows.append(output)
         json.dump(output_rows, sys.stdout, ensure_ascii=False, indent=2)
         sys.stdout.write("\n")
@@ -213,6 +219,8 @@ def main() -> int:
         package_url = curated_urls.get(catalog_id(row))
         if package_url:
             print(f"  WorkBuddy package: {package_url}")
+            print(f"  WorkBuddy asset: {Path(urlparse(package_url).path).name}")
+            print(f"  WorkBuddy checksum: {CHECKSUM_URL}")
         print(
             f"  review: {row['workbuddy_status']} ({row.get('workbuddy_score', '—')}/100); "
             f"security: {row['security_status']}; copies: {copies[row.get('sha')]}"

@@ -48,6 +48,7 @@ All notable changes to this project are documented here.
 - Kept the LLM resource index aligned with the human-facing Third-Party App documentation links.
 - Added a stable Release `asset` filename to each machine-readable reviewed package record.
 - Updated bilingual Atlas search and social metadata to surface the reviewed package count.
+- Extended local JSON catalog queries with reviewed package asset and checksum fields.
 - Added bilingual WorkBuddy resource maps covering official product docs, community learning, evaluation material, and local catalog guides.
 - Added direct Atlas navigation to the resource maps, plus a post-use feedback and Star prompt that does not perform account actions.
 - Atlas now derives and displays the current count of reviewed WorkBuddy packages from `catalog-meta.json`.
