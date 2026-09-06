@@ -242,6 +242,11 @@ def main() -> int:
         default=[],
         help="Also scan a repository's default-branch Git tree for SKILL.md files (repeatable)",
     )
+    parser.add_argument(
+        "--repository-only",
+        action="store_true",
+        help="Scan only repositories passed with --repository; skip global Code Search",
+    )
     parser.add_argument("--start-bytes", type=int, default=1)
     parser.add_argument(
         "--max-bytes",
@@ -285,6 +290,8 @@ def main() -> int:
             "require target > 0, max-requests > 0, max-rate-wait > 0, "
             "and 0 < start-bytes <= max-bytes"
         )
+    if args.repository_only and not args.repository:
+        parser.error("--repository-only requires at least one --repository")
     if is_frozen_catalog(args.output) and not args.allow_frozen_catalog:
         parser.error(
             "catalog/skills.jsonl is frozen; choose another --output or pass "
@@ -295,7 +302,7 @@ def main() -> int:
     rows = load_existing(args.output)
     def checkpoint() -> None:
         if not args.dry_run:
-            checkpoint()
+            write_atomic(args.output, rows)
 
     def persist_stats() -> None:
         if not args.dry_run:
@@ -331,7 +338,11 @@ def main() -> int:
                 file=sys.stderr,
             )
             checkpoint()
-        pending = search_shards(args.start_bytes, args.max_bytes)
+        pending = (
+            []
+            if args.repository_only
+            else search_shards(args.start_bytes, args.max_bytes)
+        )
         while pending:
             lower, upper = pending.pop()
             query = query_for_range(lower, upper)
