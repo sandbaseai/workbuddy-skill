@@ -1,4 +1,5 @@
 from pathlib import Path
+from tempfile import TemporaryDirectory
 import unittest
 
 from scripts.check_resource_links import extract_urls
@@ -17,14 +18,42 @@ class ResourceLinkCheckTests(unittest.TestCase):
             urls,
         )
 
+    def test_extracts_json_urls_without_quotes_or_following_markup(self):
+        with TemporaryDirectory() as directory:
+            path = Path(directory) / "generated.html"
+            path.write_text(
+                '<script>{"url":"https://example.com/pinned/SKILL.md"}</script>',
+                encoding="utf-8",
+            )
+            self.assertEqual(
+                extract_urls((path,)),
+                ["https://example.com/pinned/SKILL.md"],
+            )
+
+    def test_skips_pinned_skill_source_checks_from_generated_package_page(self):
+        with TemporaryDirectory() as directory:
+            path = Path(directory) / "packages.html"
+            path.write_text(
+                '<a href="https://github.com/example/repo/blob/abc/skills/demo/SKILL.md">source</a>'
+                '<a href="https://github.com/example/repo">repo</a>',
+                encoding="utf-8",
+            )
+            self.assertEqual(extract_urls((path,)), ["https://github.com/example/repo"])
+
     def test_workflow_runs_read_only_scheduled_check(self):
         workflow = (ROOT / ".github/workflows/check-resource-links.yml").read_text(encoding="utf-8")
         self.assertIn('cron: "17 4 * * 1"', workflow)
         self.assertIn("timeout-minutes: 10", workflow)
         self.assertIn("pull_request:", workflow)
         self.assertIn('"docs/**"', workflow)
+        self.assertIn("python3 scripts/build_site_data.py", workflow)
         self.assertIn("contents: read", workflow)
         self.assertIn("scripts/check_resource_links.py", workflow)
+
+    def test_rate_limited_links_are_warnings_not_hard_failures(self):
+        source = (ROOT / "scripts/check_resource_links.py").read_text(encoding="utf-8")
+        self.assertIn("if status == 429:", source)
+        self.assertIn("rate_limited", source)
 
 
 if __name__ == "__main__":
