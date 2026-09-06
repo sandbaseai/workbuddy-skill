@@ -123,6 +123,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("Installation-Mac-Guide", content)
         self.assertIn("Installation-Win-Guide", content)
         self.assertIn("Function-Description/Model", content)
+        self.assertIn("Function-Description/Assistant", content)
         self.assertIn("Function-Description/Skills-Market", content)
         self.assertIn("https://github.com/crossoverJie/SkillDeck", content)
         self.assertIn("https://github.com/GrubbyLee/skill-manager", content)
