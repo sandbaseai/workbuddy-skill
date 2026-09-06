@@ -156,7 +156,7 @@ for package in packages:
         f"<a href=\"{escape(package['download_url'], quote=True)}\" aria-label=\"Download ZIP for {escape(package['name'], quote=True)}\">Download ZIP</a> · "
         f"<a href=\"{escape(package['checksum_url'], quote=True)}\" aria-label=\"Verify SHA256 for {escape(package['name'], quote=True)}\">SHA256SUMS</a></p>"
         f"<details><summary>Copy download command</summary>"
-        f"<button type=\"button\" class=\"copy-command\" aria-label=\"Copy download command for {escape(package['name'], quote=True)}\" data-command=\"{escape(package['download_command'], quote=True)}\">Copy command / 复制命令</button>"
+        f"<button type=\"button\" class=\"copy-command\" aria-label=\"Copy download command for {escape(package['name'], quote=True)}\" data-command=\"{escape(package['download_command'], quote=True)}\" hidden>Copy command / 复制命令</button>"
         "<span class=\"copy-status\" role=\"status\" aria-live=\"polite\"></span>"
         f"<pre class=\"command\"><code>{escape(package['download_command'])}</code></pre></details></li>"
     )
@@ -258,7 +258,7 @@ package_page = """<!doctype html>
         <label for="package-filter">Filter packages by name, repository, path, or category / 按名称、仓库、路径或分类筛选</label>
         <input id="package-filter" type="search" autocomplete="off" placeholder="Try: security, playwright, or mcp / 例如：security、playwright、mcp">
         <output id="package-count" aria-live="polite">Showing all __PACKAGE_COUNT__ packages / 共 __PACKAGE_COUNT__ 个精选包</output>
-        <div class="package-link-actions"><button type="button" class="copy-package-link">Copy filtered link / 复制筛选链接</button><span class="package-link-status" role="status" aria-live="polite"></span></div>
+        <div class="package-link-actions"><button type="button" class="copy-package-link" hidden>Copy filtered link / 复制筛选链接</button><span class="package-link-status" role="status" aria-live="polite"></span></div>
         <p id="package-empty" class="package-empty" role="status" hidden>No matching packages / 没有匹配的精选包。<button type="button" class="clear-package-filter">Clear filter / 清除筛选</button></p>
       </form>
     </header>
@@ -277,6 +277,8 @@ package_page = """<!doctype html>
         const items = [...document.querySelectorAll('li[data-search]')];
         const sections = [...document.querySelectorAll('main section')];
         const copyButtons = [...document.querySelectorAll('.copy-command')];
+        copyLink.hidden = false;
+        for (const button of copyButtons) button.hidden = false;
         const syncUrl = (historyMode = 'replace') => {
           const params = new URLSearchParams();
           const query = input.value.trim();
