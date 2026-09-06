@@ -32,6 +32,8 @@ content can change.
 - **Source context** helps separate a likely primary source from a mirror,
   fork, or dormant path. Prefer `primary-looking` when the source is otherwise
   comparable, then verify the repository yourself.
+- **Source order** is deterministic: it sorts by repository and then path, so
+  the same query can be compared or shared without depending on crawl order.
 
 ## 3. Search with a review goal
 
@@ -54,4 +56,3 @@ Import the package only after checking its inputs and side effects. Start with
 public, non-sensitive data and ask for a plan before allowing writes, messages,
 paid API calls, or production access. Keep the source commit and package
 version with any result that needs to be reproduced.
-

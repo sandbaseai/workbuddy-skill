@@ -164,12 +164,15 @@ function search({ historyMode = "replace" } = {}) {
     });
   }
   const byName = (left, right) => left.n.localeCompare(right.n) || left.r.localeCompare(right.r);
+  const bySource = (left, right) => left.r.localeCompare(right.r) || left.p.localeCompare(right.p);
   if (sort.value === "score") {
     filtered.sort((left, right) => (right.q ?? -1) - (left.q ?? -1) || right.c - left.c || byName(left, right));
   } else if (sort.value === "copies") {
     filtered.sort((left, right) => right.c - left.c || (right.q ?? -1) - (left.q ?? -1) || byName(left, right));
   } else if (sort.value === "name") {
     filtered.sort(byName);
+  } else if (sort.value === "source") {
+    filtered.sort(bySource);
   }
   syncUrlState(historyMode);
   render();

@@ -66,6 +66,18 @@ class QueryCatalogTests(unittest.TestCase):
         results, _ = query_rows(rows, ["a"], source="primary-looking")
         self.assertEqual([item["sha"] for item in results], ["active"])
 
+    def test_source_sort_is_stable_by_repository_and_path(self):
+        rows = [
+            row("zeta", "zeta", 90, repository="z/repo"),
+            {**row("alpha", "alpha", 90, repository="a/repo"), "path": "z/SKILL.md"},
+            {**row("beta", "beta", 90, repository="a/repo"), "path": "a/SKILL.md"},
+        ]
+        results, _ = query_rows(rows, [], order="source")
+        self.assertEqual(
+            [(item["repository"], item["path"]) for item in results],
+            [("a/repo", "a/SKILL.md"), ("a/repo", "z/SKILL.md"), ("z/repo", "skills/zeta/SKILL.md")],
+        )
+
     def test_unique_prefers_primary_source_over_mirror(self):
         rows = [
             {**row("alpha-copy", "same", 80, repository="mirror/repo"), "path": "mirrors/alpha/SKILL.md"},

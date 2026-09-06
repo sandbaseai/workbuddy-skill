@@ -33,6 +33,8 @@ class AtlasFrontendTests(unittest.TestCase):
         self.assertIn("meta.records.toLocaleString()", self.app)
         self.assertIn("heroCount.textContent", self.app)
         self.assertIn('meta.snapshot_frozen !== true', self.app)
+        self.assertIn('const bySource = (left, right) => left.r.localeCompare(right.r) || left.p.localeCompare(right.p);', self.app)
+        self.assertIn('} else if (sort.value === "source") {', self.app)
 
     def test_mobile_navigation_can_wrap(self):
         self.assertIn(".nav { height: auto;", self.styles)

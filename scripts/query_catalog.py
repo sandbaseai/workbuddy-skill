@@ -58,6 +58,9 @@ def query_rows(
     def by_name(row: dict) -> tuple[str, str]:
         return (row.get("name_hint", "").casefold(), row.get("repository", "").casefold())
 
+    def by_source(row: dict) -> tuple[str, str]:
+        return (row.get("repository", "").casefold(), row.get("path", "").casefold())
+
     if unique:
         # Pick the best provenance representative before applying the display
         # order. This prevents a mirror or flagged duplicate from winning just
@@ -86,6 +89,8 @@ def query_rows(
         results.sort(key=lambda row: (-copies[row.get("sha")], -score_of(row), by_name(row)))
     elif order == "name":
         results.sort(key=by_name)
+    elif order == "source":
+        results.sort(key=by_source)
     return results[:limit], copies
 
 
