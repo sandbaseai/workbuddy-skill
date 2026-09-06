@@ -31,6 +31,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - CC0 WorkBuddy resource index: https://github.com/semlinker/awesome-workbuddy
 - Chinese AI coding and WorkBuddy tutorial: https://github.com/KimYx0207/AI-Coding-Guide-Zh
 - MIT Chinese multi-domain expert-role collection (research reference): https://github.com/jnMetaCode/agency-agents-zh
+- MIT offline-first WorkBuddy usage analytics dashboard (inspect credential boundaries): https://github.com/clancy-feng/workbuddy-usage-status
 - Clean-room WorkBuddy architecture course: https://github.com/adongwanai/learn-workbuddy
 - MIT WorkBuddy community skills collection: https://github.com/yinqd3/workbuddy-skills
 - MIT bilingual WorkBuddy port and workflow conventions: https://github.com/mrzhangguoguo/oh-my-workbuddy
