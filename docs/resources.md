@@ -2,6 +2,17 @@
 
 Use this page to choose the right source before searching the catalog.
 
+## Choose by task
+
+| If you want to… | Start here |
+|---|---|
+| Install a reviewed package into WorkBuddy | [Quickstart](quickstart.md) |
+| Write or troubleshoot a Skill ZIP | [Open Platform Skill guide](https://open.workbuddy.cn/en/docs/skill) |
+| Connect an API, MCP server, or CLI | [Open Platform Connector guide](https://open.workbuddy.cn/en/docs/connector) |
+| Build an OAuth app or call Open APIs | [Third-Party App guide](https://open.workbuddy.cn/en/docs/third-party-app) and [Open API reference](https://open.workbuddy.cn/en/docs/openapi) |
+| Assemble a marketplace Expert or Team | [Expert guide](https://open.workbuddy.cn/en/docs/expert) and [Expert Team guide](https://open.workbuddy.cn/en/docs/expert-team) |
+| Package a public catalog result yourself | [Adaptation guide](adapting-skills.md) |
+
 ## Official product documentation
 
 - [Quickstart](https://www.workbuddy.ai/docs/workbuddy/Quickstart) — platform setup and first use.

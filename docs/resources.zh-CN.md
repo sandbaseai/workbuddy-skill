@@ -2,6 +2,17 @@
 
 先按目的选择资料来源，再搜索目录中的 Skill。
 
+## 按任务选择入口
+
+| 你的目标 | 建议先看 |
+|---|---|
+| 把精选包安装到 WorkBuddy | [快速开始](quickstart.zh-CN.md) |
+| 编写或排查 Skill ZIP | [Open Platform Skill 指南](https://open.workbuddy.cn/zh/docs/skill) |
+| 接入 API、MCP Server 或 CLI | [Open Platform 连接器指南](https://open.workbuddy.cn/docs/connector) |
+| 开发 OAuth 应用或调用 Open API | [第三方应用指南](https://open.workbuddy.cn/docs/third-party-app) 和 [Open API 接口文档](https://open.workbuddy.cn/docs/openapi) |
+| 组装市场专家或专家团 | [专家指南](https://open.workbuddy.cn/docs/expert) 与 [专家团指南](https://open.workbuddy.cn/docs/expert-team) |
+| 把公开目录结果制作成自己的包 | [适配教程](adapting-skills.zh-CN.md) |
+
 ## 官方产品文档
 
 - [快速开始](https://www.workbuddy.ai/docs/zh/workbuddy/Quickstart)——安装和第一次使用。
