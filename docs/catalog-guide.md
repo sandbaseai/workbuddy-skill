@@ -83,6 +83,10 @@ Search narrows candidates; it does not install anything. For a selected result,
 inspect the source and then follow the [adaptation guide](adapting-skills.md)
 to create a reviewed WorkBuddy package.
 
+If the Atlas returns no match, use its **Search current GitHub Skill files** link
+to look beyond the frozen snapshot. That link is only a discovery shortcut:
+inspect the repository, license, scripts, permissions, and commit before adapting anything.
+
 For scripts and dashboards, the compact browser dataset is available at
 [`catalog.json`](https://sandbaseai.github.io/workbuddy-skill/catalog.json),
 with field definitions in its [JSON Schema](https://sandbaseai.github.io/workbuddy-skill/catalog-schema.json).
