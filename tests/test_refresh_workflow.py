@@ -187,6 +187,13 @@ class RefreshWorkflowTests(unittest.TestCase):
             with self.subTest(path=path):
                 self.assertIn(marker, (ROOT / path).read_text(encoding="utf-8"))
 
+    def test_dependabot_tracks_github_actions_without_runtime_dependencies(self):
+        dependabot = (ROOT / ".github/dependabot.yml").read_text(encoding="utf-8")
+        self.assertIn("package-ecosystem: github-actions", dependabot)
+        self.assertIn('directory: "/"', dependabot)
+        self.assertIn("interval: weekly", dependabot)
+        self.assertIn("open-pull-requests-limit: 5", dependabot)
+
     def test_validate_workflow_checks_generated_site_data(self):
         workflow = (ROOT / ".github/workflows/validate.yml").read_text(encoding="utf-8")
         self.assertIn("scripts/build_site_data.py", workflow)
