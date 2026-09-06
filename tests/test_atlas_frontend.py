@@ -38,6 +38,7 @@ class AtlasFrontendTests(unittest.TestCase):
             self.assertIn('aria-live="polite"', page)
             self.assertIn('id="external-search"', page)
             self.assertIn('id="empty-reset"', page)
+            self.assertIn('aria-controls="results"', page)
             self.assertIn('id="retry-load"', page)
             self.assertIn("feature.yml", page)
             if page is self.english:
@@ -98,6 +99,8 @@ class AtlasFrontendTests(unittest.TestCase):
         self.assertIn("async function loadCatalog()", self.app)
         self.assertIn('retryLoad.addEventListener("click", loadCatalog)', self.app)
         self.assertIn('emptyReset.addEventListener("click", () => resetFilters.click())', self.app)
+        self.assertIn("Showing ${shown.toLocaleString()} of ${filtered.length.toLocaleString()} results", self.app)
+        self.assertIn("显示 ${shown.toLocaleString()} / ${filtered.length.toLocaleString()} 个结果", self.app)
         self.assertIn("retryLoad.disabled = true", self.app)
         self.assertIn("retryLoad.disabled = false", self.app)
         self.assertIn("const compareStable = (left, right) =>", self.app)
