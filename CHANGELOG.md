@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Align review reports with the adapter by rejecting symlinked local source files.
 - Reject empty `--source-license` values before creating an adapted package.
 - Document the adapter's exact source-license matching rule in both tutorials.
 - Keep the explicit adapter license declaration authoritative in generated Skill metadata.

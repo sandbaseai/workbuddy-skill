@@ -166,6 +166,10 @@ def main() -> int:
         source_text = fetch_text(record["raw_url"])
         report = build_report(source_text, record=record)
     else:
+        if args.source_file.is_symlink():
+            raise SystemExit("source file must not be a symlink")
+        if not args.source_file.is_file():
+            raise SystemExit(f"source file is not a regular file: {args.source_file}")
         source_text = args.source_file.read_text(encoding="utf-8")
         report = build_report(source_text, source_file=args.source_file)
     if args.json:
