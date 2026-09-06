@@ -19,6 +19,7 @@ jobs:
       - run: python3 scripts/validate_skill.py
       - run: python3 scripts/validate_catalog.py --minimum 10000 --require-analysis
       - run: python3 scripts/build_site_data.py
+      - run: node --check site/app.js
       - run: python3 scripts/validate_site_data.py
       - run: python3 scripts/verify_catalog_snapshot.py
       - run: python3 -m py_compile scripts/*.py

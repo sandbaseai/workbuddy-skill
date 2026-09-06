@@ -242,6 +242,7 @@ class RefreshWorkflowTests(unittest.TestCase):
     def test_validate_workflow_checks_generated_site_data(self):
         workflow = (ROOT / ".github/workflows/validate.yml").read_text(encoding="utf-8")
         self.assertIn("scripts/build_site_data.py", workflow)
+        self.assertIn("node --check site/app.js", workflow)
         self.assertIn("scripts/validate_site_data.py", workflow)
         self.assertIn("scripts/verify_catalog_snapshot.py", workflow)
 
