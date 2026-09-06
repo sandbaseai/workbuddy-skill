@@ -38,6 +38,18 @@ let shown = 0;
 const PAGE_SIZE = 40;
 const CATALOG_LOAD_TIMEOUT_MS = 15000;
 const DEFAULT_CHECKSUM_URL = "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/SHA256SUMS";
+const CATEGORY_LABELS_ZH = {
+  business: "商业",
+  content: "内容",
+  data: "数据",
+  design: "设计",
+  development: "开发",
+  media: "媒体",
+  productivity: "效率",
+  research: "研究",
+  security: "安全",
+  other: "其他",
+};
 let checksumUrl = DEFAULT_CHECKSUM_URL;
 const FILTERS = {
   category: new Set([...category.options].map((option) => option.value)),
@@ -223,6 +235,7 @@ function search({ historyMode = "replace" } = {}) {
       skill.p,
       catalogId(skill),
       skill.g,
+      CATEGORY_LABELS_ZH[skill.g],
       skill.w,
       skill.k,
       skill.o,

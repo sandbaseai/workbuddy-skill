@@ -37,6 +37,7 @@ class SiteDataTests(unittest.TestCase):
         self.assertIn('id="package-filter"', package_page)
         self.assertIn('id="package-category"', package_page)
         self.assertIn('data-category="security"', package_page)
+        self.assertIn("research 研究", package_page)
         self.assertIn('id="package-empty"', package_page)
         self.assertIn("No matching packages / 没有匹配的精选包", package_page)
         self.assertIn("clear-package-filter", package_page)

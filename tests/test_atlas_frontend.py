@@ -122,6 +122,7 @@ class AtlasFrontendTests(unittest.TestCase):
         self.assertIn("skill.k", self.app)
         self.assertIn("skill.o", self.app)
         self.assertIn("...(skill.x || [])", self.app)
+        self.assertIn('research: "研究"', self.app)
         self.assertIn("return a < b ? -1 : a > b ? 1 : 0;", self.app)
         self.assertIn("const bySource = (left, right) => compareStable(left.r, right.r) || compareStable(left.p, right.p);", self.app)
         self.assertIn('} else if (sort.value === "source") {', self.app)

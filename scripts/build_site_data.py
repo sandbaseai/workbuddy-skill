@@ -21,6 +21,18 @@ CHECKSUM_URL = "https://github.com/sandbaseai/workbuddy-skill/releases/latest/do
 RELEASE_REPO = "sandbaseai/workbuddy-skill"
 
 KNOWN_CATEGORIES = set(CATEGORIES)
+CATEGORY_LABELS_ZH = {
+    "business": "商业",
+    "content": "内容",
+    "data": "数据",
+    "design": "设计",
+    "development": "开发",
+    "media": "媒体",
+    "productivity": "效率",
+    "research": "研究",
+    "security": "安全",
+    "other": "其他",
+}
 
 source_rows = []
 repositories = set()
@@ -123,7 +135,8 @@ for package in packages:
     package_items_by_category.setdefault(package["category"], []).append(
         "<li data-search=\""
         + escape(
-            f"{package['name']} {package['repository']} {package['path']} {package['category']}",
+            f"{package['name']} {package['repository']} {package['path']} {package['category']} "
+            f"{CATEGORY_LABELS_ZH.get(package['category'], '')}",
             quote=True,
         )
         + "\" data-category=\""
