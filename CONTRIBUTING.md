@@ -28,4 +28,8 @@ git diff --check
 
 Describe the real user request or failure that motivated an instruction change. Do not claim a check passed when it was skipped, flaky, or not run. Existing package adaptations still require a reviewable commit and package verification.
 
+GitHub auto-merge is enabled for this repository, and merged branches are deleted
+automatically. Use auto-merge only after the required checks and human review for
+the change have completed; this setting does not bypass validation or source review.
+
 Bug reports should include the WorkBuddy version, the requested capability, the failure message with secrets removed, and the expected behavior.

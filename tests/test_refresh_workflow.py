@@ -78,6 +78,12 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertNotIn("gh pr", workflow)
         self.assertIn("validate_catalog.py --minimum 10000 --require-analysis --check-stats", workflow)
 
+    def test_contributing_docs_describe_safe_auto_merge_settings(self):
+        contributing = (ROOT / "CONTRIBUTING.md").read_text(encoding="utf-8")
+        self.assertIn("GitHub auto-merge is enabled", contributing)
+        self.assertIn("merged branches are deleted", contributing)
+        self.assertIn("does not bypass validation", contributing)
+
 
 if __name__ == "__main__":
     unittest.main()
