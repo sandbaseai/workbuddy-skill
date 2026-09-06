@@ -47,6 +47,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Official Explore: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Explore
 - English official Skill Marketplace: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market
 - English official Explore: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Explore
+- Official Open Platform Skill guide: https://open.workbuddy.cn/en/docs/skill
 - Adaptation guide: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/adapting-skills.md
 - Chinese adaptation guide: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/adapting-skills.zh-CN.md
 - Copy-ready use cases: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/use-cases.md

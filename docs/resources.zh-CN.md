@@ -9,6 +9,7 @@
 - [MCP 指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide)——MCP 概念和配置。
 - [Automation 指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide)——自动化工作流。
 - [Skill Marketplace](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) 和 [Explore](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Explore)——内置能力。
+- [Open Platform Skill 指南](https://open.workbuddy.cn/en/docs/skill)——官方说明 Marketplace 入口、ZIP 解析排查、frontmatter 字段和子资源目录结构。
 
 ## 学习与评测
 

@@ -49,6 +49,7 @@ class RefreshWorkflowTests(unittest.TestCase):
         for name in ("docs/resources.md", "docs/resources.zh-CN.md"):
             resources = (ROOT / name).read_text(encoding="utf-8")
             self.assertIn("workbuddy.ai/docs", resources)
+            self.assertIn("open.workbuddy.cn/en/docs/skill", resources)
             self.assertIn("WorkBuddyGuide", resources)
             self.assertIn("AI-Coding-Guide-Zh", resources)
             self.assertIn("learn-workbuddy", resources)
