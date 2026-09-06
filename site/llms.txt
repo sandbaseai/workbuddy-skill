@@ -2,8 +2,8 @@
 
 > Search public Agent Skills and adapt reviewed workflows for WorkBuddy. Every catalog record links to an immutable GitHub commit. Indexed content is not automatically trusted or installed.
 
-The public catalog currently indexes 21,818 Skills. Use it to narrow a search,
-then inspect the linked source, license, and permissions before installation.
+The public catalog size is authoritative in `catalog-meta.json` under `records`;
+use it to narrow a search, then inspect the linked source, license, and permissions before installation.
 
 Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verification.
 
