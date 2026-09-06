@@ -137,6 +137,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
             self.assertNotIn("does not add catalog records", starter_packs)
             self.assertNotIn("不会新增目录记录", starter_packs)
         self.assertIn("github.com/sandbaseai/workbuddy-skill/discussions", content)
+        self.assertIn("github.com/sandbaseai/workbuddy-skill/issues/new?template=feature.yml", content)
         self.assertIn("github.com/sandbaseai/awesome-workbuddy", content)
         self.assertIn("www.workbuddy.ai/docs/zh/workbuddy/Quickstart", content)
         self.assertIn("Create-Skills", content)
