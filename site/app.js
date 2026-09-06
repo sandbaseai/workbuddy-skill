@@ -18,6 +18,7 @@ const languageLink = document.querySelector("#language-link");
 const metricRecords = document.querySelector("#metric-records");
 const metricShas = document.querySelector("#metric-shas");
 const metricRepositories = document.querySelector("#metric-repositories");
+const snapshotNote = document.querySelector("#snapshot-note");
 const isChinese = document.documentElement.lang.startsWith("zh");
 
 let catalog = [];
@@ -226,6 +227,9 @@ Promise.all([fetch("catalog.json"), fetch("catalog-meta.json")])
     metricRecords.textContent = meta.records.toLocaleString();
     metricShas.textContent = meta.unique_content_shas.toLocaleString();
     metricRepositories.textContent = meta.repositories.toLocaleString();
+    snapshotNote.textContent = isChinese
+      ? `固定快照：${meta.records.toLocaleString()} 条已索引 Skill。本网站不会自动增加新的目录记录。`
+      : `Frozen snapshot: ${meta.records.toLocaleString()} indexed Skills. This site does not automatically add new catalog records.`;
     search();
     input.disabled = false;
   })
