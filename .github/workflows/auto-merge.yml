@@ -13,16 +13,26 @@ permissions:
 jobs:
   queue:
     name: Queue trusted pull request
-    if: >-
-      !github.event.pull_request.draft &&
-      github.event.pull_request.head.repo.full_name == github.repository &&
-      (github.event.pull_request.author_association == 'OWNER' ||
-      github.event.pull_request.author_association == 'MEMBER' ||
-      github.event.pull_request.author_association == 'COLLABORATOR')
     runs-on: ubuntu-latest
     steps:
       - name: Enable squash auto-merge
         env:
           GH_TOKEN: ${{ github.token }}
+          HEAD_REPOSITORY: ${{ github.event.pull_request.head.repo.full_name }}
+          AUTHOR_ASSOCIATION: ${{ github.event.pull_request.author_association }}
+          DRAFT: ${{ github.event.pull_request.draft }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
-        run: gh pr merge "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --auto --squash --delete-branch
+        run: |
+          if [[ "$DRAFT" == "true" ]]; then
+            echo "Draft pull request; waiting for ready_for_review."
+            exit 0
+          fi
+          if [[ "$HEAD_REPOSITORY" != "$GITHUB_REPOSITORY" ]]; then
+            echo "Fork pull request; leaving merge manual."
+            exit 0
+          fi
+          case ",$AUTHOR_ASSOCIATION," in
+            *,OWNER,*|*,MEMBER,*|*,COLLABORATOR,*) ;;
+            *) echo "Untrusted author association ($AUTHOR_ASSOCIATION); leaving merge manual."; exit 0 ;;
+          esac
+          gh pr merge "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --auto --squash --delete-branch
