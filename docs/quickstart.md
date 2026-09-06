@@ -1,49 +1,67 @@
-# SandBase for WorkBuddy: 5-minute quickstart
+# WorkBuddy quickstart
 
-## 1. Download
+Choose the path that matches your goal:
 
-Download `sandbase-workbuddy-skill.zip` from the [latest release](https://github.com/sandbaseai/workbuddy-skill/releases/latest). Do not unzip and repackage it: `SKILL.md` is already at the archive root, as required by WorkBuddy.
+- **Use a curated Skill:** download a ZIP from Releases and import it into WorkBuddy.
+- **Find a public Skill:** search the [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/), review provenance and risk, then install it.
+- **Package a public Skill for WorkBuddy:** follow the [adaptation guide](adapting-skills.md).
 
-## 2. Import into WorkBuddy
+## Install one curated Skill in 5 minutes
 
-Open **Experts · Skills · Connectors → Skills → Add Skill**, upload the ZIP, and finish the import. Make sure the SandBase MCP service is enabled for the workspace.
+### 1. Download
 
-## 3. Verify discovery without spending credits
+Download the ZIP you need from the [latest release](https://github.com/sandbaseai/workbuddy-skill/releases/latest). Do not unzip and repackage it: `SKILL.md` is already at the archive root.
 
-Send:
+### 2. Import
+
+In WorkBuddy, open **Experts · Skills · Connectors → Skills → Add Skill**, upload the ZIP, and finish the import. If the Skill uses a connector, enable that service in the current workspace.
+
+### 3. Run a safe first check
+
+Ask the Skill to explain its plan before allowing paid calls, data writes, or messages. Copy this prompt:
 
 ```text
-Use SandBase to find a web extraction API. Compare candidates, required inputs, and pricing only. Do not run a paid call.
+Explain the capability, inputs, permissions, external side effects, and estimated cost you will use.
+Perform a read-only check only. Do not call paid APIs, modify data, or send messages.
+If anything is missing, list what I need to confirm.
 ```
 
-A correct run uses capability discovery first, inspects candidate schemas, and stops before execution. It should not invent a provider name or request arguments.
+After reviewing the source, permissions, and plan, run a small task with public data. Avoid confidential data, personal data, and production systems during the first test.
 
-Hosts supporting the open Agent Skills convention can install the reviewed
-workflow by exact path:
+## Find a Skill in the catalog
 
-```bash
-gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/skills
-```
+1. Search the [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) for a task or capability such as `ocr`, `web search`, or `incident`.
+2. Open the source link and check the license, inputs and outputs, network access, credential requirements, and side effects.
+3. Prefer Skills with clear documentation, a known version, and verifiable provenance. Pin a tag or commit SHA when reproducibility matters.
+4. After importing, use the safe-check prompt above before running a real task.
 
-To discover additional public Skills, preview before installation and pin a
-known version when needed:
+Hosts supporting the open Agent Skills convention can preview and install from GitHub:
 
 ```bash
 gh skill search incident --limit 10
 gh skill preview owner/repository skills/path/to/skill
 gh skill install owner/repository skills/path/to/skill --pin v1.2.0 --dir .workbuddy/skills
-gh skill update --all
 ```
 
-## 4. Run a small task
+## Copy-ready task template
 
-After reviewing the candidates and price, ask WorkBuddy to run the selected capability with a small public input. Avoid confidential data during initial testing.
+```text
+Use “Skill name” to complete “goal”.
+First provide the plan, required permissions, input data, cost, and side effects.
+Start with a read-only check; do not guess arguments or run unconfirmed paid or write operations.
+Cite evidence for each conclusion. If the task fails, explain the failure point,
+what was tried, and the available next steps.
+```
 
-For asynchronous image, audio, or video jobs, WorkBuddy should preserve the returned run ID and poll the same job until it completes or fails. It should not start duplicate paid jobs while waiting.
+For asynchronous image, audio, or video jobs, preserve the returned `run_id` and poll the same job until it completes or fails. Do not create duplicate paid jobs while waiting.
 
 ## Troubleshooting
 
-- **No SandBase tools appear:** enable the SandBase MCP service in the current workspace and reload WorkBuddy.
-- **No candidates:** retry with a shorter capability term such as `ocr`, `web search`, or `video`.
-- **Schema error:** inspect the capability again and retry once using only current schema fields.
-- **Authorization or balance error:** resolve the account status without pasting secrets into chat.
+- **Import fails:** confirm that you uploaded the original Release ZIP and that `SKILL.md` is at the archive root; do not compress it again.
+- **Tools or connectors are missing:** enable the required service in the current workspace and reload WorkBuddy.
+- **No suitable Skill appears:** search with a shorter capability term or inspect related catalog entries. The catalog is a discovery surface, not an automatic trust decision.
+- **Schema validation fails:** inspect the current capability schema and retry once using only its current fields; do not guess arguments.
+- **Authorization, balance, or permission error:** check the account and workspace settings without pasting secrets into chat.
+- **The result is uncertain:** ask for evidence, sources, and limitations; do not treat guesses as execution results.
+
+For more help, see [Support](../SUPPORT.md). For security concerns, read the [security policy](../SECURITY.md).

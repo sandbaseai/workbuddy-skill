@@ -1,22 +1,36 @@
-# 将索引技能适配为 WorkBuddy Skill
+# 将公开 Skill 适配为 WorkBuddy Skill
 
-目录是发现入口，不是自动安装源。创建 WorkBuddy 包前，请检查精确的
-GitHub 来源、仓库许可证、随附资源、网络行为和请求的权限。
+这篇教程适合需要把目录中的公开 Skill 做成可导入 WorkBuddy 的用户。只想使用已有精选 Skill？请先看[快速开始](quickstart.zh-CN.md)。
 
-## 创建包
+## 适配前：先确认能不能发布
 
-从 `catalog/skills.jsonl` 或 `scripts/query_catalog.py --json` 获取记录的完整
-`id`，先生成不会执行源内容的审核报告：
+目录是发现入口，不是自动安装源。先打开精确的来源链接，确认：
+
+- 源仓库许可证允许再发布或改编；
+- Skill 的目标、输入、输出和依赖与你的使用场景匹配；
+- `scripts/`、`references/`、`assets/` 和 `templates/` 中的文件是否被引用；
+- 是否会访问网络、读取凭据、写入数据、发送消息或产生费用。
+
+## 第一步：搜索并审核
+
+从 [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) 或本地目录找到条目。使用记录的完整 `id`，不要只凭名称猜路径：
+
+```bash
+python3 scripts/query_catalog.py invoice OCR --json
+```
+
+先生成不会执行源内容的审核报告：
 
 ```bash
 python3 scripts/review_skill.py \
   --catalog-id 'github:owner/repository:path/to/SKILL.md'
 ```
 
-报告会获取引用资源，分别列出指令与脚本信号、缺失的 WorkBuddy 字段，并将许可证、
-指令、网络行为和权限检查明确保留为待人工完成。添加 `--json` 可获得机器可读输出。
+报告会列出来源、引用资源、指令和脚本信号，以及缺失的 WorkBuddy 字段。它不能替代人工完成的许可证、安全、网络和权限审查。
 
-完成审核后创建包：
+## 第二步：生成 WorkBuddy 包
+
+完成审核并确认来源许可证允许适配后，运行：
 
 ```bash
 python3 scripts/adapt_skill.py \
@@ -29,19 +43,16 @@ python3 scripts/adapt_skill.py \
   --source-license 'MIT'
 ```
 
-生成的 ZIP 会把 `SKILL.md` 放在根目录，并附带 `SOURCE.json`，其中记录不可变
-的源 URL、blob SHA、声明的许可证、适配说明和已打包资源。`scripts/`、
-`references/`、`assets/`、`templates/` 下被引用的文件会从同一个不可变提交获取，
-并保留相对路径；适配器不会执行源代码。
+生成的 ZIP 可以直接导入 WorkBuddy，`SKILL.md` 位于 ZIP 根目录，并附带 `SOURCE.json`。后者记录不可变来源 URL、blob SHA、声明的许可证、适配说明和已打包资源，方便追溯。
 
-源文件和资源单个不能超过 512 KiB，全部资源不能超过 4 MiB；被引用的脚本也会
-接受同样的保守静态扫描。资源路径不能逃逸出技能目录。
+## 第三步：验证后再分享
 
-## 默认拒绝条件
+导入前检查 ZIP 结构和 `SOURCE.json`；导入后用只读提示词做一次小范围测试。确认来源、权限、费用和副作用都清楚，再分享给其他用户或用于真实数据。
 
-默认情况下，检测到静态风险、无法获取引用资源，或输出已存在时，适配会停止。
-请先检查源代码，再谨慎使用 `--allow-flagged`；只有确认技能不依赖缺失文件时才
-使用 `--allow-missing-resources`；仅在有意替换时使用 `--force`。
+默认情况下，适配遇到静态风险、缺失引用资源或同名输出时会停止：
 
-生成的元数据不能代替原始许可证或安全审查。只有在源许可证允许的情况下，才应
-发布适配后的包。
+- 只有确认风险可接受后，才使用 `--allow-flagged`；
+- 只有确认 Skill 不依赖缺失文件时，才使用 `--allow-missing-resources`；
+- 只有确实要替换已有输出时，才使用 `--force`。
+
+生成的元数据不能代替原始许可证或安全审查。来源许可证不允许时，不要发布适配包。

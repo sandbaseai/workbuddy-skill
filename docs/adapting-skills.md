@@ -1,13 +1,23 @@
-# Adapt an indexed skill for WorkBuddy
+# Adapt a public Skill for WorkBuddy
 
-The catalog is a discovery surface, not an installation feed. Review the exact
-GitHub source, its repository license, bundled resources, network behavior, and
-requested permissions before creating a WorkBuddy package.
+This guide is for turning a public catalog entry into an importable WorkBuddy package. If you only want to use an existing curated Skill, start with the [quickstart](quickstart.md).
 
-## Create a package
+## Before adapting: confirm that redistribution is allowed
 
-Use the record's full `id` from `catalog/skills.jsonl` or
-`scripts/query_catalog.py --json`:
+The catalog is a discovery surface, not an installation feed. Open the exact source and check:
+
+- whether the repository license permits redistribution or adaptation;
+- whether the Skill’s purpose, inputs, outputs, and dependencies fit your use case;
+- whether files under `scripts/`, `references/`, `assets/`, or `templates/` are referenced;
+- whether it accesses the network, reads credentials, writes data, sends messages, or incurs cost.
+
+## Step 1: Find and review the source
+
+Search the [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) or the local catalog. Use the record’s full `id`; do not infer a path from its display name:
+
+```bash
+python3 scripts/query_catalog.py invoice OCR --json
+```
 
 Generate a non-executing review report first:
 
@@ -16,12 +26,11 @@ python3 scripts/review_skill.py \
   --catalog-id 'github:owner/repository:path/to/SKILL.md'
 ```
 
-The report retrieves referenced resources, separates instruction and script
-signals, shows missing WorkBuddy fields, and leaves license, instruction,
-network, and permission checks explicitly incomplete for human review. Add
-`--json` for machine-readable output.
+The report lists provenance, referenced resources, instruction and script signals, and missing WorkBuddy fields. It does not replace human review of the license, security, network behavior, or permissions.
 
-After completing that review, create the package:
+## Step 2: Generate the WorkBuddy package
+
+After completing the review and confirming that the source license permits adaptation, run:
 
 ```bash
 python3 scripts/adapt_skill.py \
@@ -34,24 +43,16 @@ python3 scripts/adapt_skill.py \
   --source-license 'MIT'
 ```
 
-The output ZIP places `SKILL.md` at its root and includes `SOURCE.json` with
-the immutable source URL, blob SHA, declared source license, adaptation notes,
-and a list of packaged resources. References to files under `scripts/`,
-`references/`, `assets/`, and `templates/` are fetched from the same immutable
-Git commit (or copied beside a local source file) and retain their relative
-paths. The adapter never executes source content.
+The resulting ZIP can be imported into WorkBuddy. It places `SKILL.md` at the archive root and includes `SOURCE.json` with the immutable source URL, blob SHA, declared license, adaptation notes, and packaged resources.
 
-Resource paths cannot escape the skill directory. Each source or resource file
-is limited to 512 KiB, and bundled resources are limited to 4 MiB total.
-Referenced scripts receive the same conservative static scan as `SKILL.md`.
+## Step 3: Verify before sharing
 
-## Refusal conditions
+Inspect the ZIP structure and `SOURCE.json` before importing. After importing, run a small read-only test using the prompt in the [quickstart](quickstart.md). Share or use the package with real data only after the source, permissions, cost, and side effects are clear.
 
-By default, adaptation stops when static review signals are present, referenced
-resources cannot be fetched, or the output already exists. Inspect the source
-before using `--allow-flagged`, use `--allow-missing-resources` only when the
-package can operate without those files, and use `--force` only for an
-intentional replacement.
+By default, adaptation stops when static risk signals are present, referenced resources are missing, or the output already exists:
 
-Generated metadata is not a substitute for the original license or a security
-review. Do not publish an adapted package unless the source license permits it.
+- use `--allow-flagged` only after confirming the risk is acceptable;
+- use `--allow-missing-resources` only when the Skill does not depend on the missing files;
+- use `--force` only for an intentional replacement.
+
+Generated metadata does not replace the original license or a security review. Do not publish an adapted package when the source license does not permit it.

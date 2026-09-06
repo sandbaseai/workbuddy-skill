@@ -16,6 +16,8 @@ Skills，查看来源与许可证，选择适合的能力，并下载经过整�
 
 ### 三步开始
 
+首次使用请看[中文快速开始](docs/quickstart.zh-CN.md)；需要把公开 Skill 做成 WorkBuddy 包，请看[适配教程](docs/adapting-skills.zh-CN.md)。
+
 1. 在 [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) 或[中文目录](https://sandbaseai.github.io/workbuddy-skill/zh-CN.html)中搜索需求。
 2. 打开条目的来源链接，阅读说明、许可证、权限和外部依赖。
 3. 从 [Releases](https://github.com/sandbaseai/workbuddy-skill/releases/latest) 下载所需 ZIP，在 WorkBuddy 的 **专家 · Skills · Connectors → Skills → 添加 Skill** 中上传。
@@ -193,6 +195,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 ## English
 
 WorkBuddy Skill Hub is an open catalog of public Agent Skills plus a curated set of reviewed, bilingual WorkBuddy workflows.
+
+Start with the [English quickstart](docs/quickstart.md), or use the [adaptation guide](docs/adapting-skills.md) to package a public Skill for WorkBuddy.
 
 1. Search the [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/).
 2. Read the immutable source, license, permissions, dependencies, and side effects.
