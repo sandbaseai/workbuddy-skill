@@ -10,6 +10,7 @@ All notable changes to this project are documented here.
 - Pin the README's direct `gh skill install` examples to the current reviewed release for reproducible setup.
 - Add the official WorkBuddy Privacy Policy to the bilingual resource map and machine-readable entrypoint.
 - Link the no-JavaScript package index to the resource maps and privacy guidance before first use.
+- Add a `query_catalog.py --high-signal` shortcut matching the Atlas triage filters.
 - Simplify the bilingual quickstarts with shortest-path guidance for installing, searching, and adapting Skills.
 - Remove internal catalog maintenance instructions from the public catalog README.
 - Reject query-bearing or structurally incomplete immutable raw URLs.
