@@ -25,6 +25,17 @@
 
 平台功能请优先参考[官方快速开始](https://www.workbuddy.ai/docs/zh/workbuddy/Quickstart)、[官方 Skills 教程](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills)、[MCP 指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide)和[Automation 指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide)。如果导入的 Skill 需要连接器，请先阅读[官方连接器指南](https://open.workbuddy.cn/docs/connector)，确认选择 MCP + Skill 还是 CLI + Skill，并检查认证和权限。也可以浏览官方的 [Skill Marketplace](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) 和 [Explore](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Explore)，查看现成能力和案例。如果需要确认 Open Platform 的 ZIP 结构、必填 frontmatter 和解析失败排查，请查看[官方 Open Platform Skill 指南](https://open.workbuddy.cn/zh/docs/skill)。本仓库负责目录发现与打包说明；产品界面和平台行为以官方文档为准。
 
+## 先选择安装路径
+
+| 路径 | 适合谁 | 作用范围 | 说明 |
+|---|---|---|---|
+| WorkBuddy 界面 | 大多数用户 | 当前工作区 | 在 **专家 · Skills · Connectors → Skills** 上传 Release 原始 ZIP，不需要本地 CLI。 |
+| `gh skill install` | 支持 Agent Skills 约定的宿主 | `--dir` 指定的目录 | 项目专属能力可安装到 `.workbuddy/skills` 并纳入版本管理；该命令仍处于 preview。 |
+| 本地 `~/.workbuddy/skills/` | 本地开发和反复试用 | 当前用户 | 审阅来源后再复制；如果宿主没有自动发现目录，请重新加载 Skill。 |
+
+不要在同一次安装中混用这些路径。先确定作用范围，记录来源提交或
+Release 版本，后续更新和删除时继续使用同一路径。
+
 ## 5 分钟安装一个精选 Skill
 
 ### 1. 下载

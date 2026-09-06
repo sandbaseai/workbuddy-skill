@@ -40,6 +40,18 @@ For the Open Platform's exact ZIP layout, required frontmatter, and parser troub
 see the [official Open Platform Skill guide](https://open.workbuddy.cn/en/docs/skill).
 This repository explains catalog discovery and packaging; the official docs remain the source of truth for product UI and platform behavior.
 
+## Choose an installation path
+
+| Path | Best for | Scope | Notes |
+|---|---|---|---|
+| WorkBuddy UI | Most users | Current workspace | Upload the original Release ZIP from **Experts · Skills · Connectors → Skills**. No local CLI is required. |
+| `gh skill install` | Agent Skills-compatible hosts | The directory passed to `--dir` | Use a project directory such as `.workbuddy/skills` for version-controlled, project-specific skills. The command is still preview. |
+| Local `~/.workbuddy/skills/` | Local development and repeated experiments | User-wide | Copy only after reviewing the source; reload the host if it does not discover the new directory automatically. |
+
+Do not mix these paths in one installation step. Pick the scope first, record
+the source commit or release, and use the same path when updating or removing a
+Skill.
+
 ## Install one curated Skill in 5 minutes
 
 ### 1. Download
