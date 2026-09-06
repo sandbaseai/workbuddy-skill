@@ -227,6 +227,8 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("merged branches are deleted", contributing)
         self.assertIn("does not bypass validation", contributing)
         self.assertIn("Pull requests from forks remain manual", contributing)
+        self.assertIn("Analyze (actions)", contributing)
+        self.assertIn("Analyze (python)", contributing)
 
     def test_auto_merge_only_queues_trusted_same_repository_pull_requests(self):
         workflow = (ROOT / ".github/workflows/auto-merge.yml").read_text(encoding="utf-8")
@@ -293,8 +295,8 @@ class RefreshWorkflowTests(unittest.TestCase):
 
     def test_contributing_docs_describe_required_main_branch_checks(self):
         contributing = (ROOT / "CONTRIBUTING.md").read_text(encoding="utf-8")
-        self.assertIn("main` branch requires the `validate` status check", contributing)
-        self.assertIn("conversation resolution", contributing)
+        self.assertIn("main` branch requires the `validate`, `Analyze (actions)`, and", contributing)
+        self.assertIn("Conversation resolution", contributing)
         self.assertIn("admin enforcement remains off", contributing)
 
     def test_support_points_to_resource_and_use_case_guides(self):
