@@ -7,6 +7,7 @@ Use this page to choose the right source before searching the catalog.
 | If you want to… | Start here |
 |---|---|
 | Install a reviewed package into WorkBuddy | [Quickstart](quickstart.md) |
+| Troubleshoot import or update problems | [Quickstart troubleshooting](quickstart.md) and the [official FAQ](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/FQA) |
 | Write or troubleshoot a Skill ZIP | [Open Platform Skill guide](https://open.workbuddy.cn/en/docs/skill) |
 | Connect an API, MCP server, or CLI | [Open Platform Connector guide](https://open.workbuddy.cn/en/docs/connector) |
 | Build an OAuth app or call Open APIs | [Third-Party App guide](https://open.workbuddy.cn/en/docs/third-party-app) and [Open API reference](https://open.workbuddy.cn/en/docs/openapi) |
