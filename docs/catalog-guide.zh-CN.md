@@ -36,7 +36,7 @@ python3 scripts/query_catalog.py research --security no-static-flags \
 python3 scripts/query_catalog.py research --package-status reviewed
 ```
 
-精选结果会直接显示 Release ZIP 地址；使用 `--json` 时，包地址、稳定的资产文件名和校验地址分别位于 `workbuddy_package_url`、`workbuddy_package_asset` 和 `workbuddy_checksum_url`，脚本可以直接下载并校验包，不需要手工拼接 Release 路径。
+精选结果会直接显示 Release ZIP 地址；使用 `--json` 时，包地址、稳定的资产文件名、校验地址和可复制的 GitHub CLI 命令分别位于 `workbuddy_package_url`、`workbuddy_package_asset`、`workbuddy_checksum_url` 和 `workbuddy_download_command`，脚本可以直接下载并校验包，不需要手工拼接 Release 路径。
 
 人类可读输出会直接给出完整的 `catalog id`。把这个值复制给
 `review_skill.py` 或 `adapt_skill.py` 即可，不要根据显示名称手工拼接 ID。

@@ -14,10 +14,18 @@ from catalog_signals import source_context
 
 
 CHECKSUM_URL = "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/SHA256SUMS"
+RELEASE_REPO = "sandbaseai/workbuddy-skill"
 
 
 def catalog_id(row: dict) -> str:
     return str(row.get("id") or f"github:{row.get('repository', '')}:{row.get('path', '')}")
+
+
+def package_download_command(asset: str) -> str:
+    return (
+        f"gh release download --repo {RELEASE_REPO} --pattern '{asset}' "
+        "--pattern SHA256SUMS --dir workbuddy-download --clobber"
+    )
 
 
 def matches(row: dict, terms: list[str]) -> bool:
@@ -206,8 +214,10 @@ def main() -> int:
             package_url = curated_urls.get(catalog_id(row))
             if package_url:
                 output["workbuddy_package_url"] = package_url
-                output["workbuddy_package_asset"] = Path(urlparse(package_url).path).name
+                asset = Path(urlparse(package_url).path).name
+                output["workbuddy_package_asset"] = asset
                 output["workbuddy_checksum_url"] = CHECKSUM_URL
+                output["workbuddy_download_command"] = package_download_command(asset)
             output_rows.append(output)
         json.dump(output_rows, sys.stdout, ensure_ascii=False, indent=2)
         sys.stdout.write("\n")
@@ -220,8 +230,10 @@ def main() -> int:
         package_url = curated_urls.get(catalog_id(row))
         if package_url:
             print(f"  WorkBuddy package: {package_url}")
-            print(f"  WorkBuddy asset: {Path(urlparse(package_url).path).name}")
+            asset = Path(urlparse(package_url).path).name
+            print(f"  WorkBuddy asset: {asset}")
             print(f"  WorkBuddy checksum: {CHECKSUM_URL}")
+            print(f"  WorkBuddy download: {package_download_command(asset)}")
         print(
             f"  review: {row['workbuddy_status']} ({row.get('workbuddy_score', '—')}/100); "
             f"security: {row['security_status']}; copies: {copies[row.get('sha')]}"

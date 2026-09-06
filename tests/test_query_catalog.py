@@ -180,6 +180,7 @@ class QueryCatalogTests(unittest.TestCase):
         self.assertIn(f"WorkBuddy package: {package_url}", output.getvalue())
         self.assertIn("WorkBuddy asset: research-workbuddy-skill.zip", output.getvalue())
         self.assertIn("WorkBuddy checksum: https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/SHA256SUMS", output.getvalue())
+        self.assertIn("WorkBuddy download: gh release download --repo sandbaseai/workbuddy-skill", output.getvalue())
 
     def test_cli_includes_reviewed_package_url_in_json(self):
         record = row("research", "sha", 90)
@@ -211,6 +212,7 @@ class QueryCatalogTests(unittest.TestCase):
         self.assertEqual(result["workbuddy_package_url"], package_url)
         self.assertEqual(result["workbuddy_package_asset"], "research-workbuddy-skill.zip")
         self.assertTrue(result["workbuddy_checksum_url"].endswith("/SHA256SUMS"))
+        self.assertIn("--pattern 'research-workbuddy-skill.zip'", result["workbuddy_download_command"])
 
     def test_cli_includes_reviewed_package_metadata_in_all_json_results(self):
         record = row("research", "sha", 90)
@@ -240,6 +242,7 @@ class QueryCatalogTests(unittest.TestCase):
                     sys.argv = old_argv
         result = json.loads(output.getvalue())[0]
         self.assertEqual(result["workbuddy_package_asset"], "research-workbuddy-skill.zip")
+        self.assertIn("workbuddy_download_command", result)
 
 
 if __name__ == "__main__":

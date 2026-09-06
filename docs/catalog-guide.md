@@ -54,9 +54,9 @@ python3 scripts/query_catalog.py research --package-status reviewed
 ```
 
 Reviewed results include the direct Release ZIP URL. With `--json`, the package
-URL, stable asset filename, and checksum URL are available as
+URL, stable asset filename, checksum URL, and a copy-ready GitHub CLI command are available as
 `workbuddy_package_url`, `workbuddy_package_asset`, and
-`workbuddy_checksum_url`, so a small script can download and verify the selected
+`workbuddy_checksum_url`, and `workbuddy_download_command`, so a small script can download and verify the selected
 package without reconstructing release paths.
 
 The human-readable output includes a complete `catalog id`. Copy that value
