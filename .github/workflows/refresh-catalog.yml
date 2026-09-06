@@ -60,6 +60,10 @@ jobs:
             --repository phuryn/pm-skills \
             --repository alirezarezvani/claude-skills \
             --repository muratcankoylan/Agent-Skills-for-Context-Engineering \
+            --repository mvanhorn/last30days-skill \
+            --repository kepano/obsidian-skills \
+            --repository op7418/guizang-ppt-skill \
+            --repository nicobailon/visual-explainer \
             --repository DietrichGebert/ponytail \
             --repository nexu-io/open-design \
             --repository sickn33/agentic-awesome-skills \
