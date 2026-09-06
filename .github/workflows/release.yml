@@ -71,3 +71,15 @@ jobs:
             echo "Missing uploaded release asset: SHA256SUMS" >&2
             exit 1
           fi
+      - name: Verify downloaded release checksums
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p release-download
+          gh release download "$GITHUB_REF_NAME" \
+            --repo "$GITHUB_REPOSITORY" \
+            --pattern '*-workbuddy-skill.zip' \
+            --pattern 'SHA256SUMS' \
+            --dir release-download \
+            --clobber
+          python3 scripts/verify_release.py release-download

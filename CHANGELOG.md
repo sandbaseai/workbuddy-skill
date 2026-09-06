@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added a post-upload release check that downloads every published ZIP and verifies it against `SHA256SUMS` before the workflow succeeds.
 - Added a restricted auto-merge workflow for trusted same-repository pull requests; fork pull requests remain manual and untrusted code is never checked out by the merge workflow.
 - Added a dependency-free `verify_catalog_snapshot.py` command and CI gate for checking the frozen catalog against its published SHA-256 fingerprint.
 - Published `catalog-meta-schema.json` and added metadata contract validation for machine consumers of the Atlas.
