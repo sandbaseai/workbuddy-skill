@@ -26,6 +26,7 @@ All notable changes to this project are documented here.
 - Added visible `:focus-visible` styling for keyboard navigation on the reviewed-package page.
 - Generalized copy-ready use cases to WorkBuddy connectors instead of assuming the external SandBase Skill.
 - Added a safe post-merge cleanup workflow for stale same-repository branches while preserving fork branches.
+- Linked the copy-ready WorkBuddy use-case guide from both README language entry points.
 - Fixed trusted auto-merge coverage for draft pull requests when they become ready for review.
 - Added the vendor-neutral Agent Skills specification to the machine-readable resource map.
 - Hardened trusted auto-merge eligibility with explicit non-draft and author-association checks.
