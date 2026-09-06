@@ -60,6 +60,8 @@ python3 scripts/adapt_skill.py \
 
 生成的 ZIP 可以直接导入 WorkBuddy，`SKILL.md` 位于 ZIP 根目录，并附带 `SOURCE.json`。后者记录不可变来源 URL、blob SHA、声明的许可证、适配说明和已打包资源，方便追溯。
 
+如果来源 `SKILL.md` 已经声明了 `license`，命令中的 `--source-license` 必须与它完全一致。适配器会在不一致时停止，避免生成的元数据和 `SOURCE.json` 产生含义不清的来源声明。
+
 ### 导入前快速检查
 
 确认 ZIP 至少符合下面的结构：
