@@ -17,7 +17,7 @@ Skills，查看来源与许可证，选择适合的能力，并下载经过整�
 
 [中文](#中文) · [English](#english) · [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/)
 
-如果这个目录帮你更快找到可用能力，欢迎留下一个 Star；真实使用反馈和公开使用案例也很有帮助。
+如果这个目录帮你更快找到可用能力，欢迎留下一个 Star；真实使用反馈和公开使用案例也很有帮助。试用后可以在 [Discussions](https://github.com/sandbaseai/workbuddy-skill/discussions) 分享结果，或直接[提交一个 WorkBuddy 使用案例](https://github.com/sandbaseai/workbuddy-skill/issues/new?template=showcase.yml)。
 需要在论文、报告或内部资料中引用本目录时，可参考 [CITATION.cff](CITATION.cff)。
 
 ## 中文
@@ -228,7 +228,7 @@ WorkBuddy Skill Hub is an open catalog of public Agent Skills plus a curated set
 
 The public catalog contains **21,818 indexed Skills**, alongside **277 reviewed WorkBuddy packages** ready to install.
 
-If the catalog helps you find a useful capability, consider leaving a Star and sharing real usage feedback or a public workflow example.
+If the catalog helps you find a useful capability, consider leaving a Star and sharing real usage feedback or a public workflow example. After trying a package, use [Discussions](https://github.com/sandbaseai/workbuddy-skill/discussions) or [submit a WorkBuddy showcase](https://github.com/sandbaseai/workbuddy-skill/issues/new?template=showcase.yml).
 For formal citations in papers, reports, or internal documentation, see [CITATION.cff](CITATION.cff).
 
 Start with the [English quickstart](docs/quickstart.md), use the [resource map](docs/resources.md) to choose official docs or reference material, read the [catalog reading guide](docs/catalog-guide.md) when reviewing results, or use the [adaptation guide](docs/adapting-skills.md) to package a public Skill for WorkBuddy.

@@ -42,6 +42,7 @@ All notable changes to this project are documented here.
 - Updated the bilingual connector preflight with the official MCP/CLI selection and managed-runtime guidance.
 - Added the official bilingual Third-Party App and OAuth 2.1 references to the resource maps.
 - Refreshed the public GitHub description and topics to make the WorkBuddy catalog easier to discover.
+- Added a one-click public showcase path so users can share real WorkBuddy results after trying a package.
 - Added bilingual WorkBuddy resource maps covering official product docs, community learning, evaluation material, and local catalog guides.
 - Added direct Atlas navigation to the resource maps, plus a post-use feedback and Star prompt that does not perform account actions.
 - Atlas now derives and displays the current count of reviewed WorkBuddy packages from `catalog-meta.json`.
