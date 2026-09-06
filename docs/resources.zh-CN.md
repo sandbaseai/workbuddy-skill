@@ -73,6 +73,7 @@
 - [agency-agents-zh](https://github.com/jnMetaCode/agency-agents-zh)——MIT 许可的中文专家角色集合，覆盖工程、设计、营销、金融等工作流；仅作为可审阅来源，适配前仍需检查具体内容和权限。
 - [WorkBuddy Usage Status](https://github.com/clancy-feng/workbuddy-usage-status)——MIT 许可、离线优先的用量看板，可分析本地 Token、credit、模型效率和错误；使用前仍需检查本地数据读取及可选凭据边界。
 - [MnemoPort](https://github.com/muzishuiji/mnemoport)——MIT 许可的本地 AI 资产迁移工具，可在 WorkBuddy 与其他 Agent 工具之间迁移文件化指令、Skill、提示词和不含凭据的 MCP 定义；自动记忆、账号数据和插件不会自动迁移，使用前先确认目标路径并备份。
+- [WorkBuddy 跨设备同步参考](https://github.com/jamesting-eng/workbuddy-skills)——MIT 许可的 Windows/WPS 云盘同步与交接方案；它会处理工作区、身份文件和记忆相关文件，不能把它当作无风险数据库同步器，复用前应先备份并审阅脚本、路径和凭据边界。
 - [markitdown-skill](https://github.com/stwhwing/markitdown-skill)——MIT 许可的文档和网页转 Markdown 工作流，默认启用 SSRF 防护，可选外部能力默认关闭；适配前仍需检查脚本和权限。
 - [Learn WorkBuddy](https://github.com/adongwanai/learn-workbuddy)——MIT clean-room 定位的 Agent Harness 架构课程。
 - [WorkBuddy Harness v2](https://github.com/zhuang-HE/workbuddy-harness)——可用于研究九维 Agent 基础设施、Hook/Eval 运行时、安全守护和基准用例；README 展示 MIT 标识，但仓库没有正式 `LICENSE` 文件，因此不能据此视为允许再分发。
