@@ -57,7 +57,8 @@ python3 scripts/query_catalog.py research --high-signal --limit 10
 支持开放 Agent Skills CLI 的宿主，可以按精确路径安装精选成品：
 
 ```bash
-gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/skills --pin v4.66.0
+release_tag="$(gh release view --repo sandbaseai/workbuddy-skill --json tagName --jq .tagName)"
+gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/skills --pin "$release_tag"
 ```
 
 如果宿主没有 `gh skill`，请从 [Releases](https://github.com/sandbaseai/workbuddy-skill/releases/latest)
@@ -287,7 +288,8 @@ python3 scripts/query_catalog.py research --high-signal --limit 10
 Hosts that support the preview [GitHub CLI `gh skill` command](https://cli.github.com/manual/gh_skill) can install a reviewed Skill by its exact path:
 
 ```bash
-gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/skills --pin v4.66.0
+release_tag="$(gh release view --repo sandbaseai/workbuddy-skill --json tagName --jq .tagName)"
+gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/skills --pin "$release_tag"
 ```
 
 To install into a supported host's normal project or user location, let the CLI
@@ -295,8 +297,9 @@ select the destination and pin the source version when reproducibility matters:
 
 ```bash
 gh skill preview sandbaseai/workbuddy-skill skills/oss-review
+release_tag="$(gh release view --repo sandbaseai/workbuddy-skill --json tagName --jq .tagName)"
 gh skill install sandbaseai/workbuddy-skill skills/oss-review \
-  --agent codex --scope project --pin v4.66.0
+  --agent codex --scope project --pin "$release_tag"
 ```
 
 `gh skill` is still in preview. Check the [current command manual](https://cli.github.com/manual/gh_skill_install)

@@ -81,7 +81,8 @@ class RefreshWorkflowTests(unittest.TestCase):
             quickstart = (ROOT / name).read_text(encoding="utf-8")
             self.assertIn("--agent codex", quickstart)
             self.assertIn("--scope project", quickstart)
-            self.assertIn("--pin v4.66.0", quickstart)
+            self.assertIn('gh release view --repo sandbaseai/workbuddy-skill --json tagName --jq .tagName', quickstart)
+            self.assertIn('--pin "$release_tag"', quickstart)
             self.assertIn("cli.github.com/manual/gh_skill_install", quickstart)
 
     def test_quickstarts_explain_reviewed_package_filter(self):
@@ -265,9 +266,11 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn("adapt", content.lower())
             self.assertNotIn("verify_catalog_snapshot.py", content)
 
-    def test_readme_gh_skill_examples_pin_the_release(self):
+    def test_readme_gh_skill_examples_resolve_and_pin_the_current_release(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
-        self.assertEqual(readme.count("gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/skills --pin v4.66.0"), 2)
+        self.assertEqual(readme.count('gh release view --repo sandbaseai/workbuddy-skill --json tagName --jq .tagName'), 3)
+        self.assertEqual(readme.count('--pin "$release_tag"'), 3)
+        self.assertNotIn("--pin v4.66.0", readme)
 
     def test_readme_exposes_high_signal_catalog_search(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")

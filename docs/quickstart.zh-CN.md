@@ -170,8 +170,9 @@ gh skill install owner/repository skills/path/to/skill --pin v1.2.0 --dir .workb
 
 ```bash
 gh skill preview sandbaseai/workbuddy-skill skills/oss-review
+release_tag="$(gh release view --repo sandbaseai/workbuddy-skill --json tagName --jq .tagName)"
 gh skill install sandbaseai/workbuddy-skill skills/oss-review \
-  --agent codex --scope project --pin v4.66.0
+  --agent codex --scope project --pin "$release_tag"
 ```
 
 使用 `--scope user` 可安装到用户级目录；需要自定义目录时继续使用 `--dir`。由于该命令仍处于 preview，支持的宿主和作用域可能变化，复制命令到自动化流程前请查看[当前安装参考](https://cli.github.com/manual/gh_skill_install)。
