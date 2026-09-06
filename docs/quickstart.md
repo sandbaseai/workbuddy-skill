@@ -51,6 +51,16 @@ Before the first real task, keep [Default Permissions](https://www.workbuddy.ai/
 | Search from a checkout | Run `python3 scripts/query_catalog.py <term> --package-status reviewed --sort score --limit 10`. |
 | Turn a public source into a package | Use the [adaptation guide](adapting-skills.md) after reviewing the immutable source and license. |
 
+### Choose the right WorkBuddy surface
+
+| If your goal is… | Start with… |
+|---|---|
+| Add one reusable capability | [Skill Marketplace](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) — a Skill answers “what can WorkBuddy do?” |
+| Assemble a role with capabilities and connectors | [Expert guide](https://open.workbuddy.cn/en/docs/expert) or [Expert Team guide](https://open.workbuddy.cn/en/docs/expert-team) — configure who performs the work |
+| Reuse a finished scenario or generated result | [Explore](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Explore) — start from an existing outcome and make your version |
+
+This distinction prevents installing a Skill when you actually need a role configuration or a ready-made scenario.
+
 For platform-level instructions, use the [official WorkBuddy quickstart](https://www.workbuddy.ai/docs/workbuddy/Quickstart),
 [official Skills tutorial](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills),
 [MCP guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide),

@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Add a bilingual Skill vs Expert vs Explore choice table to the quickstarts so users start from the right WorkBuddy surface.
 - Add GitHub identity and queryable SearchAction metadata to both Atlas language pages for clearer discovery and sharing.
 - Add official DingTalk and Yuanbao remote-control integration guides to the bilingual resource maps and machine-readable index.
 - Turn the bilingual quickstart troubleshooting bullets into symptom, first-check, and next-step tables to make safe recovery easier.

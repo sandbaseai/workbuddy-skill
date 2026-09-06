@@ -46,6 +46,16 @@ WorkBuddy 启动并登录后，再继续下面的 Skill 安装路径。系统要
 | 在本地搜索目录 | 执行 `python3 scripts/query_catalog.py <关键词> --package-status reviewed --sort score --limit 10`。 |
 | 把公开来源制作成 WorkBuddy 包 | 阅读[适配教程](adapting-skills.zh-CN.md)，确认固定来源和许可证后再制作。 |
 
+### 选择正确的 WorkBuddy 入口
+
+| 你的目标 | 先从这里开始 |
+|---|---|
+| 增加一个可复用能力 | [Skill Marketplace](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)——Skill 回答“WorkBuddy 能做什么？” |
+| 组装带有能力和连接器的角色 | [专家指南](https://open.workbuddy.cn/docs/expert)或[专家团指南](https://open.workbuddy.cn/docs/expert-team)——配置“谁来完成工作” |
+| 复用一个已经完成的场景或结果 | [Explore](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Explore)——从现成结果开始制作自己的版本 |
+
+先做这个区分，可以避免需要角色配置或现成场景时误装 Skill。
+
 平台功能请优先参考[官方快速开始](https://www.workbuddy.ai/docs/zh/workbuddy/Quickstart)、[官方 Skills 教程](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills)、[MCP 指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide)和[Automation 指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide)。如果导入的 Skill 需要连接器，请先阅读[官方连接器指南](https://open.workbuddy.cn/docs/connector)，确认选择 MCP + Skill 还是 CLI + Skill，并检查认证和权限。也可以浏览官方的 [Skill Marketplace](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) 和 [Explore](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Explore)，查看现成能力和案例。如果需要确认 Open Platform 的 ZIP 结构、必填 frontmatter 和解析失败排查，请查看[官方 Open Platform Skill 指南](https://open.workbuddy.cn/zh/docs/skill)。如果计划发布 Skill、连接器或其他生态能力，可以继续阅读[Open Platform 总览](https://open.workbuddy.cn/docs/what-is-open-platform)和[入驻指南](https://open.workbuddy.cn/docs/onboarding)，了解认证、测试、审核和发布前置条件。本仓库负责目录发现与打包说明；产品界面和平台行为以官方文档为准。
 
 开始任务前，可先阅读[官方新建任务栏说明](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar)，选择工作目录、模型、已安装的 Skill、连接器和权限模式。
