@@ -156,7 +156,7 @@ for package in packages:
         f"<a href=\"{escape(package['download_url'], quote=True)}\">Download ZIP</a> · "
         f"<a href=\"{escape(package['checksum_url'], quote=True)}\">SHA256SUMS</a></p>"
         f"<details><summary>Copy download command</summary>"
-        f"<button type=\"button\" class=\"copy-command\" data-command=\"{escape(package['download_command'], quote=True)}\">Copy command</button>"
+        f"<button type=\"button\" class=\"copy-command\" data-command=\"{escape(package['download_command'], quote=True)}\">Copy command / 复制命令</button>"
         f"<pre class=\"command\"><code>{escape(package['download_command'])}</code></pre></details></li>"
     )
 category_nav = " ".join(
@@ -242,9 +242,9 @@ package_page = """<!doctype html>
       <p>无需 JavaScript 即可浏览 277 个可安装精选包；每条记录都保留不可变来源、Release ZIP 和 SHA256SUMS 校验入口。</p>
       <nav class="category-nav" aria-label="Package categories">""" + category_nav + """</nav>
       <form class="package-search" role="search" onsubmit="return false">
-        <label for="package-filter">Filter packages by name, repository, path, or category</label>
-        <input id="package-filter" type="search" autocomplete="off" placeholder="Try: security, playwright, or mcp">
-        <output id="package-count" aria-live="polite">Showing all 277 packages</output>
+        <label for="package-filter">Filter packages by name, repository, path, or category / 按名称、仓库、路径或分类筛选</label>
+        <input id="package-filter" type="search" autocomplete="off" placeholder="Try: security, playwright, or mcp / 例如：security、playwright、mcp">
+        <output id="package-count" aria-live="polite">Showing all 277 packages / 共 277 个精选包</output>
       </form>
     </header>
     <main>
@@ -270,8 +270,8 @@ package_page = """<!doctype html>
             section.hidden = !section.querySelector('li:not([hidden])');
           }
           output.textContent = query
-            ? `Showing ${visible} of ${items.length} packages`
-            : `Showing all ${items.length} packages`;
+            ? `Showing ${visible} of ${items.length} packages / 匹配 ${visible} / ${items.length}`
+            : `Showing all ${items.length} packages / 共 ${items.length} 个精选包`;
         };
         input.addEventListener('input', update);
         for (const button of copyButtons) {
@@ -279,10 +279,10 @@ package_page = """<!doctype html>
             const original = button.textContent;
             try {
               await navigator.clipboard.writeText(button.dataset.command);
-              button.textContent = 'Copied';
+              button.textContent = 'Copied / 已复制';
               window.setTimeout(() => { button.textContent = original; }, 1500);
             } catch {
-              button.textContent = 'Copy failed — select the command below';
+              button.textContent = 'Copy failed / 复制失败，请手动选择下方命令';
             }
           });
         }
