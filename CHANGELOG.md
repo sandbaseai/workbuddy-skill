@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Add the MIT-licensed QianLV UI Skill as a WorkBuddy-compatible design reference with explicit bundled-asset and script review guidance.
 - Add a copy-ready local-first content-compliance preflight with explicit no-publish and real-time-cost gates.
 - Add the MIT-licensed self-media compliance review project as a WorkBuddy-compatible, local-first reference with explicit credential and paid-quota boundaries.
 - Add a shareable, bilingual category directory with structured metadata and a checksum-first installation path, without adding catalog records.

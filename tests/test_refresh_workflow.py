@@ -119,6 +119,7 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn("WorkBuddyGuide", resources)
             self.assertIn("workbuddy-account-migrate", resources)
             self.assertIn("self-media-compliance-review", resources)
+            self.assertIn("gks-QianLV-uiSkill", resources)
             self.assertIn("qa-testing-guide", resources)
             self.assertIn("agentic-awesome-skills", resources)
             self.assertIn("AI-Coding-Guide-Zh", resources)
