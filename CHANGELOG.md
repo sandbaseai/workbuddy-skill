@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- The entries below include historical catalog and package work retained for provenance; the current public snapshot is frozen and the crawler is not an active publishing path.
 - Froze the public catalog at 21,818 indexed records; future maintenance is limited to documentation, usability, validation, and existing reviewed packages.
 - Added bilingual catalog-reading guidance and linked it from the README, quickstart, Atlas navigation, and `llms.txt`.
 - Added shareable Atlas result links, browser-history restoration, and language switching that preserves active filters; added regression coverage for the URL state.
@@ -15,7 +16,7 @@ All notable changes to this project are documented here.
 - Added MIT Review and Refactor and Spring Boot Testing Skills from the pinned GitHub awesome-copilot source, plus the MIT-0 Expense Report Writer from AWS Samples with packaged references, policies, and templates.
 - Added Apache-2.0 Playwright CLI Browser Automation from the pinned Microsoft Playwright source with its browser, storage, network, tracing, and test references.
 - Fixed the adapter so `--source-license` is also emitted as the generated Skill's required `license` metadata.
-- Enhanced the scheduled crawler with immutable Git-tree scans for selected public repositories, so newly added `SKILL.md` paths are discoverable even when Code Search indexing lags or reaches its cap.
+- Historical: enhanced the scheduled crawler with immutable Git-tree scans for selected public repositories, so newly added `SKILL.md` paths were discoverable even when Code Search indexing lagged or reached its cap.
 - Added MIT Microsoft Docs Research and pytest Coverage Analysis Skills with source/version evidence, isolation, privacy, and side-effect boundaries.
 - Added MIT MCP CLI and SQL Code Review Skills with explicit tool/schema, authorization, redaction, injection, and database evidence boundaries.
 - Added MIT Eval-Driven Development and PostgreSQL Code Review Skills with WorkBuddy-safe evaluation, database evidence, privacy, and mutation boundaries.
@@ -223,7 +224,7 @@ All notable changes to this project are documented here.
 - Added the MIT Documentation Skill with repository reconnaissance, evidence mapping, executable-command verification, audience-aware structure, accessibility and portability guidance, documentation audits, and uncertainty-aware handoff.
 - Added the MIT Code Reviewer Skill with diff-first review, correctness and regression checks, scope control, security and operational checkpoints, actionable severity-based findings, and explicit build/merge recommendations.
 - Added the MIT Debugging Methodology Skill with safe reproduction, minimized cases, boundary isolation, causal hypotheses, controlled experiments, durable fixes, regression verification, and uncertainty-aware handoff.
-- Increased scheduled public Skill catalog refreshes from daily to every six hours while retaining bounded crawling, rate-limit backoff, validation, and automatic publication safeguards.
+- Historical: increased scheduled public Skill catalog refreshes from daily to every six hours while retaining bounded crawling, rate-limit backoff, validation, and automatic publication safeguards.
 - Added the MIT Security Audit Skill with bounded scope, trust-boundary mapping, control verification, safe tool use, risk classification, compliance evidence, remediation ownership, retesting, and residual-risk handoff.
 - Added the MIT Test Runner Skill with fast/full modes, repository-native command selection, safe scope and environment handling, failure classification, flake transparency, and reproducible test reporting.
 - Added the MIT Regression Risk Review Skill with diff-first evidence gathering, compatibility-path analysis, high-risk behavior checks, prioritized machine-readable findings, regression-test guidance, rollout safeguards, and accountable handoff.
