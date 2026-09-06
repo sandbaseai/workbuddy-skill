@@ -5,8 +5,8 @@ This directory is a provenance-first index of public `SKILL.md` files. It is not
 ## Current snapshot
 
 <!-- CATALOG-SNAPSHOT:START -->
-- 13,479 indexed GitHub paths
-- 8,820 unique Git blob SHAs
+- 13,579 indexed GitHub paths
+- 8,920 unique Git blob SHAs
 - 6,477 source repositories
 <!-- CATALOG-SNAPSHOT:END -->
 
