@@ -32,6 +32,7 @@ class AtlasFrontendTests(unittest.TestCase):
             self.assertIn("/discussions", page)
             self.assertIn("sandbaseai/awesome-workbuddy", page)
             self.assertIn("docs/resources", page)
+            self.assertIn("docs/quickstart", page)
             self.assertIn("/tree/main/catalog", page)
             self.assertIn("quickstart", page)
 
