@@ -54,6 +54,12 @@ jobs:
             --repository microsoft/SkillOpt \
             --repository nextlevelbuilder/ui-ux-pro-max-skill \
             --repository googleworkspace/cli \
+            --repository VoltAgent/awesome-agent-skills \
+            --repository vercel-labs/agent-skills \
+            --repository google/skills \
+            --repository phuryn/pm-skills \
+            --repository alirezarezvani/claude-skills \
+            --repository muratcankoylan/Agent-Skills-for-Context-Engineering \
             --repository DietrichGebert/ponytail \
             --repository nexu-io/open-design \
             --repository sickn33/agentic-awesome-skills \
