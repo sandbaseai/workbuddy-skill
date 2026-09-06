@@ -10,6 +10,13 @@ with secrets removed.
 If private advisories are unavailable, open a minimal issue asking for a
 private reporting channel without including exploit details.
 
+## Automated protections
+
+This public repository has GitHub Dependabot security updates, Secret
+Scanning, and Push Protection enabled. A push that contains a detected
+credential may be blocked; revoke and rotate exposed credentials instead of
+disabling the protection.
+
 ## Catalog safety boundary
 
 The catalog contains links and metadata for public `SKILL.md` files. A catalog
