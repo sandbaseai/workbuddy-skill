@@ -57,6 +57,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         for filename in ("index.html", "zh-CN.html"):
             with self.subTest(filename=filename):
                 html = (SITE / filename).read_text(encoding="utf-8")
+                self.assertNotIn("21,818", html)
                 self.assertIn('type="application/opensearchdescription+xml"', html)
                 self.assertIn('rel="icon" href="favicon.svg"', html)
                 self.assertIn('href="packages.html"', html)
