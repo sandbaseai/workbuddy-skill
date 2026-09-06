@@ -59,6 +59,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
                 html = (SITE / filename).read_text(encoding="utf-8")
                 self.assertIn('type="application/opensearchdescription+xml"', html)
                 self.assertIn('rel="icon" href="favicon.svg"', html)
+                self.assertIn('href="packages.html"', html)
                 self.assertIn('property="og:image"', html)
                 self.assertIn('property="og:locale"', html)
                 self.assertIn('property="og:locale:alternate"', html)
