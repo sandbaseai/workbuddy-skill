@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Add the MIT-licensed MnemoPort resource for local WorkBuddy asset portability, with explicit limits around auto-memory, account data, and plugins.
 - Add the official WorkBuddy Memory guide to the bilingual resource maps and machine-readable index for long-term preference management.
 - Add official WorkBuddy product-overview and Agents quickstart links to the bilingual quickstarts, resource maps, and machine-readable index.
 - Show repository and unique-source counts alongside the Atlas catalog size so the frozen snapshot is easier to interpret.
