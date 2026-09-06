@@ -95,6 +95,8 @@ class RefreshWorkflowTests(unittest.TestCase):
     def test_resource_link_check_is_read_only_and_scheduled(self):
         workflow = (ROOT / ".github/workflows/check-resource-links.yml").read_text(encoding="utf-8")
         self.assertIn("schedule:", workflow)
+        self.assertIn("pull_request:", workflow)
+        self.assertIn('"README.md"', workflow)
         self.assertIn("workflow_dispatch", workflow)
         self.assertIn("contents: read", workflow)
         self.assertIn("scripts/check_resource_links.py", workflow)

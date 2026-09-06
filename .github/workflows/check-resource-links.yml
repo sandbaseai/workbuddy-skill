@@ -1,6 +1,20 @@
 name: Check resource links
 
 on:
+  push:
+    paths:
+      - "README.md"
+      - "docs/**"
+      - "site/**"
+      - "scripts/check_resource_links.py"
+      - ".github/workflows/check-resource-links.yml"
+  pull_request:
+    paths:
+      - "README.md"
+      - "docs/**"
+      - "site/**"
+      - "scripts/check_resource_links.py"
+      - ".github/workflows/check-resource-links.yml"
   workflow_dispatch:
   schedule:
     - cron: "17 4 * * 1"
