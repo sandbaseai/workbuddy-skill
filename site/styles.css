@@ -146,6 +146,26 @@ input:focus, select:focus { outline: 3px solid rgba(17, 122, 75, .25); border-co
 footer { min-height: 100px; padding: 30px 5vw; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 footer a { color: var(--accent-dark); font-weight: 700; }
 .footer-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 16px; }
+.directory-page { min-height: 100vh; }
+.directory-header, .directory-main { max-width: 1200px; margin: auto; padding: 0 5vw; }
+.directory-header { padding-top: 30px; }
+.directory-nav, .directory-footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.directory-nav { padding-bottom: 34px; border-bottom: 1px solid var(--line); color: var(--muted); }
+.directory-nav a, .directory-footer a { color: var(--accent-dark); font-weight: 700; text-decoration: none; }
+.directory-header h1 { max-width: 850px; margin: 70px 0 24px; font-size: clamp(3.3rem, 8vw, 7rem); }
+.directory-lede { max-width: 62ch; color: var(--muted); font-size: 1.15rem; line-height: 1.6; }
+.directory-main { padding-top: 55px; padding-bottom: 100px; }
+.category-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+.category-card { min-height: 190px; padding: 25px; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: var(--radius); color: var(--ink); background: var(--panel); box-shadow: 0 15px 40px rgba(34, 46, 34, .05); text-decoration: none; }
+.category-card:hover, .category-card:focus-visible { border-color: var(--accent); transform: translateY(-2px); }
+.category-card strong { font-size: 1.35rem; }
+.category-card span { margin-top: 12px; color: var(--muted); line-height: 1.5; }
+.category-card b { margin-top: auto; padding-top: 22px; color: var(--accent-dark); font-size: .82rem; }
+.directory-note { margin-top: 55px; padding: 30px; border-radius: var(--radius); color: white; background: var(--accent-dark); }
+.directory-note h2 { font-size: clamp(2rem, 4vw, 3.5rem); }
+.directory-note p { max-width: 72ch; color: #c8e0d2; line-height: 1.6; }
+.directory-note a { color: white; font-weight: 750; }
+.directory-footer { max-width: 1200px; margin: auto; padding: 30px 5vw; color: var(--muted); }
 
 @media (min-width: 768px) and (max-width: 1100px) {
   .filter-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -169,6 +189,11 @@ footer a { color: var(--accent-dark); font-weight: 700; }
   .method { padding: 85px 20px; }
   .method-grid { grid-template-columns: 1fr; gap: 42px; }
   footer { padding: 30px 20px; align-items: flex-start; flex-direction: column; }
+  .directory-header, .directory-main { padding-left: 20px; padding-right: 20px; }
+  .directory-nav { align-items: flex-start; flex-direction: column; }
+  .directory-header h1 { margin-top: 55px; }
+  .category-grid { grid-template-columns: 1fr; }
+  .directory-footer { padding: 30px 20px; align-items: flex-start; flex-direction: column; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -209,6 +209,7 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("https://sandbaseai.github.io/workbuddy-skill/catalog.json", sitemap)
         self.assertIn("https://sandbaseai.github.io/workbuddy-skill/packages.json", sitemap)
         self.assertIn("https://sandbaseai.github.io/workbuddy-skill/packages.html", sitemap)
+        self.assertIn("https://sandbaseai.github.io/workbuddy-skill/categories.html", sitemap)
         self.assertIn("https://sandbaseai.github.io/workbuddy-skill/llms.txt", sitemap)
 
     def test_pages_actions_use_current_node_runtime_generations(self):

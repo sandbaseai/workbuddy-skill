@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Add a shareable, SEO-friendly category directory that routes users into stable Atlas filters without adding catalog records.
 - Make no-match local catalog searches actionable with Atlas and current GitHub `SKILL.md` discovery links while keeping JSON output machine-readable.
 - Add a backup-first WorkBuddy account-migration troubleshooting path and a rights-aware external reference for restoring conversations, memory, and connectors.
 - Add the MIT-licensed WorkBuddy Chat Manager as a high-risk, backup-first recovery and cleanup reference.
