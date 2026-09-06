@@ -8,6 +8,7 @@ All notable changes to this project are documented here.
 - Keep the catalog guide and resource map focused on public discovery instead of snapshot verification details.
 - Make the Atlas status note point users to upstream source links instead of exposing catalog construction behavior.
 - Pin the README's direct `gh skill install` examples to the current reviewed release for reproducible setup.
+- Add the official WorkBuddy Privacy Policy to the bilingual resource map and machine-readable entrypoint.
 - Simplify the bilingual quickstarts with shortest-path guidance for installing, searching, and adapting Skills.
 - Remove internal catalog maintenance instructions from the public catalog README.
 - Reject query-bearing or structurally incomplete immutable raw URLs.
