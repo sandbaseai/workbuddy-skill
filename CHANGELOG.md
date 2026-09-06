@@ -8,6 +8,7 @@ All notable changes to this project are documented here.
 - Added bilingual task-based Starter Packs pages so users can choose an existing reviewed package before searching the full catalog.
 - Atlas search now matches the full copyable catalog ID, making CLI results and shared provenance identifiers searchable in the web UI.
 - Expanded the bilingual resource maps with a WorkBuddy Harness research book, a community ecosystem index, and a rights-aware public-market archive reference; none are catalog records.
+- Added direct bilingual Starter Packs links to the Atlas primary navigation.
 - Added bilingual WorkBuddy resource maps covering official product docs, community learning, evaluation material, and local catalog guides.
 - Added direct Atlas navigation to the resource maps, plus a post-use feedback and Star prompt that does not perform account actions.
 - Atlas now derives and displays the current count of reviewed WorkBuddy packages from `catalog-meta.json`.
