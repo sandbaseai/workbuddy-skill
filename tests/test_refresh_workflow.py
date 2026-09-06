@@ -150,6 +150,12 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn("agentic-awesome-skills", resources)
             self.assertIn("AI-Coding-Guide-Zh", resources)
             self.assertIn("agency-agents-zh", resources)
+            if name.endswith("zh-CN.md"):
+                self.assertIn("仓库当前未声明许可证", resources)
+                self.assertNotIn("MIT 许可的中文专家角色集合", resources)
+            else:
+                self.assertIn("no repository license is currently declared", resources)
+                self.assertNotIn("MIT-licensed Chinese collection", resources)
             self.assertIn("workbuddy-usage-status", resources)
             self.assertIn("markitdown-skill", resources)
             self.assertIn("learn-workbuddy", resources)
