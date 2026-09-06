@@ -1,0 +1,52 @@
+name: Reviewed package feedback
+description: Report a download, verification, import, or run issue for an existing package
+title: "[Package feedback]: "
+labels: [bug, reviewed-package]
+body:
+  - type: markdown
+    attributes:
+      value: Please remove secrets, tokens, private prompts, and customer data before submitting.
+  - type: input
+    id: package
+    attributes:
+      label: Package name or URL
+      description: Use the package name or the public Release/Atlas link.
+      placeholder: oss-review or https://github.com/sandbaseai/workbuddy-skill/releases/...
+    validations:
+      required: true
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Failure stage
+      options:
+        - Download
+        - SHA256 verification
+        - WorkBuddy import
+        - First run
+        - Connector or permission
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: WorkBuddy and package version
+      placeholder: WorkBuddy 4.x / package v4.66.0
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and sanitized error
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Include the operating system and the smallest public or synthetic input that reproduces the issue.

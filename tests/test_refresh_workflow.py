@@ -173,10 +173,14 @@ class RefreshWorkflowTests(unittest.TestCase):
     def test_feedback_templates_match_the_frozen_catalog_scope(self):
         feature = (ROOT / ".github/ISSUE_TEMPLATE/feature.yml").read_text(encoding="utf-8")
         showcase = (ROOT / ".github/ISSUE_TEMPLATE/showcase.yml").read_text(encoding="utf-8")
+        package_feedback = (ROOT / ".github/ISSUE_TEMPLATE/package-feedback.yml").read_text(encoding="utf-8")
         self.assertIn("Existing reviewed package or workflow", feature)
         self.assertIn("Documentation or usability", feature)
         self.assertIn("Skill, connector, or external capability", showcase)
         self.assertIn("frozen snapshot", feature)
+        self.assertIn("Failure stage", package_feedback)
+        self.assertIn("SHA256 verification", package_feedback)
+        self.assertIn("reviewed-package", package_feedback)
 
     def test_pull_request_template_preserves_frozen_catalog_and_validation_gates(self):
         template = (ROOT / ".github/PULL_REQUEST_TEMPLATE.md").read_text(encoding="utf-8")
