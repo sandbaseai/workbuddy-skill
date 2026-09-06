@@ -149,6 +149,25 @@ for package in packages:
         f"<a href=\"{escape(package['download_url'], quote=True)}\">Download ZIP</a> · "
         f"<a href=\"{escape(package['checksum_url'], quote=True)}\">SHA256SUMS</a></p></li>"
     )
+package_item_list = json.dumps(
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Reviewed WorkBuddy Packages",
+        "numberOfItems": len(packages),
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": position,
+                "name": package["name"],
+                "url": package["source_url"],
+            }
+            for position, package in enumerate(packages, start=1)
+        ],
+    },
+    ensure_ascii=False,
+    separators=(",", ":"),
+).replace("</", "<\\/")
 package_page = """<!doctype html>
 <html lang="en">
   <head>
@@ -157,6 +176,7 @@ package_page = """<!doctype html>
     <link rel="canonical" href="https://sandbaseai.github.io/workbuddy-skill/packages.html">
     <meta name="description" content="Browse 277 reviewed WorkBuddy packages with pinned GitHub sources, ZIP downloads, and SHA256 checksums.">
     <title>Reviewed WorkBuddy Packages · Skill Atlas</title>
+    <script type="application/ld+json">""" + package_item_list + """</script>
     <style>
       :root { color-scheme: light; font-family: system-ui, sans-serif; line-height: 1.5; }
       body { max-width: 980px; margin: 0 auto; padding: 2rem 1rem 4rem; color: #24302f; background: #f5f1e8; }
