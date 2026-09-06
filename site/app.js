@@ -10,6 +10,7 @@ const unique = document.querySelector("#unique");
 const minScore = document.querySelector("#min-score");
 const highSignal = document.querySelector("#high-signal");
 const resetFilters = document.querySelector("#reset-filters");
+const copyLink = document.querySelector("#copy-link");
 const empty = document.querySelector("#empty");
 const error = document.querySelector("#error");
 const more = document.querySelector("#more");
@@ -82,6 +83,26 @@ async function copyCatalogId(button) {
   const original = button.textContent;
   button.textContent = isChinese ? "已复制" : "Copied";
   setTimeout(() => { button.textContent = original; }, 1600);
+}
+
+async function copySearchLink() {
+  const value = location.href;
+  try {
+    await navigator.clipboard.writeText(value);
+  } catch {
+    const helper = document.createElement("textarea");
+    helper.value = value;
+    helper.setAttribute("readonly", "");
+    helper.style.position = "fixed";
+    helper.style.opacity = "0";
+    document.body.append(helper);
+    helper.select();
+    document.execCommand("copy");
+    helper.remove();
+  }
+  const original = copyLink.textContent;
+  copyLink.textContent = isChinese ? "链接已复制" : "Link copied";
+  setTimeout(() => { copyLink.textContent = original; }, 1600);
 }
 
 function render(reset = true) {
@@ -173,6 +194,7 @@ resetFilters.addEventListener("click", () => {
   unique.checked = true;
   search();
 });
+copyLink.addEventListener("click", copySearchLink);
 more.addEventListener("click", () => render(false));
 results.addEventListener("click", (event) => {
   const button = event.target.closest(".copy-id");
