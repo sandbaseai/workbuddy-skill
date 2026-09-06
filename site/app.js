@@ -60,7 +60,7 @@ function restoreUrlState() {
   unique.checked = params.get("duplicates") !== "all";
 }
 
-function syncUrlState() {
+function syncUrlState(historyMode = "replace") {
   const params = new URLSearchParams();
   if (input.value.trim()) params.set("q", input.value.trim());
   for (const [name, control] of Object.entries({ category, compatibility, security, source: sourceContext })) {
@@ -70,7 +70,7 @@ function syncUrlState() {
   if (minScore.value !== "all") params.set("minScore", minScore.value);
   if (!unique.checked) params.set("duplicates", "all");
   const query = params.toString();
-  history.replaceState(null, "", `${location.pathname}${query ? `?${query}` : ""}${location.hash}`);
+  history[`${historyMode}State`](null, "", `${location.pathname}${query ? `?${query}` : ""}${location.hash}`);
   syncLanguageLink();
 }
 
@@ -143,7 +143,7 @@ function render(reset = true) {
   results.setAttribute("aria-busy", "false");
 }
 
-function search() {
+function search({ historyMode = "replace" } = {}) {
   const terms = input.value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
   filtered = catalog.filter((skill) => {
     const searchable = `${skill.n} ${skill.r} ${skill.p}`.toLocaleLowerCase();
@@ -171,18 +171,14 @@ function search() {
   } else if (sort.value === "name") {
     filtered.sort(byName);
   }
-  syncUrlState();
+  syncUrlState(historyMode);
   render();
 }
 
 input.addEventListener("input", search);
-category.addEventListener("change", search);
-compatibility.addEventListener("change", search);
-security.addEventListener("change", search);
-sourceContext.addEventListener("change", search);
-sort.addEventListener("change", search);
-unique.addEventListener("change", search);
-minScore.addEventListener("change", search);
+for (const control of [category, compatibility, security, sourceContext, sort, unique, minScore]) {
+  control.addEventListener("change", () => search({ historyMode: "push" }));
+}
 highSignal.addEventListener("click", () => {
   compatibility.value = "all";
   security.value = "no-static-flags";
@@ -190,7 +186,7 @@ highSignal.addEventListener("click", () => {
   minScore.value = "85";
   sort.value = "score";
   unique.checked = true;
-  search();
+  search({ historyMode: "push" });
 });
 resetFilters.addEventListener("click", () => {
   input.value = "";
@@ -201,12 +197,12 @@ resetFilters.addEventListener("click", () => {
   minScore.value = "all";
   sort.value = "score";
   unique.checked = true;
-  search();
+  search({ historyMode: "push" });
 });
 copyLink.addEventListener("click", copySearchLink);
 window.addEventListener("popstate", () => {
   restoreUrlState();
-  if (catalog.length) search();
+  if (catalog.length) search({ historyMode: "replace" });
 });
 more.addEventListener("click", () => render(false));
 results.addEventListener("click", (event) => {

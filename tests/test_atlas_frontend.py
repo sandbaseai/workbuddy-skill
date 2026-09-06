@@ -22,6 +22,8 @@ class AtlasFrontendTests(unittest.TestCase):
         self.assertIn("new URLSearchParams(location.search)", self.app)
         self.assertIn("copySearchLink", self.app)
         self.assertIn('window.addEventListener("popstate"', self.app)
+        self.assertIn('history[`${historyMode}State`]', self.app)
+        self.assertIn('search({ historyMode: "push" })', self.app)
         self.assertIn("syncLanguageLink", self.app)
         self.assertIn("control.value = control.options[0].value", self.app)
         self.assertIn("meta.records.toLocaleString()", self.app)
