@@ -82,11 +82,16 @@ sha256sum --check SHA256SUMS --ignore-missing
 ```
 
 If `sha256sum` is unavailable, use the repository's cross-platform Python
-helper instead:
+helper instead. The helper also rejects an extra WorkBuddy ZIP that is absent
+from `SHA256SUMS`:
 
 ```bash
 python3 scripts/verify_release.py workbuddy-download
 ```
+
+When the repository is available locally, prefer the Python helper for the
+complete package-set check; use `sha256sum` when you only need to verify the
+selected archive.
 
 ### 2. Import
 

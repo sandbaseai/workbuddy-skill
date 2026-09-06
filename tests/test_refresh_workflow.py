@@ -39,6 +39,10 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn("--pattern SHA256SUMS", quickstart)
             self.assertIn("sha256sum --check SHA256SUMS --ignore-missing", quickstart)
             self.assertIn("scripts/verify_release.py", quickstart)
+            if name.endswith("zh-CN.md"):
+                self.assertIn("额外 WorkBuddy ZIP", quickstart)
+            else:
+                self.assertIn("rejects an extra WorkBuddy ZIP", quickstart)
             self.assertIn("open.workbuddy.cn", quickstart)
             expected_connector = (
                 "open.workbuddy.cn/docs/connector"

@@ -113,6 +113,10 @@ gh release download --repo sandbaseai/workbuddy-skill \
 cd workbuddy-download && sha256sum --check SHA256SUMS --ignore-missing
 ```
 
+For the complete package-set check, run `python3 scripts/verify_release.py
+workbuddy-download` from a local repository checkout; it also rejects extra
+WorkBuddy ZIPs that are absent from `SHA256SUMS`.
+
 The human-readable package page exposes the exact `download_command` for every reviewed package. Do not install a catalog-only record as if it were a reviewed package; inspect its immutable source first.
 
 ## Local query

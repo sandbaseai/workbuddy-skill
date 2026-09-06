@@ -101,6 +101,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("packages-schema.json", content)
         self.assertIn("download_command", content)
         self.assertIn("sha256sum --check SHA256SUMS --ignore-missing", content)
+        self.assertIn("rejects extra", content)
         self.assertIn("Experts · Skills · Connectors", content)
         self.assertIn("catalog-only", content)
         self.assertIn("https://agentskills.io/specification", content)
