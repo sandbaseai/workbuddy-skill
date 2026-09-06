@@ -32,6 +32,8 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Tencent WorkBuddy benchmark: https://github.com/Tencent/workbuddy-bench
 - GitSkills public Skill dataset research: https://arxiv.org/abs/2608.10906
 - SWE-Skills-Bench requirement-driven evaluation: https://arxiv.org/abs/2603.15401
+- SkillsBench paired Skill/no-Skill evaluation: https://arxiv.org/abs/2602.12670
+- Agent Skill Evaluation and Evolution survey: https://arxiv.org/abs/2606.11435
 - Community Awesome WorkBuddy index (navigation only): https://github.com/staruhub/awesome-workbuddy
 - WorkBuddy multi-agent skill groups (inspect attribution and licenses): https://github.com/darker2016/workbuddy-skill-groups
 - WorkBuddy public-market archive (offline study; respect original rights): https://github.com/infometa/workbuddyskills

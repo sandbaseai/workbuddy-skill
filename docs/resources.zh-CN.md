@@ -41,6 +41,8 @@
 - [Tencent WorkBuddy Bench](https://github.com/Tencent/workbuddy-bench)——覆盖 Code、Web、Office 和 Security 工作负载的可复现 Agent 任务评测，支持 Docker 运行和结果报告。
 - [GitSkills](https://arxiv.org/abs/2608.10906)——对数百万公开 `SKILL.md` 文件进行整理和分析的研究数据集；用于理解生态规模，不是安装源。
 - [SWE-Skills-Bench](https://arxiv.org/abs/2603.15401)——以需求驱动的基准，评估公开 Skill 是否能改善真实软件工程任务。
+- [SkillsBench](https://arxiv.org/abs/2602.12670)——使用确定性验证器，对有 Skill 与无 Skill 的 Agent 任务进行配对评测。
+- [Agent Skill Evaluation and Evolution](https://arxiv.org/abs/2606.11435)——梳理评测、反馈、压缩和进化框架，可用于设计质量门禁。
 - [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy)——精选生态参考。
 - [Community Awesome WorkBuddy](https://github.com/staruhub/awesome-workbuddy)——另一份双语官方资源、工作流、教程和对比索引；仅用于导航，不替代信任或许可证判断。
 - [WorkBuddy Skill Groups](https://github.com/darker2016/workbuddy-skill-groups)——覆盖工程、研究、营销、设计、法律、财税和数据的多 Agent 专家团工作流集合；复用前仍需逐目录检查归属和许可证。

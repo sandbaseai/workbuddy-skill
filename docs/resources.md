@@ -41,6 +41,8 @@ Use this page to choose the right source before searching the catalog.
 - [Tencent WorkBuddy Bench](https://github.com/Tencent/workbuddy-bench) — reproducible Agent task evaluation across Code, Web, Office, and Security workloads, with Docker-based runs and reports.
 - [GitSkills](https://arxiv.org/abs/2608.10906) — research dataset and analysis of millions of public `SKILL.md` files; useful for studying ecosystem scale, not an installation feed.
 - [SWE-Skills-Bench](https://arxiv.org/abs/2603.15401) — requirement-driven benchmark for measuring whether public Skills improve real software-engineering tasks.
+- [SkillsBench](https://arxiv.org/abs/2602.12670) — paired curated-Skill/no-Skill evaluation with deterministic verifiers across diverse tasks.
+- [Agent Skill Evaluation and Evolution](https://arxiv.org/abs/2606.11435) — survey of evaluation, feedback, compression, and evolution frameworks; useful when designing quality gates.
 - [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy) — curated ecosystem references.
 - [Community Awesome WorkBuddy](https://github.com/staruhub/awesome-workbuddy) — another bilingual index of official resources, workflows, tutorials, and comparisons; use as navigation, not as a trust or license decision.
 - [WorkBuddy Skill Groups](https://github.com/darker2016/workbuddy-skill-groups) — an open collection of multi-agent team workflows across engineering, research, marketing, design, legal, finance, and data; inspect each folder's attribution and license before reuse.

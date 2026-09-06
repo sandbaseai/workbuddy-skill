@@ -97,6 +97,8 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("https://github.com/yinqd3/workbuddy-skills", content)
         self.assertIn("https://github.com/mrzhangguoguo/oh-my-workbuddy", content)
         self.assertIn("https://github.com/Tencent/workbuddy-bench", content)
+        self.assertIn("arxiv.org/abs/2602.12670", content)
+        self.assertIn("arxiv.org/abs/2606.11435", content)
         self.assertIn("darker2016/workbuddy-skill-groups", content)
         self.assertIn(
             "https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide",
