@@ -149,7 +149,8 @@ for package in packages:
         f"<p><a href=\"{escape(package['source_url'], quote=True)}\">Inspect pinned source</a> · "
         f"<code title=\"Git blob SHA\">{escape(package['sha'])}</code> · "
         f"<a href=\"{escape(package['download_url'], quote=True)}\">Download ZIP</a> · "
-        f"<a href=\"{escape(package['checksum_url'], quote=True)}\">SHA256SUMS</a></p></li>"
+        f"<a href=\"{escape(package['checksum_url'], quote=True)}\">SHA256SUMS</a></p>"
+        f"<details><summary>Copy download command</summary><pre class=\"command\"><code>{escape(package['download_command'])}</code></pre></details></li>"
     )
 category_nav = " ".join(
     f"<a href=\"#category-{escape(category, quote=True)}\">{escape(category.title())}</a>"
@@ -201,6 +202,7 @@ package_page = """<!doctype html>
       h3 { margin: 0; font-size: 1.1rem; }
       p { margin: .35rem 0 0; }
       code { overflow-wrap: anywhere; }
+      pre.command { margin: .6rem 0 0; padding: .7rem; overflow-x: auto; background: #eef3ef; border-radius: .45rem; white-space: pre-wrap; }
       .badge { display: inline-block; padding: .1rem .45rem; border-radius: 999px; background: #dceee8; font-size: .8rem; }
       .category-nav { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: 1rem; }
       .category-nav a { padding: .25rem .6rem; border: 1px solid #b8cec7; border-radius: 999px; text-decoration: none; }

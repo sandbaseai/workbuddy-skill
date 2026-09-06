@@ -1,4 +1,5 @@
 import json
+from html import escape
 from pathlib import Path
 import subprocess
 import sys
@@ -37,6 +38,10 @@ class SiteDataTests(unittest.TestCase):
         self.assertEqual(package_page.count('"@type":"ListItem"'), len(packages))
         self.assertIn("Machine-readable JSON index", package_page)
         self.assertTrue(all(package["sha"] in package_page for package in packages))
+        self.assertEqual(package_page.count("<details>"), len(packages))
+        self.assertTrue(
+            all(escape(package["download_command"]) in package_page for package in packages)
+        )
         self.assertTrue(all(package["download_url"].endswith("-workbuddy-skill.zip") for package in packages))
         self.assertTrue(all(package["asset"].endswith("-workbuddy-skill.zip") for package in packages))
         self.assertTrue(all(package["checksum_url"].endswith("/SHA256SUMS") for package in packages))
