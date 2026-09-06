@@ -75,6 +75,7 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn("yinqd3/workbuddy-skills", resources)
             self.assertIn("oh-my-workbuddy", resources)
             self.assertIn("open.workbuddy.cn", resources)
+            self.assertIn("what-is-open-platform", resources)
             self.assertIn("workbuddy-bench", resources)
             self.assertIn("Skill Atlas", resources)
             self.assertIn("use-cases.md", resources)

@@ -12,6 +12,7 @@ Use this page to choose the right source before searching the catalog.
 - [Automation guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide) — automation workflows.
 - [Skill Marketplace](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) and [Explore](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Explore) — built-in capabilities.
 - [Open Platform Skill guide](https://open.workbuddy.cn/en/docs/skill) — official Marketplace placement, ZIP troubleshooting, frontmatter fields, and sub-resource layout.
+- [Open Platform overview](https://open.workbuddy.cn/en/docs/what-is-open-platform) — the full onboarding, development, test, review, publishing, and maintenance path.
 
 ## Learning and evaluation
 

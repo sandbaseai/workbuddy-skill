@@ -12,6 +12,7 @@
 - [Automation 指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide)——自动化工作流。
 - [Skill Marketplace](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) 和 [Explore](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Explore)——内置能力。
 - [Open Platform Skill 指南](https://open.workbuddy.cn/zh/docs/skill)——官方说明 Marketplace 入口、ZIP 解析排查、frontmatter 字段和子资源目录结构。
+- [Open Platform 总览](https://open.workbuddy.cn/docs/what-is-open-platform)——从入驻、开发、测试、审核到发布和维护的完整流程。
 
 ## 学习与评测
 

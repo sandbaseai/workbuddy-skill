@@ -100,6 +100,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("open.workbuddy.cn/docs/connector", content)
         self.assertIn("open.workbuddy.cn/en/docs/openapi", content)
         self.assertIn("open.workbuddy.cn/docs/openapi", content)
+        self.assertIn("what-is-open-platform", content)
         self.assertIn("scripts/verify_release.py", content)
         self.assertIn("www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills", content)
         self.assertIn("Function-Description/Skills-Market", content)
