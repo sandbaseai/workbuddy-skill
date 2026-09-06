@@ -15,6 +15,7 @@ github:owner/repository:path/to/SKILL.md
 ## 2. 正确理解审阅字段
 
 - **WorkBuddy 状态**描述的是适配准备度，不代表可信度。`workbuddy-ready` 表示发现了预期元数据；`adaptable` 表示还需要少量改造；`needs-review` 和 `unreviewed` 需要进一步检查。
+- **精选包是否可用**是另一套信号。标记为精选包的结果，表示本仓库在 Release 中提供了固定来源的 WorkBuddy ZIP；并不是所有 `workbuddy-ready` 条目都有 ZIP，只有目录记录也不等于自动不安全。
 - **评分**是 0–100 的兼容性提示，不是质量、安全性或性能评分。
 - **安全状态**只报告保守的静态信号。`no-static-flags` 仅表示扫描器没有匹配到已知模式，不代表安全；仍要阅读脚本、网络调用、凭据和权限。
 - **Copies**表示有多少个目录路径共享同一个 blob SHA，是来源线索，不是热度或可信度评分。想让相同内容只显示一次时使用 `--unique`。

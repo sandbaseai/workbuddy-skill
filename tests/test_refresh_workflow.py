@@ -124,6 +124,12 @@ class RefreshWorkflowTests(unittest.TestCase):
             guide = (ROOT / path).read_text(encoding="utf-8")
             self.assertIn("--package-status reviewed", guide)
 
+    def test_catalog_guides_distinguish_compatibility_and_package_signals(self):
+        english = (ROOT / "docs/catalog-guide.md").read_text(encoding="utf-8")
+        chinese = (ROOT / "docs/catalog-guide.zh-CN.md").read_text(encoding="utf-8")
+        self.assertIn("Reviewed package availability", english)
+        self.assertIn("精选包是否可用", chinese)
+
     def test_public_freshness_metadata_matches_site_schedule(self):
         catalog_docs = (ROOT / "catalog/README.md").read_text(encoding="utf-8")
         sitemap = (ROOT / "site/sitemap.xml").read_text(encoding="utf-8")

@@ -14,6 +14,7 @@ All notable changes to this project are documented here.
 - Added bilingual navigation entries for the CC0 [awesome-workbuddy](https://github.com/semlinker/awesome-workbuddy) index and MIT [WorkBuddy Starter](https://github.com/sunyet-01/WorkBuddy-Starter) beginner guide.
 - Added a direct Chinese quickstart link to the no-JavaScript reviewed-package index.
 - Added a rights-aware navigation entry for the MIT WorkBuddy × ChatCut MCP OAuth/PKCE integration example; no third-party code was copied.
+- Clarified the difference between catalog compatibility status and reviewed-package availability in the bilingual catalog guides.
 - Added a SHA-256 snapshot fingerprint to generated catalog metadata so consumers can verify the exact frozen `skills.jsonl` bytes.
 - Added task-based bilingual resource navigation, Skill evaluation references, and an English `gh skill` installation example.
 - Published a no-JavaScript reviewed-package index with 277 source-pinned entries and ItemList metadata for web discovery.

@@ -21,6 +21,10 @@ content can change.
 - **WorkBuddy status** describes packaging readiness, not trust. `workbuddy-ready`
   means the expected metadata was found; `adaptable` means the package needs
   small changes; `needs-review` and `unreviewed` need more inspection.
+- **Reviewed package availability** is a separate signal. A result marked as a
+  reviewed package has a repository-maintained, source-pinned WorkBuddy ZIP in
+  Releases; it does not mean every catalog record with `workbuddy-ready` has a
+  ZIP, and a catalog-only result is not automatically unsafe.
 - **Score** is a compatibility hint from 0–100. It is not a quality, security,
   or performance rating.
 - **Security status** reports conservative static signals. `no-static-flags`
