@@ -28,6 +28,17 @@ Skills，查看来源与许可证，选择适合的能力，并下载经过整�
 
 首次使用请看[中文快速开始](docs/quickstart.zh-CN.md)；想按目的选择官方文档、教程或评测资料，可看[资源地图](docs/resources.zh-CN.md)；不确定如何判断目录结果时，先看[目录条目解读](docs/catalog-guide.zh-CN.md)；需要把公开 Skill 做成 WorkBuddy 包，请看[适配教程](docs/adapting-skills.zh-CN.md)。
 如果希望按任务直接选一个起点，可看 [Starter Packs 入门包](docs/starter-packs.zh-CN.md)。
+
+不知道从哪里开始时，可以先按任务选择：
+
+| 目标 | 推荐入口 |
+|---|---|
+| 审查代码或排查故障 | [Starter Packs：代码评审 / 调试](docs/starter-packs.zh-CN.md) |
+| 构建测试或 Web 应用 | [Starter Packs：测试](docs/starter-packs.zh-CN.md) |
+| 设计后端或 API | [Starter Packs：架构 / API](docs/starter-packs.zh-CN.md) |
+| 做有来源的研究 | [Starter Packs：研究](docs/starter-packs.zh-CN.md) |
+| 安全使用 MCP | [Starter Packs：MCP 安全](docs/starter-packs.zh-CN.md) |
+| 编写或整理文档 | [Starter Packs：文档](docs/starter-packs.zh-CN.md) |
 需要程序化读取时，可直接使用[紧凑目录 JSON](https://sandbaseai.github.io/workbuddy-skill/catalog.json)及其[字段 Schema](https://sandbaseai.github.io/workbuddy-skill/catalog-schema.json)；目录快照字段见[元数据](https://sandbaseai.github.io/workbuddy-skill/catalog-meta.json)及其[Schema](https://sandbaseai.github.io/workbuddy-skill/catalog-meta-schema.json)；只想列出可安装精选包时，使用[精选包 JSON](https://sandbaseai.github.io/workbuddy-skill/packages.json)及其[Schema](https://sandbaseai.github.io/workbuddy-skill/packages-schema.json)。
 
 1. 在 [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) 或[中文目录](https://sandbaseai.github.io/workbuddy-skill/zh-CN.html)中搜索需求。
@@ -237,6 +248,17 @@ For formal citations in papers, reports, or internal documentation, see [CITATIO
 
 Start with the [English quickstart](docs/quickstart.md), use the [resource map](docs/resources.md) to choose official docs or reference material, read the [catalog reading guide](docs/catalog-guide.md) when reviewing results, or use the [adaptation guide](docs/adapting-skills.md) to package a public Skill for WorkBuddy.
 For a task-based first choice, see the [Starter packs](docs/starter-packs.md).
+
+If you are unsure where to begin, choose by task:
+
+| Goal | Starting point |
+|---|---|
+| Review code or debug a failure | [Starter packs: review / debugging](docs/starter-packs.md) |
+| Build tests or test a web app | [Starter packs: testing](docs/starter-packs.md) |
+| Design a backend or API | [Starter packs: architecture / API](docs/starter-packs.md) |
+| Research with sources | [Starter packs: research](docs/starter-packs.md) |
+| Use MCP safely | [Starter packs: MCP security](docs/starter-packs.md) |
+| Write maintainable documentation | [Starter packs: documentation](docs/starter-packs.md) |
 For programmatic access, use the [compact catalog JSON](https://sandbaseai.github.io/workbuddy-skill/catalog.json) and its [field Schema](https://sandbaseai.github.io/workbuddy-skill/catalog-schema.json). Snapshot fields are described by [catalog metadata](https://sandbaseai.github.io/workbuddy-skill/catalog-meta.json) and its [Schema](https://sandbaseai.github.io/workbuddy-skill/catalog-meta-schema.json). To list only installable reviewed packages, use the [reviewed package JSON](https://sandbaseai.github.io/workbuddy-skill/packages.json) and its [Schema](https://sandbaseai.github.io/workbuddy-skill/packages-schema.json).
 
 1. Search the [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/).
