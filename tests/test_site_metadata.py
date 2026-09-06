@@ -71,6 +71,10 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("scripts/adapt_skill.py", content)
         self.assertIn("CITATION.cff", content)
         self.assertIn("not a security guarantee", content)
+        self.assertIn(
+            "https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide",
+            content,
+        )
         self.assertIn("21,818 indexed Skills", content)
         self.assertIn("new catalog records are not automatically added", content)
         self.assertIn("docs/catalog-guide.md", content)
