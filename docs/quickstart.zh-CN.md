@@ -63,11 +63,13 @@ cd workbuddy-download
 sha256sum --check SHA256SUMS --ignore-missing
 ```
 
-如果环境没有 `sha256sum`，也可以使用仓库提供的跨平台 Python 校验器：
+如果环境没有 `sha256sum`，也可以使用仓库提供的跨平台 Python 校验器；它还会拒绝不在 `SHA256SUMS` 中的额外 WorkBuddy ZIP：
 
 ```bash
 python3 scripts/verify_release.py workbuddy-download
 ```
+
+如果本地已经有仓库，建议优先使用 Python 校验器完成整套包检查；只想校验选中的 ZIP 时，再使用 `sha256sum`。
 
 ### 2. 导入
 
