@@ -50,6 +50,7 @@
 - [WorkBuddy Skill Groups](https://github.com/darker2016/workbuddy-skill-groups)——覆盖工程、研究、营销、设计、法律、财税和数据的多 Agent 专家团工作流集合；复用前仍需逐目录检查归属和许可证。
 - [WorkBuddy Skills 归档](https://github.com/infometa/workbuddyskills)——用于离线学习的公开市场归档；该仓库明确说明内容版权归原作者，不代表允许再分发。
 - [Community WorkBuddy skills collection](https://github.com/bitcjm/workbuddy-skills)——按场景分类的社区技能集合，并说明用户级/项目级安装方式；复用前仍需检查脚本、依赖和许可证。
+- [WorkBuddy × ChatCut MCP](https://github.com/chonpszhou/workbuddy-chatcut-mcp)——MIT 许可的 OAuth/PKCE 与 Streamable HTTP MCP 接入案例，附带本地凭证和密钥扫描说明；使用前仍需确认第三方账号和媒体数据边界。
 
 ## 本仓库
 
