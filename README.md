@@ -236,7 +236,7 @@ The catalog is for discovery, not automatic approval. Review every external Skil
 
 ## Contributing
 
-Issues and pull requests are welcome. To nominate a public Skill, include its exact source, license, permissions, and the user problem it solves. Please never commit API keys, access tokens, private prompts, or customer data.
+Issues and pull requests are welcome for documentation, usability, validation, and existing reviewed package improvements. Please never commit API keys, access tokens, private prompts, or customer data.
 
 For help, see [SUPPORT.md](SUPPORT.md); for vulnerability reports, see [SECURITY.md](SECURITY.md). Release history is in the [changelog](CHANGELOG.md).
 
