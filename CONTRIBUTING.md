@@ -37,7 +37,8 @@ GitHub auto-merge is enabled for this repository, and merged branches are delete
 automatically. Use auto-merge only after the required checks and human review for
 the change have completed; this setting does not bypass validation or source review.
 The restricted `Enable safe auto-merge` workflow queues squash auto-merge only for
-trusted contributors working from branches in this repository; it never checks out
+trusted contributors (`OWNER`, `MEMBER`, `COLLABORATOR`, or `CONTRIBUTOR`) working
+from branches in this repository; it never checks out
 pull-request code. Pull requests from forks remain manual so untrusted workflow
 content cannot receive write permissions.
 The `main` branch requires the `validate` status check for pull requests and

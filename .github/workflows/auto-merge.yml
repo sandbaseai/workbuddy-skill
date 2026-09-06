@@ -32,7 +32,7 @@ jobs:
             exit 0
           fi
           case ",$AUTHOR_ASSOCIATION," in
-            *,OWNER,*|*,MEMBER,*|*,COLLABORATOR,*) ;;
+            *,OWNER,*|*,MEMBER,*|*,COLLABORATOR,*|*,CONTRIBUTOR,*) ;;
             *) echo "Untrusted author association ($AUTHOR_ASSOCIATION); leaving merge manual."; exit 0 ;;
           esac
           gh pr merge "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --auto --squash --delete-branch

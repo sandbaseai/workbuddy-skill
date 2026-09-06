@@ -183,6 +183,7 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn('[[ \"$HEAD_REPOSITORY\" != \"$GITHUB_REPOSITORY\" ]]', workflow)
         self.assertIn('[[ \"$DRAFT\" == \"true\" ]]', workflow)
         self.assertIn("AUTHOR_ASSOCIATION", workflow)
+        self.assertIn("*,CONTRIBUTOR,*)", workflow)
         self.assertIn("author_association", workflow)
         self.assertIn("--auto --squash --delete-branch", workflow)
         self.assertNotIn("actions/checkout", workflow)
