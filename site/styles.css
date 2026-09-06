@@ -114,6 +114,7 @@ input:focus, select:focus { outline: 3px solid rgba(17, 122, 75, .25); border-co
 .badge { padding: 6px 9px; border: 1px solid #bdc3b9; border-radius: 999px; color: var(--muted); font: 650 .7rem/1 monospace; }
 .badge.flagged { color: #8b2929; border-color: #d7aaaa; background: #fff8f7; }
 .badge.source-review { color: #725116; border-color: #d7bf8c; background: #fffaf0; }
+.badge.package-review { color: var(--accent-dark); border-color: #9bc9b0; background: #f1fff6; }
 .result-open, .result-install { align-self: center; color: var(--accent-dark); font-size: .84rem; font-weight: 750; white-space: nowrap; }
 .result-install { padding: 7px 10px; border-radius: 999px; color: white; background: var(--accent-dark); text-decoration: none; }
 .result-install:hover, .result-install:focus-visible { background: var(--ink); }

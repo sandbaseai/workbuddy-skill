@@ -146,6 +146,7 @@ function render(reset = true) {
         ${skill.c > 1 ? `<span class="badge">${skill.c} copies</span>` : ""}
         <span class="badge ${skill.k === "flagged" ? "flagged" : ""}">${escapeHtml(skill.k)}</span>
         ${skill.o === "review-source" ? `<span class="badge source-review" title="${escapeHtml((skill.x || []).join(", "))}">${isChinese ? "来源待审" : "source review"}</span>` : ""}
+        ${skill.a ? `<span class="badge package-review">${isChinese ? "精选包" : "reviewed package"}</span>` : ""}
         <button class="copy-id" type="button" data-catalog-id="${escapeHtml(catalogId(skill))}">${isChinese ? "复制 ID" : "Copy ID"}</button>
         ${skill.a ? `<a class="result-install" href="${escapeHtml(skill.a)}">${isChinese ? "安装 ZIP" : "Install ZIP"} ↓</a>` : ""}
         <a class="result-open" href="${escapeHtml(skill.u)}" target="_blank" rel="noreferrer">${isChinese ? "查看来源" : "Inspect"} ↗</a>
