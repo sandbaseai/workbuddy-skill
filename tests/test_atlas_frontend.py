@@ -62,6 +62,9 @@ class AtlasFrontendTests(unittest.TestCase):
         self.assertIn("return a < b ? -1 : a > b ? 1 : 0;", self.app)
         self.assertIn("const bySource = (left, right) => compareStable(left.r, right.r) || compareStable(left.p, right.p);", self.app)
         self.assertIn('} else if (sort.value === "source") {', self.app)
+        self.assertIn("${catalogId(skill)}", self.app)
+        self.assertIn("catalog ID", self.english)
+        self.assertIn("目录 ID", self.chinese)
 
     def test_mobile_navigation_can_wrap(self):
         self.assertIn(".nav { height: auto;", self.styles)

@@ -25,7 +25,7 @@
     <meta name="twitter:description" content="A provenance-first public index of Agent Skills for WorkBuddy.">
     <meta name="twitter:image" content="https://sandbaseai.github.io/workbuddy-skill/social-preview.png">
     <title>WorkBuddy Skill Atlas</title>
-    <link rel="stylesheet" href="styles.css?v=0.10.0">
+    <link rel="stylesheet" href="styles.css?v=0.11.0">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -105,8 +105,8 @@
         <div class="search-panel">
           <div class="filter-grid">
             <div class="field search-field">
-              <label for="search">Search name, repository, or path</label>
-              <input id="search" type="search" autocomplete="off" placeholder="Try: research, video, spreadsheet…" disabled>
+              <label for="search">Search name, repository, path, or catalog ID</label>
+              <input id="search" type="search" autocomplete="off" placeholder="Try: research, video, or github:owner/repo…" disabled>
               <div class="search-examples" aria-label="Example searches">
                 <button class="search-example" type="button" data-search="research" disabled>Research</button>
                 <button class="search-example" type="button" data-search="OCR" disabled>OCR</button>
@@ -213,6 +213,6 @@
     <noscript>
       <p class="noscript-note">JavaScript is required for interactive search. You can still browse the <a href="catalog.json">static catalog</a> or read the <a href="https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.md">quickstart</a>.</p>
     </noscript>
-    <script src="app.js?v=0.10.0" defer></script>
+    <script src="app.js?v=0.11.0" defer></script>
   </body>
 </html>
