@@ -156,7 +156,7 @@ for package in packages:
         f"<a href=\"{escape(package['download_url'], quote=True)}\">Download ZIP</a> · "
         f"<a href=\"{escape(package['checksum_url'], quote=True)}\">SHA256SUMS</a></p>"
         f"<details><summary>Copy download command</summary>"
-        f"<button type=\"button\" class=\"copy-command\" data-command=\"{escape(package['download_command'], quote=True)}\">Copy command / 复制命令</button>"
+        f"<button type=\"button\" class=\"copy-command\" aria-label=\"Copy download command for {escape(package['name'], quote=True)}\" data-command=\"{escape(package['download_command'], quote=True)}\">Copy command / 复制命令</button>"
         "<span class=\"copy-status\" role=\"status\" aria-live=\"polite\"></span>"
         f"<pre class=\"command\"><code>{escape(package['download_command'])}</code></pre></details></li>"
     )

@@ -52,6 +52,7 @@ class SiteDataTests(unittest.TestCase):
         self.assertIn("/discussions", package_page)
         self.assertIn("item.dataset.search.toLowerCase().includes(query)", package_page)
         self.assertEqual(package_page.count('class="copy-command"'), len(packages))
+        self.assertEqual(package_page.count('aria-label="Copy download command for '), len(packages))
         self.assertEqual(package_page.count('class="copy-status"'), len(packages))
         self.assertIn("navigator.clipboard.writeText(text)", package_page)
         self.assertIn("document.execCommand('copy')", package_page)
