@@ -67,7 +67,7 @@ class ReviewSkillTests(unittest.TestCase):
             "id": "github:owner/mirror:_archive/demo/SKILL.md",
             "repository": "owner/mirror",
             "path": "_archive/demo/SKILL.md",
-            "sha": "blob",
+            "sha": "b" * 40,
             "source_url": "https://example.test/source",
             "repository_fork": True,
             "raw_url": "https://raw.githubusercontent.com/owner/mirror/" + "a" * 40 + "/_archive/demo/SKILL.md",
@@ -91,6 +91,21 @@ class ReviewSkillTests(unittest.TestCase):
             "raw_url": "https://raw.githubusercontent.com/owner/repo/main/skills/demo/SKILL.md",
         }
         with self.assertRaisesRegex(SystemExit, "not pinned to a full Git commit"):
+            build_report(source, record=record)
+
+    def test_rejects_invalid_catalog_blob_sha(self):
+        source = "---\nname: demo\ndescription: Demo workflow\n---\n"
+        record = {
+            "id": "github:owner/repo:skills/demo/SKILL.md",
+            "repository": "owner/repo",
+            "path": "skills/demo/SKILL.md",
+            "sha": "not-a-blob-sha",
+            "source_url": "https://github.com/owner/repo/blob/"
+            + "a" * 40 + "/skills/demo/SKILL.md",
+            "raw_url": "https://raw.githubusercontent.com/owner/repo/"
+            + "a" * 40 + "/skills/demo/SKILL.md",
+        }
+        with self.assertRaisesRegex(SystemExit, "valid blob SHA"):
             build_report(source, record=record)
 
     def test_cli_rejects_symlinked_local_source_file(self):

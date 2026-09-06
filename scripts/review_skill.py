@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
+import re
 
 from adapt_skill import (
     DEFAULT_CATALOG,
@@ -39,6 +40,10 @@ def build_report(
 ) -> dict:
     if record:
         immutable_github_source(record)
+        if not isinstance(record.get("sha"), str) or not re.fullmatch(
+            r"[0-9a-f]{40,64}", record["sha"]
+        ):
+            raise SystemExit("catalog record does not contain a valid blob SHA")
     analysis = analyze_text(source_text)
     valid, fields = parse_frontmatter(source_text)
     requested = [str(path) for path in resource_paths(source_text)]
