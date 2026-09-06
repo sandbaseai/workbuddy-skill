@@ -57,6 +57,17 @@ class ResourceDiscoveryTests(unittest.TestCase):
             ("acme/tools", "a" * 40, "skills/demo"),
         )
 
+    def test_rejects_immutable_source_that_is_not_skill_md(self):
+        record = {
+            "raw_url": "https://raw.githubusercontent.com/acme/tools/"
+            + "a" * 40
+            + "/skills/demo/README.md"
+        }
+        with self.assertRaisesRegex(
+            SystemExit, "does not contain an immutable GitHub raw URL"
+        ):
+            immutable_github_source(record)
+
 
 class LocalPackagingTests(unittest.TestCase):
     def test_parses_folded_frontmatter_and_preserves_argument_hint(self):

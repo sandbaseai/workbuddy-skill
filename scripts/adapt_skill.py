@@ -76,7 +76,11 @@ def immutable_github_source(record: dict) -> tuple[str, str, str]:
     """Resolve owner/repository, immutable commit, and skill directory."""
     parsed = urlparse(record["raw_url"])
     parts = parsed.path.lstrip("/").split("/")
-    if parsed.netloc != "raw.githubusercontent.com" or len(parts) < 4:
+    if (
+        parsed.netloc != "raw.githubusercontent.com"
+        or len(parts) < 4
+        or Path(parts[-1]).name.casefold() != "skill.md"
+    ):
         raise SystemExit("catalog record does not contain an immutable GitHub raw URL")
     owner, repository, commit = parts[:3]
     if not re.fullmatch(r"[0-9a-f]{40}", commit):
