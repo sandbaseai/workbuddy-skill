@@ -136,6 +136,20 @@ gh skill preview owner/repository skills/path/to/skill
 gh skill install owner/repository skills/path/to/skill --pin v1.2.0 --dir .workbuddy/skills
 ```
 
+For a host-managed destination, choose the host and scope explicitly. This
+also avoids silently installing an unpinned default-branch version:
+
+```bash
+gh skill preview sandbaseai/workbuddy-skill skills/oss-review
+gh skill install sandbaseai/workbuddy-skill skills/oss-review \
+  --agent codex --scope project --pin v4.66.0
+```
+
+Use `--scope user` for a user-wide installation, or `--dir` for a custom
+directory. Supported agents and scopes change with this preview command; check
+the [current install reference](https://cli.github.com/manual/gh_skill_install)
+before copying a command into automation.
+
 If your host does not provide `gh skill`, use the source link from the Atlas and
 follow the [adaptation guide](adapting-skills.md) instead. Installation is always
 an explicit step after you review the source and permissions.
