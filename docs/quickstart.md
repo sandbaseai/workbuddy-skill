@@ -82,9 +82,12 @@ In WorkBuddy, open **Experts · Skills · Connectors → Skills → Add Skill**,
 If a connector is involved, complete this preflight before the first real task:
 
 1. Identify the connector's required service, account, scopes, and whether it uses MCP + Skill or CLI + Skill.
-2. Authenticate through WorkBuddy's connector flow; never paste tokens or API keys into the conversation.
-3. Run its status or read-only operation first, and confirm the target workspace and data boundary.
-4. Ask the Skill to name every write, message, paid call, and external side effect before approving it.
+2. Prefer MCP + Skill for a network API. Choose CLI + Skill only when the CLI is mature and cross-platform; the two approaches cannot be mixed in one connector.
+3. Authenticate through WorkBuddy's connector flow; never paste tokens or API keys into the conversation.
+4. Run its status or read-only operation first, and confirm the target workspace and data boundary.
+5. Ask the Skill to name every write, message, paid call, and external side effect before approving it.
+
+For CLI connectors, use the connector's declared install and status steps rather than assuming a system-wide Node.js or Python installation. WorkBuddy can provide a managed runtime when the connector declares one; see the [official Connector guide](https://open.workbuddy.cn/en/docs/connector) for the current fields and authentication flow.
 
 ### 3. Run a safe first check
 

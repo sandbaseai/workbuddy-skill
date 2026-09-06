@@ -64,9 +64,12 @@ python3 scripts/verify_release.py workbuddy-download
 如果使用连接器，第一次执行真实任务前先做以下检查：
 
 1. 确认连接器需要的服务、账号、权限范围，以及它采用 MCP + Skill 还是 CLI + Skill。
-2. 通过 WorkBuddy 的连接器流程完成认证，不要把 Token 或 API Key 粘贴到对话中。
-3. 先执行状态检查或只读操作，并确认目标工作区和数据边界。
-4. 让 Skill 在批准前列出所有写入、发消息、付费调用和外部副作用。
+2. 网络 API 优先选择 MCP + Skill；只有在 CLI 成熟且跨平台时才选择 CLI + Skill；同一个连接器不能混用两种方式。
+3. 通过 WorkBuddy 的连接器流程完成认证，不要把 Token 或 API Key 粘贴到对话中。
+4. 先执行状态检查或只读操作，并确认目标工作区和数据边界。
+5. 让 Skill 在批准前列出所有写入、发消息、付费调用和外部副作用。
+
+对于 CLI 连接器，应使用连接器声明的安装和状态步骤，不要假设系统已经安装 Node.js 或 Python。连接器声明运行时后，WorkBuddy 可以提供受管理的运行环境；字段和认证流程请以[官方连接器指南](https://open.workbuddy.cn/docs/connector)为准。
 
 ### 3. 先做一次安全的试运行
 

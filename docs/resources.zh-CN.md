@@ -7,7 +7,7 @@
 - [快速开始](https://www.workbuddy.ai/docs/zh/workbuddy/Quickstart)——安装和第一次使用。
 - [创建 Skills](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills)——编写 Skill。
 - [MCP 指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide)——MCP 概念和配置。
-- [Open Platform 连接器指南](https://open.workbuddy.cn/docs/connector)——官方说明 MCP + Skill 与 CLI + Skill 的选择、运行时、凭证、OAuth 和权限约束。
+- [Open Platform 连接器指南](https://open.workbuddy.cn/docs/connector)——官方建议网络 API 优先使用 MCP + Skill，仅在 CLI 成熟且跨平台时使用 CLI + Skill，并说明运行时、凭证、OAuth 和权限。
 - [Open API 接口文档](https://open.workbuddy.cn/docs/openapi)——WorkBuddy 集成的官方 API 与 OAuth 参考。
 - [GitHub CLI `gh skill` 手册](https://cli.github.com/manual/gh_skill)——用于搜索、预览、安装和更新 Agent Skill 的 preview 命令。
 - [Automation 指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide)——自动化工作流。
