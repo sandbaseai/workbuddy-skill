@@ -104,7 +104,7 @@ input:focus, select:focus { outline: 3px solid rgba(17, 122, 75, .25); border-co
   padding: 25px 4px; border-bottom: 1px solid var(--line); text-decoration: none;
 }
 .result:hover { background: rgba(255,255,255,.58); }
-.result-name { overflow-wrap: anywhere; font-size: 1.08rem; font-weight: 750; }
+.result-name { margin: 0; overflow-wrap: anywhere; font-size: 1.08rem; font-weight: 750; }
 .result-source { min-width: 0; color: var(--muted); }
 .result-source span { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .result-source code {

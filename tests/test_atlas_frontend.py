@@ -110,6 +110,8 @@ class AtlasFrontendTests(unittest.TestCase):
         self.assertIn(".badge.package-review", self.styles)
         self.assertIn("curatedCountText.textContent", self.app)
         self.assertIn("${catalogId(skill)}", self.app)
+        self.assertIn('<h3 class="result-name">', self.app)
+        self.assertIn(".result-name { margin: 0;", self.styles)
         self.assertIn("catalog ID", self.english)
         self.assertIn("目录 ID", self.chinese)
 
