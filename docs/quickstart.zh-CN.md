@@ -8,6 +8,10 @@
 
 不确定如何判断搜索结果？先阅读[目录条目解读](catalog-guide.zh-CN.md)，再选择候选 Skill。
 
+如果你想找经过人工整理的 WorkBuddy 文档、MCP 集成、工作流和评测，也可以浏览
+[Awesome WorkBuddy 生态索引](https://github.com/sandbaseai/awesome-workbuddy)。它补充的是本仓库的
+广泛元数据目录，但不能替代对具体来源和许可证的检查。
+
 当前目录是 **21,818 条 Skill 的固定快照**。你可以用它寻找和审阅已有条目；不会自动发布新的 Skill。
 
 平台功能请优先参考[官方快速开始](https://www.workbuddy.ai/docs/zh/workbuddy/Quickstart)、[官方 Skills 教程](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills)、[MCP 指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide)和[Automation 指南](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide)。本仓库负责目录发现与打包说明；产品界面和平台行为以官方文档为准。

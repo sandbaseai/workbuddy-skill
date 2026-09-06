@@ -68,6 +68,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("docs/catalog-guide.md", content)
         self.assertIn("docs/catalog-guide.zh-CN.md", content)
         self.assertIn("github.com/sandbaseai/workbuddy-skill/discussions", content)
+        self.assertIn("github.com/sandbaseai/awesome-workbuddy", content)
         self.assertIn("www.workbuddy.ai/docs/zh/workbuddy/Quickstart", content)
         self.assertIn("Create-Skills", content)
         self.assertIn("MCP-Guide", content)

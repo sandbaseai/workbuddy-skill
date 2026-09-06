@@ -13,6 +13,7 @@ reviewed packages; new catalog records are not automatically added.
 - Compact JSON catalog: https://sandbaseai.github.io/workbuddy-skill/catalog.json
 - Catalog metadata: https://sandbaseai.github.io/workbuddy-skill/catalog-meta.json
 - Source repository: https://github.com/sandbaseai/workbuddy-skill
+- Curated WorkBuddy ecosystem index: https://github.com/sandbaseai/awesome-workbuddy
 - Discussions for usage examples and reviewed-package feedback: https://github.com/sandbaseai/workbuddy-skill/discussions
 - English quickstart: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.md
 - Chinese quickstart: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.zh-CN.md
