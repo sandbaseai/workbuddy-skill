@@ -114,6 +114,14 @@ class AtlasFrontendTests(unittest.TestCase):
         self.assertIn("flex-wrap: wrap", self.styles)
         self.assertIn("nav { flex: 1 1 100%;", self.styles)
 
+    def test_public_snapshot_note_points_users_to_upstream_sources(self):
+        for page in (self.english, self.chinese):
+            self.assertIn('class="snapshot-note"', page)
+            self.assertNotIn("does not automatically add new catalog records", page)
+            self.assertNotIn("不会自动增加新的目录记录", page)
+        self.assertIn("Follow each source link for upstream updates.", self.app)
+        self.assertIn("请通过来源链接查看上游更新。", self.app)
+
 
 if __name__ == "__main__":
     unittest.main()

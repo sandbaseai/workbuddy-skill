@@ -317,8 +317,8 @@ Promise.all([fetch("catalog.json"), fetch("catalog-meta.json"), fetch("packages.
     metricShas.textContent = meta.unique_content_shas.toLocaleString();
     metricRepositories.textContent = meta.repositories.toLocaleString();
     snapshotNote.textContent = isChinese
-      ? `固定快照：${meta.records.toLocaleString()} 条已索引 Skill。本网站不会自动增加新的目录记录。`
-      : `Frozen snapshot: ${meta.records.toLocaleString()} indexed Skills. This site does not automatically add new catalog records.`;
+      ? `当前目录：${meta.records.toLocaleString()} 条已索引 Skill。请通过来源链接查看上游更新。`
+      : `Catalog: ${meta.records.toLocaleString()} indexed Skills. Follow each source link for upstream updates.`;
     curatedCountText.textContent = isChinese
       ? `Release 中提供 ${meta.curated_adaptations.toLocaleString()} 个经过审阅的 WorkBuddy 包。`
       : `${meta.curated_adaptations.toLocaleString()} reviewed WorkBuddy packages are available from Releases.`;
