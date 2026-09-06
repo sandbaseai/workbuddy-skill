@@ -74,6 +74,11 @@ def resource_paths(source: str) -> list[PurePosixPath]:
 
 def immutable_github_source(record: dict) -> tuple[str, str, str]:
     """Resolve owner/repository, immutable commit, and skill directory."""
+    if "sha" in record and (
+        not isinstance(record["sha"], str)
+        or not re.fullmatch(r"[0-9a-f]{40,64}", record["sha"])
+    ):
+        raise SystemExit("catalog record does not contain a valid blob SHA")
     parsed = urlparse(record["raw_url"])
     parts = parsed.path.lstrip("/").split("/")
     if (

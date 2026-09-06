@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Apply blob SHA validation to adapted package provenance as well as review reports.
 - Validate catalog blob SHAs before review reports expose provenance.
 - Add the MIT-licensed QA Testing Guide as a reviewed external learning reference.
 - Require immutable catalog sources to point to a `SKILL.md` file.
