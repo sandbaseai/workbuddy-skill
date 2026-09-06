@@ -37,6 +37,7 @@ class AtlasFrontendTests(unittest.TestCase):
             self.assertIn("disabled", page)
             self.assertIn('aria-live="polite"', page)
             self.assertIn('id="external-search"', page)
+            self.assertIn('id="empty-reset"', page)
             self.assertIn('id="retry-load"', page)
             self.assertIn("feature.yml", page)
             if page is self.english:
@@ -94,6 +95,7 @@ class AtlasFrontendTests(unittest.TestCase):
         self.assertIn('meta.snapshot_frozen !== true', self.app)
         self.assertIn("async function loadCatalog()", self.app)
         self.assertIn('retryLoad.addEventListener("click", loadCatalog)', self.app)
+        self.assertIn('emptyReset.addEventListener("click", () => resetFilters.click())', self.app)
         self.assertIn("retryLoad.disabled = true", self.app)
         self.assertIn("retryLoad.disabled = false", self.app)
         self.assertIn("const compareStable = (left, right) =>", self.app)
