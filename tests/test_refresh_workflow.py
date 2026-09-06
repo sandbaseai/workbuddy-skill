@@ -339,6 +339,7 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn("semlinker/awesome-workbuddy", content)
             self.assertIn("sunyet-01/WorkBuddy-Starter", content)
             self.assertIn("chonpszhou/workbuddy-chatcut-mcp", content)
+            self.assertIn("zhuang-HE/workbuddy-harness", content)
         english = (ROOT / "docs/resources.md").read_text(encoding="utf-8")
         chinese = (ROOT / "docs/resources.zh-CN.md").read_text(encoding="utf-8")
         self.assertIn("not as a trust or license decision", english)
