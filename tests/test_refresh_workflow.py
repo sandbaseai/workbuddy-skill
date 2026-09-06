@@ -194,6 +194,15 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("interval: weekly", dependabot)
         self.assertIn("open-pull-requests-limit: 5", dependabot)
 
+    def test_codeql_scans_python_and_github_actions(self):
+        workflow = (ROOT / ".github/workflows/codeql.yml").read_text(encoding="utf-8")
+        self.assertIn("github/codeql-action/init@v4", workflow)
+        self.assertIn("github/codeql-action/analyze@v4", workflow)
+        self.assertIn("language: python", workflow)
+        self.assertIn("language: actions", workflow)
+        self.assertIn("security-events: write", workflow)
+        self.assertIn("timeout-minutes: 20", workflow)
+
     def test_validate_workflow_checks_generated_site_data(self):
         workflow = (ROOT / ".github/workflows/validate.yml").read_text(encoding="utf-8")
         self.assertIn("scripts/build_site_data.py", workflow)
