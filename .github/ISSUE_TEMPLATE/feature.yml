@@ -5,7 +5,7 @@ labels: [enhancement]
 body:
   - type: markdown
     attributes:
-      value: The public catalog is a frozen snapshot. Please use this form for an existing reviewed package or workflow improvement, not to request a new catalog record.
+      value: Use this form for a concrete workflow, documentation, usability, validation, or existing reviewed-package improvement. Include the desired outcome and a reproducible example when possible.
   - type: textarea
     id: job
     attributes:
