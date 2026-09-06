@@ -42,6 +42,7 @@
 - [WorkBuddy Usage Status](https://github.com/clancy-feng/workbuddy-usage-status)——MIT 许可、离线优先的用量看板，可分析本地 Token、credit、模型效率和错误；使用前仍需检查本地数据读取及可选凭据边界。
 - [markitdown-skill](https://github.com/stwhwing/markitdown-skill)——MIT 许可的文档和网页转 Markdown 工作流，默认启用 SSRF 防护，可选外部能力默认关闭；适配前仍需检查脚本和权限。
 - [Learn WorkBuddy](https://github.com/adongwanai/learn-workbuddy)——MIT clean-room 定位的 Agent Harness 架构课程。
+- [WorkBuddy Harness v2](https://github.com/zhuang-HE/workbuddy-harness)——可用于研究九维 Agent 基础设施、Hook/Eval 运行时、安全守护和基准用例；README 展示 MIT 标识，但仓库没有正式 `LICENSE` 文件，因此不能据此视为允许再分发。
 - [yinqd3/workbuddy-skills](https://github.com/yinqd3/workbuddy-skills)——MIT 许可的社区技能集合，包含学术研究、前端幻灯片和工具调用工作流；仅作为可审阅来源，不代表自动可信。
 - [oh-my-workbuddy](https://github.com/mrzhangguoguo/oh-my-workbuddy)——MIT 许可的双语 WorkBuddy 端口，可参考其目录化工作流约定。
 - [WorkBuddy Harness 机制蓝皮书](https://github.com/zjp1997720/zhijian-ai-bluebook-workbuddy-harness)——从本地文件、提示词拼装、扩展机制和安全边界理解 WorkBuddy，也提供[在线版](https://zjp1997720.github.io/zhijian-ai-bluebook-workbuddy-harness/)；仓库未声明许可证，仅作研究参考。
