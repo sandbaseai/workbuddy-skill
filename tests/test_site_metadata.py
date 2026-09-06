@@ -115,6 +115,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("not a security guarantee", content)
         self.assertIn("https://github.com/AlephAITech/WorkBuddyGuide", content)
         self.assertIn("https://github.com/Neo5093/workbuddy-guide", content)
+        self.assertIn("https://github.com/opcspace/WorkBuddy-Guide", content)
         self.assertIn("https://github.com/KimYx0207/AI-Coding-Guide-Zh", content)
         self.assertIn("https://github.com/adongwanai/learn-workbuddy", content)
         self.assertIn("https://github.com/yinqd3/workbuddy-skills", content)

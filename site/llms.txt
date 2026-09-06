@@ -27,6 +27,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Community task-oriented guide: https://github.com/AlephAITech/WorkBuddyGuide
 - WorkBuddyGuide online reading site: https://workbuddy.homes
 - MIT community WorkBuddy usage and troubleshooting reference: https://github.com/Neo5093/workbuddy-guide
+- Chinese WorkBuddy practice guide (verify freshness and license before reuse): https://github.com/opcspace/WorkBuddy-Guide
 - MIT WorkBuddy beginner starter: https://github.com/sunyet-01/WorkBuddy-Starter
 - MIT WorkBuddy-compatible QA testing reference: https://github.com/genapohub/qa-testing-guide
 - MIT agentic Skill catalog and control plane (research reference): https://github.com/sickn33/agentic-awesome-skills

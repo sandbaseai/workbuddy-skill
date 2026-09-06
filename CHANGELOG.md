@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Add the Chinese WorkBuddy Practice Guide as a rights-aware onboarding and troubleshooting reference without copying its content or Skills.
 - Add direct official WorkBuddy release-notes links to the bilingual README navigation.
 - Add the official WorkBuddy release-notes page so users can verify current SkillHub, plugin, connector, model, and UI behavior.
 - Add the community WorkBuddy Guide as a rights-aware troubleshooting and onboarding reference without copying its Skill or scripts.
