@@ -204,7 +204,9 @@ function render(reset = true) {
   }).join("");
   results.insertAdjacentHTML("beforeend", markup);
   shown += next.length;
-  count.textContent = isChinese ? `${filtered.length.toLocaleString()} 个结果` : `${filtered.length.toLocaleString()} results`;
+  count.textContent = isChinese
+    ? `显示 ${shown.toLocaleString()} / ${filtered.length.toLocaleString()} 个结果`
+    : `Showing ${shown.toLocaleString()} of ${filtered.length.toLocaleString()} results`;
   empty.hidden = filtered.length !== 0;
   more.hidden = shown >= filtered.length;
   results.setAttribute("aria-busy", "false");
