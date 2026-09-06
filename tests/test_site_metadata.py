@@ -161,6 +161,9 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("github.com/search?q=filename%3ASKILL.md&type=code", content)
         self.assertIn("docs/catalog-guide.md", content)
         self.assertIn("docs/catalog-guide.zh-CN.md", content)
+        catalog_guide_zh = (ROOT / "docs/catalog-guide.zh-CN.md").read_text(encoding="utf-8")
+        self.assertIn("--dry-run", catalog_guide_zh)
+        self.assertIn("--repository-only", catalog_guide_zh)
         self.assertIn("docs/starter-packs.md", content)
         self.assertIn("docs/starter-packs.zh-CN.md", content)
         for path in ("docs/starter-packs.md", "docs/starter-packs.zh-CN.md"):
