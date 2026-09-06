@@ -111,6 +111,8 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn("cli.github.com/manual/gh_skill", resources)
             self.assertIn("agentskills.io/specification", resources)
             self.assertIn("what-is-open-platform", resources)
+            self.assertIn("Efficient-Tips", resources)
+            self.assertIn("/FQA", resources)
             self.assertIn("workbuddy-bench", resources)
             self.assertIn("2602.12670", resources)
             self.assertIn("2606.11435", resources)

@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Add current official WorkBuddy tips and FAQ links to the bilingual resource map and LLM entrypoint.
 - Clarify GitHub CLI Skill installation with host selection, project/user scope, preview, and version pinning.
 - Reject symlinked files during Skill validation and packaging so external content cannot enter release ZIPs.
 - Added a post-upload release check that downloads every published ZIP and verifies it against `SHA256SUMS` before the workflow succeeds.

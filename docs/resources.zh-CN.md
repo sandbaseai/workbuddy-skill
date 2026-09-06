@@ -16,6 +16,8 @@
 ## 官方产品文档
 
 - [快速开始](https://www.workbuddy.ai/docs/zh/workbuddy/Quickstart)——安装和第一次使用。
+- [使用技巧](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Efficient-Tips)——提示词具体化、文件引用、迭代、工作区和 Skill 使用建议。
+- [常见问题](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/FQA)——WorkBuddy、Skill 更新、权限和连接器的常见问题。
 - [创建 Skills](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills)——编写 Skill。
 - [MCP 指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide)——MCP 概念和配置。
 - [Open Platform 连接器指南](https://open.workbuddy.cn/docs/connector)——官方建议网络 API 优先使用 MCP + Skill，仅在 CLI 成熟且跨平台时使用 CLI + Skill，并说明运行时、凭证、OAuth 和权限。

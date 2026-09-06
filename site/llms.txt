@@ -62,6 +62,8 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Catalog reading guide: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/catalog-guide.md
 - Chinese catalog reading guide: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/catalog-guide.zh-CN.md
 - Official WorkBuddy quickstart: https://www.workbuddy.ai/docs/zh/workbuddy/Quickstart
+- Official WorkBuddy tips and tricks: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Efficient-Tips
+- Official WorkBuddy FAQ: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/FQA
 - Vendor-neutral Agent Skills specification: https://agentskills.io/specification
 - Official Skills tutorial: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills
 - Official MCP guide: https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide
