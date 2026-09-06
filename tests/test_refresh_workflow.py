@@ -149,6 +149,7 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn("qa-testing-guide", resources)
             self.assertIn("agentic-awesome-skills", resources)
             self.assertIn("AI-Coding-Guide-Zh", resources)
+            self.assertIn("ecommerce-visual-copywriting-skill", resources)
             self.assertIn("agency-agents-zh", resources)
             if name.endswith("zh-CN.md"):
                 self.assertIn("仓库当前未声明许可证", resources)
