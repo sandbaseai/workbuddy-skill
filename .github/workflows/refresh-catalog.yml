@@ -43,6 +43,10 @@ jobs:
           python3 scripts/crawl_github_skills.py --target "$target" \
             --repository github/awesome-copilot \
             --repository anthropics/skills \
+            --repository obra/superpowers \
+            --repository calesthio/OpenMontage \
+            --repository blader/humanizer \
+            --repository muratcankoylan/Agent-Skills-for-Context-Engineering \
             --repository mvanhorn/last30days-skill \
             --repository kepano/obsidian-skills \
             --repository op7418/guizang-ppt-skill \
