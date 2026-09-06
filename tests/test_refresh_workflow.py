@@ -395,7 +395,8 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("blank_issues_enabled: false", config)
         self.assertIn("/discussions", config)
         self.assertIn("/security/advisories/new", config)
-        self.assertIn("#english", config)
+        self.assertIn("SUPPORT.zh-CN.md", config)
+        self.assertNotIn("#english", config)
 
     def test_pull_request_template_preserves_frozen_catalog_and_validation_gates(self):
         template = (ROOT / ".github/PULL_REQUEST_TEMPLATE.md").read_text(encoding="utf-8")

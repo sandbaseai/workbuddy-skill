@@ -1,8 +1,11 @@
 blank_issues_enabled: false
 contact_links:
   - name: WorkBuddy quickstart and resource map
-    url: https://github.com/sandbaseai/workbuddy-skill#english
+    url: https://github.com/sandbaseai/workbuddy-skill
     about: Start with the installation guide, catalog guide, and public resources.
+  - name: 中文支持与快速开始
+    url: https://github.com/sandbaseai/workbuddy-skill/blob/main/SUPPORT.zh-CN.md
+    about: 查看中文安装、排障、反馈和安全说明。
   - name: Share a workflow or ask the community
     url: https://github.com/sandbaseai/workbuddy-skill/discussions
     about: Share results, compare approaches, or ask a usage question.
