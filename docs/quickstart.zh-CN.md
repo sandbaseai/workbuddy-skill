@@ -36,8 +36,11 @@ gh release download \
   --repo sandbaseai/workbuddy-skill \
   --pattern 'oss-review-workbuddy-skill.zip' \
   --pattern SHA256SUMS \
-  --dir workbuddy-download
+  --dir workbuddy-download \
+  --clobber
 ```
+
+`--clobber` 会覆盖同名旧文件，方便你重复执行命令来刷新已有下载目录。
 
 不要解压后重新打包；安装包已经把 `SKILL.md` 放在 ZIP 根目录。
 

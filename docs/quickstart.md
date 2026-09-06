@@ -51,8 +51,12 @@ gh release download \
   --repo sandbaseai/workbuddy-skill \
   --pattern 'oss-review-workbuddy-skill.zip' \
   --pattern SHA256SUMS \
-  --dir workbuddy-download
+  --dir workbuddy-download \
+  --clobber
 ```
+
+The `--clobber` flag makes the command safe to repeat when you are refreshing
+an existing download directory.
 
 Do not unzip and repackage the archive: `SKILL.md` is already at the archive root.
 

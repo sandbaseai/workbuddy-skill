@@ -26,6 +26,7 @@ class RefreshWorkflowTests(unittest.TestCase):
         for name in ("docs/quickstart.md", "docs/quickstart.zh-CN.md"):
             quickstart = (ROOT / name).read_text(encoding="utf-8")
             self.assertIn("gh release download \\\n", quickstart)
+            self.assertIn("--clobber", quickstart)
             self.assertIn("--repo sandbaseai/workbuddy-skill", quickstart)
             self.assertIn("--pattern SHA256SUMS", quickstart)
             self.assertIn("sha256sum --check SHA256SUMS --ignore-missing", quickstart)

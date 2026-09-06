@@ -85,6 +85,7 @@ class AtlasFrontendTests(unittest.TestCase):
         self.assertIn("packageInstallCommand", self.app)
         self.assertIn("--pattern '", self.app)
         self.assertIn("SHA256SUMS", self.app)
+        self.assertIn("--clobber", self.app)
         self.assertIn("copyInstallCommand", self.app)
         self.assertIn("copy-install", self.app)
         self.assertIn(".copy-install", self.styles)

@@ -36,6 +36,7 @@ All notable changes to this project are documented here.
 - Added a CI validator that checks generated `catalog.json` against the published Schema contract.
 - Added the official GitHub CLI `gh skill` manual to the installation and resource paths.
 - Added direct bilingual Atlas footer links to the compact data file and its Schema.
+- Made copied and documented release download commands repeatable with `--clobber`.
 - Added bilingual WorkBuddy resource maps covering official product docs, community learning, evaluation material, and local catalog guides.
 - Added direct Atlas navigation to the resource maps, plus a post-use feedback and Star prompt that does not perform account actions.
 - Atlas now derives and displays the current count of reviewed WorkBuddy packages from `catalog-meta.json`.

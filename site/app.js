@@ -70,7 +70,7 @@ function packageAsset(skill) {
 function packageInstallCommand(skill) {
   const asset = packageAsset(skill);
   return asset
-    ? `gh release download --repo sandbaseai/workbuddy-skill --pattern '${asset}' --pattern SHA256SUMS --dir workbuddy-download`
+    ? `gh release download --repo sandbaseai/workbuddy-skill --pattern '${asset}' --pattern SHA256SUMS --dir workbuddy-download --clobber`
     : "";
 }
 
