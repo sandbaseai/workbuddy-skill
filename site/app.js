@@ -19,6 +19,7 @@ const metricRecords = document.querySelector("#metric-records");
 const metricShas = document.querySelector("#metric-shas");
 const metricRepositories = document.querySelector("#metric-repositories");
 const snapshotNote = document.querySelector("#snapshot-note");
+const heroCount = document.querySelector("#hero-count");
 const isChinese = document.documentElement.lang.startsWith("zh");
 
 let catalog = [];
@@ -225,6 +226,7 @@ Promise.all([fetch("catalog.json"), fetch("catalog-meta.json")])
     catalog = data;
     filtered = data;
     metricRecords.textContent = meta.records.toLocaleString();
+    heroCount.textContent = meta.records.toLocaleString();
     metricShas.textContent = meta.unique_content_shas.toLocaleString();
     metricRepositories.textContent = meta.repositories.toLocaleString();
     snapshotNote.textContent = isChinese

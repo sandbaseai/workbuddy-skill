@@ -16,6 +16,7 @@ class AtlasFrontendTests(unittest.TestCase):
             self.assertIn('id="copy-link"', page)
             self.assertIn('id="language-link"', page)
             self.assertIn('id="snapshot-note"', page)
+            self.assertIn('id="hero-count"', page)
 
     def test_url_state_supports_sharing_and_browser_history(self):
         self.assertIn("new URLSearchParams(location.search)", self.app)
@@ -24,6 +25,7 @@ class AtlasFrontendTests(unittest.TestCase):
         self.assertIn("syncLanguageLink", self.app)
         self.assertIn("control.value = control.options[0].value", self.app)
         self.assertIn("meta.records.toLocaleString()", self.app)
+        self.assertIn("heroCount.textContent", self.app)
 
 
 if __name__ == "__main__":
