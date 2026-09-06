@@ -72,6 +72,8 @@ class AtlasFrontendTests(unittest.TestCase):
         self.assertIn('class="badge package-review"', self.app)
         self.assertIn("reviewed package", self.app)
         self.assertIn("精选包", self.app)
+        self.assertIn("个副本", self.app)
+        self.assertIn("`${skill.c} copies`", self.app)
         self.assertIn(".badge.package-review", self.styles)
         self.assertIn("curatedCountText.textContent", self.app)
         self.assertIn("${catalogId(skill)}", self.app)

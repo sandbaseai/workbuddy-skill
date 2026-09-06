@@ -144,7 +144,7 @@ function render(reset = true) {
       <span class="result-meta">
         <span class="badge">${skill.q ?? "—"}/100</span>
         <span class="badge">${escapeHtml(skill.g)}</span>
-        ${skill.c > 1 ? `<span class="badge">${skill.c} copies</span>` : ""}
+        ${skill.c > 1 ? `<span class="badge">${isChinese ? `${skill.c} 个副本` : `${skill.c} copies`}</span>` : ""}
         <span class="badge ${skill.k === "flagged" ? "flagged" : ""}">${escapeHtml(skill.k)}</span>
         ${skill.o === "review-source" ? `<span class="badge source-review" title="${escapeHtml((skill.x || []).join(", "))}">${isChinese ? "来源待审" : "source review"}</span>` : ""}
         ${skill.a ? `<span class="badge package-review">${isChinese ? "精选包" : "reviewed package"}</span>` : ""}
