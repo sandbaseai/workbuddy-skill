@@ -12,12 +12,19 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from crawl_github_skills import (  # noqa: E402
     rate_limit_delay,
     repository_skill_rows,
+    main,
     wait_for_rate_limit,
     write_stats,
 )
 
 
 class RateLimitTests(unittest.TestCase):
+    def test_default_published_catalog_requires_explicit_opt_in(self):
+        with patch("sys.argv", ["crawl_github_skills.py"]):
+            with self.assertRaises(SystemExit) as raised:
+                main()
+        self.assertEqual(raised.exception.code, 2)
+
     @patch("crawl_github_skills.time.time", return_value=1_000)
     def test_delay_uses_largest_server_boundary(self, _time):
         self.assertEqual(

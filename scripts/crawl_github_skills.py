@@ -24,6 +24,10 @@ USER_AGENT = "sandbaseai-workbuddy-skill-catalog/0.2"
 MAX_THROTTLE_RETRIES = 8
 
 
+def is_frozen_catalog(path: Path) -> bool:
+    return path.resolve() == DEFAULT_OUT.resolve()
+
+
 def rate_limit_delay(headers: dict) -> int:
     reset = int(headers.get("X-RateLimit-Reset", "0"))
     retry_after = int(headers.get("Retry-After", "0"))
@@ -246,6 +250,11 @@ def main() -> int:
         help="Largest SKILL.md size searched by default (override for broader scans)",
     )
     parser.add_argument("--output", type=Path, default=DEFAULT_OUT)
+    parser.add_argument(
+        "--allow-frozen-catalog",
+        action="store_true",
+        help="Explicitly opt in before writing the published frozen catalog",
+    )
     parser.add_argument("--checkpoint-every", type=int, default=5)
     parser.add_argument(
         "--max-rate-wait",
@@ -270,6 +279,11 @@ def main() -> int:
         parser.error(
             "require target > 0, max-requests > 0, max-rate-wait > 0, "
             "and 0 < start-bytes <= max-bytes"
+        )
+    if is_frozen_catalog(args.output) and not args.allow_frozen_catalog:
+        parser.error(
+            "catalog/skills.jsonl is frozen; choose another --output or pass "
+            "--allow-frozen-catalog explicitly"
         )
 
     token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN", "")

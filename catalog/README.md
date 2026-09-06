@@ -44,6 +44,11 @@ The published snapshot is frozen. Do not run the crawler or add records; use the
 validation and site-build commands above to verify documentation and presentation
 changes without changing the catalog.
 
+The historical crawler also refuses to write the published `skills.jsonl` by
+default. Use another output path for research exports; changing the published
+snapshot requires the explicit `--allow-frozen-catalog` opt-in and a deliberate
+review of the resulting metadata.
+
 The Atlas build derives deterministic work categories from skill names and
 paths and counts identical SHA occurrences. Categories and copy counts are
 navigation aids, not quality or safety endorsements.
