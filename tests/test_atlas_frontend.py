@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 class AtlasFrontendTests(unittest.TestCase):
     def setUp(self):
         self.app = (ROOT / "site/app.js").read_text(encoding="utf-8")
+        self.styles = (ROOT / "site/styles.css").read_text(encoding="utf-8")
         self.english = (ROOT / "site/index.html").read_text(encoding="utf-8")
         self.chinese = (ROOT / "site/zh-CN.html").read_text(encoding="utf-8")
 
@@ -31,6 +32,11 @@ class AtlasFrontendTests(unittest.TestCase):
         self.assertIn("meta.records.toLocaleString()", self.app)
         self.assertIn("heroCount.textContent", self.app)
         self.assertIn('meta.snapshot_frozen !== true', self.app)
+
+    def test_mobile_navigation_can_wrap(self):
+        self.assertIn(".nav { height: auto;", self.styles)
+        self.assertIn("flex-wrap: wrap", self.styles)
+        self.assertIn("nav { flex: 1 1 100%;", self.styles)
 
 
 if __name__ == "__main__":

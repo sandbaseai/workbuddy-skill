@@ -132,8 +132,8 @@ footer a { color: var(--accent-dark); font-weight: 700; }
 }
 
 @media (max-width: 767px) {
-  .nav { padding: 0 20px; }
-  nav { gap: 14px; }
+  .nav { height: auto; min-height: 68px; padding: 14px 20px; align-items: flex-start; flex-wrap: wrap; gap: 12px; }
+  nav { flex: 1 1 100%; gap: 8px 14px; justify-content: flex-end; flex-wrap: wrap; }
   .hero { min-height: auto; padding: 70px 20px 50px; grid-template-columns: 1fr; gap: 45px; }
   h1 { font-size: clamp(3.1rem, 15vw, 5rem); }
   .signal-field { min-height: 360px; }
