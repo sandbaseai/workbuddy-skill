@@ -2,7 +2,7 @@ name: Enable safe auto-merge
 
 on:
   pull_request_target:
-    types: [opened, synchronize, reopened]
+    types: [opened, synchronize, reopened, ready_for_review]
 
 # This workflow never checks out or executes pull-request code. It only asks
 # GitHub to queue an auto-merge for trusted branches in this repository.

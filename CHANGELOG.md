@@ -23,6 +23,7 @@ All notable changes to this project are documented here.
 - Added one-click command copying to each reviewed-package entry, with the full command remaining visible for manual copying.
 - Added bilingual labels and status text to the reviewed-package search and command-copy controls.
 - Added an ARIA live status for copy success and failure so keyboard and screen-reader users receive feedback.
+- Fixed trusted auto-merge coverage for draft pull requests when they become ready for review.
 - Added bilingual guidance distinguishing the portable Agent Skills specification from WorkBuddy's Marketplace metadata and connector contracts.
 - Added a SHA-256 snapshot fingerprint to generated catalog metadata so consumers can verify the exact frozen `skills.jsonl` bytes.
 - Added task-based bilingual resource navigation, Skill evaluation references, and an English `gh skill` installation example.

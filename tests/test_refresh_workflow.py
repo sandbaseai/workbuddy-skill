@@ -178,6 +178,7 @@ class RefreshWorkflowTests(unittest.TestCase):
     def test_auto_merge_only_queues_trusted_same_repository_pull_requests(self):
         workflow = (ROOT / ".github/workflows/auto-merge.yml").read_text(encoding="utf-8")
         self.assertIn("pull_request_target", workflow)
+        self.assertIn("ready_for_review", workflow)
         self.assertIn("head.repo.full_name == github.repository", workflow)
         self.assertIn("author_association", workflow)
         self.assertIn("--auto --squash --delete-branch", workflow)
