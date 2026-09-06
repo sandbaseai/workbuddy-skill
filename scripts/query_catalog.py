@@ -30,7 +30,7 @@ def package_download_command(asset: str) -> str:
 
 
 def matches(row: dict, terms: list[str], category_overrides: dict[str, str] | None = None) -> bool:
-    category = (category_overrides or {}).get(catalog_id(row), category_for(row))
+    category = row_category(row, category_overrides)
     haystack = " ".join(
         str(row.get(field, ""))
         for field in (
@@ -46,6 +46,10 @@ def matches(row: dict, terms: list[str], category_overrides: dict[str, str] | No
     ).casefold()
     haystack = f"{haystack} {category} {catalog_id(row).casefold()}"
     return all(term.casefold() in haystack for term in terms)
+
+
+def row_category(row: dict, category_overrides: dict[str, str] | None = None) -> str:
+    return (category_overrides or {}).get(catalog_id(row), category_for(row))
 
 
 def query_rows(
@@ -74,7 +78,7 @@ def query_rows(
         if matches(row, terms, category_overrides)
         and (
             category is None
-            or (category_overrides or {}).get(catalog_id(row), category_for(row)) == category
+            or row_category(row, category_overrides) == category
         )
         and (status is None or row.get("workbuddy_status") == status)
         and (security is None or row.get("security_status") == security)
@@ -247,6 +251,7 @@ def main() -> int:
         output_rows = []
         for row in results:
             output = dict(row)
+            output["workbuddy_category"] = row_category(row, category_overrides)
             package_url = curated_urls.get(catalog_id(row))
             if package_url:
                 output["workbuddy_package_url"] = package_url
@@ -270,6 +275,7 @@ def main() -> int:
             print(f"  WorkBuddy asset: {asset}")
             print(f"  WorkBuddy checksum: {CHECKSUM_URL}")
             print(f"  WorkBuddy download: {package_download_command(asset)}")
+        print(f"  category: {row_category(row, category_overrides)}")
         print(
             f"  review: {row['workbuddy_status']} ({row.get('workbuddy_score', '—')}/100); "
             f"security: {row['security_status']}; copies: {copies[row.get('sha')]}"

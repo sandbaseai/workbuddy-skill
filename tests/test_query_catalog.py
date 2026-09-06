@@ -286,6 +286,7 @@ class QueryCatalogTests(unittest.TestCase):
                 finally:
                     sys.argv = old_argv
         result = json.loads(output.getvalue())[0]
+        self.assertEqual(result["workbuddy_category"], "research")
         self.assertEqual(result["workbuddy_package_url"], package_url)
         self.assertEqual(result["workbuddy_package_asset"], "research-workbuddy-skill.zip")
         self.assertTrue(result["workbuddy_checksum_url"].endswith("/SHA256SUMS"))

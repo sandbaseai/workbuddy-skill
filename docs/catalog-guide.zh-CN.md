@@ -75,7 +75,7 @@ python3 scripts/query_catalog.py --category research --package-status reviewed \
 python3 scripts/query_catalog.py research --package-status reviewed
 ```
 
-精选结果会直接显示 Release ZIP 地址；使用 `--json` 时，包地址、稳定的资产文件名、校验地址和可复制的 GitHub CLI 命令分别位于 `workbuddy_package_url`、`workbuddy_package_asset`、`workbuddy_checksum_url` 和 `workbuddy_download_command`，脚本可以直接下载并校验包，不需要手工拼接 Release 路径。
+精选结果会直接显示 Release ZIP 地址；使用 `--json` 时，包地址、稳定的资产文件名、校验地址和可复制的 GitHub CLI 命令分别位于 `workbuddy_package_url`、`workbuddy_package_asset`、`workbuddy_checksum_url` 和 `workbuddy_download_command`，脚本可以直接下载并校验包，不需要手工拼接 Release 路径。结果的 Atlas 分类位于 `workbuddy_category`，便于后续程序路由或分组。
 
 如果想得到一份可供程序读取的“高信号可安装包”候选清单，可以组合精选包筛选、`--json` 和数量限制，再在复制命令前检查第一条结果：
 
