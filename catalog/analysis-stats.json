@@ -1,9 +1,9 @@
 {
-  "adaptable": 10200,
-  "analysis_ok": 14389,
-  "analyzed_paths": 14409,
-  "analyzed_unique_shas": 9742,
+  "adaptable": 10189,
+  "analysis_ok": 14489,
+  "analyzed_paths": 14509,
+  "analyzed_unique_shas": 9831,
   "needs_review": 926,
-  "security_flagged": 455,
+  "security_flagged": 454,
   "workbuddy_ready": 0
 }
