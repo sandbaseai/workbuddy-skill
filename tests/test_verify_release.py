@@ -54,6 +54,16 @@ class VerifyReleaseTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "release assets without checksums"):
                 verify(root)
 
+    def test_rejects_checksum_paths_outside_release_directory(self):
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            digest = "0" * 64
+            (root / "SHA256SUMS").write_text(
+                f"{digest}  ../outside-workbuddy-skill.zip\n", encoding="utf-8"
+            )
+            with self.assertRaisesRegex(ValueError, "invalid release asset filename"):
+                verify(root)
+
 
 if __name__ == "__main__":
     unittest.main()
