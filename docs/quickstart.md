@@ -163,6 +163,28 @@ If your host does not provide `gh skill`, use the source link from the Atlas and
 follow the [adaptation guide](adapting-skills.md) instead. Installation is always
 an explicit step after you review the source and permissions.
 
+## Update, disable, or remove a Skill
+
+Choose the same scope you used during installation:
+
+- **WorkBuddy Marketplace:** open the installed Skills view to update one Skill
+  or batch-update several. Disable a Skill before a sensitive task, and
+  uninstall it when it is no longer needed. See the [official Skills
+  Marketplace guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market).
+- **Release ZIP:** download the replacement ZIP from the same release channel,
+  verify its checksum, and import it through the same WorkBuddy flow. Keep the
+  old version until a small read-only check passes if rollback matters.
+- **Project-scoped `gh skill`:** review the new source and pin, then install the
+  replacement into the same project directory. Commit the resulting change so
+  teammates receive the same version.
+- **Custom `--dir` or user directory:** remove only the exact Skill directory
+  after checking its path; do not delete the parent directory or unrelated
+  Skills. Reload the host and confirm that the Skill is no longer listed.
+
+Record the source URL, commit/tag, package version, and checksum in the project
+when reproducibility matters. If an update changes permissions, connectors, or
+external side effects, repeat the safe first check before using real data.
+
 ## Copy-ready task template
 
 ```text

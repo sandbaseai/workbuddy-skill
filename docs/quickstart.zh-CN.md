@@ -134,6 +134,17 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review \
 
 如果你的宿主没有提供 `gh skill`，请使用 Atlas 中的来源链接，并按照[适配教程](adapting-skills.zh-CN.md)制作包。安装始终应在审阅来源和权限后显式执行。
 
+## 更新、停用或移除 Skill
+
+更新和删除时，继续使用安装时选择的同一作用范围：
+
+- **WorkBuddy Marketplace：** 打开已安装的 Skills 页面，可以单独更新或批量更新；敏感任务前可以先停用，不再需要时再卸载。详见[官方 Skills Marketplace 指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)。
+- **Release ZIP：** 从同一发布渠道下载新版 ZIP，重新校验校验和，再通过同一 WorkBuddy 流程导入。如果需要可回滚，先保留旧版本，完成一次小型只读检查后再移除旧版本。
+- **项目级 `gh skill`：** 先审阅新的来源和固定版本，再把替换版本安装到同一个项目目录；提交目录变更，确保团队成员使用同一版本。
+- **自定义 `--dir` 或用户级目录：** 确认精确路径后，只移除对应的 Skill 目录；不要删除父目录或其他 Skill。重新加载宿主，并确认列表中已不再出现该 Skill。
+
+需要可复现时，在项目中记录来源 URL、提交或标签、包版本和校验和。如果更新改变了权限、连接器或外部副作用，使用真实数据前要重新完成一次安全试运行。
+
 ## 一个可复制的任务模板
 
 ```text
