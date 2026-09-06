@@ -47,6 +47,8 @@ gh skill preview owner/repository skills/path/to/skill
 gh skill install owner/repository skills/path/to/skill --pin v1.2.0 --dir .workbuddy/skills
 ```
 
+如果你的宿主没有提供 `gh skill`，请使用 Atlas 中的固定来源链接，并按照[适配教程](adapting-skills.zh-CN.md)制作包。目录不会静默安装第三方 Skill。
+
 ## 一个可复制的任务模板
 
 ```text
@@ -62,6 +64,7 @@ gh skill install owner/repository skills/path/to/skill --pin v1.2.0 --dir .workb
 
 - **导入失败：** 确认上传的是 Release 原始 ZIP，且 `SKILL.md` 位于 ZIP 根目录；不要重复压缩。
 - **看不到工具或连接器：** 在当前工作区启用对应服务，然后重新加载 WorkBuddy。
+- **没有 `gh skill` 命令：** 打开 Atlas 结果中的固定来源链接，并按照适配教程制作包。
 - **找不到合适的 Skill：** 用更短的能力词搜索，或先阅读目录中的相近条目；目录是发现入口，不代表自动信任。
 - **参数校验失败：** 重新读取当前能力的 schema，只使用现有字段重试一次，不要凭经验猜参数。
 - **鉴权、余额或权限错误：** 检查账号和工作区设置，不要在聊天中粘贴密钥。

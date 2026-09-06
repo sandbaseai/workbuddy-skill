@@ -49,6 +49,10 @@ gh skill preview owner/repository skills/path/to/skill
 gh skill install owner/repository skills/path/to/skill --pin v1.2.0 --dir .workbuddy/skills
 ```
 
+If your host does not provide `gh skill`, use the source link from the Atlas and
+follow the [adaptation guide](adapting-skills.md) instead. The catalog never
+silently installs a third-party Skill.
+
 ## Copy-ready task template
 
 ```text
@@ -65,6 +69,7 @@ For asynchronous image, audio, or video jobs, preserve the returned `run_id` and
 
 - **Import fails:** confirm that you uploaded the original Release ZIP and that `SKILL.md` is at the archive root; do not compress it again.
 - **Tools or connectors are missing:** enable the required service in the current workspace and reload WorkBuddy.
+- **`gh skill` is unavailable:** open the result's immutable source link in the Atlas and package it with the adaptation guide.
 - **No suitable Skill appears:** search with a shorter capability term or inspect related catalog entries. The catalog is a discovery surface, not an automatic trust decision.
 - **Schema validation fails:** inspect the current capability schema and retry once using only its current fields; do not guess arguments.
 - **Authorization, balance, or permission error:** check the account and workspace settings without pasting secrets into chat.
