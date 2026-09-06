@@ -67,6 +67,7 @@
 - [自媒体合规审核](https://github.com/JuneYaooo/self-media-compliance-review)——MIT 许可、兼容 WorkBuddy 的发布前审核工作流，覆盖短视频、封面、文案、电商功效声明和平台风险；默认使用本地证据，实时检索通道可能需要凭据、联网和付费额度，启用前必须单独确认。
 - [QianLV UI Skill](https://github.com/CodeGanHaoZ/gks-QianLV-uiSkill)——MIT 许可、兼容 WorkBuddy 的移动端 UI 设计参考，包含主题 Token、组件范式、跨平台说明和脚手架脚本；复用前仍需检查仓库内的素材和脚本。
 - [CodeDrobe Skills](https://github.com/CodeDrobe/skills)——Apache-2.0 许可、兼容 WorkBuddy 的可逆桌面主题工作流，覆盖创建、应用、验证、修复和恢复；它依赖独立运行时，可能需要 CDP，使用前先确认应用范围和重启授权。
+- [CodeDrobe Core](https://github.com/CodeDrobe/core)——Apache-2.0 许可的 CodeDrobe WorkBuddy 主题运行时，提供固定版本的 `npx`/`bunx` 命令、应用检测、可逆 CDP 注入和验证；使用前固定运行时版本，并检查重启和应用路径权限。
 - [Ontology Driven Dev](https://github.com/sharptoolbox/ontology-driven-dev)——MIT 许可、兼容 WorkBuddy 的需求探索、本体建模和应用构建参考，带有人为确认门禁；仓库包含较重的运行时和示例，运行前先检查依赖、本地数据以及模型/API 配置。
 - [WorkBuddy 使用指南](https://github.com/Neo5093/workbuddy-guide)——MIT 许可的社区参考 Skill，包含新手路径、连接器排障、自动化模式、模型说明、FAQ 和环境诊断；适配前请检查脚本和具体版本。
 - [WorkBuddy 实践指南](https://github.com/opcspace/WorkBuddy-Guide)——中文社区知识库，覆盖安全安装、首次任务、权限、排障、连接器、远程协助和验收导向的工作流；复用前请核对内容新鲜度和许可证。

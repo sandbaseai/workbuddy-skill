@@ -122,6 +122,7 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn("self-media-compliance-review", resources)
             self.assertIn("gks-QianLV-uiSkill", resources)
             self.assertIn("CodeDrobe/skills", resources)
+            self.assertIn("CodeDrobe/core", resources)
             self.assertIn("ontology-driven-dev", resources)
             self.assertIn("qa-testing-guide", resources)
             self.assertIn("agentic-awesome-skills", resources)
