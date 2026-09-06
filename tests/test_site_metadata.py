@@ -148,6 +148,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         self.assertIn("https://www.workbuddy.ai/docs/zh/workbuddy/Quickstart", readme)
         self.assertIn("https://www.workbuddy.ai/docs/workbuddy/Quickstart", readme)
+        self.assertIn("https://www.workbuddy.ai/docs/zh/ide/release-notes/release-notes", readme)
         self.assertIn("github.com/search?q=filename%3ASKILL.md&type=code", content)
         self.assertIn("docs/catalog-guide.md", content)
         self.assertIn("docs/catalog-guide.zh-CN.md", content)
