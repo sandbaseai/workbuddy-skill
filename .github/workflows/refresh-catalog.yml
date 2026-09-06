@@ -54,6 +54,7 @@ jobs:
             --repository microsoft/SkillOpt \
             --repository nextlevelbuilder/ui-ux-pro-max-skill \
             --repository googleworkspace/cli \
+            --repository sickn33/agentic-awesome-skills \
             --max-requests 60 \
             --max-rate-wait 120 --output /tmp/skills.jsonl
           crawl_status=$?
