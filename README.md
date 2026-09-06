@@ -26,11 +26,14 @@ Skills，查看来源与许可证，选择适合的能力，并下载经过整�
 2. 打开条目的来源链接，阅读说明、许可证、权限和外部依赖。
 3. 从 [Releases](https://github.com/sandbaseai/workbuddy-skill/releases/latest) 下载所需 ZIP，在 WorkBuddy 的 **专家 · Skills · Connectors → Skills → 添加 Skill** 中上传。
 
-精选成品也可以按精确路径安装：
+支持开放 Agent Skills CLI 的宿主，可以按精确路径安装精选成品：
 
 ```bash
 gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/skills
 ```
+
+如果宿主没有 `gh skill`，请从 [Releases](https://github.com/sandbaseai/workbuddy-skill/releases/latest)
+下载 ZIP，再按[中文快速开始](docs/quickstart.zh-CN.md)导入 WorkBuddy。
 
 ### 可以解决什么问题
 
