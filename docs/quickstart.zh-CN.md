@@ -23,6 +23,17 @@
 
 当前目录提供 **21,818 条公开 Skill 快照**，适合先缩小搜索范围，再通过每条结果的来源链接确认上游最新版本。
 
+## 先安装 WorkBuddy
+
+导入 Skill 前，先按你的电脑选择官方安装说明：
+
+| 平台 | 官方安装说明 |
+|---|---|
+| macOS 12 及以上 | [Mac 安装指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Installation-Mac-Guide) |
+| Windows 10 1809 及以上或 Windows 11 | [Windows 安装指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Installation-Win-Guide) |
+
+WorkBuddy 启动并登录后，再继续下面的 Skill 安装路径。系统要求、安装包、首次启动安全提示和权限说明，以官方指南为准。
+
 ## 最短使用路径
 
 | 如果你想…… | 先做什么 |

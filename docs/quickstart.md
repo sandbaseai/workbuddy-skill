@@ -28,6 +28,17 @@ Use these references alongside the exact source and license of any Skill you cho
 The catalog is a review-oriented snapshot of 21,818 indexed Skills. Use it to narrow
 your search, then follow each result's source link for the latest upstream version.
 
+## Install WorkBuddy first
+
+Choose the official installer for your computer before importing a Skill:
+
+| Platform | Official setup |
+|---|---|
+| macOS 12+ | [Mac Installation Guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Installation-Mac-Guide) |
+| Windows 10 1809+ or Windows 11 | [Windows Installation Guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Installation-Win-Guide) |
+
+After WorkBuddy opens and you sign in, continue with the installation path below. The official guides are the source of truth for system requirements, installers, first-launch security prompts, and permissions.
+
 ## The shortest path
 
 | If you want to… | Do this first |
