@@ -76,6 +76,8 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Official WorkBuddy Windows installation guide: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Installation-Win-Guide
 - Official WorkBuddy model configuration guide: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Model
 - Official WorkBuddy Assistant remote-control guide: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Assistant
+- Official DingTalk remote-control integration guide: https://www.workbuddy.ai/docs/zh/workbuddy/Platform-Integration/Dingtalk-Guide
+- Official Yuanbao remote-control integration guide: https://www.workbuddy.ai/docs/zh/workbuddy/Platform-Integration/YuanBaoPai-Guide
 - Official WorkBuddy Skill Marketplace guide: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market
 - Official WorkBuddy Privacy Policy: https://www.workbuddy.ai/document/privacy-policy
 - Official WorkBuddy Service Agreement: https://www.workbuddy.ai/document/term

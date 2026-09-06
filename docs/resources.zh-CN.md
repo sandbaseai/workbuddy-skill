@@ -37,6 +37,7 @@
 - [新建任务栏](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar)——执行前选择工作目录、模型、已安装的 Skill、连接器和权限模式。
 - [大型代码库与单体仓库](https://www.workbuddy.ai/docs/cli/large-codebases)——官方说明如何使用目录级指令、聚焦 worktree 和按包配置，减少无关上下文。
 - [助理远程控制](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Assistant)——配置聊天应用来发送任务并接收结果；WorkBuddy 需要保持运行，每个平台也有独立的账号和权限设置。
+- [钉钉接入指南](https://www.workbuddy.ai/docs/zh/workbuddy/Platform-Integration/Dingtalk-Guide)与[元宝派接入指南](https://www.workbuddy.ai/docs/zh/workbuddy/Platform-Integration/YuanBaoPai-Guide)——远程控制的官方平台配置步骤；配置前先确认管理员角色、应用权限和凭证边界。
 - [模型配置](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Model)——配置自动模式、供应商预设、自定义模型和本地 Ollama 接入。
 - [创建 Skills](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills)——编写 Skill。
 - [MCP 指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide)——MCP 概念和配置。
