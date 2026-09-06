@@ -48,6 +48,23 @@ python3 scripts/query_catalog.py research --package-status reviewed
 
 精选结果会直接显示 Release ZIP 地址；使用 `--json` 时，包地址、稳定的资产文件名、校验地址和可复制的 GitHub CLI 命令分别位于 `workbuddy_package_url`、`workbuddy_package_asset`、`workbuddy_checksum_url` 和 `workbuddy_download_command`，脚本可以直接下载并校验包，不需要手工拼接 Release 路径。
 
+如果想得到一份可供程序读取的“高信号可安装包”候选清单，可以组合精选包筛选、`--json` 和数量限制，再在复制命令前检查第一条结果：
+
+```bash
+python3 scripts/query_catalog.py research \
+  --high-signal --package-status reviewed --limit 5 --json \
+  > research-packages.json
+jq -r '.[].workbuddy_download_command' research-packages.json
+```
+
+如果环境没有 `jq`，可以改用 Python 标准库：
+
+```bash
+python3 -c 'import json; from pathlib import Path; print("\\n".join(item["workbuddy_download_command"] for item in json.loads(Path("research-packages.json").read_text())))'
+```
+
+第二条命令只打印下载命令，不会自动执行。选定条目后，先打开 `source_url`，确认许可证和副作用，再运行选中的 `gh release download` 命令，并按照[快速开始](quickstart.zh-CN.md)校验 `SHA256SUMS`。
+
 人类可读输出会直接给出完整的 `catalog id`。把这个值复制给
 `review_skill.py` 或 `adapt_skill.py` 即可，不要根据显示名称手工拼接 ID。
 
