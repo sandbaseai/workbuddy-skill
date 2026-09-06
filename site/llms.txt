@@ -53,6 +53,8 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Discussions for usage examples and reviewed-package feedback: https://github.com/sandbaseai/workbuddy-skill/discussions
 - English quickstart: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.md
 - Chinese quickstart: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.zh-CN.md
+- Skill lifecycle (update, disable, remove, and rollback): https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.md#update-disable-or-remove-a-skill
+- Skill troubleshooting (import, connector, schema, and authorization failures): https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.md#troubleshooting
 - Cross-platform release verifier: https://github.com/sandbaseai/workbuddy-skill/blob/main/scripts/verify_release.py
 - English resource map: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/resources.md
 - Chinese resource map: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/resources.zh-CN.md
