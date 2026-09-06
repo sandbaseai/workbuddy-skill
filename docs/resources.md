@@ -10,6 +10,7 @@ Use this page to choose the right source before searching the catalog.
 | Write or troubleshoot a Skill ZIP | [Open Platform Skill guide](https://open.workbuddy.cn/en/docs/skill) |
 | Connect an API, MCP server, or CLI | [Open Platform Connector guide](https://open.workbuddy.cn/en/docs/connector) |
 | Build an OAuth app or call Open APIs | [Third-Party App guide](https://open.workbuddy.cn/en/docs/third-party-app) and [Open API reference](https://open.workbuddy.cn/en/docs/openapi) |
+| Understand product data boundaries | [WorkBuddy Privacy Policy](https://www.workbuddy.ai/document/privacy-policy) |
 | Assemble a marketplace Expert or Team | [Expert guide](https://open.workbuddy.cn/en/docs/expert) and [Expert Team guide](https://open.workbuddy.cn/en/docs/expert-team) |
 | Package a public catalog result yourself | [Adaptation guide](adapting-skills.md) |
 
@@ -18,6 +19,7 @@ Use this page to choose the right source before searching the catalog.
 - [Quickstart](https://www.workbuddy.ai/docs/workbuddy/Quickstart) — platform setup and first use.
 - [Tips & Tricks](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Efficient-Tips) — practical guidance for clearer prompts, references, iteration, workspaces, and Skills.
 - [FAQ](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/FQA) — common questions about WorkBuddy, Skill updates, permissions, and connectors.
+- [Privacy Policy](https://www.workbuddy.ai/document/privacy-policy) — official product data-handling and privacy disclosures to review before using sensitive inputs or connectors.
 - [Create Skills](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills) — authoring Skills.
 - [MCP guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide) — MCP concepts and configuration.
 - [Open Platform Connector guide](https://open.workbuddy.cn/en/docs/connector) — recommends MCP + Skill for network APIs, limits CLI + Skill to mature cross-platform CLIs, and documents runtime, credentials, OAuth, and permissions.
