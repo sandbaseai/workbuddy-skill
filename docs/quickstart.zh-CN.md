@@ -66,7 +66,7 @@ sha256sum --check SHA256SUMS --ignore-missing
 
 ## 从目录寻找 Skill
 
-1. 在 [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) 或[中文目录](https://sandbaseai.github.io/workbuddy-skill/zh-CN.html)搜索任务或能力，例如 `ocr`、`web search`、`incident`。
+1. 在 [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) 或[中文目录](https://sandbaseai.github.io/workbuddy-skill/zh-CN.html)搜索任务或能力，例如 `ocr`、`web search`、`incident`。如果想直接找可安装的精选包，先把 **WorkBuddy 包状态 → 有精选包可用** 打开。
 2. 打开条目的来源链接，确认许可证、输入输出、网络访问、凭据要求和潜在副作用。
 3. 优先选择有明确说明、固定版本和可验证来源的 Skill；需要复现时固定到标签或提交 SHA。
 4. 导入后按照上面的“安全试运行”提示词先检查，再执行真实任务。

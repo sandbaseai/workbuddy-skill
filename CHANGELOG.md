@@ -15,6 +15,7 @@ All notable changes to this project are documented here.
 - Local catalog queries now match the same full catalog IDs that the Atlas accepts, so copied provenance identifiers work in both interfaces.
 - Documented the catalog-ID round trip from a result, back into local search or the Atlas, and then into review or adaptation.
 - Added a bilingual Atlas filter for the 277 reviewed WorkBuddy packages, separating installable reviewed results from catalog-only entries while preserving shareable URL state.
+- Linked the reviewed-package filter from both quickstarts so new users can reach installable packages without scanning the full snapshot.
 - Added bilingual WorkBuddy resource maps covering official product docs, community learning, evaluation material, and local catalog guides.
 - Added direct Atlas navigation to the resource maps, plus a post-use feedback and Star prompt that does not perform account actions.
 - Atlas now derives and displays the current count of reviewed WorkBuddy packages from `catalog-meta.json`.

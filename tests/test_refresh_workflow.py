@@ -30,6 +30,12 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn("--pattern SHA256SUMS", quickstart)
             self.assertIn("sha256sum --check SHA256SUMS --ignore-missing", quickstart)
 
+    def test_quickstarts_explain_reviewed_package_filter(self):
+        english = (ROOT / "docs/quickstart.md").read_text(encoding="utf-8")
+        chinese = (ROOT / "docs/quickstart.zh-CN.md").read_text(encoding="utf-8")
+        self.assertIn("WorkBuddy package → Reviewed package available", english)
+        self.assertIn("WorkBuddy 包状态 → 有精选包可用", chinese)
+
     def test_quickstarts_link_reference_resources_without_endorsing_them(self):
         for name in ("docs/quickstart.md", "docs/quickstart.zh-CN.md"):
             quickstart = (ROOT / name).read_text(encoding="utf-8")

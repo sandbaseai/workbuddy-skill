@@ -79,6 +79,7 @@ After reviewing the source, permissions, and plan, run a small task with public 
 ## Find a Skill in the catalog
 
 1. Search the [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) for a task or capability such as `ocr`, `web search`, or `incident`.
+   If you want an installable reviewed package immediately, set **WorkBuddy package → Reviewed package available** before searching.
 2. Open the source link and check the license, inputs and outputs, network access, credential requirements, and side effects.
 3. Prefer Skills with clear documentation, a known version, and verifiable provenance. Pin a tag or commit SHA when reproducibility matters.
 4. After importing, use the safe-check prompt above before running a real task.
