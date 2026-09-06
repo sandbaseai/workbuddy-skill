@@ -84,7 +84,7 @@ inspect the source and then follow the [adaptation guide](adapting-skills.md)
 to create a reviewed WorkBuddy package.
 
 If the Atlas returns no match, use its **Search current GitHub Skill files** link
-to look beyond the frozen snapshot. That link is only a discovery shortcut:
+to look beyond the current catalog. That link is only a discovery shortcut:
 inspect the repository, license, scripts, permissions, and commit before adapting anything.
 
 For scripts and dashboards, the compact browser dataset is available at
@@ -94,18 +94,6 @@ If you only need reviewed packages that have a Release ZIP, use the separate
 [human-readable package index](https://sandbaseai.github.io/workbuddy-skill/packages.html), its
 [machine-readable package index](https://sandbaseai.github.io/workbuddy-skill/packages.json), and
 its [Schema](https://sandbaseai.github.io/workbuddy-skill/packages-schema.json). Each package record includes an `asset` filename, a ready-to-copy `download_command` for GitHub CLI, and a `checksum_url` for verifying the ZIP.
-
-To verify that a local checkout still contains the exact frozen snapshot used by
-the Atlas, run:
-
-```bash
-python3 scripts/build_site_data.py
-python3 scripts/verify_catalog_snapshot.py
-```
-
-The command compares the SHA-256 of `catalog/skills.jsonl` with the
-`catalog_sha256` value in `site/catalog-meta.json`; it does not fetch or modify
-third-party content.
 
 Machine consumers can validate the metadata shape against the published
 [catalog metadata Schema](https://sandbaseai.github.io/workbuddy-skill/catalog-meta-schema.json).

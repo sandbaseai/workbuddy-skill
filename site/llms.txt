@@ -20,7 +20,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - If a query has no catalog match, use the Atlas empty-state link or [GitHub's current `SKILL.md` code search](https://github.com/search?q=filename%3ASKILL.md&type=code); this is discovery only and does not install or trust external code automatically.
 - Catalog metadata: https://sandbaseai.github.io/workbuddy-skill/catalog-meta.json
 - Catalog metadata JSON Schema: https://sandbaseai.github.io/workbuddy-skill/catalog-meta-schema.json
-- Catalog metadata includes `catalog_sha256`, a SHA-256 fingerprint of the frozen `skills.jsonl` snapshot.
+- Catalog metadata includes `catalog_sha256`, a SHA-256 fingerprint of the published catalog bytes.
 - Source repository: https://github.com/sandbaseai/workbuddy-skill
 - Citation metadata: https://github.com/sandbaseai/workbuddy-skill/blob/main/CITATION.cff
 - Curated WorkBuddy ecosystem index: https://github.com/sandbaseai/awesome-workbuddy

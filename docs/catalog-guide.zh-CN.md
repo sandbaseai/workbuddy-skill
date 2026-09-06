@@ -55,21 +55,11 @@ python3 scripts/query_catalog.py 'github:owner/repository:path/to/SKILL.md'
 
 搜索只负责缩小候选范围，不会自动安装。选定条目后，先检查来源，再按照[适配教程](adapting-skills.zh-CN.md)制作经过审阅的 WorkBuddy 包。
 
-如果 Atlas 没有匹配结果，可以使用页面中的“在 GitHub 搜索当前 Skill 文件”链接查找冻结快照之外的新内容。该链接只用于发现，不代表可信或自动安装；适配前仍需检查仓库、许可证、脚本、权限和提交。
+如果 Atlas 没有匹配结果，可以使用页面中的“在 GitHub 搜索当前 Skill 文件”链接查找当前目录之外的新内容。该链接只用于发现，不代表可信或自动安装；适配前仍需检查仓库、许可证、脚本、权限和提交。
 
 脚本和数据看板可以直接读取[紧凑目录数据](https://sandbaseai.github.io/workbuddy-skill/catalog.json)，字段定义见对应的 [JSON Schema](https://sandbaseai.github.io/workbuddy-skill/catalog-schema.json)。普通用户可浏览[精选包静态页面](https://sandbaseai.github.io/workbuddy-skill/packages.html)；程序则使用独立的[精选包 JSON](https://sandbaseai.github.io/workbuddy-skill/packages.json)及其 [Schema](https://sandbaseai.github.io/workbuddy-skill/packages-schema.json)。每条包记录都提供用于 GitHub CLI 下载的 `asset` 文件名、可直接复制的 `download_command`，以及用于校验 ZIP 的 `checksum_url`。
 
 选择“来源顺序”时，结果会先按仓库、再按路径稳定排序，不依赖目录文件的爬取顺序，便于复查和分享同一个查询。
-
-如果要确认本地 checkout 与 Atlas 使用的是同一份冻结快照，可以运行：
-
-```bash
-python3 scripts/build_site_data.py
-python3 scripts/verify_catalog_snapshot.py
-```
-
-该命令会比较 `catalog/skills.jsonl` 的 SHA-256 与
-`site/catalog-meta.json` 中的 `catalog_sha256`，不会抓取或修改第三方内容。
 
 程序可以根据公开的[目录元数据 Schema](https://sandbaseai.github.io/workbuddy-skill/catalog-meta-schema.json)
 验证元数据字段结构。
