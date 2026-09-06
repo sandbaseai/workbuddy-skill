@@ -84,6 +84,18 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("merged branches are deleted", contributing)
         self.assertIn("does not bypass validation", contributing)
 
+    def test_unreleased_changelog_covers_current_public_improvements(self):
+        changelog = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
+        unreleased = changelog.split("## [", 1)[0]
+        for phrase in (
+            "bilingual WorkBuddy resource maps",
+            "full `catalog id`",
+            "`SHA256SUMS` verification",
+            "Chinese official Automation",
+            "GitHub auto-merge governance",
+        ):
+            self.assertIn(phrase, unreleased)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -5,6 +5,11 @@ All notable changes to this project are documented here.
 ## Unreleased
 
 - The entries below include historical catalog and package work retained for provenance; the current public snapshot is frozen and the crawler is not an active publishing path.
+- Added bilingual WorkBuddy resource maps covering official product docs, community learning, evaluation material, and local catalog guides.
+- Added direct Atlas navigation to the resource maps, plus a post-use feedback and Star prompt that does not perform account actions.
+- Added copyable full `catalog id` output to the local query helper, and documented reproducible Release ZIP downloads with `SHA256SUMS` verification.
+- Added the Chinese official Automation documentation link and synchronized it into the machine-readable `llms.txt` index.
+- Enabled GitHub auto-merge governance with automatic merged-branch cleanup; validation and human review remain required.
 - Froze the public catalog at 21,818 indexed records; future maintenance is limited to documentation, usability, validation, and existing reviewed packages.
 - Added bilingual catalog-reading guidance and linked it from the README, quickstart, Atlas navigation, and `llms.txt`.
 - Added shareable Atlas result links, browser-history restoration, and language switching that preserves active filters; added regression coverage for the URL state.
