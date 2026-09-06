@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Add the MIT-licensed WorkBuddy Chat Manager as a high-risk, backup-first recovery and cleanup reference.
 - Treat a completed repository-only crawler scan as successful even when the repository has fewer candidates than the target cap.
 - Add the MIT-licensed WorkBuddy Codex Hub MCP as a clearly bounded multi-agent collaboration reference.
 - Expose the safe repository-only crawler preview command in the machine-readable resource index.
