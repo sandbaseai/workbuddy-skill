@@ -14,6 +14,7 @@ const copyLink = document.querySelector("#copy-link");
 const empty = document.querySelector("#empty");
 const error = document.querySelector("#error");
 const more = document.querySelector("#more");
+const languageLink = document.querySelector("#language-link");
 const metricRecords = document.querySelector("#metric-records");
 const metricShas = document.querySelector("#metric-shas");
 const metricRepositories = document.querySelector("#metric-repositories");
@@ -31,6 +32,10 @@ const FILTERS = {
   sort: new Set([...sort.options].map((option) => option.value)),
   minScore: new Set([...minScore.options].map((option) => option.value)),
 };
+
+function syncLanguageLink() {
+  languageLink.href = `${languageLink.dataset.target}${location.search}${location.hash}`;
+}
 
 function escapeHtml(value) {
   return value.replace(/[&<>'"]/g, (character) => ({
@@ -63,6 +68,7 @@ function syncUrlState() {
   if (!unique.checked) params.set("duplicates", "all");
   const query = params.toString();
   history.replaceState(null, "", `${location.pathname}${query ? `?${query}` : ""}${location.hash}`);
+  syncLanguageLink();
 }
 
 async function copyCatalogId(button) {
@@ -202,6 +208,7 @@ results.addEventListener("click", (event) => {
 });
 
 restoreUrlState();
+syncLanguageLink();
 
 Promise.all([fetch("catalog.json"), fetch("catalog-meta.json")])
   .then(async ([catalogResponse, metaResponse]) => {
