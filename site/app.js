@@ -79,20 +79,32 @@ function announceCopy(message) {
   copyStatus.textContent = message;
 }
 
+async function copyText(value) {
+  try {
+    await navigator.clipboard.writeText(value);
+    return;
+  } catch {}
+  const helper = document.createElement("textarea");
+  helper.value = value;
+  helper.setAttribute("readonly", "");
+  helper.style.position = "fixed";
+  helper.style.opacity = "0";
+  document.body.append(helper);
+  try {
+    helper.select();
+    if (!document.execCommand("copy")) throw new Error("copy failed");
+  } finally {
+    helper.remove();
+  }
+}
+
 async function copyCatalogId(button) {
   const value = button.dataset.catalogId;
   try {
-    await navigator.clipboard.writeText(value);
+    await copyText(value);
   } catch {
-    const helper = document.createElement("textarea");
-    helper.value = value;
-    helper.setAttribute("readonly", "");
-    helper.style.position = "fixed";
-    helper.style.opacity = "0";
-    document.body.append(helper);
-    helper.select();
-    document.execCommand("copy");
-    helper.remove();
+    announceCopy(isChinese ? "复制目录 ID 失败" : "Could not copy catalog ID");
+    return;
   }
   const original = button.textContent;
   button.textContent = isChinese ? "已复制" : "Copied";
@@ -103,17 +115,10 @@ async function copyCatalogId(button) {
 async function copySearchLink() {
   const value = location.href;
   try {
-    await navigator.clipboard.writeText(value);
+    await copyText(value);
   } catch {
-    const helper = document.createElement("textarea");
-    helper.value = value;
-    helper.setAttribute("readonly", "");
-    helper.style.position = "fixed";
-    helper.style.opacity = "0";
-    document.body.append(helper);
-    helper.select();
-    document.execCommand("copy");
-    helper.remove();
+    announceCopy(isChinese ? "复制结果链接失败" : "Could not copy result link");
+    return;
   }
   const original = copyLink.textContent;
   copyLink.textContent = isChinese ? "链接已复制" : "Link copied";
