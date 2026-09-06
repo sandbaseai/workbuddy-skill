@@ -57,6 +57,23 @@ function catalogId(skill) {
   return `github:${skill.r}:${skill.p}`;
 }
 
+function packageAsset(skill) {
+  if (!skill.a) return "";
+  try {
+    const asset = new URL(skill.a).pathname.split("/").pop();
+    return asset && asset.endsWith(".zip") ? asset : "";
+  } catch {
+    return "";
+  }
+}
+
+function packageInstallCommand(skill) {
+  const asset = packageAsset(skill);
+  return asset
+    ? `gh release download --repo sandbaseai/workbuddy-skill --pattern '${asset}' --pattern SHA256SUMS --dir workbuddy-download`
+    : "";
+}
+
 function restoreUrlState() {
   const params = new URLSearchParams(location.search);
   input.value = params.get("q") || "";
@@ -133,13 +150,28 @@ async function copySearchLink() {
   setTimeout(() => { copyLink.textContent = original; }, 1600);
 }
 
+async function copyInstallCommand(button) {
+  try {
+    await copyText(button.dataset.installCommand);
+  } catch {
+    announceCopy(isChinese ? "复制安装命令失败" : "Could not copy install command");
+    return;
+  }
+  const original = button.textContent;
+  button.textContent = isChinese ? "命令已复制" : "Command copied";
+  announceCopy(isChinese ? "安装命令已复制" : "Install command copied");
+  setTimeout(() => { button.textContent = original; }, 1600);
+}
+
 function render(reset = true) {
   if (reset) {
     shown = 0;
     results.replaceChildren();
   }
   const next = filtered.slice(shown, shown + PAGE_SIZE);
-  const markup = next.map((skill) => `
+  const markup = next.map((skill) => {
+    const installCommand = packageInstallCommand(skill);
+    return `
     <article class="result">
       <span class="result-name">${escapeHtml(skill.n)}</span>
       <span class="result-source"><span>${escapeHtml(skill.r)}</span><code>${escapeHtml(skill.p)}</code></span>
@@ -153,9 +185,11 @@ function render(reset = true) {
         <button class="copy-id" type="button" data-catalog-id="${escapeHtml(catalogId(skill))}">${isChinese ? "复制 ID" : "Copy ID"}</button>
         ${skill.a ? `<a class="result-install" href="${escapeHtml(skill.a)}">${isChinese ? "安装 ZIP" : "Install ZIP"} ↓</a>` : ""}
         ${skill.a ? `<a class="result-verify" href="${escapeHtml(checksumUrl)}" target="_blank" rel="noreferrer">${isChinese ? "校验 SHA256" : "Verify SHA256"} ↗</a>` : ""}
+        ${installCommand ? `<button class="copy-install" type="button" data-install-command="${escapeHtml(installCommand)}">${isChinese ? "复制命令" : "Copy command"}</button>` : ""}
         <a class="result-open" href="${escapeHtml(skill.u)}" target="_blank" rel="noreferrer">${isChinese ? "查看来源" : "Inspect"} ↗</a>
       </span>
-    </article>`).join("");
+    </article>`;
+  }).join("");
   results.insertAdjacentHTML("beforeend", markup);
   shown += next.length;
   count.textContent = isChinese ? `${filtered.length.toLocaleString()} 个结果` : `${filtered.length.toLocaleString()} results`;
@@ -247,6 +281,8 @@ more.addEventListener("click", () => render(false));
 results.addEventListener("click", (event) => {
   const button = event.target.closest(".copy-id");
   if (button) copyCatalogId(button);
+  const installButton = event.target.closest(".copy-install");
+  if (installButton) copyInstallCommand(installButton);
 });
 
 restoreUrlState();

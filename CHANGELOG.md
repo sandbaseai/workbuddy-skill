@@ -30,6 +30,7 @@ All notable changes to this project are documented here.
 - Added official Open Platform Connector and Open API references to the bilingual onboarding path.
 - Added a bilingual connector preflight checklist covering authentication, scopes, read-only checks, and side effects.
 - Made the Atlas checksum URL part of generated catalog metadata so clients can discover it without parsing UI code.
+- Added a one-click copy button for the exact `gh release download` command on reviewed Atlas results.
 - Added bilingual WorkBuddy resource maps covering official product docs, community learning, evaluation material, and local catalog guides.
 - Added direct Atlas navigation to the resource maps, plus a post-use feedback and Star prompt that does not perform account actions.
 - Atlas now derives and displays the current count of reviewed WorkBuddy packages from `catalog-meta.json`.
