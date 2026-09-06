@@ -240,6 +240,10 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn("adapt", content.lower())
             self.assertNotIn("verify_catalog_snapshot.py", content)
 
+    def test_readme_gh_skill_examples_pin_the_release(self):
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        self.assertEqual(readme.count("gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/skills --pin v4.66.0"), 2)
+
     def test_frozen_check_does_not_publish_changes(self):
         workflow = (ROOT / ".github/workflows/refresh-catalog.yml").read_text(encoding="utf-8")
         self.assertNotIn("git commit", workflow)
