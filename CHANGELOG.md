@@ -17,6 +17,7 @@ All notable changes to this project are documented here.
 - Made the release verifier reject extra WorkBuddy ZIPs that are absent from `SHA256SUMS`.
 - Synchronized the new WorkBuddy Harness reference into the machine-readable `site/llms.txt` entrypoint.
 - Clarified the complete release-package verification path in both quickstarts and `site/llms.txt`.
+- Added the machine-readable `llms.txt` entrypoint to the public sitemap.
 - Added a restricted auto-merge workflow for trusted same-repository pull requests; fork pull requests remain manual and untrusted code is never checked out by the merge workflow.
 - Added a dependency-free `verify_catalog_snapshot.py` command and CI gate for checking the frozen catalog against its published SHA-256 fingerprint.
 - Published `catalog-meta-schema.json` and added metadata contract validation for machine consumers of the Atlas.
