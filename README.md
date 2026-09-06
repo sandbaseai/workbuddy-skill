@@ -243,6 +243,12 @@ For programmatic access, use the [compact catalog JSON](https://sandbaseai.githu
 2. Read the immutable source, license, permissions, dependencies, and side effects.
 3. Download a ZIP from [Releases](https://github.com/sandbaseai/workbuddy-skill/releases/latest) and add it in WorkBuddy under **Experts · Skills · Connectors → Skills → Add Skill**.
 
+Hosts that support the preview [GitHub CLI `gh skill` command](https://cli.github.com/manual/gh_skill) can install a reviewed Skill by its exact path:
+
+```bash
+gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/skills
+```
+
 The catalog is for discovery, not automatic approval. Review every external Skill before use, and pin a release or commit when reproducibility matters. See the [English adaptation guide](docs/adapting-skills.md) for preparing a reviewed workflow.
 
 Further reading: the [WorkBuddyGuide](https://github.com/AlephAITech/WorkBuddyGuide) is a task-oriented community guide, while [Tencent WorkBuddy Bench](https://github.com/Tencent/workbuddy-bench) provides reproducible Agent task evaluation material. Use them as references alongside the exact source and license of any Skill you choose.
