@@ -161,7 +161,7 @@ class RefreshWorkflowTests(unittest.TestCase):
 
     def test_catalog_refresh_is_frozen_without_automatic_additions(self):
         workflow = (ROOT / ".github/workflows/refresh-catalog.yml").read_text(encoding="utf-8")
-        self.assertNotIn("schedule:", workflow)
+        self.assertIn('cron: "17 5 * * 1"', workflow)
         self.assertNotIn("crawl_github_skills.py", workflow)
         self.assertNotIn("git push", workflow)
         self.assertIn("Verify frozen catalog", workflow)
@@ -283,6 +283,7 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertNotIn("git commit", workflow)
         self.assertNotIn("git push", workflow)
         self.assertNotIn("gh pr", workflow)
+        self.assertIn('cron: "17 5 * * 1"', workflow)
         self.assertIn("validate_catalog.py --minimum 10000 --require-analysis --check-stats", workflow)
 
     def test_contributing_docs_describe_safe_auto_merge_settings(self):
