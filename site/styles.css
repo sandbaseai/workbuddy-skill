@@ -142,6 +142,7 @@ input:focus, select:focus { outline: 3px solid rgba(17, 122, 75, .25); border-co
 .method-grid span { color: #c8e0d2; line-height: 1.6; }
 footer { min-height: 100px; padding: 30px 5vw; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 footer a { color: var(--accent-dark); font-weight: 700; }
+.footer-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 16px; }
 
 @media (min-width: 768px) and (max-width: 1100px) {
   .filter-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
