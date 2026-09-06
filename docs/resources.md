@@ -37,6 +37,7 @@ Use this page to choose the right source before searching the catalog.
 
 - [WorkBuddyGuide](https://github.com/AlephAITech/WorkBuddyGuide) — task-oriented community walkthrough; its [online reading site](https://workbuddy.homes) is convenient for browsing.
 - [WorkBuddy Starter](https://github.com/sunyet-01/WorkBuddy-Starter) — MIT-licensed beginner-oriented collection organized around onboarding, Skills, scenarios, and examples.
+- [QA Testing Guide](https://github.com/genapohub/qa-testing-guide) — MIT-licensed WorkBuddy-compatible Skill reference for test strategy, automation, performance testing, and defect workflows; inspect its files before adapting.
 - [Agentic Awesome Skills](https://github.com/sickn33/agentic-awesome-skills) — MIT-licensed local catalog and control plane for discovering, selecting, and validating agentic Skills; use it as a research reference, not an automatic installer.
 - [semlinker/awesome-workbuddy](https://github.com/semlinker/awesome-workbuddy) — CC0 resource navigation for WorkBuddy tutorials, prompts, Skills, MCP, and practical scenarios; verify each linked project's current terms.
 - [AI Coding Guide 中文教程](https://github.com/KimYx0207/AI-Coding-Guide-Zh) — broad Chinese tutorial covering WorkBuddy and adjacent agent workflows.

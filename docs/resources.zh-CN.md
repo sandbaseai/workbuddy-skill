@@ -37,6 +37,7 @@
 
 - [WorkBuddy 实战蓝皮书](https://github.com/AlephAITech/WorkBuddyGuide)——按真实任务学习，也可以直接阅读[在线版](https://workbuddy.homes)。
 - [WorkBuddy Starter](https://github.com/sunyet-01/WorkBuddy-Starter)——MIT 许可、面向新手的 WorkBuddy 入门资料库，按入门、Skills、场景和案例组织内容。
+- [QA Testing Guide](https://github.com/genapohub/qa-testing-guide)——MIT 许可、兼容 WorkBuddy 的测试 Skill 参考，覆盖测试策略、自动化、性能测试和缺陷流程；适配前仍需检查具体文件。
 - [Agentic Awesome Skills](https://github.com/sickn33/agentic-awesome-skills)——MIT 许可的本地 Agent Skill 目录与控制平面，可用于研究发现、选择和验证 Skill；仅作资料参考，不要当作自动安装源。
 - [semlinker/awesome-workbuddy](https://github.com/semlinker/awesome-workbuddy)——CC0 许可的 WorkBuddy 教程、提示词、Skills、MCP 和场景实践导航；使用其中链接时仍需核对各项目的最新条款。
 - [AI Coding / Agent 中文教程](https://github.com/KimYx0207/AI-Coding-Guide-Zh)——覆盖 WorkBuddy 及相关 Agent 工作流。

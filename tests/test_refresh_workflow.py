@@ -98,6 +98,7 @@ class RefreshWorkflowTests(unittest.TestCase):
             )
             self.assertIn(expected_open_platform, resources)
             self.assertIn("WorkBuddyGuide", resources)
+            self.assertIn("qa-testing-guide", resources)
             self.assertIn("agentic-awesome-skills", resources)
             self.assertIn("AI-Coding-Guide-Zh", resources)
             self.assertIn("agency-agents-zh", resources)
