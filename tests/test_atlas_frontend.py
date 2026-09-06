@@ -26,6 +26,7 @@ class AtlasFrontendTests(unittest.TestCase):
             self.assertIn('id="hero-count"', page)
             self.assertIn('id="search"', page)
             self.assertIn('class="keyboard-hint"', page)
+            self.assertIn("Esc", page)
             self.assertIn('class="skip-link"', page)
             self.assertIn('href="#catalog"', page)
             self.assertIn('id="package-status"', page)
