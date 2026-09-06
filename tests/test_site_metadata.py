@@ -126,6 +126,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("inspect the linked source, license, and permissions", content)
         self.assertNotIn("new catalog records are not automatically added", content)
         self.assertNotIn("Future maintenance focuses", content)
+        self.assertNotIn("分离内部建设约束", (ROOT / "README.md").read_text(encoding="utf-8"))
         self.assertIn("github.com/search?q=filename%3ASKILL.md&type=code", content)
         self.assertIn("docs/catalog-guide.md", content)
         self.assertIn("docs/catalog-guide.zh-CN.md", content)
