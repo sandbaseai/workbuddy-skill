@@ -13,6 +13,14 @@ body:
       placeholder: WorkBuddy 4.x / package v4.66.0
     validations:
       required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Operating system and host
+      description: Include the OS version and whether you used WorkBuddy desktop, Marketplace, or a host CLI.
+      placeholder: macOS 15.6 / WorkBuddy desktop
+    validations:
+      required: true
   - type: textarea
     id: request
     attributes:
@@ -24,6 +32,13 @@ body:
     id: expected
     attributes:
       label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: List the smallest public or synthetic input and the steps that reproduce the problem.
     validations:
       required: true
   - type: textarea

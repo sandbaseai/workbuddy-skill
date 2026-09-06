@@ -27,7 +27,7 @@ Chinese users can start with the [中文资源地图](docs/resources.zh-CN.md) a
 ## Ask for help
 
 - For a reproducible package or workflow bug, use the [bug report template](https://github.com/sandbaseai/workbuddy-skill/issues/new?template=bug.yml).
-- To request a capability or propose an improvement to an existing reviewed package, use the [capability template](https://github.com/sandbaseai/workbuddy-skill/issues/new?template=feature.yml).
+- To request documentation, usability, validation, or an improvement to an existing reviewed package, use the [feedback template](https://github.com/sandbaseai/workbuddy-skill/issues/new?template=feature.yml); the public catalog is frozen and this does not add Skill records.
 - To share a successful workflow, limitation, or measured outcome, use the [Showcase template](https://github.com/sandbaseai/workbuddy-skill/issues/new?template=showcase.yml).
 - For questions and broader usage discussion, use [Discussions](https://github.com/sandbaseai/workbuddy-skill/discussions).
 - For security concerns, follow [SECURITY.md](SECURITY.md) and do not post exploit details publicly.

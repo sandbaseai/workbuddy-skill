@@ -365,10 +365,14 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn(phrase, unreleased)
 
     def test_feedback_templates_match_the_frozen_catalog_scope(self):
+        bug = (ROOT / ".github/ISSUE_TEMPLATE/bug.yml").read_text(encoding="utf-8")
         feature = (ROOT / ".github/ISSUE_TEMPLATE/feature.yml").read_text(encoding="utf-8")
         showcase = (ROOT / ".github/ISSUE_TEMPLATE/showcase.yml").read_text(encoding="utf-8")
         package_feedback = (ROOT / ".github/ISSUE_TEMPLATE/package-feedback.yml").read_text(encoding="utf-8")
         self.assertIn("Existing reviewed package or workflow", feature)
+        self.assertIn("Operating system and host", bug)
+        self.assertIn("Reproduction steps", bug)
+        self.assertIn("smallest public or synthetic input", bug)
         self.assertIn("Documentation or usability", feature)
         self.assertIn("public catalog is currently frozen", feature)
         self.assertIn("does not add new Skill records", feature)
