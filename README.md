@@ -11,6 +11,9 @@ Skills，查看来源与许可证，选择适合的能力，并下载经过整�
 [![Latest release](https://img.shields.io/github/v/release/sandbaseai/workbuddy-skill)](https://github.com/sandbaseai/workbuddy-skill/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/sandbaseai/workbuddy-skill?style=flat)](https://github.com/sandbaseai/workbuddy-skill/stargazers)
+[![Validate skill](https://github.com/sandbaseai/workbuddy-skill/actions/workflows/validate.yml/badge.svg)](https://github.com/sandbaseai/workbuddy-skill/actions/workflows/validate.yml)
+[![Catalog site](https://github.com/sandbaseai/workbuddy-skill/actions/workflows/pages.yml/badge.svg)](https://github.com/sandbaseai/workbuddy-skill/actions/workflows/pages.yml)
+[![Resource links](https://github.com/sandbaseai/workbuddy-skill/actions/workflows/check-resource-links.yml/badge.svg)](https://github.com/sandbaseai/workbuddy-skill/actions/workflows/check-resource-links.yml)
 
 [中文](#中文) · [English](#english) · [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/)
 

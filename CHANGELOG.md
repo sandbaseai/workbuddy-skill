@@ -24,6 +24,7 @@ All notable changes to this project are documented here.
 - Added a cross-platform Python release verifier for environments without `sha256sum`.
 - Added the Chinese Open Platform guide to the Chinese quickstart and resource map.
 - Added two MIT-licensed WorkBuddy community references to the bilingual resource maps; they remain navigation material, not catalog additions.
+- Added visible validation, Pages deployment, and resource-link health badges to the README.
 - Added bilingual WorkBuddy resource maps covering official product docs, community learning, evaluation material, and local catalog guides.
 - Added direct Atlas navigation to the resource maps, plus a post-use feedback and Star prompt that does not perform account actions.
 - Atlas now derives and displays the current count of reviewed WorkBuddy packages from `catalog-meta.json`.
