@@ -170,8 +170,13 @@ function search({ historyMode = "replace" } = {}) {
       return true;
     });
   }
-  const byName = (left, right) => left.n.localeCompare(right.n) || left.r.localeCompare(right.r);
-  const bySource = (left, right) => left.r.localeCompare(right.r) || left.p.localeCompare(right.p);
+  const compareStable = (left, right) => {
+    const a = left.toLowerCase();
+    const b = right.toLowerCase();
+    return a < b ? -1 : a > b ? 1 : 0;
+  };
+  const byName = (left, right) => compareStable(left.n, right.n) || compareStable(left.r, right.r);
+  const bySource = (left, right) => compareStable(left.r, right.r) || compareStable(left.p, right.p);
   if (sort.value === "score") {
     filtered.sort((left, right) => (right.q ?? -1) - (left.q ?? -1) || right.c - left.c || byName(left, right));
   } else if (sort.value === "copies") {

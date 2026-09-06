@@ -36,7 +36,9 @@ class AtlasFrontendTests(unittest.TestCase):
         self.assertIn("function announceCopy(message)", self.app)
         self.assertIn("copyStatus.textContent = message", self.app)
         self.assertIn('meta.snapshot_frozen !== true', self.app)
-        self.assertIn('const bySource = (left, right) => left.r.localeCompare(right.r) || left.p.localeCompare(right.p);', self.app)
+        self.assertIn("const compareStable = (left, right) =>", self.app)
+        self.assertIn("return a < b ? -1 : a > b ? 1 : 0;", self.app)
+        self.assertIn("const bySource = (left, right) => compareStable(left.r, right.r) || compareStable(left.p, right.p);", self.app)
         self.assertIn('} else if (sort.value === "source") {', self.app)
 
     def test_mobile_navigation_can_wrap(self):
