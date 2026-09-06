@@ -25,9 +25,11 @@ class VerifyReleaseTests(unittest.TestCase):
     def test_reports_mismatch_without_silent_success(self):
         with TemporaryDirectory() as directory:
             root = Path(directory)
-            asset = root / "demo.zip"
+            asset = root / "demo-workbuddy-skill.zip"
             asset.write_bytes(b"actual")
-            (root / "SHA256SUMS").write_text("0" * 64 + "  demo.zip\n", encoding="utf-8")
+            (root / "SHA256SUMS").write_text(
+                "0" * 64 + f"  {asset.name}\n", encoding="utf-8"
+            )
             output = io.StringIO()
             errors = io.StringIO()
             with redirect_stdout(output), redirect_stderr(errors):
@@ -62,6 +64,17 @@ class VerifyReleaseTests(unittest.TestCase):
                 f"{digest}  ../outside-workbuddy-skill.zip\n", encoding="utf-8"
             )
             with self.assertRaisesRegex(ValueError, "invalid release asset filename"):
+                verify(root)
+
+    def test_rejects_non_workbuddy_assets_in_checksum_manifest(self):
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "SHA256SUMS").write_text(
+                "0" * 64 + "  README.txt\n", encoding="utf-8"
+            )
+            with self.assertRaisesRegex(
+                ValueError, "checksum manifest contains non-WorkBuddy assets"
+            ):
                 verify(root)
 
     def test_rejects_symlinked_checksum_manifest(self):

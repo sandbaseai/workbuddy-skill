@@ -30,6 +30,14 @@ def read_checksums(path: Path) -> dict[str, str]:
         checksums[name] = digest.lower()
     if not checksums:
         raise ValueError(f"no checksum entries found in {path}")
+    unexpected = sorted(
+        name for name in checksums if not name.endswith("-workbuddy-skill.zip")
+    )
+    if unexpected:
+        raise ValueError(
+            "checksum manifest contains non-WorkBuddy assets: "
+            + ", ".join(unexpected)
+        )
     return checksums
 
 

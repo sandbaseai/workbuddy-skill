@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Restrict release checksum manifests to WorkBuddy Skill ZIP assets.
 - Reject symlinked checksum manifests and release assets during local package verification.
 - Add current official WorkBuddy tips and FAQ links to the bilingual resource map and LLM entrypoint.
 - Clarify GitHub CLI Skill installation with host selection, project/user scope, preview, and version pinning.
