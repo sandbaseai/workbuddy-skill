@@ -26,6 +26,7 @@ jobs:
   check:
     name: Check public resource links
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6

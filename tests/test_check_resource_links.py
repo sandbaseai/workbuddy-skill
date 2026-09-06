@@ -20,6 +20,7 @@ class ResourceLinkCheckTests(unittest.TestCase):
     def test_workflow_runs_read_only_scheduled_check(self):
         workflow = (ROOT / ".github/workflows/check-resource-links.yml").read_text(encoding="utf-8")
         self.assertIn('cron: "17 4 * * 1"', workflow)
+        self.assertIn("timeout-minutes: 10", workflow)
         self.assertIn("pull_request:", workflow)
         self.assertIn('"docs/**"', workflow)
         self.assertIn("contents: read", workflow)

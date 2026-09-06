@@ -35,6 +35,7 @@ All notable changes to this project are documented here.
 - Documented the GitHub live-search fallback for empty catalog results in the bilingual catalog guide and `llms.txt`.
 - Added per-PR concurrency control to the trusted auto-merge workflow so rapid updates cancel stale merge pollers.
 - Added a 15-minute timeout to the trusted auto-merge job so stalled checks cannot occupy a runner indefinitely.
+- Added a 10-minute timeout to the scheduled public resource-link check so an unavailable external site cannot hold a runner indefinitely.
 - Added direct bilingual resource-map and Starter Packs links to the README entry navigation.
 - Linked the copy-ready WorkBuddy use-case guide from both README language entry points.
 - Fixed trusted auto-merge coverage for draft pull requests when they become ready for review.
