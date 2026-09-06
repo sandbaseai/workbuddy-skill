@@ -41,6 +41,8 @@ class AtlasFrontendTests(unittest.TestCase):
             self.assertIn('id="empty-reset"', page)
             self.assertIn('aria-controls="results"', page)
             self.assertIn('id="retry-load"', page)
+            self.assertIn('"sameAs": "https://github.com/sandbaseai/workbuddy-skill"', page)
+            self.assertIn('"@type": "SearchAction"', page)
             self.assertIn("feature.yml", page)
             if page is self.english:
                 self.assertIn("Request a capability", page)

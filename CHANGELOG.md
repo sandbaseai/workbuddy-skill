@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Add GitHub identity and queryable SearchAction metadata to both Atlas language pages for clearer discovery and sharing.
 - Add official DingTalk and Yuanbao remote-control integration guides to the bilingual resource maps and machine-readable index.
 - Turn the bilingual quickstart troubleshooting bullets into symptom, first-check, and next-step tables to make safe recovery easier.
 - Add the official large-repository guide to the quickstarts and resource maps so users can scope WorkBuddy in monorepos without adding Skills.
