@@ -83,6 +83,7 @@ input, select {
 }
 input::placeholder { color: #74786f; }
 input:focus, select:focus { outline: 3px solid rgba(17, 122, 75, .25); border-color: var(--accent); }
+.keyboard-hint { color: var(--muted); font-size: .72rem; font-weight: 500; white-space: nowrap; }
 .search-examples { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
 .search-example { padding: 5px 10px; border: 1px solid #bdc3b9; border-radius: 999px; color: var(--muted); background: transparent; font: 650 .72rem/1 inherit; cursor: pointer; }
 .search-example:hover, .search-example:focus-visible { color: white; border-color: var(--accent-dark); background: var(--accent-dark); }
