@@ -99,7 +99,9 @@ class LocalPackagingTests(unittest.TestCase):
             subprocess.run(command, cwd=ROOT, check=True, capture_output=True, text=True)
 
             with ZipFile(output / "demo-workbuddy.zip") as archive:
-                self.assertIn("name: \"demo\"", archive.read("SKILL.md").decode())
+                skill_text = archive.read("SKILL.md").decode()
+                self.assertIn("name: \"demo\"", skill_text)
+                self.assertIn("license: \"MIT\"", skill_text)
                 self.assertEqual(
                     sorted(archive.namelist()),
                     ["SKILL.md", "SOURCE.json", "references/guide.md", "scripts/check.py"],
