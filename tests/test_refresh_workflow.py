@@ -115,6 +115,12 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("python3 -m unittest discover -s tests -q", template)
         self.assertIn("human review", template)
 
+    def test_contributing_docs_describe_required_main_branch_checks(self):
+        contributing = (ROOT / "CONTRIBUTING.md").read_text(encoding="utf-8")
+        self.assertIn("main` branch requires the `validate` status check", contributing)
+        self.assertIn("conversation resolution", contributing)
+        self.assertIn("admin enforcement remains off", contributing)
+
 
 if __name__ == "__main__":
     unittest.main()

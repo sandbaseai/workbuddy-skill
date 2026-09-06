@@ -31,5 +31,8 @@ Describe the real user request or failure that motivated an instruction change. 
 GitHub auto-merge is enabled for this repository, and merged branches are deleted
 automatically. Use auto-merge only after the required checks and human review for
 the change have completed; this setting does not bypass validation or source review.
+The `main` branch requires the `validate` status check for pull requests and
+conversation resolution; admin enforcement remains off so authorized direct
+maintenance commits can continue when appropriate.
 
 Bug reports should include the WorkBuddy version, the requested capability, the failure message with secrets removed, and the expected behavior.
