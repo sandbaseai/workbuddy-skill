@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Put official permission-mode guidance in the first-run path, with a default-permissions and isolated-workspace recommendation.
 - Put official macOS and Windows WorkBuddy installation links at the top of both quickstarts before the Skill import steps.
 - Show a short frozen-catalog fingerprint in the bilingual Atlas so users can match a page to its full metadata record.
 - Add the official WorkBuddy macOS installation and first-launch permission guide to the bilingual resource maps and machine-readable entrypoint.

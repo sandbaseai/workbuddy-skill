@@ -39,6 +39,8 @@ Choose the official installer for your computer before importing a Skill:
 
 After WorkBuddy opens and you sign in, continue with the installation path below. The official guides are the source of truth for system requirements, installers, first-launch security prompts, and permissions.
 
+Before the first real task, keep [Default Permissions](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Permission-Modes) enabled and use a separate, recoverable workspace. Switch to Full Access only for a trusted, isolated task after checking its impact.
+
 ## The shortest path
 
 | If you want to… | Do this first |

@@ -34,6 +34,8 @@
 
 WorkBuddy 启动并登录后，再继续下面的 Skill 安装路径。系统要求、安装包、首次启动安全提示和权限说明，以官方指南为准。
 
+第一次执行真实任务前，建议保持[默认权限模式](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Permission-Modes)，并使用独立、可恢复的工作目录。只有在任务可信、隔离且确认影响范围后，才短暂切换到完全访问权限。
+
 ## 最短使用路径
 
 | 如果你想…… | 先做什么 |
