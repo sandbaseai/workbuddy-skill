@@ -31,6 +31,8 @@ class AtlasFrontendTests(unittest.TestCase):
                 self.assertIn("repository owner", page)
             else:
                 self.assertIn("仓库所有者", page)
+                self.assertIn("placeholder=\"试试：研究、视频或 github:owner/repo…\"", page)
+                self.assertIn("类别（如 <code>研究</code>）", page)
             self.assertIn('class="keyboard-hint"', page)
             self.assertIn("Esc", page)
             self.assertIn('class="skip-link"', page)
