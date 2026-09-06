@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Add the official WorkBuddy release-notes page so users can verify current SkillHub, plugin, connector, model, and UI behavior.
 - Add the community WorkBuddy Guide as a rights-aware troubleshooting and onboarding reference without copying its Skill or scripts.
 - Add the official WorkBuddy Assistant Remote Control guide to the bilingual resource maps and machine-readable documentation index.
 - Add direct official WorkBuddy documentation links to the bilingual README navigation.

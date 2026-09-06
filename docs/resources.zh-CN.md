@@ -29,6 +29,7 @@
 - [Windows 安装指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Installation-Win-Guide)——官方 Windows 要求、x64/ARM64 安装步骤、SmartScreen 处理、登录和首次启动排查。
 - [使用技巧](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Efficient-Tips)——提示词具体化、文件引用、迭代、工作区和 Skill 使用建议。
 - [常见问题](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/FQA)——WorkBuddy、Skill 更新、权限和连接器的常见问题。
+- [版本更新记录](https://www.workbuddy.ai/docs/zh/ide/release-notes/release-notes)——记录 SkillHub、插件、连接器、模型和平台的最新变化与修复；依赖某个界面或安装行为前，先查看这里。
 - [隐私政策](https://www.workbuddy.ai/document/privacy-policy)——使用敏感输入或连接器前，先查看官方的数据处理与隐私说明。
 - [服务协议](https://www.workbuddy.ai/document/term)和[可接受使用政策](https://www.workbuddy.ai/document/acceptable-use-policy)——使用账号、服务和外部能力前，先确认官方的使用范围与责任要求。
 - [权限模式说明](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Permission-Modes)——让 Skill 或连接器执行任务前，先确认工作区范围与操作权限。
