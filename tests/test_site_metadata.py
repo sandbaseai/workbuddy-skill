@@ -121,6 +121,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("https://github.com/QwenLM/Qwen-MM-Plugins", content)
         self.assertIn("Installation-Mac-Guide", content)
         self.assertIn("Installation-Win-Guide", content)
+        self.assertIn("Function-Description/Model", content)
         self.assertIn("https://github.com/crossoverJie/SkillDeck", content)
         self.assertIn("https://github.com/mrzhangguoguo/oh-my-workbuddy", content)
         self.assertIn("https://github.com/Tencent/workbuddy-bench", content)

@@ -50,6 +50,7 @@ class RefreshWorkflowTests(unittest.TestCase):
                 self.assertIn("rejects an extra WorkBuddy ZIP", quickstart)
             self.assertIn("open.workbuddy.cn", quickstart)
             self.assertIn("Permission-Modes", quickstart)
+            self.assertIn("Function-Description/Model", quickstart)
             expected_connector = (
                 "open.workbuddy.cn/docs/connector"
                 if name.endswith("zh-CN.md")
