@@ -162,6 +162,9 @@ python3 scripts/query_catalog.py research --security no-static-flags --source-co
 
 For the same review-oriented defaults, use `python3 scripts/query_catalog.py research --high-signal --limit 10`.
 
+To preview a repository's current SKILL.md files without writing the catalog, use
+`python3 scripts/crawl_github_skills.py --dry-run --repository owner/name --repository-only --target 100`.
+
 Use `--json` for machine-readable results. Search terms are combined, so every term must match the repository, path, inferred skill name, metadata, or full catalog ID. Atlas filters are available for WorkBuddy package availability, WorkBuddy status, static review state, minimum score, unique blob SHA, and result ordering. The local CLI also accepts `--package-status reviewed` or `--package-status catalog-only`; reviewed results include the direct Release ZIP URL and a copy-ready GitHub CLI command, exposed as `workbuddy_package_url` and `workbuddy_download_command` in JSON.
 
 ## Adapt a reviewed result
