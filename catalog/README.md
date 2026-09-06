@@ -2,6 +2,8 @@
 
 This directory is a provenance-first index of public `SKILL.md` files. It is not a trust endorsement and does not execute or silently install third-party code.
 
+中文用户可先阅读[中文快速开始](../docs/quickstart.zh-CN.md)和[目录条目解读](../docs/catalog-guide.zh-CN.md)。
+
 ## Current snapshot
 
 <!-- CATALOG-SNAPSHOT:START -->
