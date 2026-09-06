@@ -40,6 +40,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - English official Explore: https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Explore
 - Adaptation guide: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/adapting-skills.md
 - Chinese adaptation guide: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/adapting-skills.zh-CN.md
+- Copy-ready use cases: https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/use-cases.md
 
 ## Safety and provenance
 

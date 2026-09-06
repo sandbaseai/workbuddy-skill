@@ -46,6 +46,7 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn("WorkBuddyGuide", resources)
             self.assertIn("workbuddy-bench", resources)
             self.assertIn("Skill Atlas", resources)
+            self.assertIn("use-cases.md", resources)
 
     def test_catalog_refresh_is_frozen_without_automatic_additions(self):
         workflow = (ROOT / ".github/workflows/refresh-catalog.yml").read_text(encoding="utf-8")
