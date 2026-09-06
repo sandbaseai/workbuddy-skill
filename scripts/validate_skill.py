@@ -53,13 +53,20 @@ def validate_metadata(frontmatter: str, relative: Path) -> None:
 
 
 def validate_skill(skill: Path, root: Path) -> None:
+    relative = skill.relative_to(root)
+    for path in skill.parent.rglob("*"):
+        if path.is_symlink():
+            raise ValueError(
+                f"{relative} contains unsupported symlink: "
+                f"{path.relative_to(skill.parent)}"
+            )
+
     text = skill.read_text(encoding="utf-8")
     match = re.match(r"\A---\n(.*?)\n---\n", text, re.DOTALL)
     valid, fields = parse_frontmatter(text)
     if not valid or not match:
-        raise ValueError(f"{skill.relative_to(root)} must start with YAML frontmatter")
+        raise ValueError(f"{relative} must start with YAML frontmatter")
 
-    relative = skill.relative_to(root)
     validate_metadata(match.group(1), relative)
     missing = sorted(key for key in REQUIRED if not fields.get(key))
     if missing:
