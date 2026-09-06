@@ -3,7 +3,8 @@
 ## Find a Skill
 
 Search the [WorkBuddy Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/)
-or use the local helper:
+or browse the [no-JavaScript reviewed package index](https://sandbaseai.github.io/workbuddy-skill/packages.html).
+For local discovery, use the helper:
 
 ```bash
 python3 scripts/query_catalog.py browser --limit 10

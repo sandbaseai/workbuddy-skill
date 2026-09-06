@@ -206,6 +206,7 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("docs/use-cases.md", support)
         self.assertIn("docs/resources.zh-CN.md", support)
         self.assertIn("docs/quickstart.zh-CN.md", support)
+        self.assertIn("sandbaseai.github.io/workbuddy-skill/packages.html", support)
 
     def test_support_has_separate_showcase_and_discussion_paths(self):
         support = (ROOT / "SUPPORT.md").read_text(encoding="utf-8")
