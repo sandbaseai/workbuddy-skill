@@ -101,7 +101,7 @@ class RefreshWorkflowTests(unittest.TestCase):
             (ROOT / "docs/catalog-guide.zh-CN.md").read_text(encoding="utf-8"),
         )
         self.assertIn(
-            "current GitHub `SKILL.md` files",
+            "GitHub's current `SKILL.md` code search",
             (ROOT / "site/llms.txt").read_text(encoding="utf-8"),
         )
 
