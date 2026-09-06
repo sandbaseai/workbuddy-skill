@@ -129,6 +129,11 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("docs/resources.zh-CN.md", support)
         self.assertIn("docs/quickstart.zh-CN.md", support)
 
+    def test_support_has_separate_showcase_and_discussion_paths(self):
+        support = (ROOT / "SUPPORT.md").read_text(encoding="utf-8")
+        self.assertIn("template=showcase.yml", support)
+        self.assertIn("github.com/sandbaseai/workbuddy-skill/discussions", support)
+
 
 if __name__ == "__main__":
     unittest.main()
