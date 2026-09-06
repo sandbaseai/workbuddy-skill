@@ -64,6 +64,10 @@ python3 scripts/adapt_skill.py \
 
 The resulting ZIP can be imported into WorkBuddy. It places `SKILL.md` at the archive root and includes `SOURCE.json` with the immutable source URL, blob SHA, declared license, adaptation notes, and packaged resources.
 
+If the source `SKILL.md` already declares a `license`, `--source-license` must
+match it exactly. The adapter stops on a mismatch so the generated metadata
+and `SOURCE.json` cannot make the provenance ambiguous.
+
 ### Package checklist
 
 Before importing, confirm the ZIP has this shape:

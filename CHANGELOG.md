@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Document the adapter's exact source-license matching rule in both tutorials.
 - Keep the explicit adapter license declaration authoritative in generated Skill metadata.
 - Reject adapter runs when source frontmatter disagrees with the declared source license.
 - Preserve WorkBuddy boolean invocation fields when adapting Skills.
