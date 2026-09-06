@@ -219,6 +219,13 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertNotIn("re-enable the crawler", readme.lower())
         self.assertNotIn("future maintenance focuses", readme.lower())
 
+    def test_readme_exposes_a_three_step_user_path_in_both_languages(self):
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        self.assertIn("### 最短路径", readme)
+        self.assertIn("### Three-step start", readme)
+        self.assertIn("SHA256SUMS", readme)
+        self.assertIn("Reviewed package available", readme)
+
     def test_external_sandbase_migration_pointer_is_not_a_skill(self):
         pointer = (ROOT / "skills/sandbase/README.md").read_text(encoding="utf-8")
         self.assertIn("awesome-workbuddy/tree/main/skills/sandbase", pointer)

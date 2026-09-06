@@ -12,6 +12,12 @@ Skills，查看来源与许可证，选择适合的能力，并下载经过整�
 当前公开目录包含 **21,818 条 Skill 快照**，另有 **277 个经过审阅、可直接安装的 WorkBuddy 包**。
 这是一个冻结的公开快照；反馈不会自动新增目录记录，请通过反馈入口提交文档、可用性、校验或已有精选包改进。
 
+### 最短路径
+
+1. 在 [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/zh-CN.html) 搜索需求，并打开来源链接审阅许可证、权限和副作用。
+2. 需要可直接导入的结果时，打开“有精选包可用”筛选，选择一个经过审阅的包。
+3. 从同一 [Release](https://github.com/sandbaseai/workbuddy-skill/releases/latest) 下载 ZIP 和 `SHA256SUMS`，校验后把原始 ZIP 导入 WorkBuddy。
+
 [![Latest release](https://img.shields.io/github/v/release/sandbaseai/workbuddy-skill)](https://github.com/sandbaseai/workbuddy-skill/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/sandbaseai/workbuddy-skill?style=flat)](https://github.com/sandbaseai/workbuddy-skill)
@@ -264,6 +270,12 @@ documented separately and are not prerequisites for using the catalog.
 
 The public catalog contains **21,818 indexed Skills**, alongside **277 reviewed WorkBuddy packages** ready to install.
 This is a frozen public snapshot; feedback does not automatically add catalog records. Use the feedback form for documentation, usability, validation, or existing reviewed-package improvements.
+
+### Three-step start
+
+1. Search the [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) and inspect the pinned source, license, permissions, and side effects.
+2. When you need an importable result, enable **Reviewed package available** and choose a reviewed package.
+3. Download the ZIP and `SHA256SUMS` from the same [Release](https://github.com/sandbaseai/workbuddy-skill/releases/latest), verify them, and import the original ZIP into WorkBuddy.
 
 If the catalog helps you find a useful capability, [Star the project](https://github.com/sandbaseai/workbuddy-skill) and share real usage feedback or a public workflow example. After trying a package, use [Discussions](https://github.com/sandbaseai/workbuddy-skill/discussions) or [submit a WorkBuddy showcase](https://github.com/sandbaseai/workbuddy-skill/issues/new?template=showcase.yml).
 For formal citations in papers, reports, or internal documentation, see [CITATION.cff](CITATION.cff).
