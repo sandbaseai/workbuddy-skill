@@ -36,6 +36,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT Chinese multi-domain expert-role collection (research reference): https://github.com/jnMetaCode/agency-agents-zh
 - MIT offline-first WorkBuddy usage analytics dashboard (inspect credential boundaries): https://github.com/clancy-feng/workbuddy-usage-status
 - MIT local AI-asset portability tool with WorkBuddy support (auto-memory and account data are not migrated): https://github.com/muzishuiji/mnemoport
+- MIT WorkBuddy cross-device sync and handoff reference (review database, identity, path, and credential boundaries): https://github.com/jamesting-eng/workbuddy-skills
 - MIT WorkBuddy document and web-page-to-Markdown skill (inspect SSRF and script boundaries): https://github.com/stwhwing/markitdown-skill
 - Clean-room WorkBuddy architecture course: https://github.com/adongwanai/learn-workbuddy
 - WorkBuddy Harness v2 architecture and evaluation reference (no formal LICENSE file; research only): https://github.com/zhuang-HE/workbuddy-harness
