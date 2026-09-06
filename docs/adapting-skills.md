@@ -2,6 +2,25 @@
 
 This guide is for turning a public catalog entry into an importable WorkBuddy package. If you only want to use an existing curated Skill, start with the [quickstart](quickstart.md).
 
+## Know the two compatibility targets
+
+The open [Agent Skills specification](https://agentskills.io/specification) and the
+WorkBuddy Open Platform both use a `SKILL.md` with YAML frontmatter, but their
+metadata requirements are not identical. The open specification requires a
+lowercase, hyphenated `name` (up to 64 characters) and treats `scripts/`,
+`references/`, and `assets/` as optional directories. WorkBuddy's [official Skill
+guide](https://open.workbuddy.cn/en/docs/skill) additionally documents bilingual
+descriptions, `version`, and `author` for Marketplace packages. This repository's
+adapter emits the WorkBuddy fields and keeps the standard `name` shape, so the
+result is easier to import into WorkBuddy while remaining recognizable to other
+Agent Skills-compatible hosts.
+
+Do not assume every host supports optional fields such as `allowed-tools`,
+`user-invocable`, or `disable-model-invocation`; check the target host before
+relying on them. Connector packages have a separate `connector-meta.json` and
+`mcp.json`/`cli.json` contract; use the [official Connector guide](https://open.workbuddy.cn/en/docs/connector)
+for those files rather than putting connector configuration into `SKILL.md`.
+
 ## Before adapting: confirm that redistribution is allowed
 
 The catalog is a discovery surface, not an installation feed. Open the exact source and check:

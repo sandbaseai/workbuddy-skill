@@ -22,6 +22,7 @@
 - [Open API 接口文档](https://open.workbuddy.cn/docs/openapi)——WorkBuddy 集成的官方 API 与 OAuth 参考。
 - [第三方应用指南](https://open.workbuddy.cn/docs/third-party-app)——OAuth 2.1 授权、应用注册、回调地址配置，以及用户授权与 Open API 调用之间的权限边界。
 - [GitHub CLI `gh skill` 手册](https://cli.github.com/manual/gh_skill)——用于搜索、预览、安装和更新 Agent Skill 的 preview 命令。
+- [Agent Skills 开放规范](https://agentskills.io/specification)——说明通用 `SKILL.md` 格式、命名规则、可选目录和跨宿主兼容边界。
 - [Automation 指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide)——自动化工作流。
 - [Skill Marketplace](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) 和 [Explore](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Explore)——内置能力。
 - [Open Platform Skill 指南](https://open.workbuddy.cn/zh/docs/skill)——官方说明 Marketplace 入口、ZIP 解析排查、frontmatter 字段和子资源目录结构。

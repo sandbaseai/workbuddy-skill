@@ -2,6 +2,21 @@
 
 这篇教程适合需要把目录中的公开 Skill 做成可导入 WorkBuddy 的用户。只想使用已有精选 Skill？请先看[快速开始](quickstart.zh-CN.md)。
 
+## 先区分两套兼容要求
+
+开放的 [Agent Skills 规范](https://agentskills.io/specification) 与 WorkBuddy Open
+Platform 都使用带 YAML frontmatter 的 `SKILL.md`，但元数据要求并不完全相同。开放规范要求
+小写、连字符连接的 `name`（最长 64 个字符），并将 `scripts/`、`references/` 和 `assets/`
+列为可选目录；WorkBuddy 的[官方 Skill 指南](https://open.workbuddy.cn/zh/docs/skill)
+还为 Marketplace 包说明了中英文描述、`version` 和 `author`。本仓库适配器会生成 WorkBuddy
+所需字段，同时保持标准 `name` 形态，使结果更容易导入 WorkBuddy，也更容易被其他支持
+Agent Skills 的宿主理解。
+
+不要假设所有宿主都支持 `allowed-tools`、`user-invocable` 或
+`disable-model-invocation` 等可选字段；使用前先检查目标宿主。连接器包还拥有独立的
+`connector-meta.json` 与 `mcp.json`/`cli.json` 契约；这些文件应按[官方连接器指南](https://open.workbuddy.cn/docs/connector)
+编写，不要把连接器配置塞进 `SKILL.md`。
+
 ## 适配前：先确认能不能发布
 
 目录是发现入口，不是自动安装源。先打开精确的来源链接，确认：

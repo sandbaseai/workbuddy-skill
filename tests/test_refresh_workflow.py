@@ -79,6 +79,7 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn("oh-my-workbuddy", resources)
             self.assertIn("open.workbuddy.cn", resources)
             self.assertIn("cli.github.com/manual/gh_skill", resources)
+            self.assertIn("agentskills.io/specification", resources)
             self.assertIn("what-is-open-platform", resources)
             self.assertIn("workbuddy-bench", resources)
             self.assertIn("2602.12670", resources)

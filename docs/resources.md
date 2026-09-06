@@ -22,6 +22,7 @@ Use this page to choose the right source before searching the catalog.
 - [Open API reference](https://open.workbuddy.cn/en/docs/openapi) — official API and OAuth reference for WorkBuddy integrations.
 - [Third-Party App guide](https://open.workbuddy.cn/en/docs/third-party-app) — OAuth 2.1 authorization, app registration, callback configuration, and the boundary between user approval and Open API access.
 - [GitHub CLI `gh skill` manual](https://cli.github.com/manual/gh_skill) — preview commands for searching, previewing, installing, and updating Agent Skills.
+- [Agent Skills specification](https://agentskills.io/specification) — vendor-neutral `SKILL.md` format, naming rules, optional directories, and portability guidance.
 - [Automation guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide) — automation workflows.
 - [Skill Marketplace](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) and [Explore](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Explore) — built-in capabilities.
 - [Open Platform Skill guide](https://open.workbuddy.cn/en/docs/skill) — official Marketplace placement, ZIP troubleshooting, frontmatter fields, and sub-resource layout.
