@@ -30,6 +30,7 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn("--pattern SHA256SUMS", quickstart)
             self.assertIn("sha256sum --check SHA256SUMS --ignore-missing", quickstart)
             self.assertIn("scripts/verify_release.py", quickstart)
+            self.assertIn("open.workbuddy.cn", quickstart)
 
     def test_quickstarts_explain_reviewed_package_filter(self):
         english = (ROOT / "docs/quickstart.md").read_text(encoding="utf-8")
@@ -50,7 +51,12 @@ class RefreshWorkflowTests(unittest.TestCase):
         for name in ("docs/resources.md", "docs/resources.zh-CN.md"):
             resources = (ROOT / name).read_text(encoding="utf-8")
             self.assertIn("workbuddy.ai/docs", resources)
-            self.assertIn("open.workbuddy.cn/en/docs/skill", resources)
+            expected_open_platform = (
+                "open.workbuddy.cn/zh/docs/skill"
+                if name.endswith("zh-CN.md")
+                else "open.workbuddy.cn/en/docs/skill"
+            )
+            self.assertIn(expected_open_platform, resources)
             self.assertIn("WorkBuddyGuide", resources)
             self.assertIn("AI-Coding-Guide-Zh", resources)
             self.assertIn("learn-workbuddy", resources)

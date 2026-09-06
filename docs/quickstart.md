@@ -33,6 +33,8 @@ For platform-level instructions, use the [official WorkBuddy quickstart](https:/
 and [Automation guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide).
 You can also browse the official [Skill Marketplace](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)
 and [Explore](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Explore) pages for ready-made capabilities and examples.
+For the Open Platform's exact ZIP layout, required frontmatter, and parser troubleshooting,
+see the [official Open Platform Skill guide](https://open.workbuddy.cn/en/docs/skill).
 This repository explains catalog discovery and packaging; the official docs remain the source of truth for product UI and platform behavior.
 
 ## Install one curated Skill in 5 minutes

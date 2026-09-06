@@ -93,6 +93,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("Automation-Guide", content)
         self.assertIn("www.workbuddy.ai/docs/workbuddy/Quickstart", content)
         self.assertIn("open.workbuddy.cn/en/docs/skill", content)
+        self.assertIn("open.workbuddy.cn/zh/docs/skill", content)
         self.assertIn("scripts/verify_release.py", content)
         self.assertIn("www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills", content)
         self.assertIn("Function-Description/Skills-Market", content)
