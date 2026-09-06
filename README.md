@@ -81,6 +81,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Cloud Cost Optimization](skills/cloud-cost-optimization/) | 按实际成本驱动因素排序，验证取舍，建模节省并治理授权变更 |
 | [Cloud Architect](skills/cloud-architect/) | 设计跨云架构、迁移波次、灾备、成本与安全取舍 |
 | [Database Query Optimizer](skills/database-query-optimizer/) | 从执行计划和性能基线定位慢 SQL，并验证单变量优化 |
+| [SQL Code Review](skills/sql-code-review/) | 跨数据库评审注入、权限、正确性、性能、维护性和迁移安全 |
 | [Data Quality Frameworks](skills/data-quality-frameworks/) | 以数据契约、质量维度、基线和有界证据治理数据管道质量 |
 | [dbt Transformation Patterns](skills/dbt-transformation-patterns/) | 以分层模型、契约、测试、lineage 和增量边界构建可追溯转换 |
 | [Airflow DAG Patterns](skills/airflow-dag-patterns/) | 设计具备幂等、可观察、可测试和安全回填边界的数据编排 DAG |
@@ -104,6 +105,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Grafana Dashboards](skills/grafana-dashboards/) | 用 RED/USE、SLO、变量、阈值、告警和 Dashboard as Code 构建可行动的观测视图 |
 | [Agent OWASP ASI Compliance](skills/agent-owasp-compliance/) | 按 Agentic Security Initiative 十项风险，以证据评估工具、身份、策略、供应链和运行时行为 |
 | [MCP Implementation Security Review](skills/mcp-implementation-security-review/) | 评审 MCP 传输、认证、会话、限流、Schema、RCE、供应链和 OWASP MCP 风险 |
+| [MCP CLI](skills/mcp-cli/) | 发现、检查并在明确授权下调用 MCP Server 与 Tool |
 | [Multi-Stage Dockerfile](skills/multi-stage-dockerfile/) | 用可复现基础镜像、缓存、最小运行时、非 root、扫描、签名和回滚构建容器 |
 | [OpenAPI to Application Code](skills/openapi-to-application-code/) | 将版本化 OpenAPI 契约转换为带校验、鉴权、测试、溯源和发布门禁的应用代码 |
 | [OpenAPI Spec Generation](skills/openapi-spec-generation/) | 从代码或设计生成 OpenAPI 3.1 契约，并验证 Schema、错误、安全和运行时一致性 |

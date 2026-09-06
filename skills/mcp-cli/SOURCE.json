@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["The upstream skill assumes a locally installed mcp-cli and configured servers; neither the binary nor server configuration is bundled."],
+    "packaged_resources": [],
+    "security_signals": ["preserved MCP discovery, schema inspection, grep, and invocation workflow", "added WorkBuddy target binding, least-privilege, secret redaction, untrusted-description handling, and side-effect gates"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/mcp-cli/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/mcp-cli/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "7b1ebe6333397841ca918dec904d24d4695fe953",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/mcp-cli/SKILL.md"
+}

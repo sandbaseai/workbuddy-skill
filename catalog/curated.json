@@ -1,5 +1,17 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/mcp-cli/SKILL.md",
+    "skill": "mcp-cli",
+    "skill_path": "skills/mcp-cli",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/mcp-cli-workbuddy-skill.zip"
+  },
+  {
+    "catalog_id": "github:github/awesome-copilot:skills/sql-code-review/SKILL.md",
+    "skill": "sql-code-review",
+    "skill_path": "skills/sql-code-review",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/sql-code-review-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/eval-driven-dev/SKILL.md",
     "skill": "eval-driven-dev",
     "skill_path": "skills/eval-driven-dev",

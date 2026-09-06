@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["The upstream skill is a prompt-only review guide and does not bundle database fixtures or workload baselines."],
+    "packaged_resources": [],
+    "security_signals": ["preserved SQL injection, access control, quality, performance, and anti-pattern review areas", "added WorkBuddy read-only defaults, redaction, dialect/version evidence, and production mutation gates"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/sql-code-review/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/sql-code-review/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "7b1ebe6333397841ca918dec904d24d4695fe953",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/sql-code-review/SKILL.md"
+}
