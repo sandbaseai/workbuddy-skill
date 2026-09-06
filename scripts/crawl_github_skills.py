@@ -318,8 +318,9 @@ def main() -> int:
             if len(rows) >= args.target:
                 break
             if requests + 3 > args.max_requests:
-                print("request budget exhausted before repository tree scan; resume later", file=sys.stderr)
-                break
+                raise RuntimeError(
+                    "request budget exhausted before repository tree scan; resume later"
+                )
             discovered, used = repository_skill_rows(repository, token)
             requests += used
             before = len(rows)
@@ -428,7 +429,10 @@ def main() -> int:
             f"dry-run: discovered {len(rows)} records; no output or stats files written",
             file=sys.stderr,
         )
-    return 0 if len(rows) >= args.target else 1
+    # A repository-only run is complete once every requested repository has
+    # been scanned; --target is a cap for that mode, not a minimum result
+    # count. Global Code Search retains the historical target contract.
+    return 0 if args.repository_only or len(rows) >= args.target else 1
 
 
 if __name__ == "__main__":

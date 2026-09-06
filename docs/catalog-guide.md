@@ -79,6 +79,8 @@ report the candidate count without writing the output JSONL or its stats file;
 the published frozen catalog still requires a separate, explicit opt-in.
 For a repository-specific preview that does not require global Code Search,
 combine it with `--repository owner/name --repository-only`.
+In repository-only mode, `--target` is only a cap: a smaller repository still
+returns success after its complete tree scan.
 
 To restrict local results to packages that have a reviewed Release ZIP, use the
 curated manifest maintained by this repository:

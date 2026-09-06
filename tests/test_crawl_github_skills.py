@@ -82,7 +82,7 @@ class RateLimitTests(unittest.TestCase):
                 "sys.argv",
                 [
                     "crawl_github_skills.py",
-                    "--target", "1",
+                    "--target", "100",
                     "--dry-run",
                     "--repository", "owner/repo",
                     "--repository-only",
