@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 import sys
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from validate_site_data import validate_rows, validate_unique_fields  # noqa: E402
+from validate_site_data import validate_package_consistency, validate_rows, validate_unique_fields  # noqa: E402
 
 
 class ValidateSiteDataTests(unittest.TestCase):
@@ -44,6 +44,11 @@ class ValidateSiteDataTests(unittest.TestCase):
         errors = validate_unique_fields(rows, ("id", "download_url"), "packages")
         self.assertEqual(len(errors), 2)
         self.assertTrue(all("duplicate" in error for error in errors))
+
+    def test_rejects_package_asset_url_mismatch(self):
+        rows = [{"asset": "one-workbuddy-skill.zip", "download_url": "https://example.com/two-workbuddy-skill.zip"}]
+        errors = validate_package_consistency(rows)
+        self.assertEqual(errors, ["packages record 0 asset does not match download_url"])
 
 
 if __name__ == "__main__":

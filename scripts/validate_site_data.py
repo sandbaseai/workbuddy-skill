@@ -33,6 +33,23 @@ def validate_unique_fields(rows: object, fields: tuple[str, ...], label: str) ->
     return errors
 
 
+def validate_package_consistency(rows: object) -> list[str]:
+    if not isinstance(rows, list):
+        return []
+    errors: list[str] = []
+    for index, row in enumerate(rows):
+        if not isinstance(row, dict):
+            continue
+        asset = row.get("asset")
+        download_url = row.get("download_url")
+        if isinstance(asset, str) and isinstance(download_url, str):
+            if Path(urlparse(download_url).path).name != asset:
+                errors.append(
+                    f"packages record {index} asset does not match download_url"
+                )
+    return errors
+
+
 def validate_rows(rows: object, schema: dict) -> list[str]:
     errors: list[str] = []
     if not isinstance(rows, list):
@@ -118,6 +135,7 @@ def main() -> int:
     package_errors = validate_rows(packages, packages_schema)
     errors.extend(f"packages: {error}" for error in package_errors)
     errors.extend(validate_unique_fields(packages, ("id", "download_url"), "packages"))
+    errors.extend(validate_package_consistency(packages))
     if errors:
         for error in errors[:20]:
             print(f"error: {error}", file=sys.stderr)
