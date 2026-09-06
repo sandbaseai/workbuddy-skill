@@ -43,6 +43,7 @@ class SiteDataTests(unittest.TestCase):
         self.assertEqual(package_page.count('class="copy-status"'), len(packages))
         self.assertIn("navigator.clipboard.writeText(button.dataset.command)", package_page)
         self.assertIn('role="status" aria-live="polite"', package_page)
+        self.assertIn(":where(a, button, input, summary):focus-visible", package_page)
         self.assertIn("Copy failed", package_page)
         self.assertIn('property="og:type" content="website"', package_page)
         self.assertIn('property="og:url" content="https://sandbaseai.github.io/workbuddy-skill/packages.html"', package_page)

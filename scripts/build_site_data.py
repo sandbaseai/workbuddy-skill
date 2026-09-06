@@ -215,6 +215,7 @@ package_page = """<!doctype html>
       :root { color-scheme: light; font-family: system-ui, sans-serif; line-height: 1.5; }
       body { max-width: 980px; margin: 0 auto; padding: 2rem 1rem 4rem; color: #24302f; background: #f5f1e8; }
       a { color: #126b63; }
+      :where(a, button, input, summary):focus-visible { outline: 3px solid #d66b2c; outline-offset: 3px; }
       header { margin-bottom: 2rem; }
       h1 { margin-bottom: .4rem; }
       ol { padding-left: 1.5rem; }

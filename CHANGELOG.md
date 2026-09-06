@@ -23,6 +23,7 @@ All notable changes to this project are documented here.
 - Added one-click command copying to each reviewed-package entry, with the full command remaining visible for manual copying.
 - Added bilingual labels and status text to the reviewed-package search and command-copy controls.
 - Added an ARIA live status for copy success and failure so keyboard and screen-reader users receive feedback.
+- Added visible `:focus-visible` styling for keyboard navigation on the reviewed-package page.
 - Fixed trusted auto-merge coverage for draft pull requests when they become ready for review.
 - Added the vendor-neutral Agent Skills specification to the machine-readable resource map.
 - Added bilingual guidance distinguishing the portable Agent Skills specification from WorkBuddy's Marketplace metadata and connector contracts.
