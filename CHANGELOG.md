@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Add bilingual Ask, Plan, and Craft mode guidance to the quickstarts, including the distinction between work mode and permission mode.
 - Add a category selector and shareable category URL state to the reviewed-package index for faster browsing without changing catalog records.
 - Add a bilingual Skill vs Expert vs Explore choice table to the quickstarts so users start from the right WorkBuddy surface.
 - Add GitHub identity and queryable SearchAction metadata to both Atlas language pages for clearer discovery and sharing.
