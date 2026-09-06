@@ -14,6 +14,10 @@ benchmarks, also browse the [Awesome WorkBuddy ecosystem index](https://github.c
 It complements this broad, metadata-first catalog; it is not a replacement for
 checking the exact source and license.
 
+For a task-oriented community walkthrough, see the [WorkBuddyGuide](https://github.com/AlephAITech/WorkBuddyGuide).
+For reproducible Agent task evaluation, see [Tencent WorkBuddy Bench](https://github.com/Tencent/workbuddy-bench).
+These are reference resources, not additional catalog records or trust endorsements.
+
 The catalog is a frozen snapshot of 21,818 indexed Skills. Use it to find and review
 existing entries; new additions are not automatically published.
 

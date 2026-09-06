@@ -30,6 +30,15 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn("--pattern SHA256SUMS", quickstart)
             self.assertIn("sha256sum --check SHA256SUMS --ignore-missing", quickstart)
 
+    def test_quickstarts_link_reference_resources_without_endorsing_them(self):
+        for name in ("docs/quickstart.md", "docs/quickstart.zh-CN.md"):
+            quickstart = (ROOT / name).read_text(encoding="utf-8")
+            self.assertIn("https://github.com/AlephAITech/WorkBuddyGuide", quickstart)
+            self.assertIn("https://github.com/Tencent/workbuddy-bench", quickstart)
+            self.assertTrue(
+                "trust endorsements" in quickstart or "不构成信任背书" in quickstart
+            )
+
     def test_catalog_refresh_is_frozen_without_automatic_additions(self):
         workflow = (ROOT / ".github/workflows/refresh-catalog.yml").read_text(encoding="utf-8")
         self.assertNotIn("schedule:", workflow)

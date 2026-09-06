@@ -12,6 +12,10 @@
 [Awesome WorkBuddy 生态索引](https://github.com/sandbaseai/awesome-workbuddy)。它补充的是本仓库的
 广泛元数据目录，但不能替代对具体来源和许可证的检查。
 
+想按真实任务学习，可以看 [WorkBuddy 实战蓝皮书](https://github.com/AlephAITech/WorkBuddyGuide)；
+想了解可复现的 Agent 任务评测，可以看 [Tencent WorkBuddy Bench](https://github.com/Tencent/workbuddy-bench)。
+这些是参考资料，不是本目录新增条目，也不构成信任背书。
+
 当前目录是 **21,818 条 Skill 的固定快照**。你可以用它寻找和审阅已有条目；不会自动发布新的 Skill。
 
 平台功能请优先参考[官方快速开始](https://www.workbuddy.ai/docs/zh/workbuddy/Quickstart)、[官方 Skills 教程](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills)、[MCP 指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide)和[Automation 指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide)。也可以浏览官方的 [Skill Marketplace](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) 和 [Explore](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Explore)，查看现成能力和案例。本仓库负责目录发现与打包说明；产品界面和平台行为以官方文档为准。
