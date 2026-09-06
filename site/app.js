@@ -333,7 +333,12 @@ async function loadCatalog() {
   count.textContent = isChinese ? "正在加载目录…" : "Loading catalog…";
   results.setAttribute("aria-busy", "true");
   try {
-    const [catalogResponse, metaResponse, packagesResponse] = await Promise.all([fetch("catalog.json"), fetch("catalog-meta.json"), fetch("packages.json")]);
+    const requestOptions = { cache: "no-cache" };
+    const [catalogResponse, metaResponse, packagesResponse] = await Promise.all([
+      fetch("catalog.json", requestOptions),
+      fetch("catalog-meta.json", requestOptions),
+      fetch("packages.json", requestOptions),
+    ]);
     if (!catalogResponse.ok || !metaResponse.ok || !packagesResponse.ok) throw new Error("catalog unavailable");
     const [data, meta, packages] = await Promise.all([catalogResponse.json(), metaResponse.json(), packagesResponse.json()]);
     if (meta.snapshot_frozen !== true) throw new Error("catalog snapshot is not frozen");

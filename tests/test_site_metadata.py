@@ -91,7 +91,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
                 self.assertIsNotNone(script_version)
                 self.assertIsNotNone(style_version)
                 self.assertEqual(script_version.group(1), style_version.group(1))
-                self.assertEqual(script_version.group(1), "0.21.0")
+                self.assertEqual(script_version.group(1), "0.22.0")
 
     def test_social_preview_is_expected_png_size(self):
         data = (SITE / "social-preview.png").read_bytes()
