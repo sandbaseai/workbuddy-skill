@@ -212,6 +212,35 @@ class QueryCatalogTests(unittest.TestCase):
         self.assertEqual(result["workbuddy_package_asset"], "research-workbuddy-skill.zip")
         self.assertTrue(result["workbuddy_checksum_url"].endswith("/SHA256SUMS"))
 
+    def test_cli_includes_reviewed_package_metadata_in_all_json_results(self):
+        record = row("research", "sha", 90)
+        record.update({
+            "id": "github:owner/repo:skills/research/SKILL.md",
+            "source_url": "https://github.com/owner/repo/blob/sha/skills/research/SKILL.md",
+        })
+        package_url = "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/research-workbuddy-skill.zip"
+        with TemporaryDirectory() as directory:
+            catalog = Path(directory) / "skills.jsonl"
+            curated = Path(directory) / "curated.json"
+            catalog.write_text(json.dumps(record) + "\n", encoding="utf-8")
+            curated.write_text(json.dumps([{
+                "catalog_id": record["id"],
+                "download_url": package_url,
+            }]), encoding="utf-8")
+            output = io.StringIO()
+            with redirect_stdout(output):
+                old_argv = sys.argv
+                try:
+                    sys.argv = [
+                        "query_catalog.py", "research", "--catalog", str(catalog),
+                        "--curated", str(curated), "--json",
+                    ]
+                    main()
+                finally:
+                    sys.argv = old_argv
+        result = json.loads(output.getvalue())[0]
+        self.assertEqual(result["workbuddy_package_asset"], "research-workbuddy-skill.zip")
+
 
 if __name__ == "__main__":
     unittest.main()

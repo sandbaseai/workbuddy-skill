@@ -162,16 +162,17 @@ def main() -> int:
         raise SystemExit(f"catalog not found: {args.catalog}")
     curated_ids = None
     curated_urls: dict[str, str] = {}
-    if args.package_status != "all":
-        if not args.curated.exists():
-            raise SystemExit(f"curated manifest not found: {args.curated}")
+    if args.curated.exists():
         curated_entries = json.loads(args.curated.read_text(encoding="utf-8"))
-        curated_ids = {entry["catalog_id"] for entry in curated_entries}
         curated_urls = {
             entry["catalog_id"]: entry["download_url"]
             for entry in curated_entries
             if entry.get("download_url")
         }
+        if args.package_status != "all":
+            curated_ids = {entry["catalog_id"] for entry in curated_entries}
+    elif args.package_status != "all":
+        raise SystemExit(f"curated manifest not found: {args.curated}")
 
     rows: list[dict] = []
     with args.catalog.open(encoding="utf-8") as handle:
