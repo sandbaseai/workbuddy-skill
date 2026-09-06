@@ -36,6 +36,11 @@ class AtlasFrontendTests(unittest.TestCase):
             self.assertIn("disabled", page)
             self.assertIn('aria-live="polite"', page)
             self.assertIn('id="external-search"', page)
+            self.assertIn("feature.yml", page)
+            if page is self.english:
+                self.assertIn("Request a capability", page)
+            else:
+                self.assertIn("提交能力需求", page)
             self.assertIn("filename%3ASKILL.md", page)
             self.assertIn("/discussions", page)
             self.assertIn("sandbaseai/awesome-workbuddy", page)
