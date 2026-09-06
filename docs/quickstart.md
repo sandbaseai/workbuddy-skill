@@ -69,6 +69,17 @@ and [onboarding guide](https://open.workbuddy.cn/en/docs/onboarding) for verific
 testing, review, and publishing prerequisites.
 This repository explains catalog discovery and packaging; the official docs remain the source of truth for product UI and platform behavior.
 
+## Use the built-in Skill Marketplace
+
+If you do not need a ZIP from this repository, open **Skill Marketplace** from
+the WorkBuddy sidebar. Search by capability or category, open a result to check
+its description, author, and version, then select **Install**. After installation,
+review the enabled Skill and its permissions before using it with real data. You
+can manage installed Skills from the Skills section: disable, update, or
+uninstall a Skill when it is no longer needed. See the [official Skill Marketplace
+guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)
+for the current UI and built-in security scan behavior.
+
 ## Choose an installation path
 
 | Path | Best for | Scope | Notes |

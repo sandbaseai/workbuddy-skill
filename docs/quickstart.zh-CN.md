@@ -50,6 +50,10 @@ WorkBuddy 启动并登录后，再继续下面的 Skill 安装路径。系统要
 开始任务前，可先阅读[官方新建任务栏说明](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar)，选择工作目录、模型、已安装的 Skill、连接器和权限模式。
 如果需要选择模型、使用自动模式、配置供应商预设、自定义接口或本地 Ollama，请阅读[官方模型配置说明](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Model)。
 
+## 直接使用内置 Skill Marketplace
+
+如果不需要下载本仓库的 ZIP，可以直接从 WorkBuddy 左侧打开 **Skill Marketplace**。按能力或分类搜索，打开条目查看说明、作者和版本，再点击 **安装**。安装后，先检查已启用的 Skill 及其权限，再用于真实数据。已安装的 Skill 可以在 Skills 区域停用、更新或卸载。具体界面和内置安全扫描行为请以[官方 Skill Marketplace 说明](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)为准。
+
 ## 先选择安装路径
 
 | 路径 | 适合谁 | 作用范围 | 说明 |
