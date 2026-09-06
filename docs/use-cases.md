@@ -8,6 +8,8 @@ Each prompt is designed to make the expected stopping condition explicit and red
 2. 把示例中的主题、格式或限制替换成你的实际需求；保留“先检查、再执行”的顺序。
 3. 涉及创建任务、付费或写入外部系统时，先让 WorkBuddy 只返回方案和预计成本，确认后再执行。
 
+如果找不到合适的连接器，先让 WorkBuddy 返回“未配置/不可用”的原因和替代方案，不要把密钥直接粘贴到对话中。
+
 ## Research / 调研
 
 ```text
