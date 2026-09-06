@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Add the official WorkBuddy macOS installation and first-launch permission guide to the bilingual resource maps and machine-readable entrypoint.
 - Add language metadata to the bilingual Atlas pages for more accurate search and social previews.
 - Add Huawei Cloud DevKit and Qwen-MM-Plugins as rights-aware WorkBuddy ecosystem references without copying their Skills or code.
 - Add SkillDeck as a rights-aware cross-agent Skill management reference without copying its app or Skills.
