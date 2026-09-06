@@ -255,6 +255,11 @@ def main() -> int:
         action="store_true",
         help="Explicitly opt in before writing the published frozen catalog",
     )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Discover and count candidates without writing the output or stats files",
+    )
     parser.add_argument("--checkpoint-every", type=int, default=5)
     parser.add_argument(
         "--max-rate-wait",
@@ -288,6 +293,14 @@ def main() -> int:
 
     token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN", "")
     rows = load_existing(args.output)
+    def checkpoint() -> None:
+        if not args.dry_run:
+            checkpoint()
+
+    def persist_stats() -> None:
+        if not args.dry_run:
+            write_stats(args.output, rows, requests, capped_queries)
+
     requests = 0
     capped_queries = 0
     throttle_retries = 0
@@ -317,7 +330,7 @@ def main() -> int:
                 f"repository={repository!r} discovered={len(rows) - before} indexed={len(rows)}",
                 file=sys.stderr,
             )
-            write_atomic(args.output, rows)
+            checkpoint()
         pending = search_shards(args.start_bytes, args.max_bytes)
         while pending:
             lower, upper = pending.pop()
@@ -384,21 +397,26 @@ def main() -> int:
                     headers, args.max_rate_wait - rate_waited
                 )
                 if requests % args.checkpoint_every == 0:
-                    write_atomic(args.output, rows)
+                    checkpoint()
             rate_waited += wait_for_rate_limit(
                 headers, args.max_rate_wait - rate_waited
             )
             # Persist after every completed shard so a long refresh loses at
             # most one shard when interrupted.
-            write_atomic(args.output, rows)
+            checkpoint()
     except (KeyboardInterrupt, HTTPError, URLError, RuntimeError) as exc:
-        write_atomic(args.output, rows)
-        write_stats(args.output, rows, requests, capped_queries)
+        checkpoint()
+        persist_stats()
         print(f"crawl paused after {len(rows)} records: {exc}", file=sys.stderr)
         return 2
 
-    write_atomic(args.output, rows)
-    write_stats(args.output, rows, requests, capped_queries)
+    checkpoint()
+    persist_stats()
+    if args.dry_run:
+        print(
+            f"dry-run: discovered {len(rows)} records; no output or stats files written",
+            file=sys.stderr,
+        )
     return 0 if len(rows) >= args.target else 1
 
 

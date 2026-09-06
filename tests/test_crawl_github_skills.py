@@ -29,6 +29,36 @@ class RateLimitTests(unittest.TestCase):
         self.assertEqual(raised.exception.code, 2)
         self.assertIn("catalog/skills.jsonl is frozen", stderr.getvalue())
 
+    @patch("crawl_github_skills.request_json")
+    def test_dry_run_does_not_write_output_or_stats(self, request_json):
+        request_json.return_value = ({
+            "total_count": 1,
+            "items": [{
+                "repository": {
+                    "full_name": "owner/repo",
+                    "html_url": "https://github.com/owner/repo",
+                    "fork": False,
+                },
+                "path": "skills/demo/SKILL.md",
+                "sha": "a" * 40,
+                "html_url": "https://github.com/owner/repo/blob/" + "a" * 40 + "/skills/demo/SKILL.md",
+            }],
+        }, {"X-RateLimit-Remaining": "1"})
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "preview.jsonl"
+            with patch(
+                "sys.argv",
+                [
+                    "crawl_github_skills.py",
+                    "--target", "1",
+                    "--dry-run",
+                    "--output", str(output),
+                ],
+            ):
+                self.assertEqual(main(), 0)
+            self.assertFalse(output.exists())
+            self.assertFalse((Path(directory) / "stats.json").exists())
+
     @patch("crawl_github_skills.time.time", return_value=1_000)
     def test_delay_uses_largest_server_boundary(self, _time):
         self.assertEqual(
