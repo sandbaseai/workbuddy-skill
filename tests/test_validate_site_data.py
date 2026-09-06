@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 import sys
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from validate_site_data import validate_rows  # noqa: E402
+from validate_site_data import validate_rows, validate_unique_fields  # noqa: E402
 
 
 class ValidateSiteDataTests(unittest.TestCase):
@@ -35,6 +35,15 @@ class ValidateSiteDataTests(unittest.TestCase):
         self.assertTrue(any("unknown field unexpected" in error for error in errors))
         self.assertTrue(any("40-character lowercase hex SHA" in error for error in errors))
         self.assertTrue(any("integer from 0 to 100" in error for error in errors))
+
+    def test_rejects_duplicate_reviewed_package_ids_and_assets(self):
+        rows = [
+            {"id": "one", "download_url": "https://example.com/one.zip"},
+            {"id": "one", "download_url": "https://example.com/one.zip"},
+        ]
+        errors = validate_unique_fields(rows, ("id", "download_url"), "packages")
+        self.assertEqual(len(errors), 2)
+        self.assertTrue(all("duplicate" in error for error in errors))
 
 
 if __name__ == "__main__":

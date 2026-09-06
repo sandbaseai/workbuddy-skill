@@ -12,6 +12,27 @@ from urllib.parse import urlparse
 
 
 HEX_SHA = re.compile(r"^[0-9a-f]{40}$")
+
+
+def validate_unique_fields(rows: object, fields: tuple[str, ...], label: str) -> list[str]:
+    if not isinstance(rows, list):
+        return []
+    errors: list[str] = []
+    for field in fields:
+        seen: dict[object, int] = {}
+        for index, row in enumerate(rows):
+            if not isinstance(row, dict) or field not in row:
+                continue
+            value = row[field]
+            if value in seen:
+                errors.append(
+                    f"{label} duplicate {field} {value!r} at records {seen[value]} and {index}"
+                )
+            else:
+                seen[value] = index
+    return errors
+
+
 def validate_rows(rows: object, schema: dict) -> list[str]:
     errors: list[str] = []
     if not isinstance(rows, list):
@@ -96,6 +117,7 @@ def main() -> int:
     errors = validate_rows(rows, schema)
     package_errors = validate_rows(packages, packages_schema)
     errors.extend(f"packages: {error}" for error in package_errors)
+    errors.extend(validate_unique_fields(packages, ("id", "download_url"), "packages"))
     if errors:
         for error in errors[:20]:
             print(f"error: {error}", file=sys.stderr)
