@@ -1,9 +1,8 @@
 # Starter packs
 
 Use this page when you want a sensible first package without searching the full
-catalog. Every item is an existing reviewed package in the latest Release; this
-page does not add catalog records or imply that a package is safe for every
-environment.
+catalog. Every item is an existing reviewed package in the latest Release. Read
+the package source and test it against your own environment before importing.
 
 | Goal | Start with | What it helps with |
 |---|---|---|
