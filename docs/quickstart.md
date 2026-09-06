@@ -45,6 +45,7 @@ Before the first real task, keep [Default Permissions](https://www.workbuddy.ai/
 
 | If you want to… | Do this first |
 |---|---|
+| Install a Skill from WorkBuddy itself | Open the built-in [Skill Marketplace](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market), inspect the author and version, then install and review its permissions. |
 | Install a reviewed package now | Open [curated packages](https://sandbaseai.github.io/workbuddy-skill/packages.html), download its ZIP, verify `SHA256SUMS`, and upload the original ZIP in WorkBuddy. |
 | Find a capability | Search the [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/), enable **Reviewed package available** when you need an installable result, then inspect the source and license. |
 | Search from a checkout | Run `python3 scripts/query_catalog.py <term> --package-status reviewed --sort score --limit 10`. |

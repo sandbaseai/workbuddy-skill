@@ -40,6 +40,7 @@ WorkBuddy 启动并登录后，再继续下面的 Skill 安装路径。系统要
 
 | 如果你想…… | 先做什么 |
 |---|---|
+| 直接从 WorkBuddy 安装 Skill | 打开内置的 [Skill Marketplace](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)，检查作者和版本，安装后再确认权限。 |
 | 现在就安装精选包 | 打开[精选包清单](https://sandbaseai.github.io/workbuddy-skill/packages.html)，下载 ZIP，校验 `SHA256SUMS`，再把原始 ZIP 上传到 WorkBuddy。 |
 | 找一个特定能力 | 在 [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) 搜索；需要可安装结果时打开“有精选包可用”，然后检查来源和许可证。 |
 | 在本地搜索目录 | 执行 `python3 scripts/query_catalog.py <关键词> --package-status reviewed --sort score --limit 10`。 |
