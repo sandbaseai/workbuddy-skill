@@ -10,6 +10,13 @@ SITE = ROOT / "site"
 
 
 class SiteDiscoveryMetadataTests(unittest.TestCase):
+    def test_citation_file_describes_the_public_atlas(self):
+        citation = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
+        self.assertIn("cff-version: 1.2.0", citation)
+        self.assertIn("title: WorkBuddy Skill Atlas", citation)
+        self.assertIn("repository-code: https://github.com/sandbaseai/workbuddy-skill", citation)
+        self.assertIn("license: MIT", citation)
+
     def test_opensearch_document_has_search_template(self):
         root = ET.parse(SITE / "opensearch.xml").getroot()
         namespace = {"os": "http://a9.com/-/spec/opensearch/1.1/"}

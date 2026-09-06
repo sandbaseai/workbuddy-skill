@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: WorkBuddy Skill Atlas
+type: dataset
+message: If you use this catalog or its reviewed WorkBuddy packages, please cite the repository.
+authors:
+  - name: SandBase AI
+repository-code: https://github.com/sandbaseai/workbuddy-skill
+url: https://sandbaseai.github.io/workbuddy-skill/
+license: MIT
+keywords:
+  - WorkBuddy
+  - agent skills
+  - skill catalog
+  - AI agents
