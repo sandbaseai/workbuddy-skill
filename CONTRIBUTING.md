@@ -26,6 +26,10 @@ python3 -m unittest discover -s tests -q
 git diff --check
 ```
 
+The public learning and resource links are checked weekly by the read-only
+`Check resource links` workflow. Run the same check locally with
+`python3 scripts/check_resource_links.py` when changing external references.
+
 Describe the real user request or failure that motivated an instruction change. Do not claim a check passed when it was skipped, flaky, or not run. Existing package adaptations still require a reviewable commit and package verification.
 
 GitHub auto-merge is enabled for this repository, and merged branches are deleted

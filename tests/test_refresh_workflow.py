@@ -58,6 +58,13 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("Verify frozen catalog", workflow)
         self.assertIn("--check-stats", workflow)
 
+    def test_resource_link_check_is_read_only_and_scheduled(self):
+        workflow = (ROOT / ".github/workflows/check-resource-links.yml").read_text(encoding="utf-8")
+        self.assertIn("schedule:", workflow)
+        self.assertIn("workflow_dispatch", workflow)
+        self.assertIn("contents: read", workflow)
+        self.assertIn("scripts/check_resource_links.py", workflow)
+
     def test_public_freshness_metadata_matches_site_schedule(self):
         catalog_docs = (ROOT / "catalog/README.md").read_text(encoding="utf-8")
         sitemap = (ROOT / "site/sitemap.xml").read_text(encoding="utf-8")
