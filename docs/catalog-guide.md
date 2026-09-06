@@ -46,6 +46,13 @@ python3 scripts/query_catalog.py research --security no-static-flags \
   --source-context primary-looking --min-score 80 --unique --sort score
 ```
 
+To restrict local results to packages that have a reviewed Release ZIP, use the
+curated manifest maintained by this repository:
+
+```bash
+python3 scripts/query_catalog.py research --package-status reviewed
+```
+
 The human-readable output includes a complete `catalog id`. Copy that value
 directly into `review_skill.py` or `adapt_skill.py`; do not reconstruct an ID
 from the display name.

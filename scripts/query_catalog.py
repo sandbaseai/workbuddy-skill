@@ -42,6 +42,8 @@ def query_rows(
     security: str | None = None,
     source: str | None = None,
     min_score: int | None = None,
+    package_status: str = "all",
+    curated_ids: set[str] | None = None,
     unique: bool = False,
     order: str = "source",
     limit: int = 20,
@@ -58,6 +60,11 @@ def query_rows(
         and (security is None or row.get("security_status") == security)
         and (source is None or source_context(row) == source)
         and (min_score is None or score_of(row) >= min_score)
+        and (
+            package_status == "all"
+            or curated_ids is None
+            or (catalog_id(row) in curated_ids) == (package_status == "reviewed")
+        )
     ]
 
     def by_name(row: dict) -> tuple[str, str]:
@@ -118,6 +125,18 @@ def main() -> int:
     )
     parser.add_argument("--min-score", type=int, help="Require a WorkBuddy score from 0 to 100")
     parser.add_argument(
+        "--package-status",
+        choices=("all", "reviewed", "catalog-only"),
+        default="all",
+        help="Require a reviewed WorkBuddy package or a catalog-only result",
+    )
+    parser.add_argument(
+        "--curated",
+        type=Path,
+        default=Path("catalog/curated.json"),
+        help="Curated package manifest used by --package-status",
+    )
+    parser.add_argument(
         "--source-context",
         choices=("primary-looking", "review-source"),
         help="Filter deterministic fork, mirror, and dormant-path context",
@@ -137,6 +156,12 @@ def main() -> int:
         parser.error("--min-score must be between 0 and 100")
     if not args.catalog.exists():
         raise SystemExit(f"catalog not found: {args.catalog}")
+    curated_ids = None
+    if args.package_status != "all":
+        if not args.curated.exists():
+            raise SystemExit(f"curated manifest not found: {args.curated}")
+        curated_entries = json.loads(args.curated.read_text(encoding="utf-8"))
+        curated_ids = {entry["catalog_id"] for entry in curated_entries}
 
     rows: list[dict] = []
     with args.catalog.open(encoding="utf-8") as handle:
@@ -156,6 +181,8 @@ def main() -> int:
         security=args.security,
         source=args.source_context,
         min_score=args.min_score,
+        package_status=args.package_status,
+        curated_ids=curated_ids,
         unique=args.unique,
         order=args.sort,
         limit=args.limit,

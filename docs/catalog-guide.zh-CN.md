@@ -30,6 +30,12 @@ python3 scripts/query_catalog.py research --security no-static-flags \
   --source-context primary-looking --min-score 80 --unique --sort score
 ```
 
+如果只想查看本仓库已经提供审阅版 Release ZIP 的条目，可以使用精选清单：
+
+```bash
+python3 scripts/query_catalog.py research --package-status reviewed
+```
+
 人类可读输出会直接给出完整的 `catalog id`。把这个值复制给
 `review_skill.py` 或 `adapt_skill.py` 即可，不要根据显示名称手工拼接 ID。
 

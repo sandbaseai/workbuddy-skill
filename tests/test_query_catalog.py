@@ -113,6 +113,25 @@ class QueryCatalogTests(unittest.TestCase):
         results, _ = query_rows([record], ["github:owner/repo:skills/research/SKILL.md"])
         self.assertEqual(results, [record])
 
+    def test_filters_reviewed_and_catalog_only_packages(self):
+        reviewed = {**row("reviewed", "reviewed", 90), "id": "github:owner/repo:skills/reviewed/SKILL.md"}
+        catalog_only = {**row("catalog-only", "catalog-only", 90), "id": "github:owner/repo:skills/catalog-only/SKILL.md"}
+        rows = [reviewed, catalog_only]
+        reviewed_results, _ = query_rows(
+            rows,
+            [],
+            package_status="reviewed",
+            curated_ids={reviewed["id"]},
+        )
+        catalog_results, _ = query_rows(
+            rows,
+            [],
+            package_status="catalog-only",
+            curated_ids={reviewed["id"]},
+        )
+        self.assertEqual(reviewed_results, [reviewed])
+        self.assertEqual(catalog_results, [catalog_only])
+
     def test_cli_prints_copyable_catalog_id(self):
         record = row("research", "sha", 90)
         record.update({

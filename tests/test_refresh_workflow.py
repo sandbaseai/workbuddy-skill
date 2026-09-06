@@ -83,6 +83,11 @@ class RefreshWorkflowTests(unittest.TestCase):
             guide = (ROOT / path).read_text(encoding="utf-8")
             self.assertIn("scripts/query_catalog.py 'github:owner/repository:path/to/SKILL.md'", guide)
 
+    def test_catalog_guides_document_reviewed_package_cli_filter(self):
+        for path in ("docs/catalog-guide.md", "docs/catalog-guide.zh-CN.md"):
+            guide = (ROOT / path).read_text(encoding="utf-8")
+            self.assertIn("--package-status reviewed", guide)
+
     def test_public_freshness_metadata_matches_site_schedule(self):
         catalog_docs = (ROOT / "catalog/README.md").read_text(encoding="utf-8")
         sitemap = (ROOT / "site/sitemap.xml").read_text(encoding="utf-8")
