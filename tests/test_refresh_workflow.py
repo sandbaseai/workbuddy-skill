@@ -43,6 +43,7 @@ class RefreshWorkflowTests(unittest.TestCase):
             else:
                 self.assertIn("read-only", quickstart.lower())
                 self.assertIn("API keys", quickstart)
+            self.assertIn("cli.github.com/manual/gh_skill", quickstart)
 
     def test_quickstarts_explain_reviewed_package_filter(self):
         english = (ROOT / "docs/quickstart.md").read_text(encoding="utf-8")
@@ -75,6 +76,7 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn("yinqd3/workbuddy-skills", resources)
             self.assertIn("oh-my-workbuddy", resources)
             self.assertIn("open.workbuddy.cn", resources)
+            self.assertIn("cli.github.com/manual/gh_skill", resources)
             self.assertIn("what-is-open-platform", resources)
             self.assertIn("workbuddy-bench", resources)
             self.assertIn("Skill Atlas", resources)

@@ -103,6 +103,7 @@ After reviewing the source, permissions, and plan, run a small task with public 
 4. After importing, use the safe-check prompt above before running a real task.
 
 Hosts supporting the open Agent Skills convention can preview and install from GitHub:
+The command details are maintained in the [official GitHub CLI `gh skill` manual](https://cli.github.com/manual/gh_skill); this command family is currently in preview.
 
 ```bash
 gh skill search incident --limit 10

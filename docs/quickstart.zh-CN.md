@@ -85,6 +85,7 @@ python3 scripts/verify_release.py workbuddy-download
 4. 导入后按照上面的“安全试运行”提示词先检查，再执行真实任务。
 
 支持开放 Agent Skills 约定的宿主，也可以从 GitHub 预览并安装：
+命令细节以 [GitHub CLI 官方 `gh skill` 手册](https://cli.github.com/manual/gh_skill) 为准；该命令族目前仍处于 preview 阶段。
 
 ```bash
 gh skill search incident --limit 10
