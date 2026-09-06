@@ -327,7 +327,8 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("Existing reviewed package or workflow", feature)
         self.assertIn("Documentation or usability", feature)
         self.assertIn("Skill, connector, or external capability", showcase)
-        self.assertIn("frozen snapshot", feature)
+        self.assertIn("reproducible example", feature)
+        self.assertNotIn("not to request a new catalog record", feature)
         self.assertIn("Failure stage", package_feedback)
         self.assertIn("SHA256 verification", package_feedback)
         self.assertIn("reviewed-package", package_feedback)
@@ -365,6 +366,8 @@ class RefreshWorkflowTests(unittest.TestCase):
         support = (ROOT / "SUPPORT.md").read_text(encoding="utf-8")
         self.assertIn("template=showcase.yml", support)
         self.assertIn("github.com/sandbaseai/workbuddy-skill/discussions", support)
+        self.assertIn("desired outcome", support)
+        self.assertNotIn("do not add new catalog records", support)
 
     def test_starter_packs_reference_existing_curated_packages(self):
         curated = (ROOT / "catalog/curated.json").read_text(encoding="utf-8")
