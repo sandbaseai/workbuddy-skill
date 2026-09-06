@@ -186,6 +186,7 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("*,CONTRIBUTOR,*)", workflow)
         self.assertIn("author_association", workflow)
         self.assertIn("--auto --squash --delete-branch", workflow)
+        self.assertIn('gh api --method DELETE "repos/$GITHUB_REPOSITORY/git/refs/heads/$BRANCH"', workflow)
         self.assertNotIn("actions/checkout", workflow)
 
     def test_merged_branch_cleanup_only_deletes_safe_same_repository_refs(self):

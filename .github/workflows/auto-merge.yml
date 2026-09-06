@@ -5,7 +5,9 @@ on:
     types: [opened, synchronize, reopened, ready_for_review]
 
 # This workflow never checks out or executes pull-request code. It only asks
-# GitHub to queue an auto-merge for trusted branches in this repository.
+# GitHub to queue an auto-merge for trusted branches in this repository. Once
+# the queued merge completes, it removes the same-repository source ref itself;
+# this avoids relying on a follow-up event emitted by the merge bot.
 permissions:
   contents: write
   pull-requests: write
@@ -22,6 +24,7 @@ jobs:
           AUTHOR_ASSOCIATION: ${{ github.event.pull_request.author_association }}
           DRAFT: ${{ github.event.pull_request.draft }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
+          BRANCH: ${{ github.event.pull_request.head.ref }}
         run: |
           if [[ "$DRAFT" == "true" ]]; then
             echo "Draft pull request; waiting for ready_for_review."
@@ -36,3 +39,18 @@ jobs:
             *) echo "Untrusted author association ($AUTHOR_ASSOCIATION); leaving merge manual."; exit 0 ;;
           esac
           gh pr merge "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --auto --squash --delete-branch
+          for attempt in {1..60}; do
+            STATE=$(gh pr view "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --json state --jq '.state')
+            if [[ "$STATE" == "MERGED" ]]; then
+              if [[ -n "$BRANCH" && "$BRANCH" != "main" ]]; then
+                gh api --method DELETE "repos/$GITHUB_REPOSITORY/git/refs/heads/$BRANCH"
+              fi
+              exit 0
+            fi
+            if [[ "$STATE" == "CLOSED" ]]; then
+              echo "Pull request closed without merging; leaving branch intact."
+              exit 0
+            fi
+            sleep 10
+          done
+          echo "Auto-merge is queued but did not complete during this run; cleanup remains manual."
