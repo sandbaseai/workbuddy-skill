@@ -11,6 +11,7 @@ const minScore = document.querySelector("#min-score");
 const packageStatus = document.querySelector("#package-status");
 const highSignal = document.querySelector("#high-signal");
 const resetFilters = document.querySelector("#reset-filters");
+const emptyReset = document.querySelector("#empty-reset");
 const copyLink = document.querySelector("#copy-link");
 const copyStatus = document.querySelector("#copy-status");
 const searchExamples = [...document.querySelectorAll(".search-example")];
@@ -296,6 +297,7 @@ resetFilters.addEventListener("click", () => {
   unique.checked = true;
   search({ historyMode: "push" });
 });
+emptyReset.addEventListener("click", () => resetFilters.click());
 copyLink.addEventListener("click", copySearchLink);
 window.addEventListener("popstate", () => {
   restoreUrlState();
