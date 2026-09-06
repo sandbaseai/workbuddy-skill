@@ -258,7 +258,7 @@ package_page = """<!doctype html>
       <p>Found a useful package? After a real trial, <a href="https://github.com/sandbaseai/workbuddy-skill">star the project</a> or <a href="https://github.com/sandbaseai/workbuddy-skill/discussions">share your result</a>. 找到有用的精选包？实际试用后欢迎<a href="https://github.com/sandbaseai/workbuddy-skill">加 Star</a>或<a href="https://github.com/sandbaseai/workbuddy-skill/discussions">分享案例</a>。</p>
       <nav class="category-nav" aria-label="Package categories">""" + category_nav + """</nav>
       <form class="package-search" role="search" onsubmit="return false">
-        <label for="package-filter">Filter packages by name, repository, path, or category / 按名称、仓库、路径或分类筛选</label>
+        <label for="package-filter">Filter packages by name, repository, path, or category / 按名称、仓库、路径或分类筛选 <span class="keyboard-hint">Press / to focus · Esc to clear</span></label>
         <input id="package-filter" type="search" autocomplete="off" placeholder="Try: security, playwright, or mcp / 例如：security、playwright、mcp">
         <output id="package-count" aria-live="polite">Showing all __PACKAGE_COUNT__ packages / 共 __PACKAGE_COUNT__ 个精选包</output>
         <div class="package-link-actions"><button type="button" class="copy-package-link" hidden>Copy filtered link / 复制筛选链接</button><span class="package-link-status" role="status" aria-live="polite"></span></div>
@@ -310,6 +310,18 @@ package_page = """<!doctype html>
           if (sync) syncUrl(historyMode);
         };
         input.addEventListener('input', () => update({ historyMode: 'replace' }));
+        document.addEventListener('keydown', (event) => {
+          const target = event.target;
+          const isFormControl = target instanceof HTMLElement
+            && ['INPUT', 'SELECT', 'TEXTAREA', 'BUTTON'].includes(target.tagName);
+          if (event.key === '/' && !event.metaKey && !event.ctrlKey && !event.altKey && !isFormControl) {
+            event.preventDefault();
+            input.focus();
+          } else if (event.key === 'Escape' && document.activeElement === input && input.value) {
+            input.value = '';
+            update({ historyMode: 'push' });
+          }
+        });
         clear.addEventListener('click', () => {
           input.value = '';
           update({ historyMode: 'push' });
