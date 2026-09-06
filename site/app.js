@@ -15,6 +15,7 @@ const copyLink = document.querySelector("#copy-link");
 const copyStatus = document.querySelector("#copy-status");
 const searchExamples = [...document.querySelectorAll(".search-example")];
 const empty = document.querySelector("#empty");
+const externalSearch = document.querySelector("#external-search");
 const error = document.querySelector("#error");
 const more = document.querySelector("#more");
 const languageLink = document.querySelector("#language-link");
@@ -100,6 +101,12 @@ function syncUrlState(historyMode = "replace") {
   const query = params.toString();
   history[`${historyMode}State`](null, "", `${location.pathname}${query ? `?${query}` : ""}${location.hash}`);
   syncLanguageLink();
+}
+
+function syncExternalSearchLink() {
+  const query = input.value.trim();
+  const search = query ? `${query} filename:SKILL.md` : "filename:SKILL.md";
+  externalSearch.href = `https://github.com/search?${new URLSearchParams({ q: search, type: "code" })}`;
 }
 
 function announceCopy(message) {
@@ -239,6 +246,7 @@ function search({ historyMode = "replace" } = {}) {
   } else if (sort.value === "source") {
     filtered.sort(bySource);
   }
+  syncExternalSearchLink();
   syncUrlState(historyMode);
   render();
 }
