@@ -27,6 +27,22 @@ def row(name, sha, score, *, status="adaptable", security="no-static-flags", rep
 
 
 class QueryCatalogTests(unittest.TestCase):
+    def test_help_exposes_copy_ready_search_examples_and_safety_boundary(self):
+        output = io.StringIO()
+        with redirect_stdout(output):
+            old_argv = sys.argv
+            try:
+                sys.argv = ["query_catalog.py", "--help"]
+                with self.assertRaises(SystemExit) as raised:
+                    main()
+            finally:
+                sys.argv = old_argv
+        self.assertEqual(raised.exception.code, 0)
+        help_text = output.getvalue()
+        self.assertIn("research --high-signal --limit 10", help_text)
+        self.assertIn("--package-status reviewed", help_text)
+        self.assertIn("Inspect the pinned source", help_text)
+
     def test_filters_deduplicates_and_sorts_by_score(self):
         rows = [
             row("research", "same", 80),

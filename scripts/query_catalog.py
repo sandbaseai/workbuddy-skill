@@ -8,6 +8,7 @@ from collections import Counter
 import json
 from pathlib import Path
 import sys
+from textwrap import dedent
 from urllib.parse import urlparse
 
 from catalog_categories import CATEGORIES, category_for
@@ -132,7 +133,19 @@ def query_rows(
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Search catalog/skills.jsonl by catalog ID, repository, path, or skill name."
+        description="Search catalog/skills.jsonl by catalog ID, repository, path, or skill name.",
+        epilog=dedent(
+            """
+            Examples:
+              %(prog)s research --high-signal --limit 10
+              %(prog)s --category research --package-status reviewed --sort score --limit 10
+              %(prog)s browser OCR --security no-static-flags --unique --json
+
+            Search only narrows candidates. Inspect the pinned source, license,
+            permissions, and side effects before adapting or installing anything.
+            """
+        ),
+        formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument("terms", nargs="*", help="Words that must all match")
     parser.add_argument("--catalog", type=Path, default=Path("catalog/skills.jsonl"))
