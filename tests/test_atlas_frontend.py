@@ -24,6 +24,8 @@ class AtlasFrontendTests(unittest.TestCase):
             self.assertIn('aria-live="polite"', page)
             self.assertIn("/discussions", page)
             self.assertIn("sandbaseai/awesome-workbuddy", page)
+            self.assertIn("/tree/main/catalog", page)
+            self.assertIn("quickstart", page)
 
     def test_url_state_supports_sharing_and_browser_history(self):
         self.assertIn("new URLSearchParams(location.search)", self.app)
