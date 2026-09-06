@@ -46,6 +46,9 @@ jobs:
             --repository microsoft/playwright \
             --repository aws-samples/sample-agentcore-launchpad \
             --repository aws-samples/sample-aws-resilience-skill \
+            --repository wshobson/agents \
+            --repository microsoft/skills \
+            --repository vercel-labs/skills \
             --max-requests 60 \
             --max-rate-wait 120 --output /tmp/skills.jsonl
           crawl_status=$?
