@@ -233,12 +233,16 @@ For asynchronous image, audio, or video jobs, preserve the returned `run_id` and
 
 ## Troubleshooting
 
-- **Import fails:** confirm that you uploaded the original Release ZIP and that `SKILL.md` is at the archive root; do not compress it again.
-- **Tools or connectors are missing:** enable the required service in the current workspace and reload WorkBuddy.
-- **`gh skill` is unavailable:** open the result's immutable source link in the Atlas and package it with the adaptation guide.
-- **No suitable Skill appears:** search with a shorter capability term or inspect related catalog entries. The catalog is a discovery surface, not an automatic trust decision.
-- **Schema validation fails:** inspect the current capability schema and retry once using only its current fields; do not guess arguments.
-- **Authorization, balance, or permission error:** check the account and workspace settings without pasting secrets into chat.
-- **The result is uncertain:** ask for evidence, sources, and limitations; do not treat guesses as execution results.
+Use the first matching row and stop after the stated next step. This avoids repeating a paid or write operation while the actual failure is still unknown.
+
+| Symptom | First check | Next step |
+|---|---|---|
+| Import fails | The original Release ZIP has `SKILL.md` at its archive root | Do not compress it again; re-download and verify the package |
+| Tools or connectors are missing | The required service is enabled in the current workspace | Reload WorkBuddy, then run a read-only status check |
+| `gh skill` is unavailable | The host does not provide the preview command | Open the Atlas source link and use the adaptation guide |
+| No suitable Skill appears | The search term is a short capability phrase | Search related catalog entries; the catalog is discovery, not trust |
+| Schema validation fails | The current capability schema and required fields | Retry once with current fields only; do not guess arguments |
+| Authorization, balance, or permission error | Account, workspace, and permission mode | Check settings without pasting secrets; ask for the exact missing approval |
+| Result is uncertain | Evidence, sources, and limitations in the response | Do not treat a guess as execution; request a verifiable result |
 
 For more help, see [Support](../SUPPORT.md). For security concerns, read the [security policy](../SECURITY.md).
