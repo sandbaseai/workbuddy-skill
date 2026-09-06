@@ -31,6 +31,7 @@ SOURCE_FILES = (
     ROOT / "site/llms.txt",
     ROOT / "site/packages.html",
     ROOT / "site/categories.html",
+    ROOT / "site/categories.zh-CN.html",
 )
 URL_PATTERN = re.compile(r'''https?://[^\s)<>`"']+''')
 DOWNLOAD_PATTERN = re.compile(r"/releases/latest/download/")

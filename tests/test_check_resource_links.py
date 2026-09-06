@@ -30,6 +30,7 @@ class ResourceLinkCheckTests(unittest.TestCase):
         self.assertIn('ROOT / "catalog/README.md"', source)
         self.assertIn('ROOT / "docs/use-cases.md"', source)
         self.assertIn('ROOT / "site/categories.html"', source)
+        self.assertIn('ROOT / "site/categories.zh-CN.html"', source)
 
     def test_extracts_json_urls_without_quotes_or_following_markup(self):
         with TemporaryDirectory() as directory:
