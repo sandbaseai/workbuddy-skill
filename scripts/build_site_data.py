@@ -155,7 +155,9 @@ for package in packages:
         f"<code title=\"Git blob SHA\">{escape(package['sha'])}</code> · "
         f"<a href=\"{escape(package['download_url'], quote=True)}\">Download ZIP</a> · "
         f"<a href=\"{escape(package['checksum_url'], quote=True)}\">SHA256SUMS</a></p>"
-        f"<details><summary>Copy download command</summary><pre class=\"command\"><code>{escape(package['download_command'])}</code></pre></details></li>"
+        f"<details><summary>Copy download command</summary>"
+        f"<button type=\"button\" class=\"copy-command\" data-command=\"{escape(package['download_command'], quote=True)}\">Copy command</button>"
+        f"<pre class=\"command\"><code>{escape(package['download_command'])}</code></pre></details></li>"
     )
 category_nav = " ".join(
     f"<a href=\"#category-{escape(category, quote=True)}\">{escape(category.title())}</a>"
@@ -228,6 +230,7 @@ package_page = """<!doctype html>
       .package-search label { display: block; font-weight: 650; margin-bottom: .35rem; }
       .package-search input { box-sizing: border-box; width: 100%; padding: .55rem .65rem; border: 1px solid #aebeb8; border-radius: .4rem; font: inherit; }
       .package-search output { display: block; margin-top: .35rem; color: #53615e; font-size: .9rem; }
+      .copy-command { margin-top: .6rem; padding: .35rem .6rem; border: 1px solid #8eaaa0; border-radius: .4rem; color: #174f49; background: #f4fbf7; cursor: pointer; font: inherit; }
       .machine { margin-top: 2rem; }
     </style>
   </head>
@@ -254,6 +257,7 @@ package_page = """<!doctype html>
         const output = document.querySelector('#package-count');
         const items = [...document.querySelectorAll('li[data-search]')];
         const sections = [...document.querySelectorAll('main section')];
+        const copyButtons = [...document.querySelectorAll('.copy-command')];
         const update = () => {
           const query = input.value.trim().toLowerCase();
           let visible = 0;
@@ -270,6 +274,18 @@ package_page = """<!doctype html>
             : `Showing all ${items.length} packages`;
         };
         input.addEventListener('input', update);
+        for (const button of copyButtons) {
+          button.addEventListener('click', async () => {
+            const original = button.textContent;
+            try {
+              await navigator.clipboard.writeText(button.dataset.command);
+              button.textContent = 'Copied';
+              window.setTimeout(() => { button.textContent = original; }, 1500);
+            } catch {
+              button.textContent = 'Copy failed — select the command below';
+            }
+          });
+        }
       })();
     </script>
   </body>
