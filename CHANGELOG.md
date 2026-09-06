@@ -4,6 +4,9 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added task-based bilingual resource navigation, Skill evaluation references, and an English `gh skill` installation example.
+- Routed human-facing reviewed-package discovery through the Atlas filter while keeping JSON endpoints for scripts and dashboards.
+- Exposed copy-ready reviewed-package download commands through the local CLI and validated their release assets and checksum flags in CI.
 - The entries below include historical catalog and package work retained for provenance.
 - Added bilingual task-based Starter Packs pages so users can choose an existing reviewed package before searching the full catalog.
 - Atlas search now matches the full copyable catalog ID, making CLI results and shared provenance identifiers searchable in the web UI.
