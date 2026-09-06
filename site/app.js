@@ -21,6 +21,7 @@ const metricRecords = document.querySelector("#metric-records");
 const metricShas = document.querySelector("#metric-shas");
 const metricRepositories = document.querySelector("#metric-repositories");
 const snapshotNote = document.querySelector("#snapshot-note");
+const curatedNote = document.querySelector("#curated-note");
 const heroCount = document.querySelector("#hero-count");
 const isChinese = document.documentElement.lang.startsWith("zh");
 
@@ -257,6 +258,9 @@ Promise.all([fetch("catalog.json"), fetch("catalog-meta.json")])
     snapshotNote.textContent = isChinese
       ? `固定快照：${meta.records.toLocaleString()} 条已索引 Skill。本网站不会自动增加新的目录记录。`
       : `Frozen snapshot: ${meta.records.toLocaleString()} indexed Skills. This site does not automatically add new catalog records.`;
+    curatedNote.textContent = isChinese
+      ? `Release 中提供 ${meta.curated_adaptations.toLocaleString()} 个经过审阅的 WorkBuddy 包。`
+      : `${meta.curated_adaptations.toLocaleString()} reviewed WorkBuddy packages are available from Releases.`;
     search();
     input.disabled = false;
     searchExamples.forEach((example) => { example.disabled = false; });

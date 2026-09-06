@@ -92,6 +92,7 @@ class RefreshWorkflowTests(unittest.TestCase):
         unreleased = changelog.split("## [", 1)[0]
         for phrase in (
             "bilingual WorkBuddy resource maps",
+            "current count of reviewed WorkBuddy packages",
             "full `catalog id`",
             "`SHA256SUMS` verification",
             "Chinese official Automation",

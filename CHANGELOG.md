@@ -7,6 +7,7 @@ All notable changes to this project are documented here.
 - The entries below include historical catalog and package work retained for provenance; the current public snapshot is frozen and the crawler is not an active publishing path.
 - Added bilingual WorkBuddy resource maps covering official product docs, community learning, evaluation material, and local catalog guides.
 - Added direct Atlas navigation to the resource maps, plus a post-use feedback and Star prompt that does not perform account actions.
+- Atlas now derives and displays the current count of reviewed WorkBuddy packages from `catalog-meta.json`.
 - Added copyable full `catalog id` output to the local query helper, and documented reproducible Release ZIP downloads with `SHA256SUMS` verification.
 - Added the Chinese official Automation documentation link and synchronized it into the machine-readable `llms.txt` index.
 - Enabled GitHub auto-merge governance with automatic merged-branch cleanup; validation and human review remain required.
