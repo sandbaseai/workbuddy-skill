@@ -1,11 +1,11 @@
-name: Capability request
-description: Suggest a real workflow the skill should handle better
-title: "[Capability]: "
+name: Docs, usability, or package request
+description: Suggest a documentation, usability, validation, or existing package improvement
+title: "[Usability]: "
 labels: [enhancement]
 body:
   - type: markdown
     attributes:
-      value: Use this form for a concrete workflow, documentation, usability, validation, or existing reviewed-package improvement. Include the desired outcome and a reproducible example when possible.
+      value: The public catalog is currently frozen, so this form does not add new Skill records. Use it for a concrete documentation, usability, validation, or existing reviewed-package improvement. Include the desired outcome and a reproducible example when possible.
   - type: textarea
     id: job
     attributes:
@@ -23,14 +23,12 @@ body:
   - type: dropdown
     id: type
     attributes:
-      label: Capability type
+      label: Request type
       options:
-        - API or SaaS
-        - Language model
-        - Image, audio, or video
-        - Embedding
         - Existing reviewed package or workflow
         - Documentation or usability
+        - Validation or provenance
+        - WorkBuddy integration or installation
         - Other
     validations:
       required: true

@@ -45,10 +45,10 @@ class AtlasFrontendTests(unittest.TestCase):
             self.assertIn('"@type": "SearchAction"', page)
             self.assertIn("feature.yml", page)
             if page is self.english:
-                self.assertIn("Request a capability", page)
+                self.assertIn("Request docs, usability, or package improvements", page)
                 self.assertIn("Retry loading", page)
             else:
-                self.assertIn("提交能力需求", page)
+                self.assertIn("提交文档、可用性或已有包改进", page)
                 self.assertIn("重试加载", page)
             self.assertIn("filename%3ASKILL.md", page)
             self.assertIn("/discussions", page)
