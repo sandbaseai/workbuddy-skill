@@ -228,4 +228,4 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review \
 4. 如果确实是切换账号后的恢复问题，可把 [workbuddy-account-migrate](https://github.com/xiaoliuzhuan666/workbuddy-account-migrate) 当作 MIT 许可的外部参考：先运行它的诊断模式、阅读源码并确认备份和回滚路径，再决定是否执行迁移。它会修改本地数据库、记忆和连接器数据，本仓库不代为执行，也不把它视为无风险工具。
 5. 恢复后先用只读任务确认会话、记忆和连接器，再进行任何写入或清理操作。
 
-需要进一步帮助时，请查看 [支持说明](../SUPPORT.md)；发现安全问题请阅读 [安全政策](../SECURITY.md)。
+需要进一步帮助时，请查看[中文支持说明](../SUPPORT.zh-CN.md)；发现安全问题请阅读[安全政策](../SECURITY.md)。

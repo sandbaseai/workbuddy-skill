@@ -66,7 +66,7 @@ class AtlasFrontendTests(unittest.TestCase):
             self.assertIn("packages-schema.json", page)
             self.assertIn("package-feedback.yml", page)
             self.assertIn("footer-links", page)
-            self.assertIn("SUPPORT.md", page)
+            self.assertIn("SUPPORT.zh-CN.md" if page is self.chinese else "SUPPORT.md", page)
             self.assertIn("docs/quickstart", page)
             self.assertIn("docs/resources", page)
 

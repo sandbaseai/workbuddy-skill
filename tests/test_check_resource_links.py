@@ -23,6 +23,7 @@ class ResourceLinkCheckTests(unittest.TestCase):
         self.assertIn('ROOT / "README.md"', source)
         self.assertIn('ROOT / "CHANGELOG.md"', source)
         self.assertIn('ROOT / "SUPPORT.md"', source)
+        self.assertIn('ROOT / "SUPPORT.zh-CN.md"', source)
         self.assertIn('ROOT / "SECURITY.md"', source)
         self.assertIn('ROOT / "catalog/README.md"', source)
         self.assertIn('ROOT / "docs/use-cases.md"', source)

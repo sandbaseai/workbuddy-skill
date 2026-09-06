@@ -18,6 +18,7 @@ SOURCE_FILES = (
     ROOT / "README.md",
     ROOT / "CHANGELOG.md",
     ROOT / "SUPPORT.md",
+    ROOT / "SUPPORT.zh-CN.md",
     ROOT / "SECURITY.md",
     ROOT / "catalog/README.md",
     ROOT / "docs/resources.md",

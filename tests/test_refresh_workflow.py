@@ -114,6 +114,13 @@ class RefreshWorkflowTests(unittest.TestCase):
                 or "具体来源和许可证" in quickstart
             )
 
+    def test_chinese_quickstart_routes_to_chinese_support(self):
+        quickstart = (ROOT / "docs/quickstart.zh-CN.md").read_text(encoding="utf-8")
+        support = (ROOT / "SUPPORT.zh-CN.md").read_text(encoding="utf-8")
+        self.assertIn("SUPPORT.zh-CN.md", quickstart)
+        self.assertIn("中文支持说明", quickstart)
+        self.assertIn("不会新增 Skill 记录", support)
+
     def test_resource_maps_cover_both_languages_and_the_main_paths(self):
         for name in ("docs/resources.md", "docs/resources.zh-CN.md"):
             resources = (ROOT / name).read_text(encoding="utf-8")
