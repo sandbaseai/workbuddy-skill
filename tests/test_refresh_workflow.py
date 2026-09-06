@@ -127,6 +127,8 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("The published snapshot is frozen", catalog_docs)
         self.assertIn("read-only frozen-catalog check", catalog_docs)
         self.assertEqual(sitemap.count("<changefreq>daily</changefreq>"), 2)
+        self.assertIn("https://sandbaseai.github.io/workbuddy-skill/catalog.json", sitemap)
+        self.assertIn("https://sandbaseai.github.io/workbuddy-skill/packages.json", sitemap)
 
     def test_pages_actions_use_current_node_runtime_generations(self):
         workflow = (ROOT / ".github/workflows/pages.yml").read_text(encoding="utf-8")

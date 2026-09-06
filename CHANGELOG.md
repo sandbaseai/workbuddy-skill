@@ -50,6 +50,7 @@ All notable changes to this project are documented here.
 - Updated bilingual Atlas search and social metadata to surface the reviewed package count.
 - Extended local JSON catalog queries with reviewed package asset and checksum fields.
 - Local catalog JSON queries now include available reviewed-package metadata without requiring a package filter.
+- Added machine-readable catalog and reviewed-package URLs to the public sitemap.
 - Added bilingual WorkBuddy resource maps covering official product docs, community learning, evaluation material, and local catalog guides.
 - Added direct Atlas navigation to the resource maps, plus a post-use feedback and Star prompt that does not perform account actions.
 - Atlas now derives and displays the current count of reviewed WorkBuddy packages from `catalog-meta.json`.
