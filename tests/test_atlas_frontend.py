@@ -42,6 +42,7 @@ class AtlasFrontendTests(unittest.TestCase):
             self.assertIn("catalog-schema.json", page)
             self.assertIn("packages.json", page)
             self.assertIn("packages-schema.json", page)
+            self.assertIn("package-feedback.yml", page)
             self.assertIn("footer-links", page)
 
     def test_url_state_supports_sharing_and_browser_history(self):
