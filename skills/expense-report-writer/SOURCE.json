@@ -1,0 +1,17 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [
+      "assets/policy-limits.csv",
+      "assets/report-template.md"
+    ],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:aws-samples/sample-agentcore-launchpad:samples/skills/expense-report-writer/SKILL.md",
+  "declared_source_license": "MIT-0",
+  "path": "samples/skills/expense-report-writer/SKILL.md",
+  "repository": "aws-samples/sample-agentcore-launchpad",
+  "sha": "079c7a5f0c169c996d0b9523f4fb913729684fff",
+  "source_url": "https://github.com/aws-samples/sample-agentcore-launchpad/blob/8374ab2e8ba43ced3fd19d590714e163a3cfbfa5/samples/skills/expense-report-writer/SKILL.md"
+}

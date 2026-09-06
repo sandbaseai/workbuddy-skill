@@ -1,0 +1,29 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [
+      "references/assertj-basics.md",
+      "references/assertj-collections.md",
+      "references/context-caching.md",
+      "references/datajpatest.md",
+      "references/instancio.md",
+      "references/mockitobean.md",
+      "references/mockmvc-classic.md",
+      "references/mockmvc-tester.md",
+      "references/restclienttest.md",
+      "references/resttestclient.md",
+      "references/sb4-migration.md",
+      "references/test-slices-overview.md",
+      "references/testcontainers-jdbc.md",
+      "references/webmvctest.md"
+    ],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/spring-boot-testing/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/spring-boot-testing/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "9e97e9835e1ffefcd26f7b46b7633070cd5fd13e",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/spring-boot-testing/SKILL.md"
+}

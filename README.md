@@ -186,6 +186,9 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Ruff Recursive Fix](skills/ruff-recursive-fix/) | 分阶段运行 Ruff、审阅自动修复并保留歧义决策 |
 | [SQL Optimization](skills/sql-optimization/) | 用执行计划、索引和分页证据优化 SQL，默认只读 |
 | [WebMCPify](skills/webmcpify/) | 为自有 Web 应用设计、集成并验证 WebMCP 工具 |
+| [Review and Refactor](skills/review-and-refactor/) | 按项目约定审查代码并规划可验证的重构 |
+| [Spring Boot Testing](skills/spring-boot-testing/) | 选择测试切片、断言、Mock 和 Testcontainers 策略 |
+| [Expense Report Writer](skills/expense-report-writer/) | 按政策和模板整理费用并标记审批要求 |
 
 浏览 [完整精选目录](skills/) 或直接打开 [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/)。每个精选条目都提供来源说明；外部来源的许可证和适配信息见对应的 `SOURCE.json`。
 

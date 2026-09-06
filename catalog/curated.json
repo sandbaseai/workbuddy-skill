@@ -1785,5 +1785,26 @@
     "skill_path": "skills/webmcpify",
     "category": "development",
     "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/webmcpify-workbuddy-skill.zip"
+  },
+  {
+    "catalog_id": "github:github/awesome-copilot:skills/review-and-refactor/SKILL.md",
+    "skill": "review-and-refactor",
+    "skill_path": "skills/review-and-refactor",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/review-and-refactor-workbuddy-skill.zip"
+  },
+  {
+    "catalog_id": "github:github/awesome-copilot:skills/spring-boot-testing/SKILL.md",
+    "skill": "spring-boot-testing",
+    "skill_path": "skills/spring-boot-testing",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/spring-boot-testing-workbuddy-skill.zip"
+  },
+  {
+    "catalog_id": "github:aws-samples/sample-agentcore-launchpad:samples/skills/expense-report-writer/SKILL.md",
+    "skill": "expense-report-writer",
+    "skill_path": "skills/expense-report-writer",
+    "category": "business",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/expense-report-writer-workbuddy-skill.zip"
   }
 ]
