@@ -38,7 +38,9 @@ Use this page to choose the right source before searching the catalog.
 - [yinqd3/workbuddy-skills](https://github.com/yinqd3/workbuddy-skills) — MIT-licensed community collection with academic research, frontend slides, and tool-call workflows; use it as a source to inspect, not an automatic trust signal.
 - [oh-my-workbuddy](https://github.com/mrzhangguoguo/oh-my-workbuddy) — MIT-licensed bilingual WorkBuddy port with catalog-driven workflow conventions.
 - [WorkBuddy Harness blue book](https://github.com/zjp1997720/zhijian-ai-bluebook-workbuddy-harness) — evidence-bounded deep dive into local files, prompt assembly, extensions, and safety boundaries; its [online edition](https://zjp1997720.github.io/zhijian-ai-bluebook-workbuddy-harness/) is convenient for browsing. Research reference without a repository license declaration.
-- [Tencent WorkBuddy Bench](https://github.com/Tencent/workbuddy-bench) — reproducible Agent task evaluation material.
+- [Tencent WorkBuddy Bench](https://github.com/Tencent/workbuddy-bench) — reproducible Agent task evaluation across Code, Web, Office, and Security workloads, with Docker-based runs and reports.
+- [GitSkills](https://arxiv.org/abs/2608.10906) — research dataset and analysis of millions of public `SKILL.md` files; useful for studying ecosystem scale, not an installation feed.
+- [SWE-Skills-Bench](https://arxiv.org/abs/2603.15401) — requirement-driven benchmark for measuring whether public Skills improve real software-engineering tasks.
 - [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy) — curated ecosystem references.
 - [Community Awesome WorkBuddy](https://github.com/staruhub/awesome-workbuddy) — another bilingual index of official resources, workflows, tutorials, and comparisons; use as navigation, not as a trust or license decision.
 - [WorkBuddy Skills archive](https://github.com/infometa/workbuddyskills) — public-market archive for offline study; the repository states that its contents remain the property of their original authors and are not a license to redistribute.

@@ -38,7 +38,9 @@
 - [yinqd3/workbuddy-skills](https://github.com/yinqd3/workbuddy-skills)——MIT 许可的社区技能集合，包含学术研究、前端幻灯片和工具调用工作流；仅作为可审阅来源，不代表自动可信。
 - [oh-my-workbuddy](https://github.com/mrzhangguoguo/oh-my-workbuddy)——MIT 许可的双语 WorkBuddy 端口，可参考其目录化工作流约定。
 - [WorkBuddy Harness 机制蓝皮书](https://github.com/zjp1997720/zhijian-ai-bluebook-workbuddy-harness)——从本地文件、提示词拼装、扩展机制和安全边界理解 WorkBuddy，也提供[在线版](https://zjp1997720.github.io/zhijian-ai-bluebook-workbuddy-harness/)；仓库未声明许可证，仅作研究参考。
-- [Tencent WorkBuddy Bench](https://github.com/Tencent/workbuddy-bench)——可复现的 Agent 任务评测资料。
+- [Tencent WorkBuddy Bench](https://github.com/Tencent/workbuddy-bench)——覆盖 Code、Web、Office 和 Security 工作负载的可复现 Agent 任务评测，支持 Docker 运行和结果报告。
+- [GitSkills](https://arxiv.org/abs/2608.10906)——对数百万公开 `SKILL.md` 文件进行整理和分析的研究数据集；用于理解生态规模，不是安装源。
+- [SWE-Skills-Bench](https://arxiv.org/abs/2603.15401)——以需求驱动的基准，评估公开 Skill 是否能改善真实软件工程任务。
 - [Awesome WorkBuddy](https://github.com/sandbaseai/awesome-workbuddy)——精选生态参考。
 - [Community Awesome WorkBuddy](https://github.com/staruhub/awesome-workbuddy)——另一份双语官方资源、工作流、教程和对比索引；仅用于导航，不替代信任或许可证判断。
 - [WorkBuddy Skills 归档](https://github.com/infometa/workbuddyskills)——用于离线学习的公开市场归档；该仓库明确说明内容版权归原作者，不代表允许再分发。
