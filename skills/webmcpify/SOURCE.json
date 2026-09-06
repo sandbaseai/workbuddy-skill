@@ -1,0 +1,22 @@
+{
+  "adaptation": {
+    "missing_resources": [],
+    "packaged_resources": [
+      "references/heal.md",
+      "references/integrate.md",
+      "references/inventory.md",
+      "references/runtime.md",
+      "references/security.md",
+      "references/verify.md",
+      "templates/webmcp.spec.ts"
+    ],
+    "security_signals": [],
+    "tool": "scripts/adapt_skill.py"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/webmcpify/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/webmcpify/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "64ad9e64bd18084978bb071838a1e215170f8403",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/webmcpify/SKILL.md"
+}

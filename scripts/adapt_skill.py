@@ -162,6 +162,7 @@ def adapted_text(source: str, args: argparse.Namespace) -> tuple[str, str]:
         "category": args.category,
         "version": args.version,
         "author": args.author,
+        "license": args.source_license,
     }
     for optional in (
         "allowed-tools",

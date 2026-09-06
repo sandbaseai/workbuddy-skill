@@ -1764,5 +1764,26 @@
     "skill": "systematic-debugging",
     "skill_path": "skills/systematic-debugging",
     "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/systematic-debugging-workbuddy-skill.zip"
+  },
+  {
+    "catalog_id": "github:github/awesome-copilot:skills/ruff-recursive-fix/SKILL.md",
+    "skill": "ruff-recursive-fix",
+    "skill_path": "skills/ruff-recursive-fix",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/ruff-recursive-fix-workbuddy-skill.zip"
+  },
+  {
+    "catalog_id": "github:github/awesome-copilot:skills/sql-optimization/SKILL.md",
+    "skill": "sql-optimization",
+    "skill_path": "skills/sql-optimization",
+    "category": "data",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/sql-optimization-workbuddy-skill.zip"
+  },
+  {
+    "catalog_id": "github:github/awesome-copilot:skills/webmcpify/SKILL.md",
+    "skill": "webmcpify",
+    "skill_path": "skills/webmcpify",
+    "category": "development",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/webmcpify-workbuddy-skill.zip"
   }
 ]

@@ -4,6 +4,8 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added MIT Ruff Recursive Fix, SQL Optimization, and WebMCPify Skills from the pinned GitHub awesome-copilot source, with bilingual metadata, provenance, and WorkBuddy-safe package boundaries.
+- Fixed the adapter so `--source-license` is also emitted as the generated Skill's required `license` metadata.
 - Enhanced the scheduled crawler with immutable Git-tree scans for selected public repositories, so newly added `SKILL.md` paths are discoverable even when Code Search indexing lags or reaches its cap.
 - Added MIT Microsoft Docs Research and pytest Coverage Analysis Skills with source/version evidence, isolation, privacy, and side-effect boundaries.
 - Added MIT MCP CLI and SQL Code Review Skills with explicit tool/schema, authorization, redaction, injection, and database evidence boundaries.

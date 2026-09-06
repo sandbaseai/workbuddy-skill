@@ -183,6 +183,9 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Deep Evidence Research](skills/deep-research/) | 产出带来源、争议和限制说明的研究结果 |
 | [Microsoft Docs Research](skills/microsoft-docs/) | 检索 Microsoft 官方文档、示例和版本化证据 |
 | [pytest Coverage Analysis](skills/pytest-coverage/) | 定位 pytest 覆盖缺口并按行为风险补充测试 |
+| [Ruff Recursive Fix](skills/ruff-recursive-fix/) | 分阶段运行 Ruff、审阅自动修复并保留歧义决策 |
+| [SQL Optimization](skills/sql-optimization/) | 用执行计划、索引和分页证据优化 SQL，默认只读 |
+| [WebMCPify](skills/webmcpify/) | 为自有 Web 应用设计、集成并验证 WebMCP 工具 |
 
 浏览 [完整精选目录](skills/) 或直接打开 [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/)。每个精选条目都提供来源说明；外部来源的许可证和适配信息见对应的 `SOURCE.json`。
 
