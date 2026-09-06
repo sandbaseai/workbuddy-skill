@@ -38,6 +38,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - WorkBuddy Harness v2 architecture and evaluation reference (no formal LICENSE file; research only): https://github.com/zhuang-HE/workbuddy-harness
 - MIT WorkBuddy community skills collection: https://github.com/yinqd3/workbuddy-skills
 - Apache-2.0 Huawei Cloud DevKit with explicit WorkBuddy support and safety checks (research reference): https://github.com/huaweicloud/huaweicloud-devkit
+- Tencent CloudBase AI Toolkit with explicit WorkBuddy support for backend, Skills, MCP, and deployment workflows (research reference): https://github.com/TencentCloudBase/CloudBase-AI-Toolkit
 - Apache-2.0 Qwen multimodal Skill + optional MCP plugins (research reference): https://github.com/QwenLM/Qwen-MM-Plugins
 - MIT macOS Skill manager with explicit WorkBuddy/CodeBuddy support (research reference): https://github.com/crossoverJie/SkillDeck
 - MIT zero-dependency Skill/MCP governance CLI with WorkBuddy directory support (research reference): https://github.com/GrubbyLee/skill-manager
