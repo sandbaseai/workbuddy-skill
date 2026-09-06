@@ -252,6 +252,18 @@ function search({ historyMode = "replace" } = {}) {
 }
 
 input.addEventListener("input", search);
+document.addEventListener("keydown", (event) => {
+  const target = event.target;
+  const isFormControl = target instanceof HTMLElement
+    && ["INPUT", "SELECT", "TEXTAREA", "BUTTON"].includes(target.tagName);
+  if (event.key === "/" && !event.metaKey && !event.ctrlKey && !event.altKey && !isFormControl) {
+    event.preventDefault();
+    input.focus();
+  } else if (event.key === "Escape" && document.activeElement === input && input.value) {
+    input.value = "";
+    search({ historyMode: "push" });
+  }
+});
 for (const example of searchExamples) {
   example.addEventListener("click", () => {
     input.value = example.dataset.search || "";
