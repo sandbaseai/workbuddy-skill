@@ -147,6 +147,7 @@ for package in packages:
         f"<p><span class=\"badge\">{escape(package['category'])}</span> "
         f"{escape(package['repository'])} · <code>{escape(package['path'])}</code></p>"
         f"<p><a href=\"{escape(package['source_url'], quote=True)}\">Inspect pinned source</a> · "
+        f"<code title=\"Git blob SHA\">{escape(package['sha'])}</code> · "
         f"<a href=\"{escape(package['download_url'], quote=True)}\">Download ZIP</a> · "
         f"<a href=\"{escape(package['checksum_url'], quote=True)}\">SHA256SUMS</a></p></li>"
     )
