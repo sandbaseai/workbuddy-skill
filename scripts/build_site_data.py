@@ -215,7 +215,7 @@ package_page = """<!doctype html>
     </header>
     <main>
 """ + category_sections + """
-      <p class="machine"><a href="packages.json">Machine-readable JSON index</a> · <a href="packages-schema.json">JSON Schema</a> · <a href="https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.md">Quickstart</a></p>
+      <p class="machine"><a href="packages.json">Machine-readable JSON index</a> · <a href="packages-schema.json">JSON Schema</a> · <a href="https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.md">English quickstart</a> · <a href="https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.zh-CN.md">中文快速开始</a></p>
     </main>
   </body>
 </html>

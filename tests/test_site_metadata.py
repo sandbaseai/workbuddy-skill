@@ -88,6 +88,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("packages.json", content)
         self.assertIn("packages.html", content)
         self.assertIn("packages-schema.json", content)
+        self.assertIn("docs/quickstart.zh-CN.md", content)
         self.assertIn("scripts/adapt_skill.py", content)
         self.assertIn("CITATION.cff", content)
         self.assertIn("not a security guarantee", content)
