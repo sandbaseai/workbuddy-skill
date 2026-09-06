@@ -12,6 +12,10 @@ import sys
 from catalog_signals import source_context
 
 
+def catalog_id(row: dict) -> str:
+    return str(row.get("id") or f"github:{row.get('repository', '')}:{row.get('path', '')}")
+
+
 def matches(row: dict, terms: list[str]) -> bool:
     haystack = " ".join(
         str(row.get(field, ""))
@@ -26,6 +30,7 @@ def matches(row: dict, terms: list[str]) -> bool:
             "security_signals",
         )
     ).casefold()
+    haystack = f"{haystack} {catalog_id(row).casefold()}"
     return all(term.casefold() in haystack for term in terms)
 
 
@@ -96,7 +101,7 @@ def query_rows(
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Search catalog/skills.jsonl by repository, path, or skill name."
+        description="Search catalog/skills.jsonl by catalog ID, repository, path, or skill name."
     )
     parser.add_argument("terms", nargs="+", help="Words that must all match")
     parser.add_argument("--catalog", type=Path, default=Path("catalog/skills.jsonl"))

@@ -107,6 +107,12 @@ class QueryCatalogTests(unittest.TestCase):
         results, _ = query_rows([compatible], ["Python", "3.12"])
         self.assertEqual(results, [compatible])
 
+    def test_search_includes_full_catalog_id(self):
+        record = row("research", "sha", 90)
+        record["id"] = "github:owner/repo:skills/research/SKILL.md"
+        results, _ = query_rows([record], ["github:owner/repo:skills/research/SKILL.md"])
+        self.assertEqual(results, [record])
+
     def test_cli_prints_copyable_catalog_id(self):
         record = row("research", "sha", 90)
         record.update({
