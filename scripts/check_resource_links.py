@@ -25,6 +25,7 @@ SOURCE_FILES = (
 )
 URL_PATTERN = re.compile(r"https?://[^\s)<>`]+")
 DOWNLOAD_PATTERN = re.compile(r"/releases/latest/download/")
+SITE_URL_PREFIX = "https://sandbaseai.github.io/workbuddy-skill/"
 
 
 def extract_urls(paths: tuple[Path, ...] = SOURCE_FILES) -> list[str]:
@@ -34,7 +35,7 @@ def extract_urls(paths: tuple[Path, ...] = SOURCE_FILES) -> list[str]:
     for path in paths:
         for url in URL_PATTERN.findall(path.read_text(encoding="utf-8")):
             url = url.rstrip(".,;。")
-            if not DOWNLOAD_PATTERN.search(url):
+            if not DOWNLOAD_PATTERN.search(url) and not url.startswith(SITE_URL_PREFIX):
                 urls.add(url)
     return sorted(urls)
 

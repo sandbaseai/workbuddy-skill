@@ -11,6 +11,7 @@ class ResourceLinkCheckTests(unittest.TestCase):
     def test_extracts_external_links_and_skips_release_archives(self):
         urls = extract_urls((ROOT / "docs/starter-packs.md", ROOT / "docs/quickstart.md"))
         self.assertIn("https://github.com/sandbaseai/workbuddy-skill/releases/latest", urls)
+        self.assertNotIn("https://sandbaseai.github.io/workbuddy-skill/packages.html", urls)
         self.assertNotIn(
             "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/code-review-excellence-workbuddy-skill.zip",
             urls,

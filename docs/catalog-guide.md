@@ -83,7 +83,8 @@ For scripts and dashboards, the compact browser dataset is available at
 [`catalog.json`](https://sandbaseai.github.io/workbuddy-skill/catalog.json),
 with field definitions in its [JSON Schema](https://sandbaseai.github.io/workbuddy-skill/catalog-schema.json).
 If you only need reviewed packages that have a Release ZIP, use the separate
-[package index](https://sandbaseai.github.io/workbuddy-skill/packages.json) and
+[human-readable package index](https://sandbaseai.github.io/workbuddy-skill/packages.html), its
+[machine-readable package index](https://sandbaseai.github.io/workbuddy-skill/packages.json), and
 its [Schema](https://sandbaseai.github.io/workbuddy-skill/packages-schema.json). Each package record includes an `asset` filename, a ready-to-copy `download_command` for GitHub CLI, and a `checksum_url` for verifying the ZIP.
 
 ## 4. Run a read-only first test

@@ -86,6 +86,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         content = (SITE / "llms.txt").read_text(encoding="utf-8")
         self.assertIn("catalog.json", content)
         self.assertIn("packages.json", content)
+        self.assertIn("packages.html", content)
         self.assertIn("packages-schema.json", content)
         self.assertIn("scripts/adapt_skill.py", content)
         self.assertIn("CITATION.cff", content)

@@ -3,6 +3,7 @@
 
 from pathlib import Path
 from collections import Counter
+from html import escape
 import json
 import re
 from urllib.parse import urlparse
@@ -14,6 +15,7 @@ SOURCE = ROOT / "catalog" / "skills.jsonl"
 CURATED = ROOT / "catalog" / "curated.json"
 OUTPUT = ROOT / "site" / "catalog.json"
 PACKAGES_OUTPUT = ROOT / "site" / "packages.json"
+PACKAGES_PAGE_OUTPUT = ROOT / "site" / "packages.html"
 CHECKSUM_URL = "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/SHA256SUMS"
 RELEASE_REPO = "sandbaseai/workbuddy-skill"
 
@@ -135,6 +137,60 @@ packages_temporary.write_text(
     encoding="utf-8",
 )
 packages_temporary.replace(PACKAGES_OUTPUT)
+package_items = []
+for package in packages:
+    package_items.append(
+        "<li><h2>"
+        f"<a href=\"{escape(package['download_url'], quote=True)}\">{escape(package['name'])}</a>"
+        "</h2>"
+        f"<p><span class=\"badge\">{escape(package['category'])}</span> "
+        f"{escape(package['repository'])} · <code>{escape(package['path'])}</code></p>"
+        f"<p><a href=\"{escape(package['source_url'], quote=True)}\">Inspect pinned source</a> · "
+        f"<a href=\"{escape(package['download_url'], quote=True)}\">Download ZIP</a> · "
+        f"<a href=\"{escape(package['checksum_url'], quote=True)}\">SHA256SUMS</a></p></li>"
+    )
+package_page = """<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://sandbaseai.github.io/workbuddy-skill/packages.html">
+    <meta name="description" content="Browse 277 reviewed WorkBuddy packages with pinned GitHub sources, ZIP downloads, and SHA256 checksums.">
+    <title>Reviewed WorkBuddy Packages · Skill Atlas</title>
+    <style>
+      :root { color-scheme: light; font-family: system-ui, sans-serif; line-height: 1.5; }
+      body { max-width: 980px; margin: 0 auto; padding: 2rem 1rem 4rem; color: #24302f; background: #f5f1e8; }
+      a { color: #126b63; }
+      header { margin-bottom: 2rem; }
+      h1 { margin-bottom: .4rem; }
+      ol { padding-left: 1.5rem; }
+      li { margin: 1rem 0; padding: 1rem 1.2rem; background: #fffdf8; border: 1px solid #d8d0c2; border-radius: .7rem; }
+      h2 { margin: 0; font-size: 1.1rem; }
+      p { margin: .35rem 0 0; }
+      code { overflow-wrap: anywhere; }
+      .badge { display: inline-block; padding: .1rem .45rem; border-radius: 999px; background: #dceee8; font-size: .8rem; }
+      .machine { margin-top: 2rem; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <p><a href="index.html">← WorkBuddy Skill Atlas</a></p>
+      <h1>Reviewed WorkBuddy Packages / 精选 WorkBuddy 包</h1>
+      <p>Browse 277 installable packages without JavaScript. Each entry keeps an immutable source link, a Release ZIP, and SHA256SUMS verification.</p>
+      <p>无需 JavaScript 即可浏览 277 个可安装精选包；每条记录都保留不可变来源、Release ZIP 和 SHA256SUMS 校验入口。</p>
+    </header>
+    <main>
+      <ol>
+""" + "\n".join(package_items) + """
+      </ol>
+      <p class="machine"><a href="packages.json">Machine-readable JSON index</a> · <a href="packages-schema.json">JSON Schema</a> · <a href="https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.md">Quickstart</a></p>
+    </main>
+  </body>
+</html>
+"""
+packages_page_temporary = PACKAGES_PAGE_OUTPUT.with_suffix(".html.tmp")
+packages_page_temporary.write_text(package_page, encoding="utf-8")
+packages_page_temporary.replace(PACKAGES_PAGE_OUTPUT)
 meta = {
     "categories": dict(sorted(category_counts.items())),
     "snapshot_frozen": True,
@@ -150,3 +206,4 @@ meta_temporary.write_text(json.dumps(meta, separators=(",", ":")), encoding="utf
 meta_temporary.replace(meta_output)
 print(f"OK: wrote {len(records)} searchable records to {OUTPUT.relative_to(ROOT)}")
 print(f"OK: wrote {len(packages)} installable packages to {PACKAGES_OUTPUT.relative_to(ROOT)}")
+print(f"OK: wrote browsable package page to {PACKAGES_PAGE_OUTPUT.relative_to(ROOT)}")

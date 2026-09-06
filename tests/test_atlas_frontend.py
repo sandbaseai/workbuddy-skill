@@ -41,6 +41,7 @@ class AtlasFrontendTests(unittest.TestCase):
             self.assertIn("quickstart", page)
             self.assertIn("catalog-schema.json", page)
             self.assertIn("packages.json", page)
+            self.assertIn("packages.html", page)
             self.assertIn("packages-schema.json", page)
             self.assertIn("package-feedback.yml", page)
             self.assertIn("footer-links", page)

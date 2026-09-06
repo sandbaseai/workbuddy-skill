@@ -7,4 +7,5 @@ catalog/*.tmp
 site/catalog.json
 site/catalog-meta.json
 site/packages.json
+site/packages.html
 catalog/analysis-stats.json.tmp

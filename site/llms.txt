@@ -15,6 +15,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Compact JSON catalog: https://sandbaseai.github.io/workbuddy-skill/catalog.json
 - Compact catalog JSON Schema: https://sandbaseai.github.io/workbuddy-skill/catalog-schema.json
 - Reviewed package JSON: https://sandbaseai.github.io/workbuddy-skill/packages.json
+- Human-readable reviewed package index: https://sandbaseai.github.io/workbuddy-skill/packages.html
 - Reviewed package JSON Schema: https://sandbaseai.github.io/workbuddy-skill/packages-schema.json
 - Catalog metadata: https://sandbaseai.github.io/workbuddy-skill/catalog-meta.json
 - Source repository: https://github.com/sandbaseai/workbuddy-skill

@@ -129,6 +129,7 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertEqual(sitemap.count("<changefreq>daily</changefreq>"), 2)
         self.assertIn("https://sandbaseai.github.io/workbuddy-skill/catalog.json", sitemap)
         self.assertIn("https://sandbaseai.github.io/workbuddy-skill/packages.json", sitemap)
+        self.assertIn("https://sandbaseai.github.io/workbuddy-skill/packages.html", sitemap)
 
     def test_pages_actions_use_current_node_runtime_generations(self):
         workflow = (ROOT / ".github/workflows/pages.yml").read_text(encoding="utf-8")
