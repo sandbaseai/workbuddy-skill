@@ -21,6 +21,8 @@ class AtlasFrontendTests(unittest.TestCase):
             self.assertIn('id="language-link"', page)
             self.assertIn('id="snapshot-note"', page)
             self.assertIn('id="hero-count"', page)
+            self.assertIn('id="search"', page)
+            self.assertIn("disabled", page)
             self.assertIn('aria-live="polite"', page)
             self.assertIn("/discussions", page)
             self.assertIn("sandbaseai/awesome-workbuddy", page)
