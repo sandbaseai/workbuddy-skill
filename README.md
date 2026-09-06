@@ -17,6 +17,8 @@ Skills，查看来源与许可证，选择适合的能力，并下载经过整�
 
 [中文](#中文) · [English](#english) · [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/)
 
+[打开 Atlas](https://sandbaseai.github.io/workbuddy-skill/) · [中文快速开始](docs/quickstart.zh-CN.md) · [浏览精选包](https://sandbaseai.github.io/workbuddy-skill/packages.json) · [分享使用案例](https://github.com/sandbaseai/workbuddy-skill/discussions)
+
 如果这个目录帮你更快找到可用能力，欢迎留下一个 Star；真实使用反馈和公开使用案例也很有帮助。试用后可以在 [Discussions](https://github.com/sandbaseai/workbuddy-skill/discussions) 分享结果，或直接[提交一个 WorkBuddy 使用案例](https://github.com/sandbaseai/workbuddy-skill/issues/new?template=showcase.yml)。
 需要在论文、报告或内部资料中引用本目录时，可参考 [CITATION.cff](CITATION.cff)。
 
@@ -223,6 +225,8 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 [Tencent WorkBuddy Bench](https://github.com/Tencent/workbuddy-bench) 适合了解可复现的 Agent 任务评测。
 
 ## English
+
+[Open Atlas](https://sandbaseai.github.io/workbuddy-skill/) · [English quickstart](docs/quickstart.md) · [Browse reviewed packages](https://sandbaseai.github.io/workbuddy-skill/packages.json) · [Share a result](https://github.com/sandbaseai/workbuddy-skill/discussions)
 
 WorkBuddy Skill Hub is an open catalog of public Agent Skills plus a curated set of reviewed, bilingual WorkBuddy workflows.
 
