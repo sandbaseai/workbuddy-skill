@@ -64,6 +64,29 @@ class VerifyReleaseTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "invalid release asset filename"):
                 verify(root)
 
+    def test_rejects_symlinked_checksum_manifest(self):
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            target = root / "real-checksums"
+            target.write_text("0" * 64 + "  demo.zip\n", encoding="utf-8")
+            (root / "SHA256SUMS").symlink_to(target)
+            with self.assertRaisesRegex(ValueError, "checksum file must not be a symlink"):
+                verify(root)
+
+    def test_rejects_symlinked_release_asset(self):
+        with TemporaryDirectory() as directory:
+            root = Path(directory)
+            target = root / "outside.zip"
+            target.write_bytes(b"must not be followed")
+            asset = root / "demo-workbuddy-skill.zip"
+            asset.symlink_to(target)
+            digest = hashlib.sha256(target.read_bytes()).hexdigest()
+            (root / "SHA256SUMS").write_text(
+                f"{digest}  {asset.name}\n", encoding="utf-8"
+            )
+            with self.assertRaisesRegex(ValueError, "release asset must not be a symlink"):
+                verify(root)
+
 
 if __name__ == "__main__":
     unittest.main()
