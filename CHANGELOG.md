@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Show repository and unique-source counts alongside the Atlas catalog size so the frozen snapshot is easier to interpret.
 - Add bilingual Ask, Plan, and Craft mode guidance to the quickstarts, including the distinction between work mode and permission mode.
 - Add a category selector and shareable category URL state to the reviewed-package index for faster browsing without changing catalog records.
 - Add a bilingual Skill vs Expert vs Explore choice table to the quickstarts so users start from the right WorkBuddy surface.

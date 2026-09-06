@@ -338,8 +338,8 @@ async function loadCatalog() {
     metricShas.textContent = meta.unique_content_shas.toLocaleString();
     metricRepositories.textContent = meta.repositories.toLocaleString();
     snapshotNote.textContent = isChinese
-      ? `当前目录：${meta.records.toLocaleString()} 条已索引 Skill。请通过来源链接查看上游更新。`
-      : `Catalog: ${meta.records.toLocaleString()} indexed Skills. Follow each source link for upstream updates.`;
+      ? `当前目录：${meta.records.toLocaleString()} 条 Skill，来自 ${meta.repositories.toLocaleString()} 个仓库和 ${meta.unique_content_shas.toLocaleString()} 个唯一来源内容。请通过来源链接查看上游更新。`
+      : `Catalog: ${meta.records.toLocaleString()} indexed Skills from ${meta.repositories.toLocaleString()} repositories and ${meta.unique_content_shas.toLocaleString()} unique source blobs. Follow each source link for upstream updates.`;
     snapshotFingerprint.textContent = meta.catalog_sha256.slice(0, 12);
     snapshotFingerprint.title = meta.catalog_sha256;
     curatedCountText.textContent = isChinese

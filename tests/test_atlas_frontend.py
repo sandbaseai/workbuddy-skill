@@ -164,6 +164,8 @@ class AtlasFrontendTests(unittest.TestCase):
             self.assertNotIn("does not automatically add new catalog records", page)
             self.assertNotIn("不会自动增加新的目录记录", page)
         self.assertIn("Follow each source link for upstream updates.", self.app)
+        self.assertIn("meta.repositories.toLocaleString()", self.app)
+        self.assertIn("meta.unique_content_shas.toLocaleString()", self.app)
         self.assertIn("请通过来源链接查看上游更新。", self.app)
         self.assertIn('snapshotFingerprint.textContent = meta.catalog_sha256.slice(0, 12)', self.app)
         self.assertIn('snapshotFingerprint.title = meta.catalog_sha256', self.app)
