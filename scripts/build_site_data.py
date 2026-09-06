@@ -15,6 +15,7 @@ CURATED = ROOT / "catalog" / "curated.json"
 OUTPUT = ROOT / "site" / "catalog.json"
 PACKAGES_OUTPUT = ROOT / "site" / "packages.json"
 CHECKSUM_URL = "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/SHA256SUMS"
+RELEASE_REPO = "sandbaseai/workbuddy-skill"
 
 CATEGORY_RULES = (
     ("security", ("security", "audit", "pentest", "vulnerability", "sast", "threat", "auth")),
@@ -97,6 +98,12 @@ for row in source_rows:
 packages = []
 for entry in sorted(curated_entries, key=lambda item: item["skill"]):
     source = source_by_id[entry["catalog_id"]]
+    asset = Path(urlparse(entry["download_url"]).path).name
+    download_command = (
+        "gh release download --repo "
+        f"{RELEASE_REPO} --pattern '{asset}' --pattern SHA256SUMS "
+        "--dir workbuddy-download --clobber"
+    )
     packages.append(
         {
             "id": entry["catalog_id"],
@@ -106,8 +113,9 @@ for entry in sorted(curated_entries, key=lambda item: item["skill"]):
             "source_url": source["source_url"],
             "sha": source["sha"],
             "download_url": entry["download_url"],
-            "asset": Path(urlparse(entry["download_url"]).path).name,
+            "asset": asset,
             "checksum_url": CHECKSUM_URL,
+            "download_command": download_command,
             "category": curated.get(entry["catalog_id"], {}).get(
                 "category", category_for(source)
             ),

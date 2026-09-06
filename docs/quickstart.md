@@ -44,7 +44,7 @@ This repository explains catalog discovery and packaging; the official docs rema
 
 ### 1. Download
 
-Download the ZIP you need from the [latest release](https://github.com/sandbaseai/workbuddy-skill/releases/latest). For a reproducible command-line download, replace `oss-review` with the package name shown in the Atlas and run:
+Download the ZIP you need from the [latest release](https://github.com/sandbaseai/workbuddy-skill/releases/latest). The reviewed package index exposes a ready-to-copy `download_command`; the equivalent command for `oss-review` is:
 
 ```bash
 mkdir -p workbuddy-download

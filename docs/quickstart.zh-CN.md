@@ -29,7 +29,7 @@
 
 ### 1. 下载
 
-从[最新 Release](https://github.com/sandbaseai/workbuddy-skill/releases/latest)下载需要的 ZIP。想用命令行精确下载时，把 `oss-review` 替换为 Atlas 中显示的包名，然后执行：
+从[最新 Release](https://github.com/sandbaseai/workbuddy-skill/releases/latest)下载需要的 ZIP。精选包索引中的每条记录都提供可直接复制的 `download_command`；想用命令行下载 `oss-review` 时，等价命令如下：
 
 ```bash
 mkdir -p workbuddy-download

@@ -32,6 +32,8 @@ class SiteDataTests(unittest.TestCase):
         self.assertTrue(all(package["download_url"].endswith("-workbuddy-skill.zip") for package in packages))
         self.assertTrue(all(package["asset"].endswith("-workbuddy-skill.zip") for package in packages))
         self.assertTrue(all(package["checksum_url"].endswith("/SHA256SUMS") for package in packages))
+        self.assertTrue(all("gh release download --repo sandbaseai/workbuddy-skill" in package["download_command"] for package in packages))
+        self.assertTrue(all(f"--pattern '{package['asset']}'" in package["download_command"] for package in packages))
         playwright_components = next(
             item
             for item in records
