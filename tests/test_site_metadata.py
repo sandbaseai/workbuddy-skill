@@ -69,6 +69,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         content = (SITE / "llms.txt").read_text(encoding="utf-8")
         self.assertIn("catalog.json", content)
         self.assertIn("scripts/adapt_skill.py", content)
+        self.assertIn("CITATION.cff", content)
         self.assertIn("not a security guarantee", content)
         self.assertIn("21,818 indexed Skills", content)
         self.assertIn("new catalog records are not automatically added", content)
