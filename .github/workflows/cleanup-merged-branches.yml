@@ -34,4 +34,10 @@ jobs:
             echo "Refusing to delete an empty or protected default branch name."
             exit 0
           fi
-          gh api --method DELETE "repos/$GITHUB_REPOSITORY/git/refs/heads/$BRANCH"
+          if ! gh api --method DELETE "repos/$GITHUB_REPOSITORY/git/refs/heads/$BRANCH"; then
+            if gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/$BRANCH" >/dev/null 2>&1; then
+              echo "Unable to delete merged branch: $BRANCH" >&2
+              exit 1
+            fi
+            echo "Merged branch already deleted: $BRANCH"
+          fi

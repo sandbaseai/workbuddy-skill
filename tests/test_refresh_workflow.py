@@ -213,8 +213,10 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("AUTHOR_ASSOCIATION", workflow)
         self.assertIn("*,CONTRIBUTOR,*)", workflow)
         self.assertIn("author_association", workflow)
-        self.assertIn("--auto --squash --delete-branch", workflow)
+        self.assertIn("--auto --squash", workflow)
+        self.assertNotIn("--auto --squash --delete-branch", workflow)
         self.assertIn('gh api --method DELETE "repos/$GITHUB_REPOSITORY/git/refs/heads/$BRANCH"', workflow)
+        self.assertIn("Merged branch already deleted", workflow)
         self.assertNotIn("actions/checkout", workflow)
 
     def test_merged_branch_cleanup_only_deletes_safe_same_repository_refs(self):
@@ -225,6 +227,7 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn('[[ "$HEAD_REPOSITORY" != "$GITHUB_REPOSITORY" ]]', workflow)
         self.assertIn('[[ -z "$BRANCH" || "$BRANCH" == "main" ]]', workflow)
         self.assertIn("gh api --method DELETE", workflow)
+        self.assertIn("Merged branch already deleted", workflow)
         self.assertNotIn("actions/checkout", workflow)
 
     def test_unreleased_changelog_covers_current_public_improvements(self):
