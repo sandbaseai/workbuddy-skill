@@ -6,7 +6,7 @@
 Skills，查看来源与许可证，选择适合的能力，并下载经过整理的 WorkBuddy
 版本。
 
-当前公开目录是一个已冻结的 **21,818 条 Skill 快照**；后续维护聚焦于文档、精选包和可用性，不会自动追加新的 Skill。
+当前公开目录包含 **21,818 条 Skill 快照**。
 
 [![Latest release](https://img.shields.io/github/v/release/sandbaseai/workbuddy-skill)](https://github.com/sandbaseai/workbuddy-skill/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -222,7 +222,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 
 WorkBuddy Skill Hub is an open catalog of public Agent Skills plus a curated set of reviewed, bilingual WorkBuddy workflows.
 
-The public catalog is currently frozen at **21,818 indexed Skills**. Future maintenance focuses on documentation, reviewed packages, and usability rather than automatically adding new Skills.
+The public catalog contains **21,818 indexed Skills**.
 
 If the catalog helps you find a useful capability, consider leaving a Star and sharing real usage feedback or a public workflow example.
 For formal citations in papers, reports, or internal documentation, see [CITATION.cff](CITATION.cff).

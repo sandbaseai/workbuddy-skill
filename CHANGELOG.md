@@ -11,6 +11,7 @@ All notable changes to this project are documented here.
 - Added direct bilingual Starter Packs links to the Atlas primary navigation.
 - Added verified online-reading links for the WorkBuddyGuide and Harness blue book references.
 - Added a read-only weekly resource-link health check with a local runner and regression coverage.
+- Cleaned internal catalog-governance constraints out of the public README entrypoint while retaining the snapshot count and user guidance.
 - Added bilingual WorkBuddy resource maps covering official product docs, community learning, evaluation material, and local catalog guides.
 - Added direct Atlas navigation to the resource maps, plus a post-use feedback and Star prompt that does not perform account actions.
 - Atlas now derives and displays the current count of reviewed WorkBuddy packages from `catalog-meta.json`.

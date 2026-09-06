@@ -65,6 +65,13 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("contents: read", workflow)
         self.assertIn("scripts/check_resource_links.py", workflow)
 
+    def test_readme_keeps_internal_catalog_governance_out_of_the_user_entrypoint(self):
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        self.assertIn("21,818", readme)
+        self.assertNotIn("admin enforcement", readme.lower())
+        self.assertNotIn("re-enable the crawler", readme.lower())
+        self.assertNotIn("future maintenance focuses", readme.lower())
+
     def test_public_freshness_metadata_matches_site_schedule(self):
         catalog_docs = (ROOT / "catalog/README.md").read_text(encoding="utf-8")
         sitemap = (ROOT / "site/sitemap.xml").read_text(encoding="utf-8")
