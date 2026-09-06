@@ -25,6 +25,7 @@ const metricRecords = document.querySelector("#metric-records");
 const metricShas = document.querySelector("#metric-shas");
 const metricRepositories = document.querySelector("#metric-repositories");
 const snapshotNote = document.querySelector("#snapshot-note");
+const snapshotFingerprint = document.querySelector("#snapshot-fingerprint");
 const curatedNote = document.querySelector("#curated-note");
 const curatedCountText = document.querySelector("#curated-count-text");
 const heroCount = document.querySelector("#hero-count");
@@ -339,6 +340,8 @@ async function loadCatalog() {
     snapshotNote.textContent = isChinese
       ? `当前目录：${meta.records.toLocaleString()} 条已索引 Skill。请通过来源链接查看上游更新。`
       : `Catalog: ${meta.records.toLocaleString()} indexed Skills. Follow each source link for upstream updates.`;
+    snapshotFingerprint.textContent = meta.catalog_sha256.slice(0, 12);
+    snapshotFingerprint.title = meta.catalog_sha256;
     curatedCountText.textContent = isChinese
       ? `Release 中提供 ${meta.curated_adaptations.toLocaleString()} 个经过审阅的 WorkBuddy 包。`
       : `${meta.curated_adaptations.toLocaleString()} reviewed WorkBuddy packages are available from Releases.`;
