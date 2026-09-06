@@ -80,6 +80,19 @@ class ReviewSkillTests(unittest.TestCase):
         )
         self.assertFalse(report["review_checklist"]["primary_source_context"])
 
+    def test_rejects_non_immutable_catalog_source(self):
+        source = "---\nname: demo\ndescription: Demo workflow\n---\n"
+        record = {
+            "id": "github:owner/repo:skills/demo/SKILL.md",
+            "repository": "owner/repo",
+            "path": "skills/demo/SKILL.md",
+            "sha": "blob",
+            "source_url": "https://github.com/owner/repo/blob/main/skills/demo/SKILL.md",
+            "raw_url": "https://raw.githubusercontent.com/owner/repo/main/skills/demo/SKILL.md",
+        }
+        with self.assertRaisesRegex(SystemExit, "not pinned to a full Git commit"):
+            build_report(source, record=record)
+
     def test_cli_rejects_symlinked_local_source_file(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
