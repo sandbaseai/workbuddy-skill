@@ -31,6 +31,8 @@ For platform-level instructions, use the [official WorkBuddy quickstart](https:/
 [official Skills tutorial](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills),
 [MCP guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide),
 and [Automation guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide).
+If an imported Skill needs a connector, use the [official Connector guide](https://open.workbuddy.cn/en/docs/connector)
+to choose MCP + Skill or CLI + Skill and review authentication and permissions.
 You can also browse the official [Skill Marketplace](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)
 and [Explore](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Explore) pages for ready-made capabilities and examples.
 For the Open Platform's exact ZIP layout, required frontmatter, and parser troubleshooting,
