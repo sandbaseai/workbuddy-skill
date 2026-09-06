@@ -17,6 +17,7 @@ Use this page to choose the right source before searching the catalog.
 | Create a task and choose its workspace and Skills | [Task Bar](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar) |
 | Update, disable, or remove an installed Skill | [Quickstart lifecycle guide](quickstart.md) and the [Skill Marketplace](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) |
 | Assemble a marketplace Expert or Team | [Expert guide](https://open.workbuddy.cn/en/docs/expert) and [Expert Team guide](https://open.workbuddy.cn/en/docs/expert-team) |
+| Publish a Skill, Connector, or Buddy App | [Open Platform overview](https://open.workbuddy.cn/en/docs/what-is-open-platform) and [onboarding guide](https://open.workbuddy.cn/en/docs/onboarding) |
 | Package a public catalog result yourself | [Adaptation guide](adapting-skills.md) |
 
 ## Official product documentation
