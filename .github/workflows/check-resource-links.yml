@@ -4,8 +4,10 @@ on:
   push:
     paths:
       - "README.md"
+      - "CHANGELOG.md"
       - "SUPPORT.md"
       - "SECURITY.md"
+      - "catalog/**"
       - "docs/**"
       - "site/**"
       - "scripts/build_site_data.py"
@@ -14,8 +16,10 @@ on:
   pull_request:
     paths:
       - "README.md"
+      - "CHANGELOG.md"
       - "SUPPORT.md"
       - "SECURITY.md"
+      - "catalog/**"
       - "docs/**"
       - "site/**"
       - "scripts/build_site_data.py"
