@@ -10,6 +10,11 @@ SITE = ROOT / "site"
 
 
 class SiteDiscoveryMetadataTests(unittest.TestCase):
+    def test_catalog_metadata_exposes_frozen_snapshot_fingerprint(self):
+        metadata = json.loads((SITE / "catalog-meta.json").read_text(encoding="utf-8"))
+        self.assertTrue(metadata["snapshot_frozen"])
+        self.assertRegex(metadata["catalog_sha256"], r"^[0-9a-f]{64}$")
+
     def test_catalog_schema_describes_the_compact_dataset(self):
         schema = json.loads((SITE / "catalog-schema.json").read_text(encoding="utf-8"))
         self.assertEqual(schema["type"], "array")

@@ -9,6 +9,7 @@ All notable changes to this project are documented here.
 - Added a rights-aware navigation entry for the community [WorkBuddy skills collection](https://github.com/bitcjm/workbuddy-skills); it does not add or copy catalog records.
 - Added bilingual navigation entries for the CC0 [awesome-workbuddy](https://github.com/semlinker/awesome-workbuddy) index and MIT [WorkBuddy Starter](https://github.com/sunyet-01/WorkBuddy-Starter) beginner guide.
 - Added a direct Chinese quickstart link to the no-JavaScript reviewed-package index.
+- Added a SHA-256 snapshot fingerprint to generated catalog metadata so consumers can verify the exact frozen `skills.jsonl` bytes.
 - Added task-based bilingual resource navigation, Skill evaluation references, and an English `gh skill` installation example.
 - Published a no-JavaScript reviewed-package index with 277 source-pinned entries and ItemList metadata for web discovery.
 - Added category jump navigation and grouped headings to the no-JavaScript package index.

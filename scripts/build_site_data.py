@@ -4,6 +4,7 @@
 from pathlib import Path
 from collections import Counter
 from html import escape
+import hashlib
 import json
 import re
 from urllib.parse import urlparse
@@ -225,6 +226,7 @@ packages_page_temporary.write_text(package_page, encoding="utf-8")
 packages_page_temporary.replace(PACKAGES_PAGE_OUTPUT)
 meta = {
     "categories": dict(sorted(category_counts.items())),
+    "catalog_sha256": hashlib.sha256(SOURCE.read_bytes()).hexdigest(),
     "snapshot_frozen": True,
     "records": len(records),
     "repositories": len(repositories),

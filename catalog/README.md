@@ -10,6 +10,7 @@ This directory is a provenance-first index of public `SKILL.md` files. It is not
 - 21,818 indexed GitHub paths
 - 12,740 unique Git blob SHAs
 - 6,497 source repositories
+- The generated site metadata exposes a SHA-256 fingerprint for the exact frozen `skills.jsonl` bytes.
 <!-- CATALOG-SNAPSHOT:END -->
 
 Multiple paths can contain byte-identical skills. The catalog preserves those occurrences for provenance and reports unique SHA counts separately.
