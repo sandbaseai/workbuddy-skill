@@ -7,6 +7,7 @@ All notable changes to this project are documented here.
 - Added bilingual package-import checklists covering ZIP layout, required WorkBuddy frontmatter, referenced resources, and a no-extract smoke test.
 - Added bilingual installation-scope guidance for the WorkBuddy UI, `gh skill install`, and local `~/.workbuddy/skills/` workflows.
 - Added a rights-aware navigation entry for the community [WorkBuddy skills collection](https://github.com/bitcjm/workbuddy-skills); it does not add or copy catalog records.
+- Added bilingual navigation entries for the CC0 [awesome-workbuddy](https://github.com/semlinker/awesome-workbuddy) index and MIT [WorkBuddy Starter](https://github.com/sunyet-01/WorkBuddy-Starter) beginner guide.
 - Added task-based bilingual resource navigation, Skill evaluation references, and an English `gh skill` installation example.
 - Published a no-JavaScript reviewed-package index with 277 source-pinned entries and ItemList metadata for web discovery.
 - Added category jump navigation and grouped headings to the no-JavaScript package index.

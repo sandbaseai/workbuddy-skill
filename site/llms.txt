@@ -23,6 +23,8 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Curated WorkBuddy ecosystem index: https://github.com/sandbaseai/awesome-workbuddy
 - Community task-oriented guide: https://github.com/AlephAITech/WorkBuddyGuide
 - WorkBuddyGuide online reading site: https://workbuddy.homes
+- MIT WorkBuddy beginner starter: https://github.com/sunyet-01/WorkBuddy-Starter
+- CC0 WorkBuddy resource index: https://github.com/semlinker/awesome-workbuddy
 - Chinese AI coding and WorkBuddy tutorial: https://github.com/KimYx0207/AI-Coding-Guide-Zh
 - Clean-room WorkBuddy architecture course: https://github.com/adongwanai/learn-workbuddy
 - MIT WorkBuddy community skills collection: https://github.com/yinqd3/workbuddy-skills

@@ -33,6 +33,8 @@ Use this page to choose the right source before searching the catalog.
 ## Learning and evaluation
 
 - [WorkBuddyGuide](https://github.com/AlephAITech/WorkBuddyGuide) — task-oriented community walkthrough; its [online reading site](https://workbuddy.homes) is convenient for browsing.
+- [WorkBuddy Starter](https://github.com/sunyet-01/WorkBuddy-Starter) — MIT-licensed beginner-oriented collection organized around onboarding, Skills, scenarios, and examples.
+- [semlinker/awesome-workbuddy](https://github.com/semlinker/awesome-workbuddy) — CC0 resource navigation for WorkBuddy tutorials, prompts, Skills, MCP, and practical scenarios; verify each linked project's current terms.
 - [AI Coding Guide 中文教程](https://github.com/KimYx0207/AI-Coding-Guide-Zh) — broad Chinese tutorial covering WorkBuddy and adjacent agent workflows.
 - [Learn WorkBuddy](https://github.com/adongwanai/learn-workbuddy) — MIT clean-room course on Agent harness architecture.
 - [yinqd3/workbuddy-skills](https://github.com/yinqd3/workbuddy-skills) — MIT-licensed community collection with academic research, frontend slides, and tool-call workflows; use it as a source to inspect, not an automatic trust signal.
