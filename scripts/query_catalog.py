@@ -162,6 +162,8 @@ def main() -> int:
         return 0
     for row in results:
         print(f"{row['repository']}:{row['path']}")
+        catalog_id = row.get("id") or f"github:{row['repository']}:{row['path']}"
+        print(f"  catalog id: {catalog_id}")
         print(f"  source: {row['source_url']}")
         print(
             f"  review: {row['workbuddy_status']} ({row.get('workbuddy_score', '—')}/100); "

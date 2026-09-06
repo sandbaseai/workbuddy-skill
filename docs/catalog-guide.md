@@ -46,6 +46,15 @@ python3 scripts/query_catalog.py research --security no-static-flags \
   --source-context primary-looking --min-score 80 --unique --sort score
 ```
 
+The human-readable output includes a complete `catalog id`. Copy that value
+directly into `review_skill.py` or `adapt_skill.py`; do not reconstruct an ID
+from the display name.
+
+```bash
+python3 scripts/review_skill.py \
+  --catalog-id 'github:owner/repository:path/to/SKILL.md'
+```
+
 Search narrows candidates; it does not install anything. For a selected result,
 inspect the source and then follow the [adaptation guide](adapting-skills.md)
 to create a reviewed WorkBuddy package.

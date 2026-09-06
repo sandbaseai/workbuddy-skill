@@ -30,6 +30,14 @@ python3 scripts/query_catalog.py research --security no-static-flags \
   --source-context primary-looking --min-score 80 --unique --sort score
 ```
 
+人类可读输出会直接给出完整的 `catalog id`。把这个值复制给
+`review_skill.py` 或 `adapt_skill.py` 即可，不要根据显示名称手工拼接 ID。
+
+```bash
+python3 scripts/review_skill.py \
+  --catalog-id 'github:owner/repository:path/to/SKILL.md'
+```
+
 搜索只负责缩小候选范围，不会自动安装。选定条目后，先检查来源，再按照[适配教程](adapting-skills.zh-CN.md)制作经过审阅的 WorkBuddy 包。
 
 选择“来源顺序”时，结果会先按仓库、再按路径稳定排序，不依赖目录文件的爬取顺序，便于复查和分享同一个查询。

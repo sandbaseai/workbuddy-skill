@@ -1,11 +1,15 @@
 from pathlib import Path
+from contextlib import redirect_stdout
+import io
+import json
 import sys
+from tempfile import TemporaryDirectory
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from query_catalog import query_rows  # noqa: E402
+from query_catalog import main, query_rows  # noqa: E402
 
 
 def row(name, sha, score, *, status="adaptable", security="no-static-flags", repository="owner/repo"):
@@ -102,6 +106,25 @@ class QueryCatalogTests(unittest.TestCase):
         }
         results, _ = query_rows([compatible], ["Python", "3.12"])
         self.assertEqual(results, [compatible])
+
+    def test_cli_prints_copyable_catalog_id(self):
+        record = row("research", "sha", 90)
+        record.update({
+            "id": "github:owner/repo:skills/research/SKILL.md",
+            "source_url": "https://github.com/owner/repo/blob/sha/skills/research/SKILL.md",
+        })
+        with TemporaryDirectory() as directory:
+            catalog = Path(directory) / "skills.jsonl"
+            catalog.write_text(json.dumps(record) + "\n", encoding="utf-8")
+            output = io.StringIO()
+            with redirect_stdout(output):
+                old_argv = sys.argv
+                try:
+                    sys.argv = ["query_catalog.py", "research", "--catalog", str(catalog)]
+                    main()
+                finally:
+                    sys.argv = old_argv
+        self.assertIn("catalog id: github:owner/repo:skills/research/SKILL.md", output.getvalue())
 
 
 if __name__ == "__main__":
