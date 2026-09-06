@@ -8,6 +8,7 @@ const sourceContext = document.querySelector("#source-context");
 const sort = document.querySelector("#sort");
 const unique = document.querySelector("#unique");
 const minScore = document.querySelector("#min-score");
+const packageStatus = document.querySelector("#package-status");
 const highSignal = document.querySelector("#high-signal");
 const resetFilters = document.querySelector("#reset-filters");
 const copyLink = document.querySelector("#copy-link");
@@ -36,6 +37,7 @@ const FILTERS = {
   source: new Set([...sourceContext.options].map((option) => option.value)),
   sort: new Set([...sort.options].map((option) => option.value)),
   minScore: new Set([...minScore.options].map((option) => option.value)),
+  packageStatus: new Set([...packageStatus.options].map((option) => option.value)),
 };
 
 function syncLanguageLink() {
@@ -55,7 +57,7 @@ function catalogId(skill) {
 function restoreUrlState() {
   const params = new URLSearchParams(location.search);
   input.value = params.get("q") || "";
-  for (const [name, control] of Object.entries({ category, compatibility, security, source: sourceContext, sort, minScore })) {
+  for (const [name, control] of Object.entries({ category, compatibility, security, source: sourceContext, sort, minScore, packageStatus })) {
     control.value = control.options[0].value;
     const value = params.get(name);
     if (value && FILTERS[name].has(value)) control.value = value;
@@ -66,7 +68,7 @@ function restoreUrlState() {
 function syncUrlState(historyMode = "replace") {
   const params = new URLSearchParams();
   if (input.value.trim()) params.set("q", input.value.trim());
-  for (const [name, control] of Object.entries({ category, compatibility, security, source: sourceContext })) {
+  for (const [name, control] of Object.entries({ category, compatibility, security, source: sourceContext, packageStatus })) {
     if (control.value !== "all") params.set(name, control.value);
   }
   if (sort.value !== "score") params.set("sort", sort.value);
@@ -167,7 +169,9 @@ function search({ historyMode = "replace" } = {}) {
     const securityMatch = security.value === "all" || skill.k === security.value;
     const sourceMatch = sourceContext.value === "all" || skill.o === sourceContext.value;
     const scoreMatch = minScore.value === "all" || (skill.q ?? -1) >= Number(minScore.value);
-    return textMatch && categoryMatch && compatibilityMatch && securityMatch && sourceMatch && scoreMatch;
+    const packageMatch = packageStatus.value === "all"
+      || (packageStatus.value === "reviewed" ? Boolean(skill.a) : !skill.a);
+    return textMatch && categoryMatch && compatibilityMatch && securityMatch && sourceMatch && scoreMatch && packageMatch;
   });
   if (unique.checked) {
     const seen = new Set();
@@ -205,7 +209,7 @@ for (const example of searchExamples) {
     input.focus();
   });
 }
-for (const control of [category, compatibility, security, sourceContext, sort, unique, minScore]) {
+for (const control of [category, compatibility, security, sourceContext, sort, unique, minScore, packageStatus]) {
   control.addEventListener("change", () => search({ historyMode: "push" }));
 }
 highSignal.addEventListener("click", () => {
@@ -224,6 +228,7 @@ resetFilters.addEventListener("click", () => {
   security.value = "all";
   sourceContext.value = "all";
   minScore.value = "all";
+  packageStatus.value = "all";
   sort.value = "score";
   unique.checked = true;
   search({ historyMode: "push" });

@@ -130,6 +130,14 @@
                 <option value="source">来源顺序</option>
               </select>
             </div>
+            <div class="field sort-field">
+              <label for="package-status">WorkBuddy 包状态</label>
+              <select id="package-status">
+                <option value="all">全部目录结果</option>
+                <option value="reviewed">有精选包可用</option>
+                <option value="catalog-only">仅目录条目</option>
+              </select>
+            </div>
             <label class="check-field" for="unique"><input id="unique" type="checkbox" checked> 仅显示唯一内容</label>
             <button id="high-signal" class="secondary-action" type="button" title="仅用于筛选，不代表可信或安全">高信号视图</button>
             <button id="reset-filters" class="text-action" type="button">重置</button>
