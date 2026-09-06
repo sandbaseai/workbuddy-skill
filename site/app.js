@@ -193,10 +193,10 @@ function render(reset = true) {
         ${skill.o === "review-source" ? `<span class="badge source-review" title="${escapeHtml((skill.x || []).join(", "))}">${isChinese ? "来源待审" : "source review"}</span>` : ""}
         ${skill.a ? `<span class="badge package-review">${isChinese ? "精选包" : "reviewed package"}</span>` : ""}
         <button class="copy-id" type="button" aria-label="${isChinese ? `复制 ${escapeHtml(skill.n)} 的目录 ID` : `Copy catalog ID for ${escapeHtml(skill.n)}`}" data-catalog-id="${escapeHtml(catalogId(skill))}">${isChinese ? "复制 ID" : "Copy ID"}</button>
-        ${skill.a ? `<a class="result-install" href="${escapeHtml(skill.a)}">${isChinese ? "安装 ZIP" : "Install ZIP"} ↓</a>` : ""}
-        ${skill.a ? `<a class="result-verify" href="${escapeHtml(checksumUrl)}" target="_blank" rel="noreferrer">${isChinese ? "校验 SHA256" : "Verify SHA256"} ↗</a>` : ""}
+        ${skill.a ? `<a class="result-install" href="${escapeHtml(skill.a)}" aria-label="${isChinese ? `下载 ${escapeHtml(skill.n)} 安装包` : `Download install ZIP for ${escapeHtml(skill.n)}`}">${isChinese ? "安装 ZIP" : "Install ZIP"} ↓</a>` : ""}
+        ${skill.a ? `<a class="result-verify" href="${escapeHtml(checksumUrl)}" target="_blank" rel="noreferrer" aria-label="${isChinese ? `校验 ${escapeHtml(skill.n)} 的 SHA256` : `Verify SHA256 for ${escapeHtml(skill.n)}`}">${isChinese ? "校验 SHA256" : "Verify SHA256"} ↗</a>` : ""}
         ${installCommand ? `<button class="copy-install" type="button" aria-label="${isChinese ? `复制 ${escapeHtml(skill.n)} 的安装命令` : `Copy install command for ${escapeHtml(skill.n)}`}" data-install-command="${escapeHtml(installCommand)}">${isChinese ? "复制命令" : "Copy command"}</button>` : ""}
-        <a class="result-open" href="${escapeHtml(skill.u)}" target="_blank" rel="noreferrer">${isChinese ? "查看来源" : "Inspect"} ↗</a>
+        <a class="result-open" href="${escapeHtml(skill.u)}" target="_blank" rel="noreferrer" aria-label="${isChinese ? `查看 ${escapeHtml(skill.n)} 的来源` : `Inspect source for ${escapeHtml(skill.n)}`}">${isChinese ? "查看来源" : "Inspect"} ↗</a>
       </span>
     </article>`;
   }).join("");
