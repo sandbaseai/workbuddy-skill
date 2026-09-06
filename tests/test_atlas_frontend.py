@@ -26,6 +26,11 @@ class AtlasFrontendTests(unittest.TestCase):
             self.assertIn("?packageStatus=reviewed#catalog", page)
             self.assertIn('id="hero-count"', page)
             self.assertIn('id="search"', page)
+            self.assertIn("category", page)
+            if page is self.english:
+                self.assertIn("repository owner", page)
+            else:
+                self.assertIn("仓库所有者", page)
             self.assertIn('class="keyboard-hint"', page)
             self.assertIn("Esc", page)
             self.assertIn('class="skip-link"', page)

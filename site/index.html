@@ -115,7 +115,7 @@
         <div class="search-panel">
           <div class="filter-grid">
             <div class="field search-field">
-              <label for="search">Search name, repository, path, or catalog ID <span class="keyboard-hint">Press / to focus · Esc to clear</span></label>
+              <label for="search">Search name, source, category, status, or catalog ID <span class="keyboard-hint">Press / to focus · Esc to clear</span></label>
               <input id="search" type="search" autocomplete="off" placeholder="Try: research, video, or github:owner/repo…" disabled>
               <div class="search-examples" aria-label="Example searches">
                 <button class="search-example" type="button" data-search="research" disabled>Research</button>
@@ -208,7 +208,7 @@
           The catalog could not be loaded. <a href="https://github.com/sandbaseai/workbuddy-skill/tree/main/catalog">Open the catalog source</a> or read the <a href="https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.md">quickstart</a> and try again later. <button id="retry-load" class="secondary-action" type="button">Retry loading</button>
         </div>
         <div id="empty" class="message" hidden>
-          No matching skills. Try a shorter capability name or a repository owner.
+          No matching skills. Try a shorter capability name, a category such as <code>research</code>, or a repository owner.
           <button id="empty-reset" class="secondary-action" type="button">Clear search and filters</button>
           <a id="external-search" href="https://github.com/search?q=filename%3ASKILL.md&amp;type=code" target="_blank" rel="noreferrer">Search current GitHub Skill files ↗</a>
           <a href="https://github.com/sandbaseai/workbuddy-skill/issues/new?template=feature.yml">Request docs, usability, or package improvements ↗</a>
