@@ -18,9 +18,9 @@
 
 想按真实任务学习，可以看 [WorkBuddy 实战蓝皮书](https://github.com/AlephAITech/WorkBuddyGuide)；
 想了解可复现的 Agent 任务评测，可以看 [Tencent WorkBuddy Bench](https://github.com/Tencent/workbuddy-bench)。
-这些是参考资料，不是本目录新增条目，也不构成信任背书。
+这些资料可以作为参考，但仍请结合你选择的 Skill 的具体来源和许可证进行判断。
 
-当前目录是 **21,818 条 Skill 的固定快照**。你可以用它寻找和审阅已有条目；不会自动发布新的 Skill。
+当前目录提供 **21,818 条公开 Skill 快照**，适合先缩小搜索范围，再通过每条结果的来源链接确认上游最新版本。
 
 平台功能请优先参考[官方快速开始](https://www.workbuddy.ai/docs/zh/workbuddy/Quickstart)、[官方 Skills 教程](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills)、[MCP 指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide)和[Automation 指南](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide)。如果导入的 Skill 需要连接器，请先阅读[官方连接器指南](https://open.workbuddy.cn/docs/connector)，确认选择 MCP + Skill 还是 CLI + Skill，并检查认证和权限。也可以浏览官方的 [Skill Marketplace](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market) 和 [Explore](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Explore)，查看现成能力和案例。如果需要确认 Open Platform 的 ZIP 结构、必填 frontmatter 和解析失败排查，请查看[官方 Open Platform Skill 指南](https://open.workbuddy.cn/zh/docs/skill)。本仓库负责目录发现与打包说明；产品界面和平台行为以官方文档为准。
 
@@ -96,7 +96,7 @@ gh skill preview owner/repository skills/path/to/skill
 gh skill install owner/repository skills/path/to/skill --pin v1.2.0 --dir .workbuddy/skills
 ```
 
-如果你的宿主没有提供 `gh skill`，请使用 Atlas 中的固定来源链接，并按照[适配教程](adapting-skills.zh-CN.md)制作包。目录不会静默安装第三方 Skill。
+如果你的宿主没有提供 `gh skill`，请使用 Atlas 中的来源链接，并按照[适配教程](adapting-skills.zh-CN.md)制作包。安装始终应在审阅来源和权限后显式执行。
 
 ## 一个可复制的任务模板
 

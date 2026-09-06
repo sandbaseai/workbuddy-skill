@@ -29,4 +29,4 @@
 只使用公开或合成数据做只读检查。每个结论附上依据；缺少授权或必要输入时停止。
 ```
 
-目录是固定快照。产品行为请以[官方 WorkBuddy 文档](https://www.workbuddy.ai/docs/zh/workbuddy/Quickstart)为准。
+目录是用于审阅的公开快照。产品行为请以[官方 WorkBuddy 文档](https://www.workbuddy.ai/docs/zh/workbuddy/Quickstart)为准。

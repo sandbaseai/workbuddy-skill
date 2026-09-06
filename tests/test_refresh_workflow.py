@@ -58,7 +58,8 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn("https://github.com/AlephAITech/WorkBuddyGuide", quickstart)
             self.assertIn("https://github.com/Tencent/workbuddy-bench", quickstart)
             self.assertTrue(
-                "trust endorsements" in quickstart or "不构成信任背书" in quickstart
+                "exact source and license" in quickstart
+                or "具体来源和许可证" in quickstart
             )
 
     def test_resource_maps_cover_both_languages_and_the_main_paths(self):

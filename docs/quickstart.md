@@ -22,10 +22,10 @@ checking the exact source and license.
 
 For a task-oriented community walkthrough, see the [WorkBuddyGuide](https://github.com/AlephAITech/WorkBuddyGuide).
 For reproducible Agent task evaluation, see [Tencent WorkBuddy Bench](https://github.com/Tencent/workbuddy-bench).
-These are reference resources, not additional catalog records or trust endorsements.
+Use these references alongside the exact source and license of any Skill you choose.
 
-The catalog is a frozen snapshot of 21,818 indexed Skills. Use it to find and review
-existing entries; new additions are not automatically published.
+The catalog is a review-oriented snapshot of 21,818 indexed Skills. Use it to narrow
+your search, then follow each result's source link for the latest upstream version.
 
 For platform-level instructions, use the [official WorkBuddy quickstart](https://www.workbuddy.ai/docs/workbuddy/Quickstart),
 [official Skills tutorial](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Practice-Cases/Create-Skills),
@@ -116,8 +116,8 @@ gh skill install owner/repository skills/path/to/skill --pin v1.2.0 --dir .workb
 ```
 
 If your host does not provide `gh skill`, use the source link from the Atlas and
-follow the [adaptation guide](adapting-skills.md) instead. The catalog never
-silently installs a third-party Skill.
+follow the [adaptation guide](adapting-skills.md) instead. Installation is always
+an explicit step after you review the source and permissions.
 
 ## Copy-ready task template
 

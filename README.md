@@ -239,7 +239,7 @@ For a task-based first choice, see the [Starter packs](docs/starter-packs.md).
 
 The catalog is for discovery, not automatic approval. Review every external Skill before use, and pin a release or commit when reproducibility matters. See the [English adaptation guide](docs/adapting-skills.md) for preparing a reviewed workflow.
 
-Further reading: the [WorkBuddyGuide](https://github.com/AlephAITech/WorkBuddyGuide) is a task-oriented community guide, while [Tencent WorkBuddy Bench](https://github.com/Tencent/workbuddy-bench) provides reproducible Agent task evaluation material. These are reference resources, not additional catalog records or trust endorsements.
+Further reading: the [WorkBuddyGuide](https://github.com/AlephAITech/WorkBuddyGuide) is a task-oriented community guide, while [Tencent WorkBuddy Bench](https://github.com/Tencent/workbuddy-bench) provides reproducible Agent task evaluation material. Use them as references alongside the exact source and license of any Skill you choose.
 
 ## Compatibility
 

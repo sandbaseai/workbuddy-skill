@@ -33,5 +33,5 @@ Run a read-only check with public or synthetic data only. Cite the evidence for
 each conclusion and stop if an authorization or required input is missing.
 ```
 
-The catalog is a frozen snapshot. For product behavior, use the [official
+The catalog is a review-oriented snapshot. For product behavior, use the [official
 WorkBuddy documentation](https://www.workbuddy.ai/docs/workbuddy/Quickstart).

@@ -4,7 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
-- The entries below include historical catalog and package work retained for provenance; the current public snapshot is frozen and the crawler is not an active publishing path.
+- The entries below include historical catalog and package work retained for provenance.
 - Added bilingual task-based Starter Packs pages so users can choose an existing reviewed package before searching the full catalog.
 - Atlas search now matches the full copyable catalog ID, making CLI results and shared provenance identifiers searchable in the web UI.
 - Expanded the bilingual resource maps with a WorkBuddy Harness research book, a community ecosystem index, and a rights-aware public-market archive reference; none are catalog records.
@@ -37,6 +37,7 @@ All notable changes to this project are documented here.
 - Added the official GitHub CLI `gh skill` manual to the installation and resource paths.
 - Added direct bilingual Atlas footer links to the compact data file and its Schema.
 - Made copied and documented release download commands repeatable with `--clobber`.
+- Reworded public README and quickstarts around user discovery instead of catalog-building internals.
 - Added bilingual WorkBuddy resource maps covering official product docs, community learning, evaluation material, and local catalog guides.
 - Added direct Atlas navigation to the resource maps, plus a post-use feedback and Star prompt that does not perform account actions.
 - Atlas now derives and displays the current count of reviewed WorkBuddy packages from `catalog-meta.json`.
