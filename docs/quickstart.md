@@ -49,6 +49,10 @@ You can also browse the official [Skill Marketplace](https://www.workbuddy.ai/do
 and [Explore](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Explore) pages for ready-made capabilities and examples.
 For the Open Platform's exact ZIP layout, required frontmatter, and parser troubleshooting,
 see the [official Open Platform Skill guide](https://open.workbuddy.cn/en/docs/skill).
+If you plan to publish a Skill, Connector, or other ecosystem asset, start with the
+[Open Platform overview](https://open.workbuddy.cn/en/docs/what-is-open-platform)
+and [onboarding guide](https://open.workbuddy.cn/en/docs/onboarding) for verification,
+testing, review, and publishing prerequisites.
 This repository explains catalog discovery and packaging; the official docs remain the source of truth for product UI and platform behavior.
 
 ## Choose an installation path
