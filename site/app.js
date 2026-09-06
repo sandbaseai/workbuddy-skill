@@ -183,7 +183,7 @@ function render(reset = true) {
     const installCommand = packageInstallCommand(skill);
     return `
     <article class="result">
-      <span class="result-name">${escapeHtml(skill.n)}</span>
+      <h3 class="result-name">${escapeHtml(skill.n)}</h3>
       <span class="result-source"><span>${escapeHtml(skill.r)}</span><code>${escapeHtml(skill.p)}</code></span>
       <span class="result-meta">
         <span class="badge">${skill.q ?? "—"}/100</span>
