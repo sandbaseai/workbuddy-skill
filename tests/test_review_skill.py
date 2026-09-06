@@ -1,4 +1,5 @@
 from pathlib import Path
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -78,6 +79,26 @@ class ReviewSkillTests(unittest.TestCase):
             ["repository-fork", "copy-or-mirror-path", "dormant-path"],
         )
         self.assertFalse(report["review_checklist"]["primary_source_context"])
+
+    def test_cli_rejects_symlinked_local_source_file(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            target = root / "outside" / "SKILL.md"
+            target.parent.mkdir()
+            target.write_text(
+                "---\nname: demo\ndescription: Demo\n---\n\n# Demo\n",
+                encoding="utf-8",
+            )
+            source = root / "linked" / "SKILL.md"
+            source.parent.mkdir()
+            source.symlink_to(target)
+            result = subprocess.run(
+                [sys.executable, str(ROOT / "scripts" / "review_skill.py"),
+                 "--source-file", str(source)],
+                cwd=ROOT, capture_output=True, text=True,
+            )
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("source file must not be a symlink", result.stderr)
 
 
 if __name__ == "__main__":
