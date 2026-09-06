@@ -63,6 +63,7 @@
 - [WorkBuddy Harness v2](https://github.com/zhuang-HE/workbuddy-harness)——可用于研究九维 Agent 基础设施、Hook/Eval 运行时、安全守护和基准用例；README 展示 MIT 标识，但仓库没有正式 `LICENSE` 文件，因此不能据此视为允许再分发。
 - [yinqd3/workbuddy-skills](https://github.com/yinqd3/workbuddy-skills)——MIT 许可的社区技能集合，包含学术研究、前端幻灯片和工具调用工作流；仅作为可审阅来源，不代表自动可信。
 - [Huawei Cloud DevKit](https://github.com/huaweicloud/huaweicloud-devkit)——Apache-2.0 许可的华为云官方工具包，明确支持 WorkBuddy，提供 Skill、MCP、CLI 和执行前安全检查；使用前检查凭据和云端副作用。
+- [CloudBase AI Toolkit](https://github.com/TencentCloudBase/CloudBase-AI-Toolkit)——腾讯云官方后端工具包，明确支持 WorkBuddy，串联 Skill、MCP、鉴权、数据库、存储、云函数和部署流程；执行前确认目标环境，并审阅敏感操作。
 - [Qwen-MM-Plugins](https://github.com/QwenLM/Qwen-MM-Plugins)——Apache-2.0 许可的多模态插件集合，将 Skill 与可选 MCP 能力分开；启用前检查模型/API Key、本地运行时和媒体数据边界。
 - [SkillDeck](https://github.com/crossoverJie/SkillDeck)——MIT 许可的 macOS Skill 管理器，明确支持 WorkBuddy/CodeBuddy，可浏览、导入、更新和分配 Skill；使用前检查其文件系统和符号链接权限。
 - [skill-manager](https://github.com/GrubbyLee/skill-manager)——MIT 许可、零依赖的本地 Skill/MCP 治理 CLI，支持扫描 WorkBuddy 目录、推荐、查重、审计和生成生命周期 dry-run 计划；默认只读，但执行任何写入前仍需检查变更计划。
