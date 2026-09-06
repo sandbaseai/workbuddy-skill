@@ -123,6 +123,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         )
         self.assertIn("21,818 indexed Skills", content)
         self.assertIn("new catalog records are not automatically added", content)
+        self.assertIn("github.com/search?q=filename%3ASKILL.md&type=code", content)
         self.assertIn("docs/catalog-guide.md", content)
         self.assertIn("docs/catalog-guide.zh-CN.md", content)
         self.assertIn("docs/starter-packs.md", content)

@@ -37,6 +37,7 @@ All notable changes to this project are documented here.
 - Added a 15-minute timeout to the trusted auto-merge job so stalled checks cannot occupy a runner indefinitely.
 - Added a 10-minute timeout to the scheduled public resource-link check so an unavailable external site cannot hold a runner indefinitely.
 - Added generated-data validation that keeps both Starter Packs guides aligned with reviewed Release assets.
+- Added a direct GitHub `SKILL.md` search URL to `llms.txt` for non-browser discovery beyond the frozen snapshot.
 - Added direct bilingual resource-map and Starter Packs links to the README entry navigation.
 - Linked the copy-ready WorkBuddy use-case guide from both README language entry points.
 - Fixed trusted auto-merge coverage for draft pull requests when they become ready for review.
