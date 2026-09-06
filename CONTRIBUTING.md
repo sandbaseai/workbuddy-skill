@@ -41,6 +41,9 @@ trusted contributors (`OWNER`, `MEMBER`, `COLLABORATOR`, or `CONTRIBUTOR`) worki
 from branches in this repository; it never checks out
 pull-request code. Pull requests from forks remain manual so untrusted workflow
 content cannot receive write permissions.
+Draft pull requests are queued after they emit `ready_for_review`; keep a draft
+until the scope and local checks are ready, then mark it ready to activate the
+same trusted-branch flow.
 The `main` branch requires the `validate` status check for pull requests and
 conversation resolution; admin enforcement remains off so authorized direct
 maintenance commits can continue when appropriate.
