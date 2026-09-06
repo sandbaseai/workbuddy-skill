@@ -16,6 +16,8 @@ from urllib.request import Request, urlopen
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_FILES = (
     ROOT / "README.md",
+    ROOT / "SUPPORT.md",
+    ROOT / "SECURITY.md",
     ROOT / "docs/resources.md",
     ROOT / "docs/resources.zh-CN.md",
     ROOT / "docs/quickstart.md",

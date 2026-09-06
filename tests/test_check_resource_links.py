@@ -21,6 +21,8 @@ class ResourceLinkCheckTests(unittest.TestCase):
     def test_default_sources_include_the_public_readme(self):
         source = (ROOT / "scripts/check_resource_links.py").read_text(encoding="utf-8")
         self.assertIn('ROOT / "README.md"', source)
+        self.assertIn('ROOT / "SUPPORT.md"', source)
+        self.assertIn('ROOT / "SECURITY.md"', source)
 
     def test_extracts_json_urls_without_quotes_or_following_markup(self):
         with TemporaryDirectory() as directory:
