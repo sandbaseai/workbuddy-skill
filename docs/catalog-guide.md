@@ -61,8 +61,9 @@ least 80, one result per unique blob, and score ordering. It is a triage aid,
 not a trust or safety guarantee.
 
 To use the same category vocabulary as Atlas, add `--category` (for example,
-`research`, `development`, or `security`). The filter uses name/path inference
-and honors curated package category metadata:
+`research`, `development`, or `security`). Chinese labels such as `研究` are
+accepted too. The filter uses name/path inference and honors curated package
+category metadata:
 
 ```bash
 python3 scripts/query_catalog.py --category research --package-status reviewed \

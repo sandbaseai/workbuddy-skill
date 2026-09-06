@@ -268,6 +268,10 @@ class RefreshWorkflowTests(unittest.TestCase):
             guide = (ROOT / path).read_text(encoding="utf-8")
             self.assertIn("--package-status reviewed", guide)
 
+    def test_catalog_guides_document_chinese_category_alias(self):
+        self.assertIn("Chinese labels such as `研究`", (ROOT / "docs/catalog-guide.md").read_text(encoding="utf-8"))
+        self.assertIn("直接写 `研究`", (ROOT / "docs/catalog-guide.zh-CN.md").read_text(encoding="utf-8"))
+
     def test_catalog_guides_distinguish_compatibility_and_package_signals(self):
         english = (ROOT / "docs/catalog-guide.md").read_text(encoding="utf-8")
         chinese = (ROOT / "docs/catalog-guide.zh-CN.md").read_text(encoding="utf-8")

@@ -41,8 +41,8 @@ python3 scripts/query_catalog.py research --high-signal --limit 10
 blob 去重并按分数排序。它只是缩小候选范围的辅助条件，不代表可信或安全。
 
 如果想使用与 Atlas 相同的分类词表，可以加上 `--category`（例如
-`research`、`development` 或 `security`）。它会使用目录名称/路径推导分类，
-并优先采用精选包元数据中的分类：
+`research`、`development` 或 `security`）；中文用户也可以直接写 `研究`。
+它会使用目录名称/路径推导分类，并优先采用精选包元数据中的分类：
 
 ```bash
 python3 scripts/query_catalog.py --category research --package-status reviewed \
