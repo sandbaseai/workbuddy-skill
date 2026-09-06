@@ -271,7 +271,17 @@ package_page = """<!doctype html>
         const items = [...document.querySelectorAll('li[data-search]')];
         const sections = [...document.querySelectorAll('main section')];
         const copyButtons = [...document.querySelectorAll('.copy-command')];
-        const update = () => {
+        const syncUrl = (historyMode = 'replace') => {
+          const params = new URLSearchParams();
+          const query = input.value.trim();
+          if (query) params.set('q', query);
+          const suffix = params.toString() ? `?${params}` : '';
+          history[`${historyMode}State`](null, '', `${location.pathname}${suffix}${location.hash}`);
+        };
+        const restoreUrl = () => {
+          input.value = new URLSearchParams(location.search).get('q') || '';
+        };
+        const update = ({ sync = true, historyMode = 'replace' } = {}) => {
           const query = input.value.trim().toLowerCase();
           let visible = 0;
           for (const item of items) {
@@ -286,12 +296,17 @@ package_page = """<!doctype html>
           output.textContent = query
             ? `Showing ${visible} of ${items.length} packages / 匹配 ${visible} / ${items.length}`
             : `Showing all ${items.length} packages / 共 ${items.length} 个精选包`;
+          if (sync) syncUrl(historyMode);
         };
-        input.addEventListener('input', update);
+        input.addEventListener('input', () => update({ historyMode: 'replace' }));
         clear.addEventListener('click', () => {
           input.value = '';
-          update();
+          update({ historyMode: 'push' });
           input.focus();
+        });
+        window.addEventListener('popstate', () => {
+          restoreUrl();
+          update({ sync: false });
         });
         const copyText = async (text) => {
           if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -321,6 +336,8 @@ package_page = """<!doctype html>
             }
           });
         }
+        restoreUrl();
+        update({ sync: false });
       })();
     </script>
   </body>

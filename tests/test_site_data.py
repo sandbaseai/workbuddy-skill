@@ -40,6 +40,10 @@ class SiteDataTests(unittest.TestCase):
         self.assertIn("clear-package-filter", package_page)
         self.assertIn("empty.hidden = visible !== 0", package_page)
         self.assertIn("input.focus()", package_page)
+        self.assertIn("new URLSearchParams(location.search)", package_page)
+        self.assertIn("history[`${historyMode}State`]", package_page)
+        self.assertIn("window.addEventListener('popstate'", package_page)
+        self.assertIn("restoreUrl();", package_page)
         self.assertIn('data-search=', package_page)
         package_count = f"{len(packages):,}"
         self.assertIn(
