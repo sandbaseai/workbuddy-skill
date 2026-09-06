@@ -60,6 +60,19 @@ python3 scripts/query_catalog.py research --high-signal --limit 10
 least 80, one result per unique blob, and score ordering. It is a triage aid,
 not a trust or safety guarantee.
 
+Useful starting queries (all use the same review-oriented filter):
+
+| Goal | Command |
+|---|---|
+| Research and web sources | `python3 scripts/query_catalog.py research --high-signal --limit 10` |
+| OCR and document extraction | `python3 scripts/query_catalog.py ocr --high-signal --limit 10` |
+| MCP and connector workflows | `python3 scripts/query_catalog.py mcp --high-signal --limit 10` |
+| Testing and QA | `python3 scripts/query_catalog.py testing --high-signal --limit 10` |
+| Documentation workflows | `python3 scripts/query_catalog.py documentation --high-signal --limit 10` |
+
+Replace the term with your task, then add `--package-status reviewed` when you
+need a package that can be downloaded from this repository's Releases.
+
 To restrict local results to packages that have a reviewed Release ZIP, use the
 curated manifest maintained by this repository:
 

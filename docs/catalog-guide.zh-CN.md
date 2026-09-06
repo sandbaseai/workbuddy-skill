@@ -40,6 +40,19 @@ python3 scripts/query_catalog.py research --high-signal --limit 10
 `--high-signal` 等价于无静态标记、优先疑似主来源、兼容分数至少 80、按唯一
 blob 去重并按分数排序。它只是缩小候选范围的辅助条件，不代表可信或安全。
 
+以下是几组已经验证可以直接开始的查询配方（都使用同一套审阅筛选）：
+
+| 目标 | 命令 |
+|---|---|
+| 调研和网页资料 | `python3 scripts/query_catalog.py research --high-signal --limit 10` |
+| OCR 和文档提取 | `python3 scripts/query_catalog.py ocr --high-signal --limit 10` |
+| MCP 和连接器工作流 | `python3 scripts/query_catalog.py mcp --high-signal --limit 10` |
+| 测试和 QA | `python3 scripts/query_catalog.py testing --high-signal --limit 10` |
+| 文档工作流 | `python3 scripts/query_catalog.py documentation --high-signal --limit 10` |
+
+将关键词替换成你的任务即可；如果需要从本仓库 Release 下载精选包，再加上
+`--package-status reviewed`。
+
 如果只想查看本仓库已经提供审阅版 Release ZIP 的条目，可以使用精选清单：
 
 ```bash
