@@ -6,6 +6,12 @@
 Skills，查看来源与许可证，选择适合的能力，并下载经过整理的 WorkBuddy
 版本。
 
+For English readers: browse the [WorkBuddy Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/),
+follow the [English quickstart](docs/quickstart.md), or download a reviewed package
+from [Releases](https://github.com/sandbaseai/workbuddy-skill/releases/latest). The
+catalog is a provenance-first discovery index; inspect each source, license, and
+permission boundary before installing.
+
 本 README 面向使用者，聚焦目录发现、来源审阅和 WorkBuddy 导入；项目维护、
 自动化校验和贡献流程不作为使用前提，分别放在贡献与安全文档中。
 
