@@ -116,6 +116,7 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertIn("https://github.com/yinqd3/workbuddy-skills", content)
         self.assertIn("https://github.com/huaweicloud/huaweicloud-devkit", content)
         self.assertIn("https://github.com/QwenLM/Qwen-MM-Plugins", content)
+        self.assertIn("https://github.com/crossoverJie/SkillDeck", content)
         self.assertIn("https://github.com/mrzhangguoguo/oh-my-workbuddy", content)
         self.assertIn("https://github.com/Tencent/workbuddy-bench", content)
         self.assertIn("arxiv.org/abs/2602.12670", content)
