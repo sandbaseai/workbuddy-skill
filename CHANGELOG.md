@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added the MIT Create TLDR Page Skill for turning authoritative command documentation into concise, source-linked WorkBuddy command references without executing examples.
 - Improved the Apache-2.0 Launch Risk Review Skill with portable category records, observed/derived/unknown evidence states, confidence and source-coverage gates, sanitized tracker output, and explicit approval boundaries.
 - Moved the SandBase capability Skill and its references to the external [Awesome WorkBuddy catalog](https://github.com/sandbaseai/awesome-workbuddy/tree/main/skills/sandbase); this repository now keeps only the external pointer.
 - Added the MIT Temporal Python Testing Skill with time-skipping workflow tests, Activity isolation, Worker integration, authorized redacted replay, determinism/version gates, safe shutdown, and fail-closed CI boundaries.

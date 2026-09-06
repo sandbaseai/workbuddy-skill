@@ -1,0 +1,19 @@
+{
+  "adaptation": {
+    "missing_resources": [
+      "The upstream skill assumes the tldr-pages project and a fetch-capable host; this package keeps the authoring guidance but does not bundle a fetch tool or tldr repository."
+    ],
+    "packaged_resources": [],
+    "security_signals": [
+      "preserved source URL and command requirements, tldr formatting, missing-input handling, and authoritative documentation checks",
+      "added WorkBuddy boundaries for non-execution, secret-safe output, source-versus-inference labeling, and destructive-command caution"
+    ],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/create-tldr-page/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/create-tldr-page/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "7b1ebe6333397841ca918dec904d24d4695fe953",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/create-tldr-page/SKILL.md"
+}

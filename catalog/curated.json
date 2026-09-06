@@ -1,5 +1,11 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/create-tldr-page/SKILL.md",
+    "skill": "create-tldr-page",
+    "skill_path": "skills/create-tldr-page",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/create-tldr-page-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:wshobson/agents:plugins/backend-development/skills/temporal-python-testing/SKILL.md",
     "skill": "temporal-python-testing",
     "skill_path": "skills/temporal-python-testing",

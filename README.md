@@ -66,6 +66,7 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 | [Test-Driven Development](skills/test-driven-development/) | 以 RED、GREEN、REFACTOR 建立行为测试、最小实现和回归保护 |
 | [Screen Reader Testing](skills/screen-reader-testing/) | 验证屏幕阅读器、键盘、ARIA、表单和动态内容的可感知行为 |
 | [Documentation](skills/documentation/) | 编写有证据、可执行、易维护的项目文档 |
+| [Create TLDR Page](skills/create-tldr-page/) | 从权威命令文档提取常见用例，生成可核验的 tldr 速查页 |
 | [Network Troubleshooting](skills/network-troubleshooting/) | 分层定位 DNS、路由、TLS、HTTP 和资源问题 |
 | [Protocol Reverse Engineering](skills/protocol-reverse-engineering/) | 在授权离线样本上分析协议 framing、字段、状态机和互操作证据 |
 | [Memory Forensics](skills/memory-forensics/) | 在授权离线镜像上交叉验证进程、映射、时间线和恶意迹象，避免实时采集与凭据恢复 |
