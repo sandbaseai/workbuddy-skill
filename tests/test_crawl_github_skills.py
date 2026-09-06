@@ -9,7 +9,12 @@ from unittest.mock import patch
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from crawl_github_skills import rate_limit_delay, wait_for_rate_limit, write_stats  # noqa: E402
+from crawl_github_skills import (  # noqa: E402
+    rate_limit_delay,
+    repository_skill_rows,
+    wait_for_rate_limit,
+    write_stats,
+)
 
 
 class RateLimitTests(unittest.TestCase):
@@ -48,6 +53,26 @@ class RateLimitTests(unittest.TestCase):
             stats = json.loads((Path(directory) / "stats.json").read_text(encoding="utf-8"))
             self.assertEqual(stats["records"], 1)
             self.assertFalse((Path(directory) / "stats.json.tmp").exists())
+
+    @patch("crawl_github_skills.request_api")
+    def test_repository_tree_scan_pins_default_branch_commit(self, request_api):
+        request_api.side_effect = [
+            ({"default_branch": "main", "html_url": "https://github.com/owner/repo", "fork": False}, {}),
+            ({"object": {"sha": "commitsha"}}, {}),
+            ({
+                "truncated": False,
+                "tree": [
+                    {"type": "blob", "path": "skills/useful/SKILL.md", "sha": "blobsha"},
+                    {"type": "tree", "path": "skills/useful"},
+                ],
+            }, {}),
+        ]
+        rows, requests = repository_skill_rows("owner/repo", "token")
+        self.assertEqual(requests, 3)
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["sha"], "blobsha")
+        self.assertIn("/commitsha/skills/useful/SKILL.md", rows[0]["raw_url"])
+        self.assertEqual(request_api.call_count, 3)
 
 
 if __name__ == "__main__":

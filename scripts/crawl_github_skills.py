@@ -14,10 +14,11 @@ from pathlib import Path
 import sys
 import time
 from urllib.error import HTTPError, URLError
-from urllib.parse import urlencode
+from urllib.parse import quote, urlencode
 from urllib.request import Request, urlopen
 
 API = "https://api.github.com/search/code"
+REPOSITORY_API = "https://api.github.com/repos"
 DEFAULT_OUT = Path("catalog/skills.jsonl")
 USER_AGENT = "sandbaseai-workbuddy-skill-catalog/0.2"
 MAX_THROTTLE_RETRIES = 8
@@ -57,6 +58,34 @@ def request_json(query: str, page: int, token: str, max_retries: int = 3) -> tup
                 raise
             retry_after = int(exc.headers.get("Retry-After", "0"))
             delay = max(retry_after, 2**attempt)
+            print(f"GitHub returned {exc.code}; retrying in {delay}s", file=sys.stderr)
+            time.sleep(delay)
+        except URLError:
+            if attempt >= max_retries:
+                raise
+            delay = 2**attempt
+            print(f"GitHub connection failed; retrying in {delay}s", file=sys.stderr)
+            time.sleep(delay)
+
+
+def request_api(url: str, token: str, max_retries: int = 3) -> tuple[dict, dict]:
+    """Fetch one public GitHub API document with bounded transient retries."""
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "User-Agent": USER_AGENT,
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    request = Request(url, headers=headers)
+    for attempt in range(max_retries + 1):
+        try:
+            with urlopen(request, timeout=45) as response:
+                return json.load(response), dict(response.headers)
+        except HTTPError as exc:
+            if exc.code not in (500, 502, 503, 504) or attempt >= max_retries:
+                raise
+            delay = max(int(exc.headers.get("Retry-After", "0")), 2**attempt)
             print(f"GitHub returned {exc.code}; retrying in {delay}s", file=sys.stderr)
             time.sleep(delay)
         except URLError:
@@ -118,6 +147,46 @@ def normalize(item: dict, query: str) -> dict:
     }
 
 
+def repository_skill_rows(repository: str, token: str) -> tuple[list[dict], int]:
+    """Enumerate immutable SKILL.md blobs from one repository's default branch."""
+    repository = repository.strip().strip("/")
+    if repository.count("/") != 1:
+        raise ValueError(f"repository must be owner/name: {repository}")
+    repo, _ = request_api(f"{REPOSITORY_API}/{repository}", token)
+    branch = str(repo["default_branch"])
+    ref, _ = request_api(
+        f"{REPOSITORY_API}/{repository}/git/ref/heads/{quote(branch, safe='')}", token
+    )
+    commit = ref["object"]["sha"]
+    tree, _ = request_api(
+        f"{REPOSITORY_API}/{repository}/git/trees/{commit}?recursive=1", token
+    )
+    if tree.get("truncated"):
+        raise RuntimeError(f"repository tree is truncated: {repository}")
+    rows = []
+    query = f"repository:{repository} tree:{branch}"
+    for item in tree.get("tree", []):
+        path = item.get("path", "")
+        if item.get("type") != "blob" or Path(path).name.casefold() != "skill.md":
+            continue
+        source_url = f"https://github.com/{repository}/blob/{commit}/{path}"
+        rows.append({
+            "id": f"github:{repository}:{path}",
+            "name_hint": Path(path).parent.name,
+            "repository": repository,
+            "path": path,
+            "sha": item["sha"],
+            "source_url": source_url,
+            "raw_url": f"https://raw.githubusercontent.com/{repository}/{commit}/{path}",
+            "repository_url": repo["html_url"],
+            "repository_fork": bool(repo.get("fork")),
+            "github_query": query,
+            "workbuddy_status": "unreviewed",
+            "security_status": "unscanned",
+        })
+    return rows, 3
+
+
 def load_existing(path: Path) -> dict[str, dict]:
     rows: dict[str, dict] = {}
     if not path.exists():
@@ -163,6 +232,12 @@ def write_stats(path: Path, rows: dict[str, dict], requests: int, capped_queries
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--target", type=int, default=10_000)
+    parser.add_argument(
+        "--repository",
+        action="append",
+        default=[],
+        help="Also scan a repository's default-branch Git tree for SKILL.md files (repeatable)",
+    )
     parser.add_argument("--start-bytes", type=int, default=1)
     parser.add_argument(
         "--max-bytes",
@@ -205,6 +280,30 @@ def main() -> int:
     rate_waited = 0
 
     try:
+        for repository in args.repository:
+            if len(rows) >= args.target:
+                break
+            if requests + 3 > args.max_requests:
+                print("request budget exhausted before repository tree scan; resume later", file=sys.stderr)
+                break
+            discovered, used = repository_skill_rows(repository, token)
+            requests += used
+            before = len(rows)
+            for row in discovered:
+                previous = rows.get(row["id"])
+                if previous and previous.get("sha") == row["sha"]:
+                    row.update({
+                        key: value for key, value in previous.items()
+                        if key not in row
+                    })
+                rows[row["id"]] = row
+                if len(rows) >= args.target:
+                    break
+            print(
+                f"repository={repository!r} discovered={len(rows) - before} indexed={len(rows)}",
+                file=sys.stderr,
+            )
+            write_atomic(args.output, rows)
         pending = search_shards(args.start_bytes, args.max_bytes)
         while pending:
             lower, upper = pending.pop()

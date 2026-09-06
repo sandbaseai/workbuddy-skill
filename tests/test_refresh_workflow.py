@@ -16,6 +16,7 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("group: refresh-skill-catalog", workflow)
         self.assertIn("cancel-in-progress: false", workflow)
         self.assertIn("target=$((current + 100))", workflow)
+        self.assertIn("--repository github/awesome-copilot", workflow)
         self.assertIn("--max-rate-wait 120", workflow)
         self.assertIn('"$crawl_status" -ne 2', workflow)
         self.assertIn('echo "changed=false" >> "$GITHUB_OUTPUT"', workflow)

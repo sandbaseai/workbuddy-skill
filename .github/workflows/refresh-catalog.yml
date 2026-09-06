@@ -40,7 +40,8 @@ jobs:
           target=$((current + 100))
           echo "Refreshing catalog from $current toward $target records"
           set +e
-          python3 scripts/crawl_github_skills.py --target "$target" --max-requests 60 \
+          python3 scripts/crawl_github_skills.py --target "$target" \
+            --repository github/awesome-copilot --max-requests 60 \
             --max-rate-wait 120 --output /tmp/skills.jsonl
           crawl_status=$?
           set -e

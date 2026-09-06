@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Enhanced the scheduled crawler with immutable Git-tree scans for selected public repositories, so newly added `SKILL.md` paths are discoverable even when Code Search indexing lags or reaches its cap.
 - Added MIT Microsoft Docs Research and pytest Coverage Analysis Skills with source/version evidence, isolation, privacy, and side-effect boundaries.
 - Added MIT MCP CLI and SQL Code Review Skills with explicit tool/schema, authorization, redaction, injection, and database evidence boundaries.
 - Added MIT Eval-Driven Development and PostgreSQL Code Review Skills with WorkBuddy-safe evaluation, database evidence, privacy, and mutation boundaries.
