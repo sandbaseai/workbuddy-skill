@@ -22,7 +22,7 @@ Skills，查看来源与许可证，选择适合的能力，并下载经过整�
 
 [打开 Atlas](https://sandbaseai.github.io/workbuddy-skill/) · [官方 WorkBuddy 文档](https://www.workbuddy.ai/docs/zh/workbuddy/Quickstart) · [官方版本更新](https://www.workbuddy.ai/docs/zh/ide/release-notes/release-notes) · [中文快速开始](docs/quickstart.zh-CN.md) · [中文资源地图](docs/resources.zh-CN.md) · [Starter Packs 入门包](docs/starter-packs.zh-CN.md) · [English quickstart](docs/quickstart.md) · [在 Atlas 浏览精选包](https://sandbaseai.github.io/workbuddy-skill/?packageStatus=reviewed#catalog) · [无脚本精选包清单](https://sandbaseai.github.io/workbuddy-skill/packages.html) · [可复制使用场景](docs/use-cases.md) · [分享使用案例](https://github.com/sandbaseai/workbuddy-skill/discussions) · [提交能力需求](https://github.com/sandbaseai/workbuddy-skill/issues/new?template=feature.yml) · [报告精选包问题](https://github.com/sandbaseai/workbuddy-skill/issues/new?template=package-feedback.yml)
 
-如果这个目录帮你更快找到可用能力，欢迎留下一个 Star；真实使用反馈和公开使用案例也很有帮助。试用后可以在 [Discussions](https://github.com/sandbaseai/workbuddy-skill/discussions) 分享结果，或直接[提交一个 WorkBuddy 使用案例](https://github.com/sandbaseai/workbuddy-skill/issues/new?template=showcase.yml)。
+如果这个目录帮你更快找到可用能力，欢迎[给项目加一个 Star](https://github.com/sandbaseai/workbuddy-skill)；真实使用反馈和公开使用案例也很有帮助。试用后可以在 [Discussions](https://github.com/sandbaseai/workbuddy-skill/discussions) 分享结果，或直接[提交一个 WorkBuddy 使用案例](https://github.com/sandbaseai/workbuddy-skill/issues/new?template=showcase.yml)。
 需要在论文、报告或内部资料中引用本目录时，可参考 [CITATION.cff](CITATION.cff)。
 
 ## 中文
@@ -257,7 +257,7 @@ documented separately and are not prerequisites for using the catalog.
 
 The public catalog contains **21,818 indexed Skills**, alongside **277 reviewed WorkBuddy packages** ready to install.
 
-If the catalog helps you find a useful capability, consider leaving a Star and sharing real usage feedback or a public workflow example. After trying a package, use [Discussions](https://github.com/sandbaseai/workbuddy-skill/discussions) or [submit a WorkBuddy showcase](https://github.com/sandbaseai/workbuddy-skill/issues/new?template=showcase.yml).
+If the catalog helps you find a useful capability, [Star the project](https://github.com/sandbaseai/workbuddy-skill) and share real usage feedback or a public workflow example. After trying a package, use [Discussions](https://github.com/sandbaseai/workbuddy-skill/discussions) or [submit a WorkBuddy showcase](https://github.com/sandbaseai/workbuddy-skill/issues/new?template=showcase.yml).
 For formal citations in papers, reports, or internal documentation, see [CITATION.cff](CITATION.cff).
 
 Start with the [English quickstart](docs/quickstart.md), or enter through the [shareable category directory](https://sandbaseai.github.io/workbuddy-skill/categories.html); use the [resource map](docs/resources.md) to choose official docs or reference material, read the [catalog reading guide](docs/catalog-guide.md) when reviewing results, or use the [adaptation guide](docs/adapting-skills.md) to package a public Skill for WorkBuddy.
