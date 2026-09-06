@@ -77,6 +77,8 @@ If you are evaluating a new GitHub source or crawler range, pass
 `--dry-run` to `scripts/crawl_github_skills.py`. It will perform discovery and
 report the candidate count without writing the output JSONL or its stats file;
 the published frozen catalog still requires a separate, explicit opt-in.
+For a repository-specific preview that does not require global Code Search,
+combine it with `--repository owner/name --repository-only`.
 
 To restrict local results to packages that have a reviewed Release ZIP, use the
 curated manifest maintained by this repository:

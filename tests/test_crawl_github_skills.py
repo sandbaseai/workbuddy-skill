@@ -59,6 +59,40 @@ class RateLimitTests(unittest.TestCase):
             self.assertFalse(output.exists())
             self.assertFalse((Path(directory) / "stats.json").exists())
 
+    @patch("crawl_github_skills.request_json")
+    @patch("crawl_github_skills.repository_skill_rows")
+    def test_repository_only_skips_global_code_search(self, repository_skill_rows, request_json):
+        repository_skill_rows.return_value = ([{
+            "id": "github:owner/repo:skills/demo/SKILL.md",
+            "name_hint": "demo",
+            "repository": "owner/repo",
+            "path": "skills/demo/SKILL.md",
+            "sha": "a" * 40,
+            "source_url": "https://github.com/owner/repo/blob/" + "a" * 40 + "/skills/demo/SKILL.md",
+            "raw_url": "https://raw.githubusercontent.com/owner/repo/" + "a" * 40 + "/skills/demo/SKILL.md",
+            "repository_url": "https://github.com/owner/repo",
+            "repository_fork": False,
+            "github_query": "repository:owner/repo tree:main",
+            "workbuddy_status": "unreviewed",
+            "security_status": "unscanned",
+        }], 3)
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "preview.jsonl"
+            with patch(
+                "sys.argv",
+                [
+                    "crawl_github_skills.py",
+                    "--target", "1",
+                    "--dry-run",
+                    "--repository", "owner/repo",
+                    "--repository-only",
+                    "--output", str(output),
+                ],
+            ):
+                self.assertEqual(main(), 0)
+        repository_skill_rows.assert_called_once_with("owner/repo", "")
+        request_json.assert_not_called()
+
     @patch("crawl_github_skills.time.time", return_value=1_000)
     def test_delay_uses_largest_server_boundary(self, _time):
         self.assertEqual(
