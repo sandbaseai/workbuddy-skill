@@ -30,6 +30,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT WorkBuddy-compatible self-media compliance review (local evidence by default; optional real-time channels may require credentials, network access, and paid quota): https://github.com/JuneYaooo/self-media-compliance-review
 - MIT WorkBuddy-compatible QianLV UI design reference (inspect bundled assets and scaffold scripts before reuse): https://github.com/CodeGanHaoZ/gks-QianLV-uiSkill
 - Apache-2.0 WorkBuddy-compatible CodeDrobe theme workflow (review CDP scope and restart approvals): https://github.com/CodeDrobe/skills
+- MIT WorkBuddy-compatible ontology-driven development reference (inspect runtime, examples, and model/API configuration): https://github.com/sharptoolbox/ontology-driven-dev
 - WorkBuddyGuide online reading site: https://workbuddy.homes
 - MIT community WorkBuddy usage and troubleshooting reference: https://github.com/Neo5093/workbuddy-guide
 - Chinese WorkBuddy practice guide (verify freshness and license before reuse): https://github.com/opcspace/WorkBuddy-Guide
