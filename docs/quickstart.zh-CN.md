@@ -8,6 +8,8 @@
 
 不确定如何判断搜索结果？先阅读[目录条目解读](catalog-guide.zh-CN.md)，再选择候选 Skill。
 
+如果想按类别查找官方文档、学习资料和评测参考，请看[WorkBuddy 资源地图](resources.zh-CN.md)。
+
 如果你想找经过人工整理的 WorkBuddy 文档、MCP 集成、工作流和评测，也可以浏览
 [Awesome WorkBuddy 生态索引](https://github.com/sandbaseai/awesome-workbuddy)。它补充的是本仓库的
 广泛元数据目录，但不能替代对具体来源和许可证的检查。

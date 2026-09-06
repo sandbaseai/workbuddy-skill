@@ -39,6 +39,14 @@ class RefreshWorkflowTests(unittest.TestCase):
                 "trust endorsements" in quickstart or "不构成信任背书" in quickstart
             )
 
+    def test_resource_maps_cover_both_languages_and_the_main_paths(self):
+        for name in ("docs/resources.md", "docs/resources.zh-CN.md"):
+            resources = (ROOT / name).read_text(encoding="utf-8")
+            self.assertIn("workbuddy.ai/docs", resources)
+            self.assertIn("WorkBuddyGuide", resources)
+            self.assertIn("workbuddy-bench", resources)
+            self.assertIn("Skill Atlas", resources)
+
     def test_catalog_refresh_is_frozen_without_automatic_additions(self):
         workflow = (ROOT / ".github/workflows/refresh-catalog.yml").read_text(encoding="utf-8")
         self.assertNotIn("schedule:", workflow)

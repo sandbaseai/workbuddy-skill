@@ -21,7 +21,7 @@ Skills，查看来源与许可证，选择适合的能力，并下载经过整�
 
 ### 三步开始
 
-首次使用请看[中文快速开始](docs/quickstart.zh-CN.md)；不确定如何判断目录结果时，先看[目录条目解读](docs/catalog-guide.zh-CN.md)；需要把公开 Skill 做成 WorkBuddy 包，请看[适配教程](docs/adapting-skills.zh-CN.md)。
+首次使用请看[中文快速开始](docs/quickstart.zh-CN.md)；想按目的选择官方文档、教程或评测资料，可看[资源地图](docs/resources.zh-CN.md)；不确定如何判断目录结果时，先看[目录条目解读](docs/catalog-guide.zh-CN.md)；需要把公开 Skill 做成 WorkBuddy 包，请看[适配教程](docs/adapting-skills.zh-CN.md)。
 
 1. 在 [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) 或[中文目录](https://sandbaseai.github.io/workbuddy-skill/zh-CN.html)中搜索需求。
 2. 打开条目的来源链接，阅读说明、许可证、权限和外部依赖。
@@ -226,7 +226,7 @@ The public catalog is currently frozen at **21,818 indexed Skills**. Future main
 If the catalog helps you find a useful capability, consider leaving a Star and sharing real usage feedback or a public workflow example.
 For formal citations in papers, reports, or internal documentation, see [CITATION.cff](CITATION.cff).
 
-Start with the [English quickstart](docs/quickstart.md), read the [catalog reading guide](docs/catalog-guide.md) when reviewing results, or use the [adaptation guide](docs/adapting-skills.md) to package a public Skill for WorkBuddy.
+Start with the [English quickstart](docs/quickstart.md), use the [resource map](docs/resources.md) to choose official docs or reference material, read the [catalog reading guide](docs/catalog-guide.md) when reviewing results, or use the [adaptation guide](docs/adapting-skills.md) to package a public Skill for WorkBuddy.
 
 1. Search the [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/).
 2. Read the immutable source, license, permissions, dependencies, and side effects.

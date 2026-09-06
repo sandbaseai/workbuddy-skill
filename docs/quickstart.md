@@ -9,6 +9,9 @@ Choose the path that matches your goal:
 Not sure how to interpret a result? Use the [catalog reading guide](catalog-guide.md)
 before choosing a candidate.
 
+For a categorized list of official docs, learning material, and evaluation references,
+see the [WorkBuddy resource map](resources.md).
+
 For manually reviewed WorkBuddy documentation, MCP integrations, workflows, and
 benchmarks, also browse the [Awesome WorkBuddy ecosystem index](https://github.com/sandbaseai/awesome-workbuddy).
 It complements this broad, metadata-first catalog; it is not a replacement for
