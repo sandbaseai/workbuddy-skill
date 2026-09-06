@@ -31,7 +31,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          existing_assets=$(gh release view "$GITHUB_REF_NAME" --json assets --jq '.assets[].name')
           for archive in dist/*-workbuddy-skill.zip; do
-            gh release upload "$GITHUB_REF_NAME" "$archive" --clobber
+            asset_name=$(basename "$archive")
+            if printf '%s\n' "$existing_assets" | grep -Fxq "$asset_name"; then
+              echo "Already uploaded: $asset_name"
+              continue
+            fi
+            gh release upload "$GITHUB_REF_NAME" "$archive"
             sleep 1
           done
