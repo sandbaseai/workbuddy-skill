@@ -19,6 +19,17 @@
     <meta name="twitter:description" content="Shareable category entry points for the WorkBuddy Skill Atlas / 可分享的任务类别入口。">
     <meta name="twitter:image" content="https://sandbaseai.github.io/workbuddy-skill/social-preview.png">
     <title>Browse WorkBuddy Skill Categories / 按类别浏览 · Skill Atlas</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "WorkBuddy Skill Categories / WorkBuddy Skill 类别",
+        "description": "Shareable category entry points for the WorkBuddy Skill Atlas.",
+        "url": "https://sandbaseai.github.io/workbuddy-skill/categories.html",
+        "isPartOf": {"@type": "WebSite", "name": "WorkBuddy Skill Atlas", "url": "https://sandbaseai.github.io/workbuddy-skill/"},
+        "about": {"@type": "Thing", "name": "Agent Skills for WorkBuddy"}
+      }
+    </script>
   </head>
   <body class="directory-page">
     <header class="directory-header">
@@ -46,6 +57,7 @@
       <section class="directory-note" aria-labelledby="review-title">
         <h2 id="review-title">Review before you run / 执行前先审阅</h2>
         <p>Category is only a discovery aid. Open the pinned source, check the license and referenced resources, prefer a reviewed package when available, and start with a read-only task in a recoverable workspace.<br>类别只是发现辅助。打开固定来源，检查许可证和引用资源；有精选包时优先选择，并在可恢复工作区中先执行只读任务。</p>
+        <p>For an installable package, verify the ZIP with <code>SHA256SUMS</code> and upload the original archive through WorkBuddy's Skills import flow.<br>安装精选包时，先用 <code>SHA256SUMS</code> 校验 ZIP，再通过 WorkBuddy 的 Skills 导入流程上传原始压缩包。</p>
         <p><a href="https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/catalog-guide.md">Read the catalog guide / 阅读目录指南</a> · <a href="https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.md">Read the quickstart / 阅读快速开始</a> · <a href="index.html?packageStatus=reviewed#catalog">Browse reviewed packages / 浏览精选包</a></p>
       </section>
     </main>

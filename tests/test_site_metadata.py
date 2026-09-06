@@ -98,6 +98,8 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
     def test_category_directory_is_bilingual_and_shareable(self):
         page = (SITE / "categories.html").read_text(encoding="utf-8")
         self.assertIn("按类别浏览", page)
+        self.assertIn('"@type": "CollectionPage"', page)
+        self.assertIn("SHA256SUMS", page)
         self.assertIn("index.html?category=development#catalog", page)
         self.assertIn("index.html?category=research#catalog", page)
         self.assertIn("index.html?packageStatus=reviewed#catalog", page)
