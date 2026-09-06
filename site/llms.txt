@@ -17,6 +17,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Reviewed package JSON: https://sandbaseai.github.io/workbuddy-skill/packages.json
 - Human-readable reviewed package index: https://sandbaseai.github.io/workbuddy-skill/packages.html
 - Reviewed package JSON Schema: https://sandbaseai.github.io/workbuddy-skill/packages-schema.json
+- Each reviewed package record includes `source_url`, pinned `sha`, `download_url`, `asset`, `download_command`, and `checksum_url`.
 - Catalog metadata: https://sandbaseai.github.io/workbuddy-skill/catalog-meta.json
 - Catalog metadata JSON Schema: https://sandbaseai.github.io/workbuddy-skill/catalog-meta-schema.json
 - Catalog metadata includes `catalog_sha256`, a SHA-256 fingerprint of the frozen `skills.jsonl` snapshot.
@@ -92,6 +93,20 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 ## Safety and provenance
 
 The Atlas stores metadata, immutable source links, compatibility signals, and conservative static review signals. A clean signal is not a security guarantee. Review the original license, instructions, bundled resources, scripts, network behavior, and permissions before adapting or installing any Skill.
+
+## Install a reviewed package
+
+Use a package's `asset` value from `packages.json` in the following command, then verify the ZIP before importing it into WorkBuddy under **Experts · Skills · Connectors → Skills → Add Skill**:
+
+```bash
+mkdir -p workbuddy-download
+gh release download --repo sandbaseai/workbuddy-skill \
+  --pattern '<asset>' --pattern SHA256SUMS \
+  --dir workbuddy-download --clobber
+cd workbuddy-download && sha256sum --check SHA256SUMS --ignore-missing
+```
+
+The human-readable package page exposes the exact `download_command` for every reviewed package. Do not install a catalog-only record as if it were a reviewed package; inspect its immutable source first.
 
 ## Local query
 
