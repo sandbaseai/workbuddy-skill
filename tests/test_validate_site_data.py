@@ -7,7 +7,13 @@ ROOT = Path(__file__).resolve().parents[1]
 import sys
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from validate_site_data import validate_metadata, validate_package_consistency, validate_rows, validate_unique_fields  # noqa: E402
+from validate_site_data import (  # noqa: E402
+    validate_metadata,
+    validate_package_consistency,
+    validate_rows,
+    validate_starter_pack_links,
+    validate_unique_fields,
+)
 
 
 class ValidateSiteDataTests(unittest.TestCase):
@@ -75,6 +81,25 @@ class ValidateSiteDataTests(unittest.TestCase):
             [
                 "packages record 0 download_command is missing: --pattern 'one-workbuddy-skill.zip', --pattern SHA256SUMS, --clobber"
             ],
+        )
+
+    def test_starter_pack_links_match_reviewed_package_assets(self):
+        packages = json.loads((ROOT / "site/packages.json").read_text(encoding="utf-8"))
+        self.assertEqual(validate_starter_pack_links(packages), [])
+
+    def test_rejects_starter_pack_asset_not_in_reviewed_packages(self):
+        with TemporaryDirectory() as directory:
+            path = Path(directory) / "starter.md"
+            path.write_text(
+                "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/missing-workbuddy-skill.zip",
+                encoding="utf-8",
+            )
+            errors = validate_starter_pack_links(
+                [{"asset": "known-workbuddy-skill.zip"}], (path,)
+            )
+        self.assertEqual(
+            errors,
+            [f"{path} references unreviewed package asset: missing-workbuddy-skill.zip"],
         )
 
 
