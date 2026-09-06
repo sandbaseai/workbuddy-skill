@@ -5,6 +5,9 @@ All notable changes to this project are documented here.
 ## Unreleased
 
 - Froze the public catalog at 21,818 indexed records; future maintenance is limited to documentation, usability, validation, and existing reviewed packages.
+- Added bilingual catalog-reading guidance and linked it from the README, quickstart, Atlas navigation, and `llms.txt`.
+- Added shareable Atlas result links, browser-history restoration, and language switching that preserves active filters; added regression coverage for the URL state.
+- Refreshed Atlas asset cache versions and aligned public snapshot copy with the frozen 21,818-record count.
 - Added MIT Agent Skill Stack, Landing Page Conversion Audit, and Prompt Optimizer packages from the pinned GitHub awesome-copilot source; a security-review candidate remains cataloged but was not packaged after static credential-path signals.
 - Added four MIT WorkBuddy packages from the pinned GitHub awesome-copilot source: Anti-UI-Slop, Ad Campaign Analyzer, AI Team Orchestration, and Prompt Safety Review.
 - Synced the public GitHub repository description and Atlas metadata copy with the current 21,818 indexed-record scale.
