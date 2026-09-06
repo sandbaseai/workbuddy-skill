@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Add the community WorkBuddy Guide as a rights-aware troubleshooting and onboarding reference without copying its Skill or scripts.
 - Add the official WorkBuddy Assistant Remote Control guide to the bilingual resource maps and machine-readable documentation index.
 - Add direct official WorkBuddy documentation links to the bilingual README navigation.
 - Put the built-in Skill Marketplace, reviewed package downloads, and Atlas search side by side in the bilingual quickstart decision table.

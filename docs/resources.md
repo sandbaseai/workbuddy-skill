@@ -53,6 +53,7 @@ Use this page to choose the right source before searching the catalog.
 ## Learning and evaluation
 
 - [WorkBuddyGuide](https://github.com/AlephAITech/WorkBuddyGuide) — task-oriented community walkthrough; its [online reading site](https://workbuddy.homes) is convenient for browsing.
+- [WorkBuddy Guide](https://github.com/Neo5093/workbuddy-guide) — MIT-licensed community reference Skill with a beginner path, connector troubleshooting, automation patterns, model guidance, FAQs, and environment diagnostics; inspect its scripts and version before adapting anything.
 - [WorkBuddy Starter](https://github.com/sunyet-01/WorkBuddy-Starter) — MIT-licensed beginner-oriented collection organized around onboarding, Skills, scenarios, and examples.
 - [QA Testing Guide](https://github.com/genapohub/qa-testing-guide) — MIT-licensed WorkBuddy-compatible Skill reference for test strategy, automation, performance testing, and defect workflows; inspect its files before adapting.
 - [Agentic Awesome Skills](https://github.com/sickn33/agentic-awesome-skills) — MIT-licensed local catalog and control plane for discovering, selecting, and validating agentic Skills; use it as a research reference, not an automatic installer.
