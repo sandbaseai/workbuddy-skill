@@ -77,6 +77,19 @@ class ResourceDiscoveryTests(unittest.TestCase):
         with self.assertRaisesRegex(SystemExit, "valid blob SHA"):
             immutable_github_source(record)
 
+    def test_rejects_immutable_source_with_query_or_empty_repository(self):
+        for raw_url in (
+            "https://raw.githubusercontent.com/acme/tools/"
+            + "a" * 40 + "/skills/demo/SKILL.md?download=1",
+            "https://raw.githubusercontent.com//tools/"
+            + "a" * 40 + "/skills/demo/SKILL.md",
+        ):
+            with self.subTest(raw_url=raw_url):
+                with self.assertRaisesRegex(
+                    SystemExit, "does not contain an immutable GitHub raw URL"
+                ):
+                    immutable_github_source({"raw_url": raw_url})
+
 
 class LocalPackagingTests(unittest.TestCase):
     def test_parses_folded_frontmatter_and_preserves_argument_hint(self):

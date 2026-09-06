@@ -80,10 +80,16 @@ def immutable_github_source(record: dict) -> tuple[str, str, str]:
     ):
         raise SystemExit("catalog record does not contain a valid blob SHA")
     parsed = urlparse(record["raw_url"])
+    if parsed.path.startswith("//"):
+        raise SystemExit("catalog record does not contain an immutable GitHub raw URL")
     parts = parsed.path.lstrip("/").split("/")
     if (
         parsed.netloc != "raw.githubusercontent.com"
+        or parsed.query
+        or parsed.fragment
         or len(parts) < 4
+        or not parts[0]
+        or not parts[1]
         or Path(parts[-1]).name.casefold() != "skill.md"
     ):
         raise SystemExit("catalog record does not contain an immutable GitHub raw URL")
