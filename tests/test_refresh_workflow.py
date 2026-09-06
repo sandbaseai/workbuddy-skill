@@ -62,6 +62,12 @@ class RefreshWorkflowTests(unittest.TestCase):
                 self.assertIn("read-only", quickstart.lower())
                 self.assertIn("API keys", quickstart)
             self.assertIn("cli.github.com/manual/gh_skill", quickstart)
+            if name.endswith("zh-CN.md"):
+                self.assertIn("open.workbuddy.cn/docs/what-is-open-platform", quickstart)
+                self.assertIn("open.workbuddy.cn/docs/onboarding", quickstart)
+            else:
+                self.assertIn("open.workbuddy.cn/en/docs/what-is-open-platform", quickstart)
+                self.assertIn("open.workbuddy.cn/en/docs/onboarding", quickstart)
 
     def test_quickstarts_document_host_scope_and_version_pinning(self):
         for name in ("docs/quickstart.md", "docs/quickstart.zh-CN.md"):
