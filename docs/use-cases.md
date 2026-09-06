@@ -2,6 +2,12 @@
 
 Each prompt is designed to make the expected stopping condition explicit and reduce accidental cost.
 
+## How to use / 使用方法
+
+1. 先确认 WorkBuddy 中已有可用连接器，再复制最接近目标的一段提示词。
+2. 把示例中的主题、格式或限制替换成你的实际需求；保留“先检查、再执行”的顺序。
+3. 涉及创建任务、付费或写入外部系统时，先让 WorkBuddy 只返回方案和预计成本，确认后再执行。
+
 ## Research / 调研
 
 ```text
