@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Add the MIT-licensed WorkBuddy Codex Hub MCP as a clearly bounded multi-agent collaboration reference.
 - Expose the safe repository-only crawler preview command in the machine-readable resource index.
 - Add the MIT-licensed Agent Analytics Report as a privacy-aware WorkBuddy usage-analysis reference.
 - Add a safe crawler `--dry-run` mode that discovers and counts candidates without writing catalog or stats files.
