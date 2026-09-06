@@ -11,6 +11,7 @@ All notable changes to this project are documented here.
 - Added weekly Dependabot tracking for GitHub Actions versions without adding runtime dependencies.
 - Enabled and documented repository-level Dependabot security updates, Secret Scanning, and Push Protection.
 - Added scheduled CodeQL analysis for Python and GitHub Actions workflows.
+- Made `validate` and both CodeQL analyses strict required checks on `main` and documented the merge gate for contributors.
 - Added a restricted auto-merge workflow for trusted same-repository pull requests; fork pull requests remain manual and untrusted code is never checked out by the merge workflow.
 - Added a dependency-free `verify_catalog_snapshot.py` command and CI gate for checking the frozen catalog against its published SHA-256 fingerprint.
 - Published `catalog-meta-schema.json` and added metadata contract validation for machine consumers of the Atlas.

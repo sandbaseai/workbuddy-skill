@@ -47,8 +47,10 @@ same trusted-branch flow.
 After a trusted same-repository PR is merged, a separate target-repository cleanup
 workflow removes its non-default branch without checking out PR code; fork
 branches remain owned by their original repository.
-The `main` branch requires the `validate` status check for pull requests and
-conversation resolution; admin enforcement remains off so authorized direct
-maintenance commits can continue when appropriate.
+The `main` branch requires the `validate`, `Analyze (actions)`, and
+`Analyze (python)` status checks for pull requests. These checks must be green
+before auto-merge can complete. Conversation resolution is not required and
+admin enforcement remains off so authorized direct maintenance commits can
+continue when appropriate.
 
 Bug reports should include the WorkBuddy version, the requested capability, the failure message with secrets removed, and the expected behavior.
