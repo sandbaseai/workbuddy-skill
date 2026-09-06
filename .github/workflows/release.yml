@@ -19,6 +19,8 @@ jobs:
       - name: Validate frozen catalog
         run: python3 scripts/validate_catalog.py --minimum 10000 --require-analysis --check-stats
       - run: ./scripts/package_skill.sh
+      - name: Create release checksums
+        run: (cd dist && sha256sum *-workbuddy-skill.zip > SHA256SUMS)
       # Replaces softprops/action-gh-release@v3.0.3 with rate-limited CLI uploads.
       - name: Create release
         env:
@@ -43,3 +45,8 @@ jobs:
             gh release upload "$GITHUB_REF_NAME" "$archive"
             sleep 1
           done
+          if printf '%s\n' "$existing_assets" | grep -Fxq "SHA256SUMS"; then
+            echo "Already uploaded: SHA256SUMS"
+          else
+            gh release upload "$GITHUB_REF_NAME" dist/SHA256SUMS
+          fi

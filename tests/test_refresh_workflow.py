@@ -17,6 +17,11 @@ class RefreshWorkflowTests(unittest.TestCase):
             workflow,
         )
 
+    def test_release_publishes_sha256_checksums(self):
+        workflow = (ROOT / ".github/workflows/release.yml").read_text(encoding="utf-8")
+        self.assertIn("sha256sum *-workbuddy-skill.zip > SHA256SUMS", workflow)
+        self.assertIn('gh release upload "$GITHUB_REF_NAME" dist/SHA256SUMS', workflow)
+
     def test_catalog_refresh_is_frozen_without_automatic_additions(self):
         workflow = (ROOT / ".github/workflows/refresh-catalog.yml").read_text(encoding="utf-8")
         self.assertNotIn("schedule:", workflow)

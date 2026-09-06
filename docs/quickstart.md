@@ -31,6 +31,13 @@ This repository explains catalog discovery and packaging; the official docs rema
 
 Download the ZIP you need from the [latest release](https://github.com/sandbaseai/workbuddy-skill/releases/latest). Do not unzip and repackage it: `SKILL.md` is already at the archive root.
 
+For reproducible downloads, also download `SHA256SUMS` from the same release and
+verify an archive in the same directory:
+
+```bash
+sha256sum --check SHA256SUMS --ignore-missing
+```
+
 ### 2. Import
 
 In WorkBuddy, open **Experts · Skills · Connectors → Skills → Add Skill**, upload the ZIP, and finish the import. If the Skill uses a connector, enable that service in the current workspace.

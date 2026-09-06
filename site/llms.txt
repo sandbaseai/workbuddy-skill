@@ -6,6 +6,8 @@ The public catalog is a frozen snapshot of 21,818 indexed Skills. Future
 maintenance focuses on documentation, usability, validation, and existing
 reviewed packages; new catalog records are not automatically added.
 
+Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verification.
+
 ## Use the catalog
 
 - Web search: https://sandbaseai.github.io/workbuddy-skill/

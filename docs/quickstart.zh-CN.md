@@ -22,6 +22,12 @@
 
 从[最新 Release](https://github.com/sandbaseai/workbuddy-skill/releases/latest)下载需要的 ZIP。不要解压后重新打包；安装包已经把 `SKILL.md` 放在 ZIP 根目录。
 
+需要可复现地校验下载内容时，同时下载同一 Release 中的 `SHA256SUMS`，并在 ZIP 所在目录执行：
+
+```bash
+sha256sum --check SHA256SUMS --ignore-missing
+```
+
 ### 2. 导入
 
 在 WorkBuddy 打开 **专家 · Skills · Connectors → Skills → 添加 Skill**，上传 ZIP 并完成导入。需要连接器的 Skill，还要在当前工作区启用对应服务。
