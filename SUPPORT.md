@@ -15,6 +15,8 @@ existing reviewed package; they do not add new catalog records.
 
 Every result points to an exact GitHub source. Indexed does not mean trusted;
 review provenance, license, permissions, and bundled code before installation.
+For help interpreting scores, source context, and static signals, read the
+[catalog reading guide](docs/catalog-guide.md).
 
 ## Ask for help
 
