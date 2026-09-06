@@ -15,6 +15,7 @@ class AtlasFrontendTests(unittest.TestCase):
     def test_both_languages_expose_shareable_result_controls(self):
         for page in (self.english, self.chinese):
             self.assertIn('id="copy-link"', page)
+            self.assertIn('id="copy-status"', page)
             self.assertIn('id="language-link"', page)
             self.assertIn('id="snapshot-note"', page)
             self.assertIn('id="hero-count"', page)
@@ -32,6 +33,8 @@ class AtlasFrontendTests(unittest.TestCase):
         self.assertIn("control.value = control.options[0].value", self.app)
         self.assertIn("meta.records.toLocaleString()", self.app)
         self.assertIn("heroCount.textContent", self.app)
+        self.assertIn("function announceCopy(message)", self.app)
+        self.assertIn("copyStatus.textContent = message", self.app)
         self.assertIn('meta.snapshot_frozen !== true', self.app)
         self.assertIn('const bySource = (left, right) => left.r.localeCompare(right.r) || left.p.localeCompare(right.p);', self.app)
         self.assertIn('} else if (sort.value === "source") {', self.app)

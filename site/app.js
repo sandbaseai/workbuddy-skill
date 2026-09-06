@@ -11,6 +11,7 @@ const minScore = document.querySelector("#min-score");
 const highSignal = document.querySelector("#high-signal");
 const resetFilters = document.querySelector("#reset-filters");
 const copyLink = document.querySelector("#copy-link");
+const copyStatus = document.querySelector("#copy-status");
 const empty = document.querySelector("#empty");
 const error = document.querySelector("#error");
 const more = document.querySelector("#more");
@@ -74,6 +75,10 @@ function syncUrlState(historyMode = "replace") {
   syncLanguageLink();
 }
 
+function announceCopy(message) {
+  copyStatus.textContent = message;
+}
+
 async function copyCatalogId(button) {
   const value = button.dataset.catalogId;
   try {
@@ -91,6 +96,7 @@ async function copyCatalogId(button) {
   }
   const original = button.textContent;
   button.textContent = isChinese ? "已复制" : "Copied";
+  announceCopy(isChinese ? "目录 ID 已复制" : "Catalog ID copied");
   setTimeout(() => { button.textContent = original; }, 1600);
 }
 
@@ -111,6 +117,7 @@ async function copySearchLink() {
   }
   const original = copyLink.textContent;
   copyLink.textContent = isChinese ? "链接已复制" : "Link copied";
+  announceCopy(isChinese ? "结果链接已复制" : "Result link copied");
   setTimeout(() => { copyLink.textContent = original; }, 1600);
 }
 
