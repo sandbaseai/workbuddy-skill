@@ -1,7 +1,7 @@
 name: Clean up merged branches
 
 on:
-  pull_request:
+  pull_request_target:
     types: [closed]
 
 # This workflow never checks out pull-request code. It deletes only a merged

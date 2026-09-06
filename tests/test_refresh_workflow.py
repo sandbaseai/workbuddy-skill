@@ -190,6 +190,7 @@ class RefreshWorkflowTests(unittest.TestCase):
 
     def test_merged_branch_cleanup_only_deletes_safe_same_repository_refs(self):
         workflow = (ROOT / ".github/workflows/cleanup-merged-branches.yml").read_text(encoding="utf-8")
+        self.assertIn("pull_request_target:", workflow)
         self.assertIn("types: [closed]", workflow)
         self.assertIn('[[ "$MERGED" != "true" ]]', workflow)
         self.assertIn('[[ "$HEAD_REPOSITORY" != "$GITHUB_REPOSITORY" ]]', workflow)
