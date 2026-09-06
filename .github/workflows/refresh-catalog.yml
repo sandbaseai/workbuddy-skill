@@ -49,6 +49,11 @@ jobs:
             --repository wshobson/agents \
             --repository microsoft/skills \
             --repository vercel-labs/skills \
+            --repository addyosmani/agent-skills \
+            --repository K-Dense-AI/scientific-agent-skills \
+            --repository microsoft/SkillOpt \
+            --repository nextlevelbuilder/ui-ux-pro-max-skill \
+            --repository googleworkspace/cli \
             --max-requests 60 \
             --max-rate-wait 120 --output /tmp/skills.jsonl
           crawl_status=$?
