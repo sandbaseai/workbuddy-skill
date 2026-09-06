@@ -238,7 +238,7 @@ The catalog is for discovery, not automatic approval. Review every external Skil
 
 Issues and pull requests are welcome for documentation, usability, validation, and existing reviewed package improvements. Please never commit API keys, access tokens, private prompts, or customer data.
 
-For help, see [SUPPORT.md](SUPPORT.md); for vulnerability reports, see [SECURITY.md](SECURITY.md). Release history is in the [changelog](CHANGELOG.md).
+For help, see [SUPPORT.md](SUPPORT.md); share real usage examples or discuss existing package and documentation improvements in [Discussions](https://github.com/sandbaseai/workbuddy-skill/discussions). For vulnerability reports, see [SECURITY.md](SECURITY.md). Release history is in the [changelog](CHANGELOG.md).
 
 ## License
 
