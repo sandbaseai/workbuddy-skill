@@ -38,6 +38,12 @@ python3 scripts/review_skill.py \
   --catalog-id 'github:owner/repository:path/to/SKILL.md'
 ```
 
+也可以把同一个 ID 粘贴回本地搜索工具或 Atlas 搜索框，重新定位精确条目：
+
+```bash
+python3 scripts/query_catalog.py 'github:owner/repository:path/to/SKILL.md'
+```
+
 搜索只负责缩小候选范围，不会自动安装。选定条目后，先检查来源，再按照[适配教程](adapting-skills.zh-CN.md)制作经过审阅的 WorkBuddy 包。
 
 选择“来源顺序”时，结果会先按仓库、再按路径稳定排序，不依赖目录文件的爬取顺序，便于复查和分享同一个查询。

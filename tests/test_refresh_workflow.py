@@ -72,6 +72,11 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertNotIn("re-enable the crawler", readme.lower())
         self.assertNotIn("future maintenance focuses", readme.lower())
 
+    def test_catalog_guides_document_catalog_id_roundtrip(self):
+        for path in ("docs/catalog-guide.md", "docs/catalog-guide.zh-CN.md"):
+            guide = (ROOT / path).read_text(encoding="utf-8")
+            self.assertIn("scripts/query_catalog.py 'github:owner/repository:path/to/SKILL.md'", guide)
+
     def test_public_freshness_metadata_matches_site_schedule(self):
         catalog_docs = (ROOT / "catalog/README.md").read_text(encoding="utf-8")
         sitemap = (ROOT / "site/sitemap.xml").read_text(encoding="utf-8")

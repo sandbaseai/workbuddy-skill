@@ -55,6 +55,13 @@ python3 scripts/review_skill.py \
   --catalog-id 'github:owner/repository:path/to/SKILL.md'
 ```
 
+You can also paste the same ID back into the local search or the Atlas search
+box to find the exact record again:
+
+```bash
+python3 scripts/query_catalog.py 'github:owner/repository:path/to/SKILL.md'
+```
+
 Search narrows candidates; it does not install anything. For a selected result,
 inspect the source and then follow the [adaptation guide](adapting-skills.md)
 to create a reviewed WorkBuddy package.
