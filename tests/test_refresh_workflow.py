@@ -146,6 +146,8 @@ class RefreshWorkflowTests(unittest.TestCase):
             self.assertIn("CodeDrobe/skills", resources)
             self.assertIn("CodeDrobe/core", resources)
             self.assertIn("ontology-driven-dev", resources)
+            self.assertIn("WorkBuddy-AppBuilderSkill", resources)
+            self.assertIn("image-story-video-wizard", resources)
             self.assertIn("qa-testing-guide", resources)
             self.assertIn("agentic-awesome-skills", resources)
             self.assertIn("AI-Coding-Guide-Zh", resources)

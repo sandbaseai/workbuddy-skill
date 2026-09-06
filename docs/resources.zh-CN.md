@@ -69,6 +69,8 @@
 - [CodeDrobe Skills](https://github.com/CodeDrobe/skills)——Apache-2.0 许可、兼容 WorkBuddy 的可逆桌面主题工作流，覆盖创建、应用、验证、修复和恢复；它依赖独立运行时，可能需要 CDP，使用前先确认应用范围和重启授权。
 - [CodeDrobe Core](https://github.com/CodeDrobe/core)——Apache-2.0 许可的 CodeDrobe WorkBuddy 主题运行时，提供固定版本的 `npx`/`bunx` 命令、应用检测、可逆 CDP 注入和验证；使用前固定运行时版本，并检查重启和应用路径权限。
 - [Ontology Driven Dev](https://github.com/sharptoolbox/ontology-driven-dev)——MIT 许可、兼容 WorkBuddy 的需求探索、本体建模和应用构建参考，带有人为确认门禁；仓库包含较重的运行时和示例，运行前先检查依赖、本地数据以及模型/API 配置。
+- [WorkBuddy AppBuilder Skill](https://github.com/sharptoolbox/WorkBuddy-AppBuilderSkill)——MIT 许可的聚焦型参考，覆盖需求探索、领域建模和应用生成；适配前检查生成文件以及模型/API 的边界。
+- [Image Story Video Wizard](https://github.com/aaronyi97/image-story-video-wizard)——MIT 许可、带确认门禁的音频优先图像故事视频工作流，兼容 Codex 和 WorkBuddy；使用前检查媒体路径、外部工具和人工批准步骤。
 - [WorkBuddy 使用指南](https://github.com/Neo5093/workbuddy-guide)——MIT 许可的社区参考 Skill，包含新手路径、连接器排障、自动化模式、模型说明、FAQ 和环境诊断；适配前请检查脚本和具体版本。
 - [WorkBuddy 实践指南](https://github.com/opcspace/WorkBuddy-Guide)——中文社区知识库，覆盖安全安装、首次任务、权限、排障、连接器、远程协助和验收导向的工作流；复用前请核对内容新鲜度和许可证。
 - [WorkBuddy Starter](https://github.com/sunyet-01/WorkBuddy-Starter)——MIT 许可、面向新手的 WorkBuddy 入门资料库，按入门、Skills、场景和案例组织内容。

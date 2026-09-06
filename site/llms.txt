@@ -32,6 +32,8 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Apache-2.0 WorkBuddy-compatible CodeDrobe theme workflow (review CDP scope and restart approvals): https://github.com/CodeDrobe/skills
 - Apache-2.0 CodeDrobe runtime for WorkBuddy theming (pin the runtime and review CDP/app-path permissions): https://github.com/CodeDrobe/core
 - MIT WorkBuddy-compatible ontology-driven development reference (inspect runtime, examples, and model/API configuration): https://github.com/sharptoolbox/ontology-driven-dev
+- MIT focused WorkBuddy AppBuilder reference for requirements, domain modeling, and app generation (review generated-artifact and model/API boundaries): https://github.com/sharptoolbox/WorkBuddy-AppBuilderSkill
+- MIT confirmation-gated audio-first image-story video workflow for Codex and WorkBuddy (inspect media paths and approvals): https://github.com/aaronyi97/image-story-video-wizard
 - WorkBuddyGuide online reading site: https://workbuddy.homes
 - MIT community WorkBuddy usage and troubleshooting reference: https://github.com/Neo5093/workbuddy-guide
 - Chinese WorkBuddy practice guide (verify freshness and license before reuse): https://github.com/opcspace/WorkBuddy-Guide
