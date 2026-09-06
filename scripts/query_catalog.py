@@ -15,6 +15,8 @@ from catalog_signals import source_context
 
 CHECKSUM_URL = "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/SHA256SUMS"
 RELEASE_REPO = "sandbaseai/workbuddy-skill"
+ATLAS_URL = "https://sandbaseai.github.io/workbuddy-skill/"
+GITHUB_SKILL_SEARCH_URL = "https://github.com/search?q=filename%3ASKILL.md&type=code"
 
 
 def catalog_id(row: dict) -> str:
@@ -253,6 +255,18 @@ def main() -> int:
             f"; source: {source_context(row)}"
         )
     print(f"\n{len(results)} result(s)", file=sys.stderr)
+    if not results:
+        print(
+            "No catalog matches. Try a shorter capability term, or continue discovery in "
+            f"the Atlas ({ATLAS_URL}) or GitHub's current SKILL.md search "
+            f"({GITHUB_SKILL_SEARCH_URL}).",
+            file=sys.stderr,
+        )
+        print(
+            "External discovery is not automatic trust or installation; inspect the source, "
+            "license, permissions, and commit before adapting anything.",
+            file=sys.stderr,
+        )
     return 0
 
 

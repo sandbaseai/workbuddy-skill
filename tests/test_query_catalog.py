@@ -1,5 +1,5 @@
 from pathlib import Path
-from contextlib import redirect_stdout
+from contextlib import redirect_stderr, redirect_stdout
 import io
 import json
 import sys
@@ -134,6 +134,36 @@ class QueryCatalogTests(unittest.TestCase):
         self.assertIn("research-best", rendered)
         self.assertNotIn("research-low", rendered)
         self.assertNotIn("research-risk", rendered)
+
+    def test_cli_suggests_next_discovery_step_when_no_match(self):
+        with TemporaryDirectory() as directory:
+            catalog = Path(directory) / "skills.jsonl"
+            catalog.write_text(json.dumps(row("research", "sha", 90)) + "\n", encoding="utf-8")
+            output = io.StringIO()
+            with redirect_stderr(output):
+                old_argv = sys.argv
+                try:
+                    sys.argv = ["query_catalog.py", "invoice", "--catalog", str(catalog)]
+                    main()
+                finally:
+                    sys.argv = old_argv
+        self.assertIn("No catalog matches", output.getvalue())
+        self.assertIn("shorter capability term", output.getvalue())
+        self.assertIn("filename%3ASKILL.md", output.getvalue())
+
+    def test_cli_json_no_match_remains_valid_json(self):
+        with TemporaryDirectory() as directory:
+            catalog = Path(directory) / "skills.jsonl"
+            catalog.write_text(json.dumps(row("research", "sha", 90)) + "\n", encoding="utf-8")
+            output = io.StringIO()
+            with redirect_stdout(output):
+                old_argv = sys.argv
+                try:
+                    sys.argv = ["query_catalog.py", "invoice", "--catalog", str(catalog), "--json"]
+                    main()
+                finally:
+                    sys.argv = old_argv
+        self.assertEqual(json.loads(output.getvalue()), [])
 
     def test_filters_reviewed_and_catalog_only_packages(self):
         reviewed = {**row("reviewed", "reviewed", 90), "id": "github:owner/repo:skills/reviewed/SKILL.md"}

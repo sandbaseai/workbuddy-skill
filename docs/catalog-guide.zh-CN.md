@@ -88,6 +88,9 @@ python3 -c 'import json; from pathlib import Path; print("\\n".join(item["workbu
 人类可读输出会直接给出完整的 `catalog id`。把这个值复制给
 `review_skill.py` 或 `adapt_skill.py` 即可，不要根据显示名称手工拼接 ID。
 
+如果本地查询没有匹配结果，命令会打印 Atlas 和 GitHub 当前 `SKILL.md`
+搜索入口，帮助继续发现目录之外的内容。这些链接只扩大搜索范围，不代表自动批准或安装外部来源。
+
 ```bash
 python3 scripts/review_skill.py \
   --catalog-id 'github:owner/repository:path/to/SKILL.md'

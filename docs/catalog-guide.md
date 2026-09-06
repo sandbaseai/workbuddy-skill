@@ -121,6 +121,10 @@ The human-readable output includes a complete `catalog id`. Copy that value
 directly into `review_skill.py` or `adapt_skill.py`; do not reconstruct an ID
 from the display name.
 
+If a local query returns no matches, the command prints the Atlas and GitHub's
+current `SKILL.md` search as next discovery steps. Those links only widen
+discovery; they do not approve or install an external source.
+
 ```bash
 python3 scripts/review_skill.py \
   --catalog-id 'github:owner/repository:path/to/SKILL.md'
