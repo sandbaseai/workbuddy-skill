@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Reject query-bearing or structurally incomplete immutable raw URLs.
 - Apply blob SHA validation to adapted package provenance as well as review reports.
 - Validate catalog blob SHAs before review reports expose provenance.
 - Add the MIT-licensed QA Testing Guide as a reviewed external learning reference.
