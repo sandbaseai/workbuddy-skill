@@ -82,6 +82,9 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
                     metadata["distribution"]["contentUrl"],
                     "https://sandbaseai.github.io/workbuddy-skill/catalog.json",
                 )
+                self.assertIn("WorkBuddy", metadata["keywords"])
+                self.assertTrue(any("MCP" in keyword for keyword in metadata["keywords"]))
+                self.assertTrue(any("Skill" in keyword or "技能" in keyword for keyword in metadata["keywords"]))
                 script_version = re.search(r'app\.js\?v=([0-9.]+)', html)
                 style_version = re.search(r'styles\.css\?v=([0-9.]+)', html)
                 self.assertIsNotNone(script_version)
