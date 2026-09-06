@@ -63,6 +63,7 @@
 ## 学习与评测
 
 - [WorkBuddy 实战蓝皮书](https://github.com/AlephAITech/WorkBuddyGuide)——按真实任务学习，也可以直接阅读[在线版](https://workbuddy.homes)。
+- [WorkBuddy 账号迁移](https://github.com/xiaoliuzhuan666/workbuddy-account-migrate)——MIT 许可的跨平台账号切换恢复参考，覆盖会话、记忆和连接器；先使用诊断模式并确认备份、回滚和目标账号，不能把本地数据库修改视为无风险操作。
 - [WorkBuddy 使用指南](https://github.com/Neo5093/workbuddy-guide)——MIT 许可的社区参考 Skill，包含新手路径、连接器排障、自动化模式、模型说明、FAQ 和环境诊断；适配前请检查脚本和具体版本。
 - [WorkBuddy 实践指南](https://github.com/opcspace/WorkBuddy-Guide)——中文社区知识库，覆盖安全安装、首次任务、权限、排障、连接器、远程协助和验收导向的工作流；复用前请核对内容新鲜度和许可证。
 - [WorkBuddy Starter](https://github.com/sunyet-01/WorkBuddy-Starter)——MIT 许可、面向新手的 WorkBuddy 入门资料库，按入门、Skills、场景和案例组织内容。

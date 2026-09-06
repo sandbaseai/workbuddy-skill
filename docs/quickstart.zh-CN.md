@@ -213,4 +213,14 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review \
 | 鉴权、余额或权限错误 | 账号、工作区和权限模式 | 检查设置，不要粘贴密钥；询问缺少的具体授权 |
 | 结果不确定 | 返回结果中的证据、来源和限制 | 不要把推测当执行结果，要求可验证的结果 |
 
+### 对话、记忆或连接器突然不见
+
+先不要删除、移动或覆盖本地文件，也不要在未备份时运行清理脚本。按下面顺序排查：
+
+1. 确认当前登录的是原来的账号，并且打开的是原来的工作区；账号隔离可能让旧数据仍在磁盘上，但不显示在当前界面。
+2. 退出 WorkBuddy 后，先复制相关数据目录或数据库到单独的备份位置；保留原文件，不要直接在原地试验。
+3. 使用 WorkBuddy 的[记忆说明](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Memory)和官方 FAQ 确认当前版本的行为。
+4. 如果确实是切换账号后的恢复问题，可把 [workbuddy-account-migrate](https://github.com/xiaoliuzhuan666/workbuddy-account-migrate) 当作 MIT 许可的外部参考：先运行它的诊断模式、阅读源码并确认备份和回滚路径，再决定是否执行迁移。它会修改本地数据库、记忆和连接器数据，本仓库不代为执行，也不把它视为无风险工具。
+5. 恢复后先用只读任务确认会话、记忆和连接器，再进行任何写入或清理操作。
+
 需要进一步帮助时，请查看 [支持说明](../SUPPORT.md)；发现安全问题请阅读 [安全政策](../SECURITY.md)。

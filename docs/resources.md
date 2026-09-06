@@ -63,6 +63,7 @@ Use this page to choose the right source before searching the catalog.
 ## Learning and evaluation
 
 - [WorkBuddyGuide](https://github.com/AlephAITech/WorkBuddyGuide) — task-oriented community walkthrough; its [online reading site](https://workbuddy.homes) is convenient for browsing.
+- [WorkBuddy account migration](https://github.com/xiaoliuzhuan666/workbuddy-account-migrate) — MIT-licensed cross-platform recovery reference for conversations, memory, and connectors after an account switch; start with diagnostic mode and verify backup, rollback, and target-account details before changing local databases.
 - [WorkBuddy Guide](https://github.com/Neo5093/workbuddy-guide) — MIT-licensed community reference Skill with a beginner path, connector troubleshooting, automation patterns, model guidance, FAQs, and environment diagnostics; inspect its scripts and version before adapting anything.
 - [WorkBuddy Practice Guide](https://github.com/opcspace/WorkBuddy-Guide) — Chinese community knowledge base for secure installation, first tasks, permissions, troubleshooting, connectors, remote assistance, and acceptance-oriented workflows; verify its freshness and license before reuse.
 - [WorkBuddy Starter](https://github.com/sunyet-01/WorkBuddy-Starter) — MIT-licensed beginner-oriented collection organized around onboarding, Skills, scenarios, and examples.

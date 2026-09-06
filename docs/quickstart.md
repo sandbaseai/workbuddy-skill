@@ -266,4 +266,14 @@ Use the first matching row and stop after the stated next step. This avoids repe
 | Authorization, balance, or permission error | Account, workspace, and permission mode | Check settings without pasting secrets; ask for the exact missing approval |
 | Result is uncertain | Evidence, sources, and limitations in the response | Do not treat a guess as execution; request a verifiable result |
 
+### Conversations, memory, or connectors disappeared
+
+Do not delete, move, or overwrite local files, and do not run a cleanup tool before making a backup. Work through these checks in order:
+
+1. Confirm that you are signed into the original account and opened the original workspace; account isolation can hide data that is still on disk.
+2. Quit WorkBuddy and copy the relevant data directory or database to a separate backup location. Keep the original untouched while testing.
+3. Check the current behavior in the [official Memory guide](https://www.workbuddy.ai/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Memory) and the official FAQ for your version.
+4. If the problem followed an account switch, treat [workbuddy-account-migrate](https://github.com/xiaoliuzhuan666/workbuddy-account-migrate) as an external MIT-licensed reference: start with its diagnostic mode, inspect the source, and confirm its backup and rollback path before deciding whether to run it. It modifies local database, memory, and connector data; this repository does not run it or treat it as risk-free.
+5. After recovery, use a read-only task to verify conversations, memory, and connectors before any write or cleanup operation.
+
 For more help, see [Support](../SUPPORT.md). For security concerns, read the [security policy](../SECURITY.md).
