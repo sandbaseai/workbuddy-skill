@@ -18,7 +18,7 @@ body:
     id: workflow
     attributes:
       label: Workflow
-      description: Which Skill or SandBase capability did you use, and what did you change?
+      description: Which Skill, connector, or external capability did you use, and what did you change?
     validations:
       required: true
   - type: textarea

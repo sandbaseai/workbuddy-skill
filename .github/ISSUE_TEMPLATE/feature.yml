@@ -29,6 +29,8 @@ body:
         - Language model
         - Image, audio, or video
         - Embedding
+        - Existing reviewed package or workflow
+        - Documentation or usability
         - Other
     validations:
       required: true

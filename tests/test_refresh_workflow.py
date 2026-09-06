@@ -99,6 +99,14 @@ class RefreshWorkflowTests(unittest.TestCase):
         ):
             self.assertIn(phrase, unreleased)
 
+    def test_feedback_templates_match_the_frozen_catalog_scope(self):
+        feature = (ROOT / ".github/ISSUE_TEMPLATE/feature.yml").read_text(encoding="utf-8")
+        showcase = (ROOT / ".github/ISSUE_TEMPLATE/showcase.yml").read_text(encoding="utf-8")
+        self.assertIn("Existing reviewed package or workflow", feature)
+        self.assertIn("Documentation or usability", feature)
+        self.assertIn("Skill, connector, or external capability", showcase)
+        self.assertIn("frozen snapshot", feature)
+
 
 if __name__ == "__main__":
     unittest.main()
