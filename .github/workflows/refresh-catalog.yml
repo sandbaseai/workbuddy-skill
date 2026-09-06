@@ -49,6 +49,8 @@ jobs:
             --repository muratcankoylan/Agent-Skills-for-Context-Engineering \
             --repository earthtojake/text-to-cad \
             --repository kangarooking/cangjie-skill \
+            --repository tt-a1i/archify \
+            --repository teng-lin/notebooklm-py \
             --repository mvanhorn/last30days-skill \
             --repository kepano/obsidian-skills \
             --repository op7418/guizang-ppt-skill \
