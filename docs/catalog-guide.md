@@ -73,6 +73,11 @@ Useful starting queries (all use the same review-oriented filter):
 Replace the term with your task, then add `--package-status reviewed` when you
 need a package that can be downloaded from this repository's Releases.
 
+If you are evaluating a new GitHub source or crawler range, pass
+`--dry-run` to `scripts/crawl_github_skills.py`. It will perform discovery and
+report the candidate count without writing the output JSONL or its stats file;
+the published frozen catalog still requires a separate, explicit opt-in.
+
 To restrict local results to packages that have a reviewed Release ZIP, use the
 curated manifest maintained by this repository:
 
