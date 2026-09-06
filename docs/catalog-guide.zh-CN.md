@@ -55,6 +55,8 @@ python3 scripts/query_catalog.py 'github:owner/repository:path/to/SKILL.md'
 
 搜索只负责缩小候选范围，不会自动安装。选定条目后，先检查来源，再按照[适配教程](adapting-skills.zh-CN.md)制作经过审阅的 WorkBuddy 包。
 
+脚本和数据看板可以直接读取[紧凑目录数据](https://sandbaseai.github.io/workbuddy-skill/catalog.json)，字段定义见对应的 [JSON Schema](https://sandbaseai.github.io/workbuddy-skill/catalog-schema.json)。
+
 选择“来源顺序”时，结果会先按仓库、再按路径稳定排序，不依赖目录文件的爬取顺序，便于复查和分享同一个查询。
 
 ## 4. 先做只读试运行

@@ -13,6 +13,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Web search: https://sandbaseai.github.io/workbuddy-skill/
 - Chinese search: https://sandbaseai.github.io/workbuddy-skill/zh-CN.html
 - Compact JSON catalog: https://sandbaseai.github.io/workbuddy-skill/catalog.json
+- Compact catalog JSON Schema: https://sandbaseai.github.io/workbuddy-skill/catalog-schema.json
 - Catalog metadata: https://sandbaseai.github.io/workbuddy-skill/catalog-meta.json
 - Source repository: https://github.com/sandbaseai/workbuddy-skill
 - Citation metadata: https://github.com/sandbaseai/workbuddy-skill/blob/main/CITATION.cff

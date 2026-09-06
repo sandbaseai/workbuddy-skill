@@ -77,6 +77,10 @@ Search narrows candidates; it does not install anything. For a selected result,
 inspect the source and then follow the [adaptation guide](adapting-skills.md)
 to create a reviewed WorkBuddy package.
 
+For scripts and dashboards, the compact browser dataset is available at
+[`catalog.json`](https://sandbaseai.github.io/workbuddy-skill/catalog.json),
+with field definitions in its [JSON Schema](https://sandbaseai.github.io/workbuddy-skill/catalog-schema.json).
+
 ## 4. Run a read-only first test
 
 Import the package only after checking its inputs and side effects. Start with

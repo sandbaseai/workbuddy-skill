@@ -32,6 +32,7 @@ All notable changes to this project are documented here.
 - Made the Atlas checksum URL part of generated catalog metadata so clients can discover it without parsing UI code.
 - Added a one-click copy button for the exact `gh release download` command on reviewed Atlas results.
 - Added the official Open Platform overview to the bilingual resource map and machine-readable index.
+- Added a public JSON Schema for machine consumers of the compact catalog dataset.
 - Added bilingual WorkBuddy resource maps covering official product docs, community learning, evaluation material, and local catalog guides.
 - Added direct Atlas navigation to the resource maps, plus a post-use feedback and Star prompt that does not perform account actions.
 - Atlas now derives and displays the current count of reviewed WorkBuddy packages from `catalog-meta.json`.

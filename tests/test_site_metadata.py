@@ -10,6 +10,13 @@ SITE = ROOT / "site"
 
 
 class SiteDiscoveryMetadataTests(unittest.TestCase):
+    def test_catalog_schema_describes_the_compact_dataset(self):
+        schema = json.loads((SITE / "catalog-schema.json").read_text(encoding="utf-8"))
+        self.assertEqual(schema["type"], "array")
+        properties = schema["$defs"]["record"]["properties"]
+        self.assertEqual(properties["u"]["format"], "uri")
+        self.assertEqual(properties["a"]["description"], "Release ZIP URL for a reviewed package.")
+
     def test_citation_file_describes_the_public_atlas(self):
         citation = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
         self.assertIn("cff-version: 1.2.0", citation)

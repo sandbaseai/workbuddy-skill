@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sandbaseai.github.io/workbuddy-skill/catalog-schema.json",
+  "title": "WorkBuddy Skill Atlas compact catalog",
+  "description": "Schema for the frozen catalog.json array published by WorkBuddy Skill Atlas.",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/record"
+  },
+  "$defs": {
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["n", "r", "p", "u", "s", "w", "q", "k", "g", "c", "o", "x"],
+      "properties": {
+        "n": {"type": "string", "description": "Inferred Skill name."},
+        "r": {"type": "string", "description": "GitHub repository in owner/name form."},
+        "p": {"type": "string", "description": "Repository-relative SKILL.md path."},
+        "u": {"type": "string", "format": "uri", "description": "Immutable source URL."},
+        "s": {"type": "string", "pattern": "^[0-9a-f]{40}$", "description": "Source blob SHA."},
+        "w": {"type": "string", "enum": ["workbuddy-ready", "adaptable", "needs-review", "unreviewed"]},
+        "q": {"type": ["integer", "null"], "minimum": 0, "maximum": 100, "description": "Compatibility hint."},
+        "k": {"type": "string", "enum": ["no-static-flags", "flagged", "unscanned"]},
+        "g": {"type": "string", "description": "Derived category."},
+        "c": {"type": "integer", "minimum": 1, "description": "Indexed paths sharing the blob SHA."},
+        "o": {"type": "string", "enum": ["primary-looking", "review-source"]},
+        "x": {"type": "array", "items": {"type": "string"}, "description": "Conservative source signals."},
+        "a": {"type": "string", "format": "uri", "description": "Release ZIP URL for a reviewed package."}
+      }
+    }
+  }
+}
