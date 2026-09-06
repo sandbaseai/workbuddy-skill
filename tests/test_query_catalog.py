@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from query_catalog import main, query_rows  # noqa: E402
+from catalog_categories import category_for  # noqa: E402
 
 
 def row(name, sha, score, *, status="adaptable", security="no-static-flags", repository="owner/repo", category=None):
@@ -126,6 +127,10 @@ class QueryCatalogTests(unittest.TestCase):
             category_overrides={record["id"]: "research"},
         )
         self.assertEqual(results, [record])
+
+    def test_category_inference_matches_shared_site_rule(self):
+        self.assertEqual(category_for(row("api-client", "api", 90)), "development")
+        self.assertEqual(category_for(row("unknown-capability", "misc/SKILL.md", 90)), "other")
 
     def test_search_includes_full_catalog_id(self):
         record = row("research", "sha", 90)

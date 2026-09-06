@@ -6,9 +6,9 @@ from collections import Counter
 from html import escape
 import hashlib
 import json
-import re
 from urllib.parse import urlparse
 
+from catalog_categories import CATEGORY_RULES, CATEGORIES, category_for
 from catalog_signals import source_context, source_signals
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -20,27 +20,7 @@ PACKAGES_PAGE_OUTPUT = ROOT / "site" / "packages.html"
 CHECKSUM_URL = "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/SHA256SUMS"
 RELEASE_REPO = "sandbaseai/workbuddy-skill"
 
-CATEGORY_RULES = (
-    ("security", ("security", "audit", "pentest", "vulnerability", "sast", "threat", "auth")),
-    ("media", ("video", "audio", "podcast", "voice", "music", "subtitle", "animation")),
-    ("design", ("design", "ui", "ux", "frontend", "css", "figma", "brand", "visual")),
-    ("research", ("research", "search", "academic", "paper", "literature", "citation", "analysis")),
-    ("data", ("data", "database", "sql", "spreadsheet", "excel", "csv", "etl", "analytics")),
-    ("content", ("content", "writing", "writer", "copy", "blog", "document", "markdown", "seo")),
-    ("business", ("sales", "marketing", "finance", "legal", "hr", "customer", "commerce", "product")),
-    ("productivity", ("task", "calendar", "email", "meeting", "note", "workflow", "automation", "planning")),
-    ("development", ("code", "coding", "test", "debug", "deploy", "api", "git", "python", "javascript", "typescript")),
-)
-KNOWN_CATEGORIES = {category for category, _ in CATEGORY_RULES} | {"other"}
-
-
-def category_for(row: dict) -> str:
-    haystack = f"{row['name_hint']} {row['path']}".casefold()
-    tokens = set(re.findall(r"[a-z0-9]+", haystack))
-    for category, keywords in CATEGORY_RULES:
-        if any(keyword in tokens for keyword in keywords):
-            return category
-    return "other"
+KNOWN_CATEGORIES = set(CATEGORIES)
 
 source_rows = []
 repositories = set()

@@ -7,10 +7,10 @@ import argparse
 from collections import Counter
 import json
 from pathlib import Path
-import re
 import sys
 from urllib.parse import urlparse
 
+from catalog_categories import CATEGORIES, category_for
 from catalog_signals import source_context
 
 
@@ -18,20 +18,6 @@ CHECKSUM_URL = "https://github.com/sandbaseai/workbuddy-skill/releases/latest/do
 RELEASE_REPO = "sandbaseai/workbuddy-skill"
 ATLAS_URL = "https://sandbaseai.github.io/workbuddy-skill/"
 GITHUB_SKILL_SEARCH_URL = "https://github.com/search?q=filename%3ASKILL.md&type=code"
-CATEGORY_RULES = (
-    ("security", ("security", "audit", "pentest", "vulnerability", "sast", "threat", "auth")),
-    ("media", ("video", "audio", "podcast", "voice", "music", "subtitle", "animation")),
-    ("design", ("design", "ui", "ux", "frontend", "css", "figma", "brand", "visual")),
-    ("research", ("research", "search", "academic", "paper", "literature", "citation", "analysis")),
-    ("data", ("data", "database", "sql", "spreadsheet", "excel", "csv", "etl", "analytics")),
-    ("content", ("content", "writing", "writer", "copy", "blog", "document", "markdown", "seo")),
-    ("business", ("sales", "marketing", "finance", "legal", "hr", "customer", "commerce", "product")),
-    ("productivity", ("task", "calendar", "email", "meeting", "note", "workflow", "automation", "planning")),
-    ("development", ("code", "coding", "test", "debug", "deploy", "api", "git", "python", "javascript", "typescript")),
-)
-CATEGORIES = tuple(category for category, _ in CATEGORY_RULES) + ("other",)
-
-
 def catalog_id(row: dict) -> str:
     return str(row.get("id") or f"github:{row.get('repository', '')}:{row.get('path', '')}")
 
@@ -43,20 +29,8 @@ def package_download_command(asset: str) -> str:
     )
 
 
-def inferred_category(row: dict) -> str:
-    explicit = row.get("category")
-    if explicit in CATEGORIES:
-        return explicit
-    haystack = f"{row.get('name_hint', '')} {row.get('path', '')}".casefold()
-    tokens = set(re.findall(r"[a-z0-9]+", haystack))
-    for category, keywords in CATEGORY_RULES:
-        if any(keyword in tokens for keyword in keywords):
-            return category
-    return "other"
-
-
 def matches(row: dict, terms: list[str], category_overrides: dict[str, str] | None = None) -> bool:
-    category = (category_overrides or {}).get(catalog_id(row), inferred_category(row))
+    category = (category_overrides or {}).get(catalog_id(row), category_for(row))
     haystack = " ".join(
         str(row.get(field, ""))
         for field in (
@@ -100,7 +74,7 @@ def query_rows(
         if matches(row, terms, category_overrides)
         and (
             category is None
-            or (category_overrides or {}).get(catalog_id(row), inferred_category(row)) == category
+            or (category_overrides or {}).get(catalog_id(row), category_for(row)) == category
         )
         and (status is None or row.get("workbuddy_status") == status)
         and (security is None or row.get("security_status") == security)
