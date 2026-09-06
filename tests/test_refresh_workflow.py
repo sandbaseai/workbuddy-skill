@@ -195,6 +195,8 @@ class RefreshWorkflowTests(unittest.TestCase):
     def test_auto_merge_only_queues_trusted_same_repository_pull_requests(self):
         workflow = (ROOT / ".github/workflows/auto-merge.yml").read_text(encoding="utf-8")
         self.assertIn("pull_request_target", workflow)
+        self.assertIn("group: auto-merge-pr-${{ github.event.pull_request.number }}", workflow)
+        self.assertIn("cancel-in-progress: true", workflow)
         self.assertIn("ready_for_review", workflow)
         self.assertIn("HEAD_REPOSITORY", workflow)
         self.assertIn('[[ \"$HEAD_REPOSITORY\" != \"$GITHUB_REPOSITORY\" ]]', workflow)
