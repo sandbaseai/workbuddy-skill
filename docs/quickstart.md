@@ -6,6 +6,9 @@ Choose the path that matches your goal:
 - **Find a public Skill:** search the [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/), review provenance and risk, then install it.
 - **Package a public Skill for WorkBuddy:** follow the [adaptation guide](adapting-skills.md).
 
+The catalog is a frozen snapshot of 21,818 indexed Skills. Use it to find and review
+existing entries; new additions are not automatically published.
+
 ## Install one curated Skill in 5 minutes
 
 ### 1. Download
