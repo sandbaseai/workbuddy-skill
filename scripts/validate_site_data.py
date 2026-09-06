@@ -12,6 +12,13 @@ from urllib.parse import urlparse
 
 
 HEX_SHA = re.compile(r"^[0-9a-f]{40}$")
+STARTER_PACKS = (
+    Path("docs/starter-packs.md"),
+    Path("docs/starter-packs.zh-CN.md"),
+)
+RELEASE_ASSET_URL = re.compile(
+    r"https://github\.com/sandbaseai/workbuddy-skill/releases/latest/download/([^\s)<>`]+)"
+)
 
 
 def validate_unique_fields(rows: object, fields: tuple[str, ...], label: str) -> list[str]:
@@ -60,6 +67,32 @@ def validate_package_consistency(rows: object) -> list[str]:
                 errors.append(
                     f"packages record {index} download_command is missing: {', '.join(missing)}"
                 )
+    return errors
+
+
+def validate_starter_pack_links(
+    packages: object,
+    paths: tuple[Path, ...] = STARTER_PACKS,
+) -> list[str]:
+    """Ensure Starter Packs only link to generated reviewed package assets."""
+
+    if not isinstance(packages, list):
+        return []
+    assets = {
+        row.get("asset")
+        for row in packages
+        if isinstance(row, dict) and isinstance(row.get("asset"), str)
+    }
+    errors: list[str] = []
+    for path in paths:
+        try:
+            content = path.read_text(encoding="utf-8")
+        except OSError as exc:
+            errors.append(f"starter pack file unreadable: {path}: {exc}")
+            continue
+        for asset in sorted(set(RELEASE_ASSET_URL.findall(content))):
+            if asset not in assets:
+                errors.append(f"{path} references unreviewed package asset: {asset}")
     return errors
 
 
@@ -181,6 +214,7 @@ def main() -> int:
     errors.extend(f"packages: {error}" for error in package_errors)
     errors.extend(validate_unique_fields(packages, ("id", "download_url"), "packages"))
     errors.extend(validate_package_consistency(packages))
+    errors.extend(validate_starter_pack_links(packages))
     errors.extend(validate_metadata(metadata, metadata_schema))
     if errors:
         for error in errors[:20]:
