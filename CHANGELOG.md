@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Added MIT Microsoft Docs Research and pytest Coverage Analysis Skills with source/version evidence, isolation, privacy, and side-effect boundaries.
 - Added MIT MCP CLI and SQL Code Review Skills with explicit tool/schema, authorization, redaction, injection, and database evidence boundaries.
 - Added MIT Eval-Driven Development and PostgreSQL Code Review Skills with WorkBuddy-safe evaluation, database evidence, privacy, and mutation boundaries.
 - Added the MIT Create TLDR Page Skill for turning authoritative command documentation into concise, source-linked WorkBuddy command references without executing examples.

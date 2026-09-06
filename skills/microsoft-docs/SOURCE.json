@@ -1,0 +1,14 @@
+{
+  "adaptation": {
+    "missing_resources": ["The upstream skill assumes Microsoft Learn MCP, Context7, and Aspire MCP connections; those connectors are not bundled."],
+    "packaged_resources": [],
+    "security_signals": ["preserved official-doc search, code-sample search, page fetch, CLI fallback, and source hierarchy", "added WorkBuddy citation, version, authorization, redaction, and no-side-effect boundaries"],
+    "tool": "manual WorkBuddy adaptation"
+  },
+  "catalog_id": "github:github/awesome-copilot:skills/microsoft-docs/SKILL.md",
+  "declared_source_license": "MIT",
+  "path": "skills/microsoft-docs/SKILL.md",
+  "repository": "github/awesome-copilot",
+  "sha": "7b1ebe6333397841ca918dec904d24d4695fe953",
+  "source_url": "https://github.com/github/awesome-copilot/blob/7b1ebe6333397841ca918dec904d24d4695fe953/skills/microsoft-docs/SKILL.md"
+}

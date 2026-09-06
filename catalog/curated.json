@@ -1,5 +1,17 @@
 [
   {
+    "catalog_id": "github:github/awesome-copilot:skills/microsoft-docs/SKILL.md",
+    "skill": "microsoft-docs",
+    "skill_path": "skills/microsoft-docs",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/microsoft-docs-workbuddy-skill.zip"
+  },
+  {
+    "catalog_id": "github:github/awesome-copilot:skills/pytest-coverage/SKILL.md",
+    "skill": "pytest-coverage",
+    "skill_path": "skills/pytest-coverage",
+    "download_url": "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/pytest-coverage-workbuddy-skill.zip"
+  },
+  {
     "catalog_id": "github:github/awesome-copilot:skills/mcp-cli/SKILL.md",
     "skill": "mcp-cli",
     "skill_path": "skills/mcp-cli",
