@@ -13,10 +13,15 @@ from validate_site_data import validate_rows  # noqa: E402
 class ValidateSiteDataTests(unittest.TestCase):
     def setUp(self):
         self.schema = json.loads((ROOT / "site/catalog-schema.json").read_text(encoding="utf-8"))
+        self.packages_schema = json.loads((ROOT / "site/packages-schema.json").read_text(encoding="utf-8"))
 
     def test_current_compact_catalog_matches_schema_contract(self):
         rows = json.loads((ROOT / "site/catalog.json").read_text(encoding="utf-8"))
         self.assertEqual(validate_rows(rows, self.schema), [])
+
+    def test_current_reviewed_packages_match_schema_contract(self):
+        rows = json.loads((ROOT / "site/packages.json").read_text(encoding="utf-8"))
+        self.assertEqual(validate_rows(rows, self.packages_schema), [])
 
     def test_rejects_unknown_fields_and_invalid_provenance(self):
         row = {

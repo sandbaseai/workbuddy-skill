@@ -17,6 +17,13 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
         self.assertEqual(properties["u"]["format"], "uri")
         self.assertEqual(properties["a"]["description"], "Release ZIP URL for a reviewed package.")
 
+    def test_packages_schema_describes_installable_reviewed_packages(self):
+        schema = json.loads((SITE / "packages-schema.json").read_text(encoding="utf-8"))
+        self.assertEqual(schema["type"], "array")
+        properties = schema["items"]["properties"]
+        self.assertEqual(properties["download_url"]["format"], "uri")
+        self.assertIn("sha", schema["items"]["required"])
+
     def test_citation_file_describes_the_public_atlas(self):
         citation = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
         self.assertIn("cff-version: 1.2.0", citation)
@@ -75,6 +82,8 @@ class SiteDiscoveryMetadataTests(unittest.TestCase):
     def test_llms_file_points_to_catalog_and_safety_guidance(self):
         content = (SITE / "llms.txt").read_text(encoding="utf-8")
         self.assertIn("catalog.json", content)
+        self.assertIn("packages.json", content)
+        self.assertIn("packages-schema.json", content)
         self.assertIn("scripts/adapt_skill.py", content)
         self.assertIn("CITATION.cff", content)
         self.assertIn("not a security guarantee", content)

@@ -80,6 +80,9 @@ to create a reviewed WorkBuddy package.
 For scripts and dashboards, the compact browser dataset is available at
 [`catalog.json`](https://sandbaseai.github.io/workbuddy-skill/catalog.json),
 with field definitions in its [JSON Schema](https://sandbaseai.github.io/workbuddy-skill/catalog-schema.json).
+If you only need reviewed packages that have a Release ZIP, use the separate
+[package index](https://sandbaseai.github.io/workbuddy-skill/packages.json) and
+its [Schema](https://sandbaseai.github.io/workbuddy-skill/packages-schema.json).
 
 ## 4. Run a read-only first test
 

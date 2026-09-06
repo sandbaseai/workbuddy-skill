@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "catalog" / "skills.jsonl"
 CURATED = ROOT / "catalog" / "curated.json"
 OUTPUT = ROOT / "site" / "catalog.json"
+PACKAGES_OUTPUT = ROOT / "site" / "packages.json"
 
 CATEGORY_RULES = (
     ("security", ("security", "audit", "pentest", "vulnerability", "sast", "threat", "auth")),
@@ -53,6 +54,7 @@ skill_paths = [entry["skill_path"] for entry in curated_entries]
 if len(set(skill_paths)) != len(skill_paths):
     raise SystemExit("catalog/curated.json contains duplicate skill paths")
 catalog_ids = {row["id"] for row in source_rows}
+source_by_id = {row["id"]: row for row in source_rows}
 for entry in curated_entries:
     if not (ROOT / entry["skill_path"] / "SKILL.md").is_file():
         raise SystemExit(f"curated Skill is missing: {entry['skill_path']}")
@@ -90,6 +92,24 @@ for row in source_rows:
         record["a"] = adaptation["download_url"]
     records.append(record)
 
+packages = []
+for entry in sorted(curated_entries, key=lambda item: item["skill"]):
+    source = source_by_id[entry["catalog_id"]]
+    packages.append(
+        {
+            "id": entry["catalog_id"],
+            "name": entry["skill"],
+            "path": entry["skill_path"],
+            "repository": source["repository"],
+            "source_url": source["source_url"],
+            "sha": source["sha"],
+            "download_url": entry["download_url"],
+            "category": curated.get(entry["catalog_id"], {}).get(
+                "category", category_for(source)
+            ),
+        }
+    )
+
 OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 temporary = OUTPUT.with_suffix(".json.tmp")
 temporary.write_text(
@@ -97,6 +117,12 @@ temporary.write_text(
     encoding="utf-8",
 )
 temporary.replace(OUTPUT)
+packages_temporary = PACKAGES_OUTPUT.with_suffix(".json.tmp")
+packages_temporary.write_text(
+    json.dumps(packages, ensure_ascii=False, separators=(",", ":")),
+    encoding="utf-8",
+)
+packages_temporary.replace(PACKAGES_OUTPUT)
 meta = {
     "categories": dict(sorted(category_counts.items())),
     "snapshot_frozen": True,
@@ -111,3 +137,4 @@ meta_temporary = meta_output.with_suffix(".json.tmp")
 meta_temporary.write_text(json.dumps(meta, separators=(",", ":")), encoding="utf-8")
 meta_temporary.replace(meta_output)
 print(f"OK: wrote {len(records)} searchable records to {OUTPUT.relative_to(ROOT)}")
+print(f"OK: wrote {len(packages)} installable packages to {PACKAGES_OUTPUT.relative_to(ROOT)}")

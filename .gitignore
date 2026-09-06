@@ -6,4 +6,5 @@ dist/
 catalog/*.tmp
 site/catalog.json
 site/catalog-meta.json
+site/packages.json
 catalog/analysis-stats.json.tmp
