@@ -25,6 +25,8 @@ class AtlasFrontendTests(unittest.TestCase):
             self.assertIn("?packageStatus=reviewed#catalog", page)
             self.assertIn('id="hero-count"', page)
             self.assertIn('id="search"', page)
+            self.assertIn('class="skip-link"', page)
+            self.assertIn('href="#catalog"', page)
             self.assertIn('id="package-status"', page)
             self.assertIn('class="search-example"', page)
             self.assertIn("data-search=", page)
@@ -117,6 +119,7 @@ class AtlasFrontendTests(unittest.TestCase):
 
     def test_mobile_navigation_can_wrap(self):
         self.assertIn(".nav { height: auto;", self.styles)
+        self.assertIn(".skip-link:focus { top: 0; }", self.styles)
         self.assertIn("flex-wrap: wrap", self.styles)
         self.assertIn("nav { flex: 1 1 100%;", self.styles)
 
