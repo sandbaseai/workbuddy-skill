@@ -23,6 +23,8 @@ def read_checksums(path: Path) -> dict[str, str]:
         if not match:
             raise ValueError(f"invalid checksum line {line_number}: {raw_line}")
         digest, name = match.groups()
+        if not name or "/" in name or "\\" in name or name in {".", ".."}:
+            raise ValueError(f"invalid release asset filename on line {line_number}: {name}")
         if name in checksums:
             raise ValueError(f"duplicate checksum entry: {name}")
         checksums[name] = digest.lower()
