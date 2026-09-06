@@ -137,18 +137,28 @@ packages_temporary.write_text(
     encoding="utf-8",
 )
 packages_temporary.replace(PACKAGES_OUTPUT)
-package_items = []
+package_items_by_category: dict[str, list[str]] = {}
 for package in packages:
-    package_items.append(
-        "<li><h2>"
+    package_items_by_category.setdefault(package["category"], []).append(
+        "<li><h3>"
         f"<a href=\"{escape(package['download_url'], quote=True)}\">{escape(package['name'])}</a>"
-        "</h2>"
+        "</h3>"
         f"<p><span class=\"badge\">{escape(package['category'])}</span> "
         f"{escape(package['repository'])} · <code>{escape(package['path'])}</code></p>"
         f"<p><a href=\"{escape(package['source_url'], quote=True)}\">Inspect pinned source</a> · "
         f"<a href=\"{escape(package['download_url'], quote=True)}\">Download ZIP</a> · "
         f"<a href=\"{escape(package['checksum_url'], quote=True)}\">SHA256SUMS</a></p></li>"
     )
+category_nav = " ".join(
+    f"<a href=\"#category-{escape(category, quote=True)}\">{escape(category.title())}</a>"
+    for category in sorted(package_items_by_category)
+)
+category_sections = "\n".join(
+    f"<section id=\"category-{escape(category, quote=True)}\"><h2>{escape(category.title())} ({len(package_items_by_category[category])})</h2><ol>"
+    + "\n".join(package_items_by_category[category])
+    + "</ol></section>"
+    for category in sorted(package_items_by_category)
+)
 package_item_list = json.dumps(
     {
         "@context": "https://schema.org",
@@ -185,10 +195,13 @@ package_page = """<!doctype html>
       h1 { margin-bottom: .4rem; }
       ol { padding-left: 1.5rem; }
       li { margin: 1rem 0; padding: 1rem 1.2rem; background: #fffdf8; border: 1px solid #d8d0c2; border-radius: .7rem; }
-      h2 { margin: 0; font-size: 1.1rem; }
+      h2 { margin: 1.5rem 0 .5rem; font-size: 1.25rem; }
+      h3 { margin: 0; font-size: 1.1rem; }
       p { margin: .35rem 0 0; }
       code { overflow-wrap: anywhere; }
       .badge { display: inline-block; padding: .1rem .45rem; border-radius: 999px; background: #dceee8; font-size: .8rem; }
+      .category-nav { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: 1rem; }
+      .category-nav a { padding: .25rem .6rem; border: 1px solid #b8cec7; border-radius: 999px; text-decoration: none; }
       .machine { margin-top: 2rem; }
     </style>
   </head>
@@ -198,11 +211,10 @@ package_page = """<!doctype html>
       <h1>Reviewed WorkBuddy Packages / 精选 WorkBuddy 包</h1>
       <p>Browse 277 installable packages without JavaScript. Each entry keeps an immutable source link, a Release ZIP, and SHA256SUMS verification.</p>
       <p>无需 JavaScript 即可浏览 277 个可安装精选包；每条记录都保留不可变来源、Release ZIP 和 SHA256SUMS 校验入口。</p>
+      <nav class="category-nav" aria-label="Package categories">""" + category_nav + """</nav>
     </header>
     <main>
-      <ol>
-""" + "\n".join(package_items) + """
-      </ol>
+""" + category_sections + """
       <p class="machine"><a href="packages.json">Machine-readable JSON index</a> · <a href="packages-schema.json">JSON Schema</a> · <a href="https://github.com/sandbaseai/workbuddy-skill/blob/main/docs/quickstart.md">Quickstart</a></p>
     </main>
   </body>

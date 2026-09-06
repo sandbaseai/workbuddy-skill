@@ -31,6 +31,8 @@ class SiteDataTests(unittest.TestCase):
         )
         self.assertEqual(len(packages), metadata["curated_adaptations"])
         self.assertEqual(package_page.count("<li>"), len(packages))
+        self.assertEqual(package_page.count('<section id="category-'), len({package["category"] for package in packages}))
+        self.assertIn('id="category-security"', package_page)
         self.assertIn('"@type":"ItemList"', package_page)
         self.assertEqual(package_page.count('"@type":"ListItem"'), len(packages))
         self.assertIn("Machine-readable JSON index", package_page)
