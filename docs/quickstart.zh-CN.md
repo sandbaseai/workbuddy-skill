@@ -5,6 +5,7 @@
 - **只想直接使用精选 Skill：** 下载 Release 中的 ZIP，然后导入 WorkBuddy。
 - **想寻找更多公开 Skill：** 在 [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) 搜索，先阅读来源和风险，再安装。
 - **想把公开 Skill 做成自己的 WorkBuddy 包：** 阅读[适配教程](adapting-skills.zh-CN.md)。
+- **精选包遇到问题：** 使用[精选包反馈表](https://github.com/sandbaseai/workbuddy-skill/issues/new?template=package-feedback.yml)，并注明失败阶段。
 
 不确定如何判断搜索结果？先阅读[目录条目解读](catalog-guide.zh-CN.md)，再选择候选 Skill。
 
