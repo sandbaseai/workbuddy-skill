@@ -464,6 +464,7 @@ class SiteDataTests(unittest.TestCase):
         metadata = json.loads(
             (ROOT / "site" / "catalog-meta.json").read_text(encoding="utf-8")
         )
+        self.assertTrue(metadata["snapshot_frozen"])
         self.assertEqual(
             metadata["curated_adaptations"],
             len(json.loads((ROOT / "catalog/curated.json").read_text(encoding="utf-8"))),

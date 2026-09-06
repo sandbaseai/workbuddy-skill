@@ -99,6 +99,7 @@ temporary.write_text(
 temporary.replace(OUTPUT)
 meta = {
     "categories": dict(sorted(category_counts.items())),
+    "snapshot_frozen": True,
     "records": len(records),
     "repositories": len(repositories),
     "unique_content_shas": len(shas),
