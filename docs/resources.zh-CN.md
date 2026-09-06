@@ -7,6 +7,7 @@
 | 你的目标 | 建议先看 |
 |---|---|
 | 把精选包安装到 WorkBuddy | [快速开始](quickstart.zh-CN.md) |
+| 排查导入或更新问题 | [快速开始中的常见问题](quickstart.zh-CN.md) 和[官方常见问题](https://www.workbuddy.ai/docs/zh/workbuddy/From-Beginner-to-Expert-Guide/FQA) |
 | 编写或排查 Skill ZIP | [Open Platform Skill 指南](https://open.workbuddy.cn/zh/docs/skill) |
 | 接入 API、MCP Server 或 CLI | [Open Platform 连接器指南](https://open.workbuddy.cn/docs/connector) |
 | 开发 OAuth 应用或调用 Open API | [第三方应用指南](https://open.workbuddy.cn/docs/third-party-app) 和 [Open API 接口文档](https://open.workbuddy.cn/docs/openapi) |
