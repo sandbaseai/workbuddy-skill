@@ -559,3 +559,5 @@ open-edge-platform/skills
 openai/plugins
 isiahhill/skills.sh
 rauleburro/skills
+hesreallyhim/awesome-claude-code
+VoltAgent/awesome-agent-skills
