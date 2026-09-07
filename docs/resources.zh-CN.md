@@ -88,6 +88,7 @@
 - [PDFx Skills](https://github.com/solisoft/pdfx-skills)——MIT 许可的 PDFx API 工作流，支持从 JSON 生成 PDF 和处理 Factur-X 电子发票；接入 WorkBuddy 前检查 API 凭据、发票隐私、生成文件及付费或外部调用。
 - [Lark CLI](https://github.com/larksuite/cli)——MIT 许可的飞书官方 CLI，提供文档化的 Agent Skill、结构化命令和系统钥匙串认证；接入 WorkBuddy 前检查应用权限范围和外发数据边界。
 - [Google Agent Skills](https://github.com/google/skills)——Apache-2.0 许可的 Google 官方 Skill，覆盖云、Gemini、数据和开发者工作流；作为外部参考使用具体 Skill，接入 WorkBuddy 前检查云项目、API 和计费权限。
+- [Awesome SEO Agent Skills](https://github.com/RankSpotAI/awesome-seo-agent-skills)——CC0-1.0 许可的 SEO Agent Skill 导航，按技术审计、关键词研究、内容简报、Schema、GEO 和 AI 可见性组织；它是发现和比较入口，采用其中具体 Skill 前仍需核对来源、宿主和权限。
 - [.NET Skills](https://github.com/dotnet/skills)——MIT 许可的 Microsoft .NET 与 C# 编程 Agent 工作流；适配到 WorkBuddy 前检查 SDK 版本、生成文件、Shell 命令和仓库写入范围。
 - [Adobe Skills](https://github.com/adobe/skills)——Apache-2.0 许可的 Adobe 维护 Agent Skill；复用前使用精确来源并检查创意素材、服务凭据、账号权限和发布影响。
 - [Tons of Skills Marketplace](https://github.com/jeremylongshore/tons-of-skills-marketplace)——MIT 许可的跨模型 Skill 市场，提供规范层、适配器和包工具；用于发现时要逐个核验适配器的来源、运行时和权限。

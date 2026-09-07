@@ -58,6 +58,7 @@ OthmanAdi/planning-with-files
 nexu-io/open-design
 microsoft/SkillOpt
 yxdwind/agent-skill-manager
+RankSpotAI/awesome-seo-agent-skills
 dx2020z/skill-auditor
 dx2020z/skill-packer
 bergside/awesome-design-skills

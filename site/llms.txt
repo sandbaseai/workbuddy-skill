@@ -52,6 +52,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT WorkBuddy poster workflow for editorial photo-and-poem compositions (review image rights, model costs, generated assets, and export dimensions): https://github.com/jinwenjinwen26-rgb/paper-poem-poster
 - MIT official Lark/Feishu CLI with documented Agent Skills (review app scopes and outbound data): https://github.com/larksuite/cli
 - Apache-2.0 official Google Agent Skills for cloud, Gemini, data, and developer workflows (review project, API, and billing permissions): https://github.com/google/skills
+- CC0-1.0 SEO Agent Skills directory for technical audits, keyword research, content briefs, Schema, GEO, and AI visibility: https://github.com/RankSpotAI/awesome-seo-agent-skills
 - MIT .NET and C# workflows for coding agents (review SDK versions, generated files, commands, and write scope): https://github.com/dotnet/skills
 - Apache-2.0 Adobe-maintained Agent Skills (review creative assets, credentials, account permissions, and publishing effects): https://github.com/adobe/skills
 - MIT model-agnostic Tons of Skills Marketplace with canonical layer and adapters (verify provenance, runtime, and permissions): https://github.com/jeremylongshore/tons-of-skills-marketplace
