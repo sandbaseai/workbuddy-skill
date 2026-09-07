@@ -1304,3 +1304,16 @@ conorbronsdon/avoid-ai-writing
 inkeep/open-knowledge
 UditAkhourii/adhd
 0x0funky/agent-sprite-forge
+lafollett-labs/lafollett-labs-claude-plugins
+pathmodeio/claude-plugin
+jposluns/grc_library
+ayukhno/autosound-tuning-skill
+ajbmachon/recursive-decomposition-skills
+AgentDraven/merit-agent-skills
+Mediacom99/skill-forge
+BiancaGrenzel/ai-engineering-harness
+Practice019/agent-skills
+hraness/message-like-me
+GuitarAlchemist/ix
+0trm/gallop
+alaarab/phren
