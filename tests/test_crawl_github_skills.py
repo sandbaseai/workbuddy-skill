@@ -186,6 +186,7 @@ class RateLimitTests(unittest.TestCase):
                     "--target", "100",
                     "--dry-run",
                     "--allow-partial",
+                    "--max-rate-wait", "1",
                     "--repository", "owner/repo",
                     "--repository-only",
                     "--output", str(output),
@@ -209,13 +210,36 @@ class RateLimitTests(unittest.TestCase):
                 "sys.argv",
                 [
                     "crawl_github_skills.py", "--target", "100", "--dry-run",
-                    "--allow-partial", "--repository", "owner/repo", "--repository-only",
+                    "--allow-partial", "--max-rate-wait", "1", "--repository", "owner/repo", "--repository-only",
                     "--output", str(output), "--dry-run-output", str(report),
                     "--status-output", str(status),
                 ],
             ):
                 self.assertEqual(main(), 0)
             self.assertEqual(json.loads(status.read_text(encoding="utf-8"))["status"], "partial")
+
+    @patch("crawl_github_skills.time.sleep")
+    @patch("crawl_github_skills.time.time", return_value=1_000)
+    @patch("crawl_github_skills.repository_skill_rows")
+    def test_repository_rate_limit_is_retried_within_budget(self, repository_skill_rows, _time, sleep):
+        error = HTTPError(
+            "https://api.github.com/repos/owner/repo", 429, "rate limited",
+            {"Retry-After": "5"}, None
+        )
+        repository_skill_rows.side_effect = [error, ([], 3)]
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "preview.jsonl"
+            with patch(
+                "sys.argv",
+                [
+                    "crawl_github_skills.py", "--target", "100", "--dry-run",
+                    "--repository-only", "--repository", "owner/repo",
+                    "--output", str(output), "--max-rate-wait", "10",
+                ],
+            ):
+                self.assertEqual(main(), 0)
+        self.assertEqual(repository_skill_rows.call_count, 2)
+        sleep.assert_called_once_with(5)
 
     @patch("crawl_github_skills.time.time", return_value=1_000)
     def test_delay_uses_largest_server_boundary(self, _time):

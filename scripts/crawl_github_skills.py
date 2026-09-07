@@ -452,7 +452,30 @@ def main() -> int:
                     "request budget exhausted before repository tree scan; resume later"
                 )
             persist_state()
-            discovered, used = repository_skill_rows(repository, token)
+            while True:
+                try:
+                    discovered, used = repository_skill_rows(repository, token)
+                    throttle_retries = 0
+                    break
+                except HTTPError as exc:
+                    if exc.code not in (403, 429):
+                        raise
+                    throttle_retries += 1
+                    if throttle_retries > MAX_THROTTLE_RETRIES:
+                        raise RuntimeError(
+                            "GitHub repository API remained rate-limited after "
+                            f"{MAX_THROTTLE_RETRIES} retries; resume later"
+                        ) from exc
+                    delay = rate_limit_delay(exc.headers)
+                    remaining_wait = args.max_rate_wait - rate_waited
+                    if delay > remaining_wait:
+                        raise RuntimeError(
+                            f"GitHub rate-limit wait {delay}s exceeds this run's "
+                            f"remaining {remaining_wait}s budget; resume later"
+                        ) from exc
+                    print(f"GitHub returned {exc.code}; waiting {delay}s", file=sys.stderr)
+                    time.sleep(delay)
+                    rate_waited += delay
             requests += used
             before = len(rows)
             for row in discovered:
