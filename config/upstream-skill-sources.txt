@@ -615,3 +615,4 @@ AgriciDaniel/claude-ads
 athola/claude-night-market
 AgriciDaniel/claude-seo
 feicaiclub/video-spec-builder
+w95/awesome-claude-corporate-skills
