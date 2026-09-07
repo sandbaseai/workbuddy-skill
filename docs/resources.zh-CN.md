@@ -78,6 +78,12 @@
 - [Paper Poem Poster](https://github.com/jinwenjinwen26-rgb/paper-poem-poster)——MIT 许可的 WorkBuddy 诗歌海报工作流，可生成照片与纸张风格诗歌构图；发布前检查图片权利、提示词或模型成本、生成素材和导出尺寸。
 - [Visual Explainer](https://github.com/nicobailon/visual-explainer)——MIT 许可的可视化解释参考，可将计划、差异、数据表和架构评审整理成自包含 HTML；适配 WorkBuddy 前检查生成素材以及浏览器/运行时假设。
 - [Scientific Agent Skills](https://github.com/K-Dense-AI/scientific-agent-skills)——MIT 许可的科研工作流集合，提供带测试的 160+ 个领域 Skill；使用前应分别审阅数据库访问、API Key、敏感科研数据和科学结论边界。
+- [Agent Security](https://github.com/tuturama/agent-security)——MIT 许可的 Agent 安全审计 Skill，覆盖 SSRF、Agent 费用威胁模型、MCP 可见性和签名审计日志；使用时保持只读，并核对 WorkBuddy 权限和审计存储边界。
+- [Loop Engineering Check](https://github.com/yejinlei/loop-engineering-check)——MIT 许可的只读 Agent 工程审计，检查预算截止、工具幻觉拦截、死循环和状态完整性；用于长时间 WorkBuddy 自动化前，应明确停止条件。
+- [Code Ownership Audit](https://github.com/ffseika0304/code-ownership-audit)——MIT 许可的离线 AST 工作流，用于判断 Python 代码的原创或演绎关系；只能作为证据辅助，不能替代法律结论和独立许可证审查。
+- [Skill Governor](https://github.com/fanfanfanfanfan626/skill-governor)——MIT 许可的 Skill 治理工作流，覆盖选择、审计、获取和维护；可用于控制范围与重复，不应授予自动删除权限。
+- [Understand Project](https://github.com/wutongyuonce/understand-project)——MIT 许可的中文项目理解工作流，帮助阅读架构、运行形态和真实数据链路；允许修改或外部调用前先做只读仓库盘点。
+- [Handoff Skill](https://github.com/divijshrivastava/handoff-skill)——MIT 许可的基于证据的交接工作流，通过共享台账恢复仓库工作；启用跨会话状态前检查台账路径和密钥边界。
 - [Lark CLI](https://github.com/larksuite/cli)——MIT 许可的飞书官方 CLI，提供文档化的 Agent Skill、结构化命令和系统钥匙串认证；接入 WorkBuddy 前检查应用权限范围和外发数据边界。
 - [Google Agent Skills](https://github.com/google/skills)——Apache-2.0 许可的 Google 官方 Skill，覆盖云、Gemini、数据和开发者工作流；作为外部参考使用具体 Skill，接入 WorkBuddy 前检查云项目、API 和计费权限。
 - [.NET Skills](https://github.com/dotnet/skills)——MIT 许可的 Microsoft .NET 与 C# 编程 Agent 工作流；适配到 WorkBuddy 前检查 SDK 版本、生成文件、Shell 命令和仓库写入范围。

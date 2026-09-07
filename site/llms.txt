@@ -31,6 +31,12 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT self-contained architecture and workflow-diagram reference (external reference): https://github.com/tt-a1i/archify
 - MIT visual explainer reference for plans, diffs, data tables, and architecture reviews (external reference): https://github.com/nicobailon/visual-explainer
 - MIT scientific Agent Skills collection with documented tests (review APIs, data, and claims separately): https://github.com/K-Dense-AI/scientific-agent-skills
+- MIT agent-security audit Skills for SSRF, agentic spend, MCP visibility, and signed logs (keep them read-only and review WorkBuddy permissions): https://github.com/tuturama/agent-security
+- MIT read-only loop-safety audit for budgets, tool hallucinations, dead loops, and state integrity (set explicit stop conditions): https://github.com/yejinlei/loop-engineering-check
+- MIT offline Python AST code-ownership audit (evidence aid only; review licenses separately): https://github.com/ffseika0304/code-ownership-audit
+- MIT Skill governance workflow for selecting, auditing, acquiring, and maintaining libraries (no automatic deletion): https://github.com/fanfanfanfanfan626/skill-governor
+- MIT Chinese project-understanding workflow for architecture and data paths (inventory read-only first): https://github.com/wutongyuonce/understand-project
+- MIT evidence-based repository handoff workflow with a shared ledger (review state paths and secret boundaries): https://github.com/divijshrivastava/handoff-skill
 - MIT macOS computer-use Skill with evidence capture (review Accessibility permissions, target apps, screenshots, and every write): https://github.com/alchaincyf/huashu-mac-use
 - MIT persistent task-planning Skill for WorkBuddy (review checkpoints, local state, and automated follow-up): https://github.com/hao1100228-ctrl/progress-target-workbuddy
 - MIT security field guide distilled from Omarchy marketplace reviews (review the exact target platform; not a security guarantee): https://github.com/wbso-ai/omarchy-plugin-security-skill

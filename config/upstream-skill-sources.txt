@@ -21,6 +21,12 @@ ComposioHQ/awesome-claude-skills
 alirezarezvani/claude-skills
 wshobson/agents
 K-Dense-AI/scientific-agent-skills
+tuturama/agent-security
+yejinlei/loop-engineering-check
+ffseika0304/code-ownership-audit
+fanfanfanfanfan626/skill-governor
+wutongyuonce/understand-project
+divijshrivastava/handoff-skill
 wbso-ai/omarchy-plugin-security-skill
 jangtrinh/design-os-3d-blender
 DenisSergeevitch/game-sensitivity-coach
