@@ -645,3 +645,10 @@ Mann1988/awesome-claude-skills
 pqpo/pragma
 netresearch/agent-rules-skill
 jeremylongshore/excel-analyst-pro-skill-md
+marceloeatworld/nixos-ai-skill
+skywain/trip-planner-skill
+naorsabag/openhop
+moonrunnerkc/skillcheck
+erichare/skillroute
+open-legal-products/mike-workflows
+SpaceZephyr/build-your-harness
