@@ -448,3 +448,4 @@ QVerisAI/qveris-agent-toolkit
 tikalk/adlc-team-skills
 PaulRBerg/agent-skills
 mavka-ai/unit-tests-skills
+agent-sh/agnix

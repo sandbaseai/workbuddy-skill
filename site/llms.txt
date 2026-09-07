@@ -160,6 +160,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT team workflow collection for architecture, delivery, quality, and collaboration: https://github.com/tikalk/adlc-team-skills
 - MIT cross-host engineering and project workflow collection: https://github.com/PaulRBerg/agent-skills
 - MIT testing workflows for generating test cases and tests: https://github.com/mavka-ai/unit-tests-skills
+- Apache-2.0 agent-configuration linter for Skills, hooks, MCP, memory, plugins, and multiple hosts: https://github.com/agent-sh/agnix
 - MIT index of 5,400+ OpenClaw skills (discovery only; verify host assumptions, scripts, licenses, and permissions before WorkBuddy adaptation): https://github.com/VoltAgent/awesome-openclaw-skills
 - MIT cross-platform Agent Skill Manager for WorkBuddy and other domestic Agent products (review install scopes and sync paths before copying or removing): https://github.com/yxdwind/agent-skill-manager
 - MIT read-only Skill Auditor for usage traces and security hazards (deletion suggestions require human confirmation): https://github.com/dx2020z/skill-auditor

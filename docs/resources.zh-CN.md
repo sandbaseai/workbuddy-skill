@@ -304,6 +304,7 @@
 - [ADLC Team Skills](https://github.com/tikalk/adlc-team-skills)——MIT 许可的团队工作流集合，覆盖架构、交付、质量和协作；使用前检查宿主命令、共享状态和写入归属。
 - [PaulRBerg Agent Skills](https://github.com/PaulRBerg/agent-skills)——MIT 许可的跨宿主工程与项目工作流集合；固定来源版本，并检查脚本和宿主假设。
 - [Unit Tests Skills](https://github.com/mavka-ai/unit-tests-skills)——MIT 许可的测试工作流，覆盖测试用例与测试生成；使用前检查框架假设、fixture 路径、生成文件，并确认执行范围仍在预期工作区内。
+- [agnix](https://github.com/agent-sh/agnix)——Apache-2.0 许可的 Agent 配置检查器，覆盖 Skill、Hook、MCP、记忆、插件和多个宿主；先以只读方式运行，并在应用自动修复前逐项审阅变更。
 
 ## 本仓库
 
