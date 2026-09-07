@@ -1,5 +1,21 @@
 # WorkBuddy quickstart
 
+## Start here: the 60-second path
+
+Most users only need these three steps:
+
+1. **Find a capability:** search the [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) by task; enable **Reviewed package available** when you need something importable.
+2. **Review it:** open the source and confirm the license, version, connectors, permissions, and any write, paid-call, or messaging side effects.
+3. **Try it safely:** download the ZIP and `SHA256SUMS` from the same Release, verify the archive, import the original ZIP, and use public or test data first with this read-only prompt:
+
+```text
+Explain the capability, inputs, permissions, external side effects, and estimated cost.
+Perform a read-only check only: do not call paid APIs, modify data, or send messages.
+If anything is missing, list it first; do not guess or continue.
+```
+
+If you do not know where to begin, open [Starter packs](starter-packs.md). If you only want a ready-made package, jump to [Install one curated Skill in 5 minutes](#install-one-curated-skill-in-5-minutes). If an import fails, start with [Troubleshooting](#troubleshooting).
+
 Choose the path that matches your goal:
 
 - **Use a curated Skill:** download a ZIP from Releases and import it into WorkBuddy.
