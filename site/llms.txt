@@ -7,6 +7,11 @@ use it to narrow a search, then inspect the linked source, license, and permissi
 
 Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verification.
 
+For a local checkout, use `python3 scripts/query_catalog.py <term> --installable --limit 10`
+to shortlist reviewed packages with no known static flags, primary-looking sources,
+score >= 80, and unique results. This is a shortlist only; inspect provenance,
+license, permissions, and side effects before importing.
+
 ## Use the catalog
 
 - Web search: https://sandbaseai.github.io/workbuddy-skill/
