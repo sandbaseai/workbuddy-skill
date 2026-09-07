@@ -29,6 +29,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT Superpowers agentic software-development methodology (external process reference): https://github.com/obra/superpowers
 - MIT production-oriented engineering Skills for AI coding agents (external reference): https://github.com/addyosmani/agent-skills
 - MIT self-contained architecture and workflow-diagram reference (external reference): https://github.com/tt-a1i/archify
+- MIT visual explainer reference for plans, diffs, data tables, and architecture reviews (external reference): https://github.com/nicobailon/visual-explainer
 - Community task-oriented guide: https://github.com/AlephAITech/WorkBuddyGuide
 - Trail of Bits security Skills (CC-BY-SA-4.0; inspect attribution and authorization): https://github.com/trailofbits/skills
 - NVIDIA SkillSpector security scanner (Apache-2.0; review aid, not a trust guarantee): https://github.com/NVIDIA/SkillSpector
