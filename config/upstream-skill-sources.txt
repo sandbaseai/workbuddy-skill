@@ -362,3 +362,8 @@ tsumon/skill-mcp
 siungolai/Siungo-Skills-Repository
 DevJuanP/skills
 zaehorang/agent-skills
+Mindse-Tt/personal-site-builder
+georgeracu/sdd-skills
+lazyest-hyun/lazyest-qa
+HoFireMan/safe-public-release-skill
+xuemingze/task-and-skill-jcr-system

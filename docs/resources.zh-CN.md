@@ -99,6 +99,11 @@
 - [Siungo Skills Repository](https://github.com/siungolai/Siungo-Skills-Repository)——MIT 许可的 Agent Skill 与领域规范仓库，包含提交报告工作流和 references；复用前检查模板约束、输出路径和宿主假设。
 - [DevJuanP Skills](https://github.com/DevJuanP/skills)——MIT 许可的跨宿主 Agent Skills 集合，覆盖发布（ship）流程；使用时确认 Git 写入、远端操作和发布凭据边界。
 - [Zaehorang Agent Skills](https://github.com/zaehorang/agent-skills)——MIT 许可的多用途 Skill 集合，包含 AI 就绪度、行为规范、博客审阅和机制解释；适配前确认输入敏感性、证据要求和输出用途。
+- [Personal Site Builder](https://github.com/Mindse-Tt/personal-site-builder)——MIT 许可的可核验个人主页生成 Skill，使用 `content.json` 生成零依赖单文件 HTML；发布前检查事实来源、隐私、外链和生成物内容。
+- [SDD Skills](https://github.com/georgeracu/sdd-skills)——MIT 许可的 Spec-Driven Development 工作流，覆盖规格设计、生成、实现审计、维护、QA 和任务评审；在 WorkBuddy 中使用时先固定需求边界和验收标准。
+- [Lazyest QA](https://github.com/lazyest-hyun/lazyest-qa)——MIT 许可、参考 ISTQB 的 QA 与测试 Skill；使用时要求它区分测试证据、环境限制和未覆盖风险，不把建议当作测试结果。
+- [Safe Public Release Skill](https://github.com/HoFireMan/safe-public-release-skill)——MIT 许可的公开发布前清理 Skill，可辅助从私有仓库准备公开版本；执行清理前先备份，并检查密钥、历史、配置和删除范围。
+- [Task and Skill JCR System](https://github.com/xuemingze/task-and-skill-jcr-system)——MIT 许可的任务与 Skill 记录系统，包含状态追踪和多宿主 plan-keeper 适配；启用前检查本地状态文件、同步范围和自动更新行为。
 - [.NET Skills](https://github.com/dotnet/skills)——MIT 许可的 Microsoft .NET 与 C# 编程 Agent 工作流；适配到 WorkBuddy 前检查 SDK 版本、生成文件、Shell 命令和仓库写入范围。
 - [Adobe Skills](https://github.com/adobe/skills)——Apache-2.0 许可的 Adobe 维护 Agent Skill；复用前使用精确来源并检查创意素材、服务凭据、账号权限和发布影响。
 - [Tons of Skills Marketplace](https://github.com/jeremylongshore/tons-of-skills-marketplace)——MIT 许可的跨模型 Skill 市场，提供规范层、适配器和包工具；用于发现时要逐个核验适配器的来源、运行时和权限。

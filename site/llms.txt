@@ -63,6 +63,11 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT Agent Skill and domain-convention repository with a commit-report workflow (review templates, output paths, and host assumptions): https://github.com/siungolai/Siungo-Skills-Repository
 - MIT cross-host Agent Skills collection with a shipping workflow (review Git writes, remote operations, and release credentials): https://github.com/DevJuanP/skills
 - MIT multipurpose Agent Skills for AI readiness, behavior specs, blog review, and mechanism explanation (review evidence and input sensitivity): https://github.com/zaehorang/agent-skills
+- MIT verifiable personal-site generator using content.json and dependency-free single-file HTML (review provenance, privacy, and generated content): https://github.com/Mindse-Tt/personal-site-builder
+- MIT Spec-Driven Development Skills for specification, implementation audit, maintenance, QA, and task review (fix acceptance criteria first): https://github.com/georgeracu/sdd-skills
+- MIT ISTQB-informed QA and testing Skill (distinguish test evidence from recommendations and environment limits): https://github.com/lazyest-hyun/lazyest-qa
+- MIT pre-publication cleanup Skill for releases from private repositories (back up and inspect secrets, history, and deletion scope): https://github.com/HoFireMan/safe-public-release-skill
+- MIT task and Skill record system with multi-host plan-keeper adapters (review local state and sync behavior): https://github.com/xuemingze/task-and-skill-jcr-system
 - MIT .NET and C# workflows for coding agents (review SDK versions, generated files, commands, and write scope): https://github.com/dotnet/skills
 - Apache-2.0 Adobe-maintained Agent Skills (review creative assets, credentials, account permissions, and publishing effects): https://github.com/adobe/skills
 - MIT model-agnostic Tons of Skills Marketplace with canonical layer and adapters (verify provenance, runtime, and permissions): https://github.com/jeremylongshore/tons-of-skills-marketplace
