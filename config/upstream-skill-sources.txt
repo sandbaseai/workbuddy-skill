@@ -492,3 +492,13 @@ Aperivue/medsci-skills
 MrGeDiao/shuorenhua
 swyxio/skills
 heptameta/heptabase-cli-skills
+Imbad0202/academic-research-skills
+Imbad0202/academic-research-skills-codex
+mohitagw15856/pm-claude-skills
+davepoon/buildwithclaude
+FlorianBruniaux/claude-code-ultimate-guide
+DenisSergeevitch/agents-best-practices
+sergebulaev/linkedin-skills
+AgriciDaniel/claude-blog
+runkids/skillshare
+majiayu000/spellbook
