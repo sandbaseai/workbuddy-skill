@@ -452,3 +452,4 @@ agent-sh/agnix
 okx/agent-skills
 Leon-Drq/openagentskill
 apache/doris-skills
+mblode/agent-skills

@@ -308,6 +308,7 @@
 - [OKX Agent Skills](https://github.com/okx/agent-skills)——MIT 许可的交易所与市场操作工作流；交易、账户和鉴权动作影响较高，使用前检查凭据、目标以及读写范围。
 - [OpenAgentSkill](https://github.com/Leon-Drq/openagentskill)——MIT 许可的 Skill 注册与发现工作流；接入 WorkBuddy 前检查注册来源、安装路径、网络访问和包的来源证明。
 - [Apache Doris Skills](https://github.com/apache/doris-skills)——Apache-2.0 许可的数据库工程 Skill，覆盖架构、调试、部署、导入和数据湖工作流；执行前核验 SQL、集群目标、凭据和任何运维写入。
+- [mblode Agent Skills](https://github.com/mblode/agent-skills)——MIT 许可的工程与交付 Skill，覆盖架构、文档、DX 审计、规划、SEO 和 Pull Request 工作流；使用前检查仓库写入、外部发布和宿主假设。
 
 ## 本仓库
 

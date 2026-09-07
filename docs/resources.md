@@ -308,6 +308,7 @@ Use this page to choose the right source before searching the catalog.
 - [OKX Agent Skills](https://github.com/okx/agent-skills) — MIT-licensed exchange and market-operation workflows; treat trading, account, and authentication actions as high impact, and review credentials, targets, and read/write scope before use.
 - [OpenAgentSkill](https://github.com/Leon-Drq/openagentskill) — MIT-licensed Skill registry and discovery workflows; review registry sources, installation paths, network access, and package provenance before connecting it to WorkBuddy.
 - [Apache Doris Skills](https://github.com/apache/doris-skills) — Apache-2.0 database engineering Skills for architecture, debugging, deployment, import, and data-lake workflows; validate SQL, cluster targets, credentials, and any operational writes.
+- [mblode Agent Skills](https://github.com/mblode/agent-skills) — MIT-licensed engineering and delivery Skills for architecture, documentation, DX audits, planning, SEO, and pull-request workflows; review repository writes, external publishing, and host assumptions before use.
 
 ## This repository
 
