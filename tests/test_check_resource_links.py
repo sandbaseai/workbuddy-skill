@@ -1,10 +1,13 @@
 from pathlib import Path
+from contextlib import redirect_stderr
+import io
+import sys
 from tempfile import TemporaryDirectory
 import unittest
 from urllib.error import HTTPError
 from unittest.mock import patch
 
-from scripts.check_resource_links import check_url, extract_urls
+from scripts.check_resource_links import check_url, extract_urls, main
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -69,6 +72,15 @@ class ResourceLinkCheckTests(unittest.TestCase):
         source = (ROOT / "scripts/check_resource_links.py").read_text(encoding="utf-8")
         self.assertIn("if status == 429:", source)
         self.assertIn("rate_limited", source)
+
+    def test_exhausted_transport_timeouts_are_warnings(self):
+        output = io.StringIO()
+        with patch("scripts.check_resource_links.extract_urls", return_value=["https://example.com"]), patch(
+            "scripts.check_resource_links.check_url",
+            return_value=("https://example.com", None, "timed out"),
+        ), patch.object(sys, "argv", ["check_resource_links.py"]), redirect_stderr(output):
+            self.assertEqual(main(), 0)
+        self.assertIn("WARN timed out: https://example.com", output.getvalue())
 
     def test_transient_http_errors_are_retried_with_bounded_backoff(self):
         error = HTTPError("https://example.com", 503, "busy", {"Retry-After": "1"}, None)

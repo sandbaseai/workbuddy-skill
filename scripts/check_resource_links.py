@@ -39,6 +39,12 @@ SITE_URL_PREFIX = "https://sandbaseai.github.io/workbuddy-skill/"
 RETRYABLE_HTTP_STATUS = {408, 429, 500, 502, 503, 504}
 
 
+def is_timeout_error(error: str | None) -> bool:
+    """Identify a transport timeout after retries without hiding other failures."""
+
+    return bool(error and "timed out" in error.casefold())
+
+
 def extract_urls(paths: tuple[Path, ...] = SOURCE_FILES) -> list[str]:
     """Return stable, externally hosted URLs from the public resource files."""
 
@@ -97,16 +103,21 @@ def main() -> int:
     urls = extract_urls()
     failures = []
     rate_limited = []
+    timeouts = []
     with ThreadPoolExecutor(max_workers=max(1, args.workers)) as pool:
         futures = [pool.submit(check_url, url, args.timeout) for url in urls]
         for future in as_completed(futures):
             url, status, error = future.result()
             if status == 429:
                 rate_limited.append((url, status, error))
+            elif status is None and is_timeout_error(error):
+                timeouts.append((url, status, error))
             elif status is None or status >= 400:
                 failures.append((url, status, error))
     print(f"Checked {len(urls)} public resource links")
     for url, status, error in sorted(rate_limited):
+        print(f"WARN {status or error}: {url}", file=sys.stderr)
+    for url, status, error in sorted(timeouts):
         print(f"WARN {status or error}: {url}", file=sys.stderr)
     for url, status, error in sorted(failures):
         print(f"FAIL {status or error}: {url}", file=sys.stderr)
