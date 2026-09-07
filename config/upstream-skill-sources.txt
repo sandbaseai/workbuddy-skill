@@ -1293,3 +1293,14 @@ OnourImpram/claude-code-for-social-scientists
 dsouzaAnush/heroku-skills
 rwi001/vs-code-IDE
 mit-network/Antigravity-awesome-skills
+GargantuaX/gemini-watermark-remover
+maziyarpanahi/openmed
+Fokkyp/SoftwareCopyright-Skill
+WUBING2023/PaperSpine
+formkit/formkit
+zgsm-ai/costrict
+IvanMurzak/Unity-MCP
+conorbronsdon/avoid-ai-writing
+inkeep/open-knowledge
+UditAkhourii/adhd
+0x0funky/agent-sprite-forge
