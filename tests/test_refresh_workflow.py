@@ -12,7 +12,7 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("concurrency:", workflow)
         self.assertIn("group: refresh-skill-catalog", workflow)
         self.assertIn("cancel-in-progress: false", workflow)
-        self.assertIn("--max-rate-wait 2400", workflow)
+        self.assertIn("--max-rate-wait 300", workflow)
         self.assertIn("--dry-run", workflow)
         self.assertIn("--repository-only", workflow)
         self.assertIn("--repository-file config/upstream-skill-sources.txt", workflow)
