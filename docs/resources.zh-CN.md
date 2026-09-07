@@ -72,8 +72,10 @@
 - [Game Sensitivity Coach](https://github.com/DenisSergeevitch/game-sensitivity-coach)——MIT 许可的基于证据的游戏分析 Skill；使用前检查游戏专属假设、采集权限、输入日志和任何配置修改。
 - [Knowledge Asset Health Check](https://github.com/s2dongman/knowledge-asset-health-check)——MIT 许可的本地知识资产体检工具；使用前检查读取的文件范围，敏感材料应保持本地，并核实报告不能替代模型或合规保证。
 - [CodeRin Skill](https://github.com/CodeGanHaoZ/CodeRin-skill)——MIT 许可的中文技术写作和面试内容工作流；生成的事实和文风都应作为编辑产物，发布前核验引用、署名和平台规则。
+- [QianLV UI Skill](https://github.com/CodeGanHaoZ/gks-QianLV-uiSkill)——MIT 许可的 UI 设计系统，源自旅行类应用设计稿并面向 WorkBuddy 等编程 Agent；使用时把 Token 和组件视为起点，另行检查无障碍、视觉参考授权和响应式表现。
 - [GZH Daily Pipeline](https://github.com/xiaohuAI319/gzh-daily-pipeline)——MIT 许可的中文内容流水线，覆盖选题、写作、配图、排版和分发；接入前检查平台凭据、生成媒体、定时动作和每个发布副作用。
 - [Mianjing Skills](https://github.com/Jay-118/mianjing-skills)——MIT 许可的中文面试题采集与备考工作流；使用前检查抓取来源、个人数据、版权、时效和本地输出路径。
+- [Paper Poem Poster](https://github.com/jinwenjinwen26-rgb/paper-poem-poster)——MIT 许可的 WorkBuddy 诗歌海报工作流，可生成照片与纸张风格诗歌构图；发布前检查图片权利、提示词或模型成本、生成素材和导出尺寸。
 - [Visual Explainer](https://github.com/nicobailon/visual-explainer)——MIT 许可的可视化解释参考，可将计划、差异、数据表和架构评审整理成自包含 HTML；适配 WorkBuddy 前检查生成素材以及浏览器/运行时假设。
 - [Scientific Agent Skills](https://github.com/K-Dense-AI/scientific-agent-skills)——MIT 许可的科研工作流集合，提供带测试的 160+ 个领域 Skill；使用前应分别审阅数据库访问、API Key、敏感科研数据和科学结论边界。
 - [Lark CLI](https://github.com/larksuite/cli)——MIT 许可的飞书官方 CLI，提供文档化的 Agent Skill、结构化命令和系统钥匙串认证；接入 WorkBuddy 前检查应用权限范围和外发数据边界。

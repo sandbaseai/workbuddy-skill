@@ -38,8 +38,10 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT evidence-based game sensitivity and gameplay review Skill (review game assumptions, capture permissions, logs, and config patches): https://github.com/DenisSergeevitch/game-sensitivity-coach
 - MIT local knowledge-asset health checker (keep sensitive files local; reports are not model or compliance guarantees): https://github.com/s2dongman/knowledge-asset-health-check
 - MIT Chinese technical-writing and interview-content workflow (verify claims, citations, attribution, and publishing rules): https://github.com/CodeGanHaoZ/CodeRin-skill
+- MIT UI design system distilled from travel-app references for WorkBuddy and coding agents (review accessibility, visual-reference rights, and responsive behavior): https://github.com/CodeGanHaoZ/gks-QianLV-uiSkill
 - MIT Chinese content pipeline for topics, writing, media, formatting, and distribution (review credentials and publishing side effects): https://github.com/xiaohuAI319/gzh-daily-pipeline
 - MIT Chinese interview-question collection and study workflow (review scraping, privacy, copyright, freshness, and output paths): https://github.com/Jay-118/mianjing-skills
+- MIT WorkBuddy poster workflow for editorial photo-and-poem compositions (review image rights, model costs, generated assets, and export dimensions): https://github.com/jinwenjinwen26-rgb/paper-poem-poster
 - MIT official Lark/Feishu CLI with documented Agent Skills (review app scopes and outbound data): https://github.com/larksuite/cli
 - Apache-2.0 official Google Agent Skills for cloud, Gemini, data, and developer workflows (review project, API, and billing permissions): https://github.com/google/skills
 - MIT .NET and C# workflows for coding agents (review SDK versions, generated files, commands, and write scope): https://github.com/dotnet/skills

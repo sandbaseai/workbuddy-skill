@@ -26,8 +26,10 @@ jangtrinh/design-os-3d-blender
 DenisSergeevitch/game-sensitivity-coach
 s2dongman/knowledge-asset-health-check
 CodeGanHaoZ/CodeRin-skill
+CodeGanHaoZ/gks-QianLV-uiSkill
 xiaohuAI319/gzh-daily-pipeline
 Jay-118/mianjing-skills
+jinwenjinwen26-rgb/paper-poem-poster
 phuryn/pm-skills
 JimLiu/baoyu-skills
 trailofbits/skills
