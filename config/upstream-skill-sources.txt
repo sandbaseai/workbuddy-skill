@@ -480,3 +480,15 @@ binance/binance-skills-hub
 databricks/databricks-agent-skills
 laravel/agent-skills
 geekjourneyx/md2wechat-skill
+BankrBot/skills
+xingkongliang/skills-manager
+qdrant/skills
+zhayujie/CowAgent
+elementalsouls/Claude-BugHunter
+majiayu000/claude-skill-registry
+joshzyj/open-scholar-skill
+zubair-trabzada/geo-seo-claude
+Aperivue/medsci-skills
+MrGeDiao/shuorenhua
+swyxio/skills
+heptameta/heptabase-cli-skills
