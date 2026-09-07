@@ -72,7 +72,10 @@ jobs:
           python3 scripts/analyze_discovery.py \
             --input /tmp/upstream-skill-new-candidates.jsonl \
             --output /tmp/upstream-skill-new-candidates-reviewed.jsonl \
-            --summary-output /tmp/upstream-skill-discovery-summary.json
+            --summary-output /tmp/upstream-skill-discovery-summary.json \
+            --workers 24 \
+            --retries 1 \
+            --timeout 10
       - name: Add discovery summary
         run: |
           python3 - /tmp/upstream-skill-discovery-summary.json <<'PY' >> "$GITHUB_STEP_SUMMARY"

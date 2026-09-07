@@ -45,15 +45,27 @@ def write_summary(path: Path, summary: dict[str, int]) -> None:
     temporary.replace(path)
 
 
-def analyze(rows: list[dict], workers: int) -> dict[str, int]:
+def analyze(
+    rows: list[dict], workers: int, retries: int = 2, timeout: int = 20
+) -> dict[str, int]:
     by_sha: dict[str, str] = {}
     for row in rows:
         by_sha.setdefault(str(row.get("sha", row["raw_url"])), row["raw_url"])
     analyses = {}
     with ThreadPoolExecutor(max_workers=workers) as pool:
-        futures = {pool.submit(fetch_and_analyze, url): sha for sha, url in by_sha.items()}
+        futures = {
+            pool.submit(fetch_and_analyze, url, retries=retries, timeout=timeout): sha
+            for sha, url in by_sha.items()
+        }
         for future in as_completed(futures):
-            analyses[futures[future]] = future.result()
+            try:
+                analyses[futures[future]] = future.result()
+            except Exception as exc:  # Keep one bad upstream response from losing the report.
+                analyses[futures[future]] = {
+                    "analysis_status": f"analysis-error:{exc.__class__.__name__}",
+                    "workbuddy_status": "needs-review",
+                    "security_status": "unscanned",
+                }
     for row in rows:
         row.update(analyses[str(row.get("sha", row["raw_url"]))])
     summary = {
@@ -79,11 +91,13 @@ def main() -> int:
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--summary-output", type=Path)
     parser.add_argument("--workers", type=int, default=8)
+    parser.add_argument("--retries", type=int, default=2)
+    parser.add_argument("--timeout", type=int, default=20, help="seconds per upstream fetch")
     args = parser.parse_args()
-    if args.workers < 1:
-        parser.error("workers must be positive")
+    if args.workers < 1 or args.retries < 0 or args.timeout < 1:
+        parser.error("workers and timeout must be positive; retries cannot be negative")
     rows = load_rows(args.input)
-    summary = analyze(rows, args.workers)
+    summary = analyze(rows, args.workers, retries=args.retries, timeout=args.timeout)
     write_rows(args.output, rows)
     if args.summary_output:
         write_summary(args.summary_output, summary)

@@ -114,11 +114,11 @@ def analyze_text(text: str) -> dict:
     }
 
 
-def fetch_and_analyze(url: str, retries: int = 2) -> dict:
+def fetch_and_analyze(url: str, retries: int = 2, timeout: int = 20) -> dict:
     request = Request(quote(url, safe=":/%"), headers={"User-Agent": USER_AGENT})
     for attempt in range(retries + 1):
         try:
-            with urlopen(request, timeout=20) as response:
+            with urlopen(request, timeout=timeout) as response:
                 raw = response.read(512 * 1024 + 1)
             if len(raw) > 512 * 1024:
                 return {"analysis_status": "oversize", "workbuddy_status": "needs-review", "security_status": "unscanned"}

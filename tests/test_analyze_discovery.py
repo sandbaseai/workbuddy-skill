@@ -35,6 +35,17 @@ class DiscoveryAnalysisTests(unittest.TestCase):
         self.assertEqual(summary["license_missing"], 2)
         self.assertEqual(rows[0]["security_signals"], ["credential-path"])
 
+    @patch("analyze_discovery.fetch_and_analyze", side_effect=RuntimeError("upstream failed"))
+    def test_isolates_unexpected_fetch_failures(self, fetch):
+        rows = [{"id": "one", "sha": "a" * 40, "raw_url": "https://example.test/a"}]
+        summary = analyze(rows, workers=1, retries=1, timeout=7)
+        self.assertEqual(fetch.call_count, 1)
+        self.assertEqual(summary["needs_review"], 1)
+        self.assertEqual(rows[0]["analysis_status"], "analysis-error:RuntimeError")
+        fetch.assert_called_once_with(
+            "https://example.test/a", retries=1, timeout=7
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
