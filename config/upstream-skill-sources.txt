@@ -42,6 +42,17 @@ mxyhi/ok-skills
 TerminalSkills/skills
 aaron-he-zhu/aaron-marketing-skills
 samber/cc-skills-golang
+dbt-labs/dbt-agent-skills
+alibaba/skill-up
+microsoft/cat-agent-skills
+microsoft/waza
+mongodb/agent-skills
+awslabs/agent-plugins
+railwayapp/railway-skills
+timescale/pg-aiguide
+agent-sh/agentsys
+nanocoai/nanoclaw
+AlpacaLabsLLC/skills-for-architects
 gokapso/agent-skills
 Tencent/SkillHone
 SnailSploit/Claude-Red
