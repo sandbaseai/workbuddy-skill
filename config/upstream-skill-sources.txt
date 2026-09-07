@@ -1122,3 +1122,16 @@ qcmuu/AI-Research-Skills
 schattenspiegel/skill-foundry-skills
 Nelson-Lamounier/tucaken-signal
 q2805187159/Anvil
+a5c-ai/babysitter
+thatrebeccarae/claude-marketing
+FradSer/dotclaude
+Codecademy/gamut
+0dayInc/pwn
+corezoid/simulator-ai-plugin
+hashintel/brunch
+kensaurus/cursor-kenji
+Shan2L/torchtrace-skill
+Keykor/ship-it
+ziri22/agency-roster
+worldware-studios/i18n-skills
+x3allamerican/skills
