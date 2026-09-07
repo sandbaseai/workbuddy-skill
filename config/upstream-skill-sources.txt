@@ -1654,3 +1654,11 @@ ennioferreirab/open-control
 jingchaodev/skills-lab
 koya-alt/Catalyst
 om-ashish-soni/mo-feed
+Alex1980Alex/1C-Enterprise_Framework
+Alex1980Alex/1C-Framework
+D0NMEGA/donnyclaude
+Ragula-Ajay-kumar/Python-Mini-Project
+WuShuiYDF/github-prior-art
+billion-token-one-task/ClawOSS
+juninmd/skills
+purvishrivastava27/PathAble-NeuroForge
