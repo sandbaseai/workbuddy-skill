@@ -673,3 +673,8 @@ dembrandt/dembrandt-skills
 AIDevGTM/gtm-cofounder
 aai-labs/agent-barn
 oxbshw/watch-skill
+nota-america/forgecat-agent-profiles
+indranilbanerjee/digital-marketing-pro
+AgentWorkforce/relay
+K-Dense-AI/drug-discovery-agent-skills
+eai-org/agent-toolkit
