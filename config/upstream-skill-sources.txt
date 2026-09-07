@@ -1024,3 +1024,6 @@ superman2003/agentpack
 smartgate-network/smartgate-workflows
 ever-just/agentskills
 sergeyizmailov/knowledge-delta-skills
+sentenz/skills
+MantaDigital/stingray-agent-skills
+DajunG-77/research-opportunity-graph-skill
