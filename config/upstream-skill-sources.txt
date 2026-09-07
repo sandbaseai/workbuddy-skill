@@ -1000,3 +1000,6 @@ CacinieP/video2knowledge
 aidvizhhub/caveman-dvizh-skills
 therapys/dotagents
 ponomr/thinking-toolkit
+buidangminh23/spacing-skill
+manyue001/Bilingual-Paper-Reading-Skill
+lirazgershon148/conversation-to-skill-generator
