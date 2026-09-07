@@ -145,3 +145,10 @@ AlphaGBM/skills
 laolaoshiren/claude-code-skills-zh
 Agentchengfeng/chengfeng-videocut-skills
 czlonkowski/n8n-skills
+new-silvermoon/awesome-android-agent-skills
+scottstts/Threejs-Awesome-Graphics-Agent-Skills
+RKiding/Awesome-finance-skills
+CommandCodeAI/agent-skills
+SimoneAvogadro/android-reverse-engineering-skill
+levnikolaevich/claude-code-skills
+BuilderIO/skills

@@ -39,7 +39,7 @@ jobs:
   upstream-discovery-probe:
     name: Probe upstream Skill sources (read-only)
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
@@ -53,8 +53,8 @@ jobs:
             --dry-run \
             --repository-file config/upstream-skill-sources.txt \
             --repository-only \
-            --target 30000 \
-            --max-requests 500 \
+            --target 32000 \
+            --max-requests 550 \
             --max-rate-wait 120 \
             --output /tmp/upstream-skill-probe.jsonl \
             --dry-run-output /tmp/upstream-skill-probe-report.jsonl
