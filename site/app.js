@@ -120,6 +120,25 @@ function packageInstallCommand(skill) {
     : "";
 }
 
+function searchableText(skill) {
+  return [
+    skill.n,
+    skill.r,
+    skill.p,
+    catalogId(skill),
+    skill.g,
+    CATEGORY_LABELS_ZH[skill.g],
+    skill.w,
+    SEARCH_LABELS.compatibility[skill.w],
+    skill.k,
+    SEARCH_LABELS.security[skill.k],
+    skill.o,
+    SEARCH_LABELS.source[skill.o],
+    skill.a ? (isChinese ? "精选包 可安装" : "reviewed package installable") : "",
+    ...(skill.x || []),
+  ].join(" ").toLocaleLowerCase();
+}
+
 function restoreUrlState() {
   const params = new URLSearchParams(location.search);
   input.value = params.get("q") || "";
@@ -269,23 +288,7 @@ function render(reset = true) {
 function search({ historyMode = "replace" } = {}) {
   const terms = input.value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
   filtered = catalog.filter((skill) => {
-    const searchable = [
-      skill.n,
-      skill.r,
-      skill.p,
-      catalogId(skill),
-      skill.g,
-      CATEGORY_LABELS_ZH[skill.g],
-      skill.w,
-      SEARCH_LABELS.compatibility[skill.w],
-      skill.k,
-      SEARCH_LABELS.security[skill.k],
-      skill.o,
-      SEARCH_LABELS.source[skill.o],
-      skill.a ? (isChinese ? "精选包 可安装" : "reviewed package installable") : "",
-      ...(skill.x || []),
-    ].join(" ").toLocaleLowerCase();
-    const textMatch = terms.every((term) => searchable.includes(term));
+    const textMatch = terms.every((term) => skill._searchText.includes(term));
     const categoryMatch = category.value === "all" || skill.g === category.value;
     const compatibilityMatch = compatibility.value === "all" || skill.w === compatibility.value;
     const securityMatch = security.value === "all" || skill.k === security.value;
@@ -404,12 +407,12 @@ async function loadCatalog() {
     if (!catalogResponse.ok || !metaResponse.ok || !packagesResponse.ok) throw new Error("catalog unavailable");
     const [data, meta, packages] = await Promise.all([catalogResponse.json(), metaResponse.json(), packagesResponse.json()]);
     if (meta.snapshot_frozen !== true) throw new Error("catalog snapshot is not frozen");
-    catalog = data;
+    catalog = data.map((skill) => ({ ...skill, _searchText: searchableText(skill) }));
     packagesByDownload = new Map(packages.map((packageRecord) => [packageRecord.download_url, packageRecord]));
     if (typeof meta.release_checksum_url === "string" && meta.release_checksum_url.startsWith("https://")) {
       checksumUrl = meta.release_checksum_url;
     }
-    filtered = data;
+    filtered = catalog;
     metricRecords.textContent = meta.records.toLocaleString();
     heroCount.textContent = meta.records.toLocaleString();
     metricShas.textContent = meta.unique_content_shas.toLocaleString();
