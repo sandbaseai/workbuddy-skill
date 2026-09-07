@@ -22,7 +22,12 @@ jobs:
           MERGED: ${{ github.event.pull_request.merged }}
           HEAD_REPOSITORY: ${{ github.event.pull_request.head.repo.full_name }}
           BRANCH: ${{ github.event.pull_request.head.ref }}
+          BASE_BRANCH: ${{ github.event.pull_request.base.ref }}
         run: |
+          if [[ "$BASE_BRANCH" != "main" ]]; then
+            echo "Pull request targeted $BASE_BRANCH; leaving its branch intact."
+            exit 0
+          fi
           if [[ "$MERGED" != "true" ]]; then
             echo "Pull request was closed without merging."
             exit 0

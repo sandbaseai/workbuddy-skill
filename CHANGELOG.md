@@ -11,6 +11,7 @@ All notable changes to this project are documented here.
 - Add an Apache-2.0 ActionDock builder reference for users creating portable Agent Skills, without importing its code or generated Skills.
 - Add an Apache-2.0 Agent-ready Web Profile reference for provenance-aware discovery and interoperability research, without importing its code or Skills.
 - Treat exhausted transport timeouts as visible link-check warnings while continuing to fail on explicit HTTP or non-timeout transport errors.
+- Restrict automatic merge and merged-branch cleanup to pull requests targeting `main`.
 - Preserve and label read-only upstream probe completeness with a status JSON report when GitHub throttling pauses discovery; partial results remain clearly distinct from complete scans.
 - Document the probe status and partial-result workflow in both English and Chinese catalog guides.
 - Add the MIT-licensed QianLV UI Skill as a WorkBuddy-compatible design reference with explicit bundled-asset and script review guidance.

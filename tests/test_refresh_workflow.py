@@ -405,6 +405,8 @@ class RefreshWorkflowTests(unittest.TestCase):
 
     def test_auto_merge_only_queues_trusted_same_repository_pull_requests(self):
         workflow = (ROOT / ".github/workflows/auto-merge.yml").read_text(encoding="utf-8")
+        self.assertIn('BASE_BRANCH: ${{ github.event.pull_request.base.ref }}', workflow)
+        self.assertIn('[[ "$BASE_BRANCH" != "main" ]]', workflow)
         self.assertIn("pull_request_target", workflow)
         self.assertIn("group: auto-merge-pr-${{ github.event.pull_request.number }}", workflow)
         self.assertIn("cancel-in-progress: true", workflow)
@@ -424,6 +426,8 @@ class RefreshWorkflowTests(unittest.TestCase):
 
     def test_merged_branch_cleanup_only_deletes_safe_same_repository_refs(self):
         workflow = (ROOT / ".github/workflows/cleanup-merged-branches.yml").read_text(encoding="utf-8")
+        self.assertIn('BASE_BRANCH: ${{ github.event.pull_request.base.ref }}', workflow)
+        self.assertIn('[[ "$BASE_BRANCH" != "main" ]]', workflow)
         self.assertIn("pull_request_target:", workflow)
         self.assertIn("types: [closed]", workflow)
         self.assertIn('[[ "$MERGED" != "true" ]]', workflow)

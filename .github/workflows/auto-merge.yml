@@ -32,7 +32,12 @@ jobs:
           DRAFT: ${{ github.event.pull_request.draft }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
           BRANCH: ${{ github.event.pull_request.head.ref }}
+          BASE_BRANCH: ${{ github.event.pull_request.base.ref }}
         run: |
+          if [[ "$BASE_BRANCH" != "main" ]]; then
+            echo "Pull request targets $BASE_BRANCH; only main is auto-merged."
+            exit 0
+          fi
           if [[ "$DRAFT" == "true" ]]; then
             echo "Draft pull request; waiting for ready_for_review."
             exit 0
