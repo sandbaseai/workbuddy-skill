@@ -10,6 +10,7 @@ All notable changes to this project are documented here.
 - Make the local package helper's `--help` safe and explicit, and reject unexpected arguments before any ZIP is created.
 - Add an Apache-2.0 ActionDock builder reference for users creating portable Agent Skills, without importing its code or generated Skills.
 - Add an Apache-2.0 Agent-ready Web Profile reference for provenance-aware discovery and interoperability research, without importing its code or Skills.
+- Add a rights-aware MIT WorkBuddy Skin reference, explicitly calling out its unofficial CDP and debug-port boundary without importing its code or Skill.
 - Treat exhausted transport timeouts as visible link-check warnings while continuing to fail on explicit HTTP or non-timeout transport errors.
 - Restrict automatic merge and merged-branch cleanup to pull requests targeting `main`.
 - Preserve and label read-only upstream probe completeness with a status JSON report when GitHub throttling pauses discovery; partial results remain clearly distinct from complete scans.
