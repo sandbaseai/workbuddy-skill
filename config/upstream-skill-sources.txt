@@ -698,3 +698,16 @@ icons8/agent-skills
 GZX2211/dsh-Visual-Workflow
 Ezra144israel/governed-agent-skills
 moeru-ai/auv
+tripleyak/SkillForge
+Anionex/dsh-vision-toolkit
+Gabberflast/academic-pptx-skill
+ZeroPointRepo/youtube-skills
+Tourmind-com/Tourmind-Booking-Skills
+yuwen-cool/yuwen-publish-precheck
+rshankras/claude-code-apple-skills
+product-on-purpose/pm-skills
+momozi1996/awesome-ai-persona-skills
+Light0305/Light-skills
+minhnv0807/ai-business-skills
+superdesigndev/superdesign-skill
+leonardomso/rust-skills
