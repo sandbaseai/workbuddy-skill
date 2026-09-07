@@ -15,9 +15,9 @@ class RefreshWorkflowTests(unittest.TestCase):
         sources = (ROOT / "config/upstream-skill-sources.txt").read_text(encoding="utf-8")
         self.assertIn("github/awesome-copilot", sources)
         self.assertIn("googleworkspace/cli", sources)
-        self.assertIn("timeout-minutes: 25", workflow)
-        self.assertIn("--target 26000", workflow)
-        self.assertIn("--max-requests 430", workflow)
+        self.assertIn("timeout-minutes: 30", workflow)
+        self.assertIn("--target 30000", workflow)
+        self.assertIn("--max-requests 500", workflow)
         self.assertIn("--output /tmp/upstream-skill-probe.jsonl", workflow)
         self.assertIn("--dry-run-output /tmp/upstream-skill-probe-report.jsonl", workflow)
         self.assertIn("scripts/report_new_discoveries.py", workflow)
@@ -338,7 +338,7 @@ class RefreshWorkflowTests(unittest.TestCase):
             ".github/workflows/validate.yml": "timeout-minutes: 15",
             ".github/workflows/release.yml": "timeout-minutes: 30",
             ".github/workflows/pages.yml": "timeout-minutes: 10",
-            ".github/workflows/refresh-catalog.yml": "timeout-minutes: 25",
+            ".github/workflows/refresh-catalog.yml": "timeout-minutes: 30",
             ".github/workflows/cleanup-merged-branches.yml": "timeout-minutes: 10",
         }
         for path, marker in expected.items():
