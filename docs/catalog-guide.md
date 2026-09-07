@@ -107,6 +107,14 @@ python3 scripts/crawl_github_skills.py --dry-run \
   --dry-run-output /tmp/upstream-skill-probe.jsonl
 ```
 
+If a read-only probe pauses because of GitHub throttling or a temporary network
+failure, add `--allow-partial --status-output
+/tmp/upstream-skill-probe-status.json`. The probe will preserve the report it
+has collected and exit successfully, while the status file records `partial`,
+the record and request counts, and the error. Use this only with `--dry-run`;
+it does not bypass frozen-catalog write protection and does not mean the scan
+was complete.
+
 The scheduled `Refresh skill catalog` workflow also runs a read-only probe over
 representative upstream Skill repositories. It reports newly discoverable
 paths without writing the frozen catalog, creating packages, or changing any

@@ -78,6 +78,9 @@ python3 scripts/crawl_github_skills.py --dry-run \
   --dry-run-output /tmp/upstream-skill-probe.jsonl
 ```
 
+如果只读探针因 GitHub 限流或临时网络错误中途暂停，可加上
+`--allow-partial --status-output /tmp/upstream-skill-probe-status.json`：探针会以成功状态保留已发现的报告，同时在状态文件中明确写出 `partial`、记录数、请求数和错误原因。这个选项只适合 dry-run，不会绕过冻结目录的写入保护，也不代表扫描已经完整。
+
 仓库的定时 `Refresh skill catalog` 工作流也会对一组代表性的上游 Skill 仓库执行只读探测。
 它只报告新发现的路径，不会写入冻结目录、生成精选包或改变已发布快照；Actions Artifact
 保留 30 天，会保存发现到的 JSONL 行，便于后续处理。需要详细审阅某个候选时，仍请在本地运行上面的命令。
