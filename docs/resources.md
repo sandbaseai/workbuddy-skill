@@ -315,6 +315,8 @@ Use this page to choose the right source before searching the catalog.
 - [DeepCode CLI](https://github.com/lessweb/deepcode-cli) — MIT-licensed coding-agent CLI with bundled Skills for self-reference, image generation, Skill digestion, and Skill authoring; inspect subprocesses, network access, and generated files before use.
 - [Claude Tools for Delphi](https://github.com/GabrielOnDelphi/Claude-Tools-for-Delphi) — MPL-2.0 Delphi and Windows engineering Skill collection covering architecture, compatibility, refactoring, threading, and documentation; verify toolchain versions, generated code, platform assumptions, and license obligations before reuse.
 - [Tlamatini](https://github.com/XAIHT/Tlamatini) — MIT-licensed multi-host agent workflow collection with self-update and self-modification examples; keep it read-only for discovery, and review persistence, generated changes, network access, and rollback boundaries before any reuse.
+- [VTX Coding Agent](https://github.com/OEvortex/vtx-coding-agent) — Apache-2.0 multi-host coding-agent project with Skills for release publishing, testing, cloud workflows, code review, and Skill authoring; inspect subprocesses, credentials, deployment targets, and write scope before use.
+- [Synthos](https://github.com/yakeworld/Synthos) — MIT-licensed research and reasoning Skill collection for hypothesis generation, knowledge acquisition, verification, quality gates, and automation; treat self-evolution and external-automation examples as discovery references and review persistence, data access, and side effects first.
 
 ## This repository
 

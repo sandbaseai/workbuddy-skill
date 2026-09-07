@@ -315,6 +315,8 @@
 - [DeepCode CLI](https://github.com/lessweb/deepcode-cli)——MIT 许可的编码 Agent CLI，内置自引用、图像生成、Skill 消化和 Skill 编写工具；使用前检查子进程、网络访问和生成文件。
 - [Claude Tools for Delphi](https://github.com/GabrielOnDelphi/Claude-Tools-for-Delphi)——MPL-2.0 许可的 Delphi 与 Windows 工程 Skill 集合，覆盖架构、兼容性、重构、线程和文档；复用前核对工具链版本、生成代码、平台假设和许可证义务。
 - [Tlamatini](https://github.com/XAIHT/Tlamatini)——MIT 许可的多宿主 Agent 工作流集合，包含自更新和自修改示例；仅用于只读发现，真正复用前必须检查持久化、生成变更、网络访问和回滚边界。
+- [VTX Coding Agent](https://github.com/OEvortex/vtx-coding-agent)——Apache-2.0 许可的多宿主编码 Agent 项目，包含发布、测试、云工作流、代码评审和 Skill 编写 Skill；使用前检查子进程、凭据、部署目标和写入范围。
+- [Synthos](https://github.com/yakeworld/Synthos)——MIT 许可的研究与推理 Skill 集合，覆盖假设生成、知识获取、验证、质量门禁和自动化；将自演化与外部自动化示例仅作发现参考，并先检查持久化、数据访问和副作用。
 
 ## 本仓库
 

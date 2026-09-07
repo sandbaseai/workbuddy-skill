@@ -459,3 +459,5 @@ deusyu/translate-book
 lessweb/deepcode-cli
 GabrielOnDelphi/Claude-Tools-for-Delphi
 XAIHT/Tlamatini
+OEvortex/vtx-coding-agent
+yakeworld/Synthos
