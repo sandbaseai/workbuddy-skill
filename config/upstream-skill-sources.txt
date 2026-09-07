@@ -307,3 +307,15 @@ GODGOD126/self-improving-for-codex
 wasp-lang/open-saas
 LukeRenton/explore-claude-code
 Yusuke710/manim-skill
+zebbern/claude-code-guide
+clacky-ai/openclacky
+danny-avila/LibreChat
+Singtaa/OneJS
+CALLE-AI/awesome-phone-call-agents
+jiushiwon/wg-skills
+AlexZio00/sovereign-skills
+pandazki/pneuma-skills
+LearnPrompt/ai-news-radar
+pseudo-longinus/quant-buddy-skills
+aws-samples/sample-apex-skills
+moonlight-lupin/agent-skills
