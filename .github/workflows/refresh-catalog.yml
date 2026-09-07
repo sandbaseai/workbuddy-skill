@@ -1,6 +1,13 @@
 name: Refresh skill catalog
 
 on:
+  push:
+    paths:
+      - "config/upstream-skill-sources.txt"
+      - "scripts/crawl_github_skills.py"
+      - "scripts/report_new_discoveries.py"
+      - "scripts/analyze_discovery.py"
+      - ".github/workflows/refresh-catalog.yml"
   workflow_dispatch:
   schedule:
     # Retry discovery throughout the day so a transient GitHub API quota

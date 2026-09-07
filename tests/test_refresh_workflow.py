@@ -241,6 +241,8 @@ class RefreshWorkflowTests(unittest.TestCase):
 
     def test_catalog_refresh_is_frozen_without_automatic_additions(self):
         workflow = (ROOT / ".github/workflows/refresh-catalog.yml").read_text(encoding="utf-8")
+        self.assertIn('"config/upstream-skill-sources.txt"', workflow)
+        self.assertIn('"scripts/crawl_github_skills.py"', workflow)
         self.assertIn('cron: "17 5 * * *"', workflow)
         self.assertNotIn("--allow-frozen-catalog", workflow)
         self.assertNotIn("git push", workflow)
