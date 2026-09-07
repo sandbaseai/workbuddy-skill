@@ -241,6 +241,7 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("scripts/check_release_assets.py", workflow)
         self.assertIn("GH_TOKEN: ${{ github.token }}", workflow)
         self.assertIn("scripts/check_resource_links.py", workflow)
+        self.assertIn("scripts/check_resource_links.py --workers 32 --timeout 8", workflow)
         self.assertIn("Actionable candidate shortlist", workflow)
         self.assertIn('workbuddy_status") == "adaptable"', workflow)
         self.assertIn('license_declared") is True', workflow)

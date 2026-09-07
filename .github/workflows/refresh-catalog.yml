@@ -36,7 +36,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: python3 scripts/check_release_assets.py
       - name: Check public resource links
-        run: python3 scripts/check_resource_links.py
+        run: python3 scripts/check_resource_links.py --workers 32 --timeout 8
 
   upstream-discovery-probe:
     name: Probe upstream Skill sources (read-only)
