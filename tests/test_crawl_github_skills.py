@@ -14,6 +14,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from crawl_github_skills import (  # noqa: E402
     rate_limit_delay,
     repository_skill_rows,
+    load_repository_file,
     main,
     wait_for_rate_limit,
     write_stats,
@@ -21,6 +22,19 @@ from crawl_github_skills import (  # noqa: E402
 
 
 class RateLimitTests(unittest.TestCase):
+    def test_repository_file_ignores_comments_and_blank_lines(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "sources.txt"
+            path.write_text("# comment\nowner/repo  # inline\n\n", encoding="utf-8")
+            self.assertEqual(load_repository_file(path), ["owner/repo"])
+
+    def test_repository_file_rejects_malformed_entries(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "sources.txt"
+            path.write_text("not-a-repository\n", encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "invalid repository"):
+                load_repository_file(path)
+
     def test_default_published_catalog_requires_explicit_opt_in(self):
         stderr = io.StringIO()
         with patch("sys.argv", ["crawl_github_skills.py"]), contextlib.redirect_stderr(stderr):

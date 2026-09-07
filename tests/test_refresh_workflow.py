@@ -11,25 +11,10 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("upstream-discovery-probe:", workflow)
         self.assertIn("--dry-run", workflow)
         self.assertIn("--repository-only", workflow)
-        for repository in (
-            "github/awesome-copilot",
-            "aiworkskills/wechat-article-skills",
-            "anthropics/skills",
-            "mattpocock/skills",
-            "addyosmani/agent-skills",
-            "vercel-labs/agent-skills",
-            "vercel-labs/skills",
-            "google/skills",
-            "ComposioHQ/awesome-claude-skills",
-            "alirezarezvani/claude-skills",
-            "wshobson/agents",
-            "K-Dense-AI/scientific-agent-skills",
-            "phuryn/pm-skills",
-            "JimLiu/baoyu-skills",
-            "nexu-io/open-design",
-            "googleworkspace/cli",
-        ):
-            self.assertIn(f"--repository {repository}", workflow)
+        self.assertIn("--repository-file config/upstream-skill-sources.txt", workflow)
+        sources = (ROOT / "config/upstream-skill-sources.txt").read_text(encoding="utf-8")
+        self.assertIn("github/awesome-copilot", sources)
+        self.assertIn("googleworkspace/cli", sources)
         self.assertIn("--target 10000", workflow)
         self.assertIn("--output /tmp/upstream-skill-probe.jsonl", workflow)
         self.assertIn("--dry-run-output /tmp/upstream-skill-probe-report.jsonl", workflow)

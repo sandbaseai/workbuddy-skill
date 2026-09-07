@@ -206,6 +206,18 @@ def load_existing(path: Path) -> dict[str, dict]:
     return rows
 
 
+def load_repository_file(path: Path) -> list[str]:
+    repositories = []
+    for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+        value = line.split("#", 1)[0].strip()
+        if not value:
+            continue
+        if value.count("/") != 1:
+            raise ValueError(f"invalid repository at {path}:{line_number}: {value}")
+        repositories.append(value)
+    return repositories
+
+
 def write_atomic(path: Path, rows: dict[str, dict]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_suffix(path.suffix + ".tmp")
@@ -292,6 +304,13 @@ def main() -> int:
         help="Also scan a repository's default-branch Git tree for SKILL.md files (repeatable)",
     )
     parser.add_argument(
+        "--repository-file",
+        type=Path,
+        action="append",
+        default=[],
+        help="Read owner/name repositories from a UTF-8 text file (repeatable; blank lines and # comments are ignored)",
+    )
+    parser.add_argument(
         "--repository-only",
         action="store_true",
         help="Scan only repositories passed with --repository; skip global Code Search",
@@ -338,6 +357,13 @@ def main() -> int:
         help="Bound Code Search requests for one resumable run",
     )
     args = parser.parse_args()
+    repositories = list(args.repository)
+    try:
+        for repository_file in args.repository_file:
+            repositories.extend(load_repository_file(repository_file))
+    except (OSError, ValueError) as exc:
+        parser.error(str(exc))
+    repositories = list(dict.fromkeys(repositories))
     if (
         args.target < 1
         or args.start_bytes < 1
@@ -349,7 +375,7 @@ def main() -> int:
             "require target > 0, max-requests > 0, max-rate-wait > 0, "
             "and 0 < start-bytes <= max-bytes"
         )
-    if args.repository_only and not args.repository:
+    if args.repository_only and not repositories:
         parser.error("--repository-only requires at least one --repository")
     if args.dry_run_output and not args.dry_run:
         parser.error("--dry-run-output requires --dry-run")
@@ -365,12 +391,12 @@ def main() -> int:
         "max_bytes": args.max_bytes,
         "output": str(args.output.resolve()),
         "repository_only": args.repository_only,
-        "repositories": args.repository,
+        "repositories": repositories,
         "start_bytes": args.start_bytes,
     }
     saved_state = None if args.dry_run else load_checkpoint(checkpoint_path, signature)
     rows = load_existing(args.output)
-    remaining_repositories = saved_state[0] if saved_state else list(args.repository)
+    remaining_repositories = saved_state[0] if saved_state else list(repositories)
     pending = saved_state[1] if saved_state else None
 
     def checkpoint() -> None:

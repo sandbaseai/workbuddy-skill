@@ -1,0 +1,21 @@
+# High-signal public repositories used for read-only discovery.
+github/awesome-copilot
+obra/superpowers
+sickn33/agentic-awesome-skills
+alchaincyf/nuwa-skill
+Hisn00w/ASu-skills
+aiworkskills/wechat-article-skills
+anthropics/skills
+mattpocock/skills
+addyosmani/agent-skills
+vercel-labs/agent-skills
+vercel-labs/skills
+google/skills
+ComposioHQ/awesome-claude-skills
+alirezarezvani/claude-skills
+wshobson/agents
+K-Dense-AI/scientific-agent-skills
+phuryn/pm-skills
+JimLiu/baoyu-skills
+nexu-io/open-design
+googleworkspace/cli
