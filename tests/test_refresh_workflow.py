@@ -16,6 +16,7 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("github/awesome-copilot", sources)
         self.assertIn("googleworkspace/cli", sources)
         self.assertIn("--target 13500", workflow)
+        self.assertIn("--max-requests 240", workflow)
         self.assertIn("--output /tmp/upstream-skill-probe.jsonl", workflow)
         self.assertIn("--dry-run-output /tmp/upstream-skill-probe-report.jsonl", workflow)
         self.assertIn("scripts/report_new_discoveries.py", workflow)

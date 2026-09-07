@@ -63,3 +63,10 @@ supabase/agent-skills
 ScrapeCreators/social-media-research-skills
 RKiding/Awesome-finance-skills
 iflytek/skillhub
+muratcankoylan/Agent-Skills-for-Context-Engineering
+kepano/obsidian-skills
+larksuite/cli
+earthtojake/text-to-cad
+MengTo/Skills
+lackeyjb/playwright-skill
+mvanhorn/last30days-skill
