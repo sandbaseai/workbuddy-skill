@@ -70,3 +70,12 @@ earthtojake/text-to-cad
 MengTo/Skills
 lackeyjb/playwright-skill
 mvanhorn/last30days-skill
+wondelai/skills
+gooseworks-ai/goose-skills
+oxylabs/agent-skills
+twostraws/SwiftUI-Agent-Skill
+dmmulroy/anti-slop
+nexscope-ai/eCommerce-Skills
+coreyhaines31/makerskills
+ferdinandobons/startup-skill
+Bhanunamikaze/Agentic-SEO-Skill
