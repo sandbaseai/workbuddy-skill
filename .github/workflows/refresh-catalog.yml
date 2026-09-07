@@ -60,6 +60,7 @@ jobs:
           source_count=$(grep -Ev '^[[:space:]]*(#|$)' config/upstream-skill-sources.txt | wc -l)
           max_requests=$((source_count * 3 + 50))
           echo "Scanning $source_count repositories with a $max_requests-request budget"
+          set +e
           timeout --signal=INT --kill-after=15s 120s \
             python3 scripts/crawl_github_skills.py \
             --dry-run \
@@ -72,6 +73,31 @@ jobs:
             --output /tmp/upstream-skill-probe.jsonl \
             --dry-run-output /tmp/upstream-skill-probe-report.jsonl \
             --status-output /tmp/upstream-skill-probe-status.json
+          crawl_rc=$?
+          set -e
+          if [ "$crawl_rc" -ne 0 ]; then
+            echo "Discovery probe exited with $crawl_rc; preserving partial files." >&2
+            if [ ! -f /tmp/upstream-skill-probe-report.jsonl ]; then
+              : > /tmp/upstream-skill-probe-report.jsonl
+            fi
+            python3 - "$crawl_rc" <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+
+          status_path = Path("/tmp/upstream-skill-probe-status.json")
+          if not status_path.exists():
+              status_path.write_text(
+                  json.dumps({
+                      "status": "partial",
+                      "records": sum(1 for _ in Path("/tmp/upstream-skill-probe-report.jsonl").open()),
+                      "requests": 0,
+                      "error": f"discovery probe exited with code {sys.argv[1]}",
+                  }) + "\n",
+                  encoding="utf-8",
+              )
+          PY
+          fi
           cat /tmp/upstream-skill-probe-status.json
           python3 scripts/report_new_discoveries.py \
             --catalog catalog/skills.jsonl \

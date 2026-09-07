@@ -26,6 +26,8 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn('--max-requests "$max_requests"', workflow)
         self.assertIn("--output /tmp/upstream-skill-probe.jsonl", workflow)
         self.assertIn("--dry-run-output /tmp/upstream-skill-probe-report.jsonl", workflow)
+        self.assertIn('crawl_rc=$?', workflow)
+        self.assertIn("preserving partial files", workflow)
         self.assertIn("scripts/report_new_discoveries.py", workflow)
         self.assertIn("--output /tmp/upstream-skill-new-candidates.jsonl", workflow)
         self.assertIn("scripts/analyze_discovery.py", workflow)
