@@ -80,6 +80,12 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT Gensee webcast download, long-audio transcription, and meeting-minutes Skills (review credentials, copyright, privacy, and output): https://github.com/Xavier-06/gensee-vod-transcribe
 - MIT Figma-first WordPress theme-development Skill for Timber, Twig, ACF, and native PHP (review credentials, writes, and rollback): https://github.com/adhit28/a28-wp-theme-assistant
 - MIT job-search and ATS-routing Skills (review personal data and every external application submission): https://github.com/Riddis/job-portal-ats-skills
+- MIT researched progressive interactive technical-illustration Skill (review provenance, image rights, and browser artifacts): https://github.com/shivaylamba/animated-technical-illustrations
+- MIT email-marketing best-practices Skill (review recipients, credentials, quotas, and real-send actions): https://github.com/mailercloud-com/mailercloud-plugin
+- MIT versioned marketing-agent roles and decision Skills (review brand material, customer data, approval, and outbound permissions): https://github.com/m4nueldeleon/oficina-marketing-skills
+- MIT multi-agent session-coordination Skill distinguishing messages from a shared file mailbox (review shared directories and concurrent writes): https://github.com/Yuru778/multi-session-protocol
+- MIT WhatsApp-automation Skill that may operate a real number (confirm recipient, message, rate, and per-send authorization): https://github.com/frty2-ai/wawm-skill
+- MIT education-platform automation Skill (review account permissions, personal data, and write scope): https://github.com/M1Vj/vsuee-skill
 - MIT .NET and C# workflows for coding agents (review SDK versions, generated files, commands, and write scope): https://github.com/dotnet/skills
 - Apache-2.0 Adobe-maintained Agent Skills (review creative assets, credentials, account permissions, and publishing effects): https://github.com/adobe/skills
 - MIT model-agnostic Tons of Skills Marketplace with canonical layer and adapters (verify provenance, runtime, and permissions): https://github.com/jeremylongshore/tons-of-skills-marketplace

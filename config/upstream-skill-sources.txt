@@ -379,3 +379,9 @@ Ubik42/ComfyUI-Workflow-Lab
 Xavier-06/gensee-vod-transcribe
 adhit28/a28-wp-theme-assistant
 Riddis/job-portal-ats-skills
+shivaylamba/animated-technical-illustrations
+mailercloud-com/mailercloud-plugin
+m4nueldeleon/oficina-marketing-skills
+Yuru778/multi-session-protocol
+frty2-ai/wawm-skill
+M1Vj/vsuee-skill

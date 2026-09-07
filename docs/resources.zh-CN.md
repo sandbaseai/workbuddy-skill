@@ -116,6 +116,12 @@
 - [Gensee VOD Transcribe](https://github.com/Xavier-06/gensee-vod-transcribe)——MIT 许可的展视互动视频下载、长音频转写和会议纪要 Skill；处理会议内容前检查登录凭据、版权、隐私、下载范围和生成文件。
 - [WordPress Theme Assistant](https://github.com/adhit28/a28-wp-theme-assistant)——MIT 许可的 Figma-first WordPress 主题开发 Skill，支持 Timber、Twig、ACF 和原生 PHP；使用前检查设计稿授权、站点凭据、模板写入和发布回滚。
 - [Job Portal ATS Skills](https://github.com/Riddis/job-portal-ats-skills)——MIT 许可的求职检索与 ATS 路由 Skill 集合；搜索可以只读，申请动作涉及个人信息和外部提交，必须逐项确认目标、内容和发送权限。
+- [Animated Technical Illustrations](https://github.com/shivaylamba/animated-technical-illustrations)——MIT 许可的研究驱动、渐进式交互技术图示 Skill；使用前核验数据来源、图像版权、浏览器生成物和导出内容。
+- [Mailercloud Plugin](https://github.com/mailercloud-com/mailercloud-plugin)——MIT 许可的邮件营销最佳实践 Skill；接入 WorkBuddy 前检查收件人、域名、凭据、发送配额和任何实际发送动作。
+- [Oficina Marketing Skills](https://github.com/m4nueldeleon/oficina-marketing-skills)——MIT 许可的版本化营销 Agent 角色与决策 Skill 集合；使用时确认品牌资料、客户数据、输出审核和外发权限。
+- [Multi-session Protocol](https://github.com/Yuru778/multi-session-protocol)——MIT 许可的多 Agent 会话协作 Skill，区分官方跨会话消息与文件邮箱；启用前检查共享目录、并发写入、敏感内容和会话生命周期。
+- [WAWM Skill](https://github.com/frty2-ai/wawm-skill)——MIT 许可的 WhatsApp 自动化 Skill；它可能操作真实号码，使用前必须确认账号、收件人、消息内容、频率和逐条发送权限。
+- [VSUEE Skill](https://github.com/M1Vj/vsuee-skill)——MIT 许可的教育平台自动化 Skill；连接真实课程或学生数据前检查账号权限、个人信息、写入范围和平台规则。
 - [.NET Skills](https://github.com/dotnet/skills)——MIT 许可的 Microsoft .NET 与 C# 编程 Agent 工作流；适配到 WorkBuddy 前检查 SDK 版本、生成文件、Shell 命令和仓库写入范围。
 - [Adobe Skills](https://github.com/adobe/skills)——Apache-2.0 许可的 Adobe 维护 Agent Skill；复用前使用精确来源并检查创意素材、服务凭据、账号权限和发布影响。
 - [Tons of Skills Marketplace](https://github.com/jeremylongshore/tons-of-skills-marketplace)——MIT 许可的跨模型 Skill 市场，提供规范层、适配器和包工具；用于发现时要逐个核验适配器的来源、运行时和权限。
