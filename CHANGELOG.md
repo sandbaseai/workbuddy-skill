@@ -24,6 +24,7 @@ All notable changes to this project are documented here.
 - Add the MIT Obsidian Skills collection as an external knowledge-workflow reference with an explicit Vault and file-write boundary, without importing Skills or changing the frozen catalog.
 - Add the MIT WorkBuddy Skin Studio as a high-risk external theme reference, explicitly warning about automation instructions and loopback CDP, without importing its Skill or code.
 - Add Microsoft, NVIDIA, AWS, Cloudflare, and Supabase first-party Agent Skills references from the authenticated read-only probe, with explicit credential, deployment, and billing review guidance.
+- Add dbt, MongoDB, Microsoft Waza, iFlytek SkillHub, and Hugging Face references from the authenticated probe, with explicit evaluation, registry, credential, and cloud-resource review guidance.
 - Add MIT GitHub Awesome Copilot, Matt Pocock Skills, and Wshobson Agents references from the read-only ecosystem probe, without importing Skills or changing the frozen catalog.
 - Add the MIT Vercel Skills CLI as a cross-host, prompt-only-capable external reference, with a clear boundary from WorkBuddy desktop ZIP imports.
 - Treat exhausted transport timeouts as visible link-check warnings while continuing to fail on explicit HTTP or non-timeout transport errors.

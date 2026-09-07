@@ -45,6 +45,11 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Apache-2.0 AWS Agent Toolkit for AWS workflows (review least-privilege account, region, write, and billing boundaries): https://github.com/aws/agent-toolkit-for-aws
 - Apache-2.0 Cloudflare-maintained platform Agent Skills (review account permissions and deployment effects): https://github.com/cloudflare/skills
 - MIT Supabase Agent Skills for database and platform workflows (review project, migration, and secret boundaries): https://github.com/supabase/agent-skills
+- Apache-2.0 dbt Agent Skills for analytics engineering and testing (review warehouse credentials, SQL, and writes): https://github.com/dbt-labs/dbt-agent-skills
+- Apache-2.0 official MongoDB Agent Skills (review OAuth, database targets, and writes): https://github.com/mongodb/agent-skills
+- MIT Microsoft Waza CLI for Agent Skill evaluation (review binaries, fixtures, and model/API cost): https://github.com/microsoft/waza
+- Apache-2.0 self-hosted iFlytek SkillHub registry (review Docker, auth, and package provenance): https://github.com/iflytek/skillhub
+- Apache-2.0 Hugging Face Agent Skills for Hub workflows (review tokens, permissions, artifacts, and compute cost): https://github.com/huggingface/skills
 - Community task-oriented guide: https://github.com/AlephAITech/WorkBuddyGuide
 - Trail of Bits security Skills (CC-BY-SA-4.0; inspect attribution and authorization): https://github.com/trailofbits/skills
 - NVIDIA SkillSpector security scanner (Apache-2.0; review aid, not a trust guarantee): https://github.com/NVIDIA/SkillSpector

@@ -81,6 +81,11 @@
 - [AWS Agent Toolkit](https://github.com/aws/agent-toolkit-for-aws)——AWS 维护的 Apache-2.0 许可 Agent Skill 与工具参考；接入 WorkBuddy 前使用最小权限凭据，并检查账号、区域、资源写入和计费边界。
 - [Cloudflare Skills](https://github.com/cloudflare/skills)——Cloudflare 维护的 Apache-2.0 许可 Agent Skill，覆盖平台工作流；适配前检查账号权限、部署目标和网络副作用。
 - [Supabase Agent Skills](https://github.com/supabase/agent-skills)——MIT 许可的 Supabase Agent Skill，覆盖数据库和平台工作流；使用前检查项目、数据库、迁移和 Secret 边界。
+- [dbt Agent Skills](https://github.com/dbt-labs/dbt-agent-skills)——dbt 维护的 Apache-2.0 许可工作流，覆盖分析工程、语义层、测试和平台运维；从 WorkBuddy 使用前检查数仓凭据、生成 SQL 和写入权限。
+- [MongoDB Agent Skills](https://github.com/mongodb/agent-skills)——Apache-2.0 许可的 MongoDB 官方工作流，覆盖查询、Schema 设计、优化和 Atlas Search；接入 WorkBuddy 前检查 OAuth Scope、数据库目标以及迁移/写入操作。
+- [Microsoft Waza](https://github.com/microsoft/waza)——MIT 许可的 Agent Skill 评测 CLI，可运行基准套件并比较模型；用作评测参考，运行前检查下载的二进制、测试夹具以及模型/API 成本。
+- [讯飞 SkillHub](https://github.com/iflytek/skillhub)——Apache-2.0 许可的自托管 Skill 注册中心，用于发布、发现和治理 Skill 包；作为 WorkBuddy 私有来源使用前检查 Docker 暴露、注册中心访问、认证和包来源。
+- [Hugging Face Skills](https://github.com/huggingface/skills)——Apache-2.0 许可的 Hub 工作流，覆盖数据集、模型、Spaces 和 Jobs；使用前检查 Token、仓库权限、下载产物和云计算成本。
 - [Trail of Bits Skills](https://github.com/trailofbits/skills)——CC-BY-SA-4.0 许可的安全研究 Skill，覆盖漏洞检测和审计工作流；适配前检查署名要求、脚本以及授权边界。
 - [NVIDIA SkillSpector](https://github.com/NVIDIA/SkillSpector)——Apache-2.0 许可的 Skill 审计工具，可检测提示注入、数据外泄、恶意模式和供应链风险；它只是审阅辅助，不代表包一定安全。
 - [Gentle AI](https://github.com/Gentleman-Programming/gentle-ai)——MIT 许可的跨 Agent 配置参考，覆盖记忆、规格驱动开发、精选 Skill、MCP 和有界审阅，支持 Claude Code、Cursor、OpenCode、Codex 和 Pi。
