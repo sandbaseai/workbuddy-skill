@@ -59,6 +59,40 @@ class RateLimitTests(unittest.TestCase):
             self.assertFalse(output.exists())
             self.assertFalse((Path(directory) / "stats.json").exists())
 
+    @patch("crawl_github_skills.request_json")
+    def test_dry_run_can_write_only_a_discovery_report(self, request_json):
+        request_json.return_value = ({
+            "total_count": 1,
+            "items": [{
+                "repository": {
+                    "full_name": "owner/repo",
+                    "html_url": "https://github.com/owner/repo",
+                    "fork": False,
+                },
+                "path": "skills/demo/SKILL.md",
+                "sha": "a" * 40,
+                "html_url": "https://github.com/owner/repo/blob/" + "a" * 40 + "/skills/demo/SKILL.md",
+            }],
+        }, {"X-RateLimit-Remaining": "1"})
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            catalog = root / "frozen.jsonl"
+            report = root / "reports" / "discovery.jsonl"
+            with patch(
+                "sys.argv",
+                [
+                    "crawl_github_skills.py",
+                    "--target", "1",
+                    "--dry-run",
+                    "--output", str(catalog),
+                    "--dry-run-output", str(report),
+                ],
+            ):
+                self.assertEqual(main(), 0)
+            self.assertFalse(catalog.exists())
+            self.assertEqual(len(report.read_text(encoding="utf-8").splitlines()), 1)
+            self.assertFalse((root / "stats.json").exists())
+
     def test_interrupted_scan_resumes_from_checkpoint(self):
         item = {
             "repository": {

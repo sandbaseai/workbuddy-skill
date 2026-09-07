@@ -14,6 +14,9 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("github/awesome-copilot", workflow)
         self.assertIn("aiworkskills/wechat-article-skills", workflow)
         self.assertIn("--output /tmp/upstream-skill-probe.jsonl", workflow)
+        self.assertIn("--dry-run-output /tmp/upstream-skill-probe-report.jsonl", workflow)
+        self.assertIn("actions/upload-artifact@v4", workflow)
+        self.assertIn("retention-days: 7", workflow)
         self.assertNotIn("--allow-frozen-catalog", workflow)
 
     def test_release_action_uses_node24_generation(self):

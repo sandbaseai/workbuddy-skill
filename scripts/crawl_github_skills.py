@@ -319,6 +319,11 @@ def main() -> int:
         action="store_true",
         help="Discover and count candidates without writing the output or stats files",
     )
+    parser.add_argument(
+        "--dry-run-output",
+        type=Path,
+        help="Optional JSONL discovery report path; only valid with --dry-run",
+    )
     parser.add_argument("--checkpoint-every", type=int, default=5)
     parser.add_argument(
         "--max-rate-wait",
@@ -346,6 +351,8 @@ def main() -> int:
         )
     if args.repository_only and not args.repository:
         parser.error("--repository-only requires at least one --repository")
+    if args.dry_run_output and not args.dry_run:
+        parser.error("--dry-run-output requires --dry-run")
     if is_frozen_catalog(args.output) and not args.allow_frozen_catalog:
         parser.error(
             "catalog/skills.jsonl is frozen; choose another --output or pass "
@@ -504,8 +511,11 @@ def main() -> int:
     if not args.dry_run:
         checkpoint_path.unlink(missing_ok=True)
     if args.dry_run:
+        if args.dry_run_output:
+            write_atomic(args.dry_run_output, rows)
         print(
-            f"dry-run: discovered {len(rows)} records; no output or stats files written",
+            f"dry-run: discovered {len(rows)} records; no catalog or stats files written"
+            + (f"; report written to {args.dry_run_output}" if args.dry_run_output else ""),
             file=sys.stderr,
         )
     # A repository-only run is complete once every requested repository has

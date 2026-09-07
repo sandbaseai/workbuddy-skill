@@ -100,7 +100,8 @@ returns success after its complete tree scan.
 The scheduled `Refresh skill catalog` workflow also runs a read-only probe over
 representative upstream Skill repositories. It reports newly discoverable
 paths without writing the frozen catalog, creating packages, or changing any
-published snapshot; use the local command above when you need to inspect a
+published snapshot. Its short-lived Actions artifact contains the discovered
+JSONL rows for follow-up; use the local command above when you need to inspect a
 candidate in detail.
 
 To restrict local results to packages that have a reviewed Release ZIP, use the

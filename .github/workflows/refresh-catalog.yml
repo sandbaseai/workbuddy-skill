@@ -61,4 +61,11 @@ jobs:
             --target 1000 \
             --max-requests 60 \
             --max-rate-wait 120 \
-            --output /tmp/upstream-skill-probe.jsonl
+            --output /tmp/upstream-skill-probe.jsonl \
+            --dry-run-output /tmp/upstream-skill-probe-report.jsonl
+      - name: Upload read-only discovery report
+        uses: actions/upload-artifact@v4
+        with:
+          name: upstream-skill-probe-${{ github.run_id }}
+          path: /tmp/upstream-skill-probe-report.jsonl
+          retention-days: 7
