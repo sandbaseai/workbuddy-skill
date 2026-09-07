@@ -74,6 +74,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Apache-2.0 Agent toolchain that exports actions and playbooks as Skills, MCP servers, HTTP services, or binaries (separate builder; inspect generated files): https://github.com/team4u/actiondock
 - Apache-2.0 Agent-ready web interoperability and provenance reference covering llms.txt, Agent Skills, MCP, and A2A (research reference): https://github.com/dkharlanau/agent-ready-web-profile
 - MIT unofficial reversible WorkBuddy UI-theme reference using local CDP injection (review debug-port exposure and rollback): https://github.com/itcastWsy/workbuddy-skin
+- MIT unofficial WorkBuddy Skin Studio using loopback CDP (high-risk reference; inspect scripts, debug port, and rollback): https://github.com/cdredfox/workbuddy-skin-studio
 - MIT cross-harness Skill and extension manager with preview and source tracking (separate tool): https://github.com/vanillagreencom/kendex
 - MIT zero-dependency local Skill usage and context-cost report (disable/prune actions require exact-target review): https://github.com/bborok1234/skillmon
 - CC0 WorkBuddy resource index: https://github.com/semlinker/awesome-workbuddy
