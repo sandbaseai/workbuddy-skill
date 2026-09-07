@@ -612,3 +612,4 @@ LLMQuant/awesome-trading-agents
 modelscope/Awesome-Vibe-Research
 helloianneo/awesome-claude-code-skills
 AgriciDaniel/claude-ads
+aaron-he-zhu/aaron-marketing-skills
