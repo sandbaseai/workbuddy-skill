@@ -215,3 +215,14 @@ Gostyan/docx-skill-4-cn-paper
 evalstate/fast-agent
 browser-act/skills
 outsourc-e/hermes-workspace
+microsoft/skills
+OpenLinkSoftware/ai-agent-skills
+alpacahq/alpaca-skills
+prompt-security/clawsec
+NVIDIA/skills
+snyk/agent-scan
+posit-dev/skills
+microsoft/skills-for-fabric
+ReScienceLab/opc-skills
+JackyST0/awesome-agent-skills
+samber/cc-skills-golang
