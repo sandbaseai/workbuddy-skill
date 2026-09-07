@@ -82,6 +82,11 @@
 - [Wshobson Agents](https://github.com/wshobson/agents)——MIT 许可的开发工作流 Agent 与 Skill 集合；使用前检查附带脚本、依赖和宿主专属配置。
 - [Vercel Skills CLI](https://github.com/vercel-labs/skills)——MIT 许可的跨宿主 CLI，可列出、预览和使用 Agent Skill，并支持只生成 Prompt；它面向兼容宿主，不等同于 WorkBuddy 桌面的 ZIP 导入器，因此仍需单独检查来源和安装范围。
 - [Microsoft Skills](https://github.com/microsoft/skills)——Microsoft 维护的 MIT 许可 Agent Skill，覆盖开发者和云工作流；适配 WorkBuddy 前检查目标订阅、租户、凭据和宿主假设。
+- [Microsoft Learn Agent Skills](https://github.com/MicrosoftDocs/Agent-Skills)——CC BY 4.0 许可、源自 Microsoft Learn 的 Microsoft 与 Azure 知识 Skill；适配时保留署名，并核对引用文档、服务版本、租户和订阅权限。
+- [Azure Skills](https://github.com/microsoft/azure-skills)——MIT 许可的 Microsoft Azure Agent 插件，包含 Skill 和 MCP 配置；接入 WorkBuddy 前检查租户、订阅、资源写入、身份和计费边界。
+- [Gemini Skills](https://github.com/google-gemini/gemini-skills)——Apache-2.0 许可的 Google Gemini API、SDK 和模型/Agent 工作流；使用前检查 API Key、模型访问、配额、数据保留和生成代码假设。
+- [Elastic Agent Skills](https://github.com/elastic/agent-skills)——Apache-2.0 许可的 Elastic 官方 Skill，覆盖搜索和可观测性工作流；适配前检查集群目标、API Key、索引权限和可能包含敏感信息的遥测数据。
+- [n8n Skills](https://github.com/n8n-io/skills)——Apache-2.0 许可的 n8n 自动化工作流 Skill；接入 WorkBuddy 前检查工作流凭证、Webhook 暴露、外部副作用和部署范围。
 - [NVIDIA Skills](https://github.com/NVIDIA/skills)——NVIDIA 维护的 Apache-2.0 许可 Skill，覆盖 AI 和 GPU 工作流；使用前检查本地工具链、模型下载、GPU 访问和云成本。
 - [AWS Agent Toolkit](https://github.com/aws/agent-toolkit-for-aws)——AWS 维护的 Apache-2.0 许可 Agent Skill 与工具参考；接入 WorkBuddy 前使用最小权限凭据，并检查账号、区域、资源写入和计费边界。
 - [Cloudflare Skills](https://github.com/cloudflare/skills)——Cloudflare 维护的 Apache-2.0 许可 Agent Skill，覆盖平台工作流；适配前检查账号权限、部署目标和网络副作用。

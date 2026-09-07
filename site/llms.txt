@@ -46,6 +46,11 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT Wshobson development workflow agents and Skills (review scripts, dependencies, and host configuration): https://github.com/wshobson/agents
 - MIT Vercel Skills CLI for listing, previewing, and prompt-only use across compatible hosts (not the WorkBuddy desktop ZIP importer): https://github.com/vercel-labs/skills
 - MIT Microsoft-maintained Agent Skills for developer and cloud workflows (review tenant, credentials, and host assumptions): https://github.com/microsoft/skills
+- CC BY 4.0 Microsoft Learn-derived Agent Skills (retain attribution; review docs, versions, tenant, and subscription): https://github.com/MicrosoftDocs/Agent-Skills
+- MIT Microsoft Azure Agent plugin with Skills and MCP configurations (review tenant, subscription, identity, writes, and billing): https://github.com/microsoft/azure-skills
+- Apache-2.0 Google Gemini API, SDK, and model/agent Skills (review keys, access, quota, retention, and code assumptions): https://github.com/google-gemini/gemini-skills
+- Apache-2.0 Elastic-maintained Agent Skills (review cluster, API keys, index permissions, and telemetry): https://github.com/elastic/agent-skills
+- Apache-2.0 n8n automation Skills (review credentials, webhooks, side effects, and deployment scope): https://github.com/n8n-io/skills
 - Apache-2.0 NVIDIA-maintained AI and GPU Agent Skills (review toolchains, model downloads, GPU access, and cost): https://github.com/NVIDIA/skills
 - Apache-2.0 AWS Agent Toolkit for AWS workflows (review least-privilege account, region, write, and billing boundaries): https://github.com/aws/agent-toolkit-for-aws
 - Apache-2.0 Cloudflare-maintained platform Agent Skills (review account permissions and deployment effects): https://github.com/cloudflare/skills
