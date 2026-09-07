@@ -16,13 +16,34 @@ from crawl_github_skills import (  # noqa: E402
     rate_limit_delay,
     repository_skill_rows,
     load_repository_file,
+    load_checkpoint,
     main,
     wait_for_rate_limit,
+    write_checkpoint,
     write_stats,
 )
 
 
 class RateLimitTests(unittest.TestCase):
+    def test_checkpoint_accepts_appended_repositories(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "checkpoint.json"
+            old_signature = {
+                "max_bytes": 100_000,
+                "output": str((Path(directory) / "preview.jsonl").resolve()),
+                "repository_only": True,
+                "repositories": ["owner/one", "owner/two"],
+                "start_bytes": 1,
+            }
+            write_checkpoint(path, old_signature, ["owner/two"], [])
+            new_signature = {**old_signature, "repositories": [
+                "owner/one", "owner/two", "owner/three"
+            ]}
+            self.assertEqual(
+                load_checkpoint(path, new_signature),
+                (["owner/two", "owner/three"], []),
+            )
+
     def test_repository_file_ignores_comments_and_blank_lines(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "sources.txt"

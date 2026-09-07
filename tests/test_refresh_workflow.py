@@ -19,6 +19,7 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("actions/cache/restore@v4", workflow)
         self.assertIn("actions/cache/save@v4", workflow)
         self.assertIn("--checkpoint /tmp/upstream-skill-probe.checkpoint.json", workflow)
+        self.assertIn("upstream-skill-probe-v1-${{ github.run_id }}", workflow)
         sources = (ROOT / "config/upstream-skill-sources.txt").read_text(encoding="utf-8")
         self.assertIn("github/awesome-copilot", sources)
         self.assertIn("googleworkspace/cli", sources)

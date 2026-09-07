@@ -280,16 +280,29 @@ def load_checkpoint(path: Path, signature: dict) -> tuple[list[str], list[tuple[
         state = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
         raise SystemExit(f"invalid crawl checkpoint {path}: {exc}") from exc
-    if state.get("version") != 1 or state.get("signature") != signature:
+    state_signature = state.get("signature", {})
+    comparable_keys = ("max_bytes", "output", "repository_only", "start_bytes")
+    if (
+        state.get("version") != 1
+        or any(state_signature.get(key) != signature.get(key) for key in comparable_keys)
+    ):
         print(f"Ignoring checkpoint with incompatible scan settings: {path}", file=sys.stderr)
         return None
     try:
         repositories = [str(item) for item in state["remaining_repositories"]]
+        previous_repositories = [str(item) for item in state_signature.get("repositories", [])]
         pending = [tuple(int(value) for value in shard) for shard in state["pending"]]
     except (KeyError, TypeError, ValueError) as exc:
         raise SystemExit(f"invalid crawl checkpoint {path}: missing scan state") from exc
     if any(len(shard) != 2 or shard[0] < 1 or shard[1] < shard[0] for shard in pending):
         raise SystemExit(f"invalid crawl checkpoint {path}: malformed search shard")
+    current_repositories = list(signature.get("repositories", []))
+    current_set = set(current_repositories)
+    repositories = [repository for repository in repositories if repository in current_set]
+    previous_set = set(previous_repositories)
+    repositories.extend(
+        repository for repository in current_repositories if repository not in previous_set
+    )
     return repositories, pending
 
 

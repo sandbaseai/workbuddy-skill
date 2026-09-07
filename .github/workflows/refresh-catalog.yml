@@ -62,9 +62,10 @@ jobs:
           path: |
             /tmp/upstream-skill-probe-report.jsonl
             /tmp/upstream-skill-probe.checkpoint.json
-          key: upstream-skill-probe-${{ hashFiles('config/upstream-skill-sources.txt') }}-${{ github.run_id }}
+          key: upstream-skill-probe-v1-${{ github.run_id }}
           restore-keys: |
-            upstream-skill-probe-${{ hashFiles('config/upstream-skill-sources.txt') }}-
+            upstream-skill-probe-v1-
+            upstream-skill-probe-
       - name: Scan declared public Skill repositories
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -130,7 +131,7 @@ jobs:
           path: |
             /tmp/upstream-skill-probe-report.jsonl
             /tmp/upstream-skill-probe.checkpoint.json
-          key: upstream-skill-probe-${{ hashFiles('config/upstream-skill-sources.txt') }}-${{ github.run_id }}
+          key: upstream-skill-probe-v1-${{ github.run_id }}
       - name: Add discovery summary
         run: |
           python3 - /tmp/upstream-skill-discovery-summary.json <<'PY' >> "$GITHUB_STEP_SUMMARY"
