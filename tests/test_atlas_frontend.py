@@ -118,6 +118,11 @@ class AtlasFrontendTests(unittest.TestCase):
         self.assertIn('retryLoad.addEventListener("click", loadCatalog)', self.app)
         self.assertIn('emptyReset.addEventListener("click", () => resetFilters.click())', self.app)
         self.assertIn("Showing ${shown.toLocaleString()} of ${filtered.length.toLocaleString()} results", self.app)
+
+    def test_search_input_is_debounced_for_large_catalog_filtering(self):
+        self.assertIn("let searchTimer = null;", self.app)
+        self.assertIn('clearTimeout(searchTimer);', self.app)
+        self.assertIn('searchTimer = setTimeout(() => search(), 120);', self.app)
         self.assertIn("显示 ${shown.toLocaleString()} / ${filtered.length.toLocaleString()} 个结果", self.app)
         self.assertIn("retryLoad.disabled = true", self.app)
         self.assertIn("retryLoad.disabled = false", self.app)

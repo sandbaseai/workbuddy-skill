@@ -35,6 +35,7 @@ let catalog = [];
 let packagesByDownload = new Map();
 let filtered = [];
 let shown = 0;
+let searchTimer = null;
 const PAGE_SIZE = 40;
 const CATALOG_LOAD_TIMEOUT_MS = 15000;
 const DEFAULT_CHECKSUM_URL = "https://github.com/sandbaseai/workbuddy-skill/releases/latest/download/SHA256SUMS";
@@ -327,7 +328,10 @@ function search({ historyMode = "replace" } = {}) {
   render();
 }
 
-input.addEventListener("input", search);
+input.addEventListener("input", () => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => search(), 120);
+});
 document.addEventListener("keydown", (event) => {
   const target = event.target;
   const isFormControl = target instanceof HTMLElement
