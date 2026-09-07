@@ -74,6 +74,7 @@
 - [GitHub Awesome Copilot](https://github.com/github/awesome-copilot)——GitHub 维护的 MIT 许可集合，包含 Agent、指令、Prompt 和 Skill；可作为跨 Agent 参考，适配 WorkBuddy 前检查每个条目的宿主假设和仓库权限。
 - [Matt Pocock's Skills](https://github.com/mattpocock/skills)——MIT 许可、面向 TypeScript 的 Agent Skill 集合，支持多种 Agent；复用前检查具体 Skill 路径、工具假设和命令执行行为。
 - [Wshobson Agents](https://github.com/wshobson/agents)——MIT 许可的开发工作流 Agent 与 Skill 集合；使用前检查附带脚本、依赖和宿主专属配置。
+- [Vercel Skills CLI](https://github.com/vercel-labs/skills)——MIT 许可的跨宿主 CLI，可列出、预览和使用 Agent Skill，并支持只生成 Prompt；它面向兼容宿主，不等同于 WorkBuddy 桌面的 ZIP 导入器，因此仍需单独检查来源和安装范围。
 - [Trail of Bits Skills](https://github.com/trailofbits/skills)——CC-BY-SA-4.0 许可的安全研究 Skill，覆盖漏洞检测和审计工作流；适配前检查署名要求、脚本以及授权边界。
 - [NVIDIA SkillSpector](https://github.com/NVIDIA/SkillSpector)——Apache-2.0 许可的 Skill 审计工具，可检测提示注入、数据外泄、恶意模式和供应链风险；它只是审阅辅助，不代表包一定安全。
 - [Gentle AI](https://github.com/Gentleman-Programming/gentle-ai)——MIT 许可的跨 Agent 配置参考，覆盖记忆、规格驱动开发、精选 Skill、MCP 和有界审阅，支持 Claude Code、Cursor、OpenCode、Codex 和 Pi。

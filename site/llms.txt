@@ -38,6 +38,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT GitHub-maintained Awesome Copilot collection of agents, instructions, prompts, and Skills (review host and repository permissions): https://github.com/github/awesome-copilot
 - MIT TypeScript-focused Agent Skills collection by Matt Pocock (review exact paths and command assumptions): https://github.com/mattpocock/skills
 - MIT Wshobson development workflow agents and Skills (review scripts, dependencies, and host configuration): https://github.com/wshobson/agents
+- MIT Vercel Skills CLI for listing, previewing, and prompt-only use across compatible hosts (not the WorkBuddy desktop ZIP importer): https://github.com/vercel-labs/skills
 - Community task-oriented guide: https://github.com/AlephAITech/WorkBuddyGuide
 - Trail of Bits security Skills (CC-BY-SA-4.0; inspect attribution and authorization): https://github.com/trailofbits/skills
 - NVIDIA SkillSpector security scanner (Apache-2.0; review aid, not a trust guarantee): https://github.com/NVIDIA/SkillSpector
