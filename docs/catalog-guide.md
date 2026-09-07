@@ -3,6 +3,17 @@
 The Atlas is a discovery index, not an approval list. Use this short checklist
 before importing any public Skill.
 
+## Choose the next step
+
+| Your goal | Next step |
+|---|---|
+| Install something now | Filter for **Reviewed package available**, then use the matching Release ZIP and checksum. |
+| Reuse a public source | Open the pinned source, verify its license and permissions, then follow the [adaptation guide](adapting-skills.md). |
+| Compare or research | Keep the result as a catalog reference; do not install it or treat its score as a safety decision. |
+
+If you are unsure, start with the third path and inspect the source before
+choosing an installation scope.
+
 ## 1. Start with the exact source
 
 Open the result's `source` link and confirm the repository, path, license, and
