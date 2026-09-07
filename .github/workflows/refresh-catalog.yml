@@ -104,6 +104,17 @@ jobs:
           status = json.loads(open("/tmp/upstream-skill-probe-status.json", encoding="utf-8").read())
           print("")
           print(f"Probe status: **{status['status']}** ({status['records']} records, {status['requests']} requests)")
+          manifest_count = sum(
+              1
+              for line in open("config/upstream-skill-sources.txt", encoding="utf-8")
+              if line.strip() and not line.lstrip().startswith("#")
+          )
+          import hashlib
+          manifest_sha = hashlib.sha256(
+              open("config/upstream-skill-sources.txt", "rb").read()
+          ).hexdigest()
+          print("")
+          print(f"Manifest snapshot: **{manifest_count} repositories**, SHA-256 `{manifest_sha}`")
           if status.get("error"):
               print(f"\n> The read-only probe paused after a partial result: `{status['error']}`")
           PY
