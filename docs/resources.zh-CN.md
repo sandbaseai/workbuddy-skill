@@ -62,6 +62,9 @@
 
 ## 学习与评测
 
+- [Superpowers](https://github.com/obra/superpowers)——MIT 许可的 Agent 软件开发方法论，提供可组合 Skill 和结构化工作流；可作为流程参考，适配 WorkBuddy 前仍需审阅具体 Skill 来源。
+- [Addy Osmani's Agent Skills](https://github.com/addyosmani/agent-skills)——MIT 许可、面向生产实践的 AI 编程 Agent 工程参考；复用前检查其宿主假设和脚本。
+- [Archify](https://github.com/tt-a1i/archify)——MIT 许可的架构与工作流图参考，可生成自包含、可验证的 HTML；用于项目时先检查浏览器和生成物边界。
 - [Trail of Bits Skills](https://github.com/trailofbits/skills)——CC-BY-SA-4.0 许可的安全研究 Skill，覆盖漏洞检测和审计工作流；适配前检查署名要求、脚本以及授权边界。
 - [NVIDIA SkillSpector](https://github.com/NVIDIA/SkillSpector)——Apache-2.0 许可的 Skill 审计工具，可检测提示注入、数据外泄、恶意模式和供应链风险；它只是审阅辅助，不代表包一定安全。
 - [Gentle AI](https://github.com/Gentleman-Programming/gentle-ai)——MIT 许可的跨 Agent 配置参考，覆盖记忆、规格驱动开发、精选 Skill、MCP 和有界审阅，支持 Claude Code、Cursor、OpenCode、Codex 和 Pi。

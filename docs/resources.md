@@ -62,6 +62,9 @@ Use this page to choose the right source before searching the catalog.
 
 ## Learning and evaluation
 
+- [Superpowers](https://github.com/obra/superpowers) — MIT-licensed agentic software-development methodology with composable Skills and a structured workflow; use it as a process reference and review the exact Skill source before adapting it for WorkBuddy.
+- [Addy Osmani's Agent Skills](https://github.com/addyosmani/agent-skills) — MIT-licensed production-oriented engineering references for AI coding agents; check the supported host assumptions and scripts before reuse.
+- [Archify](https://github.com/tt-a1i/archify) — MIT-licensed architecture and workflow-diagram reference that produces self-contained, verifiable HTML; review browser and generated-artifact boundaries before using it in a project.
 - [Trail of Bits Skills](https://github.com/trailofbits/skills) — CC-BY-SA-4.0 security-research Skills for vulnerability detection and audit workflows; inspect attribution, scripts, and authorization boundaries before adapting.
 - [NVIDIA SkillSpector](https://github.com/NVIDIA/SkillSpector) — Apache-2.0 scanner for prompt injection, data exfiltration, malicious patterns, and supply-chain risks in Agent Skills and MCP; use it as a review aid, not as proof that a package is safe.
 - [Gentle AI](https://github.com/Gentleman-Programming/gentle-ai) — MIT cross-agent configuration reference for memory, spec-driven development, curated Skills, MCP, and bounded review across Claude Code, Cursor, OpenCode, Codex, and Pi.
