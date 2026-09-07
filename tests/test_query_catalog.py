@@ -53,6 +53,7 @@ class QueryCatalogTests(unittest.TestCase):
         self.assertEqual(raised.exception.code, 0)
         help_text = output.getvalue()
         self.assertIn("research --high-signal --limit 10", help_text)
+        self.assertIn("research --installable --limit 10", help_text)
         self.assertIn("--package-status reviewed", help_text)
         self.assertIn("Inspect the pinned source", help_text)
 
@@ -234,6 +235,33 @@ class QueryCatalogTests(unittest.TestCase):
         self.assertIn("research-best", rendered)
         self.assertNotIn("research-low", rendered)
         self.assertNotIn("research-risk", rendered)
+
+    def test_cli_installable_shortcut_requires_reviewed_package(self):
+        records = [
+            {**row("research-reviewed", "reviewed", 95), "source_url": "https://example.test/reviewed"},
+            {**row("research-unreviewed", "unreviewed", 95), "source_url": "https://example.test/unreviewed"},
+        ]
+        records[0]["id"] = "github:owner/repo:skills/research-reviewed/SKILL.md"
+        records[1]["id"] = "github:owner/repo:skills/research-unreviewed/SKILL.md"
+        with TemporaryDirectory() as directory:
+            catalog = Path(directory) / "skills.jsonl"
+            curated = Path(directory) / "curated.json"
+            catalog.write_text("".join(json.dumps(record) + "\n" for record in records), encoding="utf-8")
+            curated.write_text(json.dumps([{"catalog_id": records[0]["id"], "download_url": "https://example.test/package.zip"}]), encoding="utf-8")
+            output = io.StringIO()
+            with redirect_stdout(output):
+                old_argv = sys.argv
+                try:
+                    sys.argv = [
+                        "query_catalog.py", "research", "--installable",
+                        "--catalog", str(catalog), "--curated", str(curated),
+                    ]
+                    main()
+                finally:
+                    sys.argv = old_argv
+        rendered = output.getvalue()
+        self.assertIn("research-reviewed", rendered)
+        self.assertNotIn("research-unreviewed", rendered)
 
     def test_cli_suggests_next_discovery_step_when_no_match(self):
         with TemporaryDirectory() as directory:

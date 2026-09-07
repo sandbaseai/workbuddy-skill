@@ -71,6 +71,17 @@ python3 scripts/query_catalog.py research --high-signal --limit 10
 least 80, one result per unique blob, and score ordering. It is a triage aid,
 not a trust or safety guarantee.
 
+When you need a package that can be downloaded from this repository, use the
+installable shortcut. It adds the reviewed-package filter to the same signal
+checks:
+
+```bash
+python3 scripts/query_catalog.py research --installable --limit 10
+```
+
+This is still only a shortlist; inspect the exact source, license, permissions,
+and side effects before importing a package.
+
 To use the same category vocabulary as Atlas, add `--category` (for example,
 `research`, `development`, or `security`). Chinese labels such as `研究` are
 accepted too. The filter uses name/path inference and honors curated package

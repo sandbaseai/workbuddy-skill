@@ -198,6 +198,7 @@ def main() -> int:
             """
             Examples:
               %(prog)s research --high-signal --limit 10
+              %(prog)s research --installable --limit 10
             %(prog)s --category research --package-status reviewed --sort score --limit 10
             %(prog)s --category 研究 --package-status reviewed --sort score --limit 10
             %(prog)s browser OCR --security no-static-flags --unique --json
@@ -251,6 +252,11 @@ def main() -> int:
         action="store_true",
         help="Use no-static-flags, primary-looking, score >= 80, unique, and score order",
     )
+    parser.add_argument(
+        "--installable",
+        action="store_true",
+        help="Shortcut for reviewed packages plus the high-signal filters",
+    )
     parser.add_argument("--unique", action="store_true", help="Return one path per unique blob SHA")
     parser.add_argument(
         "--sort",
@@ -262,14 +268,21 @@ def main() -> int:
     args = parser.parse_args()
     if not args.terms and args.category is None:
         parser.error("provide at least one search term or --category")
-    if args.high_signal:
+    if args.high_signal and args.installable:
+        parser.error("--high-signal and --installable are mutually exclusive")
+    if args.high_signal or args.installable:
         if args.security is not None or args.source_context is not None or args.min_score is not None:
-            parser.error("--high-signal cannot be combined with --security, --source-context, or --min-score")
+            preset = "--installable" if args.installable else "--high-signal"
+            parser.error(f"{preset} cannot be combined with --security, --source-context, or --min-score")
         args.security = "no-static-flags"
         args.source_context = "primary-looking"
         args.min_score = 80
         args.unique = True
         args.sort = "score"
+        if args.installable:
+            if args.package_status != "all":
+                parser.error("--installable cannot be combined with --package-status")
+            args.package_status = "reviewed"
     if args.limit < 1:
         parser.error("--limit must be positive")
     if args.min_score is not None and not 0 <= args.min_score <= 100:

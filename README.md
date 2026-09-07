@@ -62,6 +62,14 @@ permission boundary before installing.
 python3 scripts/query_catalog.py research --high-signal --limit 10
 ```
 
+如果只想找能直接下载的精选包，可用安装快捷筛选：
+
+```bash
+python3 scripts/query_catalog.py research --installable --limit 10
+```
+
+它会同时要求精选包、无已知静态标记、优先主来源、兼容分数至少 80，并按分数去重排序；这只是筛选，不替代对来源、许可证和权限的审阅。
+
 也可以按 Atlas 分类直接查找可安装精选包：
 
 ```bash

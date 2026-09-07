@@ -51,6 +51,15 @@ python3 scripts/query_catalog.py research --high-signal --limit 10
 `--high-signal` 等价于无静态标记、优先疑似主来源、兼容分数至少 80、按唯一
 blob 去重并按分数排序。它只是缩小候选范围的辅助条件，不代表可信或安全。
 
+如果只需要可以从本仓库下载的精选包，可使用安装快捷筛选；它会在同一组
+信号条件上再增加“有精选包”的条件：
+
+```bash
+python3 scripts/query_catalog.py research --installable --limit 10
+```
+
+这仍然只是候选列表；导入前请检查精确来源、许可证、权限和外部副作用。
+
 如果想使用与 Atlas 相同的分类词表，可以加上 `--category`（例如
 `research`、`development` 或 `security`）；中文用户也可以直接写 `研究`。
 它会使用目录名称/路径推导分类，并优先采用精选包元数据中的分类：
