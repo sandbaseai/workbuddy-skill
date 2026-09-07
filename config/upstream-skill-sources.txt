@@ -1272,3 +1272,15 @@ ParthJadhav/app-store-screenshots
 XBuilderLAB/cheat-on-content
 wbh604/UZI-Skill
 htdt/godogen
+ruvnet/RuView
+taishi-i/awesome-ChatGPT-repositories
+wesammustafa/Claude-Code-Everything-You-Need-to-Know
+rohitg00/awesome-claude-code-toolkit
+taishi-i/awesome-japanese-nlp-resources
+cclank/lanshu-awesome-ai-video-kit
+fleurytian/awesome-claude-skills
+JSONbored/awesome-claude
+Mizoreww/awesome-claude-code-config
+littleben/awesomeAgentskills
+makoMakoGo/fish-claude
+jaccen/Awesome-Gaussian-Skills
