@@ -32,7 +32,7 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("--summary-output /tmp/upstream-skill-discovery-summary.json", workflow)
         self.assertIn("GITHUB_STEP_SUMMARY", workflow)
         self.assertIn("/tmp/upstream-skill-discovery-summary.json", workflow)
-        self.assertIn("actions/upload-artifact@v4", workflow)
+        self.assertIn("actions/upload-artifact@v7", workflow)
         self.assertIn("retention-days: 7", workflow)
         self.assertNotIn("--allow-frozen-catalog", workflow)
 

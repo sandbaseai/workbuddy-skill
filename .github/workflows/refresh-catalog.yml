@@ -99,7 +99,7 @@ jobs:
               print(f"| {label} | {summary.get(key, 0)} |")
           PY
       - name: Upload read-only discovery report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: upstream-skill-probe-${{ github.run_id }}
           path: |
