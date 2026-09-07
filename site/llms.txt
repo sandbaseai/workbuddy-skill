@@ -32,9 +32,14 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT visual explainer reference for plans, diffs, data tables, and architecture reviews (external reference): https://github.com/nicobailon/visual-explainer
 - MIT scientific Agent Skills collection with documented tests (review APIs, data, and claims separately): https://github.com/K-Dense-AI/scientific-agent-skills
 - MIT macOS computer-use Skill with evidence capture (review Accessibility permissions, target apps, screenshots, and every write): https://github.com/alchaincyf/huashu-mac-use
+- MIT persistent task-planning Skill for WorkBuddy (review checkpoints, local state, and automated follow-up): https://github.com/hao1100228-ctrl/progress-target-workbuddy
 - MIT security field guide distilled from Omarchy marketplace reviews (review the exact target platform; not a security guarantee): https://github.com/wbso-ai/omarchy-plugin-security-skill
 - MIT Blender workflow with verification gates and native-geometry examples (review version, scripts, assets, cost, and writes): https://github.com/jangtrinh/design-os-3d-blender
 - MIT evidence-based game sensitivity and gameplay review Skill (review game assumptions, capture permissions, logs, and config patches): https://github.com/DenisSergeevitch/game-sensitivity-coach
+- MIT local knowledge-asset health checker (keep sensitive files local; reports are not model or compliance guarantees): https://github.com/s2dongman/knowledge-asset-health-check
+- MIT Chinese technical-writing and interview-content workflow (verify claims, citations, attribution, and publishing rules): https://github.com/CodeGanHaoZ/CodeRin-skill
+- MIT Chinese content pipeline for topics, writing, media, formatting, and distribution (review credentials and publishing side effects): https://github.com/xiaohuAI319/gzh-daily-pipeline
+- MIT Chinese interview-question collection and study workflow (review scraping, privacy, copyright, freshness, and output paths): https://github.com/Jay-118/mianjing-skills
 - MIT official Lark/Feishu CLI with documented Agent Skills (review app scopes and outbound data): https://github.com/larksuite/cli
 - Apache-2.0 official Google Agent Skills for cloud, Gemini, data, and developer workflows (review project, API, and billing permissions): https://github.com/google/skills
 - MIT .NET and C# workflows for coding agents (review SDK versions, generated files, commands, and write scope): https://github.com/dotnet/skills

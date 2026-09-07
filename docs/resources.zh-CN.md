@@ -66,9 +66,14 @@
 - [Addy Osmani's Agent Skills](https://github.com/addyosmani/agent-skills)——MIT 许可、面向生产实践的 AI 编程 Agent 工程参考；复用前检查其宿主假设和脚本。
 - [Archify](https://github.com/tt-a1i/archify)——MIT 许可的架构与工作流图参考，可生成自包含、可验证的 HTML；用于项目时先检查浏览器和生成物边界。
 - [huashu-mac-use](https://github.com/alchaincyf/huashu-mac-use)——MIT 许可的 macOS 电脑操作 Skill，支持取证记录和可逆交互；接入 WorkBuddy 前检查辅助功能权限、目标应用、截图以及每一项写入动作。
+- [Progress Target WorkBuddy](https://github.com/hao1100228-ctrl/progress-target-workbuddy)——MIT 许可的 WorkBuddy 持久任务计划 Skill；可将节点、质量门和交付物门作为计划辅助，但启用前要检查本地状态文件和自动跟进行为。
 - [Omarchy Plugin Security Skill](https://github.com/wbso-ai/omarchy-plugin-security-skill)——MIT 许可的插件安全指南，源自市场审核案例；可作为审查辅助，但仍需针对实际平台和仓库验证，不能把指南当作安全保证。
 - [Design OS 3D Blender](https://github.com/jangtrinh/design-os-3d-blender)——MIT 许可的 Blender 工作流，包含验证门禁和原生几何示例；适配前检查 Blender 版本、本地素材、脚本、渲染成本和文件写入范围。
 - [Game Sensitivity Coach](https://github.com/DenisSergeevitch/game-sensitivity-coach)——MIT 许可的基于证据的游戏分析 Skill；使用前检查游戏专属假设、采集权限、输入日志和任何配置修改。
+- [Knowledge Asset Health Check](https://github.com/s2dongman/knowledge-asset-health-check)——MIT 许可的本地知识资产体检工具；使用前检查读取的文件范围，敏感材料应保持本地，并核实报告不能替代模型或合规保证。
+- [CodeRin Skill](https://github.com/CodeGanHaoZ/CodeRin-skill)——MIT 许可的中文技术写作和面试内容工作流；生成的事实和文风都应作为编辑产物，发布前核验引用、署名和平台规则。
+- [GZH Daily Pipeline](https://github.com/xiaohuAI319/gzh-daily-pipeline)——MIT 许可的中文内容流水线，覆盖选题、写作、配图、排版和分发；接入前检查平台凭据、生成媒体、定时动作和每个发布副作用。
+- [Mianjing Skills](https://github.com/Jay-118/mianjing-skills)——MIT 许可的中文面试题采集与备考工作流；使用前检查抓取来源、个人数据、版权、时效和本地输出路径。
 - [Visual Explainer](https://github.com/nicobailon/visual-explainer)——MIT 许可的可视化解释参考，可将计划、差异、数据表和架构评审整理成自包含 HTML；适配 WorkBuddy 前检查生成素材以及浏览器/运行时假设。
 - [Scientific Agent Skills](https://github.com/K-Dense-AI/scientific-agent-skills)——MIT 许可的科研工作流集合，提供带测试的 160+ 个领域 Skill；使用前应分别审阅数据库访问、API Key、敏感科研数据和科学结论边界。
 - [Lark CLI](https://github.com/larksuite/cli)——MIT 许可的飞书官方 CLI，提供文档化的 Agent Skill、结构化命令和系统钥匙串认证；接入 WorkBuddy 前检查应用权限范围和外发数据边界。

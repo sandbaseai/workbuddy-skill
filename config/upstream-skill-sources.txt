@@ -7,6 +7,7 @@ affaan-m/ECC
 alchaincyf/nuwa-skill
 alchaincyf/huashu-mac-use
 Hisn00w/ASu-skills
+hao1100228-ctrl/progress-target-workbuddy
 aiworkskills/wechat-article-skills
 anthropics/skills
 agentskills/agentskills
@@ -23,6 +24,10 @@ K-Dense-AI/scientific-agent-skills
 wbso-ai/omarchy-plugin-security-skill
 jangtrinh/design-os-3d-blender
 DenisSergeevitch/game-sensitivity-coach
+s2dongman/knowledge-asset-health-check
+CodeGanHaoZ/CodeRin-skill
+xiaohuAI319/gzh-daily-pipeline
+Jay-118/mianjing-skills
 phuryn/pm-skills
 JimLiu/baoyu-skills
 trailofbits/skills
