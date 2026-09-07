@@ -428,6 +428,11 @@ def main() -> int:
     def checkpoint() -> None:
         if not args.dry_run:
             write_atomic(args.output, rows)
+        elif args.dry_run_output:
+            # Keep read-only probes resumable at the artifact level too. A
+            # runner timeout or cancellation should not discard repositories
+            # completed before the interruption.
+            write_atomic(args.dry_run_output, rows)
 
     def persist_state() -> None:
         if not args.dry_run:
@@ -436,6 +441,8 @@ def main() -> int:
     def persist_stats() -> None:
         if not args.dry_run:
             write_stats(args.output, rows, requests, capped_queries)
+        elif args.status_output:
+            write_status(args.status_output, "partial", len(rows), requests)
 
     requests = 0
     capped_queries = 0
