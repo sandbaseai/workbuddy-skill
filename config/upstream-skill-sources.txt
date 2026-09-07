@@ -385,3 +385,11 @@ m4nueldeleon/oficina-marketing-skills
 Yuru778/multi-session-protocol
 frty2-ai/wawm-skill
 M1Vj/vsuee-skill
+minsooparkk/budongsan-skills
+123342wra/document-forge
+coldevotion/vibecheck
+goolamabbas/portable-llm-council
+miaqu766520-a11y/ai-line-skills
+sendsoon/paper-reader-skill
+bao-776/personal-knowledge-system-skills
+MichaelYWNA/Easy-Paper

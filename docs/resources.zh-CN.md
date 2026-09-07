@@ -122,6 +122,14 @@
 - [Multi-session Protocol](https://github.com/Yuru778/multi-session-protocol)——MIT 许可的多 Agent 会话协作 Skill，区分官方跨会话消息与文件邮箱；启用前检查共享目录、并发写入、敏感内容和会话生命周期。
 - [WAWM Skill](https://github.com/frty2-ai/wawm-skill)——MIT 许可的 WhatsApp 自动化 Skill；它可能操作真实号码，使用前必须确认账号、收件人、消息内容、频率和逐条发送权限。
 - [VSUEE Skill](https://github.com/M1Vj/vsuee-skill)——MIT 许可的教育平台自动化 Skill；连接真实课程或学生数据前检查账号权限、个人信息、写入范围和平台规则。
+- [Budongsan Skills](https://github.com/minsooparkk/budongsan-skills)——MIT 许可的 58 个不动产税费、贷款、估值和交易计算 Skill；结果受地区与政策时效影响，不能替代专业税务、法律或投资意见。
+- [Document Forge](https://github.com/123342wra/document-forge)——MIT 许可的 DOCX、PDF 和 PPTX 文档生成 Skill，支持结构化内容、可编辑输出和 LibreOffice 预览；使用前检查模板、字体、转换器和输出目录。
+- [Vibecheck](https://github.com/coldevotion/vibecheck)——MIT 许可的 7 个安全与质量审计 Skill，覆盖 Agent、API、应用安全、密钥、技术栈、UX 和 Web；审计结果仍需结合实际环境复核。
+- [Portable LLM Council](https://github.com/goolamabbas/portable-llm-council)——MIT 许可的多模型决策评审 Skill，使用多视角、盲评和综合建议；不要将模型投票当作事实或专业审批。
+- [AI Line Skills](https://github.com/miaqu766520-a11y/ai-line-skills)——MIT 许可的 18 个中文自媒体生产 Skill，覆盖选题、脚本、分镜、配音、发布和复盘；发布前检查素材版权、平台规则、凭据和外发动作。
+- [Paper Reader Skill](https://github.com/sendsoon/paper-reader-skill)——MIT 许可的论文阅读 Skill；使用时核验论文版本、引用上下文、抽取准确性和生成结论的证据边界。
+- [Personal Knowledge System Skills](https://github.com/bao-776/personal-knowledge-system-skills)——MIT 许可的 Markdown/Obsidian 个人知识管理 Skill 集合；启用前确认笔记目录、同步范围、隐私内容和写入策略。
+- [Easy-Paper](https://github.com/MichaelYWNA/Easy-Paper)——MIT 许可的证据驱动 LaTeX 论文逐段修订 Skill；使用时保留原文备份，区分语言编辑、事实变更和引用修改。
 - [.NET Skills](https://github.com/dotnet/skills)——MIT 许可的 Microsoft .NET 与 C# 编程 Agent 工作流；适配到 WorkBuddy 前检查 SDK 版本、生成文件、Shell 命令和仓库写入范围。
 - [Adobe Skills](https://github.com/adobe/skills)——Apache-2.0 许可的 Adobe 维护 Agent Skill；复用前使用精确来源并检查创意素材、服务凭据、账号权限和发布影响。
 - [Tons of Skills Marketplace](https://github.com/jeremylongshore/tons-of-skills-marketplace)——MIT 许可的跨模型 Skill 市场，提供规范层、适配器和包工具；用于发现时要逐个核验适配器的来源、运行时和权限。

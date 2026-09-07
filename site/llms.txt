@@ -86,6 +86,14 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT multi-agent session-coordination Skill distinguishing messages from a shared file mailbox (review shared directories and concurrent writes): https://github.com/Yuru778/multi-session-protocol
 - MIT WhatsApp-automation Skill that may operate a real number (confirm recipient, message, rate, and per-send authorization): https://github.com/frty2-ai/wawm-skill
 - MIT education-platform automation Skill (review account permissions, personal data, and write scope): https://github.com/M1Vj/vsuee-skill
+- MIT collection of 58 real-estate tax, loan, valuation, and transaction calculator Skills (results depend on jurisdiction and policy freshness): https://github.com/minsooparkk/budongsan-skills
+- MIT DOCX, PDF, and PPTX generation Skill with editable output and LibreOffice previews (review templates, converters, and output paths): https://github.com/123342wra/document-forge
+- MIT seven security and quality audit Skills for agents, APIs, secrets, stacks, UX, and web (corroborate results against the real environment): https://github.com/coldevotion/vibecheck
+- MIT multi-model decision-review Skill using perspectives, blind review, and synthesis (model votes are not facts or approval): https://github.com/goolamabbas/portable-llm-council
+- MIT collection of 18 Chinese creator-production Skills for topics, scripts, storyboards, voice, publishing, and retrospectives: https://github.com/miaqu766520-a11y/ai-line-skills
+- MIT paper-reading Skill (verify paper version, citations, extraction accuracy, and evidence boundaries): https://github.com/sendsoon/paper-reader-skill
+- MIT Markdown/Obsidian personal-knowledge Skills (confirm note directories, sync scope, privacy, and writes): https://github.com/bao-776/personal-knowledge-system-skills
+- MIT evidence-guided paragraph-level LaTeX paper-revision Skill (preserve backups and distinguish factual from language edits): https://github.com/MichaelYWNA/Easy-Paper
 - MIT .NET and C# workflows for coding agents (review SDK versions, generated files, commands, and write scope): https://github.com/dotnet/skills
 - Apache-2.0 Adobe-maintained Agent Skills (review creative assets, credentials, account permissions, and publishing effects): https://github.com/adobe/skills
 - MIT model-agnostic Tons of Skills Marketplace with canonical layer and adapters (verify provenance, runtime, and permissions): https://github.com/jeremylongshore/tons-of-skills-marketplace
