@@ -652,3 +652,7 @@ moonrunnerkc/skillcheck
 erichare/skillroute
 open-legal-products/mike-workflows
 SpaceZephyr/build-your-harness
+xiaolai/cc-suite
+jordanconway/package-manager-hardening
+sfrangulov/claude-code-handbook-ru
+LeeYudok/agents-scaffold
