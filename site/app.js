@@ -50,6 +50,23 @@ const CATEGORY_LABELS_ZH = {
   security: "安全",
   other: "其他",
 };
+const SEARCH_LABELS = {
+  compatibility: {
+    "workbuddy-ready": "WorkBuddy ready WorkBuddy 就绪 可直接使用",
+    adaptable: "adaptable 可适配",
+    "needs-review": "needs review 需审阅",
+    unreviewed: "unreviewed 未审阅",
+  },
+  security: {
+    "no-static-flags": "no static flags 无静态风险 无静态标记",
+    flagged: "flagged 静态风险 需安全审阅",
+    unscanned: "unscanned 未扫描",
+  },
+  source: {
+    "primary-looking": "primary-looking 主要来源 主来源",
+    "review-source": "review source 来源待审 分叉 镜像 休眠",
+  },
+};
 let checksumUrl = DEFAULT_CHECKSUM_URL;
 const FILTERS = {
   category: new Set([...category.options].map((option) => option.value)),
@@ -260,8 +277,12 @@ function search({ historyMode = "replace" } = {}) {
       skill.g,
       CATEGORY_LABELS_ZH[skill.g],
       skill.w,
+      SEARCH_LABELS.compatibility[skill.w],
       skill.k,
+      SEARCH_LABELS.security[skill.k],
       skill.o,
+      SEARCH_LABELS.source[skill.o],
+      skill.a ? (isChinese ? "精选包 可安装" : "reviewed package installable") : "",
       ...(skill.x || []),
     ].join(" ").toLocaleLowerCase();
     const textMatch = terms.every((term) => searchable.includes(term));
