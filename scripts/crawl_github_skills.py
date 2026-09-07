@@ -339,6 +339,11 @@ def main() -> int:
         help="Discover and count candidates without writing the output or stats files",
     )
     parser.add_argument(
+        "--allow-partial",
+        action="store_true",
+        help="Return partial dry-run results when an upstream request pauses the scan",
+    )
+    parser.add_argument(
         "--dry-run-output",
         type=Path,
         help="Optional JSONL discovery report path; only valid with --dry-run",
@@ -530,6 +535,14 @@ def main() -> int:
         checkpoint()
         persist_stats()
         print(f"crawl paused after {len(rows)} records: {exc}", file=sys.stderr)
+        if args.allow_partial and args.dry_run:
+            if args.dry_run_output:
+                write_atomic(args.dry_run_output, rows)
+            print(
+                f"partial dry-run: preserved {len(rows)} discovered records",
+                file=sys.stderr,
+            )
+            return 0
         return 2
 
     checkpoint()

@@ -57,6 +57,7 @@ jobs:
             --dry-run \
             --repository-file config/upstream-skill-sources.txt \
             --repository-only \
+            --allow-partial \
             --target 50000 \
             --max-requests 1000 \
             --max-rate-wait 120 \

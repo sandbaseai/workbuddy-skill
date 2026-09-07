@@ -7,6 +7,7 @@ import tempfile
 import time
 import unittest
 from unittest.mock import patch
+from urllib.error import HTTPError
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
@@ -169,6 +170,31 @@ class RateLimitTests(unittest.TestCase):
                 self.assertEqual(main(), 0)
         repository_skill_rows.assert_called_once_with("owner/repo", "")
         request_json.assert_not_called()
+
+    @patch("crawl_github_skills.repository_skill_rows", side_effect=HTTPError(
+        "https://api.github.com/repos/owner/repo", 403, "rate limited", {}, None
+    ))
+    def test_allow_partial_writes_dry_run_report_after_pause(self, repository_skill_rows):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            output = root / "preview.jsonl"
+            report = root / "report.jsonl"
+            with patch(
+                "sys.argv",
+                [
+                    "crawl_github_skills.py",
+                    "--target", "100",
+                    "--dry-run",
+                    "--allow-partial",
+                    "--repository", "owner/repo",
+                    "--repository-only",
+                    "--output", str(output),
+                    "--dry-run-output", str(report),
+                ],
+            ):
+                self.assertEqual(main(), 0)
+            self.assertTrue(report.exists())
+            self.assertEqual(report.read_text(encoding="utf-8"), "")
 
     @patch("crawl_github_skills.time.time", return_value=1_000)
     def test_delay_uses_largest_server_boundary(self, _time):
