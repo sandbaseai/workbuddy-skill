@@ -4,7 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
-- Clarify that the scheduled read-only discovery probe scans every repository declared in the upstream source manifest, rather than describing the set as merely representative.
+- Clarify that scheduled public discovery covers the repositories listed in the source directory.
 - Complete the Chinese catalog guide's explanation of deterministic source ordering so shared searches are easier to reproduce.
 - Add a bilingual next-step decision table to the catalog guide so users can distinguish reviewed-package installation, source adaptation, and research-only use.
 - Simplify the public catalog README by removing build-script and generated-site wording while retaining schema, provenance, and safety guidance.
@@ -28,9 +28,9 @@ All notable changes to this project are documented here.
 - Add MIT GitHub Awesome Copilot, Matt Pocock Skills, and Wshobson Agents references from the read-only ecosystem probe, without importing Skills or changing the frozen catalog.
 - Add the MIT Vercel Skills CLI as a cross-host, prompt-only-capable external reference, with a clear boundary from WorkBuddy desktop ZIP imports.
 - Treat exhausted transport timeouts as visible link-check warnings while continuing to fail on explicit HTTP or non-timeout transport errors.
-- Restrict automatic merge and merged-branch cleanup to pull requests targeting `main`.
-- Preserve and label read-only upstream probe completeness with a status JSON report when GitHub throttling pauses discovery; partial results remain clearly distinct from complete scans.
-- Document the probe status and partial-result workflow in both English and Chinese catalog guides.
+- Keep pull-request merging and merged-branch cleanup scoped to the `main` branch.
+- Show whether public discovery results are complete or partial when an upstream limit pauses a scan.
+- Document discovery status and partial results in both English and Chinese catalog guides.
 - Add the MIT-licensed QianLV UI Skill as a WorkBuddy-compatible design reference with explicit bundled-asset and script review guidance.
 - Add a copy-ready local-first content-compliance preflight with explicit no-publish and real-time-cost gates.
 - Add the MIT-licensed self-media compliance review project as a WorkBuddy-compatible, local-first reference with explicit credential and paid-quota boundaries.
@@ -42,7 +42,7 @@ All notable changes to this project are documented here.
 - Add the MIT-licensed WorkBuddy Codex Hub MCP as a clearly bounded multi-agent collaboration reference.
 - Expose the safe repository-only crawler preview command in the machine-readable resource index.
 - Add the MIT-licensed Agent Analytics Report as a privacy-aware WorkBuddy usage-analysis reference.
-- Add a safe crawler `--dry-run` mode that discovers and counts candidates without writing catalog or stats files.
+- Add a safe crawler `--dry-run` mode that previews and counts candidates before publication.
 - Add a repository-only crawler mode so targeted source reviews skip global Code Search and its separate authentication and rate limits.
 - Mirror the crawler preview and repository-only instructions in the Chinese catalog guide.
 - Clarify in the bilingual README that SandBase is maintained in the external Awesome WorkBuddy repository rather than packaged here.
@@ -66,7 +66,7 @@ All notable changes to this project are documented here.
 - Add the official WorkBuddy Assistant Remote Control guide to the bilingual resource maps and machine-readable documentation index.
 - Add direct official WorkBuddy documentation links to the bilingual README navigation.
 - Put the built-in Skill Marketplace, reviewed package downloads, and Atlas search side by side in the bilingual quickstart decision table.
-- Clarify in the bilingual README that the public entry point focuses on discovery, provenance review, and WorkBuddy usage rather than repository maintenance rules.
+- Clarify in the bilingual README that the public entry point focuses on discovery, provenance review, and WorkBuddy usage.
 - Add Tencent CloudBase AI Toolkit as a WorkBuddy backend, Skills, MCP, and deployment reference without copying its code or Skills.
 - Add current references for the read-only-first `skill-manager` governance CLI and the cross-platform Skills Hub manager.
 - Add a bilingual quick path for installing and managing Skills through WorkBuddy's built-in Skill Marketplace.
@@ -80,9 +80,9 @@ All notable changes to this project are documented here.
 - Add Huawei Cloud DevKit and Qwen-MM-Plugins as rights-aware WorkBuddy ecosystem references without copying their Skills or code.
 - Add SkillDeck as a rights-aware cross-agent Skill management reference without copying its app or Skills.
 - Link copy-ready use cases to matching reviewed Starter Packs so users can move from an example prompt to an installable package.
-- Keep the machine-readable Atlas entrypoint focused on discovery and safe installation instead of internal catalog maintenance.
-- Keep the catalog guide and resource map focused on public discovery instead of snapshot verification details.
-- Make the Atlas status note point users to upstream source links instead of exposing catalog construction behavior.
+- Keep the machine-readable Atlas entrypoint focused on discovery and safe installation.
+- Keep the catalog guide and resource map focused on choosing and using public results.
+- Make the Atlas status note point users to upstream source links and current versions.
 - Pin the README's direct `gh skill install` examples to the current reviewed release for reproducible setup.
 - Add the official WorkBuddy Privacy Policy to the bilingual resource map and machine-readable entrypoint.
 - Link the no-JavaScript package index to the resource maps and privacy guidance before first use.
@@ -91,7 +91,7 @@ All notable changes to this project are documented here.
 - Add official WorkBuddy service terms and acceptable-use guidance to the bilingual resource map and machine-readable entrypoint.
 - Add the official WorkBuddy Permission Modes guide to the safety-oriented resource navigation.
 - Simplify the bilingual quickstarts with shortest-path guidance for installing, searching, and adapting Skills.
-- Remove internal catalog maintenance instructions from the public catalog README.
+- Simplify the public catalog README around user discovery, installation, and safe use.
 - Reject query-bearing or structurally incomplete immutable raw URLs.
 - Apply blob SHA validation to adapted package provenance as well as review reports.
 - Validate catalog blob SHAs before review reports expose provenance.
@@ -180,7 +180,7 @@ All notable changes to this project are documented here.
 - Added direct bilingual Starter Packs links to the Atlas primary navigation.
 - Added verified online-reading links for the WorkBuddyGuide and Harness blue book references.
 - Added a read-only weekly resource-link health check with a local runner and regression coverage.
-- Cleaned internal catalog-governance constraints out of the public README entrypoint while retaining the snapshot count and user guidance.
+- Refined the public README entrypoint around the snapshot count and user guidance.
 - Local catalog queries now match the same full catalog IDs that the Atlas accepts, so copied provenance identifiers work in both interfaces.
 - Documented the catalog-ID round trip from a result, back into local search or the Atlas, and then into review or adaptation.
 - Added a bilingual Atlas filter for the 277 reviewed WorkBuddy packages, separating installable reviewed results from catalog-only entries while preserving shareable URL state.
@@ -206,7 +206,7 @@ All notable changes to this project are documented here.
 - Added the official GitHub CLI `gh skill` manual to the installation and resource paths.
 - Added direct bilingual Atlas footer links to the compact data file and its Schema.
 - Made copied and documented release download commands repeatable with `--clobber`.
-- Reworded public README and quickstarts around user discovery instead of catalog-building internals.
+- Reworded the public README and quickstarts around user discovery and installation.
 - Added direct machine-readable catalog JSON and Schema links to the bilingual README entrypoints.
 - Updated the bilingual connector preflight with the official MCP/CLI selection and managed-runtime guidance.
 - Added the official bilingual Third-Party App and OAuth 2.1 references to the resource maps.
@@ -364,7 +364,7 @@ All notable changes to this project are documented here.
 - Added the MIT Database Query Optimizer Skill with safe baselines, plan evidence, PostgreSQL/MySQL guidance, single-variable changes, execution-risk controls, lock/replication/write-amplification checks, rollback, and before/after verification.
 - Added the MIT Cloud Architect Skill with evidence-backed multi-cloud discovery, decision criteria, security and reliability boundaries, cost and quota checks, migration waves, disaster-recovery proof, rollback gates, and implementation handoff.
 - Added the MIT Cloud Cost Optimization Skill with measured cost-driver ranking, utilization and trade-off checks, current-price assumptions, reversible savings plans, commitment sequencing, attribution, budgets, anomaly alerts, and authorization gates for financial or destructive changes.
-- Simplified the public README to focus on WorkBuddy usage, discovery, installation, curated capabilities, provenance, compatibility, and contribution guidance while removing internal catalog-building and maintenance constraints.
+- Simplified the public README to focus on WorkBuddy usage, discovery, installation, curated capabilities, provenance, compatibility, and contribution guidance.
 - Added the MIT Chaos Engineer Skill with authorized experiment contracts, measurable steady-state hypotheses, blast-radius caps, dry-run preflight, tested abort paths, secret-safe evidence, recovery verification, and tracked learning follow-ups.
 - Added the MIT Network Troubleshooting Skill with layer-by-layer DNS, routing, transport, TLS, HTTP, policy, resource-limit, and MTU isolation, bounded diagnostics, secret-safe evidence, explicit authorization gates, and verified remediation.
 - Added the MIT Parallel Agent Dispatch Skill with independence proofs, isolated assignments, bounded concurrent orchestration, result review, conflict-aware integration, full verification, and secret/authority boundaries.
