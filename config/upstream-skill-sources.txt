@@ -466,3 +466,6 @@ emilkowalski/skills
 MiniMax-AI/skills
 browserbase/skills
 Dimillian/Skills
+topoteretes/cognee
+JimLiu/baoyu-design
+brycewang-stanford/Auto-Empirical-Research-Skills
