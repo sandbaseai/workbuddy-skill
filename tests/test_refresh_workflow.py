@@ -9,6 +9,9 @@ class RefreshWorkflowTests(unittest.TestCase):
     def test_refresh_workflow_probes_upstream_sources_without_publishing(self):
         workflow = (ROOT / ".github/workflows/refresh-catalog.yml").read_text(encoding="utf-8")
         self.assertIn("upstream-discovery-probe:", workflow)
+        self.assertIn("concurrency:", workflow)
+        self.assertIn("group: refresh-skill-catalog", workflow)
+        self.assertIn("cancel-in-progress: false", workflow)
         self.assertIn("--dry-run", workflow)
         self.assertIn("--repository-only", workflow)
         self.assertIn("--repository-file config/upstream-skill-sources.txt", workflow)
