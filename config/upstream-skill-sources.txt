@@ -533,3 +533,9 @@ am-will/codex-skills
 cobusgreyling/agent-skills
 heyimcarlos/agent-skills
 skill-mill/agent-skill-porter
+jkeskikangas/skills
+indykite/skills
+nathanonn/agent-skills
+valtterimelkko/agent-workflow-skills
+mikekelly/managing-skills
+Nikoxkx/Agent-Skills
