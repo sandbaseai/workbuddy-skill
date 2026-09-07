@@ -110,6 +110,12 @@
 - [Scientific Agent Skills](https://github.com/wupeng1998/scientific-agent-skills)——MIT 许可的大型科研领域 Skill 集合，覆盖生物信息、化学、统计、文献、PDF、图表和实验工具；逐项审阅数据库、API Key、敏感数据和科学结论边界。
 - [CalculatorX Agent Skill](https://github.com/CalculatorX-AI/calculatorx-agent-skill)——MIT 许可的便携计算 Skill；官方契约优先使用 MCP 或 REST，接入 WorkBuddy 前检查外部服务、输入隐私和计费边界。
 - [Investment Research Workbench](https://github.com/EastsCloud/investment-agent-skill)——MIT 许可的投资研究工作台 Skill；仅作研究辅助，使用真实资金或敏感账户前必须核对数据时效、来源、风险和任何交易副作用。
+- [Context Architect](https://github.com/hanifalkauni/context-architect)——MIT 许可的上下文窗口管理与 token 优化 Skill/MCP；接入 WorkBuddy 前检查会话内容、缓存、可观测性数据和本地服务边界。
+- [Agent Foundry](https://github.com/furkantokkan/agent-foundry)——MIT 许可的 92 个工程与游戏开发 Skill，覆盖任务契约、架构、QA、Unity、Firebase 和发布；启用前按单个 Skill 审阅工具调用和写入范围。
+- [ComfyUI Workflow Lab](https://github.com/Ubik42/ComfyUI-Workflow-Lab)——MIT 许可的中文优先 ComfyUI 工作流检索、推荐和受控交付 Skill；使用前确认模型/素材版权、GPU 资源、文件输出和外部下载边界。
+- [Gensee VOD Transcribe](https://github.com/Xavier-06/gensee-vod-transcribe)——MIT 许可的展视互动视频下载、长音频转写和会议纪要 Skill；处理会议内容前检查登录凭据、版权、隐私、下载范围和生成文件。
+- [WordPress Theme Assistant](https://github.com/adhit28/a28-wp-theme-assistant)——MIT 许可的 Figma-first WordPress 主题开发 Skill，支持 Timber、Twig、ACF 和原生 PHP；使用前检查设计稿授权、站点凭据、模板写入和发布回滚。
+- [Job Portal ATS Skills](https://github.com/Riddis/job-portal-ats-skills)——MIT 许可的求职检索与 ATS 路由 Skill 集合；搜索可以只读，申请动作涉及个人信息和外部提交，必须逐项确认目标、内容和发送权限。
 - [.NET Skills](https://github.com/dotnet/skills)——MIT 许可的 Microsoft .NET 与 C# 编程 Agent 工作流；适配到 WorkBuddy 前检查 SDK 版本、生成文件、Shell 命令和仓库写入范围。
 - [Adobe Skills](https://github.com/adobe/skills)——Apache-2.0 许可的 Adobe 维护 Agent Skill；复用前使用精确来源并检查创意素材、服务凭据、账号权限和发布影响。
 - [Tons of Skills Marketplace](https://github.com/jeremylongshore/tons-of-skills-marketplace)——MIT 许可的跨模型 Skill 市场，提供规范层、适配器和包工具；用于发现时要逐个核验适配器的来源、运行时和权限。

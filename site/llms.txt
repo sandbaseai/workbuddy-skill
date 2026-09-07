@@ -74,6 +74,12 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT large scientific Skill collection for bioinformatics, chemistry, statistics, literature, PDF, visualization, and lab tools: https://github.com/wupeng1998/scientific-agent-skills
 - MIT portable CalculatorX Skill whose canonical contract prefers MCP or REST (review external services, privacy, and billing): https://github.com/CalculatorX-AI/calculatorx-agent-skill
 - MIT investment-research workbench Skill (research assistance only; verify freshness, sources, risk, and trading side effects): https://github.com/EastsCloud/investment-agent-skill
+- MIT context-window management and token-optimization Skill/MCP (review session content, caches, observability, and local services): https://github.com/hanifalkauni/context-architect
+- MIT collection of 92 engineering and game-development Skills for task contracts, architecture, QA, Unity, Firebase, and shipping: https://github.com/furkantokkan/agent-foundry
+- MIT Chinese-first ComfyUI workflow search, recommendation, and controlled-delivery Skill (review model rights, GPU cost, and downloads): https://github.com/Ubik42/ComfyUI-Workflow-Lab
+- MIT Gensee webcast download, long-audio transcription, and meeting-minutes Skills (review credentials, copyright, privacy, and output): https://github.com/Xavier-06/gensee-vod-transcribe
+- MIT Figma-first WordPress theme-development Skill for Timber, Twig, ACF, and native PHP (review credentials, writes, and rollback): https://github.com/adhit28/a28-wp-theme-assistant
+- MIT job-search and ATS-routing Skills (review personal data and every external application submission): https://github.com/Riddis/job-portal-ats-skills
 - MIT .NET and C# workflows for coding agents (review SDK versions, generated files, commands, and write scope): https://github.com/dotnet/skills
 - Apache-2.0 Adobe-maintained Agent Skills (review creative assets, credentials, account permissions, and publishing effects): https://github.com/adobe/skills
 - MIT model-agnostic Tons of Skills Marketplace with canonical layer and adapters (verify provenance, runtime, and permissions): https://github.com/jeremylongshore/tons-of-skills-marketplace

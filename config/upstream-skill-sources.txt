@@ -373,3 +373,9 @@ sshnuke3/godot-agent-skills
 wupeng1998/scientific-agent-skills
 CalculatorX-AI/calculatorx-agent-skill
 EastsCloud/investment-agent-skill
+hanifalkauni/context-architect
+furkantokkan/agent-foundry
+Ubik42/ComfyUI-Workflow-Lab
+Xavier-06/gensee-vod-transcribe
+adhit28/a28-wp-theme-assistant
+Riddis/job-portal-ats-skills
