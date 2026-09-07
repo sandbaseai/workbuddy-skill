@@ -107,6 +107,42 @@ jobs:
           if status.get("error"):
               print(f"\n> The read-only probe paused after a partial result: `{status['error']}`")
           PY
+      - name: Add actionable candidate shortlist
+        run: |
+          python3 - /tmp/upstream-skill-new-candidates-reviewed.jsonl <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          from collections import defaultdict
+          import json
+          import sys
+
+          grouped = defaultdict(list)
+          with open(sys.argv[1], encoding="utf-8") as handle:
+              for line in handle:
+                  if not line.strip():
+                      continue
+                  row = json.loads(line)
+                  if (
+                      row.get("workbuddy_status") == "adaptable"
+                      and row.get("license_declared") is True
+                      and row.get("security_status") == "no-static-flags"
+                  ):
+                      grouped[row.get("repository", "")].append(row)
+
+          candidates = sorted(
+              ((repository, rows) for repository, rows in grouped.items() if repository),
+              key=lambda item: (-len(item[1]), item[0].casefold()),
+          )[:20]
+          print("## Actionable candidate shortlist")
+          print("")
+          print("These candidates are adaptable, declare a license, and have no static flags; review the exact pinned source before packaging.")
+          print("")
+          print("| Repository | Candidate Skills | Example source |")
+          print("| --- | ---: | --- |")
+          for repository, rows in candidates:
+              example = min(rows, key=lambda row: row.get("id", ""))
+              print(f"| `{repository}` | {len(rows)} | [{example.get('name_hint', 'SKILL.md')}]({example['source_url']}) |")
+          if not candidates:
+              print("No candidates met all three shortlist conditions in this run.")
+          PY
       - name: Upload read-only discovery report
         uses: actions/upload-artifact@v7
         with:

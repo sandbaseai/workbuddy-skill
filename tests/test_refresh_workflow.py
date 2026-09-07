@@ -241,6 +241,10 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("scripts/check_release_assets.py", workflow)
         self.assertIn("GH_TOKEN: ${{ github.token }}", workflow)
         self.assertIn("scripts/check_resource_links.py", workflow)
+        self.assertIn("Actionable candidate shortlist", workflow)
+        self.assertIn('workbuddy_status") == "adaptable"', workflow)
+        self.assertIn('license_declared") is True', workflow)
+        self.assertIn('security_status") == "no-static-flags"', workflow)
 
     def test_resource_link_check_is_read_only_and_scheduled(self):
         workflow = (ROOT / ".github/workflows/check-resource-links.yml").read_text(encoding="utf-8")
