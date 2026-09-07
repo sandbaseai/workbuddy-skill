@@ -152,3 +152,16 @@ CommandCodeAI/agent-skills
 SimoneAvogadro/android-reverse-engineering-skill
 levnikolaevich/claude-code-skills
 BuilderIO/skills
+huggingface/skills
+ConardLi/garden-skills
+cloudflare/skills
+jakubkrehel/skills
+jsmastery-pro/skills
+dbwls99706/ros2-engineering-skills
+solanabr/solana-ai-kit
+kwakseongjae/oh-my-design
+inkboard/system-atlas
+uxKero/anydesign
+kunchenguid/vision
+AIwithhassan/lets-scroll
+michaelshimeles/skills
