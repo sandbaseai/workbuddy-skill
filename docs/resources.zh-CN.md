@@ -84,6 +84,8 @@
 - [Skill Governor](https://github.com/fanfanfanfanfan626/skill-governor)——MIT 许可的 Skill 治理工作流，覆盖选择、审计、获取和维护；可用于控制范围与重复，不应授予自动删除权限。
 - [Understand Project](https://github.com/wutongyuonce/understand-project)——MIT 许可的中文项目理解工作流，帮助阅读架构、运行形态和真实数据链路；允许修改或外部调用前先做只读仓库盘点。
 - [Handoff Skill](https://github.com/divijshrivastava/handoff-skill)——MIT 许可的基于证据的交接工作流，通过共享台账恢复仓库工作；启用跨会话状态前检查台账路径和密钥边界。
+- [Higbird Code Skill](https://github.com/higbird/code-cdoe-skill)——MIT 许可的科研数据分析工作规范，用于组织、修改、运行和验证 Bash、R、Python 混合项目；执行应保持本地，使用前检查脚本，并把可复现证据与科学结论分开。
+- [PDFx Skills](https://github.com/solisoft/pdfx-skills)——MIT 许可的 PDFx API 工作流，支持从 JSON 生成 PDF 和处理 Factur-X 电子发票；接入 WorkBuddy 前检查 API 凭据、发票隐私、生成文件及付费或外部调用。
 - [Lark CLI](https://github.com/larksuite/cli)——MIT 许可的飞书官方 CLI，提供文档化的 Agent Skill、结构化命令和系统钥匙串认证；接入 WorkBuddy 前检查应用权限范围和外发数据边界。
 - [Google Agent Skills](https://github.com/google/skills)——Apache-2.0 许可的 Google 官方 Skill，覆盖云、Gemini、数据和开发者工作流；作为外部参考使用具体 Skill，接入 WorkBuddy 前检查云项目、API 和计费权限。
 - [.NET Skills](https://github.com/dotnet/skills)——MIT 许可的 Microsoft .NET 与 C# 编程 Agent 工作流；适配到 WorkBuddy 前检查 SDK 版本、生成文件、Shell 命令和仓库写入范围。

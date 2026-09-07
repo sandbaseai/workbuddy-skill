@@ -27,6 +27,8 @@ ffseika0304/code-ownership-audit
 fanfanfanfanfan626/skill-governor
 wutongyuonce/understand-project
 divijshrivastava/handoff-skill
+higbird/code-cdoe-skill
+solisoft/pdfx-skills
 wbso-ai/omarchy-plugin-security-skill
 jangtrinh/design-os-3d-blender
 DenisSergeevitch/game-sensitivity-coach
