@@ -115,4 +115,4 @@ jobs:
             /tmp/upstream-skill-new-candidates.jsonl
             /tmp/upstream-skill-new-candidates-reviewed.jsonl
             /tmp/upstream-skill-discovery-summary.json
-          retention-days: 7
+          retention-days: 30

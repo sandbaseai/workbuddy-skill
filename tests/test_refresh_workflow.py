@@ -41,7 +41,7 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("GITHUB_STEP_SUMMARY", workflow)
         self.assertIn("/tmp/upstream-skill-discovery-summary.json", workflow)
         self.assertIn("actions/upload-artifact@v7", workflow)
-        self.assertIn("retention-days: 7", workflow)
+        self.assertIn("retention-days: 30", workflow)
         self.assertNotIn("--allow-frozen-catalog", workflow)
 
     def test_release_action_uses_node24_generation(self):
