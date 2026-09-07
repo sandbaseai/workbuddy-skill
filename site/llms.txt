@@ -118,6 +118,16 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Apache-2.0 Serac ServiceNow MCP server with 57 Skill guides and blast-radius analysis (review instances, credentials, approvals, and writes): https://github.com/serac-labs/serac
 - MIT design-focused DESIGN.md and SKILL.md collection (review visual rights, generated assets, accessibility, and host format): https://github.com/bergside/awesome-design-skills
 - MIT community index of 1,400+ Agent Skills (discovery only; inspect each upstream source): https://github.com/VoltAgent/awesome-agent-skills
+- MIT Chinese writing Skill for source sufficiency, narrative structure, rhythm, and style checks: https://github.com/KKKKhazix/human-writing
+- MIT completion-discipline Skill built around acceptance ledgers and runnable gates: https://github.com/Leonxlnx/unlazy
+- MIT one-ink and controlled two-ink editorial image Skill: https://github.com/yanliudesign/mono-color-skill
+- MIT writing Skill for narrative architecture, discourse flow, surface style, and diagnosis: https://github.com/Nanako0129/sepia
+- MIT long-form scroll-experience design workflow: https://github.com/nateherkai/scroll-craft
+- MIT code-quality guardrail Skill for repetitive or low-value agent output: https://github.com/lennney/stop-that-shit
+- MIT 172-Skill departmental organization with independently installable plugins: https://github.com/cbrock84/headcount
+- MIT image-understanding workflow with a dedicated vision Skill: https://github.com/Anionex/agent-vision-toolkit
+- MIT multi-agent coding workflow with provider adapters, run controls, and benchmarks: https://github.com/Spielewoy/autoprompt-skill
+- MIT deterministic software-factory Skill for sequencing, retries, acceptance, and traces: https://github.com/disler/super-simple-software-factory
 - MIT index of 5,400+ OpenClaw skills (discovery only; verify host assumptions, scripts, licenses, and permissions before WorkBuddy adaptation): https://github.com/VoltAgent/awesome-openclaw-skills
 - MIT cross-platform Agent Skill Manager for WorkBuddy and other domestic Agent products (review install scopes and sync paths before copying or removing): https://github.com/yxdwind/agent-skill-manager
 - MIT read-only Skill Auditor for usage traces and security hazards (deletion suggestions require human confirmation): https://github.com/dx2020z/skill-auditor

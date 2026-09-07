@@ -406,3 +406,13 @@ MammadovEshgin/clean-code-skill
 bigbrain-work/shiliu-ai
 Praveensenpai/karakuri
 jmlero/agent-suitup
+KKKKhazix/human-writing
+Leonxlnx/unlazy
+yanliudesign/mono-color-skill
+Nanako0129/sepia
+nateherkai/scroll-craft
+lennney/stop-that-shit
+cbrock84/headcount
+Anionex/agent-vision-toolkit
+Spielewoy/autoprompt-skill
+disler/super-simple-software-factory

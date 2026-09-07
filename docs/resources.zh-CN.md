@@ -262,6 +262,16 @@
 - [WorkBuddy Skills 归档](https://github.com/infometa/workbuddyskills)——用于离线学习的公开市场归档；该仓库明确说明内容版权归原作者，不代表允许再分发。
 - [Community WorkBuddy skills collection](https://github.com/bitcjm/workbuddy-skills)——按场景分类的社区技能集合，并说明用户级/项目级安装方式；复用前仍需检查脚本、依赖和许可证。
 - [WorkBuddy × ChatCut MCP](https://github.com/chonpszhou/workbuddy-chatcut-mcp)——MIT 许可的 OAuth/PKCE 与 Streamable HTTP MCP 接入案例，附带本地凭证和密钥扫描说明；使用前仍需确认第三方账号和媒体数据边界。
+- [Human Writing](https://github.com/KKKKhazix/human-writing)——MIT 许可的中文写作 Skill，关注材料充分性、叙事结构、节奏和可审阅的风格检查；发布前仍需核验归属和编辑结论。
+- [Unlazy](https://github.com/Leonxlnx/unlazy)——MIT 许可的完成纪律 Skill，以验收账本和可运行门禁约束交付；每条 shell 检查都应先审阅并明确批准。
+- [Monocolor Editorial Print](https://github.com/yanliudesign/mono-color-skill)——MIT 许可的单色与受控双色编辑图像 Skill；使用前检查图片权利、模型成本、生成资产和输出尺寸。
+- [Sepia](https://github.com/Nanako0129/sepia)——MIT 许可的写作 Skill，覆盖叙事架构、话语流、表层风格和诊断审阅；研究结论只是背景，不是效果保证。
+- [Scroll Craft](https://github.com/nateherkai/scroll-craft)——MIT 许可的长滚动页面设计工作流；适配前检查浏览器脚本、素材来源和生成文件路径。
+- [Stop That Shit](https://github.com/lennney/stop-that-shit)——MIT 许可的代码质量护栏 Skill，用于发现重复或低价值的 Agent 输出；结果应作为审阅线索，不是正确性证明。
+- [Headcount](https://github.com/cbrock84/headcount)——MIT 许可的 172 个 Skill 组织，按可独立安装的部门划分；应按需安装部门并审阅插件权限。
+- [Agent Vision Toolkit](https://github.com/Anionex/agent-vision-toolkit)——MIT 许可的图像理解工作流，提供专用视觉 Skill；使用前检查图片隐私、本地工具行为和外部模型调用。
+- [Autoprompt](https://github.com/Spielewoy/autoprompt-skill)——MIT 许可的多 Agent 编程工作流，含提供商适配器、运行控制和基准声明；使用前固定版本并审阅子进程、API Key 和成本。
+- [Super Simple Software Factory](https://github.com/disler/super-simple-software-factory)——MIT 许可的确定性编排 Skill，把顺序、重试和验收交给代码；写入仓库前检查生成文件、模型提供商、密钥和数据库轨迹。
 
 ## 本仓库
 

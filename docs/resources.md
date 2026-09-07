@@ -262,6 +262,16 @@ Use this page to choose the right source before searching the catalog.
 - [WorkBuddy Skills archive](https://github.com/infometa/workbuddyskills) — public-market archive for offline study; the repository states that its contents remain the property of their original authors and are not a license to redistribute.
 - [Community WorkBuddy skills collection](https://github.com/bitcjm/workbuddy-skills) — category-based community collection with user/project installation notes; inspect scripts, dependencies, and license before reuse.
 - [WorkBuddy × ChatCut MCP](https://github.com/chonpszhou/workbuddy-chatcut-mcp) — MIT-licensed OAuth/PKCE and Streamable HTTP MCP integration example with local credential and secret-scanning guidance; review external account and media-data boundaries before use.
+- [Human Writing](https://github.com/KKKKhazix/human-writing) — MIT-licensed Chinese writing Skill focused on source sufficiency, narrative structure, rhythm, and reviewable style checks; verify attribution and editorial claims before publishing.
+- [Unlazy](https://github.com/Leonxlnx/unlazy) — MIT-licensed completion-discipline Skill built around acceptance ledgers and runnable gates; inspect every declared shell oracle and approve commands deliberately.
+- [Monocolor Editorial Print](https://github.com/yanliudesign/mono-color-skill) — MIT-licensed visual Skill for one-ink and controlled two-ink editorial images; review image rights, model cost, generated assets, and output dimensions.
+- [Sepia](https://github.com/Nanako0129/sepia) — MIT-licensed writing Skill covering narrative architecture, discourse flow, surface style, and diagnostic review; treat detection research as context rather than a guarantee.
+- [Scroll Craft](https://github.com/nateherkai/scroll-craft) — MIT-licensed design workflow for long-form scroll experiences; inspect browser scripts, asset sources, and generated output paths before adapting it.
+- [Stop That Shit](https://github.com/lennney/stop-that-shit) — MIT-licensed code-quality guardrail Skill for identifying repetitive or low-value agent output; use findings as review prompts, not as correctness proof.
+- [Headcount](https://github.com/cbrock84/headcount) — MIT-licensed 172-Skill organization arranged into independently installable departments; review plugin scopes and install only the department needed for the task.
+- [Agent Vision Toolkit](https://github.com/Anionex/agent-vision-toolkit) — MIT-licensed image-understanding workflow with a dedicated vision Skill; review image privacy, local toolkit behavior, and any external model calls.
+- [Autoprompt](https://github.com/Spielewoy/autoprompt-skill) — MIT-licensed multi-agent coding workflow with provider adapters, run controls, and benchmark claims; pin versions and review subprocesses, API keys, and cost before use.
+- [Super Simple Software Factory](https://github.com/disler/super-simple-software-factory) — MIT-licensed deterministic orchestration Skill that puts sequencing, retries, and acceptance in code; inspect generated files, model providers, secrets, and database traces before stamping it into a repo.
 
 ## This repository
 
