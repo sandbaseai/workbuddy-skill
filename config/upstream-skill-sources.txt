@@ -522,3 +522,9 @@ mokanus/agent-skills
 Open-Dot-Agents/SKILL.md
 sensein/agent_skills
 whobat/AI-Agent-skills
+Emmraan/agent-skills
+OpenKit-Ltd/skills
+JPeetz/agent-skills
+j4flmao/agent-skills
+hardikpthv/agent-skills
+eristoddle/agent-skills
