@@ -31,6 +31,10 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT self-contained architecture and workflow-diagram reference (external reference): https://github.com/tt-a1i/archify
 - MIT visual explainer reference for plans, diffs, data tables, and architecture reviews (external reference): https://github.com/nicobailon/visual-explainer
 - MIT scientific Agent Skills collection with documented tests (review APIs, data, and claims separately): https://github.com/K-Dense-AI/scientific-agent-skills
+- MIT macOS computer-use Skill with evidence capture (review Accessibility permissions, target apps, screenshots, and every write): https://github.com/alchaincyf/huashu-mac-use
+- MIT security field guide distilled from Omarchy marketplace reviews (review the exact target platform; not a security guarantee): https://github.com/wbso-ai/omarchy-plugin-security-skill
+- MIT Blender workflow with verification gates and native-geometry examples (review version, scripts, assets, cost, and writes): https://github.com/jangtrinh/design-os-3d-blender
+- MIT evidence-based game sensitivity and gameplay review Skill (review game assumptions, capture permissions, logs, and config patches): https://github.com/DenisSergeevitch/game-sensitivity-coach
 - MIT official Lark/Feishu CLI with documented Agent Skills (review app scopes and outbound data): https://github.com/larksuite/cli
 - Apache-2.0 official Google Agent Skills for cloud, Gemini, data, and developer workflows (review project, API, and billing permissions): https://github.com/google/skills
 - MIT .NET and C# workflows for coding agents (review SDK versions, generated files, commands, and write scope): https://github.com/dotnet/skills

@@ -65,6 +65,10 @@
 - [Superpowers](https://github.com/obra/superpowers)——MIT 许可的 Agent 软件开发方法论，提供可组合 Skill 和结构化工作流；可作为流程参考，适配 WorkBuddy 前仍需审阅具体 Skill 来源。
 - [Addy Osmani's Agent Skills](https://github.com/addyosmani/agent-skills)——MIT 许可、面向生产实践的 AI 编程 Agent 工程参考；复用前检查其宿主假设和脚本。
 - [Archify](https://github.com/tt-a1i/archify)——MIT 许可的架构与工作流图参考，可生成自包含、可验证的 HTML；用于项目时先检查浏览器和生成物边界。
+- [huashu-mac-use](https://github.com/alchaincyf/huashu-mac-use)——MIT 许可的 macOS 电脑操作 Skill，支持取证记录和可逆交互；接入 WorkBuddy 前检查辅助功能权限、目标应用、截图以及每一项写入动作。
+- [Omarchy Plugin Security Skill](https://github.com/wbso-ai/omarchy-plugin-security-skill)——MIT 许可的插件安全指南，源自市场审核案例；可作为审查辅助，但仍需针对实际平台和仓库验证，不能把指南当作安全保证。
+- [Design OS 3D Blender](https://github.com/jangtrinh/design-os-3d-blender)——MIT 许可的 Blender 工作流，包含验证门禁和原生几何示例；适配前检查 Blender 版本、本地素材、脚本、渲染成本和文件写入范围。
+- [Game Sensitivity Coach](https://github.com/DenisSergeevitch/game-sensitivity-coach)——MIT 许可的基于证据的游戏分析 Skill；使用前检查游戏专属假设、采集权限、输入日志和任何配置修改。
 - [Visual Explainer](https://github.com/nicobailon/visual-explainer)——MIT 许可的可视化解释参考，可将计划、差异、数据表和架构评审整理成自包含 HTML；适配 WorkBuddy 前检查生成素材以及浏览器/运行时假设。
 - [Scientific Agent Skills](https://github.com/K-Dense-AI/scientific-agent-skills)——MIT 许可的科研工作流集合，提供带测试的 160+ 个领域 Skill；使用前应分别审阅数据库访问、API Key、敏感科研数据和科学结论边界。
 - [Lark CLI](https://github.com/larksuite/cli)——MIT 许可的飞书官方 CLI，提供文档化的 Agent Skill、结构化命令和系统钥匙串认证；接入 WorkBuddy 前检查应用权限范围和外发数据边界。
