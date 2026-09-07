@@ -283,3 +283,14 @@ OpenDCAI/GameFactory-3A
 boyang-hu/website-rebuild-skill
 iOfficeAI/AionUi
 Sorwcyra/ds-vision-skill
+teng-lin/notebooklm-py
+agentscope-ai/QwenPaw
+skilld-dev/skilld
+Q00/ouroboros
+Stack-Cairn/LiveAgent
+glincker/thesvg
+giancarloerra/SocratiCode
+alibaba/open-code-review
+openclaw/crabbox
+Orkas-AI/Orkas
+DemonDamon/AgenticX
