@@ -33,6 +33,10 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT scientific Agent Skills collection with documented tests (review APIs, data, and claims separately): https://github.com/K-Dense-AI/scientific-agent-skills
 - MIT official Lark/Feishu CLI with documented Agent Skills (review app scopes and outbound data): https://github.com/larksuite/cli
 - Apache-2.0 official Google Agent Skills for cloud, Gemini, data, and developer workflows (review project, API, and billing permissions): https://github.com/google/skills
+- MIT .NET and C# workflows for coding agents (review SDK versions, generated files, commands, and write scope): https://github.com/dotnet/skills
+- Apache-2.0 Adobe-maintained Agent Skills (review creative assets, credentials, account permissions, and publishing effects): https://github.com/adobe/skills
+- MIT model-agnostic Tons of Skills Marketplace with canonical layer and adapters (verify provenance, runtime, and permissions): https://github.com/jeremylongshore/tons-of-skills-marketplace
+- MIT GooseWorks growth and GTM Skills for content, lead generation, SEO, ads, and data (review claims, customer data, scraping, and outbound actions): https://github.com/gooseworks-ai/goose-skills
 - MIT community index of 1,400+ Agent Skills (discovery only; inspect each upstream source): https://github.com/VoltAgent/awesome-agent-skills
 - MIT index of 5,400+ OpenClaw skills (discovery only; verify host assumptions, scripts, licenses, and permissions before WorkBuddy adaptation): https://github.com/VoltAgent/awesome-openclaw-skills
 - Apache-2.0 Google Workspace CLI with Agent Skills for Gmail, Drive, and Calendar (not an official Google product; review OAuth and credentials): https://github.com/googleworkspace/cli

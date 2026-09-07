@@ -69,6 +69,10 @@
 - [Scientific Agent Skills](https://github.com/K-Dense-AI/scientific-agent-skills)——MIT 许可的科研工作流集合，提供带测试的 160+ 个领域 Skill；使用前应分别审阅数据库访问、API Key、敏感科研数据和科学结论边界。
 - [Lark CLI](https://github.com/larksuite/cli)——MIT 许可的飞书官方 CLI，提供文档化的 Agent Skill、结构化命令和系统钥匙串认证；接入 WorkBuddy 前检查应用权限范围和外发数据边界。
 - [Google Agent Skills](https://github.com/google/skills)——Apache-2.0 许可的 Google 官方 Skill，覆盖云、Gemini、数据和开发者工作流；作为外部参考使用具体 Skill，接入 WorkBuddy 前检查云项目、API 和计费权限。
+- [.NET Skills](https://github.com/dotnet/skills)——MIT 许可的 Microsoft .NET 与 C# 编程 Agent 工作流；适配到 WorkBuddy 前检查 SDK 版本、生成文件、Shell 命令和仓库写入范围。
+- [Adobe Skills](https://github.com/adobe/skills)——Apache-2.0 许可的 Adobe 维护 Agent Skill；复用前使用精确来源并检查创意素材、服务凭据、账号权限和发布影响。
+- [Tons of Skills Marketplace](https://github.com/jeremylongshore/tons-of-skills-marketplace)——MIT 许可的跨模型 Skill 市场，提供规范层、适配器和包工具；用于发现时要逐个核验适配器的来源、运行时和权限。
+- [GooseWorks Skills](https://github.com/gooseworks-ai/goose-skills)——MIT 许可的增长与 GTM Skill 集合，覆盖内容、线索、SEO、广告和数据工作流；适配前检查营销声明、客户数据、抓取限制和外部动作。
 - [Awesome Agent Skills](https://github.com/VoltAgent/awesome-agent-skills)——MIT 许可的社区导航索引，收录 1,400+ 个来自官方团队和实践者的 Skill；仅用于发现，之后仍需逐个检查上游许可证、提交版本和权限边界。
 - [Awesome OpenClaw Skills](https://github.com/VoltAgent/awesome-openclaw-skills)——MIT 许可的 OpenClaw Skill 索引，收录 5,400+ 个 Skill；可用于发现可移植思路，但适配 WorkBuddy 前要核对宿主假设、脚本、许可证和权限。
 - [Google Workspace CLI](https://github.com/googleworkspace/cli)——Apache-2.0 许可的 CLI，提供结构化输出以及 Gmail、Drive、Calendar 等 Workspace API 的 Agent Skill；它不是 Google 官方产品，接入 WorkBuddy 前必须检查 OAuth Scope、本地凭据和外发数据。
