@@ -35,6 +35,16 @@ def write_rows(path: Path, rows: list[dict]) -> None:
     temporary.replace(path)
 
 
+def write_summary(path: Path, summary: dict[str, int]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(
+        json.dumps(summary, ensure_ascii=False, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    temporary.replace(path)
+
+
 def analyze(rows: list[dict], workers: int) -> dict[str, int]:
     by_sha: dict[str, str] = {}
     for row in rows:
@@ -48,6 +58,9 @@ def analyze(rows: list[dict], workers: int) -> dict[str, int]:
         row.update(analyses[str(row.get("sha", row["raw_url"]))])
     summary = {
         "candidate_records": len(rows),
+        "candidate_repositories": len(
+            {row.get("repository") for row in rows if row.get("repository")}
+        ),
         "unique_contents": len(by_sha),
         "analysis_ok": sum(row.get("analysis_status") == "ok" for row in rows),
         "workbuddy_ready": sum(row.get("workbuddy_status") == "workbuddy-ready" for row in rows),
@@ -62,6 +75,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--summary-output", type=Path)
     parser.add_argument("--workers", type=int, default=8)
     args = parser.parse_args()
     if args.workers < 1:
@@ -69,6 +83,8 @@ def main() -> int:
     rows = load_rows(args.input)
     summary = analyze(rows, args.workers)
     write_rows(args.output, rows)
+    if args.summary_output:
+        write_summary(args.summary_output, summary)
     print(json.dumps(summary, ensure_ascii=False, sort_keys=True))
     return 0
 

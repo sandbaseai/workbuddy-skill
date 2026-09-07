@@ -27,6 +27,7 @@ class DiscoveryAnalysisTests(unittest.TestCase):
         summary = analyze(rows, workers=1)
         self.assertEqual(fetch.call_count, 1)
         self.assertEqual(summary["candidate_records"], 2)
+        self.assertEqual(summary["candidate_repositories"], 0)
         self.assertEqual(summary["unique_contents"], 1)
         self.assertEqual(summary["security_flagged"], 2)
         self.assertEqual(rows[0]["security_signals"], ["credential-path"])

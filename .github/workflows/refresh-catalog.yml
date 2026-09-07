@@ -75,7 +75,29 @@ jobs:
             --output /tmp/upstream-skill-new-candidates.jsonl
           python3 scripts/analyze_discovery.py \
             --input /tmp/upstream-skill-new-candidates.jsonl \
-            --output /tmp/upstream-skill-new-candidates-reviewed.jsonl
+            --output /tmp/upstream-skill-new-candidates-reviewed.jsonl \
+            --summary-output /tmp/upstream-skill-discovery-summary.json
+      - name: Add discovery summary
+        run: |
+          python3 - /tmp/upstream-skill-discovery-summary.json <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          import sys
+
+          summary = json.loads(open(sys.argv[1], encoding="utf-8").read())
+          print("## Read-only upstream Skill discovery")
+          print("")
+          print("| Metric | Count |")
+          print("| --- | ---: |")
+          for key, label in (
+              ("candidate_records", "New candidate records"),
+              ("candidate_repositories", "Candidate repositories"),
+              ("unique_contents", "Unique contents"),
+              ("adaptable", "Adaptable"),
+              ("needs_review", "Needs review"),
+              ("security_flagged", "Static security flags"),
+          ):
+              print(f"| {label} | {summary.get(key, 0)} |")
+          PY
       - name: Upload read-only discovery report
         uses: actions/upload-artifact@v4
         with:
@@ -84,4 +106,5 @@ jobs:
             /tmp/upstream-skill-probe-report.jsonl
             /tmp/upstream-skill-new-candidates.jsonl
             /tmp/upstream-skill-new-candidates-reviewed.jsonl
+            /tmp/upstream-skill-discovery-summary.json
           retention-days: 7
