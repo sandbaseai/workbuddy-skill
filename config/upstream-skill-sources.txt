@@ -551,3 +551,8 @@ sentdm/sent-plugin
 Martin-Kocev/skills
 SteveVitali/agent-skills
 jokull/jokull-skills
+labiium/skills
+cesr/poncho-ai
+darasoba/agent-skills
+ayrtonvwf/skills
+open-edge-platform/skills
