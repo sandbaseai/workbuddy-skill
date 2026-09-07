@@ -84,6 +84,12 @@
 - [dbt Agent Skills](https://github.com/dbt-labs/dbt-agent-skills)——dbt 维护的 Apache-2.0 许可工作流，覆盖分析工程、语义层、测试和平台运维；从 WorkBuddy 使用前检查数仓凭据、生成 SQL 和写入权限。
 - [MongoDB Agent Skills](https://github.com/mongodb/agent-skills)——Apache-2.0 许可的 MongoDB 官方工作流，覆盖查询、Schema 设计、优化和 Atlas Search；接入 WorkBuddy 前检查 OAuth Scope、数据库目标以及迁移/写入操作。
 - [Microsoft Waza](https://github.com/microsoft/waza)——MIT 许可的 Agent Skill 评测 CLI，可运行基准套件并比较模型；用作评测参考，运行前检查下载的二进制、测试夹具以及模型/API 成本。
+- [Everything Claude Code](https://github.com/affaan-m/ECC)——MIT 许可的 Agent Harness 参考，覆盖 Skill、记忆、安全、研究优先开发和多宿主工作流；可借鉴其中的边界控制实践，但适配前检查宿主专用 Hook。
+- [Marketing Skills](https://github.com/coreyhaines31/marketingskills)——MIT 许可的营销 Skill 集合，覆盖 CRO、文案、SEO、分析和增长工程；用于营销流程前要检查内容声明、客户数据和发布权限。
+- [Anthropic Cybersecurity Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills)——Apache-2.0 许可的安全 Skill 集合，映射多个常见安全框架；仅作为防御性审查参考，并明确授权扫描、凭证和目标系统。
+- [Planning with Files](https://github.com/OthmanAdi/planning-with-files)——MIT 许可的文件式规划工作流，支持长任务、会话恢复和确定性完成门槛；可借鉴恢复思路，但要明确 WorkBuddy 路径和写入范围。
+- [PM Skills](https://github.com/phuryn/pm-skills)——MIT 许可的产品管理 Skill 集合，覆盖发现、战略、执行、发布和增长；适配前检查业务敏感输入和外部发布动作。
+- [Agent Skills 规范仓库](https://github.com/agentskills/agentskills)——Apache-2.0 许可的 Agent Skills 规范与文档源码仓库；导入 Skill 前可用它核对格式和跨宿主假设。
 - [EverMind SkillCorpus](https://github.com/EverMind-AI/SkillCorpus)——Apache-2.0 许可的 SkillCorpus 管线，用于聚合公开 `SKILL.md`，并提供来源、许可与安全门禁、检索、评测和导出；可借鉴其架构，但要把源文件审查与导入流程分开。
 - [Keep the Why](https://github.com/oliver-zehentleitner/keep-the-why)——MIT 许可的仓库内约定和 Agent Skill，用于保留架构决策、被否方案、变通办法和事故经验；可以借鉴其记录习惯，但不要默认其插件目录适用于 WorkBuddy。
 - [讯飞 SkillHub](https://github.com/iflytek/skillhub)——Apache-2.0 许可的自托管 Skill 注册中心，用于发布、发现和治理 Skill 包；作为 WorkBuddy 私有来源使用前检查 Docker 暴露、注册中心访问、认证和包来源。

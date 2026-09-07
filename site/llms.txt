@@ -48,6 +48,12 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Apache-2.0 dbt Agent Skills for analytics engineering and testing (review warehouse credentials, SQL, and writes): https://github.com/dbt-labs/dbt-agent-skills
 - Apache-2.0 official MongoDB Agent Skills (review OAuth, database targets, and writes): https://github.com/mongodb/agent-skills
 - MIT Microsoft Waza CLI for Agent Skill evaluation (review binaries, fixtures, and model/API cost): https://github.com/microsoft/waza
+- MIT Everything Claude Code agent-harness reference for skills, memory, security, research-first development, and multi-host workflows (inspect host-specific hooks): https://github.com/affaan-m/ECC
+- MIT Marketing Skills for CRO, copywriting, SEO, analytics, and growth engineering (review claims, customer data, and publishing permissions): https://github.com/coreyhaines31/marketingskills
+- Apache-2.0 defensive cybersecurity Skills mapped to common security frameworks (authorize scans, credentials, and targets): https://github.com/mukul975/Anthropic-Cybersecurity-Skills
+- MIT Planning with Files workflow for long-running tasks, recovery, and completion gates (keep WorkBuddy paths explicit): https://github.com/OthmanAdi/planning-with-files
+- MIT PM Skills collection for discovery, strategy, execution, launch, and growth (review business-sensitive inputs): https://github.com/phuryn/pm-skills
+- Apache-2.0 Agent Skills specification and documentation repository (check format and portability assumptions): https://github.com/agentskills/agentskills
 - Apache-2.0 EverMind SkillCorpus pipeline for provenance, license/safety gates, retrieval, evaluation, and export (architecture reference; review sources separately): https://github.com/EverMind-AI/SkillCorpus
 - MIT Keep the Why repo-native convention and Agent Skill for preserving decisions and rejected alternatives (adapt the habit; inspect host-specific layout): https://github.com/oliver-zehentleitner/keep-the-why
 - Apache-2.0 self-hosted iFlytek SkillHub registry (review Docker, auth, and package provenance): https://github.com/iflytek/skillhub
