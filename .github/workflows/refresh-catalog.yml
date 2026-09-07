@@ -3,7 +3,10 @@ name: Refresh skill catalog
 on:
   workflow_dispatch:
   schedule:
+    # Retry discovery throughout the day so a transient GitHub API quota
+    # window does not defer the next resumable scan for 24 hours.
     - cron: "17 5 * * *"
+    - cron: "17 11,17,23 * * *"
 
 concurrency:
   group: refresh-skill-catalog
