@@ -924,3 +924,8 @@ Mindrally/skills
 ahacker-1/cre-agent-skills
 RollingGo-AI/rollinggo-hotel-skill-cn
 Mark393295827/third-brain-v7-skills
+Chat2AnyLLM/awesome-claude-skills
+johnqtcg/awesome-skills
+stephenlzc/AI-Powered-Literature-Review-Skills
+agentskillexchange/skills
+zJay26/douyin-skills
