@@ -51,7 +51,9 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT agentic Skill catalog and control plane (research reference): https://github.com/sickn33/agentic-awesome-skills
 - MIT Chinese job-search and development Skills with a documented WorkBuddy bridge (review browser and resume-data actions): https://github.com/Hisn00w/ASu-skills
 - Auto-updated Agent Skills index with no repository license declaration (navigation only): https://github.com/linny006/awesome-agent-skills
+- MIT portable Skill discovery and evidence workflow (methodology only; not an automatic installer): https://github.com/CodeSigils/skill-discovery
 - MIT cross-harness Skill and extension manager with preview and source tracking (separate tool): https://github.com/vanillagreencom/kendex
+- MIT zero-dependency local Skill usage and context-cost report (disable/prune actions require exact-target review): https://github.com/bborok1234/skillmon
 - CC0 WorkBuddy resource index: https://github.com/semlinker/awesome-workbuddy
 - Chinese AI coding and WorkBuddy tutorial: https://github.com/KimYx0207/AI-Coding-Guide-Zh
 - MIT WorkBuddy-compatible e-commerce visual-copywriting Skill (inspect bundled assets and scripts before reuse): https://github.com/feichanggege/ecommerce-visual-copywriting-skill

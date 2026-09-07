@@ -86,7 +86,9 @@
 - [Agentic Awesome Skills](https://github.com/sickn33/agentic-awesome-skills)——MIT 许可的本地 Agent Skill 目录与控制平面，可用于研究发现、选择和验证 Skill；仅作资料参考，不要当作自动安装源。
 - [ASu-skills](https://github.com/Hisn00w/ASu-skills)——MIT 许可的中文求职与开发工作流集合，文档提供 WorkBuddy 轻量桥接入口；其中浏览器辅助投递和本地简历数据涉及写入与提交动作，启用前必须单独审阅。
 - [Awesome Agent Skills](https://github.com/linny006/awesome-agent-skills)——自动更新的跨 Agent Skill 导航索引，提供质量和维护信号；仓库当前没有声明许可证，只适合作为导航，具体来源仍需单独审阅。
+- [skill-discovery](https://github.com/CodeSigils/skill-discovery)——MIT 许可的可移植发现与证据工作流，将候选搜索、来源、兼容性、权限和安装批准分开；只把它当作方法参考，不要当作自动安装器。
 - [kendex](https://github.com/vanillagreencom/kendex)——MIT 许可的跨宿主 Skill、Agent、Hook 和扩展管理器，支持应用前预览和来源追踪；它不是 WorkBuddy 包，使用它管理本地安装前先检查文件系统范围。
+- [skillmon](https://github.com/bborok1234/skillmon)——MIT 许可、零依赖的本地用量和上下文成本报告工具，面向 Claude Code 与 Codex Skill；它的禁用/清理选项会修改本地配置，执行前要检查备份和精确目标。
 - [semlinker/awesome-workbuddy](https://github.com/semlinker/awesome-workbuddy)——CC0 许可的 WorkBuddy 教程、提示词、Skills、MCP 和场景实践导航；使用其中链接时仍需核对各项目的最新条款。
 - [AI Coding / Agent 中文教程](https://github.com/KimYx0207/AI-Coding-Guide-Zh)——覆盖 WorkBuddy 及相关 Agent 工作流。
 - [电商视觉文案 Skill](https://github.com/feichanggege/ecommerce-visual-copywriting-skill)——MIT 许可、明确兼容 WorkBuddy 的电商视觉文案工作流，社区关注度较高；复用前仍需检查随附素材和脚本。

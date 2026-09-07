@@ -6,6 +6,7 @@ All notable changes to this project are documented here.
 
 - Add Chinese search aliases for Atlas compatibility, security, source-review, and reviewed-package states so localized status terms work in web search.
 - Accept the same Chinese status, security, source-context, and reviewed-package labels in the local catalog CLI, keeping terminal searches aligned with Atlas.
+- Add two rights-aware external references for evidence-led Skill discovery and local Skill usage-cost review, without importing or adding Skills to the frozen catalog.
 - Preserve and label read-only upstream probe completeness with a status JSON report when GitHub throttling pauses discovery; partial results remain clearly distinct from complete scans.
 - Document the probe status and partial-result workflow in both English and Chinese catalog guides.
 - Add the MIT-licensed QianLV UI Skill as a WorkBuddy-compatible design reference with explicit bundled-asset and script review guidance.
