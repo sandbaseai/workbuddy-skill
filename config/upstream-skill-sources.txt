@@ -2,10 +2,12 @@
 github/awesome-copilot
 obra/superpowers
 sickn33/agentic-awesome-skills
+affaan-m/ECC
 alchaincyf/nuwa-skill
 Hisn00w/ASu-skills
 aiworkskills/wechat-article-skills
 anthropics/skills
+agentskills/agentskills
 mattpocock/skills
 addyosmani/agent-skills
 vercel-labs/agent-skills
