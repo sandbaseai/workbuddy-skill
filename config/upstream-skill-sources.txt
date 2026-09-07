@@ -656,3 +656,5 @@ xiaolai/cc-suite
 jordanconway/package-manager-hardening
 sfrangulov/claude-code-handbook-ru
 LeeYudok/agents-scaffold
+jim60105/copilot-prompt
+fernandotellado/ai-skills
