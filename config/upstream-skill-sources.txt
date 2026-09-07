@@ -1237,3 +1237,13 @@ HKUDS/OpenSpace
 xerrors/Yuxi
 ThinkInAIXYZ/deepchat
 anysearch-ai/anysearch-skill
+porex-bot/agent-skills-compat-matrix
+Ryankolsen/rko-claude-skills
+arielszmerla/useful-skills
+AgentsFlix/skills
+TheodoreAD/agent-skills
+wyattjoh/skills
+avivsinai/skills-marketplace
+tschallacka/ai-skills
+equinor/fusion-skills
+bradspit7/context-skills
