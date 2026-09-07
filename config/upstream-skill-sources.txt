@@ -556,3 +556,6 @@ cesr/poncho-ai
 darasoba/agent-skills
 ayrtonvwf/skills
 open-edge-platform/skills
+openai/plugins
+isiahhill/skills.sh
+rauleburro/skills
