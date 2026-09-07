@@ -637,3 +637,5 @@ MindGoblinStudios/grim-tome
 Art4/continuous-refactoring
 infotradescout/Selective-Intelligence
 Storybloq/storybloq
+tigerless-labs/design-harness
+alchaincyf/huashu-md-html
