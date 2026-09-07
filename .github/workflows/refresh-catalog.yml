@@ -53,8 +53,8 @@ jobs:
             --dry-run \
             --repository-file config/upstream-skill-sources.txt \
             --repository-only \
-            --target 10500 \
-            --max-requests 120 \
+            --target 12000 \
+            --max-requests 180 \
             --max-rate-wait 120 \
             --output /tmp/upstream-skill-probe.jsonl \
             --dry-run-output /tmp/upstream-skill-probe-report.jsonl

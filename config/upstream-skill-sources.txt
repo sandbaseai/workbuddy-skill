@@ -34,3 +34,13 @@ CherryHQ/cherry-studio
 virgiliojr94/book-to-skill
 OthmanAdi/planning-with-files
 nexu-io/open-design
+microsoft/SkillOpt
+bergside/awesome-design-skills
+elementalsouls/Claude-OSINT
+gamedev-skills/awesome-gamedev-agent-skills
+mxyhi/ok-skills
+TerminalSkills/skills
+aaron-he-zhu/aaron-marketing-skills
+samber/cc-skills-golang
+gokapso/agent-skills
+Tencent/SkillHone

@@ -74,7 +74,7 @@ python3 scripts/query_catalog.py --category research --package-status reviewed \
 ```bash
 python3 scripts/crawl_github_skills.py --dry-run \
   --repository-file config/upstream-skill-sources.txt \
-  --repository-only --target 10500 \
+  --repository-only --target 12000 \
   --dry-run-output /tmp/upstream-skill-probe.jsonl
 ```
 
