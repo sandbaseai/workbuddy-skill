@@ -689,3 +689,12 @@ bevibing/tutor-skills
 adithya-s-k/manim_skill
 rorkai/app-store-connect-cli-skills
 SeanJ1ang/design-judge-skills
+26zl/cybersec-toolkit
+fishzjp/qa-skills
+agents-inc/skills
+hyperb1iss/sibyl
+ChouChiu/heya-skill
+icons8/agent-skills
+GZX2211/dsh-Visual-Workflow
+Ezra144israel/governed-agent-skills
+moeru-ai/auv
