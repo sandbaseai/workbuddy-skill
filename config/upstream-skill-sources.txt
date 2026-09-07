@@ -1284,3 +1284,12 @@ Mizoreww/awesome-claude-code-config
 littleben/awesomeAgentskills
 makoMakoGo/fish-claude
 jaccen/Awesome-Gaussian-Skills
+ssrjkk/claude-skills
+Felixlan11/oneskill
+martc03/gov-mcp-servers
+coders-tm/laravel-core
+psalmprax/ettametta
+OnourImpram/claude-code-for-social-scientists
+dsouzaAnush/heroku-skills
+rwi001/vs-code-IDE
+mit-network/Antigravity-awesome-skills
