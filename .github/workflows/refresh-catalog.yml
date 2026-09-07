@@ -60,7 +60,8 @@ jobs:
           source_count=$(grep -Ev '^[[:space:]]*(#|$)' config/upstream-skill-sources.txt | wc -l)
           max_requests=$((source_count * 3 + 50))
           echo "Scanning $source_count repositories with a $max_requests-request budget"
-          python3 scripts/crawl_github_skills.py \
+          timeout --signal=INT --kill-after=15s 120s \
+            python3 scripts/crawl_github_skills.py \
             --dry-run \
             --repository-file config/upstream-skill-sources.txt \
             --repository-only \
