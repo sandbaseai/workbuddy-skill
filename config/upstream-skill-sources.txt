@@ -247,3 +247,14 @@ snyk/agent-scan
 posit-dev/skills
 microsoft/skills-for-fabric
 JackyST0/awesome-agent-skills
+android/skills
+Yuan1z0825/nature-skills
+ibelick/ui-skills
+chrisbanes/skills
+n8n-io/skills
+SpecterOps/skills
+tavily-ai/skills
+mgechev/skillgrade
+planetscale/database-skills
+spring-ai-community/spring-ai-agent-utils
+microsoft/skills-for-copilot-studio
