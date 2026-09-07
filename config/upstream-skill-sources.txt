@@ -1061,3 +1061,13 @@ adrianco/retort
 kvn8888/OpenFoodJournal
 eminbayrak/ai-architecture
 docxology/MetaInformAnt
+NVIDIA/NemoClaw
+mits-pl/wove
+ashmoonori-afk/Design-Claude-Burnguard
+galyarderlabs/galyarder-framework
+sethmblack/paks-skills
+oyi77/1ai-skills
+Guild-Agents/guild
+Demerzels-lab/elsamultiskillagent
+samirhvbr/skill-loop
+reblocke/sodium_change
