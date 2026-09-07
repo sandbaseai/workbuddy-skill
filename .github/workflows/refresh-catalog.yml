@@ -30,6 +30,8 @@ jobs:
           python3 scripts/validate_site_data.py
           python3 scripts/verify_catalog_snapshot.py
       - name: Verify latest release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: python3 scripts/check_release_assets.py
       - name: Check public resource links
         run: python3 scripts/check_resource_links.py
