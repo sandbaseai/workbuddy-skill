@@ -79,6 +79,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - WorkBuddyGuide online reading site: https://workbuddy.homes
 - MIT community WorkBuddy usage and troubleshooting reference: https://github.com/Neo5093/workbuddy-guide
 - MIT WorkBuddy task-flow and rollback-boundary reference: https://github.com/maning636/workbuddy-runbook
+- MIT Chinese WorkBuddy Skills collection for research, memory, context, stock analysis, and learning (review WorkBuddy frontmatter and Codex compatibility boundary): https://github.com/dingdong905/workbuddy-skills
 - Chinese WorkBuddy practice guide (verify freshness and license before reuse): https://github.com/opcspace/WorkBuddy-Guide
 - MIT WorkBuddy beginner starter: https://github.com/sunyet-01/WorkBuddy-Starter
 - MIT WorkBuddy-compatible QA testing reference: https://github.com/genapohub/qa-testing-guide
