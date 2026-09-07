@@ -2,6 +2,7 @@
 github/awesome-copilot
 obra/superpowers
 sickn33/agentic-awesome-skills
+VoltAgent/awesome-openclaw-skills
 affaan-m/ECC
 alchaincyf/nuwa-skill
 Hisn00w/ASu-skills
