@@ -133,6 +133,7 @@
 - [agency-agents-zh](https://github.com/jnMetaCode/agency-agents-zh)——MIT 许可、覆盖工程、设计、营销、金融等工作流的中文专家角色集合；复用前仍需检查归属说明和随附素材。
 - [WorkBuddy Usage Status](https://github.com/clancy-feng/workbuddy-usage-status)——MIT 许可、离线优先的用量看板，可分析本地 Token、credit、模型效率和错误；使用前仍需检查本地数据读取及可选凭据边界。
 - [Token Usage](https://github.com/YuLaiZ/token-usage)——MIT 许可的本地用量分析 CLI，支持 WorkBuddy 和无需 SQL 的多维报表；分享报告前检查本地轨迹路径和脱敏处理。
+- [WorkBuddy Check-in](https://github.com/KristoffersonLee/workbuddy-checkin)——MIT 许可的 Windows 自动化参考，使用 OCR、模拟点击、计划任务和条件式退出应用；它属于高风险外部参考，运行前应确认平台条款并逐一检查脚本。
 - [Agent Analytics Report](https://github.com/Elisabeth15501/agent-analytics-report)——MIT 许可的 WorkBuddy 用量分析工具，可生成 Token、模型成本和异常报告；它会读取本地 traces、数据库和 usage 日志，使用前先确认隐私边界并只分享脱敏报告。
 - [WorkBuddy Codex Hub MCP](https://github.com/somo-ui/workbuddy-codex-hub-mcp)——MIT 许可的早期本地 MCP 协作参考，用 SQLite 任务池协调 WorkBuddy 与 Codex 的认领、提交和独立审阅；项目明确尚未提供生产级加固、并发写锁或托管服务，复用前应先审阅代码和部署边界。
 - [WorkBuddy Chat Manager](https://github.com/sutupikk-cyber/workbuddy-chat-manager)——MIT 许可的本地聊天恢复/清理参考，涉及 `workbuddy.db`、JSONL 会话和回收站；它提供备份和确认流程，但删除能力仍属高风险，使用前必须先备份、核对账号与路径并人工确认目标。

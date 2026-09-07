@@ -98,6 +98,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT Chinese multi-domain expert-role collection (inspect attribution and bundled assets before reuse): https://github.com/jnMetaCode/agency-agents-zh
 - MIT offline-first WorkBuddy usage analytics dashboard (inspect credential boundaries): https://github.com/clancy-feng/workbuddy-usage-status
 - MIT local token-usage analysis CLI with WorkBuddy support (review trace paths and redaction): https://github.com/YuLaiZ/token-usage
+- MIT WorkBuddy Windows OCR/click/scheduled-task check-in automation (high risk; review platform terms and every script before running): https://github.com/KristoffersonLee/workbuddy-checkin
 - MIT WorkBuddy usage-analysis tool (reads local traces, database, and usage logs; share only redacted reports): https://github.com/Elisabeth15501/agent-analytics-report
 - MIT early local MCP task-pool reference for WorkBuddy/Codex collaboration (not production-hardened): https://github.com/somo-ui/workbuddy-codex-hub-mcp
 - MIT WorkBuddy local chat recovery/cleanup reference (high-risk database and session-file operations; review backups and confirmations): https://github.com/sutupikk-cyber/workbuddy-chat-manager
