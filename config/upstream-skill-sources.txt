@@ -453,3 +453,7 @@ okx/agent-skills
 Leon-Drq/openagentskill
 apache/doris-skills
 mblode/agent-skills
+EvolveHQ/docflow
+magnus919/agent-skills
+deusyu/translate-book
+lessweb/deepcode-cli

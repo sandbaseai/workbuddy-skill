@@ -309,6 +309,10 @@
 - [OpenAgentSkill](https://github.com/Leon-Drq/openagentskill)——MIT 许可的 Skill 注册与发现工作流；接入 WorkBuddy 前检查注册来源、安装路径、网络访问和包的来源证明。
 - [Apache Doris Skills](https://github.com/apache/doris-skills)——Apache-2.0 许可的数据库工程 Skill，覆盖架构、调试、部署、导入和数据湖工作流；执行前核验 SQL、集群目标、凭据和任何运维写入。
 - [mblode Agent Skills](https://github.com/mblode/agent-skills)——MIT 许可的工程与交付 Skill，覆盖架构、文档、DX 审计、规划、SEO 和 Pull Request 工作流；使用前检查仓库写入、外部发布和宿主假设。
+- [Docflow](https://github.com/EvolveHQ/docflow)——MIT 许可的文档与交付工作流，覆盖约定、审计、ADR、计划和发布；使用前检查生成文件、仓库写入和发布范围。
+- [Magnus Agent Skills](https://github.com/magnus919/agent-skills)——MIT 许可的 Skill 集合，覆盖 API 设计、治理、评测、可观测性、生产运维和 Agent 经济性；执行前核验领域假设和运维副作用。
+- [Translate Book](https://github.com/deusyu/translate-book)——MIT 许可的图书翻译 Skill；分发前核对原文权利、翻译语言、章节边界和生成内容。
+- [DeepCode CLI](https://github.com/lessweb/deepcode-cli)——MIT 许可的编码 Agent CLI，内置自引用、图像生成、Skill 消化和 Skill 编写工具；使用前检查子进程、网络访问和生成文件。
 
 ## 本仓库
 

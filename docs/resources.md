@@ -309,6 +309,10 @@ Use this page to choose the right source before searching the catalog.
 - [OpenAgentSkill](https://github.com/Leon-Drq/openagentskill) — MIT-licensed Skill registry and discovery workflows; review registry sources, installation paths, network access, and package provenance before connecting it to WorkBuddy.
 - [Apache Doris Skills](https://github.com/apache/doris-skills) — Apache-2.0 database engineering Skills for architecture, debugging, deployment, import, and data-lake workflows; validate SQL, cluster targets, credentials, and any operational writes.
 - [mblode Agent Skills](https://github.com/mblode/agent-skills) — MIT-licensed engineering and delivery Skills for architecture, documentation, DX audits, planning, SEO, and pull-request workflows; review repository writes, external publishing, and host assumptions before use.
+- [Docflow](https://github.com/EvolveHQ/docflow) — MIT-licensed documentation and delivery workflows for conventions, audits, ADRs, plans, and shipping; review generated files, repository writes, and release scope before use.
+- [Magnus Agent Skills](https://github.com/magnus919/agent-skills) — MIT-licensed collection spanning API design, governance, evaluations, observability, production operations, and agent economics; validate domain assumptions and any operational side effects.
+- [Translate Book](https://github.com/deusyu/translate-book) — MIT-licensed book-translation Skill; verify source-text rights, translation language, chapter boundaries, and generated output before distribution.
+- [DeepCode CLI](https://github.com/lessweb/deepcode-cli) — MIT-licensed coding-agent CLI with bundled Skills for self-reference, image generation, Skill digestion, and Skill authoring; inspect subprocesses, network access, and generated files before use.
 
 ## This repository
 
