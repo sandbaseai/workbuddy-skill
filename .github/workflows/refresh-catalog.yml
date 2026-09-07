@@ -62,7 +62,9 @@ jobs:
             --max-requests 1000 \
             --max-rate-wait 120 \
             --output /tmp/upstream-skill-probe.jsonl \
-            --dry-run-output /tmp/upstream-skill-probe-report.jsonl
+            --dry-run-output /tmp/upstream-skill-probe-report.jsonl \
+            --status-output /tmp/upstream-skill-probe-status.json
+          cat /tmp/upstream-skill-probe-status.json
           python3 scripts/report_new_discoveries.py \
             --catalog catalog/skills.jsonl \
             --discovery /tmp/upstream-skill-probe-report.jsonl \
@@ -93,6 +95,11 @@ jobs:
               ("security_flagged", "Static security flags"),
           ):
               print(f"| {label} | {summary.get(key, 0)} |")
+          status = json.loads(open("/tmp/upstream-skill-probe-status.json", encoding="utf-8").read())
+          print("")
+          print(f"Probe status: **{status['status']}** ({status['records']} records, {status['requests']} requests)")
+          if status.get("error"):
+              print(f"\n> The read-only probe paused after a partial result: `{status['error']}`")
           PY
       - name: Upload read-only discovery report
         uses: actions/upload-artifact@v7
@@ -103,4 +110,5 @@ jobs:
             /tmp/upstream-skill-new-candidates.jsonl
             /tmp/upstream-skill-new-candidates-reviewed.jsonl
             /tmp/upstream-skill-discovery-summary.json
+            /tmp/upstream-skill-probe-status.json
           retention-days: 30

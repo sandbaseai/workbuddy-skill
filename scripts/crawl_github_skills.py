@@ -228,6 +228,22 @@ def write_atomic(path: Path, rows: dict[str, dict]) -> None:
     temporary.replace(path)
 
 
+def write_status(path: Path | None, status: str, records: int, requests: int, error: str = "") -> None:
+    if path is None:
+        return
+    payload = {
+        "status": status,
+        "records": records,
+        "requests": requests,
+    }
+    if error:
+        payload["error"] = error
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(json.dumps(payload, sort_keys=True) + "\n", encoding="utf-8")
+    temporary.replace(path)
+
+
 def checkpoint_file(output: Path, explicit: Path | None) -> Path:
     return explicit or output.with_name(output.name + ".checkpoint.json")
 
@@ -347,6 +363,11 @@ def main() -> int:
         "--dry-run-output",
         type=Path,
         help="Optional JSONL discovery report path; only valid with --dry-run",
+    )
+    parser.add_argument(
+        "--status-output",
+        type=Path,
+        help="Optional JSON status report for complete or partial discovery runs",
     )
     parser.add_argument("--checkpoint-every", type=int, default=5)
     parser.add_argument(
@@ -538,6 +559,7 @@ def main() -> int:
         if args.allow_partial and args.dry_run:
             if args.dry_run_output:
                 write_atomic(args.dry_run_output, rows)
+            write_status(args.status_output, "partial", len(rows), requests, str(exc))
             print(
                 f"partial dry-run: preserved {len(rows)} discovered records",
                 file=sys.stderr,
@@ -557,6 +579,7 @@ def main() -> int:
             + (f"; report written to {args.dry_run_output}" if args.dry_run_output else ""),
             file=sys.stderr,
         )
+    write_status(args.status_output, "complete", len(rows), requests)
     # A repository-only run is complete once every requested repository has
     # been scanned; --target is a cap for that mode, not a minimum result
     # count. Global Code Search retains the historical target contract.
