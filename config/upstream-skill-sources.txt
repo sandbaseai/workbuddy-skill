@@ -583,3 +583,9 @@ lsaint/aikito
 axelfreeman/marketing-mindset
 kyungseo/learnstead
 edvardgrishin27/nativeprompt
+TechNomadCode/AI-Product-Development-Toolkit
+kennyzir/7deer_skills
+Doist/todoist-cli
+archcore-ai/plugin
+axoviq-ai/synthadoc
+langfuse/langfuse-docs
