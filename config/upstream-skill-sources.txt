@@ -1343,6 +1343,11 @@ EtienneLescot/n8n-as-code
 rlaope/oh-my-hermes
 cookiy-ai/user-research-skill
 PrathamLearnsToCode/paper2code
+workshop-gbb/awesome-copilot-adventures
+tolimcn7786/skills
+vikynofebriputra-creator/Orkas-Awesome-AgentSkills
+tayyabexe/skills
+MarioJames/skill-foundry
 wagneripjr/skills
 tenfyzhong/agent-plugins-hub
 ethanjyx/tight-studio-plugins
