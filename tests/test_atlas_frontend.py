@@ -111,6 +111,7 @@ class AtlasFrontendTests(unittest.TestCase):
         self.assertIn('historyMode: "push"', self.app)
         self.assertIn('installable.addEventListener("click"', self.app)
         self.assertIn('packageStatus.value = "reviewed"', self.app)
+        self.assertIn('minScore.value = "80"', self.app)
         self.assertIn('meta.snapshot_frozen !== true', self.app)
         self.assertIn("async function loadCatalog()", self.app)
         self.assertIn("const CATALOG_LOAD_TIMEOUT_MS = 15000", self.app)
