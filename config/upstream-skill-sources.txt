@@ -929,3 +929,13 @@ johnqtcg/awesome-skills
 stephenlzc/AI-Powered-Literature-Review-Skills
 agentskillexchange/skills
 zJay26/douyin-skills
+mixelpixx/Konnect
+yschimke/compose-ai-tools
+Vladimir-Human/humanizer-ru
+Lincoln504/pi-research
+zuke-build/zuke
+fagemx/edda
+5dive-ai/5dive
+a-attia/scicomp-research-skills
+sx4im/skillcheck
+himself65/skill-lint
