@@ -68,6 +68,7 @@
 - [Visual Explainer](https://github.com/nicobailon/visual-explainer)——MIT 许可的可视化解释参考，可将计划、差异、数据表和架构评审整理成自包含 HTML；适配 WorkBuddy 前检查生成素材以及浏览器/运行时假设。
 - [Scientific Agent Skills](https://github.com/K-Dense-AI/scientific-agent-skills)——MIT 许可的科研工作流集合，提供带测试的 160+ 个领域 Skill；使用前应分别审阅数据库访问、API Key、敏感科研数据和科学结论边界。
 - [Lark CLI](https://github.com/larksuite/cli)——MIT 许可的飞书官方 CLI，提供文档化的 Agent Skill、结构化命令和系统钥匙串认证；接入 WorkBuddy 前检查应用权限范围和外发数据边界。
+- [Google Agent Skills](https://github.com/google/skills)——Apache-2.0 许可的 Google 官方 Skill，覆盖云、Gemini、数据和开发者工作流；作为外部参考使用具体 Skill，接入 WorkBuddy 前检查云项目、API 和计费权限。
 - [Trail of Bits Skills](https://github.com/trailofbits/skills)——CC-BY-SA-4.0 许可的安全研究 Skill，覆盖漏洞检测和审计工作流；适配前检查署名要求、脚本以及授权边界。
 - [NVIDIA SkillSpector](https://github.com/NVIDIA/SkillSpector)——Apache-2.0 许可的 Skill 审计工具，可检测提示注入、数据外泄、恶意模式和供应链风险；它只是审阅辅助，不代表包一定安全。
 - [Gentle AI](https://github.com/Gentleman-Programming/gentle-ai)——MIT 许可的跨 Agent 配置参考，覆盖记忆、规格驱动开发、精选 Skill、MCP 和有界审阅，支持 Claude Code、Cursor、OpenCode、Codex 和 Pi。

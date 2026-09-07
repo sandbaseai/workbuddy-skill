@@ -32,6 +32,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT visual explainer reference for plans, diffs, data tables, and architecture reviews (external reference): https://github.com/nicobailon/visual-explainer
 - MIT scientific Agent Skills collection with documented tests (review APIs, data, and claims separately): https://github.com/K-Dense-AI/scientific-agent-skills
 - MIT official Lark/Feishu CLI with documented Agent Skills (review app scopes and outbound data): https://github.com/larksuite/cli
+- Apache-2.0 official Google Agent Skills for cloud, Gemini, data, and developer workflows (review project, API, and billing permissions): https://github.com/google/skills
 - Community task-oriented guide: https://github.com/AlephAITech/WorkBuddyGuide
 - Trail of Bits security Skills (CC-BY-SA-4.0; inspect attribution and authorization): https://github.com/trailofbits/skills
 - NVIDIA SkillSpector security scanner (Apache-2.0; review aid, not a trust guarantee): https://github.com/NVIDIA/SkillSpector
