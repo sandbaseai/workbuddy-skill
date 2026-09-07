@@ -35,6 +35,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Apache-2.0 official Google Agent Skills for cloud, Gemini, data, and developer workflows (review project, API, and billing permissions): https://github.com/google/skills
 - MIT community index of 1,400+ Agent Skills (discovery only; inspect each upstream source): https://github.com/VoltAgent/awesome-agent-skills
 - Apache-2.0 Google Workspace CLI with Agent Skills for Gmail, Drive, and Calendar (not an official Google product; review OAuth and credentials): https://github.com/googleworkspace/cli
+- MIT Obsidian Agent Skills for Markdown, Bases, JSON Canvas, and Obsidian CLI (review Vault path and file-write scope): https://github.com/kepano/obsidian-skills
 - MIT GitHub-maintained Awesome Copilot collection of agents, instructions, prompts, and Skills (review host and repository permissions): https://github.com/github/awesome-copilot
 - MIT TypeScript-focused Agent Skills collection by Matt Pocock (review exact paths and command assumptions): https://github.com/mattpocock/skills
 - MIT Wshobson development workflow agents and Skills (review scripts, dependencies, and host configuration): https://github.com/wshobson/agents

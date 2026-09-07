@@ -71,6 +71,7 @@
 - [Google Agent Skills](https://github.com/google/skills)——Apache-2.0 许可的 Google 官方 Skill，覆盖云、Gemini、数据和开发者工作流；作为外部参考使用具体 Skill，接入 WorkBuddy 前检查云项目、API 和计费权限。
 - [Awesome Agent Skills](https://github.com/VoltAgent/awesome-agent-skills)——MIT 许可的社区导航索引，收录 1,400+ 个来自官方团队和实践者的 Skill；仅用于发现，之后仍需逐个检查上游许可证、提交版本和权限边界。
 - [Google Workspace CLI](https://github.com/googleworkspace/cli)——Apache-2.0 许可的 CLI，提供结构化输出以及 Gmail、Drive、Calendar 等 Workspace API 的 Agent Skill；它不是 Google 官方产品，接入 WorkBuddy 前必须检查 OAuth Scope、本地凭据和外发数据。
+- [Obsidian Skills](https://github.com/kepano/obsidian-skills)——MIT 许可的 Obsidian Agent Skill，覆盖 Markdown、Bases、JSON Canvas 和 Obsidian CLI；从 WorkBuddy 使用前先检查目标 Vault 路径和文件写入范围。
 - [GitHub Awesome Copilot](https://github.com/github/awesome-copilot)——GitHub 维护的 MIT 许可集合，包含 Agent、指令、Prompt 和 Skill；可作为跨 Agent 参考，适配 WorkBuddy 前检查每个条目的宿主假设和仓库权限。
 - [Matt Pocock's Skills](https://github.com/mattpocock/skills)——MIT 许可、面向 TypeScript 的 Agent Skill 集合，支持多种 Agent；复用前检查具体 Skill 路径、工具假设和命令执行行为。
 - [Wshobson Agents](https://github.com/wshobson/agents)——MIT 许可的开发工作流 Agent 与 Skill 集合；使用前检查附带脚本、依赖和宿主专属配置。

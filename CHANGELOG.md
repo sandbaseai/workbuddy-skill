@@ -21,6 +21,7 @@ All notable changes to this project are documented here.
 - Add MIT Scientific Agent Skills and official Lark CLI references with explicit data, credential, and permission review boundaries, without importing Skills or changing the frozen catalog.
 - Add the Apache-2.0 official Google Agent Skills collection as an external cloud and developer-workflow reference, without importing Skills or changing the frozen catalog.
 - Add external references for the MIT Awesome Agent Skills discovery index and Apache-2.0 Google Workspace CLI, with explicit upstream, OAuth, and credential review guidance.
+- Add the MIT Obsidian Skills collection as an external knowledge-workflow reference with an explicit Vault and file-write boundary, without importing Skills or changing the frozen catalog.
 - Add MIT GitHub Awesome Copilot, Matt Pocock Skills, and Wshobson Agents references from the read-only ecosystem probe, without importing Skills or changing the frozen catalog.
 - Add the MIT Vercel Skills CLI as a cross-host, prompt-only-capable external reference, with a clear boundary from WorkBuddy desktop ZIP imports.
 - Treat exhausted transport timeouts as visible link-check warnings while continuing to fail on explicit HTTP or non-timeout transport errors.
