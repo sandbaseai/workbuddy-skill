@@ -63,6 +63,14 @@ numman-ali/n-skills
 backnotprop/plannotator
 langfuse/skills
 legeling/PromptHub
+dataforseo/mcp-server-typescript
+MystenLabs/MemWal
+graphsignal/graphsignal-profiler
+eddmann/strava-cli
+gsd-build/gsd-browser
+DenisSergeevitch/repo-task-proof-loop
+forter/agentic-readiness-guide
+Raftersecurity/rafter-cli
 gokapso/agent-skills
 Tencent/SkillHone
 SnailSploit/Claude-Red
