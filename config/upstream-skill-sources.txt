@@ -53,6 +53,16 @@ timescale/pg-aiguide
 agent-sh/agentsys
 nanocoai/nanoclaw
 AlpacaLabsLLC/skills-for-architects
+Berserk-hub150/skillhawk
+kesslernity/awesome-copilot-cowork-skills
+PyModel/css-pro-tips
+luongnv89/skills
+amd/skills
+forcedotcom/sf-skills
+numman-ali/n-skills
+backnotprop/plannotator
+langfuse/skills
+legeling/PromptHub
 gokapso/agent-skills
 Tencent/SkillHone
 SnailSploit/Claude-Red
