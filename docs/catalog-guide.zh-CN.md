@@ -68,10 +68,19 @@ python3 scripts/query_catalog.py --category research --package-status reviewed \
 仓库而不触发全局 Code Search 时，组合使用
 `--repository owner/name --repository-only`。
 在仓库定向模式中，`--target` 只是数量上限；小仓库完整扫描后，即使候选少于上限也会成功返回。
+如果要重复扫描一组公开来源，可以在 UTF-8 文件中每行写一个 `owner/name`，再使用
+`--repository-file`；空行和 `#` 注释会被忽略：
+
+```bash
+python3 scripts/crawl_github_skills.py --dry-run \
+  --repository-file config/upstream-skill-sources.txt \
+  --repository-only --target 10000 \
+  --dry-run-output /tmp/upstream-skill-probe.jsonl
+```
 
 仓库的定时 `Refresh skill catalog` 工作流也会对一组代表性的上游 Skill 仓库执行只读探测。
-它只报告新发现的路径，不会写入冻结目录、生成精选包或改变已发布快照；短期 Actions Artifact
-会保存发现到的 JSONL 行，便于后续处理。需要详细审阅某个候选时，仍请在本地运行上面的命令。
+它只报告新发现的路径，不会写入冻结目录、生成精选包或改变已发布快照；Actions Artifact
+保留 30 天，会保存发现到的 JSONL 行，便于后续处理。需要详细审阅某个候选时，仍请在本地运行上面的命令。
 其中第二个文件只保留冻结目录中尚未出现的路径和内容 SHA，便于直接筛选新候选。
 第三个文件会为这些新候选增加不会执行源内容的兼容性和静态信号预审；这些信号只是线索，不代表批准。
 

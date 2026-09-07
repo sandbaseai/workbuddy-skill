@@ -96,11 +96,21 @@ For a repository-specific preview that does not require global Code Search,
 combine it with `--repository owner/name --repository-only`.
 In repository-only mode, `--target` is only a cap: a smaller repository still
 returns success after its complete tree scan.
+For a repeatable set of public sources, put one `owner/name` per line in a
+UTF-8 file and pass `--repository-file`; blank lines and `#` comments are
+ignored:
+
+```bash
+python3 scripts/crawl_github_skills.py --dry-run \
+  --repository-file config/upstream-skill-sources.txt \
+  --repository-only --target 10000 \
+  --dry-run-output /tmp/upstream-skill-probe.jsonl
+```
 
 The scheduled `Refresh skill catalog` workflow also runs a read-only probe over
 representative upstream Skill repositories. It reports newly discoverable
 paths without writing the frozen catalog, creating packages, or changing any
-published snapshot. Its short-lived Actions artifact contains the discovered
+published snapshot. Its 30-day Actions artifact contains the discovered
 JSONL rows plus a second file containing only paths and content SHAs not already
 represented by the frozen catalog. A third file adds non-executing compatibility
 and static-signal triage for those new candidates; these signals are hints, not

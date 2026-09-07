@@ -11,6 +11,7 @@ addyosmani/agent-skills
 vercel-labs/agent-skills
 vercel-labs/skills
 google/skills
+googleworkspace/cli
 ComposioHQ/awesome-claude-skills
 alirezarezvani/claude-skills
 wshobson/agents
@@ -18,4 +19,3 @@ K-Dense-AI/scientific-agent-skills
 phuryn/pm-skills
 JimLiu/baoyu-skills
 nexu-io/open-design
-googleworkspace/cli
