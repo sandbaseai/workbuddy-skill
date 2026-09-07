@@ -104,6 +104,12 @@
 - [Lazyest QA](https://github.com/lazyest-hyun/lazyest-qa)——MIT 许可、参考 ISTQB 的 QA 与测试 Skill；使用时要求它区分测试证据、环境限制和未覆盖风险，不把建议当作测试结果。
 - [Safe Public Release Skill](https://github.com/HoFireMan/safe-public-release-skill)——MIT 许可的公开发布前清理 Skill，可辅助从私有仓库准备公开版本；执行清理前先备份，并检查密钥、历史、配置和删除范围。
 - [Task and Skill JCR System](https://github.com/xuemingze/task-and-skill-jcr-system)——MIT 许可的任务与 Skill 记录系统，包含状态追踪和多宿主 plan-keeper 适配；启用前检查本地状态文件、同步范围和自动更新行为。
+- [Daniel-DescentAI Agent Skills](https://github.com/Daniel-DescentAI/agent-skills)——MIT 许可的规格驱动、评审门禁工程 Skill 集合，覆盖计划、实现、QA、PDF 和发布流程；适配 WorkBuddy 时先确认写入范围、分支操作和通知权限。
+- [Research Software Engineering Skills](https://github.com/fdiblen/rseng-agent-skills)——MIT 许可的科研软件工程 Skill 集合，覆盖安全、引用、数据管理、可复现性、CI/CD、文档和研究完整性；科研使用前仍需由领域专家核验结论。
+- [Godot Agent Skills](https://github.com/sshnuke3/godot-agent-skills)——MIT 许可的 Godot 开发 Skill 集合，涵盖 GDScript、UI、优化、最佳实践和资源生成；使用前检查 Godot 版本、项目文件写入和导出环境。
+- [Scientific Agent Skills](https://github.com/wupeng1998/scientific-agent-skills)——MIT 许可的大型科研领域 Skill 集合，覆盖生物信息、化学、统计、文献、PDF、图表和实验工具；逐项审阅数据库、API Key、敏感数据和科学结论边界。
+- [CalculatorX Agent Skill](https://github.com/CalculatorX-AI/calculatorx-agent-skill)——MIT 许可的便携计算 Skill；官方契约优先使用 MCP 或 REST，接入 WorkBuddy 前检查外部服务、输入隐私和计费边界。
+- [Investment Research Workbench](https://github.com/EastsCloud/investment-agent-skill)——MIT 许可的投资研究工作台 Skill；仅作研究辅助，使用真实资金或敏感账户前必须核对数据时效、来源、风险和任何交易副作用。
 - [.NET Skills](https://github.com/dotnet/skills)——MIT 许可的 Microsoft .NET 与 C# 编程 Agent 工作流；适配到 WorkBuddy 前检查 SDK 版本、生成文件、Shell 命令和仓库写入范围。
 - [Adobe Skills](https://github.com/adobe/skills)——Apache-2.0 许可的 Adobe 维护 Agent Skill；复用前使用精确来源并检查创意素材、服务凭据、账号权限和发布影响。
 - [Tons of Skills Marketplace](https://github.com/jeremylongshore/tons-of-skills-marketplace)——MIT 许可的跨模型 Skill 市场，提供规范层、适配器和包工具；用于发现时要逐个核验适配器的来源、运行时和权限。

@@ -68,6 +68,12 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT ISTQB-informed QA and testing Skill (distinguish test evidence from recommendations and environment limits): https://github.com/lazyest-hyun/lazyest-qa
 - MIT pre-publication cleanup Skill for releases from private repositories (back up and inspect secrets, history, and deletion scope): https://github.com/HoFireMan/safe-public-release-skill
 - MIT task and Skill record system with multi-host plan-keeper adapters (review local state and sync behavior): https://github.com/xuemingze/task-and-skill-jcr-system
+- MIT spec-driven, review-gated engineering Skills for planning, implementation, QA, PDF, and shipping (review writes, branches, and notifications): https://github.com/Daniel-DescentAI/agent-skills
+- MIT research-software-engineering Skills for security, citations, data management, reproducibility, CI/CD, documentation, and integrity: https://github.com/fdiblen/rseng-agent-skills
+- MIT Godot development Skills for GDScript, UI, optimization, best practices, and asset generation (review project writes and export environment): https://github.com/sshnuke3/godot-agent-skills
+- MIT large scientific Skill collection for bioinformatics, chemistry, statistics, literature, PDF, visualization, and lab tools: https://github.com/wupeng1998/scientific-agent-skills
+- MIT portable CalculatorX Skill whose canonical contract prefers MCP or REST (review external services, privacy, and billing): https://github.com/CalculatorX-AI/calculatorx-agent-skill
+- MIT investment-research workbench Skill (research assistance only; verify freshness, sources, risk, and trading side effects): https://github.com/EastsCloud/investment-agent-skill
 - MIT .NET and C# workflows for coding agents (review SDK versions, generated files, commands, and write scope): https://github.com/dotnet/skills
 - Apache-2.0 Adobe-maintained Agent Skills (review creative assets, credentials, account permissions, and publishing effects): https://github.com/adobe/skills
 - MIT model-agnostic Tons of Skills Marketplace with canonical layer and adapters (verify provenance, runtime, and permissions): https://github.com/jeremylongshore/tons-of-skills-marketplace

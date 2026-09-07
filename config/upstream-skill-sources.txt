@@ -367,3 +367,9 @@ georgeracu/sdd-skills
 lazyest-hyun/lazyest-qa
 HoFireMan/safe-public-release-skill
 xuemingze/task-and-skill-jcr-system
+Daniel-DescentAI/agent-skills
+fdiblen/rseng-agent-skills
+sshnuke3/godot-agent-skills
+wupeng1998/scientific-agent-skills
+CalculatorX-AI/calculatorx-agent-skill
+EastsCloud/investment-agent-skill
