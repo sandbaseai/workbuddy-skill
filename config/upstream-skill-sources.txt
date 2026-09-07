@@ -461,3 +461,8 @@ GabrielOnDelphi/Claude-Tools-for-Delphi
 XAIHT/Tlamatini
 OEvortex/vtx-coding-agent
 yakeworld/Synthos
+openai/skills
+emilkowalski/skills
+MiniMax-AI/skills
+browserbase/skills
+Dimillian/Skills
