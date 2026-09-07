@@ -742,6 +742,16 @@ LLMQuant/skills
 danjdewhurst/story-skills
 wp-a/nature-academic-search
 SkyworkAI/Skywork-Skills
+ChosenXu/eagle-untagged-organizer
+KHWD0922/workbuddy-skill-x-media-downloader
+62656456/ai-film-skills
+adongwanai/learn-workbuddy
+genapohub/qa-testing-guide
+genapohub/project-mgmt-guide
+cabbage2000-lab/data-analysis-skills
+cabbage2000-lab/textbook-writer-skills
+konnga/skill-buddy
+sharptoolbox/WorkBuddy-AppBuilderSkill
 vanillaflava/llm-wiki-skills
 taxueseek/say-it-human
 NatsuFox/Tapestry
