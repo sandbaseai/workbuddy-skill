@@ -1258,3 +1258,17 @@ EvoMap/evolver
 kucherenko/jscpd
 jacob-bd/gemini-notebook-mcp-cli
 ageerle/ruoyi-ai
+nidhinjs/prompt-master
+helloianneo/ian-xiaohei-illustrations
+alchaincyf/zhangxuefeng-skill
+unoplatform/uno
+oso95/scroll-world
+handsomestWei/patent-disclosure-skill
+PleasePrompto/notebooklm-skill
+Cocoon-AI/architecture-diagram-generator
+LiamGvchi/gc-minimal-zine-poster
+op7418/guizang-social-card-skill
+ParthJadhav/app-store-screenshots
+XBuilderLAB/cheat-on-content
+wbh604/UZI-Skill
+htdt/godogen
