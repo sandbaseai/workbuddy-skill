@@ -1378,6 +1378,16 @@ InternScience/ChemClaw
 SAP/ai-skills-library
 gridctl/gridctl
 Happy-Technologies-LLC/happy-platform-skills
+FireRedTeam/FireRed-OpenStoryline
+google-antigravity/antigravity-sdk-python
+pacifio/atlas
+open-gitagent/opengap
+sheeki03/tirith
+yctimlin/mcp_excalidraw
+datopian/portaljs
+Eronred/aso-skills
+aipoch/medical-research-skills
+majidmanzarpour/threejs-game-skills
 0xsline/short-drama
 0xsline/OpenChatCut
 activeloopai/hivemind
