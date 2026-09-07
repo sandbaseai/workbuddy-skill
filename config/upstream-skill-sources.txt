@@ -44,3 +44,12 @@ aaron-he-zhu/aaron-marketing-skills
 samber/cc-skills-golang
 gokapso/agent-skills
 Tencent/SkillHone
+SnailSploit/Claude-Red
+feichanggege/ecommerce-visual-copywriting-skill
+sno-ai/mda
+arpitg1304/robotics-agent-skills
+Narwhal-Lab/MagicSkills
+K-Dense-AI/mimeo
+blacktop/ipsw-skill
+Timefiles404/lean-mode-skill
+Hao0321/claude-skill-code-cleanup

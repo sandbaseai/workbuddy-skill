@@ -103,7 +103,7 @@ ignored:
 ```bash
 python3 scripts/crawl_github_skills.py --dry-run \
   --repository-file config/upstream-skill-sources.txt \
-  --repository-only --target 12000 \
+  --repository-only --target 12500 \
   --dry-run-output /tmp/upstream-skill-probe.jsonl
 ```
 
