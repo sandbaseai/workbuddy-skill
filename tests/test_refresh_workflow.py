@@ -273,8 +273,10 @@ class RefreshWorkflowTests(unittest.TestCase):
     def test_readme_keeps_internal_catalog_governance_out_of_the_user_entrypoint(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         self.assertIn("21,818", readme)
-        self.assertIn("冻结的公开快照", readme)
-        self.assertIn("frozen public snapshot", readme)
+        self.assertNotIn("冻结的公开快照", readme)
+        self.assertNotIn("frozen public snapshot", readme)
+        self.assertIn("帮助你发现目录内容、审阅来源并导入 WorkBuddy", readme)
+        self.assertIn("helps users discover skills, review provenance", readme)
         self.assertIn("For English readers", readme)
         self.assertIn("English quickstart", readme)
         self.assertIn("给项目加一个 Star](https://github.com/sandbaseai/workbuddy-skill)", readme)
