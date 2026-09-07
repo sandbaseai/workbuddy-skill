@@ -71,6 +71,9 @@
 - [Google Agent Skills](https://github.com/google/skills)——Apache-2.0 许可的 Google 官方 Skill，覆盖云、Gemini、数据和开发者工作流；作为外部参考使用具体 Skill，接入 WorkBuddy 前检查云项目、API 和计费权限。
 - [Awesome Agent Skills](https://github.com/VoltAgent/awesome-agent-skills)——MIT 许可的社区导航索引，收录 1,400+ 个来自官方团队和实践者的 Skill；仅用于发现，之后仍需逐个检查上游许可证、提交版本和权限边界。
 - [Google Workspace CLI](https://github.com/googleworkspace/cli)——Apache-2.0 许可的 CLI，提供结构化输出以及 Gmail、Drive、Calendar 等 Workspace API 的 Agent Skill；它不是 Google 官方产品，接入 WorkBuddy 前必须检查 OAuth Scope、本地凭据和外发数据。
+- [GitHub Awesome Copilot](https://github.com/github/awesome-copilot)——GitHub 维护的 MIT 许可集合，包含 Agent、指令、Prompt 和 Skill；可作为跨 Agent 参考，适配 WorkBuddy 前检查每个条目的宿主假设和仓库权限。
+- [Matt Pocock's Skills](https://github.com/mattpocock/skills)——MIT 许可、面向 TypeScript 的 Agent Skill 集合，支持多种 Agent；复用前检查具体 Skill 路径、工具假设和命令执行行为。
+- [Wshobson Agents](https://github.com/wshobson/agents)——MIT 许可的开发工作流 Agent 与 Skill 集合；使用前检查附带脚本、依赖和宿主专属配置。
 - [Trail of Bits Skills](https://github.com/trailofbits/skills)——CC-BY-SA-4.0 许可的安全研究 Skill，覆盖漏洞检测和审计工作流；适配前检查署名要求、脚本以及授权边界。
 - [NVIDIA SkillSpector](https://github.com/NVIDIA/SkillSpector)——Apache-2.0 许可的 Skill 审计工具，可检测提示注入、数据外泄、恶意模式和供应链风险；它只是审阅辅助，不代表包一定安全。
 - [Gentle AI](https://github.com/Gentleman-Programming/gentle-ai)——MIT 许可的跨 Agent 配置参考，覆盖记忆、规格驱动开发、精选 Skill、MCP 和有界审阅，支持 Claude Code、Cursor、OpenCode、Codex 和 Pi。
