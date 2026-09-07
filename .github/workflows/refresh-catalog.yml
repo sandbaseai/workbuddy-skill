@@ -57,6 +57,12 @@ jobs:
             --repository alchaincyf/nuwa-skill \
             --repository Hisn00w/ASu-skills \
             --repository aiworkskills/wechat-article-skills \
+            --repository anthropics/skills \
+            --repository mattpocock/skills \
+            --repository addyosmani/agent-skills \
+            --repository vercel-labs/agent-skills \
+            --repository vercel-labs/skills \
+            --repository google/skills \
             --repository-only \
             --target 10000 \
             --max-requests 60 \

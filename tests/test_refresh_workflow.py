@@ -11,8 +11,17 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("upstream-discovery-probe:", workflow)
         self.assertIn("--dry-run", workflow)
         self.assertIn("--repository-only", workflow)
-        self.assertIn("github/awesome-copilot", workflow)
-        self.assertIn("aiworkskills/wechat-article-skills", workflow)
+        for repository in (
+            "github/awesome-copilot",
+            "aiworkskills/wechat-article-skills",
+            "anthropics/skills",
+            "mattpocock/skills",
+            "addyosmani/agent-skills",
+            "vercel-labs/agent-skills",
+            "vercel-labs/skills",
+            "google/skills",
+        ):
+            self.assertIn(f"--repository {repository}", workflow)
         self.assertIn("--target 10000", workflow)
         self.assertIn("--output /tmp/upstream-skill-probe.jsonl", workflow)
         self.assertIn("--dry-run-output /tmp/upstream-skill-probe-report.jsonl", workflow)
