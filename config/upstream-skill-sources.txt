@@ -633,3 +633,7 @@ wei18/apple-dev-skills
 raimondasl/isitdone
 MaciejZet/agent-skills
 stevennitesh/programming-agent-skills
+MindGoblinStudios/grim-tome
+Art4/continuous-refactoring
+infotradescout/Selective-Intelligence
+Storybloq/storybloq
