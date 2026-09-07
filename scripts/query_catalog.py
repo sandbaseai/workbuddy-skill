@@ -21,6 +21,43 @@ ATLAS_URL = "https://sandbaseai.github.io/workbuddy-skill/"
 GITHUB_SKILL_SEARCH_URL = "https://github.com/search?q=filename%3ASKILL.md&type=code"
 REPO_ROOT = Path(__file__).resolve().parents[1]
 
+STATUS_ALIASES = {
+    "workbuddy-ready": "workbuddy-ready",
+    "workbuddy ready": "workbuddy-ready",
+    "workbuddy 就绪": "workbuddy-ready",
+    "可适配": "adaptable",
+    "adaptable": "adaptable",
+    "需审阅": "needs-review",
+    "needs review": "needs-review",
+    "未审阅": "unreviewed",
+    "unreviewed": "unreviewed",
+}
+SECURITY_ALIASES = {
+    "no-static-flags": "no-static-flags",
+    "no static flags": "no-static-flags",
+    "无静态风险": "no-static-flags",
+    "flagged": "flagged",
+    "有静态风险": "flagged",
+    "需安全审阅": "flagged",
+    "unscanned": "unscanned",
+    "未扫描": "unscanned",
+}
+PACKAGE_STATUS_ALIASES = {
+    "all": "all",
+    "全部": "all",
+    "reviewed": "reviewed",
+    "精选包": "reviewed",
+    "catalog-only": "catalog-only",
+    "catalog only": "catalog-only",
+    "仅目录": "catalog-only",
+}
+SOURCE_ALIASES = {
+    "primary-looking": "primary-looking",
+    "主要来源": "primary-looking",
+    "review-source": "review-source",
+    "来源待审": "review-source",
+}
+
 
 def catalog_id(row: dict) -> str:
     return str(row.get("id") or f"github:{row.get('repository', '')}:{row.get('path', '')}")
@@ -61,6 +98,19 @@ def _parse_category(value: str) -> str:
         return normalize_category(value)
     except ValueError as exc:
         raise argparse.ArgumentTypeError(str(exc)) from exc
+
+
+def _alias_parser(aliases: dict[str, str], label: str):
+    def parse(value: str) -> str:
+        normalized = aliases.get(value.strip().casefold())
+        if normalized is None:
+            choices = ", ".join(sorted(set(aliases.values())))
+            raise argparse.ArgumentTypeError(
+                f"invalid {label} {value!r}; use one of: {choices}"
+            )
+        return normalized
+
+    return parse
 
 
 def query_rows(
@@ -148,9 +198,10 @@ def main() -> int:
             """
             Examples:
               %(prog)s research --high-signal --limit 10
-              %(prog)s --category research --package-status reviewed --sort score --limit 10
-              %(prog)s --category 研究 --package-status reviewed --sort score --limit 10
-              %(prog)s browser OCR --security no-static-flags --unique --json
+            %(prog)s --category research --package-status reviewed --sort score --limit 10
+            %(prog)s --category 研究 --package-status reviewed --sort score --limit 10
+            %(prog)s browser OCR --security no-static-flags --unique --json
+              %(prog)s 研究 --status 需审阅 --security 无静态风险 --package-status 精选包
 
             Search only narrows candidates. Inspect the pinned source, license,
             permissions, and side effects before adapting or installing anything.
@@ -163,13 +214,13 @@ def main() -> int:
     parser.add_argument("--limit", type=int, default=20)
     parser.add_argument(
         "--status",
-        choices=("workbuddy-ready", "adaptable", "needs-review", "unreviewed"),
-        help="Require an exact WorkBuddy review state",
+        type=_alias_parser(STATUS_ALIASES, "status"),
+        help="Require an exact WorkBuddy review state (English or Chinese alias)",
     )
     parser.add_argument(
         "--security",
-        choices=("no-static-flags", "flagged", "unscanned"),
-        help="Require an exact static review state",
+        type=_alias_parser(SECURITY_ALIASES, "security state"),
+        help="Require an exact static review state (English or Chinese alias)",
     )
     parser.add_argument("--min-score", type=int, help="Require a WorkBuddy score from 0 to 100")
     parser.add_argument(
@@ -180,9 +231,9 @@ def main() -> int:
     )
     parser.add_argument(
         "--package-status",
-        choices=("all", "reviewed", "catalog-only"),
+        type=_alias_parser(PACKAGE_STATUS_ALIASES, "package status"),
         default="all",
-        help="Require a reviewed WorkBuddy package or a catalog-only result",
+        help="Require a reviewed WorkBuddy package or a catalog-only result (English or Chinese alias)",
     )
     parser.add_argument(
         "--curated",
@@ -192,8 +243,8 @@ def main() -> int:
     )
     parser.add_argument(
         "--source-context",
-        choices=("primary-looking", "review-source"),
-        help="Filter deterministic fork, mirror, and dormant-path context",
+        type=_alias_parser(SOURCE_ALIASES, "source context"),
+        help="Filter deterministic fork, mirror, and dormant-path context (English or Chinese alias)",
     )
     parser.add_argument(
         "--high-signal",

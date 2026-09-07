@@ -76,6 +76,32 @@ class QueryCatalogTests(unittest.TestCase):
         self.assertEqual(len(result), 1)
         self.assertEqual(result[0]["workbuddy_category"], "research")
 
+    def test_cli_accepts_chinese_review_filter_aliases(self):
+        record = {
+            **row("research", "research", 90, status="needs-review", security="flagged"),
+            "id": "github:owner/repo:skills/research/SKILL.md",
+            "path": "_archive/skills/research/SKILL.md",
+        }
+        with TemporaryDirectory() as directory:
+            catalog = Path(directory) / "skills.jsonl"
+            curated = Path(directory) / "curated.json"
+            catalog.write_text(json.dumps(record) + "\n", encoding="utf-8")
+            curated.write_text(json.dumps([{"catalog_id": record["id"]}]), encoding="utf-8")
+            output = io.StringIO()
+            with redirect_stdout(output):
+                old_argv = sys.argv
+                try:
+                    sys.argv = [
+                        "query_catalog.py", "research", "--catalog", str(catalog),
+                        "--curated", str(curated), "--status", "需审阅",
+                        "--security", "需安全审阅", "--package-status", "精选包",
+                        "--source-context", "来源待审", "--json",
+                    ]
+                    main()
+                finally:
+                    sys.argv = old_argv
+        self.assertEqual([item["id"] for item in json.loads(output.getvalue())], [record["id"]])
+
     def test_filters_deduplicates_and_sorts_by_score(self):
         rows = [
             row("research", "same", 80),

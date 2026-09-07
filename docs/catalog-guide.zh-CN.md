@@ -61,6 +61,9 @@ python3 scripts/query_catalog.py --category research --package-status reviewed \
 
 将关键词替换成你的任务即可；如果需要从本仓库 Release 下载精选包，再加上
 `--package-status reviewed`。
+状态、安全、精选包和来源筛选也接受 Atlas 中的中文标签，例如
+`--status 需审阅`、`--security 无静态风险`、`--package-status 精选包`；这样复制
+中文界面的筛选条件时不需要再转换成英文枚举值。
 
 如果要评估新的 GitHub 来源或爬取范围，可以给
 `scripts/crawl_github_skills.py` 加上 `--dry-run`。它会执行发现并报告候选数量，

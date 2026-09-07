@@ -82,6 +82,9 @@ Useful starting queries (all use the same review-oriented filter):
 
 Replace the term with your task, then add `--package-status reviewed` when you
 need a package that can be downloaded from this repository's Releases.
+The status, security, package, and source-context filters also accept the
+Chinese labels shown in Atlas, such as `--status 需审阅`,
+`--security 无静态风险`, and `--package-status 精选包`.
 
 If you are evaluating a new GitHub source or crawler range, pass
 `--dry-run` to `scripts/crawl_github_skills.py`. It will perform discovery and
