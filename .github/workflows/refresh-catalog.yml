@@ -49,7 +49,7 @@ jobs:
           python-version: "3.x"
       - name: Validate upstream source manifest
         run: python3 scripts/validate_source_manifest.py
-      - name: Scan representative public Skill repositories
+      - name: Scan declared public Skill repositories
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |

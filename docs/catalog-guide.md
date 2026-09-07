@@ -130,7 +130,7 @@ it does not bypass frozen-catalog write protection and does not mean the scan
 was complete.
 
 The scheduled `Refresh skill catalog` workflow also runs a read-only probe over
-representative upstream Skill repositories. It reports newly discoverable
+the repositories declared in the upstream source manifest. It reports newly discoverable
 paths without writing the frozen catalog, creating packages, or changing any
 published snapshot. Its 30-day Actions artifact contains the discovered
 JSONL rows plus a second file containing only paths and content SHAs not already

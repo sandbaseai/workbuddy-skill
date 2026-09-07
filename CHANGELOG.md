@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Clarify that the scheduled read-only discovery probe scans every repository declared in the upstream source manifest, rather than describing the set as merely representative.
 - Complete the Chinese catalog guide's explanation of deterministic source ordering so shared searches are easier to reproduce.
 - Add a bilingual next-step decision table to the catalog guide so users can distinguish reviewed-package installation, source adaptation, and research-only use.
 - Simplify the public catalog README by removing build-script and generated-site wording while retaining schema, provenance, and safety guidance.
