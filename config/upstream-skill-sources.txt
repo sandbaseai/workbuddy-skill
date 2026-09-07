@@ -711,3 +711,17 @@ Light0305/Light-skills
 minhnv0807/ai-business-skills
 superdesigndev/superdesign-skill
 leonardomso/rust-skills
+yanhua1010/self-media-content-workflow
+JimmySadek/youtube-fetcher-to-markdown
+tt-a1i/simplify-codebase
+AvdLee/Swift-Testing-Agent-Skill
+SponsioLabs/Sponsio
+rollingSirius/equity-research-skill
+JetBrains/thinkrail
+microsoft/win-dev-skills
+NVIDIA/SkillEvaluator
+coldteadotai/pr-lens
+vueuse/skills
+bruc3van/agent-skills-guard
+lignertys/reddit-research-skills
+zapier/gtm-cheat-codes
