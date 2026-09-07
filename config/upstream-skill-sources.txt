@@ -38,6 +38,9 @@ virgiliojr94/book-to-skill
 OthmanAdi/planning-with-files
 nexu-io/open-design
 microsoft/SkillOpt
+yxdwind/agent-skill-manager
+dx2020z/skill-auditor
+dx2020z/skill-packer
 bergside/awesome-design-skills
 elementalsouls/Claude-OSINT
 gamedev-skills/awesome-gamedev-agent-skills

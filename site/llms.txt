@@ -39,6 +39,9 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT GooseWorks growth and GTM Skills for content, lead generation, SEO, ads, and data (review claims, customer data, scraping, and outbound actions): https://github.com/gooseworks-ai/goose-skills
 - MIT community index of 1,400+ Agent Skills (discovery only; inspect each upstream source): https://github.com/VoltAgent/awesome-agent-skills
 - MIT index of 5,400+ OpenClaw skills (discovery only; verify host assumptions, scripts, licenses, and permissions before WorkBuddy adaptation): https://github.com/VoltAgent/awesome-openclaw-skills
+- MIT cross-platform Agent Skill Manager for WorkBuddy and other domestic Agent products (review install scopes and sync paths before copying or removing): https://github.com/yxdwind/agent-skill-manager
+- MIT read-only Skill Auditor for usage traces and security hazards (deletion suggestions require human confirmation): https://github.com/dx2020z/skill-auditor
+- MIT Skill Packer for frontmatter validation and platform-ready ZIPs (inspect the archive and license before publishing): https://github.com/dx2020z/skill-packer
 - Apache-2.0 Google Workspace CLI with Agent Skills for Gmail, Drive, and Calendar (not an official Google product; review OAuth and credentials): https://github.com/googleworkspace/cli
 - MIT Obsidian Agent Skills for Markdown, Bases, JSON Canvas, and Obsidian CLI (review Vault path and file-write scope): https://github.com/kepano/obsidian-skills
 - MIT GitHub-maintained Awesome Copilot collection of agents, instructions, prompts, and Skills (review host and repository permissions): https://github.com/github/awesome-copilot

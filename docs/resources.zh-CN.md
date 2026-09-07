@@ -75,6 +75,9 @@
 - [GooseWorks Skills](https://github.com/gooseworks-ai/goose-skills)——MIT 许可的增长与 GTM Skill 集合，覆盖内容、线索、SEO、广告和数据工作流；适配前检查营销声明、客户数据、抓取限制和外部动作。
 - [Awesome Agent Skills](https://github.com/VoltAgent/awesome-agent-skills)——MIT 许可的社区导航索引，收录 1,400+ 个来自官方团队和实践者的 Skill；仅用于发现，之后仍需逐个检查上游许可证、提交版本和权限边界。
 - [Awesome OpenClaw Skills](https://github.com/VoltAgent/awesome-openclaw-skills)——MIT 许可的 OpenClaw Skill 索引，收录 5,400+ 个 Skill；可用于发现可移植思路，但适配 WorkBuddy 前要核对宿主假设、脚本、许可证和权限。
+- [Agent Skill Manager](https://github.com/yxdwind/agent-skill-manager)——MIT 许可的跨平台 Skill 管理器，覆盖 WorkBuddy 等多个 Agent 产品；可用来比较安装作用域和同步行为，但复制或移除前仍需检查目标路径。
+- [Skill Auditor](https://github.com/dx2020z/skill-auditor)——MIT 许可的只读审计 Skill，依据使用痕迹检查常见安全风险；它给出的删除清单只能作为建议，每次移除都应由用户确认。
+- [Skill Packer](https://github.com/dx2020z/skill-packer)——MIT 许可的 Skill 打包辅助工具，可校验 frontmatter 并生成平台 ZIP；发布到 WorkBuddy 前仍需检查生成归档和来源许可证。
 - [Google Workspace CLI](https://github.com/googleworkspace/cli)——Apache-2.0 许可的 CLI，提供结构化输出以及 Gmail、Drive、Calendar 等 Workspace API 的 Agent Skill；它不是 Google 官方产品，接入 WorkBuddy 前必须检查 OAuth Scope、本地凭据和外发数据。
 - [Obsidian Skills](https://github.com/kepano/obsidian-skills)——MIT 许可的 Obsidian Agent Skill，覆盖 Markdown、Bases、JSON Canvas 和 Obsidian CLI；从 WorkBuddy 使用前先检查目标 Vault 路径和文件写入范围。
 - [GitHub Awesome Copilot](https://github.com/github/awesome-copilot)——GitHub 维护的 MIT 许可集合，包含 Agent、指令、Prompt 和 Skill；可作为跨 Agent 参考，适配 WorkBuddy 前检查每个条目的宿主假设和仓库权限。
