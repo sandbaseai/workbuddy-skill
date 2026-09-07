@@ -299,3 +299,11 @@ TokenRhythm/opensquilla
 nowledge-co/con-terminal
 Aspirin0000/zhouli-translator
 openyida/openyida
+zilliztech/memsearch
+yonatangross/orchestkit
+Kulaxyz/self-learning-skills
+O0000-code/paper-search-pro
+GODGOD126/self-improving-for-codex
+wasp-lang/open-saas
+LukeRenton/explore-claude-code
+Yusuke710/manim-skill
