@@ -639,3 +639,7 @@ infotradescout/Selective-Intelligence
 Storybloq/storybloq
 tigerless-labs/design-harness
 alchaincyf/huashu-md-html
+roedyrustam/vibes-plug
+thevibeworks/claude-code-docs
+Mann1988/awesome-claude-skills
+pqpo/pragma
