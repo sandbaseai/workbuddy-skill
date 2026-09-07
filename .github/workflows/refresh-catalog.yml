@@ -3,7 +3,7 @@ name: Refresh skill catalog
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 5 * * 1"
+    - cron: "17 5 * * *"
 
 permissions:
   contents: read
