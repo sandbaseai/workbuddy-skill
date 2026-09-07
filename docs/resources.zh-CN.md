@@ -84,6 +84,8 @@
 - [dbt Agent Skills](https://github.com/dbt-labs/dbt-agent-skills)——dbt 维护的 Apache-2.0 许可工作流，覆盖分析工程、语义层、测试和平台运维；从 WorkBuddy 使用前检查数仓凭据、生成 SQL 和写入权限。
 - [MongoDB Agent Skills](https://github.com/mongodb/agent-skills)——Apache-2.0 许可的 MongoDB 官方工作流，覆盖查询、Schema 设计、优化和 Atlas Search；接入 WorkBuddy 前检查 OAuth Scope、数据库目标以及迁移/写入操作。
 - [Microsoft Waza](https://github.com/microsoft/waza)——MIT 许可的 Agent Skill 评测 CLI，可运行基准套件并比较模型；用作评测参考，运行前检查下载的二进制、测试夹具以及模型/API 成本。
+- [EverMind SkillCorpus](https://github.com/EverMind-AI/SkillCorpus)——Apache-2.0 许可的 SkillCorpus 管线，用于聚合公开 `SKILL.md`，并提供来源、许可与安全门禁、检索、评测和导出；可借鉴其架构，但要把源文件审查与导入流程分开。
+- [Keep the Why](https://github.com/oliver-zehentleitner/keep-the-why)——MIT 许可的仓库内约定和 Agent Skill，用于保留架构决策、被否方案、变通办法和事故经验；可以借鉴其记录习惯，但不要默认其插件目录适用于 WorkBuddy。
 - [讯飞 SkillHub](https://github.com/iflytek/skillhub)——Apache-2.0 许可的自托管 Skill 注册中心，用于发布、发现和治理 Skill 包；作为 WorkBuddy 私有来源使用前检查 Docker 暴露、注册中心访问、认证和包来源。
 - [Hugging Face Skills](https://github.com/huggingface/skills)——Apache-2.0 许可的 Hub 工作流，覆盖数据集、模型、Spaces 和 Jobs；使用前检查 Token、仓库权限、下载产物和云计算成本。
 - [Trail of Bits Skills](https://github.com/trailofbits/skills)——CC-BY-SA-4.0 许可的安全研究 Skill，覆盖漏洞检测和审计工作流；适配前检查署名要求、脚本以及授权边界。
