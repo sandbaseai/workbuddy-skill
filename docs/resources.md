@@ -313,6 +313,7 @@ Use this page to choose the right source before searching the catalog.
 - [Magnus Agent Skills](https://github.com/magnus919/agent-skills) — MIT-licensed collection spanning API design, governance, evaluations, observability, production operations, and agent economics; validate domain assumptions and any operational side effects.
 - [Translate Book](https://github.com/deusyu/translate-book) — MIT-licensed book-translation Skill; verify source-text rights, translation language, chapter boundaries, and generated output before distribution.
 - [DeepCode CLI](https://github.com/lessweb/deepcode-cli) — MIT-licensed coding-agent CLI with bundled Skills for self-reference, image generation, Skill digestion, and Skill authoring; inspect subprocesses, network access, and generated files before use.
+- [Claude Tools for Delphi](https://github.com/GabrielOnDelphi/Claude-Tools-for-Delphi) — MPL-2.0 Delphi and Windows engineering Skill collection covering architecture, compatibility, refactoring, threading, and documentation; verify toolchain versions, generated code, platform assumptions, and license obligations before reuse.
 
 ## This repository
 

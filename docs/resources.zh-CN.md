@@ -313,6 +313,7 @@
 - [Magnus Agent Skills](https://github.com/magnus919/agent-skills)——MIT 许可的 Skill 集合，覆盖 API 设计、治理、评测、可观测性、生产运维和 Agent 经济性；执行前核验领域假设和运维副作用。
 - [Translate Book](https://github.com/deusyu/translate-book)——MIT 许可的图书翻译 Skill；分发前核对原文权利、翻译语言、章节边界和生成内容。
 - [DeepCode CLI](https://github.com/lessweb/deepcode-cli)——MIT 许可的编码 Agent CLI，内置自引用、图像生成、Skill 消化和 Skill 编写工具；使用前检查子进程、网络访问和生成文件。
+- [Claude Tools for Delphi](https://github.com/GabrielOnDelphi/Claude-Tools-for-Delphi)——MPL-2.0 许可的 Delphi 与 Windows 工程 Skill 集合，覆盖架构、兼容性、重构、线程和文档；复用前核对工具链版本、生成代码、平台假设和许可证义务。
 
 ## 本仓库
 
