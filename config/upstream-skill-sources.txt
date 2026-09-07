@@ -620,3 +620,7 @@ zenstory-ai/novel-to-game
 Masriyan/Claude-Code-CyberSecurity-Skill
 jamditis/claude-skills-journalism
 aiskillstore/marketplace
+Graphify-Labs/graphify
+Nutlope/hallmark
+alchaincyf/huashu-design
+Vincentwei1021/video-talkcraft
