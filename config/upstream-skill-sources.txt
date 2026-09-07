@@ -458,3 +458,4 @@ magnus919/agent-skills
 deusyu/translate-book
 lessweb/deepcode-cli
 GabrielOnDelphi/Claude-Tools-for-Delphi
+XAIHT/Tlamatini

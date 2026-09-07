@@ -170,6 +170,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT book-translation Skill (verify source-text rights and generated output): https://github.com/deusyu/translate-book
 - MIT coding-agent CLI with bundled Skills for Skill tooling and code workflows: https://github.com/lessweb/deepcode-cli
 - MPL-2.0 Delphi and Windows engineering Skills for architecture, compatibility, refactoring, threading, and documentation: https://github.com/GabrielOnDelphi/Claude-Tools-for-Delphi
+- MIT multi-host agent workflows with self-update and self-modification examples (discovery only; review persistence and rollback): https://github.com/XAIHT/Tlamatini
 - MIT index of 5,400+ OpenClaw skills (discovery only; verify host assumptions, scripts, licenses, and permissions before WorkBuddy adaptation): https://github.com/VoltAgent/awesome-openclaw-skills
 - MIT cross-platform Agent Skill Manager for WorkBuddy and other domestic Agent products (review install scopes and sync paths before copying or removing): https://github.com/yxdwind/agent-skill-manager
 - MIT read-only Skill Auditor for usage traces and security hazards (deletion suggestions require human confirmation): https://github.com/dx2020z/skill-auditor

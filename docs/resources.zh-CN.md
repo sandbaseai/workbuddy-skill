@@ -314,6 +314,7 @@
 - [Translate Book](https://github.com/deusyu/translate-book)——MIT 许可的图书翻译 Skill；分发前核对原文权利、翻译语言、章节边界和生成内容。
 - [DeepCode CLI](https://github.com/lessweb/deepcode-cli)——MIT 许可的编码 Agent CLI，内置自引用、图像生成、Skill 消化和 Skill 编写工具；使用前检查子进程、网络访问和生成文件。
 - [Claude Tools for Delphi](https://github.com/GabrielOnDelphi/Claude-Tools-for-Delphi)——MPL-2.0 许可的 Delphi 与 Windows 工程 Skill 集合，覆盖架构、兼容性、重构、线程和文档；复用前核对工具链版本、生成代码、平台假设和许可证义务。
+- [Tlamatini](https://github.com/XAIHT/Tlamatini)——MIT 许可的多宿主 Agent 工作流集合，包含自更新和自修改示例；仅用于只读发现，真正复用前必须检查持久化、生成变更、网络访问和回滚边界。
 
 ## 本仓库
 
