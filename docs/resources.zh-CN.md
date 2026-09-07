@@ -78,6 +78,7 @@
 - [Image Story Video Wizard](https://github.com/aaronyi97/image-story-video-wizard)——MIT 许可、带确认门禁的音频优先图像故事视频工作流，兼容 Codex 和 WorkBuddy；使用前检查媒体路径、外部工具和人工批准步骤。
 - [nuwa-skill](https://github.com/alchaincyf/nuwa-skill)——MIT 许可、README 明确列出 WorkBuddy 支持的 Agent Skills 包，用于调研并提炼可复用的思维模型；生成的人格化内容仍需按原创内容审阅，并检查外部检索、隐私和提示注入边界。
 - [WorkBuddy 使用指南](https://github.com/Neo5093/workbuddy-guide)——MIT 许可的社区参考 Skill，包含新手路径、连接器排障、自动化模式、模型说明、FAQ 和环境诊断；适配前请检查脚本和具体版本。
+- [WorkBuddy Runbook](https://github.com/maning636/workbuddy-runbook)——MIT 许可的流程化任务参考，强调计划、证据、失败处理和可回滚边界；适配前仍需检查其版本、脚本和实际权限范围。
 - [WorkBuddy 实践指南](https://github.com/opcspace/WorkBuddy-Guide)——中文社区知识库，覆盖安全安装、首次任务、权限、排障、连接器、远程协助和验收导向的工作流；复用前请核对内容新鲜度和许可证。
 - [WorkBuddy Starter](https://github.com/sunyet-01/WorkBuddy-Starter)——MIT 许可、面向新手的 WorkBuddy 入门资料库，按入门、Skills、场景和案例组织内容。
 - [QA Testing Guide](https://github.com/genapohub/qa-testing-guide)——MIT 许可、兼容 WorkBuddy 的测试 Skill 参考，覆盖测试策略、自动化、性能测试和缺陷流程；适配前仍需检查具体文件。
