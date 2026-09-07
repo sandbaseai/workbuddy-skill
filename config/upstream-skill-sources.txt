@@ -988,3 +988,15 @@ mareasw/ontoskills
 l0z4n0-a1/skill-anthropic-grade-optimizer
 edholofy/dojo.md
 OEN-Tech/oen-payment-skill
+PIsberg/skill3
+MishraShardendu22/agent-skills-hub-sync-engine-
+donald-ada/workinggenius
+Sagargupta16/skillcheck
+frankxai/awesome-hermes-agent-skills
+PollyGlot/google-play-cli-skills
+asale-ai/anything-to-skill
+Jesse-njx/dsh-skillport
+CacinieP/video2knowledge
+aidvizhhub/caveman-dvizh-skills
+therapys/dotagents
+ponomr/thinking-toolkit
