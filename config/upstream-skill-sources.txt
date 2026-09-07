@@ -107,3 +107,15 @@ rampstackco/claude-skills
 staruhub/ClaudeSkills
 foryourhealth111-pixel/Vibe-Skills
 eugeniughelbur/obsidian-second-brain
+MicrosoftDocs/Agent-Skills
+samber/cc-skills
+microsoft/power-platform-skills
+daymade/claude-code-skills
+tradermonty/claude-trading-skills
+artwist-polyakov/polyakov-claude-skills
+alvinunreal/lazyskills
+proffesor-for-testing/agentic-qe
+realZillionX/InspireSkill
+initializ/forge
+jeremylongshore/tons-of-skills-marketplace
+sweetcornna/mathodology
