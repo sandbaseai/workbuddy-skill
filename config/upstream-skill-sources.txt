@@ -89,3 +89,13 @@ OpenSenseNova/SenseNova-Skills
 wuyoscar/GPT-Image2-Skill
 SamurAIGPT/Generative-Media-Skills
 eternityspring/shuohao-skills
+s1dashu/ip-as-logo-skill
+AminBlg/SimpleEnglish
+rpamis/comet
+vuejs-ai/skills
+NarratorAI-Studio/narrator-ai-cli-skill
+softaworks/agent-toolkit
+FrancyJGLisboa/agent-skills-platform
+memodb-io/Acontext
+gotalab/cc-sdd
+jakubkrehel/make-interfaces-feel-better
