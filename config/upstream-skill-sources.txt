@@ -573,3 +573,13 @@ matlab/matlab-agentic-toolkit
 kostja94/marketing-skills
 LottieFiles/motion-design-skill
 AvdLee/Swift-Concurrency-Agent-Skill
+zenstackhq/skills
+shinpr/mcp-local-rag
+opentiny/agent-skills
+serpro69/claude-toolbox
+J-nowcow/awesome-korean-agent-skills
+FreedomIntelligence/BlenderLore
+lsaint/aikito
+axelfreeman/marketing-mindset
+kyungseo/learnstead
+edvardgrishin27/nativeprompt
