@@ -67,6 +67,9 @@ jobs:
             --catalog catalog/skills.jsonl \
             --discovery /tmp/upstream-skill-probe-report.jsonl \
             --output /tmp/upstream-skill-new-candidates.jsonl
+          python3 scripts/analyze_discovery.py \
+            --input /tmp/upstream-skill-new-candidates.jsonl \
+            --output /tmp/upstream-skill-new-candidates-reviewed.jsonl
       - name: Upload read-only discovery report
         uses: actions/upload-artifact@v4
         with:
@@ -74,4 +77,5 @@ jobs:
           path: |
             /tmp/upstream-skill-probe-report.jsonl
             /tmp/upstream-skill-new-candidates.jsonl
+            /tmp/upstream-skill-new-candidates-reviewed.jsonl
           retention-days: 7

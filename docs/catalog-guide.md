@@ -102,8 +102,10 @@ representative upstream Skill repositories. It reports newly discoverable
 paths without writing the frozen catalog, creating packages, or changing any
 published snapshot. Its short-lived Actions artifact contains the discovered
 JSONL rows plus a second file containing only paths and content SHAs not already
-represented by the frozen catalog. Use the local command above when you need to
-inspect a candidate in detail.
+represented by the frozen catalog. A third file adds non-executing compatibility
+and static-signal triage for those new candidates; these signals are hints, not
+approval. Use the local command above when you need to inspect a candidate in
+detail.
 
 To restrict local results to packages that have a reviewed Release ZIP, use the
 curated manifest maintained by this repository:

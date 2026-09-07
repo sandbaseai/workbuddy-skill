@@ -18,6 +18,8 @@ class RefreshWorkflowTests(unittest.TestCase):
         self.assertIn("--dry-run-output /tmp/upstream-skill-probe-report.jsonl", workflow)
         self.assertIn("scripts/report_new_discoveries.py", workflow)
         self.assertIn("--output /tmp/upstream-skill-new-candidates.jsonl", workflow)
+        self.assertIn("scripts/analyze_discovery.py", workflow)
+        self.assertIn("/tmp/upstream-skill-new-candidates-reviewed.jsonl", workflow)
         self.assertIn("actions/upload-artifact@v4", workflow)
         self.assertIn("retention-days: 7", workflow)
         self.assertNotIn("--allow-frozen-catalog", workflow)
