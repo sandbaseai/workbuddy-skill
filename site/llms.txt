@@ -102,6 +102,11 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT hypothesis-driven reproducible AI-research workflow (fix question, provenance, environment, and evidence chain): https://github.com/JKblean/masters-ai-research-skill
 - MIT email job-application Skill (review personal data, recipients, attachments, and every send): https://github.com/xunavy/apply-job-gmail
 - MIT Zhipu BigModel/GLM prepaid-balance lookup Skill (protect credentials and confirm read-only scope): https://github.com/hucuyuu/zhipu-balance
+- MIT static security scanner for Agent Skills and MCP resources with attack fixtures (treat findings as evidence, not a guarantee): https://github.com/Anne117/agentshield
+- MIT clean-code, AI-slop reduction, review, lint-gate, and reporting workflow (preserve diffs and separate style from behavior): https://github.com/MammadovEshgin/clean-code-skill
+- MIT Chinese AI Skill and MCP connector (review authentication, data egress, tool permissions, and availability): https://github.com/bigbrain-work/shiliu-ai
+- MIT categorized Agent Skills for Git, Python/Rust quality, tooling, and release workflows (review writes and credentials): https://github.com/Praveensenpai/karakuri
+- Apache-2.0 cross-host Agent instruction, Skill, and workflow catalog for audits, PRs, migrations, debugging, and frontend verification: https://github.com/jmlero/agent-suitup
 - MIT .NET and C# workflows for coding agents (review SDK versions, generated files, commands, and write scope): https://github.com/dotnet/skills
 - Apache-2.0 Adobe-maintained Agent Skills (review creative assets, credentials, account permissions, and publishing effects): https://github.com/adobe/skills
 - MIT model-agnostic Tons of Skills Marketplace with canonical layer and adapters (verify provenance, runtime, and permissions): https://github.com/jeremylongshore/tons-of-skills-marketplace

@@ -138,6 +138,11 @@
 - [Masters AI Research](https://github.com/JKblean/masters-ai-research-skill)——MIT 许可的假设驱动、可复现 AI 硕士研究工作流；使用时固定研究问题、数据来源、实验环境和证据链。
 - [Apply Job Gmail](https://github.com/xunavy/apply-job-gmail)——MIT 许可的邮件求职申请 Skill；涉及个人简历和外部发信，必须审阅收件人、正文、附件、账号权限和发送动作。
 - [Zhipu Balance](https://github.com/hucuyuu/zhipu-balance)——MIT 许可的智谱 BigModel/GLM 预付余额查询 Skill；使用前保护 API 凭据，并确认只读余额接口、账户和网络边界。
+- [Agentshield](https://github.com/Anne117/agentshield)——MIT 许可的 Agent Skill 与 MCP 资源静态安全扫描器，附带混淆、提示注入、密钥读取和外传等测试夹具；扫描结果不是安全保证，仍需审阅实际代码和运行环境。
+- [Clean Code Skill](https://github.com/MammadovEshgin/clean-code-skill)——MIT 许可的代码整洁、去除 AI 生成痕迹、审查、Lint 门禁和报告工作流；使用时保留原始 diff，并区分风格建议、行为变化和测试证据。
+- [Shiliu AI](https://github.com/bigbrain-work/shiliu-ai)——MIT 许可的中文 AI Skill 与 MCP 连接器；接入 WorkBuddy 前检查连接器认证、数据外发、工具权限和服务可用性。
+- [Karakuri](https://github.com/Praveensenpai/karakuri)——MIT 许可的分类 Agent Skill 集合，包含 Git、Python/Rust 代码质量、工具构建和发布工作流；执行前确认仓库写入、凭据和发布副作用。
+- [Agent Suitup](https://github.com/jmlero/agent-suitup)——Apache-2.0 许可的跨宿主 Agent 指令、Skill 和工作流目录，包含代码/文档审计、PR、迁移调试和前端验证；使用前核对各子目录许可证和宿主假设。
 - [.NET Skills](https://github.com/dotnet/skills)——MIT 许可的 Microsoft .NET 与 C# 编程 Agent 工作流；适配到 WorkBuddy 前检查 SDK 版本、生成文件、Shell 命令和仓库写入范围。
 - [Adobe Skills](https://github.com/adobe/skills)——Apache-2.0 许可的 Adobe 维护 Agent Skill；复用前使用精确来源并检查创意素材、服务凭据、账号权限和发布影响。
 - [Tons of Skills Marketplace](https://github.com/jeremylongshore/tons-of-skills-marketplace)——MIT 许可的跨模型 Skill 市场，提供规范层、适配器和包工具；用于发现时要逐个核验适配器的来源、运行时和权限。
