@@ -63,6 +63,14 @@ jobs:
             --repository vercel-labs/agent-skills \
             --repository vercel-labs/skills \
             --repository google/skills \
+            --repository ComposioHQ/awesome-claude-skills \
+            --repository alirezarezvani/claude-skills \
+            --repository wshobson/agents \
+            --repository K-Dense-AI/scientific-agent-skills \
+            --repository phuryn/pm-skills \
+            --repository JimLiu/baoyu-skills \
+            --repository nexu-io/open-design \
+            --repository googleworkspace/cli \
             --repository-only \
             --target 10000 \
             --max-requests 60 \

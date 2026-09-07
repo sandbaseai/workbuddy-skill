@@ -20,6 +20,14 @@ class RefreshWorkflowTests(unittest.TestCase):
             "vercel-labs/agent-skills",
             "vercel-labs/skills",
             "google/skills",
+            "ComposioHQ/awesome-claude-skills",
+            "alirezarezvani/claude-skills",
+            "wshobson/agents",
+            "K-Dense-AI/scientific-agent-skills",
+            "phuryn/pm-skills",
+            "JimLiu/baoyu-skills",
+            "nexu-io/open-design",
+            "googleworkspace/cli",
         ):
             self.assertIn(f"--repository {repository}", workflow)
         self.assertIn("--target 10000", workflow)
