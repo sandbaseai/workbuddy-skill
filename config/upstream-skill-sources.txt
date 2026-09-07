@@ -502,3 +502,11 @@ sergebulaev/linkedin-skills
 AgriciDaniel/claude-blog
 runkids/skillshare
 majiayu000/spellbook
+Kilo-Org/skills
+selamy-labs/agent-skills
+arjunprabhulal/agent-skills
+ellmos-ai/skills
+jonhill90/skills
+michaelboeding/skills
+803/skills-supply
+quantumbyte31/linkedin-skills
