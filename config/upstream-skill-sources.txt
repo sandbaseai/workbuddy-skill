@@ -393,3 +393,11 @@ miaqu766520-a11y/ai-line-skills
 sendsoon/paper-reader-skill
 bao-776/personal-knowledge-system-skills
 MichaelYWNA/Easy-Paper
+cogover/cogover-skills
+AsahinaMafuyu0127/philosophy-frontier-monitor
+muzark/scientific-color-palettes
+Eason412/codex-cli-model-bridge
+Hybirdss/Astral-Claude
+JKblean/masters-ai-research-skill
+xunavy/apply-job-gmail
+hucuyuu/zhipu-balance

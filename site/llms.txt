@@ -94,6 +94,14 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT paper-reading Skill (verify paper version, citations, extraction accuracy, and evidence boundaries): https://github.com/sendsoon/paper-reader-skill
 - MIT Markdown/Obsidian personal-knowledge Skills (confirm note directories, sync scope, privacy, and writes): https://github.com/bao-776/personal-knowledge-system-skills
 - MIT evidence-guided paragraph-level LaTeX paper-revision Skill (preserve backups and distinguish factual from language edits): https://github.com/MichaelYWNA/Easy-Paper
+- MIT Cogover app-building Skills for objects, layouts, forms, reports, permissions, and APIs (review account and publishing writes): https://github.com/cogover/cogover-skills
+- MIT philosophy-paper frontier-monitoring Skill (verify search scope, versions, citations, and research claims): https://github.com/AsahinaMafuyu0127/philosophy-frontier-monitor
+- MIT semantic publication-ready scientific-figure color Skill (review accessibility, data semantics, journal rules, and rights): https://github.com/muzark/scientific-color-palettes
+- MIT Codex CLI and CLIProxyAPI model-catalog/local-bridge maintenance Skill (review ports, credentials, providers, and costs): https://github.com/Eason412/codex-cli-model-bridge
+- MIT cross-platform computer-use, Blender, learning, and artifact-verification Skills (review desktop permissions and file writes): https://github.com/Hybirdss/Astral-Claude
+- MIT hypothesis-driven reproducible AI-research workflow (fix question, provenance, environment, and evidence chain): https://github.com/JKblean/masters-ai-research-skill
+- MIT email job-application Skill (review personal data, recipients, attachments, and every send): https://github.com/xunavy/apply-job-gmail
+- MIT Zhipu BigModel/GLM prepaid-balance lookup Skill (protect credentials and confirm read-only scope): https://github.com/hucuyuu/zhipu-balance
 - MIT .NET and C# workflows for coding agents (review SDK versions, generated files, commands, and write scope): https://github.com/dotnet/skills
 - Apache-2.0 Adobe-maintained Agent Skills (review creative assets, credentials, account permissions, and publishing effects): https://github.com/adobe/skills
 - MIT model-agnostic Tons of Skills Marketplace with canonical layer and adapters (verify provenance, runtime, and permissions): https://github.com/jeremylongshore/tons-of-skills-marketplace

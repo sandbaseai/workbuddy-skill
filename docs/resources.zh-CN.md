@@ -130,6 +130,14 @@
 - [Paper Reader Skill](https://github.com/sendsoon/paper-reader-skill)——MIT 许可的论文阅读 Skill；使用时核验论文版本、引用上下文、抽取准确性和生成结论的证据边界。
 - [Personal Knowledge System Skills](https://github.com/bao-776/personal-knowledge-system-skills)——MIT 许可的 Markdown/Obsidian 个人知识管理 Skill 集合；启用前确认笔记目录、同步范围、隐私内容和写入策略。
 - [Easy-Paper](https://github.com/MichaelYWNA/Easy-Paper)——MIT 许可的证据驱动 LaTeX 论文逐段修订 Skill；使用时保留原文备份，区分语言编辑、事实变更和引用修改。
+- [Cogover Skills](https://github.com/cogover/cogover-skills)——MIT 许可的 Cogover 应用构建 Skill 集合，覆盖对象、布局、表单、报表、权限和 API；使用前确认平台账号、应用写入范围和发布权限。
+- [Philosophy Frontier Monitor](https://github.com/AsahinaMafuyu0127/philosophy-frontier-monitor)——MIT 许可的哲学论文前沿监测 Skill；使用时核验检索范围、论文版本、引用信息和研究结论边界。
+- [Scientific Color Palettes](https://github.com/muzark/scientific-color-palettes)——MIT 许可的语义化、适合发表的科研图表配色 Skill；输出前检查色觉可访问性、数据语义、期刊规范和图形版权。
+- [Codex CLI Model Bridge](https://github.com/Eason412/codex-cli-model-bridge)——MIT 许可的 Codex CLI 与 CLIProxyAPI 模型目录、本地桥接维护 Skill；接入前检查本地端口、凭据、模型供应商和请求费用。
+- [Astral-Claude](https://github.com/Hybirdss/Astral-Claude)——MIT 许可的跨平台电脑操作、Blender、学习和产物验证 Skill；使用前确认桌面权限、目标应用、文件写入和回滚路径。
+- [Masters AI Research](https://github.com/JKblean/masters-ai-research-skill)——MIT 许可的假设驱动、可复现 AI 硕士研究工作流；使用时固定研究问题、数据来源、实验环境和证据链。
+- [Apply Job Gmail](https://github.com/xunavy/apply-job-gmail)——MIT 许可的邮件求职申请 Skill；涉及个人简历和外部发信，必须审阅收件人、正文、附件、账号权限和发送动作。
+- [Zhipu Balance](https://github.com/hucuyuu/zhipu-balance)——MIT 许可的智谱 BigModel/GLM 预付余额查询 Skill；使用前保护 API 凭据，并确认只读余额接口、账户和网络边界。
 - [.NET Skills](https://github.com/dotnet/skills)——MIT 许可的 Microsoft .NET 与 C# 编程 Agent 工作流；适配到 WorkBuddy 前检查 SDK 版本、生成文件、Shell 命令和仓库写入范围。
 - [Adobe Skills](https://github.com/adobe/skills)——Apache-2.0 许可的 Adobe 维护 Agent Skill；复用前使用精确来源并检查创意素材、服务凭据、账号权限和发布影响。
 - [Tons of Skills Marketplace](https://github.com/jeremylongshore/tons-of-skills-marketplace)——MIT 许可的跨模型 Skill 市场，提供规范层、适配器和包工具；用于发现时要逐个核验适配器的来源、运行时和权限。
