@@ -145,6 +145,20 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT decision-context Skill for preserving rationale across agent work: https://github.com/oliver-zehentleitner/keep-the-why
 - MIT cross-harness Skills for agent design, architecture, development, research, writing, and video workflows: https://github.com/AnastasiyaW/codex-claude-code-config
 - MIT video-generation Skill reference from PixVerse: https://github.com/PixVerseAI/skills
+- Apache-2.0 plugin and Skill authoring guide: https://github.com/PerryLink/dsh-plugin-guide
+- MIT memory and knowledge-work Skill collection: https://github.com/cwinvestments/memstack
+- MIT general-purpose Skill collection: https://github.com/xr843/Master-skill
+- MIT 1C development workflow Skill collection: https://github.com/Nikolay-Shirokov/cc-1c-skills
+- MIT public-sector Copilot Skill collection: https://github.com/navikt/copilot
+- MIT Typst document and typesetting Skill: https://github.com/lucifer1004/claude-skill-typst
+- MIT operations Skills for incident, infrastructure, and delivery workflows: https://github.com/Lifecycle-Innovations-Limited/claude-ops
+- MIT web-interaction Skill reference: https://github.com/unbrowse-ai/unbrowse
+- Apache-2.0 application-development Skill collection: https://github.com/gotempsh/temps
+- MIT Basecamp command-line Skill reference: https://github.com/basecamp/basecamp-cli
+- MIT browser automation Skill reference from Tencent: https://github.com/Tencent/BrowserSkill
+- MIT agent-tool and workflow Skill reference: https://github.com/QVerisAI/qveris-agent-toolkit
+- MIT team workflow collection for architecture, delivery, quality, and collaboration: https://github.com/tikalk/adlc-team-skills
+- MIT cross-host engineering and project workflow collection: https://github.com/PaulRBerg/agent-skills
 - MIT index of 5,400+ OpenClaw skills (discovery only; verify host assumptions, scripts, licenses, and permissions before WorkBuddy adaptation): https://github.com/VoltAgent/awesome-openclaw-skills
 - MIT cross-platform Agent Skill Manager for WorkBuddy and other domestic Agent products (review install scopes and sync paths before copying or removing): https://github.com/yxdwind/agent-skill-manager
 - MIT read-only Skill Auditor for usage traces and security hazards (deletion suggestions require human confirmation): https://github.com/dx2020z/skill-auditor

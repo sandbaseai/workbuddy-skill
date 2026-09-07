@@ -289,6 +289,20 @@
 - [Keep the Why](https://github.com/oliver-zehentleitner/keep-the-why)——MIT 许可的决策上下文 Skill，用于在 Agent 工作中保留决策理由；使用前检查本地状态、留存、隐私和团队共享边界。
 - [Codex Claude Code Config](https://github.com/AnastasiyaW/codex-claude-code-config)——MIT 许可的跨 Harness 集合，覆盖 Agent 设计、架构、开发、研究、写作和视频工作流；使用前审阅 Hook、提供商、文件写入和宿主假设。
 - [PixVerse Skills](https://github.com/PixVerseAI/skills)——MIT 许可的视频生成 Skill 参考；使用前检查 API 凭据、提示词/输入权利、媒体隐私、配额、成本和输出归属。
+- [DSH Plugin Guide](https://github.com/PerryLink/dsh-plugin-guide)——Apache-2.0 许可的插件与 Skill 编写指南；适配前检查生成插件文件、宿主假设和发布权限。
+- [Memstack](https://github.com/cwinvestments/memstack)——MIT 许可的记忆与知识工作 Skill 集合；接入工作区前检查笔记路径、同步行为、个人数据和留存策略。
+- [Master Skill](https://github.com/xr843/Master-skill)——MIT 许可的通用 Skill 集合；应逐个检查子 Skill 的来源、脚本、依赖和权限边界。
+- [CC 1C Skills](https://github.com/Nikolay-Shirokov/cc-1c-skills)——MIT 许可的 1C 开发工作流集合；核验本地平台版本、生成代码、业务数据和执行副作用。
+- [NAV IT Copilot](https://github.com/navikt/copilot)——MIT 许可的公共部门 Copilot Skill 集合；使用前审阅受监管数据、仓库权限、内部服务假设和部署边界。
+- [Claude Skill Typst](https://github.com/lucifer1004/claude-skill-typst)——MIT 许可的 Typst 文档排版 Skill；检查编译器版本、本地文件、字体许可和生成 PDF。
+- [Claude Ops](https://github.com/Lifecycle-Innovations-Limited/claude-ops)——MIT 许可的运维 Skill 集合，覆盖事件、基础设施和交付流程；执行变更前必须明确环境、凭据和回滚方案。
+- [Unbrowse](https://github.com/unbrowse-ai/unbrowse)——MIT 许可的网页交互 Skill 参考；检查浏览器会话、页面数据、鉴权和生成的网络操作。
+- [Temps](https://github.com/gotempsh/temps)——Apache-2.0 许可的应用开发 Skill 集合；使用前检查生成项目文件、包安装、凭据和部署目标。
+- [Basecamp CLI](https://github.com/basecamp/basecamp-cli)——MIT 许可的 Basecamp 命令行 Skill 参考；审阅 OAuth 范围、项目标识、本地缓存和消息/任务写入。
+- [Tencent BrowserSkill](https://github.com/Tencent/BrowserSkill)——MIT 许可的浏览器自动化 Skill 参考；先用测试配置，并检查 Cookie、下载、导航和外部副作用。
+- [QVeris Agent Toolkit](https://github.com/QVerisAI/qveris-agent-toolkit)——MIT 许可的 Agent 工具与工作流 Skill 参考；检查提供商凭据、网络调用、配额和返回数据来源。
+- [ADLC Team Skills](https://github.com/tikalk/adlc-team-skills)——MIT 许可的团队工作流集合，覆盖架构、交付、质量和协作；使用前检查宿主命令、共享状态和写入归属。
+- [PaulRBerg Agent Skills](https://github.com/PaulRBerg/agent-skills)——MIT 许可的跨宿主工程与项目工作流集合；固定来源版本，并检查脚本和宿主假设。
 
 ## 本仓库
 

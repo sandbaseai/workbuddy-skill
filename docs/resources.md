@@ -289,6 +289,20 @@ Use this page to choose the right source before searching the catalog.
 - [Keep the Why](https://github.com/oliver-zehentleitner/keep-the-why) — MIT-licensed decision-context Skill for preserving rationale across agent work; inspect local state, retention, privacy, and team-sharing boundaries.
 - [Codex Claude Code Config](https://github.com/AnastasiyaW/codex-claude-code-config) — MIT-licensed cross-harness collection spanning agent design, architecture, development, research, writing, and video workflows; review hooks, providers, filesystem writes, and host assumptions.
 - [PixVerse Skills](https://github.com/PixVerseAI/skills) — MIT-licensed video-generation Skill reference; review API credentials, prompt/input rights, media privacy, quota, cost, and output ownership before use.
+- [DSH Plugin Guide](https://github.com/PerryLink/dsh-plugin-guide) — Apache-2.0 plugin and Skill authoring guide; inspect generated plugin files, host assumptions, and publication permissions before adapting it.
+- [Memstack](https://github.com/cwinvestments/memstack) — MIT-licensed memory and knowledge-work Skill collection; review note paths, sync behavior, personal data, and retention before connecting it to a workspace.
+- [Master Skill](https://github.com/xr843/Master-skill) — MIT-licensed general-purpose Skill collection; inspect each sub-Skill's provenance, scripts, dependencies, and permission boundary independently.
+- [CC 1C Skills](https://github.com/Nikolay-Shirokov/cc-1c-skills) — MIT-licensed 1C development workflow collection; verify local platform versions, generated code, business data, and execution side effects.
+- [NAV IT Copilot](https://github.com/navikt/copilot) — MIT-licensed public-sector Copilot Skill collection; review regulated-data handling, repository permissions, internal service assumptions, and deployment boundaries.
+- [Claude Skill Typst](https://github.com/lucifer1004/claude-skill-typst) — MIT-licensed Typst document and typesetting Skill; inspect compiler versions, local files, font licenses, and generated PDFs before use.
+- [Claude Ops](https://github.com/Lifecycle-Innovations-Limited/claude-ops) — MIT-licensed operations Skill collection for incident, infrastructure, and delivery workflows; require explicit environment, credential, and rollback review before running changes.
+- [Unbrowse](https://github.com/unbrowse-ai/unbrowse) — MIT-licensed web-interaction Skill reference; review browser sessions, captured page data, authentication, and any generated network actions.
+- [Temps](https://github.com/gotempsh/temps) — Apache-2.0 application-development Skill collection; inspect generated project files, package installation, credentials, and deployment targets before use.
+- [Basecamp CLI](https://github.com/basecamp/basecamp-cli) — MIT-licensed Basecamp command-line Skill reference; review OAuth scopes, project identifiers, local caches, and message/task write operations.
+- [Tencent BrowserSkill](https://github.com/Tencent/BrowserSkill) — MIT-licensed browser automation Skill reference; use a test profile first and review cookies, downloads, navigation, and external side effects.
+- [QVeris Agent Toolkit](https://github.com/QVerisAI/qveris-agent-toolkit) — MIT-licensed agent-tool and workflow Skill reference; inspect provider credentials, network calls, quotas, and returned-data provenance.
+- [ADLC Team Skills](https://github.com/tikalk/adlc-team-skills) — MIT-licensed team workflow collection for architecture, delivery, quality, and collaboration; review host commands, shared state, and write ownership before use.
+- [PaulRBerg Agent Skills](https://github.com/PaulRBerg/agent-skills) — MIT-licensed cross-host collection of reusable engineering and project workflows; pin the source revision and inspect scripts and host-specific assumptions.
 
 ## This repository
 
