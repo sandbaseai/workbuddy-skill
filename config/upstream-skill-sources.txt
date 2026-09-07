@@ -469,3 +469,14 @@ Dimillian/Skills
 topoteretes/cognee
 JimLiu/baoyu-design
 brycewang-stanford/Auto-Empirical-Research-Skills
+anthropics/claude-plugins-official
+dontbesilent2025/dbskill
+lijigang/ljg-skills
+dzhng/skills
+elevenlabs/skills
+openclaw/clawhub
+WordPress/agent-skills
+binance/binance-skills-hub
+databricks/databricks-agent-skills
+laravel/agent-skills
+geekjourneyx/md2wechat-skill
