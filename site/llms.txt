@@ -54,6 +54,12 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Apache-2.0 Adobe-maintained Agent Skills (review creative assets, credentials, account permissions, and publishing effects): https://github.com/adobe/skills
 - MIT model-agnostic Tons of Skills Marketplace with canonical layer and adapters (verify provenance, runtime, and permissions): https://github.com/jeremylongshore/tons-of-skills-marketplace
 - MIT GooseWorks growth and GTM Skills for content, lead generation, SEO, ads, and data (review claims, customer data, scraping, and outbound actions): https://github.com/gooseworks-ai/goose-skills
+- Apache-2.0 cross-host TerminalSkills collection for Claude Code, Codex, Gemini CLI, and Cursor (review commands, dependencies, and writes): https://github.com/TerminalSkills/skills
+- MIT Wondel.ai business, marketing, UX, and coding workflows (review book-derived guidance, attribution, research, and claims): https://github.com/wondelai/skills
+- MIT OrchestKit toolkit of Skills, agents, and hooks (review hook execution, installation, network access, and host assumptions): https://github.com/yonatangross/orchestkit
+- MIT multi-host ready-to-use Awesome AI Agent Skills collection (verify each source commit, license, scripts, and permissions): https://github.com/seb1n/awesome-ai-agent-skills
+- Apache-2.0 Serac ServiceNow MCP server with 57 Skill guides and blast-radius analysis (review instances, credentials, approvals, and writes): https://github.com/serac-labs/serac
+- MIT design-focused DESIGN.md and SKILL.md collection (review visual rights, generated assets, accessibility, and host format): https://github.com/bergside/awesome-design-skills
 - MIT community index of 1,400+ Agent Skills (discovery only; inspect each upstream source): https://github.com/VoltAgent/awesome-agent-skills
 - MIT index of 5,400+ OpenClaw skills (discovery only; verify host assumptions, scripts, licenses, and permissions before WorkBuddy adaptation): https://github.com/VoltAgent/awesome-openclaw-skills
 - MIT cross-platform Agent Skill Manager for WorkBuddy and other domestic Agent products (review install scopes and sync paths before copying or removing): https://github.com/yxdwind/agent-skill-manager

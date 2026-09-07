@@ -90,6 +90,12 @@
 - [Adobe Skills](https://github.com/adobe/skills)——Apache-2.0 许可的 Adobe 维护 Agent Skill；复用前使用精确来源并检查创意素材、服务凭据、账号权限和发布影响。
 - [Tons of Skills Marketplace](https://github.com/jeremylongshore/tons-of-skills-marketplace)——MIT 许可的跨模型 Skill 市场，提供规范层、适配器和包工具；用于发现时要逐个核验适配器的来源、运行时和权限。
 - [GooseWorks Skills](https://github.com/gooseworks-ai/goose-skills)——MIT 许可的增长与 GTM Skill 集合，覆盖内容、线索、SEO、广告和数据工作流；适配前检查营销声明、客户数据、抓取限制和外部动作。
+- [TerminalSkills](https://github.com/TerminalSkills/skills)——Apache-2.0 许可的开放集合，提供适用于 Claude Code、Codex、Gemini CLI 和 Cursor 的 `SKILL.md` 工作流；用于跨宿主发现时，逐个检查命令、依赖和写入范围。
+- [Wondel.ai Skills](https://github.com/wondelai/skills)——MIT 许可的商业、营销、UX 和编程工作流；使用源自书籍的指导前检查引用、署名、外部调研和事实声明。
+- [OrchestKit](https://github.com/yonatangross/orchestkit)——MIT 许可的 Claude Code Skill、Agent 和 Hook 工具包；适配到 WorkBuddy 前检查 Hook 执行、包安装、网络访问和宿主假设。
+- [Awesome AI Agent Skills](https://github.com/seb1n/awesome-ai-agent-skills)——MIT 许可、面向多种宿主的可用 Skill 集合；作为发现入口使用时，仍需核对每个精确提交、许可证、脚本和权限。
+- [Serac ServiceNow MCP](https://github.com/serac-labs/serac)——Apache-2.0 许可的 ServiceNow MCP Server，附带 57 个 Skill 指南和影响范围分析；接入 WorkBuddy 前检查实例、凭据、审批门禁和记录写入范围。
+- [Awesome Design Skills](https://github.com/bergside/awesome-design-skills)——MIT 许可的设计方向 `DESIGN.md` 与 `SKILL.md` 集合；复用前检查视觉参考权利、生成素材、无障碍和目标宿主格式。
 - [Awesome Agent Skills](https://github.com/VoltAgent/awesome-agent-skills)——MIT 许可的社区导航索引，收录 1,400+ 个来自官方团队和实践者的 Skill；仅用于发现，之后仍需逐个检查上游许可证、提交版本和权限边界。
 - [Awesome OpenClaw Skills](https://github.com/VoltAgent/awesome-openclaw-skills)——MIT 许可的 OpenClaw Skill 索引，收录 5,400+ 个 Skill；可用于发现可移植思路，但适配 WorkBuddy 前要核对宿主假设、脚本、许可证和权限。
 - [Agent Skill Manager](https://github.com/yxdwind/agent-skill-manager)——MIT 许可的跨平台 Skill 管理器，覆盖 WorkBuddy 等多个 Agent 产品；可用来比较安装作用域和同步行为，但复制或移除前仍需检查目标路径。
