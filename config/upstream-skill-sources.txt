@@ -79,3 +79,13 @@ nexscope-ai/eCommerce-Skills
 coreyhaines31/makerskills
 ferdinandobons/startup-skill
 Bhanunamikaze/Agentic-SEO-Skill
+DietrichGebert/ponytail
+tt-a1i/archify
+blader/humanizer
+cathrynlavery/diagram-design
+gosom/google-maps-scraper
+ningzimu/codex-ppt-skill
+OpenSenseNova/SenseNova-Skills
+wuyoscar/GPT-Image2-Skill
+SamurAIGPT/Generative-Media-Skills
+eternityspring/shuohao-skills
