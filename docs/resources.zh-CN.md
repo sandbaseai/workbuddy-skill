@@ -71,12 +71,14 @@
 - [Ontology Driven Dev](https://github.com/sharptoolbox/ontology-driven-dev)——MIT 许可、兼容 WorkBuddy 的需求探索、本体建模和应用构建参考，带有人为确认门禁；仓库包含较重的运行时和示例，运行前先检查依赖、本地数据以及模型/API 配置。
 - [WorkBuddy AppBuilder Skill](https://github.com/sharptoolbox/WorkBuddy-AppBuilderSkill)——MIT 许可的聚焦型参考，覆盖需求探索、领域建模和应用生成；适配前检查生成文件以及模型/API 的边界。
 - [Image Story Video Wizard](https://github.com/aaronyi97/image-story-video-wizard)——MIT 许可、带确认门禁的音频优先图像故事视频工作流，兼容 Codex 和 WorkBuddy；使用前检查媒体路径、外部工具和人工批准步骤。
+- [nuwa-skill](https://github.com/alchaincyf/nuwa-skill)——MIT 许可、README 明确列出 WorkBuddy 支持的 Agent Skills 包，用于调研并提炼可复用的思维模型；生成的人格化内容仍需按原创内容审阅，并检查外部检索、隐私和提示注入边界。
 - [WorkBuddy 使用指南](https://github.com/Neo5093/workbuddy-guide)——MIT 许可的社区参考 Skill，包含新手路径、连接器排障、自动化模式、模型说明、FAQ 和环境诊断；适配前请检查脚本和具体版本。
 - [WorkBuddy 实践指南](https://github.com/opcspace/WorkBuddy-Guide)——中文社区知识库，覆盖安全安装、首次任务、权限、排障、连接器、远程协助和验收导向的工作流；复用前请核对内容新鲜度和许可证。
 - [WorkBuddy Starter](https://github.com/sunyet-01/WorkBuddy-Starter)——MIT 许可、面向新手的 WorkBuddy 入门资料库，按入门、Skills、场景和案例组织内容。
 - [QA Testing Guide](https://github.com/genapohub/qa-testing-guide)——MIT 许可、兼容 WorkBuddy 的测试 Skill 参考，覆盖测试策略、自动化、性能测试和缺陷流程；适配前仍需检查具体文件。
 - [WeChat Article Skills](https://github.com/aiworkskills/wechat-article-skills)——Apache-2.0 许可、明确兼容 WorkBuddy 的中文公众号工作流集合，覆盖选题、写作、审稿、排版、配图和草稿发布；每个阶段都会等待确认，使用前仍需检查 API Key、本地文件和发布权限。
 - [Agentic Awesome Skills](https://github.com/sickn33/agentic-awesome-skills)——MIT 许可的本地 Agent Skill 目录与控制平面，可用于研究发现、选择和验证 Skill；仅作资料参考，不要当作自动安装源。
+- [ASu-skills](https://github.com/Hisn00w/ASu-skills)——MIT 许可的中文求职与开发工作流集合，文档提供 WorkBuddy 轻量桥接入口；其中浏览器辅助投递和本地简历数据涉及写入与提交动作，启用前必须单独审阅。
 - [Awesome Agent Skills](https://github.com/linny006/awesome-agent-skills)——自动更新的跨 Agent Skill 导航索引，提供质量和维护信号；仓库当前没有声明许可证，只适合作为导航，具体来源仍需单独审阅。
 - [kendex](https://github.com/vanillagreencom/kendex)——MIT 许可的跨宿主 Skill、Agent、Hook 和扩展管理器，支持应用前预览和来源追踪；它不是 WorkBuddy 包，使用它管理本地安装前先检查文件系统范围。
 - [semlinker/awesome-workbuddy](https://github.com/semlinker/awesome-workbuddy)——CC0 许可的 WorkBuddy 教程、提示词、Skills、MCP 和场景实践导航；使用其中链接时仍需核对各项目的最新条款。
@@ -95,6 +97,7 @@
 - [yinqd3/workbuddy-skills](https://github.com/yinqd3/workbuddy-skills)——MIT 许可的社区技能集合，包含学术研究、前端幻灯片和工具调用工作流；仅作为可审阅来源，不代表自动可信。
 - [Huawei Cloud DevKit](https://github.com/huaweicloud/huaweicloud-devkit)——Apache-2.0 许可的华为云官方工具包，明确支持 WorkBuddy，提供 Skill、MCP、CLI 和执行前安全检查；使用前检查凭据和云端副作用。
 - [CloudBase AI Toolkit](https://github.com/TencentCloudBase/CloudBase-AI-Toolkit)——腾讯云官方后端工具包，明确支持 WorkBuddy，串联 Skill、MCP、鉴权、数据库、存储、云函数和部署流程；执行前确认目标环境，并审阅敏感操作。
+- [TencentDB Agent Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory)——团队记忆架构参考，提供明确的 WorkBuddy 接入路径，以及 Chat Memory、Skill、Wiki 和 Code-Graph 等可复用资产；README 展示 MIT 标识，但 GitHub 当前没有识别到正式许可证，不能据此视为允许再分发。
 - [Qwen-MM-Plugins](https://github.com/QwenLM/Qwen-MM-Plugins)——Apache-2.0 许可的多模态插件集合，将 Skill 与可选 MCP 能力分开；启用前检查模型/API Key、本地运行时和媒体数据边界。
 - [SkillDeck](https://github.com/crossoverJie/SkillDeck)——MIT 许可的 macOS Skill 管理器，明确支持 WorkBuddy/CodeBuddy，可浏览、导入、更新和分配 Skill；使用前检查其文件系统和符号链接权限。
 - [skill-manager](https://github.com/GrubbyLee/skill-manager)——MIT 许可、零依赖的本地 Skill/MCP 治理 CLI，支持扫描 WorkBuddy 目录、推荐、查重、审计和生成生命周期 dry-run 计划；默认只读，但执行任何写入前仍需检查变更计划。

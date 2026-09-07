@@ -35,6 +35,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT WorkBuddy-compatible ontology-driven development reference (inspect runtime, examples, and model/API configuration): https://github.com/sharptoolbox/ontology-driven-dev
 - MIT focused WorkBuddy AppBuilder reference for requirements, domain modeling, and app generation (review generated-artifact and model/API boundaries): https://github.com/sharptoolbox/WorkBuddy-AppBuilderSkill
 - MIT confirmation-gated audio-first image-story video workflow for Codex and WorkBuddy (inspect media paths and approvals): https://github.com/aaronyi97/image-story-video-wizard
+- MIT Agent Skills package explicitly listing WorkBuddy support for distilling reusable thinking models (review research and privacy boundaries): https://github.com/alchaincyf/nuwa-skill
 - WorkBuddyGuide online reading site: https://workbuddy.homes
 - MIT community WorkBuddy usage and troubleshooting reference: https://github.com/Neo5093/workbuddy-guide
 - Chinese WorkBuddy practice guide (verify freshness and license before reuse): https://github.com/opcspace/WorkBuddy-Guide
@@ -42,6 +43,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT WorkBuddy-compatible QA testing reference: https://github.com/genapohub/qa-testing-guide
 - Apache-2.0 WorkBuddy-compatible Chinese WeChat article workflow (review credentials and publishing permissions): https://github.com/aiworkskills/wechat-article-skills
 - MIT agentic Skill catalog and control plane (research reference): https://github.com/sickn33/agentic-awesome-skills
+- MIT Chinese job-search and development Skills with a documented WorkBuddy bridge (review browser and resume-data actions): https://github.com/Hisn00w/ASu-skills
 - Auto-updated Agent Skills index with no repository license declaration (navigation only): https://github.com/linny006/awesome-agent-skills
 - MIT cross-harness Skill and extension manager with preview and source tracking (separate tool): https://github.com/vanillagreencom/kendex
 - CC0 WorkBuddy resource index: https://github.com/semlinker/awesome-workbuddy
@@ -60,6 +62,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT WorkBuddy community skills collection: https://github.com/yinqd3/workbuddy-skills
 - Apache-2.0 Huawei Cloud DevKit with explicit WorkBuddy support and safety checks (research reference): https://github.com/huaweicloud/huaweicloud-devkit
 - Tencent CloudBase AI Toolkit with explicit WorkBuddy support for backend, Skills, MCP, and deployment workflows (research reference): https://github.com/TencentCloudBase/CloudBase-AI-Toolkit
+- TencentDB Agent Memory with WorkBuddy integration and reusable memory assets; README shows MIT but GitHub reports no formal license (research reference only): https://github.com/TencentCloud/TencentDB-Agent-Memory
 - Apache-2.0 Qwen multimodal Skill + optional MCP plugins (research reference): https://github.com/QwenLM/Qwen-MM-Plugins
 - MIT macOS Skill manager with explicit WorkBuddy/CodeBuddy support (research reference): https://github.com/crossoverJie/SkillDeck
 - MIT zero-dependency Skill/MCP governance CLI with WorkBuddy directory support (research reference): https://github.com/GrubbyLee/skill-manager
