@@ -591,6 +591,11 @@ axoviq-ai/synthadoc
 langfuse/langfuse-docs
 belialberu4-oss/exo-harness-ai-pipeline
 lovstudio/skills
+ascend-ai-coding/awesome-ascend-skills
+naodeng/awesome-qa-skills
+specstoryai/getspecstory
+gviiisen/repo-context-ledger
+gadievron/raptor
 skalesapp/skales
 EverMind-AI/SkillCorpus
 WenyuChiou/ai-research-skills
