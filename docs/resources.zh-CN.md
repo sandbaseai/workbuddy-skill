@@ -88,6 +88,8 @@
 - [Everything Claude Code](https://github.com/affaan-m/ECC)——MIT 许可的 Agent Harness 参考，覆盖 Skill、记忆、安全、研究优先开发和多宿主工作流；可借鉴其中的边界控制实践，但适配前检查宿主专用 Hook。
 - [Marketing Skills](https://github.com/coreyhaines31/marketingskills)——MIT 许可的营销 Skill 集合，覆盖 CRO、文案、SEO、分析和增长工程；用于营销流程前要检查内容声明、客户数据和发布权限。
 - [Anthropic Cybersecurity Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills)——Apache-2.0 许可的安全 Skill 集合，映射多个常见安全框架；仅作为防御性审查参考，并明确授权扫描、凭证和目标系统。
+- [Humanizer](https://github.com/blader/humanizer)——MIT 许可的可移植 Skill，用于减少文本的 AI 腔并尽量保持原意；应将结果视为编辑建议，核验事实，不要用它掩盖必须披露的 AI 生成信息。
+- [Awesome LLM Apps](https://github.com/Shubhamsaboo/awesome-llm-apps)——Apache-2.0 许可的 Agent、RAG、MCP 和 `agent_skills` 集合；用于发现时仍需逐个检查示例的依赖、凭证和数据流，再适配到 WorkBuddy。
 - [Planning with Files](https://github.com/OthmanAdi/planning-with-files)——MIT 许可的文件式规划工作流，支持长任务、会话恢复和确定性完成门槛；可借鉴恢复思路，但要明确 WorkBuddy 路径和写入范围。
 - [PM Skills](https://github.com/phuryn/pm-skills)——MIT 许可的产品管理 Skill 集合，覆盖发现、战略、执行、发布和增长；适配前检查业务敏感输入和外部发布动作。
 - [Agent Skills 规范仓库](https://github.com/agentskills/agentskills)——Apache-2.0 许可的 Agent Skills 规范与文档源码仓库；导入 Skill 前可用它核对格式和跨宿主假设。

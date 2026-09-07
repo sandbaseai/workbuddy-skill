@@ -52,6 +52,8 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT Everything Claude Code agent-harness reference for skills, memory, security, research-first development, and multi-host workflows (inspect host-specific hooks): https://github.com/affaan-m/ECC
 - MIT Marketing Skills for CRO, copywriting, SEO, analytics, and growth engineering (review claims, customer data, and publishing permissions): https://github.com/coreyhaines31/marketingskills
 - Apache-2.0 defensive cybersecurity Skills mapped to common security frameworks (authorize scans, credentials, and targets): https://github.com/mukul975/Anthropic-Cybersecurity-Skills
+- MIT portable Humanizer Skill for reducing AI-sounding phrasing (editorial aid; verify claims and required disclosure): https://github.com/blader/humanizer
+- Apache-2.0 collection of agents, RAG apps, MCP projects, and agent_skills (discovery only; review dependencies, credentials, and data flows): https://github.com/Shubhamsaboo/awesome-llm-apps
 - MIT Planning with Files workflow for long-running tasks, recovery, and completion gates (keep WorkBuddy paths explicit): https://github.com/OthmanAdi/planning-with-files
 - MIT PM Skills collection for discovery, strategy, execution, launch, and growth (review business-sensitive inputs): https://github.com/phuryn/pm-skills
 - Apache-2.0 Agent Skills specification and documentation repository (check format and portability assumptions): https://github.com/agentskills/agentskills
