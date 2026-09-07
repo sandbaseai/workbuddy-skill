@@ -116,6 +116,7 @@
 - [WorkBuddy Starter](https://github.com/sunyet-01/WorkBuddy-Starter)——MIT 许可、面向新手的 WorkBuddy 入门资料库，按入门、Skills、场景和案例组织内容。
 - [QA Testing Guide](https://github.com/genapohub/qa-testing-guide)——MIT 许可、兼容 WorkBuddy 的测试 Skill 参考，覆盖测试策略、自动化、性能测试和缺陷流程；适配前仍需检查具体文件。
 - [WeChat Article Skills](https://github.com/aiworkskills/wechat-article-skills)——Apache-2.0 许可、明确兼容 WorkBuddy 的中文公众号工作流集合，覆盖选题、写作、审稿、排版、配图和草稿发布；每个阶段都会等待确认，使用前仍需检查 API Key、本地文件和发布权限。
+- [WeChat2Knowledge](https://github.com/bonboruyau-dev/wechat2knowledge)——MIT 许可、兼容 WorkBuddy/Codex 的工作流，可将公众号文章清洗为 Markdown 并写入飞书文档；使用前检查文章版权、图片上传、OAuth Scope 和目标文档权限。
 - [Agentic Awesome Skills](https://github.com/sickn33/agentic-awesome-skills)——MIT 许可的本地 Agent Skill 目录与控制平面，可用于研究发现、选择和验证 Skill；仅作资料参考，不要当作自动安装源。
 - [ASu-skills](https://github.com/Hisn00w/ASu-skills)——MIT 许可的中文求职与开发工作流集合，文档提供 WorkBuddy 轻量桥接入口；其中浏览器辅助投递和本地简历数据涉及写入与提交动作，启用前必须单独审阅。
 - [Awesome Agent Skills](https://github.com/linny006/awesome-agent-skills)——自动更新的跨 Agent Skill 导航索引，提供质量和维护信号；仓库当前没有声明许可证，只适合作为导航，具体来源仍需单独审阅。
@@ -131,6 +132,7 @@
 - [电商视觉文案 Skill](https://github.com/feichanggege/ecommerce-visual-copywriting-skill)——MIT 许可、明确兼容 WorkBuddy 的电商视觉文案工作流，社区关注度较高；复用前仍需检查随附素材和脚本。
 - [agency-agents-zh](https://github.com/jnMetaCode/agency-agents-zh)——MIT 许可、覆盖工程、设计、营销、金融等工作流的中文专家角色集合；复用前仍需检查归属说明和随附素材。
 - [WorkBuddy Usage Status](https://github.com/clancy-feng/workbuddy-usage-status)——MIT 许可、离线优先的用量看板，可分析本地 Token、credit、模型效率和错误；使用前仍需检查本地数据读取及可选凭据边界。
+- [Token Usage](https://github.com/YuLaiZ/token-usage)——MIT 许可的本地用量分析 CLI，支持 WorkBuddy 和无需 SQL 的多维报表；分享报告前检查本地轨迹路径和脱敏处理。
 - [Agent Analytics Report](https://github.com/Elisabeth15501/agent-analytics-report)——MIT 许可的 WorkBuddy 用量分析工具，可生成 Token、模型成本和异常报告；它会读取本地 traces、数据库和 usage 日志，使用前先确认隐私边界并只分享脱敏报告。
 - [WorkBuddy Codex Hub MCP](https://github.com/somo-ui/workbuddy-codex-hub-mcp)——MIT 许可的早期本地 MCP 协作参考，用 SQLite 任务池协调 WorkBuddy 与 Codex 的认领、提交和独立审阅；项目明确尚未提供生产级加固、并发写锁或托管服务，复用前应先审阅代码和部署边界。
 - [WorkBuddy Chat Manager](https://github.com/sutupikk-cyber/workbuddy-chat-manager)——MIT 许可的本地聊天恢复/清理参考，涉及 `workbuddy.db`、JSONL 会话和回收站；它提供备份和确认流程，但删除能力仍属高风险，使用前必须先备份、核对账号与路径并人工确认目标。
