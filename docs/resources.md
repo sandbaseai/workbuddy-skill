@@ -62,6 +62,11 @@ Use this page to choose the right source before searching the catalog.
 
 ## Learning and evaluation
 
+- [Trail of Bits Skills](https://github.com/trailofbits/skills) — CC-BY-SA-4.0 security-research Skills for vulnerability detection and audit workflows; inspect attribution, scripts, and authorization boundaries before adapting.
+- [NVIDIA SkillSpector](https://github.com/NVIDIA/SkillSpector) — Apache-2.0 scanner for prompt injection, data exfiltration, malicious patterns, and supply-chain risks in Agent Skills and MCP; use it as a review aid, not as proof that a package is safe.
+- [Gentle AI](https://github.com/Gentleman-Programming/gentle-ai) — MIT cross-agent configuration reference for memory, spec-driven development, curated Skills, MCP, and bounded review across Claude Code, Cursor, OpenCode, Codex, and Pi.
+- [HTML Anything](https://github.com/nexu-io/html-anything) — Apache-2.0 local agentic HTML workflow with many surface-specific Skills; review its sandbox, publishing integrations, and local file boundaries before reuse.
+- [anbeime/skill](https://github.com/anbeime/skill) — large Chinese Skill navigation and packaging reference; GitHub currently reports no formal repository license, so use it for discovery only and inspect each upstream source independently.
 - [WorkBuddyGuide](https://github.com/AlephAITech/WorkBuddyGuide) — task-oriented community walkthrough; its [online reading site](https://workbuddy.homes) is convenient for browsing.
 - [WorkBuddy account migration](https://github.com/xiaoliuzhuan666/workbuddy-account-migrate) — MIT-licensed cross-platform recovery reference for conversations, memory, and connectors after an account switch; start with diagnostic mode and verify backup, rollback, and target-account details before changing local databases.
 - [Self-media compliance review](https://github.com/JuneYaooo/self-media-compliance-review) — MIT-licensed WorkBuddy-compatible pre-publication review workflow for short video, cover, copy, commerce claims, and platform risk; its default evidence search is local, while optional real-time channels can require credentials, network access, and paid quota.

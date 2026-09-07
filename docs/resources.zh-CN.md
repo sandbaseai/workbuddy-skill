@@ -62,6 +62,11 @@
 
 ## 学习与评测
 
+- [Trail of Bits Skills](https://github.com/trailofbits/skills)——CC-BY-SA-4.0 许可的安全研究 Skill，覆盖漏洞检测和审计工作流；适配前检查署名要求、脚本以及授权边界。
+- [NVIDIA SkillSpector](https://github.com/NVIDIA/SkillSpector)——Apache-2.0 许可的 Skill 审计工具，可检测提示注入、数据外泄、恶意模式和供应链风险；它只是审阅辅助，不代表包一定安全。
+- [Gentle AI](https://github.com/Gentleman-Programming/gentle-ai)——MIT 许可的跨 Agent 配置参考，覆盖记忆、规格驱动开发、精选 Skill、MCP 和有界审阅，支持 Claude Code、Cursor、OpenCode、Codex 和 Pi。
+- [HTML Anything](https://github.com/nexu-io/html-anything)——Apache-2.0 许可的本地 Agent HTML 工作流，包含多种面向场景的 Skill；复用前检查沙箱、发布集成和本地文件边界。
+- [anbeime/skill](https://github.com/anbeime/skill)——大型中文 Skill 导航与打包参考；GitHub 当前没有声明正式仓库许可证，只适合作为发现入口，具体上游仍需单独审阅。
 - [WorkBuddy 实战蓝皮书](https://github.com/AlephAITech/WorkBuddyGuide)——按真实任务学习，也可以直接阅读[在线版](https://workbuddy.homes)。
 - [WorkBuddy 账号迁移](https://github.com/xiaoliuzhuan666/workbuddy-account-migrate)——MIT 许可的跨平台账号切换恢复参考，覆盖会话、记忆和连接器；先使用诊断模式并确认备份、回滚和目标账号，不能把本地数据库修改视为无风险操作。
 - [自媒体合规审核](https://github.com/JuneYaooo/self-media-compliance-review)——MIT 许可、兼容 WorkBuddy 的发布前审核工作流，覆盖短视频、封面、文案、电商功效声明和平台风险；默认使用本地证据，实时检索通道可能需要凭据、联网和付费额度，启用前必须单独确认。
