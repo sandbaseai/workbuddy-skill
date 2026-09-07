@@ -668,3 +668,8 @@ chenweil/skillcaddy
 pjt222/agent-almanac
 jim60105/copilot-prompt
 fernandotellado/ai-skills
+FTShare-Lab/FTShare-skill
+dembrandt/dembrandt-skills
+AIDevGTM/gtm-cofounder
+aai-labs/agent-barn
+oxbshw/watch-skill
