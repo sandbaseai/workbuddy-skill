@@ -528,3 +528,8 @@ JPeetz/agent-skills
 j4flmao/agent-skills
 hardikpthv/agent-skills
 eristoddle/agent-skills
+shengyy/agent-skills
+am-will/codex-skills
+cobusgreyling/agent-skills
+heyimcarlos/agent-skills
+skill-mill/agent-skill-porter
