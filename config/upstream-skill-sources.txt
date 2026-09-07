@@ -1675,3 +1675,14 @@ bitjaru/styleseed
 Sushegaad/Claude-Skills-Governance-Risk-and-Compliance
 alirezarezvani/claude-code-skill-factory
 dongshuyan/compass-skills
+xrkseek/XRK-AGT
+tikoci/routeros-skills
+michaelpersonal/goal-forge
+bergside/design-md-figma
+spboyer/sensei
+FredAntB/Spec-Driven-Development
+hashgraph-online/skill-publish
+mitkox/SkillOpt
+VoidLight00/autoimprove-cc
+zLanqing/codex-claude-academic-skills
+badlogic/pi-skills
