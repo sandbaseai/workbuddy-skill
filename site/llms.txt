@@ -128,6 +128,17 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT image-understanding workflow with a dedicated vision Skill: https://github.com/Anionex/agent-vision-toolkit
 - MIT multi-agent coding workflow with provider adapters, run controls, and benchmarks: https://github.com/Spielewoy/autoprompt-skill
 - MIT deterministic software-factory Skill for sequencing, retries, acceptance, and traces: https://github.com/disler/super-simple-software-factory
+- Apache-2.0 AgenticOS application and Skill gallery for engineering, ecommerce, finance, manufacturing, public-sector, and software workflows: https://github.com/vstorm-co/agenticos
+- MIT investment-analysis Skills for stocks, ETFs, journals, pulses, and gap scans: https://github.com/Veblin/invest-skills
+- MIT software-engineering Skills for requirements, architecture, security, testing, debugging, and release quality: https://github.com/kabiir90/Software-Engineering-Skills
+- MIT layered review system with upstream, midstream, downstream, adversarial, and quality-gap Skills: https://github.com/s977043/river-review
+- MIT media-engineering Skills for FFmpeg artifacts, pipelines, verification, and release management: https://github.com/kajisho5/ffmpeg-skill
+- MIT cross-host Skill/plugin distribution system with upstream sync, external-repo intake, and exports: https://github.com/acaprino/daodan
+- Apache-2.0 office/document automation platform with GitHub, Markdown, PDF, DOCX, PPTX, XLSX, and academic-paper Skills: https://github.com/Team-Commonly/commonly
+- MIT blog workflow Skills for archival, publishing preparation, review, and draw.io export: https://github.com/ryuki-imachi/blog-skills
+- MIT large cross-host Skill distribution with accessibility, security, architecture, testing, development, and operations workflows: https://github.com/event4u-app/agent-config
+- MIT cross-host task-state and acceptance examples for desktop and QA workflows: https://github.com/Atakan-Emre/skillstate-kit
+- Apache-2.0 specialized aerodynamics and vehicle-design collection with hundreds of engineering calculation Skills: https://github.com/ashfordeOU/aero-agent-skills
 - MIT index of 5,400+ OpenClaw skills (discovery only; verify host assumptions, scripts, licenses, and permissions before WorkBuddy adaptation): https://github.com/VoltAgent/awesome-openclaw-skills
 - MIT cross-platform Agent Skill Manager for WorkBuddy and other domestic Agent products (review install scopes and sync paths before copying or removing): https://github.com/yxdwind/agent-skill-manager
 - MIT read-only Skill Auditor for usage traces and security hazards (deletion suggestions require human confirmation): https://github.com/dx2020z/skill-auditor

@@ -416,3 +416,14 @@ cbrock84/headcount
 Anionex/agent-vision-toolkit
 Spielewoy/autoprompt-skill
 disler/super-simple-software-factory
+vstorm-co/agenticos
+Veblin/invest-skills
+kabiir90/Software-Engineering-Skills
+s977043/river-review
+kajisho5/ffmpeg-skill
+acaprino/daodan
+Team-Commonly/commonly
+ryuki-imachi/blog-skills
+event4u-app/agent-config
+Atakan-Emre/skillstate-kit
+ashfordeOU/aero-agent-skills

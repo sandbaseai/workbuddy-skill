@@ -272,6 +272,17 @@
 - [Agent Vision Toolkit](https://github.com/Anionex/agent-vision-toolkit)——MIT 许可的图像理解工作流，提供专用视觉 Skill；使用前检查图片隐私、本地工具行为和外部模型调用。
 - [Autoprompt](https://github.com/Spielewoy/autoprompt-skill)——MIT 许可的多 Agent 编程工作流，含提供商适配器、运行控制和基准声明；使用前固定版本并审阅子进程、API Key 和成本。
 - [Super Simple Software Factory](https://github.com/disler/super-simple-software-factory)——MIT 许可的确定性编排 Skill，把顺序、重试和验收交给代码；写入仓库前检查生成文件、模型提供商、密钥和数据库轨迹。
+- [AgenticOS](https://github.com/vstorm-co/agenticos)——Apache-2.0 许可的应用与 Skill 展示库，覆盖工程、电商、金融、制造、公共部门和软件工作流；使用前审阅运行时、集成、凭据和生成式写入。
+- [Invest Skills](https://github.com/Veblin/invest-skills)——MIT 许可的投资分析 Skill 集合，覆盖股票、ETF、日志、脉冲和差距扫描；核验市场新鲜度、数据来源和司法辖区，不把结果当作投资建议。
+- [Software Engineering Skills](https://github.com/kabiir90/Software-Engineering-Skills)——MIT 许可的软件工程集合，覆盖需求、架构、安全、测试、调试、上下文效率和发布质量；适配前检查不同宿主的副本及命令范围。
+- [River Review](https://github.com/s977043/river-review)——MIT 许可的分层审阅系统，包含上游、中游、下游、对抗式和质量缺口 Skill；将结果作为有证据的审阅线索，并在目标仓库中复核。
+- [FFmpeg Skill](https://github.com/kajisho5/ffmpeg-skill)——MIT 许可的媒体工程集合，覆盖产物构建、流水线、外部行为验证和发布管理；运行前检查编解码器、本地文件、子进程和输出路径。
+- [Daodan](https://github.com/acaprino/daodan)——MIT 许可的跨宿主 Skill/插件分发系统，含上游同步、外部仓库接入、导出和多领域工作流；先审计同步方向、生成文件、凭据和写入范围。
+- [Commonly](https://github.com/Team-Commonly/commonly)——Apache-2.0 许可的办公与文档自动化平台，内置 GitHub、Markdown、PDF、DOCX、PPTX、XLSX 和学术论文 Skill；使用前检查本地文件、转换器、模板和账号边界。
+- [Blog Skills](https://github.com/ryuki-imachi/blog-skills)——MIT 许可的日英博客工作流集合，覆盖归档、发布准备、审阅和 draw.io 导出；核验版权、发布目标和生成产物。
+- [Agent Config](https://github.com/event4u-app/agent-config)——MIT 许可的大型跨宿主 Skill 分发集合，覆盖无障碍、安全、架构、测试、开发和运维；只安装需要的子集，并审阅 Hook、脚本和文件系统范围。
+- [Skillstate Kit](https://github.com/Atakan-Emre/skillstate-kit)——MIT 许可的跨宿主任务状态与验收示例，覆盖桌面和 QA 工作流；适配前检查持久化、集成路径和生成状态。
+- [Aero Agent Skills](https://github.com/ashfordeOU/aero-agent-skills)——Apache-2.0 许可的航空气动与飞行器设计专业集合，包含数百个工程计算 Skill；必须独立验证公式、单位、假设和安全关键审阅边界。
 
 ## 本仓库
 
