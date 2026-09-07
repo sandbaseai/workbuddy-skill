@@ -106,6 +106,8 @@ bonboruyau-dev/wechat2knowledge
 KristoffersonLee/workbuddy-checkin
 Shubhamsaboo/awesome-llm-apps
 dingdong905/workbuddy-skills
+ZOORO-NEW/qianjin-writer
+ZOORO-NEW/qianjin-trending-hunter
 wondelai/skills
 gooseworks-ai/goose-skills
 oxylabs/agent-skills

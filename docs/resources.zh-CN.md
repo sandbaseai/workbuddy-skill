@@ -120,6 +120,8 @@
 - [QA Testing Guide](https://github.com/genapohub/qa-testing-guide)——MIT 许可、兼容 WorkBuddy 的测试 Skill 参考，覆盖测试策略、自动化、性能测试和缺陷流程；适配前仍需检查具体文件。
 - [WeChat Article Skills](https://github.com/aiworkskills/wechat-article-skills)——Apache-2.0 许可、明确兼容 WorkBuddy 的中文公众号工作流集合，覆盖选题、写作、审稿、排版、配图和草稿发布；每个阶段都会等待确认，使用前仍需检查 API Key、本地文件和发布权限。
 - [WeChat2Knowledge](https://github.com/bonboruyau-dev/wechat2knowledge)——MIT 许可、兼容 WorkBuddy/Codex 的工作流，可将公众号文章清洗为 Markdown 并写入飞书文档；使用前检查文章版权、图片上传、OAuth Scope 和目标文档权限。
+- [Qianjin Writer](https://github.com/ZOORO-NEW/qianjin-writer)——MIT 许可的中文写作工作流，覆盖官媒、自媒体和品牌叙事风格；生成内容应视为编辑产物，发布前核验事实、署名、风格模仿边界和平台规则。
+- [Qianjin Trending Hunter](https://github.com/ZOORO-NEW/qianjin-trending-hunter)——MIT 许可的中文热点研究工作流，覆盖跨行业选题、热度周期、平台适配和合规提示；使用前核验时效、来源、敏感议题和发布权限。
 - [Agentic Awesome Skills](https://github.com/sickn33/agentic-awesome-skills)——MIT 许可的本地 Agent Skill 目录与控制平面，可用于研究发现、选择和验证 Skill；仅作资料参考，不要当作自动安装源。
 - [ASu-skills](https://github.com/Hisn00w/ASu-skills)——MIT 许可的中文求职与开发工作流集合，文档提供 WorkBuddy 轻量桥接入口；其中浏览器辅助投递和本地简历数据涉及写入与提交动作，启用前必须单独审阅。
 - [Awesome Agent Skills](https://github.com/linny006/awesome-agent-skills)——自动更新的跨 Agent Skill 导航索引，提供质量和维护信号；仓库当前没有声明许可证，只适合作为导航，具体来源仍需单独审阅。

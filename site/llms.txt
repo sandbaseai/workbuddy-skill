@@ -85,6 +85,8 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT WorkBuddy-compatible QA testing reference: https://github.com/genapohub/qa-testing-guide
 - Apache-2.0 WorkBuddy-compatible Chinese WeChat article workflow (review credentials and publishing permissions): https://github.com/aiworkskills/wechat-article-skills
 - MIT WorkBuddy/Codex-compatible WeChat article-to-Markdown/Feishu workflow (review rights, image uploads, OAuth, and destination permissions): https://github.com/bonboruyau-dev/wechat2knowledge
+- MIT Chinese writing workflow for official-media, social-media, and brand formats (verify claims, attribution, style boundaries, and platform rules): https://github.com/ZOORO-NEW/qianjin-writer
+- MIT Chinese trend-research workflow for topic discovery, lifecycle, platform adaptation, and compliance prompts (verify freshness and sources): https://github.com/ZOORO-NEW/qianjin-trending-hunter
 - MIT agentic Skill catalog and control plane (research reference): https://github.com/sickn33/agentic-awesome-skills
 - MIT Chinese job-search and development Skills with a documented WorkBuddy bridge (review browser and resume-data actions): https://github.com/Hisn00w/ASu-skills
 - Auto-updated Agent Skills index with no repository license declaration (navigation only): https://github.com/linny006/awesome-agent-skills
