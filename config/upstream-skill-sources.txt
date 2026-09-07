@@ -589,6 +589,8 @@ Doist/todoist-cli
 archcore-ai/plugin
 axoviq-ai/synthadoc
 langfuse/langfuse-docs
+belialberu4-oss/exo-harness-ai-pipeline
+lovstudio/skills
 skalesapp/skales
 EverMind-AI/SkillCorpus
 WenyuChiou/ai-research-skills
