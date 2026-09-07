@@ -628,3 +628,8 @@ tale-project/tale
 daniel-j-lin/commerce-lens
 quocbao201104/marketing-practitioner
 fortunto2/solo-factory
+timwukp/agent-skills-best-practice
+wei18/apple-dev-skills
+raimondasl/isitdone
+MaciejZet/agent-skills
+stevennitesh/programming-agent-skills
