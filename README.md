@@ -315,6 +315,17 @@ From a local checkout, use the high-signal shortcut to narrow candidates quickly
 python3 scripts/query_catalog.py research --high-signal --limit 10
 ```
 
+To find a ready-to-download reviewed package, use the installable shortcut:
+
+```bash
+python3 scripts/query_catalog.py research --installable --limit 10
+```
+
+It combines reviewed-package availability with no known static flags, a
+primary-looking source, a score of at least 80, unique results, and score
+ordering. It is still a shortlist, not a substitute for reviewing provenance,
+license, and permissions.
+
 To find installable reviewed packages by Atlas category:
 
 ```bash
