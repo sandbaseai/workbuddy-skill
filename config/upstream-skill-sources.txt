@@ -427,3 +427,9 @@ ryuki-imachi/blog-skills
 event4u-app/agent-config
 Atakan-Emre/skillstate-kit
 ashfordeOU/aero-agent-skills
+wix/skills
+maptiler/maptiler-skills
+PerryLink/dsh-industry-research
+oliver-zehentleitner/keep-the-why
+AnastasiyaW/codex-claude-code-config
+PixVerseAI/skills

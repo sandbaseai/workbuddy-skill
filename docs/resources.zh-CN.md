@@ -283,6 +283,12 @@
 - [Agent Config](https://github.com/event4u-app/agent-config)——MIT 许可的大型跨宿主 Skill 分发集合，覆盖无障碍、安全、架构、测试、开发和运维；只安装需要的子集，并审阅 Hook、脚本和文件系统范围。
 - [Skillstate Kit](https://github.com/Atakan-Emre/skillstate-kit)——MIT 许可的跨宿主任务状态与验收示例，覆盖桌面和 QA 工作流；适配前检查持久化、集成路径和生成状态。
 - [Aero Agent Skills](https://github.com/ashfordeOU/aero-agent-skills)——Apache-2.0 许可的航空气动与飞行器设计专业集合，包含数百个工程计算 Skill；必须独立验证公式、单位、假设和安全关键审阅边界。
+- [Wix Skills](https://github.com/wix/skills)——MIT 许可的 Wix 开发与迁移集合，覆盖应用、鉴权、Headless、设计系统、迁移和 QA 工作流；使用前检查项目凭据、遥测、生成代码和部署写入。
+- [MapTiler Skills](https://github.com/maptiler/maptiler-skills)——MIT 许可的地理空间制图 Skill；使用前核验 API Key、地图数据许可、网络访问、配额和生成资产。
+- [DSH Industry Research](https://github.com/PerryLink/dsh-industry-research)——Apache-2.0 许可的公司与行业研究 Skill，强调证据方法；应核验来源新鲜度、引用、数据权利和推断结论。
+- [Keep the Why](https://github.com/oliver-zehentleitner/keep-the-why)——MIT 许可的决策上下文 Skill，用于在 Agent 工作中保留决策理由；使用前检查本地状态、留存、隐私和团队共享边界。
+- [Codex Claude Code Config](https://github.com/AnastasiyaW/codex-claude-code-config)——MIT 许可的跨 Harness 集合，覆盖 Agent 设计、架构、开发、研究、写作和视频工作流；使用前审阅 Hook、提供商、文件写入和宿主假设。
+- [PixVerse Skills](https://github.com/PixVerseAI/skills)——MIT 许可的视频生成 Skill 参考；使用前检查 API 凭据、提示词/输入权利、媒体隐私、配额、成本和输出归属。
 
 ## 本仓库
 

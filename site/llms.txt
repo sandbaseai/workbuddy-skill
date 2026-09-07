@@ -139,6 +139,12 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT large cross-host Skill distribution with accessibility, security, architecture, testing, development, and operations workflows: https://github.com/event4u-app/agent-config
 - MIT cross-host task-state and acceptance examples for desktop and QA workflows: https://github.com/Atakan-Emre/skillstate-kit
 - Apache-2.0 specialized aerodynamics and vehicle-design collection with hundreds of engineering calculation Skills: https://github.com/ashfordeOU/aero-agent-skills
+- MIT Wix development and replatforming Skills for apps, auth, headless, design systems, migrations, and QA: https://github.com/wix/skills
+- MIT geospatial mapping Skill for MapTiler workflows: https://github.com/maptiler/maptiler-skills
+- Apache-2.0 evidence-oriented company and industry research Skills: https://github.com/PerryLink/dsh-industry-research
+- MIT decision-context Skill for preserving rationale across agent work: https://github.com/oliver-zehentleitner/keep-the-why
+- MIT cross-harness Skills for agent design, architecture, development, research, writing, and video workflows: https://github.com/AnastasiyaW/codex-claude-code-config
+- MIT video-generation Skill reference from PixVerse: https://github.com/PixVerseAI/skills
 - MIT index of 5,400+ OpenClaw skills (discovery only; verify host assumptions, scripts, licenses, and permissions before WorkBuddy adaptation): https://github.com/VoltAgent/awesome-openclaw-skills
 - MIT cross-platform Agent Skill Manager for WorkBuddy and other domestic Agent products (review install scopes and sync paths before copying or removing): https://github.com/yxdwind/agent-skill-manager
 - MIT read-only Skill Auditor for usage traces and security hazards (deletion suggestions require human confirmation): https://github.com/dx2020z/skill-auditor

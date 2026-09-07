@@ -283,6 +283,12 @@ Use this page to choose the right source before searching the catalog.
 - [Agent Config](https://github.com/event4u-app/agent-config) — MIT-licensed large cross-host Skill distribution with accessibility, security, architecture, testing, development, and operations workflows; install only the required subset and review hooks, scripts, and filesystem scope.
 - [Skillstate Kit](https://github.com/Atakan-Emre/skillstate-kit) — MIT-licensed cross-host task-state and acceptance examples for desktop and QA workflows; inspect persistence, integration paths, and generated state before adapting it.
 - [Aero Agent Skills](https://github.com/ashfordeOU/aero-agent-skills) — Apache-2.0 specialized aerodynamics and vehicle-design collection with hundreds of engineering calculation Skills; validate formulas, units, assumptions, and safety-critical review boundaries independently.
+- [Wix Skills](https://github.com/wix/skills) — MIT-licensed Wix development and replatforming collection with app, auth, headless, design-system, migration, and QA workflows; review project credentials, telemetry, generated code, and deployment writes.
+- [MapTiler Skills](https://github.com/maptiler/maptiler-skills) — MIT-licensed geospatial mapping Skill for MapTiler workflows; verify API keys, map-data licensing, network usage, quotas, and generated assets before use.
+- [DSH Industry Research](https://github.com/PerryLink/dsh-industry-research) — Apache-2.0 company and industry research Skills with evidence-oriented methods; verify source freshness, citations, data rights, and inferred claims.
+- [Keep the Why](https://github.com/oliver-zehentleitner/keep-the-why) — MIT-licensed decision-context Skill for preserving rationale across agent work; inspect local state, retention, privacy, and team-sharing boundaries.
+- [Codex Claude Code Config](https://github.com/AnastasiyaW/codex-claude-code-config) — MIT-licensed cross-harness collection spanning agent design, architecture, development, research, writing, and video workflows; review hooks, providers, filesystem writes, and host assumptions.
+- [PixVerse Skills](https://github.com/PixVerseAI/skills) — MIT-licensed video-generation Skill reference; review API credentials, prompt/input rights, media privacy, quota, cost, and output ownership before use.
 
 ## This repository
 
