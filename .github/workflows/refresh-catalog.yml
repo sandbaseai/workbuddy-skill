@@ -56,6 +56,15 @@ jobs:
           python-version: "3.x"
       - name: Validate upstream source manifest
         run: python3 scripts/validate_source_manifest.py
+      - name: Restore resumable discovery state
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            /tmp/upstream-skill-probe-report.jsonl
+            /tmp/upstream-skill-probe.checkpoint.json
+          key: upstream-skill-probe-${{ hashFiles('config/upstream-skill-sources.txt') }}-${{ github.run_id }}
+          restore-keys: |
+            upstream-skill-probe-${{ hashFiles('config/upstream-skill-sources.txt') }}-
       - name: Scan declared public Skill repositories
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -74,6 +83,7 @@ jobs:
             --max-requests "$max_requests" \
             --max-rate-wait 30 \
             --output /tmp/upstream-skill-probe.jsonl \
+            --checkpoint /tmp/upstream-skill-probe.checkpoint.json \
             --dry-run-output /tmp/upstream-skill-probe-report.jsonl \
             --status-output /tmp/upstream-skill-probe-status.json
           crawl_rc=$?
@@ -113,6 +123,14 @@ jobs:
             --workers 24 \
             --retries 1 \
             --timeout 10
+      - name: Save resumable discovery state
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            /tmp/upstream-skill-probe-report.jsonl
+            /tmp/upstream-skill-probe.checkpoint.json
+          key: upstream-skill-probe-${{ hashFiles('config/upstream-skill-sources.txt') }}-${{ github.run_id }}
       - name: Add discovery summary
         run: |
           python3 - /tmp/upstream-skill-discovery-summary.json <<'PY' >> "$GITHUB_STEP_SUMMARY"

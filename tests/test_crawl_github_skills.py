@@ -108,6 +108,46 @@ class RateLimitTests(unittest.TestCase):
             self.assertEqual(len(report.read_text(encoding="utf-8").splitlines()), 1)
             self.assertFalse((root / "stats.json").exists())
 
+    @patch("crawl_github_skills.repository_skill_rows")
+    def test_dry_run_resumes_from_cached_report_and_checkpoint(self, repository_skill_rows):
+        row_a = {
+            "id": "github:owner/one:skills/one/SKILL.md",
+            "name_hint": "one",
+            "repository": "owner/one",
+            "path": "skills/one/SKILL.md",
+            "sha": "a" * 40,
+            "source_url": "https://github.com/owner/one/blob/main/skills/one/SKILL.md",
+            "raw_url": "https://raw.githubusercontent.com/owner/one/main/skills/one/SKILL.md",
+            "repository_url": "https://github.com/owner/one",
+            "repository_fork": False,
+            "github_query": "repository:owner/one tree:main",
+            "workbuddy_status": "unreviewed",
+            "security_status": "unscanned",
+        }
+        row_b = {**row_a, "id": "github:owner/two:skills/two/SKILL.md", "repository": "owner/two"}
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            output = root / "preview.jsonl"
+            report = root / "discovery.jsonl"
+            checkpoint = root / "discovery.checkpoint.json"
+            args = [
+                "crawl_github_skills.py", "--dry-run", "--allow-partial",
+                "--repository-only", "--repository", "owner/one",
+                "--repository", "owner/two", "--output", str(output),
+                "--checkpoint", str(checkpoint), "--dry-run-output", str(report),
+            ]
+            repository_skill_rows.side_effect = [([row_a], 3), RuntimeError("pause")]
+            with patch("sys.argv", args):
+                self.assertEqual(main(), 0)
+            self.assertTrue(checkpoint.exists())
+            self.assertEqual(len(report.read_text(encoding="utf-8").splitlines()), 1)
+
+            repository_skill_rows.side_effect = [([row_b], 3)]
+            with patch("sys.argv", args):
+                self.assertEqual(main(), 0)
+            self.assertFalse(checkpoint.exists())
+            self.assertEqual(len(report.read_text(encoding="utf-8").splitlines()), 2)
+
     def test_interrupted_scan_resumes_from_checkpoint(self):
         item = {
             "repository": {

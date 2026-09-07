@@ -420,8 +420,16 @@ def main() -> int:
         "repositories": repositories,
         "start_bytes": args.start_bytes,
     }
-    saved_state = None if args.dry_run else load_checkpoint(checkpoint_path, signature)
-    rows = load_existing(args.output)
+    # Dry-run probes can be resumed across CI runs when their report and
+    # checkpoint are restored from an artifact/cache. The published catalog
+    # remains untouched, but already scanned rows and repositories are kept.
+    saved_state = load_checkpoint(checkpoint_path, signature)
+    rows_path = (
+        args.dry_run_output
+        if args.dry_run and args.dry_run_output
+        else args.output
+    )
+    rows = load_existing(rows_path)
     remaining_repositories = saved_state[0] if saved_state else list(repositories)
     pending = saved_state[1] if saved_state else None
 
@@ -435,8 +443,7 @@ def main() -> int:
             write_atomic(args.dry_run_output, rows)
 
     def persist_state() -> None:
-        if not args.dry_run:
-            write_checkpoint(checkpoint_path, signature, remaining_repositories, pending or [])
+        write_checkpoint(checkpoint_path, signature, remaining_repositories, pending or [])
 
     def persist_stats() -> None:
         if not args.dry_run:
@@ -599,8 +606,7 @@ def main() -> int:
 
     checkpoint()
     persist_stats()
-    if not args.dry_run:
-        checkpoint_path.unlink(missing_ok=True)
+    checkpoint_path.unlink(missing_ok=True)
     if args.dry_run:
         if args.dry_run_output:
             write_atomic(args.dry_run_output, rows)
