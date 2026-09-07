@@ -449,3 +449,6 @@ tikalk/adlc-team-skills
 PaulRBerg/agent-skills
 mavka-ai/unit-tests-skills
 agent-sh/agnix
+okx/agent-skills
+Leon-Drq/openagentskill
+apache/doris-skills

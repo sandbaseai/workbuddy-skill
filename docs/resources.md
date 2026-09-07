@@ -305,6 +305,9 @@ Use this page to choose the right source before searching the catalog.
 - [PaulRBerg Agent Skills](https://github.com/PaulRBerg/agent-skills) — MIT-licensed cross-host collection of reusable engineering and project workflows; pin the source revision and inspect scripts and host-specific assumptions.
 - [Unit Tests Skills](https://github.com/mavka-ai/unit-tests-skills) — MIT-licensed testing workflows for generating test cases and tests; review framework assumptions, fixture paths, generated files, and whether execution remains inside the intended workspace.
 - [agnix](https://github.com/agent-sh/agnix) — Apache-2.0 agent-configuration linter with rules for Skills, hooks, MCP, memory, plugins, and multiple hosts; run it in read-only mode first and review any requested auto-fixes before applying them.
+- [OKX Agent Skills](https://github.com/okx/agent-skills) — MIT-licensed exchange and market-operation workflows; treat trading, account, and authentication actions as high impact, and review credentials, targets, and read/write scope before use.
+- [OpenAgentSkill](https://github.com/Leon-Drq/openagentskill) — MIT-licensed Skill registry and discovery workflows; review registry sources, installation paths, network access, and package provenance before connecting it to WorkBuddy.
+- [Apache Doris Skills](https://github.com/apache/doris-skills) — Apache-2.0 database engineering Skills for architecture, debugging, deployment, import, and data-lake workflows; validate SQL, cluster targets, credentials, and any operational writes.
 
 ## This repository
 

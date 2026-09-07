@@ -305,6 +305,9 @@
 - [PaulRBerg Agent Skills](https://github.com/PaulRBerg/agent-skills)——MIT 许可的跨宿主工程与项目工作流集合；固定来源版本，并检查脚本和宿主假设。
 - [Unit Tests Skills](https://github.com/mavka-ai/unit-tests-skills)——MIT 许可的测试工作流，覆盖测试用例与测试生成；使用前检查框架假设、fixture 路径、生成文件，并确认执行范围仍在预期工作区内。
 - [agnix](https://github.com/agent-sh/agnix)——Apache-2.0 许可的 Agent 配置检查器，覆盖 Skill、Hook、MCP、记忆、插件和多个宿主；先以只读方式运行，并在应用自动修复前逐项审阅变更。
+- [OKX Agent Skills](https://github.com/okx/agent-skills)——MIT 许可的交易所与市场操作工作流；交易、账户和鉴权动作影响较高，使用前检查凭据、目标以及读写范围。
+- [OpenAgentSkill](https://github.com/Leon-Drq/openagentskill)——MIT 许可的 Skill 注册与发现工作流；接入 WorkBuddy 前检查注册来源、安装路径、网络访问和包的来源证明。
+- [Apache Doris Skills](https://github.com/apache/doris-skills)——Apache-2.0 许可的数据库工程 Skill，覆盖架构、调试、部署、导入和数据湖工作流；执行前核验 SQL、集群目标、凭据和任何运维写入。
 
 ## 本仓库
 
