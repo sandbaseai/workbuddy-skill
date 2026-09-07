@@ -294,3 +294,8 @@ alibaba/open-code-review
 openclaw/crabbox
 Orkas-AI/Orkas
 DemonDamon/AgenticX
+citrolabs/ego-lite
+TokenRhythm/opensquilla
+nowledge-co/con-terminal
+Aspirin0000/zhouli-translator
+openyida/openyida
