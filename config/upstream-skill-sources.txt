@@ -99,3 +99,11 @@ FrancyJGLisboa/agent-skills-platform
 memodb-io/Acontext
 gotalab/cc-sdd
 jakubkrehel/make-interfaces-feel-better
+mhattingpete/claude-skills-marketplace
+nexscope-ai/Amazon-Skills
+aeonfun/soul.md
+instavm/coderunner
+rampstackco/claude-skills
+staruhub/ClaudeSkills
+foryourhealth111-pixel/Vibe-Skills
+eugeniughelbur/obsidian-second-brain
