@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Simplify the public catalog README by removing build-script and generated-site wording while retaining schema, provenance, and safety guidance.
 - Add Chinese search aliases for Atlas compatibility, security, source-review, and reviewed-package states so localized status terms work in web search.
 - Accept the same Chinese status, security, source-context, and reviewed-package labels in the local catalog CLI, keeping terminal searches aligned with Atlas.
 - Add two rights-aware external references for evidence-led Skill discovery and local Skill usage-cost review, without importing or adding Skills to the frozen catalog.

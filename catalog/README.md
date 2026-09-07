@@ -26,17 +26,16 @@ Multiple paths can contain byte-identical skills. The catalog preserves those oc
 - `workbuddy_status` begins as `unreviewed` until compatibility checks run.
 - `security_status` begins as `unscanned`; users must review scripts and permissions before installation.
 
-After `scripts/analyze_catalog.py` runs, records also include frontmatter validity,
-a WorkBuddy compatibility score and missing-field list, line count, and conservative
-static risk signals. The compatibility check requires the standard `name` and
-WorkBuddy metadata fields. `no-static-flags` is not a security guarantee; it only means
-the documented patterns did not match.
+Reviewed records may also include frontmatter validity, a WorkBuddy compatibility
+score and missing-field list, line count, and conservative static risk signals. The
+compatibility check expects the standard `name` and WorkBuddy metadata fields.
+`no-static-flags` is not a security guarantee; it only means the documented patterns
+did not match.
 
 Duplicate content can occur in multiple repositories. Consumers should group by `sha` when they need unique content and retain all source occurrences for attribution.
 
-The Atlas build derives deterministic work categories from skill names and
-paths and counts identical SHA occurrences. Categories and copy counts are
-navigation aids, not quality or safety endorsements.
+Categories and copy counts are navigation aids derived from the indexed metadata;
+they are not quality or safety endorsements.
 
 ## Search locally
 
