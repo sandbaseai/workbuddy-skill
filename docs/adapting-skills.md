@@ -65,6 +65,16 @@ python3 scripts/adapt_skill.py \
 
 The resulting ZIP can be imported into WorkBuddy. It places `SKILL.md` at the archive root and includes `SOURCE.json` with the immutable source URL, blob SHA, declared license, adaptation notes, and packaged resources.
 
+To package every locally reviewed Skill for a release, run the repository helper
+from the checkout root:
+
+```bash
+bash scripts/package_skill.sh
+```
+
+Use `bash scripts/package_skill.sh --help` to see the command contract. The
+helper takes no positional arguments and writes generated ZIPs under `dist/`.
+
 If the source `SKILL.md` already declares a `license`, `--source-license` must
 match it exactly. The adapter stops on a mismatch so the generated metadata
 and `SOURCE.json` cannot make the provenance ambiguous.

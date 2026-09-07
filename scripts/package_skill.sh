@@ -1,6 +1,27 @@
 #!/usr/bin/env sh
 set -eu
 
+usage() {
+  cat <<'EOF'
+Usage: scripts/package_skill.sh
+
+Validate every reviewed Skill and create one WorkBuddy ZIP per local Skill
+under dist/. The command takes no positional arguments.
+EOF
+}
+
+case "${1:-}" in
+  "") ;;
+  -h|--help)
+    usage
+    exit 0
+    ;;
+  *)
+    usage >&2
+    exit 2
+    ;;
+esac
+
 repo_root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
 output_dir="$repo_root/dist"
 
