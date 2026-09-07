@@ -1152,3 +1152,17 @@ Trompetilla/Skills
 johnalbertini14-glitch/openclaw-skills
 carta/plugins
 gusgad/service-agent-by-sap
+omer-metin/skills-for-antigravity
+lionelsimai/claude-skills-collection
+amplifthq/oh-my-dsh
+memorysaver/dotfiles
+azais-corentin/cmakefmt
+gabrielmoreira/agent-skills-mirror
+Alountk/Bloodbowl_Project
+SymbionicNigel/personal-infrastructure
+oioio-space/unpixel
+FlexRival/proof
+Lap-Platform/claude-marketplace
+Robertjam954/multimodal_rag_application
+Stelquis/CSQuest
+danielpradilla/project-product-skills
