@@ -561,3 +561,15 @@ isiahhill/skills.sh
 rauleburro/skills
 hesreallyhim/awesome-claude-code
 VoltAgent/awesome-agent-skills
+apify/agent-skills
+cisco-ai-defense/skill-scanner
+qufei1993/skills-hub
+AI-Builder-Club/skills
+CreminiAI/skillpack
+MoizIbnYousaf/ai-agent-skills
+BagelHole/DevOps-Security-Agent-Skills
+brycewang-stanford/Awesome-Journal-Skills
+matlab/matlab-agentic-toolkit
+kostja94/marketing-skills
+LottieFiles/motion-design-skill
+AvdLee/Swift-Concurrency-Agent-Skill
