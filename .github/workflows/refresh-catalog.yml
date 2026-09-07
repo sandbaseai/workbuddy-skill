@@ -18,6 +18,8 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: "3.x"
+      - name: Validate upstream source manifest
+        run: python3 scripts/validate_source_manifest.py
       - name: Validate frozen catalog
         run: python3 scripts/validate_catalog.py --minimum 10000 --require-analysis --check-stats
       - name: Verify catalog README statistics
@@ -45,6 +47,8 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: "3.x"
+      - name: Validate upstream source manifest
+        run: python3 scripts/validate_source_manifest.py
       - name: Scan representative public Skill repositories
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

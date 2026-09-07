@@ -16,6 +16,7 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: "3.x"
+      - run: python3 scripts/validate_source_manifest.py
       - run: python3 scripts/validate_skill.py
       - run: python3 scripts/validate_catalog.py --minimum 10000 --require-analysis
       - run: python3 scripts/build_site_data.py
