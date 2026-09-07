@@ -611,3 +611,4 @@ InternScience/Awesome-Scientific-Skills
 LLMQuant/awesome-trading-agents
 modelscope/Awesome-Vibe-Research
 helloianneo/awesome-claude-code-skills
+AgriciDaniel/claude-ads
