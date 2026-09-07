@@ -29,6 +29,7 @@ permission boundary before installing.
 [![Validate skill](https://github.com/sandbaseai/workbuddy-skill/actions/workflows/validate.yml/badge.svg)](https://github.com/sandbaseai/workbuddy-skill/actions/workflows/validate.yml)
 [![Catalog site](https://github.com/sandbaseai/workbuddy-skill/actions/workflows/pages.yml/badge.svg)](https://github.com/sandbaseai/workbuddy-skill/actions/workflows/pages.yml)
 [![Resource links](https://github.com/sandbaseai/workbuddy-skill/actions/workflows/check-resource-links.yml/badge.svg)](https://github.com/sandbaseai/workbuddy-skill/actions/workflows/check-resource-links.yml)
+[![Refresh catalog](https://github.com/sandbaseai/workbuddy-skill/actions/workflows/refresh-catalog.yml/badge.svg)](https://github.com/sandbaseai/workbuddy-skill/actions/workflows/refresh-catalog.yml)
 
 [中文](#中文) · [English](#english) · [Skill Atlas](https://sandbaseai.github.io/workbuddy-skill/) · [按类别浏览](https://sandbaseai.github.io/workbuddy-skill/categories.zh-CN.html)
 
