@@ -612,3 +612,6 @@ LLMQuant/awesome-trading-agents
 modelscope/Awesome-Vibe-Research
 helloianneo/awesome-claude-code-skills
 AgriciDaniel/claude-ads
+athola/claude-night-market
+AgriciDaniel/claude-seo
+feicaiclub/video-spec-builder
