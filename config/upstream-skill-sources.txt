@@ -1247,3 +1247,14 @@ avivsinai/skills-marketplace
 tschallacka/ai-skills
 equinor/fusion-skills
 bradspit7/context-skills
+Leonxlnx/taste-skill
+bytedance/deer-flow
+ruvnet/ruflo
+JCodesMore/ai-website-cloner-template
+alibaba/nacos
+EverMind-AI/EverOS
+mcp-use/mcp-use
+EvoMap/evolver
+kucherenko/jscpd
+jacob-bd/gemini-notebook-mcp-cli
+ageerle/ruoyi-ai
