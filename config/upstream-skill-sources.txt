@@ -1686,3 +1686,17 @@ mitkox/SkillOpt
 VoidLight00/autoimprove-cc
 zLanqing/codex-claude-academic-skills
 badlogic/pi-skills
+coinbase/agentic-wallet-skills
+jinzhezenggroup/computational-chemistry-agent-skills
+AgentSkillOS/SkillAnything
+SkillNerds/xskill
+learningmatter-mit/AtomisticSkills
+skills-directory/skill-codex
+briiirussell/cybersecurity-skills
+akin-ozer/cc-devops-skills
+bahayonghang/drawio-skills
+block/agent-skills
+Kucoin/kucoin-skills-hub
+SynaLinks/synalinks-skills
+open-gitagent/gitagent
+disler/the-library
