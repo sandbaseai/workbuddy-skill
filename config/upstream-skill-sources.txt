@@ -539,3 +539,9 @@ nathanonn/agent-skills
 valtterimelkko/agent-workflow-skills
 mikekelly/managing-skills
 Nikoxkx/Agent-Skills
+rosslevinsky/portable-agent-skills
+heirloomlogic/AgentSkills
+choutos/agent-skills-spec
+hridoy43/agent-skills
+avizmarlon/agent-skills
+appautomaton/latex-arxiv-SKILL
