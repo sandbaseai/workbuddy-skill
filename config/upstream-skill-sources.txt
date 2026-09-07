@@ -545,3 +545,9 @@ choutos/agent-skills-spec
 hridoy43/agent-skills
 avizmarlon/agent-skills
 appautomaton/latex-arxiv-SKILL
+terion-labs/skills
+jwynia/agent-skills
+sentdm/sent-plugin
+Martin-Kocev/skills
+SteveVitali/agent-skills
+jokull/jokull-skills
