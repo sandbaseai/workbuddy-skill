@@ -656,5 +656,11 @@ xiaolai/cc-suite
 jordanconway/package-manager-hardening
 sfrangulov/claude-code-handbook-ru
 LeeYudok/agents-scaffold
+domengabrovsek/agent-config
+ejklock/living-docs-skill
+yha9806/academic-writing-toolkit
+stbarbe/agent-skills-cli
+skillberry-ai/cap-evolve
+tenequm/skills
 jim60105/copilot-prompt
 fernandotellado/ai-skills
