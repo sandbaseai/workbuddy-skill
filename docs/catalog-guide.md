@@ -97,6 +97,12 @@ combine it with `--repository owner/name --repository-only`.
 In repository-only mode, `--target` is only a cap: a smaller repository still
 returns success after its complete tree scan.
 
+The scheduled `Refresh skill catalog` workflow also runs a read-only probe over
+representative upstream Skill repositories. It reports newly discoverable
+paths without writing the frozen catalog, creating packages, or changing any
+published snapshot; use the local command above when you need to inspect a
+candidate in detail.
+
 To restrict local results to packages that have a reviewed Release ZIP, use the
 curated manifest maintained by this repository:
 

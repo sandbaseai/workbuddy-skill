@@ -6,6 +6,16 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class RefreshWorkflowTests(unittest.TestCase):
+    def test_refresh_workflow_probes_upstream_sources_without_publishing(self):
+        workflow = (ROOT / ".github/workflows/refresh-catalog.yml").read_text(encoding="utf-8")
+        self.assertIn("upstream-discovery-probe:", workflow)
+        self.assertIn("--dry-run", workflow)
+        self.assertIn("--repository-only", workflow)
+        self.assertIn("github/awesome-copilot", workflow)
+        self.assertIn("aiworkskills/wechat-article-skills", workflow)
+        self.assertIn("--output /tmp/upstream-skill-probe.jsonl", workflow)
+        self.assertNotIn("--allow-frozen-catalog", workflow)
+
     def test_release_action_uses_node24_generation(self):
         workflow = (ROOT / ".github/workflows/release.yml").read_text(encoding="utf-8")
         self.assertIn("softprops/action-gh-release@v3.0.3", workflow)
@@ -202,7 +212,7 @@ class RefreshWorkflowTests(unittest.TestCase):
     def test_catalog_refresh_is_frozen_without_automatic_additions(self):
         workflow = (ROOT / ".github/workflows/refresh-catalog.yml").read_text(encoding="utf-8")
         self.assertIn('cron: "17 5 * * 1"', workflow)
-        self.assertNotIn("crawl_github_skills.py", workflow)
+        self.assertNotIn("--allow-frozen-catalog", workflow)
         self.assertNotIn("git push", workflow)
         self.assertIn("Verify frozen catalog", workflow)
         self.assertIn("--check-stats", workflow)

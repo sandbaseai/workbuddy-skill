@@ -33,3 +33,30 @@ jobs:
         run: python3 scripts/check_release_assets.py
       - name: Check public resource links
         run: python3 scripts/check_resource_links.py
+
+  upstream-discovery-probe:
+    name: Probe upstream Skill sources (read-only)
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.x"
+      - name: Scan representative public Skill repositories
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 scripts/crawl_github_skills.py \
+            --dry-run \
+            --repository github/awesome-copilot \
+            --repository obra/superpowers \
+            --repository sickn33/agentic-awesome-skills \
+            --repository alchaincyf/nuwa-skill \
+            --repository Hisn00w/ASu-skills \
+            --repository aiworkskills/wechat-article-skills \
+            --repository-only \
+            --target 1000 \
+            --max-requests 60 \
+            --max-rate-wait 120 \
+            --output /tmp/upstream-skill-probe.jsonl

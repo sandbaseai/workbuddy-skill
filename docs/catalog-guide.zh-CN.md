@@ -69,6 +69,10 @@ python3 scripts/query_catalog.py --category research --package-status reviewed \
 `--repository owner/name --repository-only`。
 在仓库定向模式中，`--target` 只是数量上限；小仓库完整扫描后，即使候选少于上限也会成功返回。
 
+仓库的定时 `Refresh skill catalog` 工作流也会对一组代表性的上游 Skill 仓库执行只读探测。
+它只报告新发现的路径，不会写入冻结目录、生成精选包或改变已发布快照；需要详细审阅某个候选时，
+仍请在本地运行上面的命令。
+
 如果只想查看本仓库已经提供审阅版 Release ZIP 的条目，可以使用精选清单：
 
 ```bash
