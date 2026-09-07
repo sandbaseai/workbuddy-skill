@@ -23,7 +23,7 @@ USER_AGENT = "sandbaseai-workbuddy-skill-analyzer/0.3"
 ANALYSIS_VERSION = "0.5"
 ANALYSIS_FIELDS = {
     "analysis_version", "analysis_status", "frontmatter_valid", "workbuddy_score",
-    "workbuddy_status", "workbuddy_missing_fields", "compatibility", "security_status",
+    "workbuddy_status", "workbuddy_missing_fields", "license_declared", "compatibility", "security_status",
     "security_signals", "skill_lines",
 }
 NAME_PATTERN = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*")
@@ -106,6 +106,7 @@ def analyze_text(text: str) -> dict:
         "workbuddy_score": score,
         "workbuddy_status": status,
         "workbuddy_missing_fields": missing,
+        "license_declared": bool(fields.get("license")),
         "compatibility": fields.get("compatibility", ""),
         "security_status": "flagged" if risks else "no-static-flags",
         "security_signals": risks,
@@ -163,7 +164,12 @@ def main() -> int:
             and row.get("analysis_version") == ANALYSIS_VERSION
             and not args.refresh
         ):
-            cached.setdefault(row["sha"], {key: row[key] for key in ANALYSIS_FIELDS if key in row})
+            cached_analysis = {key: row[key] for key in ANALYSIS_FIELDS if key in row}
+            if "license_declared" not in cached_analysis:
+                cached_analysis["license_declared"] = "license" not in row.get(
+                    "workbuddy_missing_fields", []
+                )
+            cached.setdefault(row["sha"], cached_analysis)
 
     sha_sources: dict[str, str] = {}
     candidates = rows[: args.limit] if args.limit else rows

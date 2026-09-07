@@ -41,7 +41,15 @@ class AnalyzeCatalogTests(unittest.TestCase):
             "description_en: Demo\nversion: 1.0.0\nauthor: Test\n---\n\n# Demo\n"
         )
         self.assertIn("license", result["workbuddy_missing_fields"])
+        self.assertFalse(result["license_declared"])
         self.assertIn("analysis_version", result)
+
+    def test_license_declaration_is_exposed_for_discovery_triage(self):
+        result = analyze_text(
+            "---\nname: demo\ndescription: Demo\nlicense: MIT\n---\n\n# Demo\n"
+        )
+        self.assertTrue(result["license_declared"])
+        self.assertNotIn("license", result["workbuddy_missing_fields"])
 
     def test_analysis_exposes_compatibility_requirements(self):
         result = analyze_text(

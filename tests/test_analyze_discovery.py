@@ -17,6 +17,7 @@ class DiscoveryAnalysisTests(unittest.TestCase):
         fetch.return_value = {
             "analysis_status": "ok",
             "workbuddy_status": "adaptable",
+            "license_declared": False,
             "security_status": "flagged",
             "security_signals": ["credential-path"],
         }
@@ -30,6 +31,8 @@ class DiscoveryAnalysisTests(unittest.TestCase):
         self.assertEqual(summary["candidate_repositories"], 0)
         self.assertEqual(summary["unique_contents"], 1)
         self.assertEqual(summary["security_flagged"], 2)
+        self.assertEqual(summary["license_declared"], 0)
+        self.assertEqual(summary["license_missing"], 2)
         self.assertEqual(rows[0]["security_signals"], ["credential-path"])
 
 

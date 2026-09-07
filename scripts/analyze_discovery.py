@@ -66,6 +66,8 @@ def analyze(rows: list[dict], workers: int) -> dict[str, int]:
         "workbuddy_ready": sum(row.get("workbuddy_status") == "workbuddy-ready" for row in rows),
         "adaptable": sum(row.get("workbuddy_status") == "adaptable" for row in rows),
         "needs_review": sum(row.get("workbuddy_status") == "needs-review" for row in rows),
+        "license_declared": sum(row.get("license_declared") is True for row in rows),
+        "license_missing": sum(row.get("license_declared") is not True for row in rows),
         "security_flagged": sum(row.get("security_status") == "flagged" for row in rows),
     }
     return summary

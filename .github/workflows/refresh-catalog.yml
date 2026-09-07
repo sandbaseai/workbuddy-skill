@@ -83,6 +83,8 @@ jobs:
               ("unique_contents", "Unique contents"),
               ("adaptable", "Adaptable"),
               ("needs_review", "Needs review"),
+              ("license_declared", "License declared"),
+              ("license_missing", "License missing"),
               ("security_flagged", "Static security flags"),
           ):
               print(f"| {label} | {summary.get(key, 0)} |")
