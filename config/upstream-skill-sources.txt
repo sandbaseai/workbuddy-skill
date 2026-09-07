@@ -119,3 +119,13 @@ realZillionX/InspireSkill
 initializ/forge
 jeremylongshore/tons-of-skills-marketplace
 sweetcornna/mathodology
+K-Dense-AI/mimeo
+mxyhi/ok-skills
+TheDecipherist/claude-code-mastery
+machina-sports/sports-skills
+aakashg/pm-claude-code-setup
+seb1n/awesome-ai-agent-skills
+dhicoc/dsh-reverse-skill
+veniceai/skills
+Railly/tinte
+gapmiss/obsidian-plugin-skill
