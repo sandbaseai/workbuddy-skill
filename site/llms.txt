@@ -40,6 +40,11 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT TypeScript-focused Agent Skills collection by Matt Pocock (review exact paths and command assumptions): https://github.com/mattpocock/skills
 - MIT Wshobson development workflow agents and Skills (review scripts, dependencies, and host configuration): https://github.com/wshobson/agents
 - MIT Vercel Skills CLI for listing, previewing, and prompt-only use across compatible hosts (not the WorkBuddy desktop ZIP importer): https://github.com/vercel-labs/skills
+- MIT Microsoft-maintained Agent Skills for developer and cloud workflows (review tenant, credentials, and host assumptions): https://github.com/microsoft/skills
+- Apache-2.0 NVIDIA-maintained AI and GPU Agent Skills (review toolchains, model downloads, GPU access, and cost): https://github.com/NVIDIA/skills
+- Apache-2.0 AWS Agent Toolkit for AWS workflows (review least-privilege account, region, write, and billing boundaries): https://github.com/aws/agent-toolkit-for-aws
+- Apache-2.0 Cloudflare-maintained platform Agent Skills (review account permissions and deployment effects): https://github.com/cloudflare/skills
+- MIT Supabase Agent Skills for database and platform workflows (review project, migration, and secret boundaries): https://github.com/supabase/agent-skills
 - Community task-oriented guide: https://github.com/AlephAITech/WorkBuddyGuide
 - Trail of Bits security Skills (CC-BY-SA-4.0; inspect attribution and authorization): https://github.com/trailofbits/skills
 - NVIDIA SkillSpector security scanner (Apache-2.0; review aid, not a trust guarantee): https://github.com/NVIDIA/SkillSpector

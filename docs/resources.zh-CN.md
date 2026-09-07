@@ -76,6 +76,11 @@
 - [Matt Pocock's Skills](https://github.com/mattpocock/skills)——MIT 许可、面向 TypeScript 的 Agent Skill 集合，支持多种 Agent；复用前检查具体 Skill 路径、工具假设和命令执行行为。
 - [Wshobson Agents](https://github.com/wshobson/agents)——MIT 许可的开发工作流 Agent 与 Skill 集合；使用前检查附带脚本、依赖和宿主专属配置。
 - [Vercel Skills CLI](https://github.com/vercel-labs/skills)——MIT 许可的跨宿主 CLI，可列出、预览和使用 Agent Skill，并支持只生成 Prompt；它面向兼容宿主，不等同于 WorkBuddy 桌面的 ZIP 导入器，因此仍需单独检查来源和安装范围。
+- [Microsoft Skills](https://github.com/microsoft/skills)——Microsoft 维护的 MIT 许可 Agent Skill，覆盖开发者和云工作流；适配 WorkBuddy 前检查目标订阅、租户、凭据和宿主假设。
+- [NVIDIA Skills](https://github.com/NVIDIA/skills)——NVIDIA 维护的 Apache-2.0 许可 Skill，覆盖 AI 和 GPU 工作流；使用前检查本地工具链、模型下载、GPU 访问和云成本。
+- [AWS Agent Toolkit](https://github.com/aws/agent-toolkit-for-aws)——AWS 维护的 Apache-2.0 许可 Agent Skill 与工具参考；接入 WorkBuddy 前使用最小权限凭据，并检查账号、区域、资源写入和计费边界。
+- [Cloudflare Skills](https://github.com/cloudflare/skills)——Cloudflare 维护的 Apache-2.0 许可 Agent Skill，覆盖平台工作流；适配前检查账号权限、部署目标和网络副作用。
+- [Supabase Agent Skills](https://github.com/supabase/agent-skills)——MIT 许可的 Supabase Agent Skill，覆盖数据库和平台工作流；使用前检查项目、数据库、迁移和 Secret 边界。
 - [Trail of Bits Skills](https://github.com/trailofbits/skills)——CC-BY-SA-4.0 许可的安全研究 Skill，覆盖漏洞检测和审计工作流；适配前检查署名要求、脚本以及授权边界。
 - [NVIDIA SkillSpector](https://github.com/NVIDIA/SkillSpector)——Apache-2.0 许可的 Skill 审计工具，可检测提示注入、数据外泄、恶意模式和供应链风险；它只是审阅辅助，不代表包一定安全。
 - [Gentle AI](https://github.com/Gentleman-Programming/gentle-ai)——MIT 许可的跨 Agent 配置参考，覆盖记忆、规格驱动开发、精选 Skill、MCP 和有界审阅，支持 Claude Code、Cursor、OpenCode、Codex 和 Pi。
