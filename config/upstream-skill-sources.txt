@@ -357,3 +357,8 @@ battlecodex/bc-design
 sanikantv/android-emulator-apk
 Johnny260106/multi-style-web-ui-skills
 notnameuse/embedded-debug-skill
+heat-death/verified-computation
+tsumon/skill-mcp
+siungolai/Siungo-Skills-Repository
+DevJuanP/skills
+zaehorang/agent-skills

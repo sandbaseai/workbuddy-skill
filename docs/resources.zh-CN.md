@@ -94,6 +94,11 @@
 - [Android Emulator APK](https://github.com/sanikantv/android-emulator-apk)——MIT 许可的 Android 模拟器测试 Skill，覆盖构建、安装、启动和截图；使用前确认 AVD、SDK、设备权限、构建产物和测试环境边界。
 - [Multi-style Web UI Skills](https://github.com/Johnny260106/multi-style-web-ui-skills)——MIT 许可的七个可移植 Web UI 设计 Skill，覆盖 B2B、指挥台、医疗和消费健康场景；将其作为设计起点，并单独检查医疗内容、无障碍和视觉资产许可。
 - [Embedded Debug Skill](https://github.com/notnameuse/embedded-debug-skill)——MIT 许可的嵌入式调试工作流，覆盖 STM32、FreeRTOS、串口、GDB 和硬件验证闭环；连接真实设备前确认烧录、写入、调试器权限和回滚条件。
+- [Verified Computation](https://github.com/heat-death/verified-computation)——MIT 许可的可移植精确计算 Skill，要求把数学计算交给工具、把解释留给模型；适配时检查工具实现、数值边界和输入来源。
+- [skill-mcp](https://github.com/tsumon/skill-mcp)——MIT 许可的本地 stdio MCP Skill 路由器与评测夹具，强调限制上下文数量和 token 预算；连接 WorkBuddy 前检查本地进程、读取范围和 Skill 冲突处理。
+- [Siungo Skills Repository](https://github.com/siungolai/Siungo-Skills-Repository)——MIT 许可的 Agent Skill 与领域规范仓库，包含提交报告工作流和 references；复用前检查模板约束、输出路径和宿主假设。
+- [DevJuanP Skills](https://github.com/DevJuanP/skills)——MIT 许可的跨宿主 Agent Skills 集合，覆盖发布（ship）流程；使用时确认 Git 写入、远端操作和发布凭据边界。
+- [Zaehorang Agent Skills](https://github.com/zaehorang/agent-skills)——MIT 许可的多用途 Skill 集合，包含 AI 就绪度、行为规范、博客审阅和机制解释；适配前确认输入敏感性、证据要求和输出用途。
 - [.NET Skills](https://github.com/dotnet/skills)——MIT 许可的 Microsoft .NET 与 C# 编程 Agent 工作流；适配到 WorkBuddy 前检查 SDK 版本、生成文件、Shell 命令和仓库写入范围。
 - [Adobe Skills](https://github.com/adobe/skills)——Apache-2.0 许可的 Adobe 维护 Agent Skill；复用前使用精确来源并检查创意素材、服务凭据、账号权限和发布影响。
 - [Tons of Skills Marketplace](https://github.com/jeremylongshore/tons-of-skills-marketplace)——MIT 许可的跨模型 Skill 市场，提供规范层、适配器和包工具；用于发现时要逐个核验适配器的来源、运行时和权限。

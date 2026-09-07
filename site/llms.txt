@@ -58,6 +58,11 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT Android emulator testing Skill for build, install, launch, and screenshots (review AVD, SDK, device permissions, and test boundaries): https://github.com/sanikantv/android-emulator-apk
 - MIT portable Web UI design Skills for B2B, command-center, medical, and consumer-health scenarios (review accessibility and visual assets): https://github.com/Johnny260106/multi-style-web-ui-skills
 - MIT embedded-debugging Skill for STM32, FreeRTOS, serial, GDB, and hardware verification (review flashing and rollback permissions): https://github.com/notnameuse/embedded-debug-skill
+- MIT portable exact-computation Skill that delegates mathematics to tools (review numerical boundaries and input provenance): https://github.com/heat-death/verified-computation
+- MIT local stdio MCP Skill router and evaluation fixtures for keeping context small (review local-process scope and conflict handling): https://github.com/tsumon/skill-mcp
+- MIT Agent Skill and domain-convention repository with a commit-report workflow (review templates, output paths, and host assumptions): https://github.com/siungolai/Siungo-Skills-Repository
+- MIT cross-host Agent Skills collection with a shipping workflow (review Git writes, remote operations, and release credentials): https://github.com/DevJuanP/skills
+- MIT multipurpose Agent Skills for AI readiness, behavior specs, blog review, and mechanism explanation (review evidence and input sensitivity): https://github.com/zaehorang/agent-skills
 - MIT .NET and C# workflows for coding agents (review SDK versions, generated files, commands, and write scope): https://github.com/dotnet/skills
 - Apache-2.0 Adobe-maintained Agent Skills (review creative assets, credentials, account permissions, and publishing effects): https://github.com/adobe/skills
 - MIT model-agnostic Tons of Skills Marketplace with canonical layer and adapters (verify provenance, runtime, and permissions): https://github.com/jeremylongshore/tons-of-skills-marketplace
