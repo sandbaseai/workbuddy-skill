@@ -514,3 +514,11 @@ DualNova/agent-skills
 evilmartians/agent-skills
 moonlight-lupin/agent-skills
 spiralcrew-ou/profilespider-agent-skills
+avvertix/skillsmd
+byhartvig/agent-skills-collection
+itsual/agent-skills-collection
+JayRHa/AgentSkills
+mokanus/agent-skills
+Open-Dot-Agents/SKILL.md
+sensein/agent_skills
+whobat/AI-Agent-skills
