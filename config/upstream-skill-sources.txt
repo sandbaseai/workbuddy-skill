@@ -1048,3 +1048,16 @@ clockless-org/html-anything
 buluslan/review-analyzer-skill
 IanShaw027/wemp-operator
 mitkox/megacode
+NeoLabHQ/context-engineering-kit
+Klotzkette/claude-fuer-deutsches-recht
+WellApp-ai/Well
+CamilleScholtz/swmpc
+tonone-ai/tonone
+The-OASIS-Project/dawn
+lingxling/awesome-skills-cn
+devndesigner6/tinyplace
+monasprox/openclaw-memory
+adrianco/retort
+kvn8888/OpenFoodJournal
+eminbayrak/ai-architecture
+docxology/MetaInformAnt
