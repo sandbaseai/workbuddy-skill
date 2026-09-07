@@ -352,3 +352,8 @@ LearnPrompt/ai-news-radar
 pseudo-longinus/quant-buddy-skills
 aws-samples/sample-apex-skills
 moonlight-lupin/agent-skills
+NanmiCoder/creator-pipeline
+battlecodex/bc-design
+sanikantv/android-emulator-apk
+Johnny260106/multi-style-web-ui-skills
+notnameuse/embedded-debug-skill

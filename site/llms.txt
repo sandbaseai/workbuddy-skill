@@ -53,6 +53,11 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - MIT official Lark/Feishu CLI with documented Agent Skills (review app scopes and outbound data): https://github.com/larksuite/cli
 - Apache-2.0 official Google Agent Skills for cloud, Gemini, data, and developer workflows (review project, API, and billing permissions): https://github.com/google/skills
 - CC0-1.0 SEO Agent Skills directory for technical audits, keyword research, content briefs, Schema, GEO, and AI visibility: https://github.com/RankSpotAI/awesome-seo-agent-skills
+- MIT local voice-cloning and SRT-driven web-presentation Skills (review model, audio, privacy, cost, and output boundaries): https://github.com/NanmiCoder/creator-pipeline
+- MIT UI/UX design-intelligence Skills for brand, audits, systems, motion, and stack catalogs (review visual rights and accessibility): https://github.com/battlecodex/bc-design
+- MIT Android emulator testing Skill for build, install, launch, and screenshots (review AVD, SDK, device permissions, and test boundaries): https://github.com/sanikantv/android-emulator-apk
+- MIT portable Web UI design Skills for B2B, command-center, medical, and consumer-health scenarios (review accessibility and visual assets): https://github.com/Johnny260106/multi-style-web-ui-skills
+- MIT embedded-debugging Skill for STM32, FreeRTOS, serial, GDB, and hardware verification (review flashing and rollback permissions): https://github.com/notnameuse/embedded-debug-skill
 - MIT .NET and C# workflows for coding agents (review SDK versions, generated files, commands, and write scope): https://github.com/dotnet/skills
 - Apache-2.0 Adobe-maintained Agent Skills (review creative assets, credentials, account permissions, and publishing effects): https://github.com/adobe/skills
 - MIT model-agnostic Tons of Skills Marketplace with canonical layer and adapters (verify provenance, runtime, and permissions): https://github.com/jeremylongshore/tons-of-skills-marketplace
