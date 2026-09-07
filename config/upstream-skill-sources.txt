@@ -910,3 +910,17 @@ Zechang-Xiong/chinese-reference-formatter-skill
 simota/agent-skills
 Apeironics/prompt-refine-skill
 AndrewNgGirl/SkillLens
+yanliudesign/offer-toolkit-skill
+dripips/plain-prose
+arpitbbhayani/ape-skills
+codeaholicguy/ai-devkit
+nyldn/claude-octopus
+JeongJaeSoon/agent-guard
+777genius/universal-agent-plugins
+gtapps/claude-code-hermit
+kenryu42/cc-safety-net
+powersync-ja/agent-skills
+Mindrally/skills
+ahacker-1/cre-agent-skills
+RollingGo-AI/rollinggo-hotel-skill-cn
+Mark393295827/third-brain-v7-skills
