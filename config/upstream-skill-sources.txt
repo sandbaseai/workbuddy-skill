@@ -662,5 +662,9 @@ yha9806/academic-writing-toolkit
 stbarbe/agent-skills-cli
 skillberry-ai/cap-evolve
 tenequm/skills
+smith-horn/skillsmith
+gtrabanco/agentic-workflow
+chenweil/skillcaddy
+pjt222/agent-almanac
 jim60105/copilot-prompt
 fernandotellado/ai-skills
