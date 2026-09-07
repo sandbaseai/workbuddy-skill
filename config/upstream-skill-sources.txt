@@ -1662,3 +1662,16 @@ WuShuiYDF/github-prior-art
 billion-token-one-task/ClawOSS
 juninmd/skills
 purvishrivastava27/PathAble-NeuroForge
+Aaron-he-zhu/aaron-marketing-skills
+parcadei/Continuous-Claude-v3
+glitternetwork/pinme
+zenbu-labs/terminal-browser
+romainsimon/paperasse
+zanwei/design-dna
+feiskyer/claude-code-settings
+BayramAnnakov/claude-reflect
+fcakyon/claude-codex-settings
+bitjaru/styleseed
+Sushegaad/Claude-Skills-Governance-Risk-and-Compliance
+alirezarezvani/claude-code-skill-factory
+dongshuyan/compass-skills
