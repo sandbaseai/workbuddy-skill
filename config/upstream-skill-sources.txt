@@ -643,3 +643,5 @@ roedyrustam/vibes-plug
 thevibeworks/claude-code-docs
 Mann1988/awesome-claude-skills
 pqpo/pragma
+netresearch/agent-rules-skill
+jeremylongshore/excel-analyst-pro-skill-md
