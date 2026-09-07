@@ -88,6 +88,7 @@
 - [Awesome Agent Skills](https://github.com/linny006/awesome-agent-skills)——自动更新的跨 Agent Skill 导航索引，提供质量和维护信号；仓库当前没有声明许可证，只适合作为导航，具体来源仍需单独审阅。
 - [skill-discovery](https://github.com/CodeSigils/skill-discovery)——MIT 许可的可移植发现与证据工作流，将候选搜索、来源、兼容性、权限和安装批准分开；只把它当作方法参考，不要当作自动安装器。
 - [ActionDock](https://github.com/team4u/actiondock)——Apache-2.0 许可的 TypeScript 工具链，可将确定性 Action 和 Playbook 导出为 Agent Skill、MCP 服务、HTTP 服务或独立二进制；它是独立构建工具，发布前应固定运行时并检查生成文件。
+- [Agent-Ready Web Profile](https://github.com/dkharlanau/agent-ready-web-profile)——Apache-2.0 许可的互操作与证据参考，覆盖 `llms.txt`、Agent Skills、MCP、A2A、Resolver 和来源证明；可用于形成可发现性改进假设，但不能把它当作网站或来源可信的证明。
 - [kendex](https://github.com/vanillagreencom/kendex)——MIT 许可的跨宿主 Skill、Agent、Hook 和扩展管理器，支持应用前预览和来源追踪；它不是 WorkBuddy 包，使用它管理本地安装前先检查文件系统范围。
 - [skillmon](https://github.com/bborok1234/skillmon)——MIT 许可、零依赖的本地用量和上下文成本报告工具，面向 Claude Code 与 Codex Skill；它的禁用/清理选项会修改本地配置，执行前要检查备份和精确目标。
 - [semlinker/awesome-workbuddy](https://github.com/semlinker/awesome-workbuddy)——CC0 许可的 WorkBuddy 教程、提示词、Skills、MCP 和场景实践导航；使用其中链接时仍需核对各项目的最新条款。

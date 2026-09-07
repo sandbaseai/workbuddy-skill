@@ -9,6 +9,7 @@ All notable changes to this project are documented here.
 - Add two rights-aware external references for evidence-led Skill discovery and local Skill usage-cost review, without importing or adding Skills to the frozen catalog.
 - Make the local package helper's `--help` safe and explicit, and reject unexpected arguments before any ZIP is created.
 - Add an Apache-2.0 ActionDock builder reference for users creating portable Agent Skills, without importing its code or generated Skills.
+- Add an Apache-2.0 Agent-ready Web Profile reference for provenance-aware discovery and interoperability research, without importing its code or Skills.
 - Preserve and label read-only upstream probe completeness with a status JSON report when GitHub throttling pauses discovery; partial results remain clearly distinct from complete scans.
 - Document the probe status and partial-result workflow in both English and Chinese catalog guides.
 - Add the MIT-licensed QianLV UI Skill as a WorkBuddy-compatible design reference with explicit bundled-asset and script review guidance.

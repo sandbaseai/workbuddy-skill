@@ -53,6 +53,7 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - Auto-updated Agent Skills index with no repository license declaration (navigation only): https://github.com/linny006/awesome-agent-skills
 - MIT portable Skill discovery and evidence workflow (methodology only; not an automatic installer): https://github.com/CodeSigils/skill-discovery
 - Apache-2.0 Agent toolchain that exports actions and playbooks as Skills, MCP servers, HTTP services, or binaries (separate builder; inspect generated files): https://github.com/team4u/actiondock
+- Apache-2.0 Agent-ready web interoperability and provenance reference covering llms.txt, Agent Skills, MCP, and A2A (research reference): https://github.com/dkharlanau/agent-ready-web-profile
 - MIT cross-harness Skill and extension manager with preview and source tracking (separate tool): https://github.com/vanillagreencom/kendex
 - MIT zero-dependency local Skill usage and context-cost report (disable/prune actions require exact-target review): https://github.com/bborok1234/skillmon
 - CC0 WorkBuddy resource index: https://github.com/semlinker/awesome-workbuddy
