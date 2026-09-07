@@ -58,14 +58,20 @@ jobs:
             --repository Hisn00w/ASu-skills \
             --repository aiworkskills/wechat-article-skills \
             --repository-only \
-            --target 1000 \
+            --target 10000 \
             --max-requests 60 \
             --max-rate-wait 120 \
             --output /tmp/upstream-skill-probe.jsonl \
             --dry-run-output /tmp/upstream-skill-probe-report.jsonl
+          python3 scripts/report_new_discoveries.py \
+            --catalog catalog/skills.jsonl \
+            --discovery /tmp/upstream-skill-probe-report.jsonl \
+            --output /tmp/upstream-skill-new-candidates.jsonl
       - name: Upload read-only discovery report
         uses: actions/upload-artifact@v4
         with:
           name: upstream-skill-probe-${{ github.run_id }}
-          path: /tmp/upstream-skill-probe-report.jsonl
+          path: |
+            /tmp/upstream-skill-probe-report.jsonl
+            /tmp/upstream-skill-new-candidates.jsonl
           retention-days: 7

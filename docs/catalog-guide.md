@@ -101,8 +101,9 @@ The scheduled `Refresh skill catalog` workflow also runs a read-only probe over
 representative upstream Skill repositories. It reports newly discoverable
 paths without writing the frozen catalog, creating packages, or changing any
 published snapshot. Its short-lived Actions artifact contains the discovered
-JSONL rows for follow-up; use the local command above when you need to inspect a
-candidate in detail.
+JSONL rows plus a second file containing only paths and content SHAs not already
+represented by the frozen catalog. Use the local command above when you need to
+inspect a candidate in detail.
 
 To restrict local results to packages that have a reviewed Release ZIP, use the
 curated manifest maintained by this repository:

@@ -72,6 +72,7 @@ python3 scripts/query_catalog.py --category research --package-status reviewed \
 仓库的定时 `Refresh skill catalog` 工作流也会对一组代表性的上游 Skill 仓库执行只读探测。
 它只报告新发现的路径，不会写入冻结目录、生成精选包或改变已发布快照；短期 Actions Artifact
 会保存发现到的 JSONL 行，便于后续处理。需要详细审阅某个候选时，仍请在本地运行上面的命令。
+其中第二个文件只保留冻结目录中尚未出现的路径和内容 SHA，便于直接筛选新候选。
 
 如果只想查看本仓库已经提供审阅版 Release ZIP 的条目，可以使用精选清单：
 
