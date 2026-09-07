@@ -351,7 +351,6 @@ pandazki/pneuma-skills
 LearnPrompt/ai-news-radar
 pseudo-longinus/quant-buddy-skills
 aws-samples/sample-apex-skills
-moonlight-lupin/agent-skills
 NanmiCoder/creator-pipeline
 battlecodex/bc-design
 sanikantv/android-emulator-apk
@@ -510,3 +509,8 @@ jonhill90/skills
 michaelboeding/skills
 803/skills-supply
 quantumbyte31/linkedin-skills
+bcgov/agent-skills
+DualNova/agent-skills
+evilmartians/agent-skills
+moonlight-lupin/agent-skills
+spiralcrew-ou/profilespider-agent-skills
