@@ -82,6 +82,8 @@ Release ZIPs are accompanied by a `SHA256SUMS` asset for offline integrity verif
 - WorkBuddy Harness blue book (research reference; no license declaration): https://github.com/zjp1997720/zhijian-ai-bluebook-workbuddy-harness
 - WorkBuddy Harness blue book online edition: https://zjp1997720.github.io/zhijian-ai-bluebook-workbuddy-harness/
 - Tencent WorkBuddy benchmark: https://github.com/Tencent/workbuddy-bench
+- MIT external draw.io XML generation and validation workflow for WorkBuddy-compatible agents (reference only): https://github.com/bruc3van/bruce-drawio
+- MIT Tencent EdgeOne website Prompt/Skill gallery (external navigation only; review each entry separately): https://github.com/TencentEdgeOne/awesome-website-prompts-and-skills
 - GitSkills public Skill dataset research: https://arxiv.org/abs/2608.10906
 - SWE-Skills-Bench requirement-driven evaluation: https://arxiv.org/abs/2603.15401
 - SkillsBench paired Skill/no-Skill evaluation: https://arxiv.org/abs/2602.12670

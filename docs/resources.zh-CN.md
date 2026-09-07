@@ -116,6 +116,8 @@
 - [oh-my-workbuddy](https://github.com/mrzhangguoguo/oh-my-workbuddy)——MIT 许可的双语 WorkBuddy 端口，可参考其目录化工作流约定。
 - [WorkBuddy Harness 机制蓝皮书](https://github.com/zjp1997720/zhijian-ai-bluebook-workbuddy-harness)——从本地文件、提示词拼装、扩展机制和安全边界理解 WorkBuddy，也提供[在线版](https://zjp1997720.github.io/zhijian-ai-bluebook-workbuddy-harness/)；仓库未声明许可证，仅作研究参考。
 - [Tencent WorkBuddy Bench](https://github.com/Tencent/workbuddy-bench)——覆盖 Code、Web、Office 和 Security 工作负载的可复现 Agent 任务评测，支持 Docker 运行和结果报告。
+- [Bruce Drawio](https://github.com/bruc3van/bruce-drawio)——MIT 许可的外部绘图工作流，可生成并校验 draw.io XML，并导出图片或回退到网页打开；这里只作参考，单独安装前应检查 CLI、浏览器和生成文件边界。
+- [Awesome Website Prompts & Skills](https://github.com/TencentEdgeOne/awesome-website-prompts-and-skills)——腾讯 EdgeOne 维护的 MIT 许可建站 Prompt/Skill 作品集；它是外部合集，不是本仓库冻结目录的导入源，使用其中任何条目仍需单独核验许可证和权限。
 - [GitSkills](https://arxiv.org/abs/2608.10906)——对数百万公开 `SKILL.md` 文件进行整理和分析的研究数据集；用于理解生态规模，不是安装源。
 - [SWE-Skills-Bench](https://arxiv.org/abs/2603.15401)——以需求驱动的基准，评估公开 Skill 是否能改善真实软件工程任务。
 - [SkillsBench](https://arxiv.org/abs/2602.12670)——使用确定性验证器，对有 Skill 与无 Skill 的 Agent 任务进行配对评测。
