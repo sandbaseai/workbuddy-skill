@@ -270,3 +270,16 @@ mikubaka88/CCFA-Skills
 HughYau/qiushi-skill
 Appllama/appllama-skills
 Tencent/AI-Infra-Guard
+zenstory-ai/drama-skills
+tw93/Waza
+TencentCloudBase/CloudBase-AI-Toolkit
+ModelEngine-Group/nexent
+hashgraph-online/hol-guard
+timzaak/web-dev-skills
+vanillagreencom/kendex
+getaero-io/gtm-eng-skills
+chenxin-yan/crust
+OpenDCAI/GameFactory-3A
+boyang-hu/website-rebuild-skill
+iOfficeAI/AionUi
+Sorwcyra/ds-vision-skill
