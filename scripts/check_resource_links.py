@@ -103,6 +103,7 @@ def main() -> int:
     urls = extract_urls()
     failures = []
     rate_limited = []
+    transient_failures = []
     timeouts = []
     with ThreadPoolExecutor(max_workers=max(1, args.workers)) as pool:
         futures = [pool.submit(check_url, url, args.timeout) for url in urls]
@@ -110,12 +111,16 @@ def main() -> int:
             url, status, error = future.result()
             if status == 429:
                 rate_limited.append((url, status, error))
+            elif status in RETRYABLE_HTTP_STATUS:
+                transient_failures.append((url, status, error))
             elif status is None and is_timeout_error(error):
                 timeouts.append((url, status, error))
             elif status is None or status >= 400:
                 failures.append((url, status, error))
     print(f"Checked {len(urls)} public resource links")
     for url, status, error in sorted(rate_limited):
+        print(f"WARN {status or error}: {url}", file=sys.stderr)
+    for url, status, error in sorted(transient_failures):
         print(f"WARN {status or error}: {url}", file=sys.stderr)
     for url, status, error in sorted(timeouts):
         print(f"WARN {status or error}: {url}", file=sys.stderr)
