@@ -12,11 +12,10 @@ from [Releases](https://github.com/sandbaseai/workbuddy-skill/releases/latest). 
 catalog is a provenance-first discovery index; inspect each source, license, and
 permission boundary before installing.
 
-本 README 面向使用者，聚焦目录发现、来源审阅和 WorkBuddy 导入；项目维护、
-自动化校验和贡献流程不作为使用前提，分别放在贡献与安全文档中。
+本 README 面向使用者，帮助你发现目录内容、审阅来源并导入 WorkBuddy。
 
 当前公开目录包含 **21,818 条 Skill 快照**，另有 **277 个经过审阅、可直接安装的 WorkBuddy 包**。
-这是一个冻结的公开快照；反馈不会自动新增目录记录，请通过反馈入口提交文档、可用性、校验或已有精选包改进。
+如果发现文档、可用性或精选包需要改进，欢迎通过反馈入口告诉我们。
 
 ### 最短路径
 
@@ -272,12 +271,11 @@ gh skill install sandbaseai/workbuddy-skill skills/oss-review --dir .workbuddy/s
 
 WorkBuddy Skill Hub is an open catalog of public Agent Skills plus a curated set of reviewed, bilingual WorkBuddy workflows.
 
-This README is for users: discovery, provenance review, and WorkBuddy import come
-first. Repository maintenance, automation checks, and contribution procedures are
-documented separately and are not prerequisites for using the catalog.
+This README helps users discover skills, review provenance, and import workflows
+into WorkBuddy.
 
 The public catalog contains **21,818 indexed Skills**, alongside **277 reviewed WorkBuddy packages** ready to install.
-This is a frozen public snapshot; feedback does not automatically add catalog records. Use the feedback form for documentation, usability, validation, or existing reviewed-package improvements.
+Use the feedback form to report documentation, usability, validation, or reviewed-package improvements.
 
 ### Three-step start
 
