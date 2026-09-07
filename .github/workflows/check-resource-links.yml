@@ -45,4 +45,4 @@ jobs:
         with:
           python-version: "3.x"
       - run: python3 scripts/build_site_data.py
-      - run: python3 scripts/check_resource_links.py
+      - run: python3 scripts/check_resource_links.py --workers 32 --timeout 8

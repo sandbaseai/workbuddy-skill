@@ -65,6 +65,7 @@ class ResourceLinkCheckTests(unittest.TestCase):
         self.assertIn('"docs/**"', workflow)
         self.assertIn('"SUPPORT.zh-CN.md"', workflow)
         self.assertIn("python3 scripts/build_site_data.py", workflow)
+        self.assertIn("python3 scripts/check_resource_links.py --workers 32 --timeout 8", workflow)
         self.assertIn("contents: read", workflow)
         self.assertIn("scripts/check_resource_links.py", workflow)
 
