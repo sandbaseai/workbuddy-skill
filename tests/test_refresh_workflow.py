@@ -15,7 +15,7 @@ class RefreshWorkflowTests(unittest.TestCase):
         sources = (ROOT / "config/upstream-skill-sources.txt").read_text(encoding="utf-8")
         self.assertIn("github/awesome-copilot", sources)
         self.assertIn("googleworkspace/cli", sources)
-        self.assertIn("--target 12500", workflow)
+        self.assertIn("--target 13500", workflow)
         self.assertIn("--output /tmp/upstream-skill-probe.jsonl", workflow)
         self.assertIn("--dry-run-output /tmp/upstream-skill-probe-report.jsonl", workflow)
         self.assertIn("scripts/report_new_discoveries.py", workflow)

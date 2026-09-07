@@ -53,3 +53,13 @@ K-Dense-AI/mimeo
 blacktop/ipsw-skill
 Timefiles404/lean-mode-skill
 Hao0321/claude-skill-code-cleanup
+antfu/skills
+NVIDIA/skills
+microsoft/skills
+google-labs-code/stitch-skills
+dotnet/skills
+cloudflare/security-audit-skill
+supabase/agent-skills
+ScrapeCreators/social-media-research-skills
+RKiding/Awesome-finance-skills
+iflytek/skillhub
