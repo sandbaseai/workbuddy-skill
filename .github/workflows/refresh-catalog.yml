@@ -67,7 +67,7 @@ jobs:
             --allow-partial \
             --target 50000 \
             --max-requests "$max_requests" \
-            --max-rate-wait 120 \
+            --max-rate-wait 2400 \
             --output /tmp/upstream-skill-probe.jsonl \
             --dry-run-output /tmp/upstream-skill-probe-report.jsonl \
             --status-output /tmp/upstream-skill-probe-status.json
