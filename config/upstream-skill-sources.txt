@@ -624,3 +624,7 @@ Graphify-Labs/graphify
 Nutlope/hallmark
 alchaincyf/huashu-design
 Vincentwei1021/video-talkcraft
+tale-project/tale
+daniel-j-lin/commerce-lens
+quocbao201104/marketing-practitioner
+fortunto2/solo-factory
