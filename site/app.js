@@ -10,6 +10,7 @@ const unique = document.querySelector("#unique");
 const minScore = document.querySelector("#min-score");
 const packageStatus = document.querySelector("#package-status");
 const highSignal = document.querySelector("#high-signal");
+const installable = document.querySelector("#installable");
 const resetFilters = document.querySelector("#reset-filters");
 const emptyReset = document.querySelector("#empty-reset");
 const copyLink = document.querySelector("#copy-link");
@@ -359,6 +360,16 @@ highSignal.addEventListener("click", () => {
   security.value = "no-static-flags";
   sourceContext.value = "primary-looking";
   minScore.value = "85";
+  sort.value = "score";
+  unique.checked = true;
+  search({ historyMode: "push" });
+});
+installable.addEventListener("click", () => {
+  compatibility.value = "all";
+  security.value = "no-static-flags";
+  sourceContext.value = "primary-looking";
+  minScore.value = "85";
+  packageStatus.value = "reviewed";
   sort.value = "score";
   unique.checked = true;
   search({ historyMode: "push" });
