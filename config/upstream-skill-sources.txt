@@ -1332,6 +1332,17 @@ hraness/message-like-me
 GuitarAlchemist/ix
 0trm/gallop
 alaarab/phren
+0xsline/OpenChatCut
+activeloopai/hivemind
+actionbook/actionbook
+GBSOSS/skill-from-masters
+larashero3-dotcom/writing-dna-skill
+Kaelio/ktx
+vibeforge1111/keep-codex-fast
+EtienneLescot/n8n-as-code
+rlaope/oh-my-hermes
+cookiy-ai/user-research-skill
+PrathamLearnsToCode/paper2code
 wagneripjr/skills
 tenfyzhong/agent-plugins-hub
 ethanjyx/tight-studio-plugins
