@@ -258,3 +258,15 @@ mgechev/skillgrade
 planetscale/database-skills
 spring-ai-community/spring-ai-agent-utils
 microsoft/skills-for-copilot-studio
+ericosiu/ai-marketing-skills
+yusufkaraaslan/Skill_Seekers
+white0dew/XiaohongshuSkills
+dart-lang/skills
+UiPath/skills
+adrianpunk/Punk-Skill
+Besty0728/Unity-Skills
+nextlevelbuilder/ui-ux-pro-max-skill
+mikubaka88/CCFA-Skills
+HughYau/qiushi-skill
+Appllama/appllama-skills
+Tencent/AI-Infra-Guard
