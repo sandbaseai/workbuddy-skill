@@ -303,6 +303,7 @@ Use this page to choose the right source before searching the catalog.
 - [QVeris Agent Toolkit](https://github.com/QVerisAI/qveris-agent-toolkit) — MIT-licensed agent-tool and workflow Skill reference; inspect provider credentials, network calls, quotas, and returned-data provenance.
 - [ADLC Team Skills](https://github.com/tikalk/adlc-team-skills) — MIT-licensed team workflow collection for architecture, delivery, quality, and collaboration; review host commands, shared state, and write ownership before use.
 - [PaulRBerg Agent Skills](https://github.com/PaulRBerg/agent-skills) — MIT-licensed cross-host collection of reusable engineering and project workflows; pin the source revision and inspect scripts and host-specific assumptions.
+- [Unit Tests Skills](https://github.com/mavka-ai/unit-tests-skills) — MIT-licensed testing workflows for generating test cases and tests; review framework assumptions, fixture paths, generated files, and whether execution remains inside the intended workspace.
 
 ## This repository
 
