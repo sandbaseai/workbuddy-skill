@@ -14,6 +14,7 @@ All notable changes to this project are documented here.
 - Add MIT external references for a draw.io XML workflow and the Tencent EdgeOne website Prompt/Skill gallery, without importing Skills or changing the frozen catalog.
 - Add high-signal MIT references for Superpowers, Addy Osmani's Agent Skills, and Archify to the bilingual learning map without importing Skills or changing the frozen catalog.
 - Add the MIT Visual Explainer project as an external reference for self-contained, evidence-oriented HTML explainers without importing Skills or changing the frozen catalog.
+- Add MIT Scientific Agent Skills and official Lark CLI references with explicit data, credential, and permission review boundaries, without importing Skills or changing the frozen catalog.
 - Treat exhausted transport timeouts as visible link-check warnings while continuing to fail on explicit HTTP or non-timeout transport errors.
 - Restrict automatic merge and merged-branch cleanup to pull requests targeting `main`.
 - Preserve and label read-only upstream probe completeness with a status JSON report when GitHub throttling pauses discovery; partial results remain clearly distinct from complete scans.
