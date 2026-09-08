@@ -2390,3 +2390,17 @@ Djarvur/go-ultimate
 Emenowicz/sap-commerce-skill
 Jbrawner/tld-skills
 NEXL-LTS/agent-apropos
+1837620622/agent-bypass
+245678000000/case-distiller
+Adilmunawar/ZD-claude-plugin
+Cancellationperiplocagraeca503/legal-ai-skills
+DaizeDong/market-intel
+DioNanos/nexuscrew
+EvanLee2004/finance-skills
+Far-200/think-before-code
+Fodhol/skills
+GAJETOso/financeskills
+IPedrax/OmniSkill
+IbrahimHemaida/mobile-engineering-skills
+Lawyeah-Tech/lawyeah
+MasterinoSplinterino/mobile-release-playbook
