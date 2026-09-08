@@ -2462,3 +2462,10 @@ GoPlausible/claude-plugins
 GoPlausible/openclaw-algorand-plugin
 Hautran11325/dev-docs-skill
 Johell1NS/browser-search
+AgentShekel/agentic-workflow
+BA-CalderonMorales/terminal-jarvis
+BorjaIP/personal-os-skills
+ExoPriors/skills
+JeonSeongHu/tex-to-figma-poster
+JohnWayneeee/casely-qa-skill
+Layman-art/PPT-editable
