@@ -3248,3 +3248,10 @@ momonanq/lumis-skills
 Dsn202509/article-to-knowledge-cards
 leoluyi/skills
 ops120/ai-zhubo-skill
+yinxiaowai/product-vlog-skill
+M155K4R4/Skill_Workbench
+TheAngryPit/TheAngrySkills
+bananayong/agent-sandbox
+rulebase-co/rulebase-skills
+shenmuxing/EtaSkill
+wangjiawei508/WorkWise
