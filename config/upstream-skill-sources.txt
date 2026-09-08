@@ -2596,3 +2596,8 @@ Nova-Violet-Role/RoT-DtD-Commander
 Raisecornfritter28/mvsd-ai-skills
 Rayan55050/progressive-agent
 SidCorp-co/forge-plugin
+AdamBien/airails
+Amazon-Quick/Amazon-Quick-official-catalog
+LukasNiessen/terrashark
+MarcosRibeiroJesus/devops-agentic-workflow-tf-aws
+NotHarshhaa/devops-skills
