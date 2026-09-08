@@ -2376,3 +2376,17 @@ Jaypatel1511/cdfi-superpowers
 Krishna-Modi12/frontend-design-pro
 Kungfookenny123/aso-skills
 Layneformalized225/ai-cofounder
+3bdallaha7md/skill-forge
+Abdullah4AI/apple-developer-toolkit
+Akshay7273/skill-advisories
+AlexHagemeister/gnadd
+ApocData/ApocData-skill
+BobbyYue/reader-seat
+CYoJkoY/AzSkills
+Casertmisten/agentscope-v2-skill
+CoreStoryAI/agent-skills
+DevOtts/plan-it
+Djarvur/go-ultimate
+Emenowicz/sap-commerce-skill
+Jbrawner/tld-skills
+NEXL-LTS/agent-apropos
