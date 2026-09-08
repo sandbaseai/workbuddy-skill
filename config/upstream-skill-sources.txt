@@ -2854,6 +2854,14 @@ Tairitsua/Monica
 entropy-cloud/attractor-guided-engineering-template
 Rishflips/OpenShip-Hermes-Agent
 itential/builder-skills
+RikyZ90/ShibaClaw
+bybit-exchange/skills
+iblai/vibe
+jggomez/expert-ai-developer-skills
+fastapi-practices/skills
+danielvm-git/bigpowers
+Mathews-Tom/armory
+temporalio/skill-temporal-developer
 epicsagas/epic-harness
 tt-a1i/skillroster
 robsonkades/agent-skills
