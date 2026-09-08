@@ -2796,3 +2796,11 @@ TJCSGAO/usr-cloud-downloader
 JXW666NB/TG-HELPER
 svdwalt007/Best-LwM2M-Agentic-Skills
 Seeed-Solution/reterminal_skill
+tobihagemann/turbo
+bitrouter/bitrouter
+bug-ops/zeph
+SakuraByteCore/codexmate
+songs-aaa/shared-memory-vault
+ninihen1/power-automate-mcp-skills
+gordonmurray/data-engineering-skills
+AltimateAI/data-engineering-skills
