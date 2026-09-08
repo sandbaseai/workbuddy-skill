@@ -3068,3 +3068,12 @@ projectious-work/aibox
 smcmahon42/build_bling_boilerplate
 srednoff888-art/srednoff-os
 tottenjordan/me-skittles
+4citeB4U/LeeWay-Agent-Skills
+AndreHahm/andres-cc-marketplace
+FerroxLabs/wayland-core
+chughtapan/google-guide-skills
+composio-community/nemoclaw-composio
+fomenko-ai/pytest-hardware-template
+javiarmesto/APM-ALDC
+stribus/pygerengastos
+victorzhuk/go-ent
