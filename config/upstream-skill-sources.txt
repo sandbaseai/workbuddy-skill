@@ -2147,3 +2147,4 @@ peopleworks/SignsofAI
 Bitterbot-AI/bitterbot-desktop
 OpenGHz/embodied-ai-paper-writer
 sboghossian/mini-claude-for-legal
+Cesarjoquin/Marketing-Skills
