@@ -3297,3 +3297,16 @@ oyekamal/claude-code-flow-visualizer
 sso-ss/vibe-ship-it
 SAP-samples/cap-agentic-engineered
 BenRamins/otto
+xdx888999/xdx-lab-design-style-skill
+yogin16/better-cli
+MCKRUZ/claude-code-mastery
+s328900856/context-courier
+PM-lurenyi/design-skill-suite
+Claude-Code-Community-Ireland/claude-code-resources
+TerminusAkivili/CODEV
+naravid19/ai-project-rules-generator
+simplybychris/feedback-page
+timctfl/skillshelf
+chebykinn/agent-ruler
+zxkane/audio-transcriber
+daisy-now/agent-skills
