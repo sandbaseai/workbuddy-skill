@@ -2800,6 +2800,16 @@ stoaaadev/stoa
 weiquyun123/project-absorber-skill
 ww-w-ai/bkit-starter
 yigitkonur/skills-by-yigitkonur
+balabalabalading/huuuuuuho-skills
+alexander-kastil/skills-collection
+microsoft/hve-core
+iliaal/ai-skills
+MetaMask/skills
+upstash/skills
+wei18/Upkeep
+CBirkbeck/mathlib-quality
+motlin/claude-code-plugins
+michielhdoteth/awesome-ai-agent-tools
 antioch-robotics/antioch-agent-plugin
 coolbeevip/mujoco-skills
 johnlegoat/steel-community
