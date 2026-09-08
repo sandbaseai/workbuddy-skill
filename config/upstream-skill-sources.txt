@@ -2227,4 +2227,3 @@ HsuanZhao/SOE-Legal-Checker
 SathiaAI/adversarial-review
 CarlosFerOrduna/agent-skills
 TestAny-io/testany-agent-skills
-Gentleman-Programming/gentle-ai
