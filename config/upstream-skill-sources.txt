@@ -2251,3 +2251,7 @@ greptileai/skills
 nick-vels/skills
 circlefin/skills
 boraoztunc/skills
+brightdata/skills
+TrainWithShubham/skills
+gauss314/skills
+agentara/skills
