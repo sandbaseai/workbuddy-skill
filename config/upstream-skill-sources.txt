@@ -2842,6 +2842,15 @@ Tairitsua/Monica
 entropy-cloud/attractor-guided-engineering-template
 Rishflips/OpenShip-Hermes-Agent
 itential/builder-skills
+epicsagas/epic-harness
+tt-a1i/skillroster
+robsonkades/agent-skills
+William-Yeh/common-code-reviewer
+QTSurfer/strategy-skills
+snese/kstack
+katalon-labs/true-skills
+awrshift/agent-memory-kit
+akovalion/paranoid-qa
 blundergoat/goat-flow
 btspoony/mstar-harness
 benjaminasterA/antigravity-awesome-skills
