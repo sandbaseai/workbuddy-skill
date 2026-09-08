@@ -3290,3 +3290,10 @@ v1k22/skillhub-registry
 instavm/skill-optimization
 alexei-led/coding-posture
 syf2211/ruledoctor
+story2u/x-agent
+tilework-tech/nori-lint
+a1665779280-cyber/GeneDrug-AutoMD-Skill
+oyekamal/claude-code-flow-visualizer
+sso-ss/vibe-ship-it
+SAP-samples/cap-agentic-engineered
+BenRamins/otto
