@@ -3122,3 +3122,16 @@ pax-beehive/dsh-hub-cli
 rails-hyperdrive/rails-hyperdrive
 skynetcmd/m3-memory
 zhinjs/zhin
+Edge-City/agentvillage
+Holden323/ldm-skill
+Yassimba/loom
+alebgl77/claude-inc
+cabloy/cabloy
+dai/o-sumo
+huaweicloud/huaweicloud-skills
+iuliandita/skills
+jitokim/oh-my-graph
+laimis91/assistant-framework
+nesquikm/dev-process-toolkit
+ningbainb/deepseek-harness-desktop
+qizhitang/xiaozhi-skills
