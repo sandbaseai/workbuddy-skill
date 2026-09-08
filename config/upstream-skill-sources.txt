@@ -2029,3 +2029,11 @@ soba-labs/langchain-agent-skills
 blockscout/agent-skills
 jdrhyne/agent-skills
 pproenca/dot-skills
+ThibautBaissac/rails_ai_agents
+cosmicstack-labs/mercury-agent-skills
+bitwize-music-studio/claude-ai-music-skills
+zubair-trabzada/ai-marketing-claude
+aliyun/maxcompute-semantic
+anylegal-ai/anylegal-oss
+didit-protocol/skills
+KreerC/ACCESSIBILITY.md
