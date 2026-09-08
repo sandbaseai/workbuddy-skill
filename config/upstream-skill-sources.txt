@@ -3420,6 +3420,12 @@ iflow-ai/iflow-skills
 JazlynPan/vedic-astro-skills
 seabbs/skills
 cpiprint/skills
+ishandutta2007/Awesome-Claude-Skills
+alexclowe/awesome-copilot-cowork-plugins
+arumwu/design-md-skill
+DonkeyKing01/tasteful-ui-skill
+AngChow/gpt-image-2-style-library
+gagaein/lazy-skill-drop
 deepak-pmcurve/product-skills
 opensourceways/agent-skills
 open-agent-craft/awesome-agent-skills
