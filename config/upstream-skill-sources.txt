@@ -2177,3 +2177,11 @@ ningzimu/codex-gpt-image
 pradeepmouli/skillit
 pizzzzzza/printkk-agent-skill
 NanGePlus/SkillTutorial
+quaylabshq/skill-graph
+alifurkangokce/driftlint
+publicala/bake-claude-md-files-skill
+dtiger1889-ops/claude-harness-toolbox
+d-oit/rust-2026-template
+TurboKach/claude-code-setup
+erayendes/oduncu
+bravew/trove
