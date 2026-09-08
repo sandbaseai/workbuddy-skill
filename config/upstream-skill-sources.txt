@@ -2202,3 +2202,4 @@ chenxiachan/xhs-claude-skills
 aref-vc/tufte-claude-skill
 aakashg/pm-claude-skills
 Abhinavbwj/Claude-skills-for-Computational-Designers
+jakedahn/pomodoro
