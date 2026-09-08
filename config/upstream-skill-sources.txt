@@ -2612,6 +2612,11 @@ Dr-Liu23/financial-report-dashboard
 Eleusio705/claude-jobs
 GreenChennai/artboard
 JonnySLT/ai-ux-toolkit
+Elliotoh-jin/agent-hr
+MariusYvard/NullToHero
+AviOfLagos/marketing-agency-skill
+BrinShadewater/Shadewater-SEO-Skill
+BrinShadewater/Webp-Me-Daddy-Skill
 2B0748/test-case-studio
 AlvinGgg/l05-diagnosis-skill
 AmirrezaJolani/appversion-skill
