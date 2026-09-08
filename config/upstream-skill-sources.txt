@@ -3426,6 +3426,8 @@ arumwu/design-md-skill
 DonkeyKing01/tasteful-ui-skill
 AngChow/gpt-image-2-style-library
 gagaein/lazy-skill-drop
+prashantdivate/awesome-yocto-ai-agent-skills
+HiAPIAI/awesome-ai-video-workflows
 deepak-pmcurve/product-skills
 opensourceways/agent-skills
 open-agent-craft/awesome-agent-skills
