@@ -2171,3 +2171,4 @@ slackapi/slack-skills-plugin
 zenstory-ai/video-recap-skills
 drivelineresearch/autoresearch-claude-code
 antongulin/opencode-skill-creator
+stareezy-1/frontend-architecture-skill
