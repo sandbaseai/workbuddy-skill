@@ -2421,3 +2421,14 @@ CometWorks/skills
 DaizeDong/self-evolve
 DedInc/chef-agentic-skills
 FullEnrich/fullenrich-skills
+AdarGit008/mcgyvr
+AutomatedMarketer/cowork-ai-os
+BackTrackCo/tenjin-agent
+Brhiza/mingyu
+CasparEkroth/.dev
+DevinChen2014/socialdatax-skills
+Firstp1ck/pi-coding-agent-forge
+LLl0k0laD/agent-skills
+LerSent001/holo-card
+Lethe044/hermes-incident-commander
+MoeenNehzati/famulus
