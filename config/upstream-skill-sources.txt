@@ -2188,3 +2188,5 @@ bravew/trove
 kozz36/frontend-designer-skill
 ElmatadorZ/alternative-coffee-claudeskill
 abdullahkhawer/devops-skills
+Wechat-ggGitHub/wechat-claude-code
+CloudAI-X/claude-workflow-v2
