@@ -2716,3 +2716,13 @@ zivtech/accessibility-skills
 mthines/agent-skills
 shen-shanshan/vllm-dev-skills
 oaustegard/claude-skills
+nexus-research-lab/nexus
+dyoshikawa/rulesync
+Out-bloodspavin173/openalex-skill
+chemaoxfz/idea-to-essay
+benjaminstelzer/scoville-research
+dongwei6688/policy-search-china-skill
+abagames/agentic-gamedev-skills
+memi-design/remember-design-system
+memi-design/enforce-design-ci
+catalyst-cooperative/agent-skills
