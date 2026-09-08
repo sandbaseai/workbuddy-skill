@@ -2295,3 +2295,17 @@ shaonian-okf/pdf2md-skill
 0disoft/mustflow
 wiatrM/guidefold
 nezumi0627/deepseek-web-harness
+uuzjw/autonomous-agent-skill
+spdrman/agent-skills
+derrickleemy/Skills.md
+actual-software/actual-skill-openclaw
+vosslab/vosslab-skills
+jassics/aisecscan
+FrankFu916/skill-audit
+RudrenduPaul/evolveguard
+RudrenduPaul/skillguard
+jihedbfr-art/cyber-skills
+arjunprabhulal/devops-skills
+HappyAIAgent/easy-wechat-skills
+meiiie/structured-root-cause-research-skill
+CharlesHahn/DuIvySkills
