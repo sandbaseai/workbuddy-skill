@@ -2357,3 +2357,13 @@ petry-projects/.github-private
 Hichamdz85/paperasse-belgique
 duthaho/skillhub
 Pranav-Nexus/antigravity-skill-porter
+AThevon/genjutsu
+AbdulRehman0745/Nature-use-skills
+Aditya923-c/xpoz-agent-skills
+Azure/AKS-Skills
+Baelfyre/Orchestra
+Bennaco7539/skill-optimizer
+Discriminative-shoji607/ui-skills
+Gaurav890/everything-agentic-engineering
+Greenrestlessness223/alpha-skills
+IxTechCrypto/kicad-skills
