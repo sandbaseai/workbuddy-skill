@@ -2037,3 +2037,15 @@ aliyun/maxcompute-semantic
 anylegal-ai/anylegal-oss
 didit-protocol/skills
 KreerC/ACCESSIBILITY.md
+webflow/webflow-skills
+HuangYuChuh/ComfyUI_Skills_OpenClaw
+tryopendata/skills
+pixijs/pixijs-skills
+brave/brave-search-skills
+VictoriaMetrics/skills
+black-forest-labs/skills
+pulumi/agent-skills
+microsoft/aspire-skills
+wandb/skills
+surrealdb/agent-skills
+buildkite/skills
