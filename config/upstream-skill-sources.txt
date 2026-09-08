@@ -2099,3 +2099,17 @@ delineas/astro-framework-agents
 aws-samples/sample-well-architected-skills-and-steering
 zxkane/aws-skills
 RevenueCat/play-billing-skills
+sanjay3290/ai-skills
+waynesutton/convexskills
+huangzt/my-agent-skills
+seed-forge/harness-ai-kit
+dash0hq/agent-skills
+SigNoz/agent-skills
+chaterm/terminal-skills
+selvarajmurugesan90/ops-engineering-skills
+hezkvectory/hermes-edu-skills
+imfangli/mediastorm-copywriter
+luoling8192/technical-writing
+jianshuo/jianshuo-wechat-mp-publish
+study8677/architecture-copilot
+jnMetaCode/ai-shortfilm-prompts
