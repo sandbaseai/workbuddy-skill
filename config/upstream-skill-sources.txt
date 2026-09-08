@@ -2965,3 +2965,9 @@ VincentChuWaiChow/vanguard-frontier-agentic
 biedongbin/dsh-claude-compat
 carnot-tech/consulting-pptx-skill
 mlhiter/skills
+Arindam200/awesome-ai-apps
+DanMcInerney/orchflows
+XiaomingX/indie-hacker-tools-plus
+genged/capshelf
+lidge-jun/codexclaw
+undefinted/Awesome-Post-Training-Atlas
