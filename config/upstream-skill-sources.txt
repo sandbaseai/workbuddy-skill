@@ -2601,3 +2601,14 @@ Amazon-Quick/Amazon-Quick-official-catalog
 LukasNiessen/terrashark
 MarcosRibeiroJesus/devops-agentic-workflow-tf-aws
 NotHarshhaa/devops-skills
+AcTePuKc/bg-text
+BAK262/resume-ssot
+BVBllf/US_Treasury_Daily_Report_Skill
+ChenAI-TGF/windows-c-drive-cleaner
+Chenruishuo/posterly
+DarielCorrales/cooper-design
+Dave-RSB/second-brain-architect
+Dr-Liu23/financial-report-dashboard
+Eleusio705/claude-jobs
+GreenChennai/artboard
+JonnySLT/ai-ux-toolkit
