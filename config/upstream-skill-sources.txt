@@ -2612,3 +2612,13 @@ Dr-Liu23/financial-report-dashboard
 Eleusio705/claude-jobs
 GreenChennai/artboard
 JonnySLT/ai-ux-toolkit
+2B0748/test-case-studio
+AlvinGgg/l05-diagnosis-skill
+AmirrezaJolani/appversion-skill
+AndersSpringborg/jira-agent-cli
+CheerChen/ctxd
+DefaultHQ/build-support-agent-skill
+Growth-Today/claude-skills
+Gucky/JiraIssueTexts
+Howryann/skillcoffer
+HsuanYuLee/polaris
