@@ -2215,3 +2215,5 @@ xiaofeng-928/chinese-longnovel-skill
 sanhuang520-ship-it/awesome-chinese-ai-tools
 atdy/maoxuan-product-agent
 liuboacean/mubu-integration
+luoluoluo22/jianying-editor-skill
+dkbnull/hello-skill
