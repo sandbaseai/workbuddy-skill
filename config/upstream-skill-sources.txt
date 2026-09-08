@@ -2255,3 +2255,5 @@ brightdata/skills
 TrainWithShubham/skills
 gauss314/skills
 agentara/skills
+krusemediallc/arcads-claude-code
+chenjin-cmd/agent-skills-launch-pack_
