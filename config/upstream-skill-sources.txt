@@ -2136,3 +2136,12 @@ ShieldNet-360/secure-vibe
 MSiccDev/ai-context-kit
 myvictorlife/base-angular-monorepo
 ElmatadorZ/Genesis-Mind-ClaudeSkill-Agent
+squirrelscan/skills
+godot-fun/godot-agent
+7df-lab/devo
+kcchien/model-thinking
+kody-w/rappterbook
+ifBars/blender-agent-studio
+Shehabov/pm-resume-builder-skill
+peopleworks/SignsofAI
+Bitterbot-AI/bitterbot-desktop
