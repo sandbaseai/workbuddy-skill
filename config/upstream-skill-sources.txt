@@ -3135,3 +3135,9 @@ laimis91/assistant-framework
 nesquikm/dev-process-toolkit
 ningbainb/deepseek-harness-desktop
 qizhitang/xiaozhi-skills
+Relewise/relewise-agent-plugins
+YPares/rigup.nix
+harnessprotocol/harness-kit
+jdilla1277/agentcad-skill
+kouko/monkey-skills
+vishalsachdev/canvas-mcp
