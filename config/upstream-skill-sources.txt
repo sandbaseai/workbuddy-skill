@@ -2796,6 +2796,10 @@ TJCSGAO/usr-cloud-downloader
 JXW666NB/TG-HELPER
 svdwalt007/Best-LwM2M-Agentic-Skills
 Seeed-Solution/reterminal_skill
+stoaaadev/stoa
+weiquyun123/project-absorber-skill
+ww-w-ai/bkit-starter
+yigitkonur/skills-by-yigitkonur
 antioch-robotics/antioch-agent-plugin
 coolbeevip/mujoco-skills
 johnlegoat/steel-community
