@@ -2583,3 +2583,6 @@ Klukai-416-Clukay/dsh-skill-curator
 Mnwa/performance-engineering
 Neuro-Circuit/embedded-safety-engineer
 Pitchfork-and-Torch/GrokLink-OS
+Mirannonarbitrable290/agentic-kaggle-skill
+Bboyfarouk/skills
+Clelandprofessorial357/chrome-cdp-skill
