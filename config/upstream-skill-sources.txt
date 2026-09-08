@@ -2627,3 +2627,15 @@ Autopoies/ap-browser-connect
 Castor6/tactus
 JCodesMore/ai-chrome-extension-template
 Kashkovsky/threadnote
+AidanWagener/thoth-runtime
+Bondfire/bf-confkit
+Coffeiz/Gugu-web
+CrazyRiceMaker/comfortable-roadtrip-planner
+DannyDesert/machine-real-time
+DeFroe/security-notice-response
+EmailBoutique-Digital-Inc/email-html-qa-skill
+GruntworkAI/gruntwork-travel-skills
+Hao0321/claude-skill-social-post
+IamCoder18/huly-cli
+IkarusMK/AIcortex
+MKI13/hermes-email
