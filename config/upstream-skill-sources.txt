@@ -2415,3 +2415,9 @@ ChHsiching/video-dubbing-skill
 CruxExperts/localsetup
 Elizabethan-thortveitite288/openclaw-whobot-skill
 Guilhermepelido/hermes-optimization-guide
+AntTheLimey/gm-apprentice
+BRYANN2K/stipulate-skills
+CometWorks/skills
+DaizeDong/self-evolve
+DedInc/chef-agentic-skills
+FullEnrich/fullenrich-skills
