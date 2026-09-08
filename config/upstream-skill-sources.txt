@@ -2432,3 +2432,13 @@ LLl0k0laD/agent-skills
 LerSent001/holo-card
 Lethe044/hermes-incident-commander
 MoeenNehzati/famulus
+9029kazuki/codex-visual-novel-translation
+AEKO-Intelligence/aeko-plugin
+DaizeDong/shopping-aggregator
+DedeGroup/listinggood-skills
+GaBoron/steam-achievement-localizer-skill
+Gor0d/KIT-Sobrevivencia-Hospitalar-GorodMV
+HaiyiMei/cinemacc-subtitle-skill
+HoraceLuBFA/en-zh-translation-polish
+JamesDing78/medtech-commercial-validation-skills
+JuneYaooo/mediwise-health-suite
