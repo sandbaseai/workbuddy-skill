@@ -2124,3 +2124,4 @@ ckelsoe/prompt-architect
 marcfargas/odoo-toolbox
 bigbio/sdrf-skills
 agiprolabs/claude-trading-skills
+eldermoraes/quarkus-agentic-scaffolding
