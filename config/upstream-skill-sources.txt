@@ -2264,3 +2264,4 @@ topviewai/skill
 x-cmd/skill
 jinchenma94/bazi-skill
 grafana/skills
+AlexsJones/llmfit
