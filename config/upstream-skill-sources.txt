@@ -2185,3 +2185,4 @@ d-oit/rust-2026-template
 TurboKach/claude-code-setup
 erayendes/oduncu
 bravew/trove
+kozz36/frontend-designer-skill
