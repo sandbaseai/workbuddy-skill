@@ -3350,6 +3350,15 @@ TeFuirnever/azhou-ai-hub
 byronxlg/skillfold
 gmh5225/awesome-skills
 pubky/agent-skills
+yaojingang/yao-geo-skills
+julianoczkowski/designer-skills
+rsmdt/the-startup
+OpenMinis/MinisSkills
+glebis/claude-skills
+github/copilot-plugins
+tsale/awesome-dfir-skills
+jtydhr88/comfyui-custom-node-skills
+YYH211/Claude-meta-skill
 BAAI-Agents/Cradle
 AMAP-ML/SkillClaw
 GuDaStudio/skills
