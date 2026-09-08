@@ -2482,3 +2482,11 @@ Mamooralikhan/super-RA
 Marazii/research-co-pilot
 MattArtzAnthro/gephi-ai
 MrLee2R/Intelligrapher
+Arakiss/galdr
+Beneficial-AI-Foundation/formal-verification-skills
+GizClaw/opencraft
+Jakeschincariol/linkedin-agent-skill
+JanSzewczyk/claude-plugins
+Junaid-PK/laravel-development-workflow
+Mallikarjun-Roddannavar/playwright-agentic-automation
+Max-cu/SkillGo
