@@ -3112,3 +3112,5 @@ stickerdaniel/linkedin-mcp-server
 sulabhdubey/rta-smriti-brain
 uvwt/agentdock
 vivekchand/clawmetry
+bitflight-devops/skilllint
+sfourdrinier/grok-skills
