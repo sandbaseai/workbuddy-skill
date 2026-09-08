@@ -2810,6 +2810,12 @@ wei18/Upkeep
 CBirkbeck/mathlib-quality
 motlin/claude-code-plugins
 michielhdoteth/awesome-ai-agent-tools
+blundergoat/goat-flow
+btspoony/mstar-harness
+benjaminasterA/antigravity-awesome-skills
+nimbalyst/skills
+armanzeroeight/fastagent-plugins
+GulajavaMinistudio/awesome-copilot-id
 antioch-robotics/antioch-agent-plugin
 coolbeevip/mujoco-skills
 johnlegoat/steel-community
