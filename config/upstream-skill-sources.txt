@@ -2203,3 +2203,15 @@ aref-vc/tufte-claude-skill
 aakashg/pm-claude-skills
 Abhinavbwj/Claude-skills-for-Computational-Designers
 jakedahn/pomodoro
+gnipbao/story-to-handdrawn-video
+geekjourneyx/hyperframes-motion-director
+Mr-funny/hbg-classical-poem-silk-video
+Qiushen-first/cn-investment-banking-skills
+Hyacehila/humanizer-zh-next
+vivy-yi/Greater-China-Legal
+Songzhi-lab/chinese-font-selector
+zxyasfas/paper_format_agent
+xiaofeng-928/chinese-longnovel-skill
+sanhuang520-ship-it/awesome-chinese-ai-tools
+atdy/maoxuan-product-agent
+liuboacean/mubu-integration
