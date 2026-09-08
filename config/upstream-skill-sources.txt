@@ -3278,3 +3278,15 @@ bdiasti/maestro-bundle-cli
 cagatayuncu/marketing-machine
 nevir/agentfill
 O0000-code/CC-Workshop
+TheStack-ai/pulser
+pluginslab/wp-agentic-kit
+yahav10/claude-insights
+rsoffer/linus-level-skill
+gicrisf/ox-skills
+beeyev/skills
+CodeAtCode/oss-ai-skills
+erafat/skills
+v1k22/skillhub-registry
+instavm/skill-optimization
+alexei-led/coding-posture
+syf2211/ruledoctor
