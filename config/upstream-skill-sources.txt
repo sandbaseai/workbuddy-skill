@@ -2703,3 +2703,7 @@ BretFisher/skills
 upbound/skills
 msaad00/cloud-ai-security-skills
 salitaba/maven-decoder-mcp
+cyh-skill/browser-skill
+aloth/PowerSkills
+zzxCoding/Flydb
+dcc-mcp/dcc-mcp-core
