@@ -2657,6 +2657,9 @@ fedoroff-vlad/agent-skills
 jonnyeclectic/boost
 kentunderage549/cc-harness-skills
 lovstudio/skill-creator-skill
+Borda/vision-delivery
+DarkNavySecurity/web3-skills
+NVlabs/ASPIRE
 7dgroup-ai/dsh-skill-7d-git-commit
 AlephantAI/AIephant-AI-Agent-Gateway
 FelipeOFF/pr-autopilot
