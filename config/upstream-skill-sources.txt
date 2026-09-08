@@ -2647,6 +2647,16 @@ Mfrostbutter/claude-skills
 Moksa1123/elementor-headless
 Moksa1123/gutenberg-headless
 Pikka-Shopify/Pikka-shopify-skills
+AmariahAK/atlarix-skills
+Flan246/dsh-lit-search
+VectoreeAI/vectoree-skills
+ariel-lee-1023/Books-to-Skill-Refs
+buildpad-ai/skills
+dlazy-ai/ecommerce-skills
+fedoroff-vlad/agent-skills
+jonnyeclectic/boost
+kentunderage549/cc-harness-skills
+lovstudio/skill-creator-skill
 7dgroup-ai/dsh-skill-7d-git-commit
 AlephantAI/AIephant-AI-Agent-Gateway
 FelipeOFF/pr-autopilot
