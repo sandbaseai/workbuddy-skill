@@ -2012,3 +2012,11 @@ tuanductran/hr-skills
 Terryc21/tutorial-creator
 jhwreal/wechat-article-pipeline-skill
 eniktab/scientific-paper-writer
+awesome-skills/code-review-skill
+alirezarezvani/claude-code-tresor
+AlexMikhalev/claude-code-continuous-learning-skill
+Jane-xiaoer/claude-skill-web-clone
+komal-SkyNET/claude-skill-homeassistant
+axtonliu/axton-obsidian-visual-skills
+varunr89/resume-tailoring-skill
+Aaronontheweb/dotnet-skills
