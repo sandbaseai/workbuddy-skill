@@ -2228,4 +2228,3 @@ SathiaAI/adversarial-review
 CarlosFerOrduna/agent-skills
 TestAny-io/testany-agent-skills
 alivirgo/Major-AI-Skills
-QVerisAI/qveris-agent-toolkit
