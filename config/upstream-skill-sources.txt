@@ -3328,3 +3328,5 @@ wonyoungLee/sdd-parallel-wave-executor
 yanshangcha01/libtv-shortdrama-storyboard
 skillmdcreator/skillmd-examples
 21st-dev/registry
+SharpAI/DeepCamera
+twostraws/Swift-Agent-Skills
