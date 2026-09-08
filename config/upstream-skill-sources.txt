@@ -2237,3 +2237,17 @@ Hahaknight/claude-skills-pro
 digimon99/blogpost_service
 STARKTANG108/deepseek-doctor
 GuerthCastro/claude-skills-dotnet
+mcollina/skills
+pashov/skills
+humanlayer/skills
+xiaotianfotos/skills
+higgsfield-ai/skills
+claude-office-skills/skills
+wlzh/skills
+DannyMac180/skills
+jeecgboot/skills
+sendaifun/skills
+greptileai/skills
+nick-vels/skills
+circlefin/skills
+boraoztunc/skills
