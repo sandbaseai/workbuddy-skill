@@ -2469,3 +2469,16 @@ ExoPriors/skills
 JeonSeongHu/tex-to-figma-poster
 JohnWayneeee/casely-qa-skill
 Layman-art/PPT-editable
+AetherSkill/legal-lending-documents
+Blockether/spel
+Breuk-Legal/breuklegal-ai-skills
+ByronLeeeee/wordollama-community
+CalebDane7/agent-browser
+CloudCruise/cloudcruise-cli
+Gucky/AgentFolder
+Junfei-Z/meaningful-research-skills
+LvvUP/academic-writing-assistant
+Mamooralikhan/super-RA
+Marazii/research-co-pilot
+MattArtzAnthro/gephi-ai
+MrLee2R/Intelligrapher
