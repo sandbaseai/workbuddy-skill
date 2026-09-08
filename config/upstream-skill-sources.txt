@@ -3234,3 +3234,17 @@ ayhid/claude-dev-workflow
 xiangyugongzuoliu/xy-workflow-agent-spec
 kok-o/contextos-agents
 Quine-rq/functional-acceptance
+AIDDbot/AIDDbot
+NeoCage/business-excellence-agent
+clairecchen-new/feishu-meeting-minutes-card
+zty522/partner
+Rubentxu/software-development-decision-kernel
+cekura-ai/cekura-skills
+adnan-iz/ai-skill-shield
+LPK3215/chrome-bookmarks-organize
+sanguneo/ulw-design
+kane313/context-curator
+momonanq/lumis-skills
+Dsn202509/article-to-knowledge-cards
+leoluyi/skills
+ops120/ai-zhubo-skill
