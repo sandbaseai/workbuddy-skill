@@ -2404,3 +2404,14 @@ IPedrax/OmniSkill
 IbrahimHemaida/mobile-engineering-skills
 Lawyeah-Tech/lawyeah
 MasterinoSplinterino/mobile-release-playbook
+Antoine-Thomas/hermes-skills
+Apizziii/OpenClaw_RH_Skills
+ChHsiching/generate-source-video-skill
+ChHsiching/narrate-video-skill
+ChHsiching/novel-promo-skill
+ChHsiching/video-cooking-skill
+ChHsiching/video-download-skill
+ChHsiching/video-dubbing-skill
+CruxExperts/localsetup
+Elizabethan-thortveitite288/openclaw-whobot-skill
+Guilhermepelido/hermes-optimization-guide
