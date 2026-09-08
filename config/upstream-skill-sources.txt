@@ -3147,3 +3147,5 @@ liasica/harmonyos-skills
 markusleben/ha-nova
 moberghr/mtk-agent-toolkit
 zexuanw958-svg/travel-plan-viz
+hardikpandya/stop-slop
+op7418/Humanizer-zh
