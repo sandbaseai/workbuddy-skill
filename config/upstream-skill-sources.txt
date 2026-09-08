@@ -2713,3 +2713,6 @@ kpab/seo-mastery-agent-skills
 getcargohq/cargo-skills
 TimothyHan/qa-buddy-skills
 zivtech/accessibility-skills
+mthines/agent-skills
+shen-shanshan/vllm-dev-skills
+oaustegard/claude-skills
