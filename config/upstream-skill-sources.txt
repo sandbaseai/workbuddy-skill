@@ -3257,3 +3257,5 @@ shenmuxing/EtaSkill
 wangjiawei508/WorkWise
 aws-samples/sample-ramp-aidlc-mod-starter-packs
 ModernNomad-98/Project-Aegis
+anildash/better-documents
+ZhongliangGuo/oop-architect
