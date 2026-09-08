@@ -2190,3 +2190,7 @@ ElmatadorZ/alternative-coffee-claudeskill
 abdullahkhawer/devops-skills
 Wechat-ggGitHub/wechat-claude-code
 CloudAI-X/claude-workflow-v2
+Swival/skillscheck
+leftzzzz/agents-spec-skill
+oldantique/zotkit
+Heybinshao/book-distiller
