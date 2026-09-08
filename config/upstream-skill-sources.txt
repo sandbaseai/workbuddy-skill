@@ -2826,6 +2826,9 @@ haidrrrry/claude-remotion-skill
 lovstudio/any2pdf
 YangsonHung/awesome-agent-skills
 mdenolle/academic-practice-agents
+capawesome-team/skills
+githits-com/githits-cli
+geekjourneyx/geekx-skills
 wubin1836/ai-hive-agent-skills
 woakin/marketing-copy
 aaron-he-zhu/influencer-marketing-agent-skills
