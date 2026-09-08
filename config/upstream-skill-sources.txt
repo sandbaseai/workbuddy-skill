@@ -2092,3 +2092,10 @@ google/mantis
 agamm/claude-code-owasp
 slowmist/slowmist-agent-security
 lensesio/agentic-engineering-for-apache-kafka
+wpacademy/wordpress-dev-skills
+youdotcom-oss/agent-skills
+Uniswap/uniswap-ai
+delineas/astro-framework-agents
+aws-samples/sample-well-architected-skills-and-steering
+zxkane/aws-skills
+RevenueCat/play-billing-skills
