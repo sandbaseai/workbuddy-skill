@@ -3369,6 +3369,8 @@ Orizon-eu/claude-code-pentest
 salespeak-ai/buyer-eval-skill
 hostinger/hostinger-agent-skills
 Anjos2/recursive-research
+notdog1998/yourself-skill
+perkfly/ex-skill
 BAAI-Agents/Cradle
 AMAP-ML/SkillClaw
 GuDaStudio/skills
