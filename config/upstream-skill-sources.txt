@@ -3226,3 +3226,11 @@ obie/skills
 osovv/grace-marketplace
 spencerpauly/awesome-cursor-skills
 travisjneuman/.claude
+gongyu0918-debug/chinese-academic-writing-skill
+wildbyteai/planlens
+radeonbm/co-builder-skill
+s-nakk/agent-skills
+ayhid/claude-dev-workflow
+xiangyugongzuoliu/xy-workflow-agent-spec
+kok-o/contextos-agents
+Quine-rq/functional-acceptance
