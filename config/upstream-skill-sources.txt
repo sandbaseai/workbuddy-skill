@@ -2113,3 +2113,13 @@ luoling8192/technical-writing
 jianshuo/jianshuo-wechat-mp-publish
 study8677/architecture-copilot
 jnMetaCode/ai-shortfilm-prompts
+jame581/GodotPrompter
+onvoyage-ai/gtm-engineer-skills
+freshtechbro/claudedesignskills
+shepsci/kaggle-skill
+fabricioctelles/skills
+theafh/ai-modules
+gcamilo/management-consulting
+ckelsoe/prompt-architect
+marcfargas/odoo-toolbox
+bigbio/sdrf-skills
