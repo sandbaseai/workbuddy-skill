@@ -3420,6 +3420,12 @@ iflow-ai/iflow-skills
 JazlynPan/vedic-astro-skills
 seabbs/skills
 cpiprint/skills
+deepak-pmcurve/product-skills
+opensourceways/agent-skills
+open-agent-craft/awesome-agent-skills
+andresdefi/cryptoskills
+bitrise-io/agent-skills
+Clawpump/agents-skills
 BAAI-Agents/Cradle
 AMAP-ML/SkillClaw
 GuDaStudio/skills
