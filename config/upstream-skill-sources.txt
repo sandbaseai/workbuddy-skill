@@ -2726,3 +2726,15 @@ abagames/agentic-gamedev-skills
 memi-design/remember-design-system
 memi-design/enforce-design-ci
 catalyst-cooperative/agent-skills
+aws-samples/sample-corgiro-aws-ops-skills
+qtalen/aidlc-skills
+aws-samples/sample-aws-solutions-skills
+aws/tools-for-devops-agent
+awslabs/startups
+fabricioctelles/jump-skills
+h4vzz/awesome-ai-agent-skills
+aiopshwang/data-analysis-ml-agent-skills
+jaakla/openmapstack
+enwong93-sketch/video-to-3d
+MuseLinn/MusePi
+pireel/pireel-agent
