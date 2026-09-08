@@ -2490,3 +2490,14 @@ JanSzewczyk/claude-plugins
 Junaid-PK/laravel-development-workflow
 Mallikarjun-Roddannavar/playwright-agentic-automation
 Max-cu/SkillGo
+2gelbuy/google-yandex-2gis-local-seo-skill
+Aedonyx/cad-taxmap
+Anson2251/cad-drawing-to-model-skill
+Brad-zqh/shap-figures
+CrunTeam/crun-agent-skills
+EdwinZDZ/scene-view-planner
+Fadhili5/gis-claude-skills
+Giskard-AI/giskard-skills
+HaichaoLihc/create-photo-flipbook-ui
+Janceswall/music-library-cleanup
+Janjs/music-as-code
