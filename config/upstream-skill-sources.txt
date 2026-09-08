@@ -2266,3 +2266,17 @@ jinchenma94/bazi-skill
 grafana/skills
 AlexsJones/llmfit
 xstongxue/best-skills
+dominiquevienne/claude-job-hunt
+SuperMarioYL/skvet
+SuperMarioYL/skillsig
+SuperMarioYL/skillprov
+csalamando/harness-sdlc
+noah-1106/Skills_Repo
+alibaba/anolisa
+naravid19/claude-ctf-skills
+speakeasy-api/gram
+danielwanwx/learning-coach-skill
+hanrry2323/CCC
+Kyne0328/rel-ai-chatgpt-web-harness
+khasky/awesome-agent-skills
+bolens/agent-skills
