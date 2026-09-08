@@ -3114,3 +3114,11 @@ uvwt/agentdock
 vivekchand/clawmetry
 bitflight-devops/skilllint
 sfourdrinier/grok-skills
+Dictation354/paper-fetch-skill
+Lee-W/maigo
+aigengame/godot-agent
+guanyang/open-agent-hub
+pax-beehive/dsh-hub-cli
+rails-hyperdrive/rails-hyperdrive
+skynetcmd/m3-memory
+zhinjs/zhin
