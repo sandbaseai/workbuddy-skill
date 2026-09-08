@@ -2125,3 +2125,14 @@ marcfargas/odoo-toolbox
 bigbio/sdrf-skills
 agiprolabs/claude-trading-skills
 eldermoraes/quarkus-agentic-scaffolding
+Getty/manage-skills
+brayandiazc/project-starter-template-es-ai
+zernie/vigiles
+MohibShaikh/clawvet
+norahe0304-art/30x-image
+ProSkillsMD/proskills
+hussi9/skill-router
+ShieldNet-360/secure-vibe
+MSiccDev/ai-context-kit
+myvictorlife/base-angular-monorepo
+ElmatadorZ/Genesis-Mind-ClaudeSkill-Agent
