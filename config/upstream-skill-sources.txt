@@ -2020,3 +2020,12 @@ komal-SkyNET/claude-skill-homeassistant
 axtonliu/axton-obsidian-visual-skills
 varunr89/resume-tailoring-skill
 Aaronontheweb/dotnet-skills
+tomkrikorian/visionOSAgents
+streamlit/agent-skills
+pexoai/pexo-skills
+ghostsecurity/skills
+iflytek/iFly-Skills
+soba-labs/langchain-agent-skills
+blockscout/agent-skills
+jdrhyne/agent-skills
+pproenca/dot-skills
