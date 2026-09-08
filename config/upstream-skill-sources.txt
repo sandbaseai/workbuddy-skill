@@ -2442,3 +2442,11 @@ HaiyiMei/cinemacc-subtitle-skill
 HoraceLuBFA/en-zh-translation-polish
 JamesDing78/medtech-commercial-validation-skills
 JuneYaooo/mediwise-health-suite
+263311487-ux/falsify
+AeternaLabsHQ/pullmd
+ArunskiOrg/BenArunskiUtils
+Bingule/reviewer-two
+BrianZhu1999/sci-ai-skill
+ChHsiching/xhs-cards-skill
+Dsadd4/AgentFigureGallery
+Furox-Art/axiomize
