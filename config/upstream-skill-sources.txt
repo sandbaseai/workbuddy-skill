@@ -2501,3 +2501,11 @@ Giskard-AI/giskard-skills
 HaichaoLihc/create-photo-flipbook-ui
 Janceswall/music-library-cleanup
 Janjs/music-as-code
+Jinwe1/development-skills
+Sachi7799/ai-debt-scanner
+Sebas05c/app-store-screenshots
+SuperChason/ontology-driven-ai-data-management-skills
+TencentYoutuResearch/Palm-Tools
+664991498-prog/mvp-validator-skill
+MehdiMhamdi/pm-os
+MhmmdFaizal04/web-rebuild-skills
