@@ -2217,3 +2217,6 @@ atdy/maoxuan-product-agent
 liuboacean/mubu-integration
 luoluoluo22/jianying-editor-skill
 dkbnull/hello-skill
+kvanland/ticktick-cli
+dgk-dev/dgk-gpt
+dashhuang/openclaw-chat-history-import
