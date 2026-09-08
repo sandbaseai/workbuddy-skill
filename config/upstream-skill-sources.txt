@@ -2622,3 +2622,8 @@ Growth-Today/claude-skills
 Gucky/JiraIssueTexts
 Howryann/skillcoffer
 HsuanYuLee/polaris
+1146345502/reddit-skills
+Autopoies/ap-browser-connect
+Castor6/tactus
+JCodesMore/ai-chrome-extension-template
+Kashkovsky/threadnote
