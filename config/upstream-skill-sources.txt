@@ -2826,6 +2826,15 @@ haidrrrry/claude-remotion-skill
 lovstudio/any2pdf
 YangsonHung/awesome-agent-skills
 mdenolle/academic-practice-agents
+keep-starknet-strange/starknet-agentic
+w1ndys/easy-qfnu-skill
+cap-js/agents
+UI5/plugins-coding-agents
+TentacleOpera/switchboard
+jmanhype/claude-code-plugin-marketplace
+gptme/gptme-contrib
+openma-ai/Martty
+neoswarm/neosh
 capawesome-team/skills
 githits-com/githits-cli
 geekjourneyx/geekx-skills
