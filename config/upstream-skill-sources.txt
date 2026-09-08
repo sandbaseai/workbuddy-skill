@@ -2224,3 +2224,5 @@ lightpointventures/claude-code-starter
 Stallin-Sanamandra/b2b-saas-marketing-skills
 ddeleon82/anything-to-skill
 HsuanZhao/SOE-Legal-Checker
+SathiaAI/adversarial-review
+CarlosFerOrduna/agent-skills
