@@ -2699,3 +2699,7 @@ Hao0321/claude-skill-social-post
 IamCoder18/huly-cli
 IkarusMK/AIcortex
 MKI13/hermes-email
+BretFisher/skills
+upbound/skills
+msaad00/cloud-ai-security-skills
+salitaba/maven-decoder-mcp
