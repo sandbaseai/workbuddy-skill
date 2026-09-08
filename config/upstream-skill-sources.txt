@@ -2796,6 +2796,9 @@ TJCSGAO/usr-cloud-downloader
 JXW666NB/TG-HELPER
 svdwalt007/Best-LwM2M-Agentic-Skills
 Seeed-Solution/reterminal_skill
+Guillermode20/backoffice-onyx
+dallascrilley/dowser
+evil7/deepSea
 tobihagemann/turbo
 bitrouter/bitrouter
 bug-ops/zeph
