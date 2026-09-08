@@ -2064,3 +2064,16 @@ xuansenpa1/skillrevise
 airmang/hwpx-plugins
 ngrok/agent-skills
 jackal092927/obsidian-official-cli-skills
+zapier/sdk
+SpartanLabsXyz/simmer-sdk
+shibing624/agentica
+microsoft/Dataverse-skills
+pipefy/ai-toolkit
+tensorlakeai/tensorlake-skills
+pratikxpanda/agentskills-sdk
+aptos-labs/aptos-agent-skills
+amazon-agi-labs/nova-act-agent-skills
+solanabr/solana-glossary
+RandalSchwartz/dart-sdk-skills
+contentful/skill-kit
+ahrefs/ahrefs-api-skills
