@@ -3350,3 +3350,9 @@ TeFuirnever/azhou-ai-hub
 byronxlg/skillfold
 gmh5225/awesome-skills
 pubky/agent-skills
+BAAI-Agents/Cradle
+AMAP-ML/SkillClaw
+GuDaStudio/skills
+xu-xiang/everything-claude-code-zh
+yetone/native-feel-skill
+danyuchn/asd-ste100-skill
