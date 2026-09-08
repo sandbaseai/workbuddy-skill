@@ -2257,3 +2257,9 @@ gauss314/skills
 agentara/skills
 krusemediallc/arcads-claude-code
 chenjin-cmd/agent-skills-launch-pack_
+NeuroSkill-com/skill
+zhaoxuya520/reverse-skill
+tscircuit/skill
+topviewai/skill
+x-cmd/skill
+jinchenma94/bazi-skill
