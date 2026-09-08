@@ -3266,3 +3266,15 @@ swarmclawai/andrej-karpathy-skills
 IndianOldTurtledove/codex-oss-maintainer-toolkit
 geekjourneyx/readme-generator
 FutureFuzzy/novel-distiller
+anilcancakir/laravel-ai-sdk-skills
+crystian/skills
+ecodelearn/template-claude-code-open
+nocodework/ai-context-kit
+lilyuan258/PDF2md-by-MinerU-api-skill
+vstorm-co/content-skills
+sugarforever/open-design-skill
+zzorp/tesla-lightshow-skill
+bdiasti/maestro-bundle-cli
+cagatayuncu/marketing-machine
+nevir/agentfill
+O0000-code/CC-Workshop
