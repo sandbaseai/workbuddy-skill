@@ -2947,3 +2947,4 @@ chuspeeism/dashi-taskboard
 OpenClaudia/openclaudia-skills
 CalebYcj/codex-rehome
 cookys/autopilot
+freestylefly/awesome-gpt-image-2
