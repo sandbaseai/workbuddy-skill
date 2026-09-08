@@ -2943,3 +2943,7 @@ songs-aaa/shared-memory-vault
 ninihen1/power-automate-mcp-skills
 gordonmurray/data-engineering-skills
 AltimateAI/data-engineering-skills
+chuspeeism/dashi-taskboard
+OpenClaudia/openclaudia-skills
+CalebYcj/codex-rehome
+cookys/autopilot
