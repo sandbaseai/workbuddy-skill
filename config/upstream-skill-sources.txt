@@ -2979,3 +2979,5 @@ onescience-ai/OneSkills
 openclaw/lobster
 radres/call-me
 thkt/dotclaude
+singhsume123/xml-to-compose-skill
+sstklen/infinite-gratitude
