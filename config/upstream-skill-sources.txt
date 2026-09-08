@@ -2971,3 +2971,11 @@ XiaomingX/indie-hacker-tools-plus
 genged/capshelf
 lidge-jun/codexclaw
 undefinted/Awesome-Post-Training-Atlas
+LazyAGI/LazyMind
+alexandrbasis/claudops
+etr/groundwork
+mycelium-cmbse/mycelium-hypha
+onescience-ai/OneSkills
+openclaw/lobster
+radres/call-me
+thkt/dotclaude
