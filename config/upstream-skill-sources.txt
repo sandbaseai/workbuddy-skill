@@ -2754,3 +2754,14 @@ heamlk/Python-Skill
 agent-contracts/skill-preflight
 eranw2000/secure-dev-guardrails
 TarkinLarson/asvs-auditor
+FlanChanXwO/javdb-cli
+sanctifai/skills
+jentic/jentic-api-scorecard
+iblai/api
+ob-labs/agentseek
+khalilbenaz/claude-skills-collection
+sabertaz/notes
+vincentkoc/dotskills
+spyrae/kronos-agent-os
+alexmond/alexmskills
+iliaal/whetstone
