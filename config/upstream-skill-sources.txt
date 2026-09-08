@@ -2948,3 +2948,8 @@ OpenClaudia/openclaudia-skills
 CalebYcj/codex-rehome
 cookys/autopilot
 freestylefly/awesome-gpt-image-2
+Awesome-AI-Pedia/Awesome-AI-Pedia
+FeatherHunter/dsh-mattpocock-skills-deck
+Yila-AI/awesome-research-skills
+lotchuazzz-crypto/papergraph-mcp
+patrick-fu/awesome-skills
