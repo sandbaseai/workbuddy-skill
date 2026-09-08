@@ -2958,3 +2958,10 @@ Polydile/dile-components
 Shilo/pixellab-pip
 changchangidea-oss/SkillRadar
 sajeetharan/devglobe
+Classic298/open-webui-plugins
+HLND2T/CS2_VibeSignatures
+Sogni-AI/sogni-creative-agent-skill
+VincentChuWaiChow/vanguard-frontier-agentic
+biedongbin/dsh-claude-compat
+carnot-tech/consulting-pptx-skill
+mlhiter/skills
