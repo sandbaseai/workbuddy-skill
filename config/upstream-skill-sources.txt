@@ -2450,3 +2450,15 @@ BrianZhu1999/sci-ai-skill
 ChHsiching/xhs-cards-skill
 Dsadd4/AgentFigureGallery
 Furox-Art/axiomize
+970lab/openclaw-oss-starter
+CCOSTAN/Home-Assistant-Codex-Skills
+Carl0gonzalez/AI-Skills-Idempiere
+D-Robotics/dsh-plugin-rdk
+D-Robotics/rdk-docs-mcp
+Decodo/agent-skills
+Djarvur/ddg-search
+GnosiST/omyKit
+GoPlausible/claude-plugins
+GoPlausible/openclaw-algorand-plugin
+Hautran11325/dev-docs-skill
+Johell1NS/browser-search
