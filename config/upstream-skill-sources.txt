@@ -3363,6 +3363,12 @@ yynxxxxx/Codex-X
 yzfly/awesome-skills-zh
 Calix-L/awesome-latex-skills
 utkusen/sast-skills
+asgard-ai-platform/skills
+JoelLewis/finance_skills
+Orizon-eu/claude-code-pentest
+salespeak-ai/buyer-eval-skill
+hostinger/hostinger-agent-skills
+Anjos2/recursive-research
 BAAI-Agents/Cradle
 AMAP-ML/SkillClaw
 GuDaStudio/skills
