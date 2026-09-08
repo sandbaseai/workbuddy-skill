@@ -2221,3 +2221,6 @@ kvanland/ticktick-cli
 dgk-dev/dgk-gpt
 dashhuang/openclaw-chat-history-import
 lightpointventures/claude-code-starter
+Stallin-Sanamandra/b2b-saas-marketing-skills
+ddeleon82/anything-to-skill
+HsuanZhao/SOE-Legal-Checker
