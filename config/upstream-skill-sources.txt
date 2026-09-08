@@ -2232,3 +2232,8 @@ taraway/kahneman-skill
 WenyuChiou/research-talk-coach
 SHT4BHARAT/NoIntroNeeded
 boonkgim/create-prd
+CODE-SAURABH/OpenSkills
+Hahaknight/claude-skills-pro
+digimon99/blogpost_service
+STARKTANG108/deepseek-doctor
+GuerthCastro/claude-skills-dotnet
