@@ -3259,3 +3259,10 @@ aws-samples/sample-ramp-aidlc-mod-starter-packs
 ModernNomad-98/Project-Aegis
 anildash/better-documents
 ZhongliangGuo/oop-architect
+dianyike/claude-code-insights
+ViryaZheng/wrap-skill
+AdamTylerLynch/obsidian-agent-memory-skills
+swarmclawai/andrej-karpathy-skills
+IndianOldTurtledove/codex-oss-maintainer-toolkit
+geekjourneyx/readme-generator
+FutureFuzzy/novel-distiller
