@@ -3362,6 +3362,7 @@ YYH211/Claude-meta-skill
 yynxxxxx/Codex-X
 yzfly/awesome-skills-zh
 Calix-L/awesome-latex-skills
+utkusen/sast-skills
 BAAI-Agents/Cradle
 AMAP-ML/SkillClaw
 GuDaStudio/skills
